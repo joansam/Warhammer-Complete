@@ -1,8 +1,9 @@
-#modname "SuperHamV2"
-#description "Aggregated all the warhammer mods, because Moggserver."
+#modname "Warhammer-Complete"
+#description "All Warhammer nations, mostly compatible with each other (also no lizardmen for some reason)."
 #version 0.59
 
 
+--Many thanks to the mod compiler, all I've done (so far) is put this on Dom4Mods. -Joansam
 -- Thanks to Sombre for his work on Skaven for Dom3. thanks bro your my hero
 
 
@@ -1907,7 +1908,6 @@ inspirational 2
 #weapon "quarterstaff"
 #poisonres 10
 #startage 10
-#slowrec
 #maxage 100
 #magicskill 8 3
 #magicskill 4 2
@@ -1927,7 +1927,7 @@ inspirational 2
 #wastesurvival
 #swampsurvival
 #darkvision 75
-#gcost 800
+#gcost 10000
 #rcost 1
 #end
 
@@ -3422,7 +3422,7 @@ Priests: Powerful, can perform blood sacrifices"
 -------- WEAPONS (space from 715 to 729) --------
 
 
-#newweapon 1020
+#newweapon 1040
 #name "Destrier Hoof"
 #rcost 1
 #bonus
@@ -3433,7 +3433,7 @@ Priests: Powerful, can perform blood sacrifices"
 #nostr
 #end
 
-#newweapon 1021
+#newweapon 1041
 #name "Breton Heavy Lance"
 #rcost 3
 #pierce
@@ -3553,7 +3553,7 @@ Priests: Powerful, can perform blood sacrifices"
 #bonus
 #end
 
-#newweapon 1030
+#newweapon 1040
 #name "Virtue of the Joust"
 #rcost 0
 #pierce
@@ -3846,8 +3846,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 10
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Plate Hauberk"
@@ -3910,8 +3910,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -3978,8 +3978,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4016,8 +4016,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 13
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4186,8 +4186,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4223,8 +4223,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4263,8 +4263,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4299,8 +4299,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4338,8 +4338,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 14
 #prot 0
 #weapon 75 -- Enchanted Sword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destrier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4380,8 +4380,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 14
 #prot 0
 #weapon 75 -- Enchanted Sword
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4429,7 +4429,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 16
 #prot 5
 #weapon 1023 -- Heroic Blade
-#weapon 1020 -- Destier Hoof
+#weapon 1040 -- Destier Hoof
 #weapon 1022 -- Heroic Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -4491,8 +4491,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Sword of Swiftness"
-#weapon 1020 -- Destier Hoof
-#weapon 1021 -- Breton Heavy Lance
+#weapon 1040 -- Destier Hoof
+#weapon 1041 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4553,7 +4553,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1023 -- Heroic Blade
-#weapon 1020 -- Destier Hoof
+#weapon 1040 -- Destier Hoof
 #weapon 1022 -- Heroic Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -4614,7 +4614,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1027 -- Birth Sword
-#weapon 1020 -- Destier Hoof
+#weapon 1040 -- Destier Hoof
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4672,7 +4672,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1028 -- Axe of Brionne
-#weapon 1020 -- Destier Hoof
+#weapon 1040 -- Destier Hoof
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #mounted
@@ -4791,7 +4791,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 173 -- Star of Heroes
-#weapon 1020 -- Destier Hoof
+#weapon 1040 -- Destier Hoof
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #armor "Kite Shield"
@@ -4851,8 +4851,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 16
 #prot 0
 #weapon "Axe of Sharpness"
-#weapon 1020 -- Destier Hoof
-#weapon 1030 -- Virtue of the joust
+#weapon 1040 -- Destier Hoof
+#weapon 1040 -- Virtue of the joust
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #armor "Kite Shield"
@@ -33777,13 +33777,42 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #addname "Shaklug Madzog"
 #end
 
+-- SLAANESH WARHOST
+
+--Version 1.00 - Finished Changes:			(By JoanSam)
+--New unit: Exalted Daemon, with other Slaanesh mod sprite and summon spell.
+-- Magic changes:
+-- Blood scales with priest level.
+-- Human magic focuses on Water, Air, Fire, in no order.
+-- Daemon magic focuses on Water, Death, Astral, in that order.
+-- Exalted Champion and Lord no longer have magic
+-- Custom blessings removed; they were a silly workaround. Sorcerers and daemons now have priest levels.
+
+-- Cultist removed for now (in unit and in rec list), could add later if necessary. Should give them blood if they come back in though.
+-- Lots of description changes...those who are interested can compare these to Sensori's original descriptions.
+-- Commanders much more autocosted
+-- Chammpion, Exalted Champion, Lord no longer have the magic item Chaos Armor, they now have the equipment. Actually, since it's magic armor you might want to do something about it.
+-- Scythetalons no longer AP, debatable though.
+-- Aura of Slaanesh was broken, now does 33 stun damage instead of 5. Also now AoE1; it's an Aura in WH, not actually a weapon.
+-- Daemon-Forged broadswords and morningstars used by Chosen and Champions are now much more in line with WH stats. They have 2 attacks, and are not magic or AP. They are now named Chaos broadsword and morningstar. All units have been updated accordingly.
+-- Slaanesh Chaos Armor prot 17 -> 18, def penalty 2 -> 1.
+-- Sigvald the Magnificent: His sword, Sliverslash, now gets 6 attacks, from 2. Awe 3 -> 6. Added base prot 15 - otherwise headshots are brutal. No longer immortal.
+-- Dameonette AP increased by 1.
+-- Sprite of Herald changed to Amazonian Chosen - used for Exalted Champion in the other Slaanesh mod. Also changed stealth 20 -> 60, added inquisitor tag (is priest 2). Can summon dameonettes.
+-- All summon spells changed from Conjuration to Blood, path req often lowered by 1, pathreqs trimmed and number of 'gems' required multiplied by 3 (standard stuff).
+-- Added an extra attack to fiends, fiends now summon 4 instead of 2...seemed underpowered
+-- Keeper of Secrets hugely improved - all-around better stats and has 1d6 fiends in battle, among more typical changes. Magic completely redone.
+-- Items and armors changed to appropriate paths
+
+
+
+
 
 
 
 -- Version 0.93 - Warriors of Slaanesh had the str of Warriors of Nurgle. Second Chosen of Slaanesh had reclimit 3. Pretender prices now autocalced and 20 off their prices. Added #natural to Chaos steed hoof, Slaaneshi claw and Scythetalon.
 
 -- Version 0.92 - Sombre made the Keeper of Secrets attack sprite a new mouth! #reclimits on Chosen make a comeback, Lords became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (autocalc decides Exalted Sorcs price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when propheted. Lowered #xpshape thresholds. Added a cultist event. Human followers now use 115 for nametypes.
-
 -- Version 0.91 - Slightly adjusted Light Chaos Armor's #rcost and #prot down. #blunt to Chaos steed hoof. Removed Slaanesh Plate Armor for simplicity's sake (and since Warriors etc. have Chaos Armor in tabletop). Increased Sorcerers' AP to 12, since that's human norm. Changes to #chaosrecs here and there. Champion lacked #chaosrec altogether. Added sounds to some weapons. Added Aura of Slaanesh to both Seekers of Slaanesh and Fiends of Slaanesh, removed one Scythetalon from the Seekers of Slaanesh (Fiend is now #awe 2, too).
 
 -- Version 0.90 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who also became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; and the research bonus on the Exalted and Lord were too high anyway, so I got a bit of a price reduction from there). Massive changes to Daemon command structure. Hammer Warriors had 11 att/def, 12 was what they were supposed to have (thanks Indract!). Daemon Princess had her #coldres upped to 5. Slaanesh's Plate Armor had -2 def, it was supposed to have -1 def (which Tzeentch's Plate Armor was enjoying), oops! To combat ridiculous morale bonuses from commanders, used #command where applicable and dropped #inspirational here and there. Gave the same higher Beastmen Slaanesh's gimmick as Nurgle's and Tzeentch's Beastmen have. Removed dt_cap from the Exalted Champ's whip.
@@ -33816,26 +33845,24 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #nostr
 #blunt
 #sound 38
-#natural
 #end
 
 #newweapon 1851
 #name "Scythetalon"
-#dmg 5
+#dmg 6
 #att 0
 #def 0
 #len 2
 #magic
 #rcost 0
 #slash
-#armorpiercing
+
 #sound 38
-#natural
 #end
 
 #newweapon 1852
 #name "Aura of Slaanesh"
-#dmg 5
+#dmg 33
 #nostr
 #magic
 #armornegating
@@ -33847,19 +33874,21 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #len 0
 #bonus
 #rcost 0
+#aoe 1
 #end
 
 #newweapon 1853
-#name "Daemon-forged Broad Sword"
+#name "Chaos Broadsword"
 #dmg 6
-#magic
+
 #slash
-#armorpiercing
+
 #att 1
 #def 0
 #len 2
-#rcost 5
+#rcost 3
 #sound 8
+#nratt 2
 #end
 
 #newweapon 1854
@@ -33888,6 +33917,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 5
 #sound 8
 #bonus
+#nratt 2
 #end
 
 #newweapon 1856
@@ -33904,7 +33934,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 #newweapon 1857
-#name "Slaaneshi Claw"
+#name "Slaaneshi Claws"
 #dmg 5
 #magic
 #slash
@@ -33914,7 +33944,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #len 1
 #bonus
 #sound 38
-#natural
+#nratt 2
 #end
 
 #newweapon 1858
@@ -33927,13 +33957,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def 0
 #len 3
 #sound 8
-#nratt 2
+#nratt 6
 #end
 
 #newweapon 1859
-#name "Daemon-forged Morningstar"
-#magic
-#armorpiercing
+#name "Chaos Morningstar"
+
+
 #pierce
 #blunt
 #dmg 6
@@ -33941,8 +33971,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def -2
 #len 3
 #flail
-#rcost 5
+#rcost 3
 #sound 11
+#nratt 2
 #end
 
 #newweapon 1860
@@ -33959,14 +33990,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #secondaryeffect 156
 #end
 
------Armour-----
+
 
 #newarmor 801
 #name "Slaanesh Chaos Armor"
 #type 5
-#prot 17
+#prot 18
 #enc 1
-#def -2
+#def -1
 #rcost 15
 #end
 
@@ -34557,7 +34588,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #chaosrec 3
 #rcost 1
 #coldres 5
-#weapon 1853
 #armor "Full Helmet"
 #armor "Slaanesh Chaos Armor"
 #armor "Kite Shield"
@@ -34569,6 +34599,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startage 34
 #maxage 1200
 #reclimit 5
+#weapon 1853
 #end
 
 
@@ -34612,15 +34643,15 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Foreignrec Cultist
 
-#newmonster 6543
-#copyspr 6510
-#copystats 6510
-#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
-#slowrec
-#gcost 90
-#chaosrec 4
-#sailing 4 2
-#end
+--#newmonster 6543
+--#copyspr 6510
+--#copystats 6510
+--#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
+--#slowrec
+--#gcost 90
+--#chaosrec 4
+--#sailing 4 2
+--#end
 
 -- Forsaken Champion
 
@@ -34869,11 +34900,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 14
 #mor 13
-#magicskill 2 1
-#magicskill 1 1
-#custommagic 19200 100 -- SAWB
-#custommagic 19200 10 -- SAWB
-#gcost 125
+#custommagic 896 100 -- SAWB
+#gcost 10000
 #researchbonus 1
 #rcost 1
 #weapon "Fist"
@@ -34882,6 +34910,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 3
 #startage 45
 #maxage 1500
+#magicskill 2 1
+#magicskill 7 1
+#magicskill 8 1
 #end
 
 -- Exalted Sorcerer of Slaanesh
@@ -34905,11 +34936,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 12
 #holy
 #magicskill 2 2
-#magicskill 1 1
-#magicskill 7 1
-#custommagic 19200 100 -- SAWB
-#custommagic 19200 10 -- SAWB
-#custommagic 768 10 -- AW
+#magicskill 7 2
+#magicskill 8 2
+#custommagic 896 100 -- SAWB
+#custommagic 896 66 -- SAWB
 #gcost 10000
 #rcost 1
 #weapon 172
@@ -34940,13 +34970,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mr 17
 #mor 14
 #coldres 3
-#magicskill 2 3
-#magicskill 1 2
-#magicskill 7 1
-#custommagic 19200 100 -- SAWB
-#custommagic 19200 10 -- SAWB
-#custommagic 768 100 -- AW
-#gcost 380
+#magicskill 2 2
+#magicskill 7 3
+#custommagic 2944 200 -- SAWB
+#custommagic 2944 200 -- AW
+#gcost 10000
 #slowrec
 #rcost 1
 #weapon "Magic Staff"
@@ -34956,6 +34984,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startage 250
 #maxage 5000
 #holy
+#magicskill 8 3
 #end
 
 
@@ -34983,7 +35012,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #holy
 #awe 1
-#custommagic 2816 100
 #okleader
 #undcommand 5
 #weapon 1853
@@ -34996,8 +35024,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mountainsurvival
 #coldres 5
 #itemslots 15494
-#startitem 969
-#researchbonus -6
 #xpshape 50
 #prophetshape 6527
 #end
@@ -35021,12 +35047,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 15
 #mor 15
-#gcost 195
+#gcost 10000
 #chaosrec 8
 #rcost 1
 #holy
 #seduce 10
-#custommagic 2816 100
 #goodleader
 #command -20
 #undcommand 5
@@ -35034,7 +35059,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor 801
 #armor "Shield"
 #itemslots 15494
-#startitem 969
 #startage 70
 #maxage 2500
 #coldres 5
@@ -35067,17 +35091,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 11
 #mr 17
 #mor 17
-#magicskill 2 1
-#custommagic 2816 100
 #itemslots 13446
-#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
 #mounted
-#gcost 285
+#gcost 10000
 #chaosrec 12
 #rcost 7
 #holy
@@ -35120,18 +35141,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #ambidextrous 5
-#weapon 1853
-#weapon 1853
-#weapon 1853
-#weapon 1853
+#weapon 1855
 #weapon 1855
 #weapon 1855
 #armor 801
 #startage 4500
 #maxage 20000
-#magicskill 1 1
+#magicskill 1 2
 #itemslots 13470
-#startitem 969
 #holy
 #invulnerable 10
 #demon
@@ -35175,7 +35192,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Shield"
 #startage 350
 #maxage 10000
-#magicskill 1 1
+#magicskill 1 2
 #holy
 #inspirational 1
 #goodleader
@@ -35183,14 +35200,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #poorundeadleader
 #float
 #seduce 20
-#awe 3
-#immortal
+#awe 6
 #regeneration 15
 #onebattlespell "Blessing"
 #coldres 5
 #wastesurvival
 #forestsurvival
 #batstartsum1d6 6546
+#prot 15
 #end
 
 -- Sigvald's bodyguards
@@ -35228,7 +35245,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 2 1
 #magicskill 1 1
 #itemslots 13446
-#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
@@ -35369,7 +35385,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #custommagic 2816 100
 #custommagic 2816 66
 #itemslots 13446
-#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
 #weapon 1850
@@ -35399,17 +35414,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Daemonette
 
 #newmonster 6535
-#spr1 "./Warhammer-Complete/daemonette_1.tga"
-#spr2 "./Warhammer-Complete/daemonette_2.tga"
+#spr1 "./Warhammer-Complete/daemonette1.tga"
+#spr2 "./Warhammer-Complete/daemonette2.tga"
 #name "Daemonette"
 #nametype 257
 #descr "Gifted with disturbing beauty, Daemonettes are the Lesser Daemons of Slaanesh. What unearthly delights they might pleasure your soul with none can say, but upon the reeking field of battle, pain is what they bring. Vicious, spiteful, yet loving in the fatal affections they lavish upon those who dare refuse their chaotic charms, Daemonettes are swift and deadly to all who cross their path. On lithe legs they surge across the battlefield, dancing from foe to foe, gifting each in turn with gaping wounds from their scythe-like talons."
-#ap 14
+#ap 15
 #mapmove 3
 #hp 12
 #prot 10
 #size 2
-#str 14
+#str 12
 #enc 1
 #att 13
 #def 13
@@ -35433,13 +35448,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #invulnerable 15
 #magicpower 1
 #female
+#weapon 1852
 #end
 
 -- Herald of Slaanesh
 
 #newmonster 6536
-#spr1 "./Warhammer-Complete/herald_of_slaanesh_1.tga"
-#spr2 "./Warhammer-Complete/herald_of_slaanesh_2.tga"
+#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
+#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
 #name "Herald of Slaanesh"
 #nametype 257
 #descr "Heralds of Slaanesh not only attend to Slaanesh's whimsical desires, but muster his armies, plot his campaigns and carry his creed to the mortal realm, returning to bring morsels of courtly intrigue to Slaanesh's ears. Such scraps can lead to the corrupting of a mortal ruler and the Dark Prince is always carefully attentive."
@@ -35458,7 +35474,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #magicskill 2 1
-#custommagic 2816 50
+#custommagic 2560 100
 #ambidextrous 5
 #itemslots 15488
 #weapon "Scythetalon"
@@ -35467,7 +35483,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #maxage 10000
 #poisonres 15
 #demon
-#stealthy 20
 #spy
 #awe 1
 #female
@@ -35477,13 +35492,19 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #invulnerable 15
 #magicpower 1
+#stealthy 60
+#magicskill 4 1
+#magicskill 7 2
+#magicskill 8 2
+#makemonsters1 6535
+#inquisitor
 #end
 
 -- Seeker of Slaanesh
 
 #newmonster 6537
-#spr1 "./Warhammer-Complete/seeker_1.tga"
-#spr2 "./Warhammer-Complete/seeker_2.tga"
+#spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
+#spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
 #name "Seeker of Slaanesh"
 #nametype 257
 #descr "Daemonettes often ride into battle upon elegant mounts that are swifter than any mortal steed. Like all Slaaneshi creatures, these lithe daemonic mounts possess a disturbingly hypnotic appearance and unmistakable sinuous beauty. These siren hunters use the speed of their steeds to toy with their mortal prey and often delay the moment of the kill in favour of prolonging the suffering of their quarry."
@@ -35503,10 +35524,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #ambidextrous 3
-#weapon "Scythetalon"
-#weapon 1852
-#weapon "Chaos Steed hoof"
-#itemslots 13440 -- legless and armless
+ #weapon 1852 #itemslots 13440 -- legless and armless
 #startage 20
 #maxage 10000
 #poisonres 15
@@ -35518,6 +35536,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #invulnerable 15
 #magicpower 1
 #female
+ #weapon 1851
+#weapon 1851
+#weapon 1851
 #end
 
 
@@ -35548,7 +35569,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ambidextrous 5
 #weapon "Scythetalon"
 #weapon "Scythetalon"
-#weapon 1852
 #startage 20
 #maxage 10000
 #poisonres 15
@@ -35557,6 +35577,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #awe 2
 #magicpower 1
+#weapon 1851
+#weapon 1852
 #end
 
 -- Chaos Fury
@@ -35594,133 +35616,37 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #end
 
--- Keeper of Secrets
-
-#newmonster 6540
-#spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
-#spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
-#name "Keeper of Secrets"
+#newmonster 6543
+#spr1 "./Warhammer-Complete/exalteddaemon1.tga"
+#spr2 "./Warhammer-Complete/exalteddaemon2.tga"
+#name "Exalted Daemon of Slaanesh"
 #nametype 257
-#descr "A Keeper of Secrets is a ruiner of purity, a despoiler of the faithful and a harbinger of damnation. It draws strength from the corruption of others, and feasts upon sin and excess as a mortal might sup fine wines and sweetmeats. To a Keeper of Secrets, fear and lust are the most succulent of dishes, but any mortal rapture provides sustenance - particularly if the victim can be propelled from the heights of one to the depths of another. Nothing is more delectable to a Keeper than the act of snatching a prideful popinjay from the adulation of his followers, drowning him in stark terror, then returning him, broken-minded and wallowing in his own involuntary filth, to the mockery of the comrades who once roared his praises."
-#ap 18
-#mapmove 3
-#enc 1
-#hp 85
-#prot 10
-#size 4
-#str 19
-#att 16
-#def 16
-#prec 10
-#mr 18
-#mor 30
-#gcost 0
-#rcost 1
-#ambidextrous 3
-#weapon 1853 -- Daemon-forged Broad Sword
-#weapon 1852 -- Aura of Slaan
-#weapon 1857 -- Slaaneshi Claw
-#weapon 1857 -- Slaaneshi Claw
-#weapon 299 -- Enchanted Sickle
-#armor 803
-#startage 40
-#maxage 10000
-#magicskill 2 2
-#custommagic 2816 100
-#custommagic 768 66
-#holy
-#invulnerable 20
-#inspirational 1
-#goodleader
-#expertundeadleader
-#female
-#fear 5
-#awe 4
-#stealthy 0
-#succubus 20
-#poisonres 15
-#demon
-#onebattlespell "Divine Blessing"
-#neednoteat
-#magicpower 1
-#end
-
------------ PRETENDERS - Sorcerer Lord and Daemon Princess
-
--- Sorcerer Lord of Slaanesh
-
-#newmonster 6541
-#spr1 "./Warhammer-Complete/Sorc_Lord_Pretender_1.tga"
-#spr2 "./Warhammer-Complete/Sorc_Lord_Pretender_2.tga"
-#name "Sorcerer Lord of Slaanesh"
-#nametype 115
-#descr "Sitting upon a palanquin carried by fervent followers of Slaanesh, this formidable Sorcerer Lord of Slaanesh has gained such power and favor from his patron god that there is nothing left to achieve for him in the mortal realm than godhood. Forever bound to the Dark God, however, the Sorcerer Lord would act as a channel between the two realms, and act as His surrogate in a place where He cannot manifest."
-#ap 12
-#mapmove 2
-#hp 30
-#size 3
-#ressize 2
-#str 12
-#enc 3
-#att 12
-#def 12
-#prec 12
-#mr 18
-#mor 30
-#coldres 3
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 7 1
-#gcost 10000
-#pathcost 10
-#startdom 1
-#rcost 1
-#weapon "Magic Staff"
-#armor 803
-#armor "Full Helmet"
-#itemslots 62592
-#okleader
-#startage 900
-#maxage 10000
-#mounted
-#researchbonus 11
-#inspiringres 1
-#end
-
--- Pretender Daemon Princess
-
-#newmonster 6542
-#spr1 "./Warhammer-Complete/daemon_princess_1.tga"
-#spr2 "./Warhammer-Complete/daemon_princess_2.tga"
-#name "Daemon Princess of Slaanesh"
-#nametype 257
-#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for her to become a true Goddess within this realm. Still true to Slaanesh, however, she would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
+#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magical power is still great by the standard of most mortal spellcasters."
 #ap 22
 #mapmove 3
-#hp 75
-#size 4
-#str 19
+#hp 54
+#size 3
+#str 18
 #enc 1
 #att 18
 #def 16
 #prec 13
-#mr 18
+#mr 17
 #mor 30
-#gcost 10000
+#gcost 0
 #rcost 1
 #pathcost 50
 #startdom 3
 #coldres 5
 #poisonres 25
 #invulnerable 10
-#weapon 1853
+#weapon 1855
 #armor 801
 #itemslots 15494
 #startitem 969
 #startage 4000
 #maxage 10000
-#magicskill 1 1
-#magicskill 2 2
+#magicskill 2 1
 #inspirational 1
 #expertleader
 #expertundeadleader
@@ -35731,7 +35657,213 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicpower 1
 #neednoteat
 #seduce 15
+#magicskill 7 2
+#custommagic 6656 200
+#magicskill 8 2
 #end
+
+-- Keeper of Secrets
+
+#newmonster 6540
+#spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
+#spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
+#name "Keeper of Secrets"
+#nametype 257
+#descr "Many-limbed and jewel-eyed, sensuous in movement yet deadly and fierce, a Keeper of Secrets is the Greater Daemon of Slaanesh. They are gifted with the subtle and insidious magic of the Dark Prince, wracking the enemy with spasms of agony, clouding their minds with dark whispers of glory, and creating illusions of their worst fears and greatest desires. Formed of the stuff of Chaos, Slaanesh has granted these servants his greatest gifts and protected them from enemy magic almost as well as from mortal weapons. Those few brave mortals who face up to such a monster must be pure of heart and mind, for a Keeper of Secrets is surrounded by many enchantments that lull the mind and deaden the senses. It can invade the thoughts and senses of its enemies, penetrating their every psychic defence - sending them false visions of glory, stroking their egos and their innermost desires to lead the fools astray."
+#ap 18
+#mapmove 3
+#enc 1
+#hp 80
+#prot 20
+#size 4
+#str 24
+#att 16
+#def 16
+#prec 10
+#mr 20
+#mor 30
+#gcost 0
+#rcost 1
+#ambidextrous 3
+#weapon 1855 -- Daemon-forged Broad Sword
+#weapon 1852 -- Aura of Slaan
+#weapon 1857 -- Slaaneshi Claw
+#weapon 1857 -- Slaaneshi Claw
+#weapon 299 -- Enchanted Sickle
+#armor 803
+#startage 40
+#maxage 10000
+#magicskill 2 3
+#custommagic 23040 150
+#holy
+#inspirational 1
+#goodleader
+#expertundeadleader
+#fear 10
+#awe 6
+#stealthy 0
+#poisonres 20
+#demon
+#onebattlespell "Divine Blessing"
+#neednoteat
+#magicpower 1
+#magicskill 4 2
+#magicskill 5 3
+#coldres 25
+#fireres 15
+#shockres 25
+#regeneration 10
+#heal
+#itemslots 31878
+#batstartsum1d6 6538
+#spreaddom 1
+#magicskill 7 4
+#magicskill 8 4
+#custommagic 20992 100
+#end
+
+-- Daemon Princess
+
+#newmonster 6542
+#spr1 "./Warhammer-Complete/daemonprincess1.tga"
+#spr2 "./Warhammer-Complete/daemonprincess2.tga"
+#name "Daemon Princess of Slaanesh"
+#nametype 257
+#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for her to become a true Goddess within this realm. Still true to Slaanesh, however, she would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
+#ap 22
+#mapmove 3
+#hp 66
+#size 3
+#str 19
+#enc 1
+#att 18
+#def 16
+#prec 13
+#mr 18
+#mor 30
+#gcost 0
+#rcost 1
+#pathcost 50
+#startdom 3
+#coldres 5
+#poisonres 25
+#invulnerable 10
+#weapon 1855
+#armor 801
+#itemslots 15494
+#startitem 969
+#startage 4000
+#maxage 10000
+#magicskill 5 2
+#magicskill 2 3
+#inspirational 1
+#expertleader
+#expertundeadleader
+#awe 2
+#flying
+#demon
+#female
+#magicpower 1
+#neednoteat
+#seduce 15
+#magicskill 7 3
+#custommagic 6656 200
+#magicskill 8 3
+#end
+
+----------- PRETENDERS - Avatars of Slaanesh
+
+-- Sorcerer Lord of Slaanesh
+
+-- Avatar Sorcerer Shape
+#newmonster 4215
+#nametype 115
+#startdom 1
+#gcost 50
+#pathcost 20
+#name "Slaanesh"
+#spr1 "./Warhammer-Complete/avatarhum1.tga"
+#spr2 "./Warhammer-Complete/avatarhum2.tga"
+#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as a human sorcerer on a wave of magical energy, and will lead his armies to everlasting bliss. But the Dark Prince is merely using this illusion of a body for convenience - life does not flow through it, nor does Slaanesh's mind inhabit it."
+#magicskill 2 2
+#magicskill 1 1
+#magicskill 0 1
+#hp 30
+#mr 24
+#str 10
+#def 12
+#enc 3
+#weapon "fist"
+#mor 50
+#inanimate
+#magicbeing
+#mapmove 3
+#prec 1
+#att 1
+#ap 15
+#size 3
+#enc 0
+#end
+
+
+-- Avatar Daemonic shape
+#newmonster 4214
+#nametype 115
+#startdom 3
+#gcost 270
+#pathcost 60
+#name "Slaanesh"
+#spr1 "./Warhammer-Complete/avatar1.tga"
+#spr2 "./Warhammer-Complete/avatar2.tga"
+#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual.Slaanesh has chosen to appear this time as a human sorcerer on one of his Daemons, and will lead his armies to everlasting bliss."
+#magicskill 2 1
+#magicskill 5 1
+#magicskill 7 2
+#hp 120
+#size 6
+#prot 20
+#ap 18
+#mapmove 3
+#mr 24
+#str 24
+#att 16
+#def 16
+#enc 1
+#prec 15
+#ambidextrous 3
+#weapon "fist"
+#mor 50
+#inanimate
+#demon
+#weapon 1852 -- Aura of Slaan
+#weapon 1857 -- Slaaneshi Claws
+#weapon 1857 -- Slaaneshi Claws
+#chaospower 2
+#magicpower 2
+#coldres 25
+#fireres 15
+#shockres 25
+#poisonres 20
+#regeneration 10
+#heal
+#itemslots 31878
+#startage 40
+#maxage 10000
+#inspirational 1
+#goodleader
+#expertundeadleader
+#fear 10
+#awe 6
+#end
+
+
+
+
+
+
+
+
+
 
 --------------------------------------
 
@@ -35741,12 +35873,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Daemonettes"
 #descr "With this spell, the caster summons a group of Daemonettes, the Lesser Daemons of Slaanesh, beings possessed of the hypnotic glamour for which all Daemons of Slaanesh are abhorred."
 #restricted 159
-#school 0
+#school 6
 #researchlevel 3
-#path 0 2
-#path 1 1
-#pathlevel 0 3
-#fatiguecost 700
+#path 0 7
+#pathlevel 0 2
+#fatiguecost 2100
 #effect 10001
 #damage 6535
 #nreff 4
@@ -35761,7 +35892,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #school -1
 #path 0 2
 #pathlevel 0 3
-#fatiguecost 0
+#fatiguecost 2100
 #effect 10001
 #damage 6535
 #nreff 1007
@@ -35772,11 +35903,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Banquet of Slaanesh"
 #descr "The caster forms a Slaaneshi cult within an unsuspecting village, which tears at the very humanity of its 'followers'. They take part in every form of vile debauchery including that of cannibalism, starting with kidnappings of the weakest and least cared for. As the horrors continue and the villagers begin to suspect foul play, the caster finally sheds all reason, sacrificing all his 'followers' to Slaanesh; in their place manifest a score of Daemonettes. It is then that the caster assails the village in earnest with the aid of the Daemonettes, killing and feasting upon the flesh of the innocent and guilty alike. Once the village has been brought to the ground, the caster finds himself less human; he craves mortal flesh, his soul corrupted but his body healed of afflictions. The Daemonettes thus manifested then join his cause."
 #restricted 159
-#school 4
+#school 6
 #researchlevel 3
-#path 0 2
-#pathlevel 0 3
-#fatiguecost 1500
+#path 0 7
+#pathlevel 0 2
+#fatiguecost 4500
 #nextspell "Daemonette summoning"
 #end
 
@@ -35784,15 +35915,27 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Seekers of Slaanesh"
 #descr "With this spell, the caster summons a group of Seekers of Slaanesh, the outriders of the Prince of Chaos, darkling Daemonettes mounted on swift daemonic Steeds."
 #restricted 159
-#school 0
-#researchlevel 5
-#path 0 2
-#path 1 1
+#school 6
+#researchlevel 4
+#path 0 7
 #pathlevel 0 3
-#pathlevel 1 1
-#fatiguecost 1100
+#fatiguecost 3000
 #effect 10001
 #damage 6537
+#nreff 6
+#end
+
+#newspell
+#name "Summon Fiends of Slaanesh"
+#descr "With this summoning, the caster brings forth a couple of Fiends of Slaanesh, strange creatures which are swift and terrible."
+#restricted 159
+#school 6
+#researchlevel 5
+#path 0 7
+#pathlevel 0 3
+#fatiguecost 2000
+#effect 10001
+#damage 6538
 #nreff 4
 #end
 
@@ -35800,43 +35943,55 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Herald of Slaanesh"
 #descr "With this spell, the summoner brings forth a Herald of Slaanesh, one of the most favored Daemonettes of Slaanesh."
 #restricted 159
-#school 0
+#school 6
 #researchlevel 5
-#path 0 2
-#pathlevel 0 4
-#fatiguecost 1500
+#path 0 7
+#pathlevel 0 3
+#fatiguecost 6000
 #effect 10021
 #damage 6536
 #nreff 1
 #end
 
 #newspell
-#name "Summon Fiends of Slaanesh"
-#descr "With this summoning, the caster brings forth a couple of Fiends of Slaanesh, strange creatures which are swift and terrible."
+#name "Summon Exalted Daemon of Slaanesh"
+#descr "With this spell, the sorcerer courts Slaanesh's favor with threescore victims. In return, one of his fellows is possessed by a daemon of great power to aid his men in their conquest of the civilized realms."
 #restricted 159
-#school 0
+#school 6
 #researchlevel 6
-#path 0 2
-#path 1 1
+#path 0 7
 #pathlevel 0 4
-#pathlevel 1 2
-#fatiguecost 800
+#fatiguecost 6000
+#effect 10021
+#damage 6543
+#nreff 1
+#end
+
+#newspell
+#name "Summon Daemon Princess of Slaanesh"
+#descr "The caster proves his devotion to the Dark Prince with an offering of nearly a hundred mortals. In return, the Prince rewards this sorcerer with one of his most terrifying and alluring servants, a Daemon Princess to lay waste to the lands of mortal men."
+#restricted 159
+#school 6
+#researchlevel 7
+#path 0 7
+#pathlevel 0 4
+#fatiguecost 8000
 #effect 10001
-#damage 6538
-#nreff 2
+#damage 6542
+#nreff 1
 #end
 
 #newspell
 #name "Summon Keeper of Secrets"
-#descr "With this dark ritual, the caster brings forth a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce."
+#descr "With this ultimate dark ritual, the caster sorcerer offers tenscore victims of pure blood to his Dark Prince. Out of the void comes a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce. The Keeper will lead the sorcerer's armies to victory, engulfing all that stands in its path."
 #restricted 159
-#school 0
+#school 6
 #researchlevel 8
-#path 0 2
-#path 1 1
+#path 0 7
+#path 3 5
 #pathlevel 0 5
 #pathlevel 1 2
-#fatiguecost 5000
+#fatiguecost 12000
 #effect 10021
 #damage 6540
 #nreff 1
@@ -35847,53 +36002,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon the Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Slaanesh cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
 #restricted 159
-#school 0
+#school 6
 #researchlevel 2
-#path 0 2
-#path 1 1
-#pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 400
+#path 0 7
+#pathlevel 0 1
+#fatiguecost 1200
 #effect 10001
 #damage 6539
-#nreff 10
+#nreff 8
 #end
 
 -- Combat spells --
-
--- Blessing -
-
-#newspell
-#copyspell 151
-#name "Blessing of Slaanesh"
-#descr "With this incantation, the caster brings forth the blessings of Slaanesh upon a number of His followers, be they those mortals whom have been marked by Slaanesh, or His Daemonic servants."
-#restricted 159
-#school 4
-#path 0 2
-#explspr 10006
-#pathlevel 0 1
-#spec 12615680
-#sound 23
-#end
-
--- Biggererer Blessing -
-
-#newspell
-#name "Greater Blessing of Slaanesh"
-#descr "By the power of this incantation, all those with the Mark of Slaanesh as well as His Daemonic servants find themselves blessed with the power of Slaanesh."
-#restricted 159
-#school 4
-#path 0 2
-#pathlevel 0 3
-#effect 10
-#damage 1
-#precision 100
-#range 0
-#aoe 666
-#spec 12615680
-#explspr 10006
-#sound 23
-#end
 
 -- Slicing Shards -
 
@@ -35953,7 +36072,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 #newspell
 #name "Acquiescence"
-#descr "With an almost lackadaisical gesture, the caster engulfs his foe with a haze of broken dreams and unattainable desires."
+#descr "With a languid gesture, the caster engulfs his foe with a haze of broken dreams and unattainable desires."
 #restricted 159
 #school 2
 #researchlevel 2
@@ -36244,7 +36363,7 @@ Priests: Weak. Can blood sacrifice."
 
 
 ---- GODS
-
+#cleargods
 #addgod 2462 -- Golden Idol
 #addgod 180 -- demilich
 #addgod 158 -- Oracle
@@ -36263,10 +36382,11 @@ Priests: Weak. Can blood sacrifice."
 #addgod 1231 -- Drakaina
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
-#addgod 6541 -- Sorcerer Lord
-#cheapgod20 6541
-#addgod 6542 -- Daemon Princess
-#cheapgod20 6542
+#addgod 4214 -- Daemonic Avatar of Slaanesh
+#addgod 4215 -- Human Avatar of Slaanesh
+#cheapgod20 4214
+#cheapgod20 4215
+
 
 ---- RECRUITS
 #clearrec
@@ -36300,7 +36420,7 @@ Priests: Weak. Can blood sacrifice."
 ---- LEADERS
 
 #addreccom 6510 -- Cultist
-#addforeigncom 6543 -- foreign Cultist
+--#addforeigncom 6543 -- foreign Cultist
 #wastecom 6517 -- Forsaken Champion
 #forestcom 6518 -- Ungor Raider Halfhorn
 #forestcom 6520 -- Wargor
@@ -36385,7 +36505,6 @@ Priests: Weak. Can blood sacrifice."
 -- Taorec
 
 
-
 /////////////////SLOTS USED\\\\\\\\\\\\\\\\\\\\
 
 Nation 		112
@@ -36448,7 +36567,7 @@ Nametypes 	162
 #dt_stun
 #poison
 #dmg 75
-#mr
+#mrnegates
 #end
 
 #newweapon 1403
@@ -36652,7 +36771,7 @@ Nametypes 	162
 #type 4
 #prot 30
 #def 8
-#end 0
+#enc 0
 #rcost 0
 #end
 
@@ -36749,7 +36868,7 @@ Nametypes 	162
 #str 8
 #att 8
 #def 9
-#prec 1�
+#prec 9
 
 #enc 0
 #ap 8
@@ -36768,7 +36887,7 @@ Nametypes 	162
 
 --FREESPAWN
 
-#newmonster 4530 -soulless
+#selectmonster 197 -soulless
 #copystats 4550
 #clearweapons
 #cleararmor
@@ -36781,14 +36900,10 @@ Nametypes 	162
 #weapon "Claw"
 #end
 
-
-#newmonster 4531 -ghoul
+#selectmonster 198 -ghoul
 #copystats 4551
 #name "Tomb Mummy"
 #descr "Mummies are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform."
-#spr1 "./Warhammer-Complete/Mummy.tga"
-#spr2 "./Warhammer-Complete/Mummy2.tga"
-
 #clearweapons
 #cleararmor
 
@@ -36798,7 +36913,7 @@ Nametypes 	162
 #end
 
 
-#newmonster 4532
+#selectmonster 191
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36811,7 +36926,7 @@ Nametypes 	162
 #armor "Nehekharan Shield"
 #end
 
-#newmonster 4533
+#selectmonster 192
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36824,7 +36939,7 @@ Nametypes 	162
 #armor "Nehekharan Shield"
 #end
 
-#newmonster 4534
+#selectmonster 193
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36837,7 +36952,7 @@ Nametypes 	162
 #armor "Nehekharan Shield"
 #end
 
-#newmonster 4535
+#selectmonster 194
 #copystats 4550
 #name "Armored Skeleton Swordsman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36845,63 +36960,13 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/HInfantryB2.tga"
 #clearweapons
 #cleararmor
-#end
 
-#newmonster 4538
-#copystats 4550
-#name "Skeleton Archer"
-#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
-#spr1 "./Warhammer-Complete/Archer1TK.tga"
-#spr2 "./Warhammer-Complete/Archer2TK.tga"
-#clearweapons
-#cleararmor
-
-#weapon "Dagger"
-#weapon "Composite Bow"
+#mr 12
+#weapon "Falchion"
 #armor "Shoulder Guard"
-#armor "Circlet"
+#armor "Nehekharan Shield"
 #end
 
-#newmonster 4539
-#copystats 4550
-#name "Skeleton Archer"
-#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
-#spr1 "./Warhammer-Complete/Archer1TK.tga"
-#spr2 "./Warhammer-Complete/Archer2TK.tga"
-#clearweapons
-#cleararmor
-
-#weapon "Dagger"
-#weapon "Composite Bow"
-#armor "Shoulder Guard"
-#armor "Circlet"
-#end
-
-#newmonster 4542 -horsemen
-#copystats 4550
-#name "Nehekharan Cavalry"
-#descr "The light cavalry of Nehekhara carry bows and spears, raining arrows down on their enemies before flanking them on their swift skeletal steeds. The Nehekharans placed great value on horses, and the highly trained animals were buried with almost as much ceremony as their masters. Like all the troops of Nehekhara the cavalry are highly resistant to enemy magic because of the powerful and ancient enchantments animating them."
-#spr1 "./Warhammer-Complete/Cavalry1.tga"
-#spr2 "./Warhammer-Complete/Cavalry2.tga"
-#clearweapons
-#cleararmor
-#size 3
-
-#mr 11
-#att 12
-#def 10
-#prec 8
-#ap 20
-#mapmove 3
-
-#mounted
-#weapon "Spear"
-#weapon "Hoof"
-#weapon "Composite Bow"
-#armor "Shoulder Guard"
-#armor "Circlet"
-#armor "Shield"
-#end
 
 #selectmonster 1657 -triarius
 #copystats 4550
@@ -36917,7 +36982,6 @@ Nametypes 	162
 #armor "Shoulder Guard"
 #armor "Nehekharan Shield"
 #end
-
 
 #selectmonster 1658 -principes
 #copystats 4550
@@ -36935,6 +36999,35 @@ Nametypes 	162
 #end
 
 
+#selectmonster 195
+#copystats 4550
+#name "Skeleton Archer"
+#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/Archer1TK.tga"
+#spr2 "./Warhammer-Complete/Archer2TK.tga"
+#clearweapons
+#cleararmor
+
+#weapon "Dagger"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#end
+
+#selectmonster 196
+#copystats 4550
+#name "Skeleton Archer"
+#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/Archer1TK.tga"
+#spr2 "./Warhammer-Complete/Archer2TK.tga"
+#clearweapons
+#cleararmor
+
+#weapon "Dagger"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#end
 
 #selectmonster 186 -velite
 #copystats 4550
@@ -36950,8 +37043,6 @@ Nametypes 	162
 #armor "Shoulder Guard"
 #armor "Circlet"
 #end
-
-
 
 #selectmonster 187 --legionaire
 #copystats 4550
@@ -36992,6 +37083,32 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #holy
 #end
 
+
+#selectmonster 189 -horsemen
+#copystats 4550
+#name "Nehekharan Cavalry"
+#descr "The light cavalry of Nehekhara carry bows and spears, raining arrows down on their enemies before flanking them on their swift skeletal steeds. The Nehekharans placed great value on horses, and the highly trained animals were buried with almost as much ceremony as their masters. Like all the troops of Nehekhara the cavalry are highly resistant to enemy magic because of the powerful and ancient enchantments animating them."
+#spr1 "./Warhammer-Complete/Cavalry1.tga"
+#spr2 "./Warhammer-Complete/Cavalry2.tga"
+#clearweapons
+#cleararmor
+#size 3
+
+#mr 11
+#att 12
+#def 10
+#prec 8
+#ap 20
+#mapmove 3
+
+#mounted
+#weapon "Spear"
+#weapon "Hoof"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#armor "Shield"
+#end
 
 
 #newmonster 4553
@@ -37055,7 +37172,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #selectmonster 259
 #copystats 4550
-#name "Tomb Guard" -30g
+#name "Tomb Guard"
 #descr "The Tomb Guard were originally an elite corps of troops assigned to protecting a necropolis containing the tombs of past kings. Over time the order grew and began to act as a part of the main army, and was imitated in the other kingdoms of Nehekhara. They were found to be very effective in war due to their superior equipment and training. The Tomb Guard are much more heavily armored than most Nehekharan soldiers, and wield deadly falchions."
 #spr1 "./Warhammer-Complete/TombGuard1.tga"
 #spr2 "./Warhammer-Complete/TombGuard2.tga"
@@ -37081,7 +37198,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #newmonster 4554
 #copystats 4551
-#name "Immortal" -50g
+#name "Immortal"
 #descr "Many of the Tomb Kings were filled with paranoia on their burial - who knew what lay ahead? Most of all they feared being left stranded and alone, their guardian troops lost to them. The kings themselves were protected by awesome enchantments, almost impossible to permanently destroy, but they knew that their guards were far more vulnerable. And so the most powerful of the Tomb Kings set about, with the aid of their priests, to create a personal bodyguard of their most trusted troops that could themselves never be destroyed. No matter what befell them, their bodies would always reform in their tombs. These bodyguards, known as Immortals, are highly disciplined and effective troops, and as the closest guardians of the sacred Tomb Kings, they are sacred to the Nehekharans. However, powerful magic is needed to revive the Immortals, and their enchantment requires frequent renewal with costly incenses and balms."
 #spr1 "./Warhammer-Complete/Immortal1.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
@@ -37104,7 +37221,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4571
+#newmonster 4557
 #name "Tomb Swarm"
 #descr "Tomb Swarms consist of thousands upon thousands of long-dead insects, spiders and scorpions. Over the millenia these creatures have died in and around the Nehekharan Tombs, before being awakened by the same release of twisted necromantic magic that awoke the Nehekharans themselves. Some powerful Nehekharan mages are able to summon these swarms to the battlefield where they overwhelm enemy troops, consuming their flesh and reducing them to skeletons in seconds. Since they consist of huge numbers of tiny creatures Tomb Swarms are almost immune to arrows and are difficult to destroy with normal weapons. However, they are extremely vulnerable to fire and banishment."
 #spr1 "./Warhammer-Complete/TombSwarm1.tga"
@@ -37169,7 +37286,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4560 -50p
+#newmonster 4560
 #name "Ushabti"
 #spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
 #spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
@@ -37202,7 +37319,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4567 -24p
+#newmonster 4567
 #copystats 4550
 #name "Carrion"
 #descr "Carrion are huge undead birds of prey that feed on the corpses of the fallen."
@@ -37222,11 +37339,11 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #weapon "Claws"
 #weapon "Beak"
-#fly
+#flying
 #end
 
 
-#newmonster 4568 -170p
+#newmonster 4568
 --#copystats 4550
 #name "Khemrian Warsphinx"
 #descr "Khemrian Warsphinxes are giant leonine statues that wade through the ranks of their foes, crushing them underfoot as if they were nothing more than bothersome insects."
@@ -37264,7 +37381,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #itemslots 12288 --2misc
 #end
 
-#newmonster 4569 -55p
+#newmonster 4569
 #name "Sepulchral Stalker"
 #descr "Sepulchral Stalkers lie in wait beneath the desert sands, waiting for intruders to pass by before launching a devastating ambush. When the trap is sprung, several horrifying, snake-like forms burst from the ground to surround their prey."
 #spr1 "./Warhammer-Complete/SepulchralStalker1.tga"
@@ -37337,7 +37454,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #armor "Circlet"
 #end
 
-#selectmonster 4599 
+#selectmonster 188 -mound king2
 #copystats 4551
 #name "Necrotect"
 #spr1 "./Warhammer-Complete/Necrotect1.tga"
@@ -37364,7 +37481,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #weapon "Dagger"
 #armor "Robes"
 #armor "Circlet"
-#makemonsters1 4553
+#makemonster1 4553
 #end
 
 
@@ -37375,7 +37492,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #descr "The acolytes are low ranking Tomb Priests, lacking the power of their seniors, but still possessing sufficient knowledge of the order's wisdom that they have succeeded in preserving themselves since the fall of Nehekhara. In battle, the acolytes specialise in casting incantations to mend and repair the bodies of Nehekhara's undead legions. Many an army will be accompanied by a large number of acolytes, so that their enemies will find the effects of their blows undone before their very eyes."
 #spr1 "./Warhammer-Complete/Acolyte1.tga"
 #spr2 "./Warhammer-Complete/Acolyte2.tga"
-#summon1 4530
 #clearweapons
 #cleararmor
 
@@ -37421,7 +37537,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 5 2 Death
 #magicskill 8 2 Holy
 #custommagic 4096 50 D
-#summon3 4530
 #holy
 #weapon "Magic Staff"
 #end
@@ -37451,7 +37566,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 5 4 Death
 #magicskill 8 3 Holy
 #custommagic 4096 50 D
-#summon5 4531
 #holy
 #immortal
 
@@ -37488,11 +37602,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 5 4 Death
 #magicskill 8 4
 #custommagic 5120 50 DE
-#summon3 4532
-#summon2 4533
-#summon1 4535 
-#summon4 4539
-
 
 #deathcurse
 #trample
@@ -37500,11 +37609,11 @@ enchanced further by the powerful magic animating them. They are also competent 
 #expertundeadleader
 #holy
 #immortal
-#makemonsters1 4554
+#makemonster1 4554
 #end
 
 
-#newmonster 4557
+#newmonster 4556
 #copystats 4551
 #name "Tomb King"
 #descr "The Tomb Kings of Nehehkhara were individuals of extraordinary power. With the passing of the previous king, the new ruler would be chosen on the basis of his wisdom and strength, and the contenders were always exceptional. Invariably drawn from the senior ranks of the priesthood these individuals had been able to extend their lives indefinitely, and they did not fail to make use of their time, learning mysterious magic and travelling foreign lands. Once chosen, his acolytes would endlessly perform incantations to further strengthen the physical and magical powers of their near-divine ruler. A Tomb Kings would often rule for several centuries, before deciding that his time in this life had come to an end, and would retreat to his tomb to await paradise. Such are the strength of the enchantments on the reawakened king that he is almost impossible to destroy, although if he is very badly injured the release of magical energies needed to keep him alive will leave him severely weakened. He can summon 2 Immortal allies every month."
@@ -37522,10 +37631,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 8 5
 #custommagic 5120 100 DE
 #custommagic 5120 50 DE
-#summon3 4542
-#summon5 4533
-#summon1 4553 
-#summon4 4539
 
 #mor 30
 #hp 30
@@ -37541,7 +37646,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #weapon "Cobra Staff"
 #armor "Gilded Armor"
 #armor "Royal Headdress"
-#makemonsters2 4554
+#makemonster2 4554
 #end
 
 
@@ -37582,50 +37687,50 @@ enchanced further by the powerful magic animating them. They are also competent 
 #holy
 #end
 
-#newmonster 4561
-#name "Ushabti Avatar"
-#spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
-#spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
-#descr "The greatest and most perfectly carved of the Ushabti would sometimes be chosen by a Nehekharan god to be an avatar. The god would give it the spark of consciousness and access to powerful magic, and would see the world through its eyes. Although the gods themselves are long since destroyed or banished, the avatars may still be awoken, and still bear the spark of power they were granted millennia ago. The old gods possessed all manner of powers, and the awakened avatars may have knowledge of magics since lost to the Nehekharans."
-#clearweapons
-#cleararmor
-#nametype 162
-#mapmove 3
-#ap 12
-#size 6
-
-#att 14
-#def 12
-#str 22
-#mr 18
-#hp 120
-#prot 20
-#enc 0
-#mor 30
-#magicbeing
-#neednoteat
-#poisonres 15
-#inanimate
-#noheal
-#darkvision 100
-#holy
-#goodundeadleader
-#poormagicleader
-#custommagic 1408 100 - Fire, Air, Earth
-#custommagic 1408 50
-#custommagic 1408 50
-#custommagic 1920 50 - Fire, Air, Earth, Water
-#custommagic 1920 50
-#custommagic 30720 80 - Sorcery
-#magicboost 4 2 - Sorcery (so they'll always have level 3 in one sorcery)
-#magicboost 5 2
-#magicboost 6 2
-#magicboost 7 2
-#magicskill 8 1 -- Holy 1
-#weapon "Ritual Blade"
-#armor "Ushabti Avatar Armor"
-#stonebeing
-#end
+--#newmonster 4561
+--#name "Ushabti Avatar"
+--#spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
+--#spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
+--#descr "The greatest and most perfectly carved of the Ushabti would sometimes be chosen by a Nehekharan god to be an avatar. The god would give it the spark of consciousness and access to powerful magic, and would see the world through its eyes. Although the gods themselves are long since destroyed or banished, the avatars may still be awoken, and still bear the spark of power they were granted millennia ago. The old gods possessed all manner of powers, and the awakened avatars may have knowledge of magics since lost to the Nehekharans."
+--#clearweapons
+--#cleararmor
+--#nametype 162
+--#mapmove 3
+--#ap 12
+--#size 6
+--
+--#att 14
+--#def 12
+--#str 22
+--#mr 18
+--#hp 120
+--#prot 20
+--#enc 0
+--#mor 30
+--#magicbeing
+--#neednoteat
+--#poisonres 15
+--#inanimate
+--#noheal
+--#darkvision 100
+--#holy
+--#goodundeadleader
+--#poormagicleader
+--#custommagic 1408 100 - Fire, Air, Earth
+--#custommagic 1408 50
+--#custommagic 1408 50
+--#custommagic 1920 50 - Fire, Air, Earth, Water
+--#custommagic 1920 50
+--#custommagic 30720 80 - Sorcery
+--#magicboost 4 2 - Sorcery (so they'll always have level 3 in one sorcery)
+--#magicboost 5 2
+--#magicboost 6 2
+--#magicboost 7 2
+--#magicskill 8 1 -- Holy 1
+--#weapon "Ritual Blade"
+--#armor "Ushabti Avatar Armor"
+--#stonebeing
+--#end
 
 #newmonster 4570 -170p
 --#copystats 4550
@@ -37685,14 +37790,8 @@ They are exceptionally skilled fighters and leaders."
 #goodleader
 #okundeadleader
 #goodmagicleader
-#magicbeing
-#darkvision 100
-#weapon "Falchion"
-#weapon "Falchion"
-#armor "Shoulder Guard"
 #stonebeing
 #end
-
 
 #newmonster 4563
 #copystats 4559
@@ -37758,7 +37857,7 @@ keep him alive will leave him severely weakened."
 #armor "Gilded Armor"
 #armor "Royal Headdress"
 #secondshape 4566
---#makemonsters2 192
+--#makemonster2 192
 #end
 
 #newmonster 4566
@@ -37800,7 +37899,7 @@ now skeletal form remains almost impossible to destroy."
 #immortal
 #maxage 2000
 #magicboost 57 -1
---#makemonsters1 192
+--#makemonster1 192
 #end
 
 
@@ -37954,25 +38053,25 @@ of enemy soldiers with ease."
 
 
 
-#newspell
-#copyspell 801 "Raise Dead"  -- To get sound
-#name "Summon Tomb Swarms"
-#descr "This spell summons a huge swarm of undead insects, scorpions and spiders from the depths of the Nehekharan tombs. The mindless swarm will crawl under armor and reduce enemy soldiers to skeletons within seconds."
-#school 0
-#restricted 112
-#researchlevel 4
-#range 25
-#path 0 5
-#fatiguecost 100
-#pathlevel 0 4
-#effect 1
-#flightspr -1
-#damage 4571
-#spec 5060
-#explspr 10057
-#precision 0
-#nreff 8000
-#end
+--#newspell
+--#copyspell "Raise Dead"  -- To get sound
+--#name "Summon Tomb Swarms"
+--#descr "This spell summons a huge swarm of undead insects, scorpions and spiders from the depths of the Nehekharan tombs. The mindless swarm will crawl under armor and reduce enemy soldiers to skeletons within seconds."
+--#school 0
+--#restricted 112
+--#researchlevel 4
+--#range 25
+--#path 0 5
+--#fatiguecost 100
+--#pathlevel 0 4
+--#effect 1
+--#flightspr -1
+--#damage 4557
+--#spec 5060
+--#explspr 10057
+--#precision 0
+--#nreff 8000
+--#end
 
 ////////////  Summon Constructs \\\\\\\\\\\\\
 
@@ -38024,21 +38123,21 @@ capable of trampling large numbers of enemy troops."
 #nreff 4
 #end
 
-#newspell
-#name "Awaken Ushabti Avatar"
-#descr "The ancient gods of Nehekhara granted intelligence and magical power to a small number of Ushabti to act as their avatars. While the Gods have gone, the Ushabti remain. They are somewhat more powerful then lesser Ushabti, and possess magical powers."
-#school 4
-#restricted 112
-#researchlevel 8
-#path 0 4
-#path 1 5
-#pathlevel 0 4
-#pathlevel 1 4
-#fatiguecost 3500
-#effect 10021
-#damage 4561
-#nreff 1
-#end
+--newspell
+--name "Awaken Ushabti Avatar"
+--descr "The ancient gods of Nehekhara granted intelligence and magical power to a small number of Ushabti to act as their avatars. While the Gods have gone, the Ushabti remain. They are somewhat more powerful then lesser Ushabti, and possess magical powers."
+--school 4
+--restricted 112
+--researchlevel 8
+--path 0 4
+--path 1 5
+--pathlevel 0 4
+--pathlevel 1 4
+--fatiguecost 3500
+--effect 10021
+--damage 4561
+--nreff 1
+--end
 
 #newspell
 #name "Awaken Khemrian Warsphinx"
@@ -38169,7 +38268,7 @@ capable of trampling large numbers of enemy troops."
 #pathlevel 0 3
 #fatiguecost 1000
 #effect 10021
-#damage 4599
+#damage 188
 #nreff 1
 #end
 
@@ -38233,14 +38332,13 @@ capable of trampling large numbers of enemy troops."
 #newspell
 #name "Awaken Tomb King"
 #descr "The Tomb Kings of Nehehkhara were immortal individuals of extraordinary power (E2S1D5H5)."
-#school 0
 #restricted 112
 #researchlevel 7
 #path 0 5
 #pathlevel 0 7
 #fatiguecost 5000
 #effect 10021
-#damage 4557
+#damage 4556
 #nreff 1
 #end
 
@@ -38254,13 +38352,13 @@ capable of trampling large numbers of enemy troops."
 #addname "Ako"
 #addname "Akori"
 #addname "Alu"
-#addname "Amaht�"
-#addname "Amenemh�t"
+#addname "Amahté"
+#addname "Amenemhêt"
 #addname "Amenhotep"
 #addname "Anemro"
 #addname "Anhuri"
 #addname "Anok Fero"
-#addname "Anok Sab�"
+#addname "Anok Sabé"
 #addname "Ashai"
 #addname "Awan"
 #addname "Awi"
@@ -38269,17 +38367,17 @@ capable of trampling large numbers of enemy troops."
 #addname "Baki"
 #addname "Baraka"
 #addname "Bari"
-#addname "Benip�"
+#addname "Benipé"
 #addname "Biti"
 #addname "Bubu"
 #addname "Buikhu"
 #addname "Djadao"
-#addname "Fant�"
-#addname "H�tshepsu"
+#addname "Fanté"
+#addname "Hêtshepsu"
 #addname "Iabi"
 #addname "Ialu"
-#addname "Ibenr�"
-#addname "Itaf�"
+#addname "Ibenré"
+#addname "Itafé"
 #addname "Itennu"
 #addname "Djal"
 #addname "Kahotep"
@@ -38292,19 +38390,19 @@ capable of trampling large numbers of enemy troops."
 #addname "Kufu"
 #addname "Manu"
 #addname "Mdjai"
-#addname "Menetnasht�"
+#addname "Menetnashté"
 #addname "Meti"
 #addname "Mhotep"
 #addname "Mkhai"
 #addname "Mkalbuti"
 #addname "Mshai"
 #addname "Mtidja"
-#addname "Mum�"
+#addname "Mumé"
 #addname "Muntuhotep"
 #addname "Nebi"
 #addname "Nebibi"
 #addname "Nebtawi"
-#addname "Nif�-en-Ankh"
+#addname "Nifé-en-Ankh"
 #addname "Nomti"
 #addname "Nsu"
 #addname "Nubi"
@@ -38323,14 +38421,14 @@ capable of trampling large numbers of enemy troops."
 #addname "Shalam"
 #addname "Shenti"
 #addname "Shushu"
-#addname "Sinuh�"
+#addname "Sinuhé"
 #addname "Sokkwi"
 #addname "Suten Anu"
 #addname "Suten Hamu"
-#addname "Top Betuk�"
+#addname "Top Betuké"
 #addname "Udjai"
 #addname "Uro"
-#addname "Ursh�"
+#addname "Urshé"
 #addname "Wakhakwi"
 #addname "Wakhashem"
 #addname "Wati"
@@ -38575,9 +38673,9 @@ emerging from their tombs to rebuild their lost kingdoms."
 ///////////////// Starting units \\\\\\\\\\\\\\\\\\\\
 
 #startcom 190 -herald
-#startunittype1 4534 -spearmen
+#startunittype1 191 -spearmen
 #startunitnbrs1 15
-#startunittype2 4539 -archer
+#startunittype2 195 -archer
 #startunitnbrs2 15
 #startscout 260
 
@@ -38601,7 +38699,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 --#addrecunit 192 -- Infantry
 --#addrecunit 187 -- Heavy Infantry
 --#addrecunit 4104 -- Archer
---#addrecunit 4552 -- Asp Archer
+--#addrecunit 189 -- Asp Archer
 --#addrecunit 4106 -- Cavalry
 --#addrecunit 4553 -- Chariot
 --#addrecunit  -- Tomb Guard
@@ -38616,11 +38714,11 @@ emerging from their tombs to rebuild their lost kingdoms."
 --
 --#addreccom 190 -- Tomb Herald
 --#addreccom 4562 -- Tomb Prince
---#addreccom 4599 -- Necrotect
+--#addreccom 188 -- Necrotect
 --#addreccom 260 -- Acolyte
 --#addreccom 4555 -- Liche riest
 --#addreccom 4556 -- Liche High Priest
---#addreccom 4557 -- Tomb King
+--#addreccom 4556 -- Tomb King
 --#addreccom 4570 -- Titan
 
 
@@ -42710,7 +42808,6 @@ of wolves, and have great power over the packs that haunt the Sylvanian forests.
 #armor "Full Ring Mail"
 #armor "Full Helmet"
 #onebattlespell	"Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
-#batstartsum3 5245
 #end
 
 #newmonster 5271 -- Newly created House of Dust vampire
@@ -42762,7 +42859,6 @@ leadership are diminished."
 #mountainsurvival
 #shapechange 5269
 #onebattlespell	"Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
-#batstartsum3 5245
 #end
 
 
@@ -42777,7 +42873,7 @@ his descendants for the most part keeping their vampirism a secret until the arr
 is extraordinarily powerful, and they enjoy great physical might, magical power and the ability to shift forms as well as perhaps the
 greatest innate power to raise the living dead of any being in existence. The bloodline has diverged into two mutually suspicious Houses,
 with differing traits. Vampires of the House of Shadows are known for their cunning and magical abilities, and are capable generals. They
-are able to transform into vampire bats, and can summon them in large numbers.""
+are able to transform into vampire bats, and can summon them in large numbers."
 #name "Von Carstein, House of Shadows"
 #gcost 450
 #hp 48
@@ -42818,7 +42914,6 @@ are able to transform into vampire bats, and can summon them in large numbers.""
 #domsummon20 5243 -- Fell bat
 #makemonsters5 5240 -- Vampire bats
 #onebattlespell	"Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
-#batstartsum4 5243
 #end
 
 #newmonster 5273 -- Newly created House of Shadows vampire
@@ -42868,7 +42963,6 @@ to travel in the shadows and on moonless nights, and cannot cross terrain as qui
 #okundeadleader
 #shapechange 5270
 #onebattlespell	"Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
-#batstartsum4 5243
 #end
 
 -newmonster 5236 -- Newly created Von Carstein vampire. As normal von Carsteins except in age.
@@ -44412,7 +44506,7 @@ Once they have devoured the flesh, the Ghouls will serve the Necrarch."
 Nation 		111
 Monsters 	4400-99
 Sites 		1705-9
-Weapons 	1350-79
+Weapons 	1350-79, 1044 (Stave of Avelorn hotfix)
 Armor 		710-19
 Nametypes 	172,173,174
 
@@ -44601,31 +44695,31 @@ Nametypes 	172,173,174
 
 ---- Stave of Avelorn
 --
---#newweapon 1024
---#name "Stave of Avelorn 2h"
---#type 2
---#dmg 10
---#att 1
---#def 3
---#len 4
---#magic
---#nratt 3
---#end
+#newweapon 1044
+#name "Stave of Avelorn 2h"
+#type 2
+#dmg 10
+#att 1
+#def 3
+#len 4
+#magic
+#nratt 3
+#end
+
+#selectitem 1044
+#restricted 111
+#spr "./Warhammer-Complete/staveavelorn.tga"
+#name "Stave of Avelorn"
+#descr "Stave of Avelorn gives +1 to all magics paths."
 --
---#selectitem 1024
---#restricted 111
---#spr "./Warhammer-Complete/staveavelorn.tga"
---#name "Stave of Avelorn"
---#descr "Stave of Avelorn gives +1 to all magics paths."
---
---#magicboost 53 1 -all paths +1
---#type 2
---#constlevel 12
---#mainpath 6
---#mainlevel 2
---#weapon 1020
---#cursed
---#end
+#magicboost 53 1 -all paths +1
+#type 2
+#constlevel 12
+#mainpath 6
+#mainlevel 2
+#weapon 1020
+#cursed
+#end
 
 
 
@@ -46075,6 +46169,4564 @@ Priests: Average."
 #multihero2 4442 -captain
 
 
+#end
+
+
+
+
+--1.1--
+
+-- FIX - Should no longer have issues with the 'summon imp' copyspell
+
+-- FIX - Standard effects reworked to inspirational leadership
+
+-- TWEAK - Priests of Sotek given a research malus
+
+-- CONTENT - Blade of realities, Skavenpelt Banner
+
+-- TWEAK - national items now have a red square outline
+
+
+
+
+--1.0--
+
+-- converted to dom4
+
+-- recruitables now based on terrain
+-- monster ids
+-- nation id
+-- resistances
+-- slann now slowrecruit
+-- onebattlespell communion slave changed to the comslave command
+-- gave weapons their appropriate damage types
+-- fixednames for heroes
+-- fort types changed to dom4 style, all forts 100% more expensive, Lizardmen can only build rubbish forts at great expense
+-- poison weapons made more likely to wound, because poison now requires wounding
+
+-- CONTENT - added piranha blade as a new item, to test it out
+
+-- TWEAK - Chameleons get darkvision
+
+-- TWEAK - slann got innate caster (aka bonusspells) and for this reason, the contemplate missile weapon
+
+-- CONTENT - Gor Rok, hero
+
+-- CONTENT - Tehenhauin, hero
+
+-- CONTENT - Oxyotl, hero
+
+-- CONTENT - Mazdamundi, second gen slann summon
+
+-- CONTENT - Ripperdactyl rider unit
+
+
+-- the future
+
+
+-- CONTENT - add remaining second gen summon (nature)
+
+-- CONTENT - add kroq gar on carnosaur hero
+
+-- CONTENT - second gen also available as pretenders?
+
+-- CONTENT - Kroak as a hero - not a powerful mage, more of a relic that has a poweful missile weapon
+
+-- CONTENT - Tetta Ekko as hero
+
+
+
+
+----Uses ID numbers
+
+--monsters 3288-3365
+
+--weapons  810-839
+
+--armour 370-376
+
+--sites 1510-1511
+
+--nation 101
+
+
+
+-------- New Weapons
+
+
+#newweapon 834
+#name "Contemplate"
+#dmg 1
+#dt_cap
+#att 0
+#def 0
+#len 0
+#magic
+#rcost 0
+#magic
+#bonus
+#norepel
+#mrnegateseasily
+#range 100
+#ammo 100
+#nostr
+#end
+
+
+#newweapon 811
+#name "Obsinite Halberd"
+#dmg 9
+#att -1
+#def 0
+#len 4
+#magic
+#rcost 6
+#sound 10
+#slash
+#pierce
+#end
+
+#newweapon 813
+#name "Skink Blowpipe"
+#dmg 5
+#nostr
+#att 3
+#def 0
+#ammo 20
+#range 10
+#flyspr 403 1
+#sound 46
+#rcost 1
+#pierce
+#secondaryeffect 50
+#end
+
+#newweapon 814
+#name "Horned One Bite"
+#nostr
+#dmg 13
+#att 0
+#def 0
+#len 3
+#bonus
+#rcost 1
+#sound 50
+#pierce
+#end
+
+#newweapon 815
+#name "Obsinite Axe"
+#dmg 8
+#att 1
+#def 0
+#len 3
+#rcost 5
+#sound 10
+#slash
+#end
+
+
+
+#newweapon 816
+#name "Cold One Bite"
+#nostr
+#dmg 16
+#att 0
+#def 0
+#len 4
+#bonus
+#rcost 1
+#sound 50
+#pierce
+#end
+
+#newweapon 817
+#name "Cold One Claw"
+#nostr
+#dmg 15
+#att 0
+#def 0
+#len 4
+#bonus
+#rcost 1
+#sound 38
+#slash
+#pierce
+#end
+
+#newweapon 819
+#name "Chameleon Blowpipe"
+#dmg 5
+#nostr
+#att 3
+#def 0
+#ammo 10
+#range 10
+#flyspr 403 1
+#sound 46
+#rcost 1
+#secondaryeffect 51 -- strong poison
+#pierce
+#armorpiercing
+#end
+
+#newweapon 839
+#name "Golden Blowpipe"
+#dmg 10
+#nostr
+#att 5
+#def 0
+#ammo 20
+#range 25
+#flyspr 403 1
+#sound 46
+#rcost 1
+#pierce
+#nratt 2
+#armorpiercing
+#secondaryeffect 52 -- death poison
+#end
+
+#newweapon 821
+#name "Salamander Bite"
+#dmg 2
+#att 0
+#def -1
+#bonus
+#rcost 0
+#secondaryeffect 216 -- fire
+#pierce
+#end
+
+
+#newweapon 822
+#name "Terradon Bite"
+#nostr
+#dmg 12
+#att 1
+#def 0
+#len 3
+#bonus
+#rcost 0
+#sound 50
+#pierce
+#end
+
+
+#newweapon 823
+#name "Terradon Talon"
+#nostr
+#dmg 11
+#att 2
+#def 0
+#len 3
+#bonus
+#rcost 0
+#pierce
+#end
+
+#newweapon 837
+#name "Ripperdactyl Bite"
+#nostr
+#dmg 11
+#att 1
+#def -1
+#len 3
+#bonus
+#rcost 0
+#sound 50
+#pierce
+#armorpiercing
+#end
+
+
+#newweapon 836
+#name "Ripperdactyl Talon"
+#nostr
+#dmg 16
+#att 2
+#def 0
+#len 3
+#bonus
+#rcost 0
+#pierce
+#slash
+#end
+
+
+#newweapon 824
+#name "Skink Javelin"
+#dmg 5
+#ammo 3
+#len 6
+#rcost 1
+#sound 19
+#pierce
+#end
+
+#newweapon 825
+#name "Riptide Trident"
+#dmg 9
+#magic
+#att 1
+#len 4
+#rcost 1
+#pierce
+#end
+
+#newweapon 826
+#name "Howdah Bows" --- (longrange)
+#dmg 8
+#nostr
+#att 2
+#def 0
+#range 25
+#ammo 1
+#nratt 6
+#flyspr 109 1
+#sound 14
+#bonus
+#pierce
+#end
+
+#newweapon 827
+#name "Howdah Bows" --- (midrange)
+#dmg 8
+#nostr
+#att 2
+#def 0
+#range 18
+#ammo 1
+#nratt 6
+#flyspr 109 1
+#sound 14
+#bonus
+#pierce
+#end
+
+#newweapon 828
+#name "Howdah Javelins" --- (shortrange)
+#dmg 16
+#nostr
+#att 2
+#def 0
+#range 10
+#ammo 1
+#nratt 6
+#flyspr 110 1
+#sound 19
+#bonus
+#pierce
+#end
+
+#newweapon 829
+#name "Scouring Gaze"
+#dmg 6
+#dt_holy
+#armorpiercing
+#bonus
+#ammo 3
+#range 10
+#nostr
+#aoe 1
+#mrnegates
+#explspr 10117
+#end
+
+#newweapon 830
+#name "Ancient Halberd"
+#dmg 10
+#att 0
+#def 0
+#len 4
+#magic
+#dt_demon
+#rcost 1
+#sound 10
+#pierce
+#slash
+#end
+
+#newweapon 831
+#name "Spiked Tail"
+#dmg 4
+#att 0
+#def -1
+#len 4
+#bonus
+#rcost 0
+#pierce
+#blunt
+#end
+
+#newweapon 832
+#name "Tail Spines"
+#dmg 0
+#armorpiercing
+#bonus
+#att 2
+#range -1
+#nratt 6
+#ammo 3
+#flyspr 337 1 -- diagonal thing
+#pierce
+#end
+
+#newweapon 833
+#name "End of Daemons"
+#dmg 15
+#att 2
+#def 1
+#twohanded
+#sound 10
+#len 4
+#magic
+#dt_demon
+#rcost 3
+#blunt
+#end
+
+#newweapon 818
+#name "Blade of Ancient Skies"
+#dmg 9
+#att 1
+#def 1
+#len 3
+#rcost 5
+#magic
+#armorpiercing
+#slash
+#pierce
+#end
+
+#newweapon 838
+#name "Piranha Blade"
+#dmg 10
+#att 2
+#def -1
+#len 3
+#rcost 1
+#magic
+#armorpiercing
+#slash
+#pierce
+#nratt 2
+#end
+
+#newweapon 840
+#name "Blade of Realities"
+#dmg 12
+#att 1
+#def 1
+#len 3
+#rcost 1
+#magic
+#armornegating
+#secondaryeffect "Soulslay"
+#slash
+#end
+
+
+#newweapon 820
+#name "Star Stone Mace"
+#dmg 12
+#att 2
+#def 1
+#twohanded
+#sound 10
+#len 4
+#magic
+#dt_magic
+#rcost 3
+#nratt 2
+#blunt
+#end
+
+#newweapon 835
+#name "Mace of Ulumak"
+#dmg 9
+#att 4
+#def 0
+#sound 10
+#len 4
+#magic
+#rcost 3
+#nratt 2
+#blunt
+#end
+
+
+#newweapon 812
+#name "Sword of Rhuin"
+#dmg 10
+#att 1
+#def 1
+#magic
+#aoe 3
+#armorpiercing
+#dt_fire
+#explspr 10113
+#slash
+#end
+
+#newweapon 810
+#name "Rampage"
+#dmg 0
+#att 0
+#def -1
+#len 4
+#bonus
+#nratt 3
+#rcost 0
+#blunt
+#pierce
+#end
+
+-------- New Armour
+
+
+#newarmor 370
+#name "Bone Helmet"
+#type 6
+#prot 8
+#def 0
+#enc 0
+#rcost 2
+#end
+
+#newarmor 371
+#name "Ceremonial Plates"
+#type 5
+#prot 6
+#def 0
+#enc 0
+#rcost 3
+#end
+
+#newarmor 372
+#name "Crest Plate"
+#type 6
+#prot 8
+#def 0
+#enc 0
+#rcost 3
+#end
+
+#newarmor 373
+#name "Magic Barrier"
+#type 4
+#prot 10
+#enc 0
+#def 8
+#rcost 1
+#end
+
+
+#newarmor 374
+#name "Mask of Heavens"
+#type 6
+#prot 18
+#def 0
+#enc 0
+#rcost 3
+#end
+
+
+#newarmor 375
+#name "Helm of the Prime Guardian"
+#type 6
+#prot 13
+#def 0
+#enc 0
+#rcost 1
+#end
+
+#newarmor 376
+#name "Shield of Aeons"
+#type 4
+#prot 25
+#enc 3
+#def 5
+#rcost 1
+#end
+
+
+----------------- MONSTERS
+
+
+-------- Recruits
+
+
+---- Saurus Warrior (Sword)
+
+#newmonster 3310
+#spr1 "./Warhammer-Complete/Saurus Warrior.tga"
+#spr2 "./Warhammer-Complete/Saurus Warrior2.tga"
+#name "Saurus Warrior"
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. Performing only the simplest tasks outside of warfare, Saurus may seem slow witted, but in battle the Skinks defer to their honed instincts and innate understanding of tactics. The obsinite weapons they wield may seem crude, but they are as deadly as any forged of steel. Saurus get tougher and more ferocious as they age, eventually gaining the status of Scar Veteran or Oldblood. No Saurus has ever died from old age. Cold blooded, near emotionless and spawned purely for war, the Saurus are unlikely to break."
+#hp 15
+#size 2
+#prot 10
+#mor 14
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 13
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Broad Sword"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#nametype 123
+#end
+
+
+---- Saurus Warrior (Spear)
+
+#newmonster 3311
+#spr1 "./Warhammer-Complete/Saurus Spear.tga"
+#spr2 "./Warhammer-Complete/Saurus Spear2.tga"
+#name "Saurus Warrior"
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. Performing only the simplest tasks outside of warfare, Saurus may seem slow witted, but in battle the Skinks defer to their honed instincts and innate understanding of tactics. The obsinite weapons they wield may seem crude, but they are as deadly as any forged of steel. Saurus get tougher and more ferocious as they age, eventually gaining the status of Scar-Veteran or Oldblood. No Saurus has ever died from old age. Cold blooded, near emotionless and spawned purely for war, the Saurus are unlikely to break."
+#hp 15
+#size 2
+#prot 10
+#mor 14
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 13
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Spear"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#nametype 123
+#end
+
+
+---- Skink Hunter (Blowpipe)
+
+#newmonster 3312
+#spr1 "./Warhammer-Complete/Skink Blowpipe.tga"
+#spr2 "./Warhammer-Complete/Skink Blowpipe2.tga"
+#name "Skink Hunter"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Despite this they are swift and stealthy hunters and very skilled with their blowpipes. While these weapons do little damage, they are remarkably accurate. Skinks are well suited to swamps and have built partial resistance to poison."
+#hp 7
+#size 1
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 11
+#mapmove 2
+#ap 16
+#gcost 5
+#rcost 1
+#weapon "Bite"
+#weapon "Skink Blowpipe"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#nametype 123
+#end
+
+
+
+---- Skink (Javelin)
+
+#newmonster 3313
+#spr1 "./Warhammer-Complete/Skink Skirmisher.tga"
+#spr2 "./Warhammer-Complete/Skink Skirmisher2.tga"
+#name "Skink Skirmisher"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Skink skirmishers use poisoned javelins in conjunction with shields and are less vulnerable to missile fire than their fellows armed with the more traditional blowpipe. All Skinks are well suited to swamps and have built partial resistance to poison."
+#hp 7
+#size 1
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 6
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Javelin"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#nametype 123
+#end
+
+
+---- Skink Archer
+
+#newmonster 3314
+#spr1 "./Warhammer-Complete/Skink Bow.tga"
+#spr2 "./Warhammer-Complete/Skink Bow2.tga"
+#name "Skink Archer"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Though crude by the standards of other races the bows and poisoned arrows used by Skinks of the Southlands have greater range than the traditional blowpipes or javelins."
+#hp 7
+#size 1
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 6
+#rcost 1
+#weapon "Bite"
+#weapon "Small Bow"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#nametype 123
+#end
+
+
+---- Red Crested Skink
+
+#newmonster 3315
+#spr1 "./Warhammer-Complete/Skink Redcrest.tga"
+#spr2 "./Warhammer-Complete/Skink Redcrest2.tga"
+#name "Red Crested Skink"
+#descr "When the city of Chaqua fell to the Skaven Clan Pestilens, the only survivors of the virulent and terrible plagues released by the ratmen were a single spawning of Red Crested Skink. The leader of these Skinks was Tehenhauin, prophet of Sotek and a skink of extraordinary size. Tehenhauin and his followers went on to spread the Cult of Sotek across Lustria, exterminating countless Skaven. Entirely immune to all manner of poisons and considerably more aggressive than their fellows, the Red Crested Skinks won countless battles against the ratmen and spawned in unprecedented numbers. With the growing power of the Cult of Sotek, seething hosts of Red Crested Skinks are an increasingly important part of the Lizardman war effort."
+#hp 8
+#size 1
+#prot 3
+#mor 11
+#mr 11
+#enc 3
+#str 9
+#att 10
+#def 11
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 8
+#rcost 1
+#armor "Shield"
+#weapon "Short Sword"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#berserk 0
+#stealthy 0
+#nametype 123
+#end
+
+
+---- Kroxigor
+
+#newmonster 3316
+#spr1 "./Warhammer-Complete/Kroxigor.tga"
+#spr2 "./Warhammer-Complete/Kroxigor2.tga"
+#name "Kroxigor"
+#descr "The Kroxigor are giant cousins of the Saurus, bred for their brute strength and power. This raw power has come at the cost of the intellect of their smaller fellows, however. Kroxigor are given heavy weapons with which they smash their foes in battle, dealing collossal damage. As with the Saurus they are also more than capable of killing with their razor sharp teeth. The scaly skin of the Kroxigor is capable of deflecting even axe and sword blows and they are notoriously hard to kill. They are best employed against large foes or heavily armoured enemy elites and will not fare so well against a throng of lesser foes."
+#hp 30
+#size 3
+#prot 15
+#mor 12
+#mr 11
+#enc 3
+#str 19
+#att 10
+#def 9
+#prec 5
+#mapmove 2
+#ap 17
+#gcost 40
+#rcost 1
+#weapon "Great Club"
+#weapon "Bite"
+#poisonres 5
+#maxage 2000
+#swampsurvival
+#forestsurvival
+#nametype 123
+#coldblooded
+#end
+
+
+
+---- Salamander
+
+#newmonster 3317
+#spr1 "./Warhammer-Complete/Salamander.tga"
+#spr2 "./Warhammer-Complete/Salamander2.tga"
+#name "Salamander"
+#descr "Salamanders are giant predatory amphibians that inhabit the swamplands and estuaries of the jungles. They are swift-moving creatures on both land and water, and are voracious hunters. On land they are capable of launching deadly accurate burst of flaming liquid from their gullet before charging forward to devour their prey with their powerful jaws. Underwater they are strong and agile swimmers, though they are unable to effectively use fire attacks against their foes. Properly trained by skilled Skink handlers, Salamanders may be turned loose in battle to wreak havoc amongst intruders to Lizardman territory."
+#hp 27
+#size 3
+#prot 11
+#mor 11
+#mr 8
+#enc 3
+#str 16
+#att 11
+#def 11
+#prec 12
+#mapmove 2
+#ap 18
+#gcost 85
+#rcost 1
+#weapon "Salamander Bite"
+#weapon 225 -- non str based fire breath
+#poisonres 5
+#maxage 2000
+#swampsurvival
+#forestsurvival
+#amphibian
+#animal
+#watershape 3355
+#nametype 123
+#end
+
+
+
+---- Salamander waterform
+
+#newmonster 3355
+#spr1 "./Warhammer-Complete/Salamander Waterform.tga"
+#spr2 "./Warhammer-Complete/Salamander Waterform2.tga"
+#name "Salamander"
+#descr "Salamanders are giant predatory amphibians that inhabit the swamplands and estuaries of the jungles. They are swift-moving creatures on both land and water, and are voracious hunters. On land they are capable of launching deadly accurate burst of flaming liquid from their gullet before charging forward to devour their prey with their powerful jaws. Underwater they are strong and agile swimmers, though they are unable to effectively use fire attacks against their foes. Properly trained by skilled Skink handlers, Salamanders may be turned loose in battle to wreak havoc amongst intruders to Lizardman territory."
+#hp 27
+#size 3
+#prot 11
+#mor 11
+#mr 11
+#enc 3
+#str 16
+#att 12
+#def 12
+#prec 10
+#mapmove 1
+#ap 24
+#gcost 85
+#rcost 1
+#weapon "Salamander Bite"
+#poisonres 5
+#maxage 2000
+#swampsurvival
+#forestsurvival
+#amphibian
+#animal
+#landshape 3317
+#nametype 123
+#end
+
+
+
+---- Temple Guard
+
+#newmonster 3318
+#spr1 "./Warhammer-Complete/Temple Guard.tga"
+#spr2 "./Warhammer-Complete/Temple Guard2.tga"
+#name "Temple Guard"
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. The Temple Guard are a variant spawning of Saurus created to protect the Slann at all costs. They have more heavily armoured scales than other Saurus and instinctually possess an unshakeable resolve to guard their masters. Temple Guard are rarely spawned in these troubled times and most of their number are the veterans of countless battles, grown stronger and more savage with age. It would take an incredible feat to cause the Temple Guard to break from battle. The obsinite halberds used by Temple Guard are as ancient as the Slann and have absorbed much latent magic over the centuries."
+#hp 16
+#size 2
+#prot 10
+#mor 18
+#mr 11
+#enc 3
+#str 13
+#att 11
+#def 10
+#prec 9
+#mapmove 1
+#ap 10
+#gcost 30
+#rcost 1
+#armor "Shield"
+#armor "Bone Helmet"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon "Obsinite Halberd"
+#castledef 1
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#holy
+#nametype 123
+#bodyguard 3
+#end
+
+
+
+---- Skink Cavalry
+
+#newmonster 3319
+#spr1 "./Warhammer-Complete/Skink Cavalry.tga"
+#spr2 "./Warhammer-Complete/Skink Cavalry2.tga"
+#name "Skink Cavalry"
+#descr "The Lizardmen forces of the Southlands make far greater use of Skink fighters, as Saurus are infrequently spawned and the last of the feared Oldblood generals died off long ago. Furthermore, the native creatures of the Southlands differ greatly from those of Lustria. The larger and stronger Cold Ones are replaced by quicker, smaller Horned Ones. Unable to bear the weight of a Saurus warrior, Horned Ones nontheless make excellent mounts for the more warlike Skinks of the Southlands and are often used in stealthy raids. Packs of these lightning fast cavalry flank enemy infantry and can take out unprotected missile troops with relative ease. Should the Skink rider be slain, the Horned One's natural aggression might keep it in battle temporarily, but it will escape to the wild soon after."
+#hp 8
+#size 3
+#prot 7
+#mor 10
+#mr 11
+#enc 5
+#str 9
+#att 9
+#def 9
+#prec 10
+#mapmove 3
+#ap 26
+#gcost 25
+#rcost 1
+#weapon "Horned One Bite"
+#weapon "Light Lance"
+#armor "Shield"
+#maxage 500
+#startage 100
+#forestsurvival
+#coldblooded
+#poisonres 7
+#mounted
+#secondtmpshape 3320 -- Horned One
+#nametype 123
+#stealthy 0
+#end
+
+
+---- Horned One
+
+#newmonster 3320
+#spr1 "./Warhammer-Complete/Horned One.tga"
+#spr2 "./Warhammer-Complete/Horned One2.tga"
+#name "Horned One"
+#descr "With its rider slain, the Horned One may continue to fight, driven by powerful hunting instincts. However once the battle is over, it will quickly escape to the wild."
+#hp 15
+#size 3
+#prot 11
+#mor 8
+#mr 6
+#enc 3
+#str 14
+#att 10
+#def 10
+#prec 10
+#mapmove 2
+#ap 26
+#gcost 1
+#rcost 1
+#weapon "Bite"
+#maxage 500
+#startage 100
+#forestsurvival
+#coldblooded
+#animal
+#poisonres 7
+#animal
+#nametype 123
+#end
+
+
+---- Chameleon Skink
+
+#newmonster 3321
+#spr1 "./Warhammer-Complete/Skink Chameleon.tga"
+#spr2 "./Warhammer-Complete/Skink Chameleon2.tga"
+#name "Chameleon Skink"
+#descr "Chameleon Skinks are a subspecies of Skink that are distinguished from their fellows by their aggression, predatory instincts and sheer stealth. Due to their chameleonic skin which shifts to match their surroundings, they are capable of stalking their prey through any terrain, their protruding eyes scanning independently for threats while they stay absolutely motionless. Chameleon Skinks are known to have remained in place for hours on end awaiting the perfect ambush and even in open ground they are virtually impossible to see clearly. It had been so long since the last spawning of these Skinks that they were thought to be lost forever, but in these recent years of war, they have begun to spontaneously spawn across Lizardman territory, a sign from the Old Ones that the Slann have yet to decipher. They are armed with powerful poisoned blowpipes."
+#hp 7
+#size 1
+#prot 2
+#mor 11
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 12
+#mapmove 2
+#ap 16
+#gcost 9
+#rcost 1
+#weapon "Bite"
+#weapon "Chameleon Blowpipe"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 40
+#nametype 123
+#illusion
+#darkvision 50
+#end
+
+
+---- Chameleon Skinks (2)
+
+#newmonster 3322
+#spr1 "./Warhammer-Complete/Skink ChameleonA.tga"
+#spr2 "./Warhammer-Complete/Skink ChameleonA2.tga"
+#name "Chameleon Skinks"
+#descr "Chameleon Skinks are a subspecies of Skink that are distinguished from their fellows by their aggression, predatory instincts and sheer stealth. Due to their chameleonic skin which shifts to match their surroundings, they are capable of stalking their prey through any terrain, their protruding eyes scanning independently for threats while they stay absolutely motionless. Chameleon Skinks are known to have remained in place for hours on end awaiting the perfect ambush and even in open ground they are virtually impossible to see clearly. It had been so long since the last spawning of these Skinks that they were thought to be lost forever, but in these recent years of war, they have begun to spontaneously spawn across Lizardman territory, a sign from the Old Ones that the Slann have yet to decipher. They are armed with powerful poisoned blowpipes."
+#hp 7
+#size 2
+#prot 2
+#mor 11
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 12
+#mapmove 2
+#ap 16
+#gcost 18
+#rcost 1
+#weapon "Bite"
+#weapon "Bite"
+#weapon "Chameleon Blowpipe"
+#weapon "Chameleon Blowpipe"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 40
+#secondshape 3321
+#nametype 123
+#ambidextrous 5
+#illusion
+#darkvision 50
+#end
+
+
+
+---- Skink Hunters (Blowpipe) (2)
+
+#newmonster 3323
+#spr1 "./Warhammer-Complete/Skink BlowpipeA.tga"
+#spr2 "./Warhammer-Complete/Skink BlowpipeA2.tga"
+#name "Skink Hunters"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Despite this they are swift and stealthy hunters and very skilled with their blowpipes, so much so that they can easily place their darts past upheld shields. Skinks are well suited to swamps and have built partial resistance to poison."
+#hp 7
+#size 2
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 11
+#mapmove 2
+#ap 16
+#gcost 10
+#rcost 0
+#weapon "Bite"
+#weapon "Bite"
+#weapon "Skink Blowpipe"
+#weapon "Skink Blowpipe"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#secondshape 3312
+#nametype 123
+#ambidextrous 5
+#end
+
+
+
+---- Skinks (Javelin) (2)
+
+#newmonster 3324
+#spr1 "./Warhammer-Complete/Skink SkirmisherA.tga"
+#spr2 "./Warhammer-Complete/Skink SkirmisherA2.tga"
+#name "Skink Skirmishers"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Skink skirmishers use poisoned javelins in conjunction with shields and are less vulnerable to missile fire than their fellows armed with the more traditional blowpipe. All Skinks are well suited to swamps and have built partial resistance to poison."
+#hp 7
+#size 2
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 11
+#rcost 0
+#armor "Shield"
+#weapon "Bite"
+#weapon "Bite"
+#weapon "Javelin"
+#weapon "Javelin"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#secondshape 3313
+#nametype 123
+#ambidextrous 5
+#end
+
+
+---- Skink Archers (2)
+
+#newmonster 3325
+#spr1 "./Warhammer-Complete/Skink BowA.tga"
+#spr2 "./Warhammer-Complete/Skink BowA2.tga"
+#name "Skink Archers"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Though crude by the standards of other races the bows and poisoned arrows used by Skinks of the Southlands have greater range than the traditional blowpipes or javelins."
+#hp 7
+#size 2
+#prot 2
+#mor 10
+#mr 11
+#enc 3
+#str 8
+#att 8
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 11
+#rcost 1
+#weapon "Bite"
+#weapon "Bite"
+#weapon "Small Bow"
+#weapon "Small Bow"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#stealthy 0
+#secondshape 3314
+#nametype 123
+#ambidextrous 5
+#end
+
+
+---- Red Crested Skinks (2)
+
+#newmonster 3326
+#spr1 "./Warhammer-Complete/Skink RedcrestA.tga"
+#spr2 "./Warhammer-Complete/Skink RedcrestA2.tga"
+#name "Red Crested Skinks"
+#descr "When the city of Chaqua fell to the Skaven Clan Pestilens, the only survivors of the virulent and terrible plagues released by the ratmen were a single spawning of Red Crested Skink. The leader of these Skinks was Tehenhauin, prophet of Sotek and a skink of extraordinary size. Tehenhauin and his followers went on to spread the Cult of Sotek across Lustria, exterminating countless Skaven. Entirely immune to all manner of poisons and considerably more aggressive than their fellows, the Red Crested Skinks won countless battles against the ratmen and spawned in unprecedented numbers. With the growing power of the Cult of Sotek, seething hosts of Red Crested Skinks are an increasingly important part of the Lizardman war effort."
+#hp 8
+#size 2
+#prot 3
+#mor 11
+#mr 11
+#enc 3
+#str 9
+#att 10
+#def 10
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 16
+#rcost 1
+#armor "Shield"
+#weapon "Short Sword"
+#weapon "Short Sword"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#berserk 0
+#stealthy 0
+#secondshape 3315
+#nametype 123
+#ambidextrous 5
+#end
+
+
+---- Saurus Cavalry
+
+#newmonster 3327
+#spr1 "./Warhammer-Complete/Saurus Cavalry.tga"
+#spr2 "./Warhammer-Complete/Saurus Cavalry2.tga"
+#name "Saurus Cavalry"
+#descr "A number of Saurus warriors are born with a natural affinity for the volatile Cold Ones, large predatory reptiles which some refer to as the sharks of the land, so single minded and voracious are they. The Cold Ones are not near so fleet as a horse, but are powerful and dangerous creatures in their own right; Saurus cavalry are thus some of most powerful troops known. Formations of these cavalry are used to smash enemy elites, tear down great beasts or powerful warriors and generally cause a great deal of carnage in a very short time. The Cold Ones themselves are extremely thick skinned and resilient and the slime exuded from their scaly hide is capable of healing even grievous wounds inflicted on both beast and rider."
+#hp 16
+#size 4
+#prot 14
+#mor 15
+#mr 11
+#enc 5
+#str 12
+#att 11
+#def 8
+#prec 8
+#mapmove 2
+#ap 18
+#gcost 75
+#rcost 1
+#armor "Shield"
+#weapon "Cold One Bite"
+#weapon "Cold One Claw"
+#weapon "Light Lance"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 5
+#heal
+#secondtmpshape 3328
+#mounted
+#nametype 123
+#end
+
+
+---- Cold One
+
+#newmonster 3328
+#spr1 "./Warhammer-Complete/Cold One.tga"
+#spr2 "./Warhammer-Complete/Cold One2.tga"
+#name "Cold One"
+#descr "Cold Ones are large predatory reptiles that inhabit much of the New World. They are used as mounts by both the Dark Elves and Lizardmen and are capable of tearing most foes apart with ease. They are not particularly fleet animals and are extremely single minded, almost like sharks, however they are extremely resilient. Their thick, scaled hide oozes a slime which though foul smelling is actually an extremely potent healing agent."
+#hp 24
+#size 3
+#prot 15
+#mor 11
+#mr 6
+#enc 4
+#str 15
+#att 10
+#def 9
+#prec 6
+#mapmove 2
+#ap 18
+#gcost 1
+#rcost 1
+#weapon "Bite"
+#weapon "Claw"
+#maxage 500
+#startage 100
+#forestsurvival
+#coldblooded
+#animal
+#poisonres 7
+#animal
+#nametype 123
+#itemslots 12288
+#end
+
+
+---- Terradon Rider
+
+#newmonster 3336
+#spr1 "./Warhammer-Complete/Terradon Rider.tga"
+#spr2 "./Warhammer-Complete/Terradon Rider2.tga"
+#name "Terradon Rider"
+#descr "Dwelling in the jungle canopy hundreds of metres above ground, Terradons are dangerous predators. Their keen eyesight allows them to spot prey with ease and their huge leathery wings propel them through the canopy with incredible speed and agility. Skinks have mastered the art of riding Terradons, guiding them to strike vulnerable foes with their vicious talons and beak while the Skink hurls down javelins with considerable force. While they are capable of quickly dealing a great deal of damage, neither Terradon nor Skink is built for pitched melee and they are quick to depart if faced with unfavourable odds. Terradons are silent killers capable of flying extremely close to the ground and often accompany Skink raiding parties."
+#hp 8
+#size 3
+#prot 7
+#mor 10
+#mr 11
+#enc 4
+#str 9
+#att 9
+#def 9
+#prec 10
+#mapmove 3
+#flying
+#ap 8
+#gcost 32
+#rcost 1
+#weapon "Terradon Bite"
+#weapon "Skink Javelin"
+#weapon "Terradon Talon"
+#maxage 500
+#startage 100
+#forestsurvival
+#coldblooded
+#poisonres 7
+#mounted
+#secondtmpshape 3337 -- Terradon
+#nametype 123
+#stealthy 0
+#end
+
+
+---- Terradon
+
+#newmonster 3337
+#spr1 "./Warhammer-Complete/Terradon.tga"
+#spr2 "./Warhammer-Complete/Terradon2.tga"
+#name "Terradon"
+#descr "Dwelling in the jungle canopy hundreds of metres above ground, Terradons are dangerous predators. Their keen eyesight allows them to spot prey with ease and their huge leathery wings propel them through the canopy with incredible speed and agility. They attack their prey with their deadly talons and long beaks rowed with saw like teeth."
+#hp 14
+#size 3
+#prot 11
+#mor 9
+#mr 6
+#enc 3
+#str 12
+#att 10
+#def 12
+#prec 10
+#mapmove 3
+#flying
+#ap 8
+#gcost 1
+#rcost 1
+#weapon "Bite"
+#weapon "Claw"
+#maxage 500
+#startage 100
+#forestsurvival
+#coldblooded
+#animal
+#poisonres 7
+#animal
+#nametype 123
+#itemslots 12288
+#end
+
+
+---- Ripperdactyl Rider
+
+#newmonster 3359
+#spr1 "./Warhammer-Complete/Ripperdactyl Rider.tga"
+#spr2 "./Warhammer-Complete/Ripperdactyl Rider2.tga"
+#name "Ripperdactyl Rider"
+#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. While Terradons are quite readily trained as mounts Ripperdactyls see Skinks as nothing more than a snack and even those hand-raised from hatchlings often kill their masters. For this reason those Skinks who do succeed in controlling their mount tend to be a hardier more aggressive breed. Ripperdactyl Riders are armed and armoured for prolonged close combat unlike their skirmishing counterparts, but in truth it is the Ripperdactyl with its crushing jaws and decapitating talons that is the true weapon in the pairing."
+#hp 10
+#size 3
+#prot 9
+#mor 11
+#mr 11
+#enc 4
+#str 9
+#att 9
+#def 9
+#prec 10
+#mapmove 3
+#flying
+#ap 8
+#gcost 50
+#rcost 2
+#weapon "Ripperdactyl Bite"
+#weapon "Short Sword"
+#armor "Shield"
+#armor "Ceremonial Plates"
+#armor "Crest Plate"
+#weapon "Ripperdactyl Talon"
+#maxage 500
+#startage 100
+#forestsurvival
+#mountainsurvival
+#coldblooded
+#poisonres 5
+#mounted
+#secondtmpshape 3360 -- Ripperdactyl
+#nametype 123
+#stealthy 0
+#berserk 1
+#ressize 1
+#end
+
+
+---- Ripperdactyl
+
+#newmonster 3360
+#spr1 "./Warhammer-Complete/Ripperdactyl.tga"
+#spr2 "./Warhammer-Complete/Ripperdactyl2.tga"
+#name "Ripperdactyl"
+#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. With their crushing jaws and decapitating talons Ripperdactyls are a deadly threat to even armoured foes and they are known to kill for the joy of slaughter rather than to feed."
+#hp 19
+#size 3
+#prot 13
+#mor 12
+#mr 6
+#enc 3
+#str 16
+#att 11
+#def 11
+#prec 10
+#mapmove 3
+#flying
+#ap 8
+#gcost 1
+#rcost 1
+#weapon "Ripperdactyl Bite"
+#weapon "Claw"
+#weapon "Claw"
+#maxage 500
+#startage 100
+#forestsurvival
+#mountainsurvival
+#coldblooded
+#animal
+#poisonres 7
+#animal
+#nametype 123
+#itemslots 12288
+#berserk 1
+#end
+
+
+
+
+---- Stegadon
+
+#newmonster 3345
+#spr1 "./Warhammer-Complete/Stegadon.tga"
+#spr2 "./Warhammer-Complete/Stegadon2.tga"
+#name "Stegadon"
+#descr "The hostile jungles of Lustria are home to a phenomenal array of creatures, almost all deadly in their own fashion. Stegadons are among the largest and most aggressive of all. Gigantic, armoured beasts, they are primarily vegetarians, but not adverse to dining on those creatures foolish enough to stand in their path. Their strength is legendary, enough to uproot trees and, properly directed, help erect the great stone momuments of the Lizardmen. With sharp horns, ridges of spikes and a spined tail capable of cracking rocks, Stegadons are virtually unstoppable in battle by conventional means. Skink warchiefs have large howdahs strapped to these beasts and a crew of hunters fire upon the enemy with bows and javelins as the Stegadon charges forward."
+#hp 80
+#size 6
+#prot 18
+#mor 13
+#mr 9
+#enc 3
+#str 26
+#att 11
+#def 9
+#prec 10
+#mapmove 2
+#ap 18
+#gcost 280
+#rcost 50
+#weapon "Rampage"
+#weapon 826 -- bows
+#weapon 827 -- more bows
+#weapon 828 -- javelins
+#animal
+#trample
+#forestsurvival
+#coldblooded
+#itemslots 12288
+#fear 1
+#slashres
+#end
+
+
+
+
+----------------------- SACRED SPAWNINGS WITH THEIR COMMANDERS
+
+
+---- Saurus of Sotek
+
+#newmonster 3329
+#spr1 "./Warhammer-Complete/Saurus Sotek.tga"
+#spr2 "./Warhammer-Complete/Saurus Sotek2.tga"
+#name "Saurus of Sotek"
+#descr "The Cult of Sotek has grown in size and power since the war to drive the Skaven of Clan Pestilens from the New World. Sotek is not an Old One, though the serpent god of blood and vengeance was foretold by the Slann, who have yet to even acknowledge the Cult. Sotek is cruel and violent and his warriors are aggressive to the point of berserk rage. At first the followers of Sotek were all red crested Skinks and Tehenhauin, their prophet, the only true priest or leader amongst them. But since the expulsion of the Skaven, priests and even Saurus spawnings have born the blood red marking of Sotek. All of Sotek's chosen are immune to poison."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Obsinite Axe"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 30
+#berserk 4
+#nametype 123
+#end
+
+
+---- Bloodscale of Sotek
+
+#newmonster 3342
+#spr1 "./Warhammer-Complete/Bloodscale Sotek.tga"
+#spr2 "./Warhammer-Complete/Bloodscale Sotek2.tga"
+#name "Bloodscale of Sotek"
+#descr "Unlike the leaders of the sacred spawnings the Bloodscales of Sotek are not ancient survivors of countless battles, rather they are the first of the affected spawning to make a kill. Within days of first tasting the blood of Sotek's foes, they grow larger and stronger than their brethren and begin to goad them into even greater states of frenzy, leading constant raids and assaults. Other Saurus of Sotek bear bloodstain like markings on their back and crest, but the Bloodscales are almost entirely the colour of gore. In battle they unleash a terrible scream like the hissing of a thousand angry serpents and their mere presence can cause widespread panic. Bloodscales are avatars of Sotek's wrath whose axes are terrifyingly effective against the chosen of false gods. Legend has it that to even try to harm a Bloodscale might bring the vengeful attention of the serpent god. All of Sotek's chosen are immune to poison."
+#hp 19
+#size 3
+#prot 13
+#mor 18
+#mr 11
+#enc 3
+#str 14
+#att 12
+#def 10
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon "Unholy Axe"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 30
+#berserk 6
+#fear 1
+#bloodvengeance 1
+#nametype 123
+#end
+
+
+---- Saurus of Tzunki
+
+#newmonster 3330
+#spr1 "./Warhammer-Complete/Saurus Tzunki.tga"
+#spr2 "./Warhammer-Complete/Saurus Tzunki2.tga"
+#name "Saurus of Tzunki"
+#descr "Those Saurus spawned under the influence of the water god Tzunki have a powerful affinity with water and their scaly hides are tinged with sea-green. Hidden beneath scaled ridges these Saurus have gills and their hands and feet are webbed to allow them great manueverability underwater. They have long defended the temple-cities from pirates and Norsemen raiders, as well as the infamous corsairs of the Dark Elves. In addition to the blessing of gills, Tzunki has granted them partial resistance to cold. When immersed in water their tridents become considerably sharper and bite deep into their foes as if hungry for blood."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Trident"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#amphibian
+#coldres 5
+#holy
+#nametype 123
+#watershape 3338
+#end
+
+
+---- Saurus of Tzunki (Waterform)
+
+#newmonster 3338
+#spr1 "./Warhammer-Complete/Saurus Tzunki Water.tga"
+#spr2 "./Warhammer-Complete/Saurus Tzunki Water2.tga"
+#name "Saurus of Tzunki"
+#descr "Those Saurus spawned under the influence of the water god Tzunki have a powerful affinity with water and their scaly hides are tinged with sea-green. Hidden beneath scaled ridges these Saurus have gills and their hands and feet are webbed to allow them great manueverability underwater. They have long defended the temple-cities from pirates and Norsemen raiders, as well as the infamous corsairs of the Dark Elves. In addition to the blessing of gills, Tzunki has granted them partial resistance to cold. When immersed in water their tridents become considerably sharper and bite deep into their foes as if hungry for blood."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 2
+#str 12
+#att 11
+#def 10
+#prec 8
+#mapmove 1
+#ap 20
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Riptide Trident"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#amphibian
+#coldres 5
+#holy
+#nametype 123
+#landshape 3330
+#end
+
+
+---- Deepscale of Tzunki
+
+#newmonster 3339
+#spr1 "./Warhammer-Complete/Deepscale Tzunki.tga"
+#spr2 "./Warhammer-Complete/Deepscale Tzunki2.tga"
+#name "Deepscale of Tzunki"
+#descr "The oldest and largest of the Saurus spawned under the influence of the water god Tzunki are known as Deepscales. They spend more time beneath the waves than the blessed Saurus they lead and have been known to attack and kill even the largest sharks and predators of the deep. They too wield a deadly riptide trident and have a powerful bite, even for Saurus. Having survived countless battles with dark elf corsairs, they have built up an impressive resistance to poison along with their near total immunity to cold. As leaders of their sacred spawnings, they act as direct conduits of the Old One's will in much the same way as the Slann or Skink Priests."
+#hp 22
+#size 3
+#prot 13
+#mor 17
+#mr 12
+#enc 3
+#str 14
+#att 12
+#def 10
+#prec 9
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Trident"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 5
+#amphibian
+#coldres 7
+#holy
+#nametype 123
+#magicskill 8 1
+#watershape 3340
+#end
+
+
+---- Deepscale of Tzunki (Waterform)
+
+#newmonster 3340
+#spr1 "./Warhammer-Complete/Deepscale Tzunki Waterform.tga"
+#spr2 "./Warhammer-Complete/Deepscale Tzunki Waterform2.tga"
+#name "Deepscale of Tzunki"
+#descr "The oldest and largest of the Saurus spawned under the influence of the water god Tzunki are known as Deepscales. They spend more time beneath the waves than the blessed Saurus they lead and have been known to attack and kill even the largest sharks and predators of the deep. They too wield a deadly riptide trident and have a powerful bite, even for Saurus. Having survived countless battles with dark elf corsairs, they have built up an impressive resistance to poison along with their near total immunity to cold. As leaders of their sacred spawnings, they act as direct conduits of the Old One's will in much the same way as the Slann or Skink Priests."
+#hp 22
+#size 3
+#prot 13
+#mor 17
+#mr 12
+#enc 2
+#str 15
+#att 13
+#def 11
+#prec 9
+#mapmove 1
+#ap 20
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Riptide Trident"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 5
+#amphibian
+#coldres 7
+#holy
+#magicskill 8 1
+#nametype 123
+#landshape 3339
+#end
+
+
+---- Saurus of Huanchi
+
+#newmonster 3331
+#spr1 "./Warhammer-Complete/Saurus Huanchi.tga"
+#spr2 "./Warhammer-Complete/Saurus Huanchi2.tga"
+#name "Saurus of Huanchi"
+#descr "Those Saurus spawned under the influence of the predator god Huanchi are able to stalk their foes with effortless stealth, track them for great distances across almost any terrain and launch precise and lethal ambushes. These Saurus are masters of night fighting and their scales are almost black, rendering them near invisible in the dark. The Saurus of Huanchi are famed for their raids far beyond Lizardman territory, seeking to reclaim stolen artifacts and fallen sacred sites from the younger races. They harbour a particular hatred for Dark Elves, who are notorious for their plundering of artifacts left in the care of the Slann by the Old Ones themselves. All Saurus of Huanchi can deliver a poisonous bite, allowing for hit and run tactics against stronger enemies."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 3
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon 223  -- weak poison bite
+#weapon "Spear"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#mountainsurvival
+#wastesurvival
+#swampsurvival
+#coldblooded
+#poisonres 5
+#holy
+#darkvision 100
+#darkpower 1
+#stealthy 20
+#nametype 123
+#end
+
+
+---- Nightscale of Huanchi
+
+#newmonster 3341
+#spr1 "./Warhammer-Complete/Nightscale Huanchi.tga"
+#spr2 "./Warhammer-Complete/Nightscale Huanchi2.tga"
+#name "Nightscale of Huanchi"
+#descr "Those Saurus spawned under the influence of the predator god Huanchi are able to stalk their foes with effortless stealth, track them for great distances across almost any terrain and launch precise and lethal ambushes. The Nightscales are peerless trackers who will go to any lengths to hunt down and destroy those who oppose the will of the Old Ones. Larger and stronger than the Saurus of Huanchi under their command, they are no less cunning or patient and are notorious for cutting down the champions and mages of their foes before the Saurus close in to finish the enemy troops. Born to do battle with the most skilled and dangerous of Dark Elf leaders, they have developed immunity both to poison and a potent venemous bite of their own, as well as reflexes and agility almost a match for those of their hated enemies. As leaders of their sacred spawnings, they act as direct conduits of the Old One's will in much the same way as the Slann or Skink Priests."
+#hp 17
+#size 3
+#prot 12
+#mor 17
+#mr 12
+#enc 3
+#str 13
+#att 13
+#def 12
+#prec 9
+#mapmove 3
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon 462  -- death poison bite
+#weapon "Spear"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#mountainsurvival
+#wastelandsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#holy
+#magicskill 8 1
+#darkvision 100
+#darkpower 3
+#stealthy 25
+#assassin
+#nametype 123
+#end
+
+
+---- Saurus of Tlazcotl
+
+#newmonster 3332
+#spr1 "./Warhammer-Complete/Saurus Tlazcotl.tga"
+#spr2 "./Warhammer-Complete/Saurus Tlazcotl2.tga"
+#name "Saurus of Tlazcotl"
+#descr "Those Saurus spawned under the influence of the impassive god Tlazcotl are utterly unmoved by events around them. Even by Lizardman standards they are devoid of emotion and unresponsive. As such they are virtually impossible to break in combat, only retreating when ordered and in perfect order. Their lack of response to any stimuli, including pain, means the Saurus of Tlazcotl are also rather difficult to dispatch in combat and furthermore, seem to have improved resistance to magic and fire. In the Great War against Chaos, the Saurus of Tlazcotl were famed for their impassive defence of the temple cities and they are still armed with the ancient daemon rending halberds of that time."
+#hp 19
+#size 2
+#prot 11
+#mor 30
+#mr 13
+#enc 2
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Ancient Halberd"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#fireres 25
+#coldblooded
+#poisonres 2
+#castledef 2
+#holy
+#nametype 123
+#end
+
+
+---- Nullscale of Tlazcotl
+
+#newmonster 3351
+#spr1 "./Warhammer-Complete/Nullscale Tlazcotl.tga"
+#spr2 "./Warhammer-Complete/Nullscale Tlazcotl2.tga"
+#name "Nullscale of Tlazcotl"
+#descr "Those Saurus spawned under the influence of the impassive god Tlazcotl are utterly unmoved by events around them. In fact the Nullscales, leaders of the sacred spawnings of Tlazcotl, may not even individual minds at all. They fight in complete silence, almost as automatons, equally unphased by the loss of limb or the terrifying visage of a greater daemon. The Slann believe they have transcended their physical forms to join with the ineffable stillness of Tlazcotl and treat them with the highest respect. In addition to their incredible resilience, Nullscales never seem to tire and are as such utterly implacable foes. In the Great War against Chaos, the Saurus of Tlazcotl were famed for their impassive defence of the temple cities and they are still armed with the ancient daemon rending halberds of that time."
+#hp 32
+#size 2
+#prot 12
+#mor 50
+#mr 14
+#enc 0
+#str 14
+#att 12
+#def 9
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon "Ancient Halberd"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#fireres 25
+#coldblooded
+#poisonres 2
+#castledef 5
+#holy
+#nametype 123
+#magicskill 8 2
+#end
+
+
+
+---- Saurus of Tepok
+
+#newmonster 3333
+#spr1 "./Warhammer-Complete/Saurus Tepok.tga"
+#spr2 "./Warhammer-Complete/Saurus Tepok2.tga"
+#name "Saurus of Tepok"
+#descr "Those Saurus spawned under the influence of the inscrutable god Tepok are almost completely immune to the direct influence of hostile magic. Furthermore, they are capable of riding the winds of magic themselves, appearing to those not attuned to be disappearing and reappearing elsewhere at will. They bear the purple colouration of the feathered wings of Tepok."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 19
+#enc 3
+#str 12
+#att 10
+#def 9
+#prec 8
+#mapmove 3
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Broad Sword"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#holy
+#nametype 123
+#flying
+#end
+
+
+---- Lorescale of Tepok
+
+#newmonster 3354
+#spr1 "./Warhammer-Complete/Lorescale Tepok.tga"
+#spr2 "./Warhammer-Complete/Lorescale Tepok2.tga"
+#name "Lorescale of Tepok"
+#descr "Those Saurus spawned under the influence of the inscrutable god Tepok are almost completely immune to the direct influence of hostile magic. Furthermore, they are capable of riding the winds of magic themselves, appearing to those not attuned to be disappearing and reappearing elsewhere at will. They are led by the Lorescales, saurus of extremely unusual intelligence, far beyond any instinctive cunning. While Lorescales are not able to communicate their thoughts vocally like the skinks, their memory is flawless and their strategies extremely well planned. As such they are trusted leaders, often taking command of forces far beyond their own spawning. Shortly after spawning, Lorescales are said to ride the winds of magic to the lost skytemples of Tepok and return with a moon blade, lethal to magical foes."
+#hp 17
+#size 3
+#prot 10
+#mor 17
+#mr 21
+#enc 3
+#str 13
+#att 12
+#def 11
+#prec 8
+#mapmove 3
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon 476 -- moon blade
+#maxage 10000
+#startage 1000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#holy
+#magicskill 8 1
+#goodleader
+#nametype 123
+#flying
+#end
+
+
+---- Saurus of Xhotl (shield)
+
+#newmonster 3347
+#spr1 "./Warhammer-Complete/Saurus Xhotl Shield.tga"
+#spr2 "./Warhammer-Complete/Saurus Xhotl Shield2.tga"
+#name "Saurus of Xhotl"
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. Their scales are deeply and brightly coloured with magenta and they sport crests not unlike those of their Skink cousins. While their magical barriers are intact the Saurus of Xhotl fear little in the way of hostile magic or projectiles and any who break their protection in melee are blasted with raw, fiery energy. Enemy mages have learned their evocations are ineffective and will only target these distinctive Saurus reluctantly, though fire magic is extremely effective in overloading the barriers and rendering them vulnerable. Once exposed, Saurus of Xhotl are still dedicated sacred warriors, but lack the advantages of other spawnings."
+#hp 1
+#size 2
+#prot 10
+#mor 15
+#mr 15
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Magic Barrier"
+#weapon "Bite"
+#weapon "Broad Sword"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 30
+#fireres -500
+#shockres 30
+#coldres 30
+#coldblooded
+#holy
+#nametype 123
+#secondshape 3348
+#fireshield 10
+#end
+
+
+---- Saurus of Xhotl
+
+#newmonster 3348
+#spr1 "./Warhammer-Complete/Saurus Xhotl.tga"
+#spr2 "./Warhammer-Complete/Saurus Xhotl2.tga"
+#name "Saurus of Xhotl"
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. Their scales are deeply and brightly coloured with magenta and they sport crests not unlike those of their Skink cousins. While their magical barriers are intact the Saurus of Xhotl fear little in the way of hostile magic or projectiles and any who break their protection are blasted with raw, fiery energy. Enemy mages have learned their evocations are ineffective and will only target these distinctive Saurus reluctantly, though fire magic is extremely effective in overloading the barriers and rendering them vulnerable. Once exposed, Saurus of Xhotl are still dedicated sacred warriors, but lack the advantages of other spawnings."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Broad Sword"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 2
+#coldblooded
+#holy
+#nametype 123
+#firstshape 3347
+#end
+
+
+---- Wardscale of Xhotl (shield)
+
+#newmonster 3349
+#spr1 "./Warhammer-Complete/Wardscale Xhotl Shield.tga"
+#spr2 "./Warhammer-Complete/Wardscale Xhotl Shield2.tga"
+#name "Wardscale of Xhotl"
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. The Wardscales are protected by barriers even stronger against hostile magic which lash would be attackers with reactive blasts of fiery energy and electrical discharge. Xhotl is the most colourful and proud of the Old Ones and his wardscales with their ceremonial masks and vidid crests inspire those they lead."
+#hp 1
+#size 3
+#prot 10
+#mor 17
+#mr 16
+#enc 3
+#str 13
+#att 12
+#def 10
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Magic Barrier"
+#weapon "Bite"
+#weapon "Obsinite Axe"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 30
+#fireres -500
+#shockres 30
+#coldres 30
+#coldblooded
+#holy
+#nametype 123
+#secondshape 3350
+#fireshield 16
+#inspirational 1
+#onebattlespell "Charge Body"
+#magicskill 8 1
+#end
+
+
+---- Wardscale of Xhotl
+
+#newmonster 3350
+#spr1 "./Warhammer-Complete/Wardscale Xhotl.tga"
+#spr2 "./Warhammer-Complete/Wardscale Xhotl2.tga"
+#name "Wardscale of Xhotl"
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. Their scales are deeply and brightly coloured with magenta and they sport crests not unlike those of their Skink cousins. While their magical barriers are intact the Saurus of Xhotl fear little in the way of hostile magic or projectiles and any who break their protection are blasted with raw, fiery energy. Enemy mages have learned their evocations are ineffective and will only target these distinctive Saurus reluctantly, though fire magic is extremely effective in overloading the barriers and rendering them vulnerable. Once exposed, Saurus of Xhotl are still dedicated sacred warriors, but lack the advantages of other spawnings."
+#hp 17
+#size 3
+#prot 10
+#mor 17
+#mr 12
+#enc 3
+#str 13
+#att 12
+#def 10
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon "Obsinite Axe"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 2
+#coldblooded
+#holy
+#nametype 123
+#firstshape 3349
+#magicskill 8 1
+#inspirational 1
+#end
+
+
+---- Saurus of Chotec
+
+#newmonster 3334
+#spr1 "./Warhammer-Complete/Saurus Chotec.tga"
+#spr2 "./Warhammer-Complete/Saurus Chotec2.tga"
+#name "Saurus of Chotec"
+#descr "Those Saurus spawned under the influence of the sun god Chotec are protected against the effects of heat and fire. Unlike the Saurus of Sotek who are tainted with blood red, those spawned of Chotec have scales of bright burning red and orange. The heat of Chotec burns through their veins and they aren't near so sluggish as their fellows, or as affected by cold climates. Their energy has propelled these Saurus into many a conflict and despite their losses, they are the most common Sacred Spawning by far."
+#hp 15
+#size 2
+#prot 10
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 10
+#def 10
+#prec 8
+#mapmove 2
+#ap 14
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Broad Sword"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 2
+#fireres 30
+#firepower 1
+#holy
+#nametype 123
+#end
+
+
+---- Sunscale of Chotec
+
+#newmonster 3346
+#spr1 "./Warhammer-Complete/Sunscale Chotec.tga"
+#spr2 "./Warhammer-Complete/Sunscale Chotec2.tga"
+#name "Sunscale of Chotec"
+#descr "Those Saurus spawned under the influence of the sun god Chotec are protected against the effects of heat and fire. Sunscales of Chotec are by far the most active leaders of the Lizardman race, charged with fiery energy which constantly propels them into conflict. In battle their eyes blaze like the sun, too bright and intense for lesser foes to meet and with the power to scour undead from their sight. Energetic and emotional in a way few Lizardmen can understand, Sunscales live for the excitement of battle and fight at a frantic pace with considerable skill. They are by far the most common of the Sacred Scales."
+#hp 17
+#size 2
+#prot 13
+#mor 17
+#mr 12
+#enc 3
+#str 13
+#att 13
+#def 12
+#prec 9
+#mapmove 2
+#ap 14
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#armor "Ceremonial Plates"
+#armor "Crest Plate"
+#weapon "Broad Sword"
+#weapon "Scouring Gaze"
+#maxage 10000
+#startage 3000
+#forestsurvival
+#poisonres 2
+#okleader
+#fireres 30
+#firepower 2
+#awe 2
+#holy
+#nametype 123
+#magicskill 8 1
+#end
+
+
+---- Saurus of Quetzl
+
+#newmonster 3335
+#spr1 "./Warhammer-Complete/Saurus Quetzl.tga"
+#spr2 "./Warhammer-Complete/Saurus Quetzl2.tga"
+#name "Saurus of Quetzl"
+#descr "Those Saurus spawned under the influence of the protector god Quetzl are tough and warlike, covered with bony protusions and thick layers of extra scales. They can be found wherever the fighting is thickest, purposely seeking out the fiercest conflicts that their brethren might be spared and their lands protected from it. Their thick hides provide them protection against all but the heaviest of blows and simple weapons like spears are all but useless against their inexorable advance."
+#hp 16
+#size 2
+#prot 19
+#mor 15
+#mr 11
+#enc 3
+#str 12
+#att 11
+#def 8
+#prec 8
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Broad Sword"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 2
+#holy
+#nametype 123
+#end
+
+
+---- Spinescale of Quetzl
+
+#newmonster 3353
+#spr1 "./Warhammer-Complete/Spinescale Quetzl.tga"
+#spr2 "./Warhammer-Complete/Spinescale Quetzl2.tga"
+#name "Spinescale of Quetzl"
+#descr "Those Saurus spawned under the influence of the protector god Quetzl are tough and warlike, covered with bony protusions and thick layers of extra scales. The Spinescales are particularly heavily armoured, known for their ability to wade into ranks of enemy troops, shatter their formations and emerge unscathed. They specialise in dealing with the throngs of lesser infantry often arrayed against Itza, lashing out with their spined tails both in melee and at range, where their spontaneously shed spines act as lethal projectiles."
+#hp 23
+#size 3
+#prot 22
+#mor 17
+#mr 12
+#enc 3
+#str 14
+#att 12
+#def 10
+#prec 10
+#mapmove 1
+#ap 10
+#gcost 1
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#weapon "Spiked Tail"
+#weapon "Tail Spines"
+#weapon "Obsinite Axe"
+#maxage 10000
+#startage 1000
+#forestsurvival
+#poisonres 2
+#holy
+#magicskill 8 1
+#nametype 123
+#end
+
+
+---------------------- OTHER SUMMONS
+
+
+
+---- Serpent of Sotek
+
+#newmonster 3343
+#spr1 "./Warhammer-Complete/Serpent Sotek.tga"
+#spr2 "./Warhammer-Complete/Serpent Sotek2.tga"
+#name "Serpent of Sotek"
+#descr "The god of vengeance, spite and blood, Sotek announced his birth with a flood of a million serpents boiling up from the dense underbrush of Lustria, a torrent of venomous hate which finally forced the ratmen of Pestilens from the land. Ever since that moment the priests of Sotek have summoned these poisonous snakes by spilling sacrificial blood and invoking his name. It is a practice which deeply concerns many of the Slann and their followers, but there is no doubting its effectiveness in battle."
+#hp 5
+#size 2
+#prot 3
+#mor 50
+#mr 9
+#enc 3
+#str 5
+#att 11
+#def 8
+#prec 8
+#mapmove 1
+#ap 12
+#gcost 1
+#rcost 1
+#weapon 30 -- strong poison fangs
+#animal
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#itemslots 12288
+#end
+
+
+---- Jungle Serpent
+
+#newmonster 3344
+#spr1 "./Warhammer-Complete/Jungle Serpent.tga"
+#spr2 "./Warhammer-Complete/Jungle Serpent2.tga"
+#name "Jungle Serpent"
+#descr "A serpent from the depths of the Lustrian jungle, brought to the battlefield by powerful magic. Though somewhat irritated by its recent status as a projectile, it is far less agressive than a serpent of Sotek, but its strong desire for self preservation can make it an elusive foe."
+#hp 6
+#size 1
+#prot 3
+#mor 9
+#mr 12
+#enc 3
+#str 6
+#att 9
+#def 12
+#prec 8
+#mapmove 1
+#ap 12
+#gcost 1
+#rcost 1
+#weapon 30 -- strong poison fangs
+#animal
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#itemslots 12288
+#end
+
+
+
+
+
+-------- Commanders
+
+
+---- Saurus Scar Veteran
+
+#newmonster 3290
+#spr1 "./Warhammer-Complete/Saurus Scar Veteran.tga"
+#spr2 "./Warhammer-Complete/Saurus Scar Veteran2.tga"
+#name "Saurus Scar Veteran"
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. Performing only the simplest tasks outside of warfare, Saurus may seem slow witted, but in battle the Skinks defer to their honed instincts and innate understanding of tactics. The obsinite weapons they wield may seem crude, but they are as deadly as any forged of steel. Saurus get tougher and more ferocious as they age and by the time they gain the title Scar Veteran they have undoubtedly seen hundreds of battles. Scar Veterans are trusted to lead small forces of troops and are formidable fighters, certainly more than a match for the champions of younger races."
+#hp 18
+#size 2
+#prot 13
+#mor 15
+#mr 11
+#enc 3
+#str 14
+#att 12
+#def 11
+#prec 9
+#mapmove 1
+#ap 10
+#gcost 20
+#rcost 1
+#armor "Shield"
+#weapon "Bite"
+#armor "Ceremonial Plates"
+#armor "Crest Plate"
+#weapon "Obsinite Axe"
+#maxage 10000
+#startage 3000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#okleader
+#older 300
+#nametype 123
+#end
+
+
+---- Skink Priest
+
+#newmonster 3291
+#spr1 "./Warhammer-Complete/Skink Priest.tga"
+#spr2 "./Warhammer-Complete/Skink Priest2.tga"
+#name "Skink Priest"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. One in every few hundred Skinks is spawned to serve the Slann in a more direct capacity, as a Priest. These Skinks are larger and bolder than their fellows and command a degree of respect even amongst the Saurus and Kroxigor, for they are the eyes of the Slann. Skink Priests generally attend to minor rituals and observances, though with fewer and fewer active Slann, their role in the plan of the Old Ones is increasing. Every Priest is attuned to the magical presence of the Slann and lends his power in battle through a constant communion."
+#hp 9
+#size 2
+#prot 3
+#mor 10
+#mr 13
+#enc 3
+#str 9
+#att 8
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 90
+#rcost 1
+#weapon "Bite"
+#weapon "Quarterstaff"
+#maxage 1000
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#poorleader
+#onebattlespell "communion slave"
+#magicskill 8 1
+#custommagic 1792 100
+#custommagic 10240 100
+#holy
+#stealthy 0
+#nametype 123
+#end
+
+
+---- Priest of Sotek
+
+#newmonster 3292
+#clearmagic#clearmagic#clearmagic
+#spr1 "./Warhammer-Complete/Skink Priest Sotek.tga"
+#spr2 "./Warhammer-Complete/Skink Priest Sotek2.tga"
+#name "Priest of Sotek"
+#descr "The Cult of Sotek has grown in size and power since the war to drive the Skaven of Clan Pestilens from the New World. Sotek is not an Old One, though the rise of the serpent god of blood and vengeance was foretold by the Slann, who have yet to even acknowledge the Cult. Whether the Slann will ever take action against the followers of Sotek is unclear, but in the mean time their power grows. More and more spawnings show Sotek's influence and Skink Priests of Sotek are now a common sight, preaching a coming time of vengeance and making sacrifices to sate the thirst of the serpent God. Priests of Sotek are immune to poison and have dominion over snakes, indeed they have taken to using deadly poisonous jungle vipers as a means of protection. They have some skill in blood magic in addition to their native minor magic. Priests of Sotek are not naturally attuned to the communion of the Slann."
+#hp 10
+#size 2
+#prot 3
+#mor 11
+#mr 13
+#enc 3
+#str 10
+#att 10
+#def 11
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 80
+#rcost 1
+#weapon "Venomous Bite"
+#weapon "Short Sword"
+#maxage 1000
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 30
+#poorleader
+#magicskill 7 1
+#custommagic 8320 100
+#stealthy 0
+#heretic 2
+#nametype 123
+#researchbonus -2
+#end
+
+
+---- Saurus Oldblood
+
+#newmonster 3293
+#spr1 "./Warhammer-Complete/Saurus Oldblood.tga"
+#spr2 "./Warhammer-Complete/Saurus Oldblood2.tga"
+#name "Saurus Oldblood"
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. Performing only the simplest tasks outside of warfare, Saurus may seem slow witted, but in battle the Skinks defer to their honed instincts and innate understanding of tactics. Saurus get tougher and more ferocious as they age and by far the oldest and thus most powerful amongst them are the Oldbloods. To have survived thousands of battles, perhaps even the Great War against Chaos, would be impossible for any ordinary Saurus. They ride to war on the back of a powerful Cold One."
+#hp 25
+#size 4
+#prot 15
+#mor 17
+#mr 12
+#enc 5
+#str 15
+#att 13
+#def 12
+#prec 11
+#mapmove 2
+#ap 18
+#gcost 70
+#rcost 1
+#armor "Shield"
+#weapon "Cold One Bite"
+#weapon "Cold One Claw"
+#weapon "Light Lance"
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#maxage 10000
+#startage 7000
+#forestsurvival
+#coldblooded
+#poisonres 5
+#goodleader
+#secondtmpshape 3328 -- cold one
+#nametype 123
+#mounted
+#heal
+#end
+
+
+---- Chameleon Skink Scout
+
+#newmonster 3294
+#spr1 "./Warhammer-Complete/Skink Chameleon.tga"
+#spr2 "./Warhammer-Complete/Skink Chameleon2.tga"
+#name "Chameleon Skink Scout"
+#descr "Chameleon Skinks are a subspecies of Skink that are distinguished from their fellows by their aggression, predatory instincts and sheer stealth. Due to their chameleonic skin which shifts to match their surroundings, they are capable of stalking their prey through any terrain, their protruding eyes scanning independently for threats while they stay absolutely motionless. Chameleon Skinks are known to have remained in place for hours on end awaiting the perfect ambush and even in open ground they are virtually impossible to see clearly. It had been so long since the last spawning of these Skinks that they were thought to be lost forever, but in these recent years of war, they have begun to spontaneously spawn across Lizardman territory, a sign from the Old Ones that the Slann have yet to decipher. They are armed with powerful poisoned blowpipes."
+#hp 7
+#size 1
+#prot 2
+#mor 11
+#mr 11
+#enc 3
+#str 9
+#att 8
+#def 9
+#prec 12
+#mapmove 2
+#ap 16
+#gcost 1
+#rcost 1
+#weapon "Bite"
+#weapon "Chameleon Blowpipe"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poorleader
+#poisonres 7
+#stealthy 40
+#illusion
+#nametype 123
+#end
+
+
+---- Skink Warchief
+
+#newmonster 3295
+#spr1 "./Warhammer-Complete/Skink Warchief.tga"
+#spr2 "./Warhammer-Complete/Skink Warchief2.tga"
+#name "Skink Warchief"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. However while it is generally true that the Skinks are not well suited to war, the will of the Old Ones is mysterious and some Skink are spawned with war in their blood. These larger, stronger, more aggressive Skink quickly take charge of their fellows and organise them to support the Saurus, displaying the same sort of instinctual grasp of tactics as their larger cousins. Warchiefs are proud of their status and mark themselves out with golden masks and obsinite weapons like those of the Saurus."
+#hp 10
+#size 2
+#prot 3
+#mor 12
+#mr 11
+#enc 3
+#str 10
+#att 11
+#def 12
+#prec 11
+#mapmove 2
+#ap 16
+#gcost 20
+#rcost 1
+#weapon "Broad Sword"
+#armor "Crest Plate"
+#armor "Shield"
+#maxage 500
+#startage 50
+#forestsurvival
+#coldblooded
+#poisonres 7
+#okleader
+#stealthy 0
+#nametype 123
+#swampsurvival
+#end
+
+
+
+---- Slann (5th Generation)
+
+#newmonster 3296
+#spr1 "./Warhammer-Complete/Slann Fifth.tga"
+#spr2 "./Warhammer-Complete/Slann Fifth2.tga"
+#name "Fifth Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action."
+#hp 50
+#size 5
+#prot 13
+#mor 16
+#mr 18
+#enc 5
+#str 10
+#att 10
+#def 9
+#prec 11
+#mapmove 1
+#ap 10
+#gcost 750
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 3
+#magicskill 6 1
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 8832 100
+#custommagic 9472 100
+#holy
+#itemslots 12288
+#poorleader
+#shapechange 3297
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#bonusspells 2
+#float
+#end
+
+
+
+
+---- Slann (5th Generation - AWAKENING)
+
+#newmonster 3305
+#spr1 "./Warhammer-Complete/Slann Fifth.tga"
+#spr2 "./Warhammer-Complete/Slann Fifth2.tga"
+#name "Fifth Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the most powerful First Generation died long ago in battle with Chaos and the weakest Fifth Generation was spawned thousands of years ago. When Slann wake from their slumber, so to do their lifelong guards; the more ancient the Slann and the stronger the dominion of the Old Ones, the more Temple Guard will awaken."
+#hp 50
+#size 5
+#prot 13
+#mor 16
+#mr 18
+#enc 5
+#str 10
+#att 10
+#def 9
+#prec 11
+#mapmove 1
+#ap 10
+#gcost 750
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 3
+#magicskill 6 1
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 8832 100
+#custommagic 9472 100
+#holy
+#itemslots 12288
+#poorleader
+#shapechange 3297
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#summon1 3318 -- Temple Guard
+#domsummon 3318 -- Temple Guard
+#firstshape 3296 -- normal fifth generation
+#bonusspells 2
+#float
+#slowrec
+#end
+
+
+
+
+
+
+---- Slann (5th Generation - DORMANT)
+
+#newmonster 3297
+#spr1 "./Warhammer-Complete/Slann Fifth Dormant.tga"
+#spr2 "./Warhammer-Complete/Slann Fifth Dormant.tga"
+#name "Dormant Fifth Generation Slann"
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#hp 40
+#size 5
+#prot 8
+#mor 10
+#mr 18
+#enc 20
+#str 5
+#att 1
+#def 1
+#prec 1
+#mapmove 0
+#ap 2
+#gcost 100
+#rcost 30
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#immobile
+#noleader
+#nomagicleader
+#noundeadleader
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 0
+#magicskill 6 1
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 8832 100
+#custommagic 9472 100
+#magicboost 53 -9
+#magicboost 4 -5
+#magicboost 8 -5
+#magicboost 6 -5
+#magicboost 0 -5
+#magicboost 1 -5
+#magicboost 2 -5
+#magicboost 3 -5
+#holy
+#itemslots 12288
+#shapechange 3296
+#heal
+#end
+
+
+---- Slann (4th Generation)
+
+#newmonster 3298
+#spr1 "./Warhammer-Complete/Slann Fourth.tga"
+#spr2 "./Warhammer-Complete/Slann Fourth2.tga"
+#name "Fourth Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action."
+#hp 60
+#size 5
+#prot 14
+#mor 17
+#mr 19
+#enc 6
+#str 10
+#att 10
+#def 9
+#prec 10
+#mapmove 1
+#ap 8
+#gcost 1000
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 4
+#magicskill 6 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 10112 100
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 10
+#holy
+#itemslots 12288
+#poorleader
+#shapechange 3299
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#bonusspells 2
+#float
+#end
+
+
+---- Slann (4th Generation awakening)
+
+#newmonster 3306
+#spr1 "./Warhammer-Complete/Slann Fourth.tga"
+#spr2 "./Warhammer-Complete/Slann Fourth2.tga"
+#name "Fourth Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the most powerful First Generation died long ago in battle with Chaos and the weakest Fifth Generation was spawned thousands of years ago. When Slann wake from their slumber, so to do their lifelong guards; the more ancient the Slann and the stronger the dominion of the Old Ones, the more Temple Guard will awaken."
+#hp 60
+#size 5
+#prot 14
+#mor 17
+#mr 19
+#enc 6
+#str 10
+#att 10
+#def 9
+#prec 10
+#mapmove 1
+#ap 8
+#gcost 1000
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 4
+#magicskill 6 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 10112 100
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 10
+#holy
+#itemslots 12288
+#poorleader
+#shapechange 3299
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#summon5 3318 -- Temple Guard
+#domsummon 3318 -- Temple Guard
+#firstshape 3298 -- normal fourth generation
+#slowrec
+#bonusspells 2
+#float
+#end
+
+
+
+
+---- Slann (4th Generation - Dormant)
+
+#newmonster 3299
+#spr1 "./Warhammer-Complete/Slann Fourth Dormant.tga"
+#spr2 "./Warhammer-Complete/Slann Fourth Dormant.tga"
+#name "Fourth Generation Slann"
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#hp 50
+#size 5
+#prot 9
+#mor 17
+#mr 19
+#enc 20
+#str 10
+#att 10
+#def 9
+#prec 10
+#mapmove 0
+#ap 2
+#gcost 100
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 3
+#magicskill 4 4
+#magicskill 6 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 100
+#holy
+#itemslots 12288
+#noleader
+#nomagicleader
+#noundeadleader
+#shapechange 3298
+#immobile
+#magicboost 53 -9
+#magicboost 4 -5
+#magicboost 8 -5
+#magicboost 6 -5
+#magicboost 0 -5
+#magicboost 1 -5
+#magicboost 2 -5
+#magicboost 3 -5
+#nametype 123
+#heal
+#end
+
+
+---- Skink Shaman
+
+#newmonster 3300
+#spr1 "./Warhammer-Complete/Skink Shaman.tga"
+#spr2 "./Warhammer-Complete/Skink Shaman2.tga"
+#name "Skink Shaman"
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In the Southlands there are very few Slann remaining and spawning of Saurus are few and far between, leading to the Skinks taking on more active and warlike roles. The Skink population has exploded, with feral spawnings in the wild becoming more and more frequent. When a Skink marked out as a Priest is spawned in this manner they retain their magical aptitude, but are not connected in constant communion with the Slann. These rogue Shamans serve their race, but unlike their civilised cousins, they are not direct instruments of the Old Ones."
+#hp 9
+#size 2
+#prot 3
+#mor 10
+#mr 13
+#enc 3
+#str 9
+#att 9
+#def 9
+#prec 10
+#mapmove 2
+#ap 16
+#gcost 60
+#rcost 1
+#weapon "Bite"
+#weapon "Quarterstaff"
+#maxage 1000
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 7
+#poorleader
+#custommagic 1920 100
+#custommagic 10240 100
+#stealthy 0
+#nametype 123
+#researchbonus -3
+#end
+
+
+
+---- Slann (3rd Generation)
+
+#newmonster 3301
+#spr1 "./Warhammer-Complete/Slann Third.tga"
+#spr2 "./Warhammer-Complete/Slann Third2.tga"
+#name "Third Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action."
+#hp 80
+#size 5
+#prot 18
+#mor 24
+#mr 21
+#enc 7
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 1
+#ap 8
+#gcost 850
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 4
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 0 2
+#magicskill 1 2
+#magicskill 2 2
+#magicskill 3 2
+#spreaddom 1
+#nobadevents 15
+#shockres 5
+#fireres 5
+#coldres 5
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 100
+#holy
+#itemslots 28672
+#poorleader
+#shapechange 3302
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#bonusspells 2
+#float
+#end
+
+
+---- Slann (3rd Generation awakening)
+
+#newmonster 3307
+#spr1 "./Warhammer-Complete/Slann Third.tga"
+#spr2 "./Warhammer-Complete/Slann Third2.tga"
+#name "Third Generation Slann"
+#descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the most powerful First Generation died long ago in battle with Chaos and the weakest Fifth Generation was spawned thousands of years ago. When Slann wake from their slumber, so to do their lifelong guards; the more ancient the Slann and the stronger the dominion of the Old Ones, the more Temple Guard will awaken."
+#hp 80
+#size 5
+#prot 18
+#mor 24
+#mr 21
+#enc 7
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 1
+#ap 8
+#gcost 850
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 4
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 0 2
+#magicskill 1 2
+#magicskill 2 2
+#magicskill 3 2
+#spreaddom 1
+#nobadevents 15
+#shockres 5
+#fireres 5
+#coldres 5
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 100
+#holy
+#itemslots 28672
+#poorleader
+#shapechange 3302
+#onebattlespell "Communion Master"
+#nametype 123
+#magicboost 7 -3
+#firstshape 3301
+#domsummon2 3318 -- Temple Guard
+#summon5 3318 -- Temple Guard
+#summon1 3318 -- Temple Guard
+#domsummon 3318 -- Temple Guard
+#bonusspells 2
+#float
+#end
+
+
+
+---- Slann (3rd Generation - Dormant)
+
+#newmonster 3302
+#spr1 "./Warhammer-Complete/Slann Third Dormant.tga"
+#spr2 "./Warhammer-Complete/Slann Third Dormant.tga"
+#name "Third Generation Slann"
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#hp 70
+#size 5
+#prot 14
+#mor 24
+#mr 21
+#enc 20
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 0
+#ap 2
+#gcost 100
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 50000
+#forestsurvival
+#magicskill 8 4
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 0 2
+#magicskill 1 2
+#magicskill 2 2
+#magicskill 3 2
+#spreaddom 1
+#shockres 5
+#fireres 5
+#coldres 5
+#nobadevents 15
+#custommagic 10112 100
+#custommagic 1920 100
+#custommagic 1920 100
+#holy
+#itemslots 28672
+#noleader
+#nomagicleader
+#noundeadleader
+#shapechange 3301
+#immobile
+#magicboost 53 -9
+#magicboost 4 -5
+#magicboost 8 -5
+#magicboost 6 -5
+#magicboost 0 -5
+#magicboost 1 -5
+#magicboost 2 -5
+#magicboost 3 -5
+#nametype 123
+#heal
+#end
+
+
+---- Slann (2rd Generation - Seas - awake with bubble)
+
+#newmonster 3303
+#spr1 "./Warhammer-Complete/Slann Second Zlatlan Shield.tga"
+#spr2 "./Warhammer-Complete/Slann Second Zlatlan Shield2.tga"
+#name "One Who Fathomed The Depths"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will."
+#hp 1
+#size 6
+#prot 35
+#mor 30
+#mr 30
+#enc 0
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 1
+#ap 8
+#gcost 1
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#armor "Magic Barrier"
+#maxage 100000
+#forestsurvival
+#amphibious
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 1 3
+#magicskill 2 6
+#magicskill 3 3
+#spreaddom 2
+#gemprod 2 1
+#shockres 30
+#fireres -500
+#coldres 30
+#poisonres 30
+#holy
+#itemslots 61440 -- four misc slots
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#secondshape 3304
+#amphibian
+#unique
+#magicboost 7 -3
+#bonusspells 3
+#fixedname "Zlatlan"
+#float
+#end
+
+
+---- Slann (2rd Generation - Seas - awakening with bubble)
+
+#newmonster 3308
+#spr1 "./Warhammer-Complete/Slann Second Zlatlan Shield.tga"
+#spr2 "./Warhammer-Complete/Slann Second Zlatlan Shield2.tga"
+#name "One Who Fathomed The Depths"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will."
+#hp 1
+#size 6
+#prot 35
+#mor 30
+#mr 30
+#enc 0
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 1
+#ap 8
+#gcost 1
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#armor "Magic Barrier"
+#maxage 100000
+#forestsurvival
+#amphibious
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 1 3
+#magicskill 2 6
+#magicskill 3 3
+#spreaddom 2
+#gemprod 2 1
+#shockres 30
+#fireres -500
+#coldres 30
+#poisonres 30
+#holy
+#itemslots 61440 -- four misc slots
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#secondshape 3304
+#amphibian
+#unique
+#magicboost 7 -3
+#firstshape 3303 -- normal zlatlan
+#domsummon 3347 -- Saurus of Xhotl
+#summon5 3330 -- saurus of Tzunki
+#bonusspells 3
+#fixedname "Zlatlan"
+#float
+#end
+
+
+---- Slann (2rd Generation - Seas - awake with no bubble)
+
+#newmonster 3304
+#spr1 "./Warhammer-Complete/Slann Second Zlatlan.tga"
+#spr2 "./Warhammer-Complete/Slann Second Zlatlan2.tga"
+#name "One Who Fathomed The Depths"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will."
+#hp 100
+#size 6
+#prot 14
+#mor 30
+#mr 21
+#enc 8
+#str 10
+#att 10
+#def 9
+#prec 12
+#mapmove 1
+#ap 8
+#gcost 1
+#rcost 1
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 100000
+#forestsurvival
+#amphibious
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 1 3
+#magicskill 2 6
+#magicskill 3 3
+#spreaddom 2
+#gemprod 2 1
+#shockres 5
+#coldres 30
+#poisonres 5
+#holy
+#itemslots 61440 -- four misc slots
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#firstshape 3303
+#shapechange 3303
+#amphibian
+#unique
+#magicboost 7 -3
+#bonusspells 3
+#fixedname "Zlatlan"
+#float
+#end
+
+
+
+---- Slann (2nd generation - fire - awakening form)
+
+#newmonster 3288
+#spr1 "./Warhammer-Complete/Slann Second Adohi.tga"
+#spr2 "./Warhammer-Complete/Slann Second Adohi2.tga"
+#name "One Who Fired The Earth"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Adohi-Tehga is an unequalled pyromancer blessed by Chotec who directed great flows of magma, following the Great Plan. Mortally wounded in the Great Catastrophe, Adohi-Tehga only recently awoke and immediately joined Mazdamundi in his efforts to violently correct the corruption of the world, swearing never to rest until the Old Ones return. Focusing all his power on the destruction of his foes, his palanquin must now be carried into battle by temple guard as he lashes out with the deadly Sword of Rhuin, a weapon of pure fire and wrath. Of all the Second Generation, Adohi-Tehga is by far the most accepting of Sotek."
+#hp 110
+#size 6
+#prot 18
+#mor 30
+#mr 21
+#enc 6
+#str 14
+#att 12
+#def 12
+#prec 13
+#mapmove 2
+#ap 12
+#gcost 1
+#rcost 1
+#weapon "Sword of Rhuin"
+#weapon "Scouring Gaze"
+#armor "Shield"
+#maxage 50000
+#forestsurvival
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 0 5
+#magicskill 1 3
+#magicskill 3 4
+#gemprod 0 1
+#spreaddom 2
+#shockres 5
+#fireres 30
+#coldres 0
+#holy
+#itemslots 28672
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#fireshield 8
+#berserk 0
+#firepower 2
+#unique
+#firstshape 3289 -- normal adohi
+#domsummon 3334 -- Saurus of Chotec
+#summon5 3334 -- saurus of Chotec
+#bonusspells 3
+#fixedname "Adohi Tehga"
+#end
+
+
+
+---- Slann (2nd generation - fire - normal form)
+
+#newmonster 3289
+#spr1 "./Warhammer-Complete/Slann Second Adohi.tga"
+#spr2 "./Warhammer-Complete/Slann Second Adohi2.tga"
+#name "One Who Fired The Earth"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Adohi-Tehga is an unequalled pyromancer blessed by Chotec who directed great flows of magma, following the Great Plan. Mortally wounded in the Great Catastrophe, Adohi-Tehga only recently awoke and immediately joined Mazdamundi in his efforts to violently correct the corruption of the world, swearing never to rest until the Old Ones return. Focusing all his power on the destruction of his foes, his palanquin must now be carried into battle by temple guard as he lashes out with the deadly Sword of Rhuin, a weapon of pure fire and wrath. Of all the Second Generation, Adohi-Tehga is by far the most accepting of Sotek."
+#hp 110
+#size 6
+#prot 18
+#mor 30
+#mr 21
+#enc 6
+#str 14
+#att 12
+#def 12
+#prec 13
+#mapmove 2
+#ap 12
+#gcost 1
+#rcost 1
+#weapon "Sword of Rhuin"
+#weapon "Scouring Gaze"
+#armor "Shield"
+#maxage 50000
+#forestsurvival
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 0 5
+#magicskill 1 3
+#magicskill 3 4
+#gemprod 0 1
+#spreaddom 2
+#shockres 5
+#fireres 30
+#coldres 0
+#holy
+#itemslots 28672
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#fireshield 8
+#berserk 0
+#firepower 2
+#unique
+#bonusspells 3
+#fixedname "Adohi Tehga"
+#end
+
+
+
+
+---- Slann (2nd generation - earth - awakening form)
+
+#newmonster 3362
+#spr1 "./Warhammer-Complete/Slann Second Mazdamundi.tga"
+#spr2 "./Warhammer-Complete/Slann Second Mazdamundi2.tga"
+#name "One Who Shaped The Mountains"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Mazdamundi, Lord of the Solar City, is the greatest of his generation, a geomancer who carved the very continents. Mazdamundi is the most active of his kind, having  concluded that the Great Plan has been disrupted and cannot be corrected until the enemies of the Lizardmen are utterly eradicated. Mazdamundi rides into battle atop the ancient Stegadon Zlaaq, trampling the enemy as he blasts them with ancient magic. He carries the Cobra Staff which lashes out to poison those who would strike him and the Sunburst Standard of the Solar City Hexoatl which lends him a blinding aura of power."
+#hp 140
+#size 6
+#prot 20
+#mor 30
+#mr 21
+#enc 6
+#str 28
+#att 10
+#def 9
+#prec 13
+#mapmove 2
+#ap 18
+#gcost 1
+#rcost 1
+#weapon "Rampage"
+#weapon "Snake Staff"
+#maxage 50000
+#forestsurvival
+#mountainsurvival
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 3 5
+#magicskill 1 3
+#magicskill 0 4
+#magicboost 7 -3
+#gemprod 3 1
+#spreaddom 2
+#shockres 5
+#fireres 5
+#coldres 5
+#holy
+#itemslots 28672 -- ??
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#awe 4
+#unique
+#firstshape 3363 -- normal Mazdamundi
+#domsummon 3335 -- Saurus of Quetzl
+#summon5 3335 -- saurus of Quetzl
+#bonusspells 3
+#fixedname "Lord Mazdamundi"
+#trample
+#reinvigoration 4
+#heal
+#poisonarmor
+#fear 1
+#slashres
+#end
+
+
+
+---- Slann (2nd generation - earth - normal form)
+
+#newmonster 3363
+#spr1 "./Warhammer-Complete/Slann Second Mazdamundi.tga"
+#spr2 "./Warhammer-Complete/Slann Second Mazdamundi2.tga"
+#name "One Who Shaped The Mountains"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Mazdamundi, Lord of the Solar City, is the greatest of his generation, a geomancer who carved the very continents. Mazdamundi is the most active of his kind, having  concluded that the Great Plan has been disrupted and cannot be corrected until the enemies of the Lizardmen are utterly eradicated. Mazdamundi rides into battle atop the ancient Stegadon Zlaaq, trampling the enemy as he blasts them with ancient magic. He carries the Cobra Staff which lashes out to poison those who would strike him and the Sunburst Standard of the Solar City Hexoatl which lends him a blinding aura of power."
+#hp 140
+#size 6
+#prot 20
+#mor 30
+#mr 21
+#enc 6
+#str 28
+#att 10
+#def 9
+#prec 13
+#mapmove 2
+#ap 18
+#gcost 1
+#rcost 1
+#weapon "Rampage"
+#weapon "Snake Staff"
+#maxage 50000
+#forestsurvival
+#mountainsurvival
+#magicskill 8 5
+#magicskill 4 5
+#magicskill 6 3
+#magicskill 3 6
+#magicskill 0 3
+#magicskill 2 2
+#magicboost 7 -3
+#gemprod 3 1
+#spreaddom 2
+#shockres 5
+#fireres 5
+#coldres 5
+#holy
+#itemslots 28672 -- ??
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#awe 4
+#unique
+#bonusspells 3
+#fixedname "Lord Mazdamundi"
+#trample
+#reinvigoration 4
+#heal
+#poisonarmor
+#fear 1
+#slashres
+#end
+
+
+---- Slann (2rd Generation - Spheres - awakening)
+
+#newmonster 3364
+#spr1 "./Warhammer-Complete/Slann Second Yucatetl.tga"
+#spr2 "./Warhammer-Complete/Slann Second Yucatetl2.tga"
+#name "One Who Guided The Spheres"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Yucatetl is truly blessed, for he alone of his generation was permitted audience with the Old Ones, though the experience blinded him to the material world. Yucatetl helped the First Generation guide the world through the heavens and set the four winds in motion. Even before the coming of Chaos Yucatetl sat motionless, staring into the void with blind unblinking eyes, but now he is awakened and narrowing his eyes to a pinprick of light, sees all that must be done. Yucatetl can cast rituals into even the most distant lands."
+#hp 60
+#size 6
+#prot 14
+#mor 30
+#mr 23
+#enc 8
+#str 8
+#att 3
+#def 2
+#prec 0
+#mapmove 1
+#ap 6
+#gcost 1
+#rcost 1
+#nobadevents 30
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 100000
+#forestsurvival
+#magicskill 8 5
+#magicskill 4 7
+#magicskill 6 1
+#magicskill 1 5
+#magicskill 2 1
+#magicskill 3 1
+#blind
+#spreaddom 2
+#gemprod 4 2
+#shockres 5
+#coldres 5
+#poisonres 5
+#holy
+#itemslots 61440 -- four misc slots
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#firstshape 3365 -- Yucatetl normal
+#unique
+#magicboost 7 -4
+#bonusspells 3
+#fixedname "Yucatetl"
+#float
+#allrange 10
+#domsummon 3332 -- Saurus of Tzlazcotl
+#summon5 3333 -- saurus of Tepok
+#end
+
+
+
+---- Slann (2rd Generation - Spheres - awake)
+
+#newmonster 3365
+#spr1 "./Warhammer-Complete/Slann Second Yucatetl.tga"
+#spr2 "./Warhammer-Complete/Slann Second Yucatetl2.tga"
+#name "One Who Guided The Spheres"
+#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Yucatetl is truly blessed, for he alone of his generation was permitted audience with the Old Ones, though the experience blinded him to the material world. Yucatetl helped the First Generation guide the world through the heavens and set the four winds in motion. Even before the coming of Chaos Yucatetl sat motionless, staring into the void with blind unblinking eyes, but now he is awakened and narrowing his eyes to a pinprick of light, sees all that must be done. Yucatetl can cast rituals into even the most distant lands."
+#hp 60
+#size 6
+#prot 14
+#mor 30
+#mr 23
+#enc 8
+#str 8
+#att 3
+#def 2
+#prec 0
+#mapmove 1
+#ap 6
+#gcost 1
+#rcost 1
+#nobadevents 30
+#weapon "fist"
+#weapon "Contemplate"
+#maxage 100000
+#forestsurvival
+#magicskill 8 5
+#magicskill 4 7
+#magicskill 6 1
+#magicskill 1 5
+#magicskill 2 1
+#magicskill 3 1
+#blind
+#spreaddom 2
+#gemprod 4 2
+#shockres 5
+#coldres 5
+#poisonres 5
+#holy
+#itemslots 61440 -- four misc slots
+#poorleader
+#onebattlespell "Communion Master"
+#nametype 123
+#unique
+#magicboost 7 -4
+#bonusspells 3
+#fixedname "Yucatetl"
+#float
+#allrange 10
+#end
+
+
+
+
+-------- PRETENDERS
+
+
+-------- NATIONAL HEROES
+
+
+---- Nakai the Wanderer
+
+#newmonster 3356
+#spr1 "./Warhammer-Complete/Hero Nakai.tga"
+#spr2 "./Warhammer-Complete/Hero Nakai2.tga"
+#name "Kroxigor of the First Spawning"
+#descr "The ancient Kroxigor known as Nakai the Wanderer is a sacred, almost mythical figure amogst the Lizardmen, particularly the Skinks. Nakai bears the marking of the Old Ones and albino colouration. His gnarled scales and spined ridges are crisscrossed with the scars of a thousand battles and his demise has been reported numerous times, but the Old Ones have a special plan for Nakai and he always returns to aid his people. It is believed Nakai was one of the first Kroxigor to spawn in Itza; he fought in numerous battles in the Great War against Chaos, reputedly slaying a Greater Daemon in single combat. Nakai's appearance at a temple city often precedes an invasion, but no city has fallen under his watch and he is considered one of the clearest signs that the Old Ones still favour their children. Nakai carries a great Daemon slaying obsinite club of incredible power and wears a pair of twinned bracers which grant him immunity to fire and cold."
+#hp 50
+#size 4
+#prot 19
+#mor 30
+#mr 15
+#enc 3
+#str 23
+#att 13
+#def 12
+#prec 5
+#mapmove 2
+#ap 17
+#gcost 1
+#rcost 1
+#weapon "End of Daemons"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#poisonres 5
+#maxage 99999
+#swampsurvival
+#forestsurvival
+#nametype 123
+#immortal
+#fireres 30
+#coldres 30
+#onebattlespell "Personal Luck"
+#itemslots 7296
+#nobadevents 20
+#unique
+#holy
+#fixedname "Nakai the Wanderer"
+#end
+
+
+---- Tiktaqto, Master of Skies
+
+#newmonster 3309
+#spr1 "./Warhammer-Complete/Hero Tiktaqto.tga"
+#spr2 "./Warhammer-Complete/Hero Tiktaqto2.tga"
+#name "Master of Skies"
+#descr "Tiktaqto is Master of Skies, one of the greatest of the Skink Chiefs and answers only to the Slann themselves. He is a master of strategy and has never been defeated in battle, seemingly instinctually aware of the perfect time and place to strike with his Terradon riders. Tiktaqto swoops into battle mounted on his particularly large and fearsome Terradon, Zwup, the two fighting as one in perfct harmony. The Master of Skies is granted two powerful artifacts by the Mage Priests; the Mask of Heavens and the Blade of Ancient Skies. The Mask grants Tiktaqto power over the air itself and provides protection against both enemy missiles and hostile magic. The Blade is constructed from the jawbone of an ancient aerial predator and has been enchanted to bite deep through almost any armour."
+#hp 35
+#size 3
+#prot 11
+#mor 14
+#mr 15
+#enc 3
+#str 11
+#att 12
+#def 12
+#prec 10
+#mapmove 4
+#flying
+#ap 8
+#gcost 0
+#rcost 1
+#weapon "Terradon Bite"
+#weapon "Terradon Talon"
+#weapon "Terradon Talon"
+#weapon "Blade of Ancient Skies"
+#armor "Mask of Heavens"
+#maxage 700
+#startage 300
+#forestsurvival
+#coldblooded
+#poisonres 7
+#mounted
+#nametype 123
+#stealthy 10
+#onebattlespell "Air Shield"
+#magicskill 1 2
+#superiorleader
+#unique
+#itemslots 29696 -- body and 3 misc
+#fixedname "Tiktaqto"
+#end
+
+
+
+---- Chakax, Eternity Warden
+
+#newmonster 3352
+#spr1 "./Warhammer-Complete/Hero Chakax.tga"
+#spr2 "./Warhammer-Complete/Hero Chakax2.tga"
+#name "Eternity Warden"
+#descr "Chakax is the Eternity Warden, greatest of the Temple Guard. It is he that protects the most powerful of the Slann while they meditate, often for decades or even centuries, in the Eternity Chamber of the First City. Chakax is the last surviving member of his spawning and possibly the oldest of all Temple Guard. His skills are commensurate with his age and he has destroyed both lone assassins and entire regiments in his countless years of vigil, not once losing a Slann under his protection. He wields the Star Stone Mace, a weapon of material not quarried on this world which can negate magical forces with ease. The Helm of the Prime Guardian sits on his head, granting him visions of any who would dare attempt to harm his charges and around his muscled neck hangs the Eternity Key, an artefact that grants Chakax incredible, tireless speed in battle."
+#hp 25
+#size 3
+#prot 14
+#mor 30
+#mr 16
+#enc 1
+#str 16
+#att 13
+#def 12
+#prec 11
+#mapmove 1
+#ap 10
+#gcost 0
+#rcost 1
+#armor "Helm of the Prime Guardian"
+#armor "Ceremonial Plates"
+#weapon "Bite"
+#weapon "Star Stone Mace"
+#castledef 5
+#patrolbonus 20
+#maxage 10000
+#startage 6000
+#forestsurvival
+#coldblooded
+#poisonres 2
+#onebattlespell "Quicken Self"
+#holy
+#fixedname "Chakax"
+#itemslots 7168 -- feet, body, 1 misc
+#bodyguard 10
+#end
+
+
+---- Gor Rok, Great White Lizard
+
+#newmonster 3357
+#spr1 "./Warhammer-Complete/Hero Gor Rok.tga"
+#spr2 "./Warhammer-Complete/Hero Gor Rok2.tga"
+#name "Great White Lizard"
+#descr "When Gor Rok emerged from the spawning pool his size, albino colouring and lone arrival marked him as a future champion. And so it has been , for Gor Rok, known as the Great White Lizard, has battled the enemies of the Great Plan for thousands of years. He is the rock upon which the enemy break, an immovable warrior immune to fear or doubt, covered with thick scales and corded muscle. Gor Rok is blessed by all the Old Ones and so fated for great things, granted great fortune in battle and held as sacred by the Lizardmen. As befits a sacred champion Gor Rok is equipped with the finest artefacts available, smiting his foes with the unerring Mace of Ulumak and halting even charging daemons with the Shield of Aeons. This solid obsidian shield was forged by Adohi Tegha himself in the heart of a volcano and for any other creature would be far too heavy to lift."
+#hp 40
+#size 3
+#prot 17
+#mor 30
+#mr 16
+#enc 3
+#str 19
+#att 13
+#def 12
+#prec 9
+#mapmove 2
+#ap 10
+#gcost 0
+#rcost 1
+#armor "Crest Plate"
+#armor "Ceremonial Plates"
+#armor "Shield of Aeons"
+#weapon "Bite"
+#weapon "Mace of Ulumak"
+#maxage 10000
+#startage 6000
+#forestsurvival
+#coldblooded
+#poisonres 5
+#shockres 5
+#fireres 5
+#coldres 5
+#onebattlespell "Personal Luck"
+#pierceres
+#slashres
+#bluntres
+#holy
+#fixedname "Gor Rok"
+#itemslots 42072 - head, body, feet, 3 misc
+#goodleader
+#inspirational 1
+#end
+
+---- Tehenhauin, Prophet of Sotek
+
+#newmonster 3358
+#spr1 "./Warhammer-Complete/Hero Tehenhauin.tga"
+#spr2 "./Warhammer-Complete/Hero Tehenhauin2.tga"
+#name "Prophet of Sotek"
+#descr "The story of Tehenhauin is in many ways the story of Sotek. Tehenhauin began his life as a Priest in the city of Chaqua, but the arrival of the Skaven clan Pestilens changed all that. The vile ratmen somehow overcame the disease, flora and fauna of Lustria and became agents of corruption, releasing plagues which devastated the Lizardman population. Cahqua and her resident Slann were ravaged by pestilence and Tehenhauin, sensing the city was doomed, gathered the sacred golden plaques and led the survivors into the jungle. These plaques spoke of the arrival of vengeful Sotek and Tehenhauin, sacrificing thousands of captured ratmen with his serpent blade, acted as his herald. As Prophet of Sotek Tehenhauin is able to unleash wave after wave of poisonous blood red snakes in battle."
+#hp 14
+#size 2
+#prot 9
+#mor 14
+#mr 16
+#enc 3
+#str 16
+#att 14
+#def 14
+#prec 12
+#mapmove 2
+#ap 16
+#gcost 0
+#rcost 1
+#armor "Ceremonial Plates"
+#weapon "Serpent Kryss"
+#maxage 10000
+#startage 6000
+#forestsurvival
+#swampsurvival
+#stealthy 20
+#coldblooded
+#poisonres 30
+#berserk 3
+#fixedname "Tehenhauin"
+#itemslots 15490 - head, body, feet, 2 misc, 1 hand
+--tmpbloodslaves 6
+#douse 2
+#magicskill 7 3
+#magicskill 0 1
+#magicskill 6 2
+#battlesum5 3343 -- red snakes
+#batstartsum2d6 3343 -- red snakes
+#bloodvengeance 2
+#beastmaster 1
+#goodleader
+#inspirational 1
+#shockres 4
+#fireres 4
+#coldres 4
+#end
+
+
+---- Oxyotl the unseen
+
+#newmonster 3361
+#spr1 "./Warhammer-Complete/Hero Oxyotl.tga"
+#spr2 "./Warhammer-Complete/Hero Oxyotl2.tga"
+#name "He That Hunts Unseen"
+#descr "One of the rare breed of Chameleon Skink, Oxyotl was already an accomplished hunter when Chaos came to the world. As the great temple city of Pahuax fell, Oxyotl fought bravely to defend his Lord the Slann Mage-Priest Pocaxalan who unleashed an incantation supposed to blast the daemons back to their realm. Unfortunately even the great Slann could not control such magical power and the centre of the city vanished in a blinding flash of light. Oxyotl awoke to find himself in the nightmarish Realm of Chaos, scant paces away from daemons feasting on the remains of his Lord. None know how Oxyotl survived his daemonic pursuers, but he found his way back to Lustria only to realise over seven thousand years had passed. His return coincided with the first spawning of Chameleon Skins in memory and with his golden blowpipe he once again began to hunt those who would disrupt the Great Plan."
+#hp 9
+#size 1
+#prot 2
+#mor 30
+#mr 15
+#enc 2
+#str 9
+#att 9
+#def 11
+#prec 18
+#mapmove 2
+#ap 16
+#gcost 0
+#rcost 1
+--weapon "long bow"
+#weapon "Golden Blowpipe"
+#weapon "Bite"
+#maxage 500
+#startage 100
+#forestsurvival
+#swampsurvival
+#coldblooded
+#poisonres 10
+#stealthy 80
+#nametype 123
+#illusion
+#fixedname "Oxyotl"
+#assassin
+#itemslots 31872 -- no hands, everything else + 3 misc
+#allret 100 -- chance to return from void, inferno etc
+#darkvision 100
+#end
+
+
+
+
+
+
+-------- SPELLS
+
+
+---- Call Terradons
+
+#newspell
+#name "Call Terradons"
+#descr "Invoking both Huanchi and Tepok, the caster summons a flight of Terradons and binds them to his will. Terradons are lethal winged predators that strike down through the Lustrian canopy like bolts of green lightning. The more powerful the caster, the more Terradons will respond to his call." 
+#school 0
+#restricted 101
+#researchlevel 3
+#path 0 6
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10001
+#fatiguecost 600
+#damage 3337
+#nreff 2003
+#end
+
+
+---- Flood of serpents
+
+#newspell
+#name "Flood of Serpents"
+#descr "Spilling blood in the name of Sotek, the great serpent god of vengeance, the caster causes a flood of blood red serpents to boil up from the ground and attack everything in sight. The serpents have no loyalty to the Lizardmen and they will fade along with the magic, but they are capable of wreaking considerable havoc far behind enemy lines."
+#restricted 101
+#researchlevel 4
+#school 6
+#path 0 7
+#pathlevel 0 1
+#fatiguecost 1500
+#nreff 40
+#damage 3343
+#effect 10038
+#end
+
+
+
+---- Jungle Serpent
+
+#newspell
+--copyspell "Summon Imp"
+#name "Jungle Serpent"
+#descr "Jungle Serpent"
+#restricted 101
+#researchlevel 0
+#school -1
+#path 0 6
+#pathlevel 0 1
+#fatiguecost 100
+#effect 1
+#nreff 1
+#damage 3344
+#explspr 10044 -- rising green mist
+#sound 50
+#end
+
+
+---- Touch of Madness Short
+
+#newspell
+#copyspell "Touch of Madness"
+#range 5
+#end
+
+
+---- Rain of Snakes
+
+#newspell
+#copyspell "Vine Arrow"
+#name "Rain of Snakes"
+#descr "Hurling forward a handful of sticks from the depths of the Lustrian jungle, the caster hisses in a forgotten language, turning them to twisting jungle serpents mid-flight. As they fall like arrows amongst the enemy ranks, they will attack with their poisonous fangs."
+#restricted 101
+#researchlevel 6
+#school 0
+#path 0 6
+#pathlevel 0 3
+#nreff 2001
+#damage 2
+#fatiguecost 50
+#nextspell "Jungle Serpent"
+#end
+
+
+---- Serpents of Sotek
+
+#newspell
+--copyspell "Summon Imp"
+#name "Serpents of Sotek"
+#descr "Spilling sacrificial blood on the ground and invoking the terrible serpent god of vengeance, Sotek, the priest calls forth manifestations of his spite. The serpents of Sotek are mindless manifestations of vengeance with a powerful venom. Though they are easily dispatched in melee, in sufficient numbers they can overwhelm many foes."
+#restricted 101
+#researchlevel 2
+#school 6
+#path 0 7
+#pathlevel 0 1
+#fatiguecost 100
+#effect 1
+#nreff 12
+#damage 3343
+#explspr 10144 -- some blood
+#sound 50
+#end
+
+
+---- Bloodscale of Sotek
+
+#newspell
+#name "Bloodscale of Sotek"
+#descr "Bloodscale of Sotek" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3342
+#nreff 1
+#end
+
+---- Spawning of Sotek
+
+#newspell
+#name "Spawning of Sotek"
+#descr "By spilling blood on the altar of Sotek, the Serpent, the Wrathful One, the Nemesis, Skavenbane, the priests of Sotek spread his influence to yet another a spawning of Saurus, led by a frenzied Bloodscale." 
+#school 6
+#restricted 101
+#researchlevel 4
+#path 0 7
+#pathlevel 0 1
+#effect 10001
+#fatiguecost 2400
+#damage 3329
+#nreff 12
+#nextspell "Bloodscale of Sotek"
+#end
+
+---- Deepscale of Tzunki
+
+#newspell
+#name "Deepscale of Tzunki"
+#descr "Deepscale of Tzunki" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3339
+#nreff 1
+#end
+
+---- Spawning of Tzunki
+
+#newspell
+#name "Sacred Spawning of Tzunki"
+#descr "The will of Tzunki, Watcher of Water, the Deep One, the Terror from Below, Devourer of Corsairs is revealed! Careful interpretation of calls from the watery depths of the world issued by Tzunki has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a fearsome Deepscale." 
+#school 0
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3330
+#nreff 12
+#nextspell "Deepscale of Tzunki"
+#end
+
+
+---- Nightscale of Huanchi
+
+#newspell
+#name "Nightscale of Huanchi"
+#descr "Nightscale of Huanchi" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3341
+#nreff 1
+#end
+
+---- Spawning of Huanchi
+
+#newspell
+#name "Sacred Spawning of Huanchi"
+#descr "The will of Huanchi, the Jaguar, the Stalker, Silent Death, Teeth in the Dark is revealed! Careful observation of creatures from the primordial jungles once stalked by Huanchi has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a deadly Nightscale." 
+#school 0
+#restricted 101
+#researchlevel 4
+#path 0 6
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3331
+#nreff 12
+#nextspell "Nightscale of Huanchi"
+#end
+
+
+---- Nullscale of Tlazcotl
+
+#newspell
+#name "Nullscale of Tlazcotl"
+#descr "Nullscale of Tlazcotl" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 2000
+#damage 3351
+#nreff 1
+#end
+
+
+---- Spawning of Tlazcotl
+
+#newspell
+#name "Sacred Spawning of Tlazcotl"
+#descr "The will of Tlazcotl, the Cold One, the Impassable, Mirror of Calm is revealed! Careful study of the ancient temple cities laid out across the continents by Tlazcotl has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an implacable Nullscale." 
+#school 3
+#restricted 101
+#researchlevel 4
+#path 0 4
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3332
+#nreff 12
+#nextspell "Nullscale of Tlazcotl"
+#end
+
+
+---- Lorescale of Tepok
+
+#newspell
+#name "Lorescale of Tepok"
+#descr "Lorescale of Tepok" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3354
+#nreff 1
+#end
+
+---- Spawning of Tepok
+
+#newspell
+#name "Sacred Spawning of Tepok"
+#descr "By observing the rites of Tepok, the Inscrutable, the Ineffable, the Maze of Minds, Master of the Winds, a sacred spawning of his chosen Saurus are summoned, led by a cerebral Lorescale." 
+#school 5
+#restricted 101
+#researchlevel 4
+#path 0 1
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3333
+#nreff 12
+#nextspell "Lorescale of Tepok"
+#end
+
+
+---- Sunscale of Chotec
+
+#newspell
+#name "Sunscale of Chotec"
+#descr "Sunscale of Chotec" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3346
+#nreff 1
+#end
+
+
+---- Spawning of Chotec
+
+#newspell
+#name "Sacred Spawning of Chotec"
+#descr "The will of Chotec, the Burning Sun, the Heat of Life, the Searer of Unlife, Light of Truth is revealed! Careful experimentation with the energy gifted to the world by Chotec has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a brilliant Sunscale." 
+#school 2
+#restricted 101
+#researchlevel 4
+#path 0 0
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1400
+#damage 3334
+#nreff 14
+#nextspell "Sunscale of Chotec"
+#end
+
+
+---- Spinescale of Quetzl
+
+#newspell
+#name "Spinescale of Quetzl"
+#descr "Spinescale of Quetzl" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 2000
+#damage 3353
+#nreff 1
+#end
+
+
+---- Spawning of Quetzl
+
+#newspell
+#name "Sacred Spawning of Quetzl"
+#descr "The will of Quetzl, the Protector, the Rock, the Guardian, He Who Breaks Blades is revealed! Careful analysis of the matter knit together by Quetzl to birth the world itself has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an unstoppable Spinescale."
+#school 1
+#restricted 101
+#researchlevel 4
+#path 0 3
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3335
+#nreff 12
+#nextspell "Spinescale of Quetzl"
+#end
+
+
+
+---- Wardscale of Xhotl
+
+#newspell
+#name "Wardscale of Xhotl"
+#descr "Wardscale of Xhotl" 
+#school -1
+#restricted 101
+#researchlevel 4
+#path 0 2
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1400
+#damage 3349
+#nreff 1
+#end
+
+
+---- Spawning of Xhotl
+
+#newspell
+#name "Sacred Spawning of Xhotl"
+#descr "The will of Xhotl, the Infinite Shield, Bane of Magic, Barrier of Woe, Painter of All is revealed! Careful interpretation of the enchantments laid upon the world by Xhotl to keep Chaos at bay has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a vibrant Wardscale."
+#school 4
+#restricted 101
+#researchlevel 4
+#path 0 4
+#pathlevel 0 2
+#effect 10001
+#fatiguecost 1600
+#damage 3347
+#nreff 12
+#nextspell "Wardscale of Xhotl"
+#end
+
+
+---- Awaken Third Generation Slann
+
+#newspell
+#name "Awaken Third Generation Slann"
+#descr "In times of dire need, Slann of the Third Generation will awaken to guide the Lizardmen according to the prophecies handed down by the Old Ones. They are beings of incredible power, almost gods in their own right, with mental faculties that dwarf even those of their fellow Slann. The Third Generation assisted the Second in shaping the world itself and had a hand in the aspects of most living creatures native to their lands. Such a powerful Slann requires a considerable Temple Guard for physical protection, though his magical abilities are unmatched even by the greatest mages of the younger races." 
+#school 0
+#restricted 101
+#researchlevel 7
+#path 0 4
+#pathlevel 0 5
+#effect 10021
+#fatiguecost 5000
+#damage 3307
+#nreff 1
+#end
+
+---- Awaken Second Generation Slann of the Seas
+
+#newspell
+#name "Awaken One Who Fathomed The Depths"
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Zlatl, One Who Fathomed The Depths is unmatched in the elemental magic of water, protected from harm by Xhotl and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by both Xhotl and Tzunki." 
+#school 0
+#restricted 101
+#researchlevel 8
+#path 0 4
+#pathlevel 0 5
+#effect 10021
+#fatiguecost 7000
+#damage 3308
+#nreff 1
+#end
+
+
+---- Awaken Second Generation Slann of Fire
+
+#newspell
+#name "Awaken One Who Fired The Earth"
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Adohi-Tehga, One Who Fired The Earth is an unequalled pyromancer, blessed of Chotec, an embodiment of the wrath of the Slann visited upon those who corrupt the Great Plan and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by Chotec." 
+#school 0
+#restricted 101
+#researchlevel 8
+#path 0 4
+#pathlevel 0 5
+#effect 10021
+#fatiguecost 7500
+#damage 3288
+#nreff 1
+#end
+
+
+---- Awaken Second Generation Slann of Earth
+
+#newspell
+#name "Awaken One Who Shaped The Mountains"
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Lord Mazdamundi, One Who Shaped The Mountains is a peerless geomancer, blessed of Quetzl, the most active and powerful of his generation and, like his four brothers, a symbol of the Old Ones' will. Mazdamundi has proclaimed no progress may be made in the Great Plan until the forces of Chaos and unplanned lesser races have been eradicated. His honour guard is formed of sacred Saurus marked by Quetzl." 
+#school 0
+#restricted 101
+#researchlevel 8
+#path 0 4
+#pathlevel 0 5
+#effect 10021
+#fatiguecost 8000
+#damage 3362
+#nreff 1
+#end
+
+---- Awaken Second Generation Slann of Spheres
+
+#newspell
+#name "Awaken One Who Guided The Spheres"
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Yucatetl, One Who Guided The Spheres, blessed of Tepok and Tlazcotl, the blind unblinking eye that sees all, the only living creature to have been given audience with the Old Ones. Yucatetl is a master of the magic of the countless stars and the four winds who can cast rituals across unheard of distances. His honour guard is formed of the sacred Saurus marked by Quetzl and Tepok." 
+#school 0
+#restricted 101
+#researchlevel 8
+#path 0 4
+#pathlevel 0 5
+#effect 10021
+#fatiguecost 8000
+#damage 3364
+#nreff 1
+#end
+
+
+-------- SITES
+
+
+#newsite 1510
+#name "Spawning Pools"
+#path 6
+#level 0
+#rarity 5
+#gems 6 1
+#gems 2 1
+--homecom 3293 -- Oldblood on Cold One
+#end
+
+
+#newsite 1511
+#name "The Great Pyramid"
+#path 8
+#level 0
+#rarity 5
+#gems 4 3
+#homecom 3306 -- Fourth Generation Slann (awakening)
+#end
+
+
+-------- ITEMS
+
+-- Piranha Blade --
+
+#newitem
+#spr "./Warhammer-Complete/Item_Piranha.tga"
+#constlevel 2
+#mainpath 6 -- nature
+#mainlevel 2
+--secondarypath
+--secondarylevel
+#name "Piranha Blade"
+#descr "Piranha Blades gained their name for their ability to shred victims to bloody tatters. Like its namesake, this weapon has thousands of tiny barbed teeth that rip and tear anything they touch. Just as the many-toothed fish is able to saw through the hide of a Stegadon, so too will a Piranha Blade rasp through armour and carve up an opponent."
+#type 1 -- one handed weapon
+#restricted 101
+#weapon 838 -- piranha blade
+#end
+
+
+-- Blade of Realities --
+
+#newitem
+#spr "./Warhammer-Complete/Item_Reality.tga"
+#constlevel 8
+#mainpath 4 -- astral
+#mainlevel 2
+--secondarypath
+--secondarylevel
+#name "The Blade of Realities"
+#descr "Brought to the world by the Old Ones, this weapon shimmers with unnatural power. Legends carved on ancient stone claim the blade exists on every plane of reality simultaneously, and that its edge can sever a creature's soul. No earthly force can stop this deadly blade - it penetrates granite and steel as easily as it slices through flesh and bone."
+#type 1 -- one handed weapon
+#restricted 101
+#weapon 840 -- blade of realities
+#end
+
+
+-- Skavenpelt Banner --
+
+#newitem
+#spr "./Warhammer-Complete/Item_Skavenpelt.tga"
+#constlevel 2
+#mainpath 6 -- nature
+#mainlevel 1
+#secondarypath 7 -- blood
+#secondarylevel 1
+#name "Skavenpelt Banner"
+#descr "Throughout the tumultuous Age of Strife, the armies of Tehenhauin, Prophet of Sotek, marched against the hordes of Clan Pestilens. During the war the followers of Sotek raised a great many banners of vengeance against the ratmen, fashioned from their skin and skulls and daubed with their blood. These banners cast waves of magic over nearby friendly troops driving them into a killing frenzy. The bearer of the banner will be rendered immune to poison and inspire fear in foes and courage in allies."
+#type 2 -- two handed weapon
+#restricted 101
+#weapon "Standard"
+#fear 5
+#autospell "Touch of Madness short"
+#autospellrepeat 1
+#inspirational 1
+#poisonres 75
+#end
+
+
+
+
+-------- NATION
+
+
+#selectnation 101
+#clearnation
+#clearsites
+#name "Itza"
+#epithet "Servants of the Old Ones"
+#era 2
+#brief "The Lizardmen were created by the Old Ones, divine interstellar beings of unimaginable power. For thousands of years they have tended to the will of these beings and protected the world from Chaos."
+#descr "The Lizardmen are a race of reptillian servants created by the Old Ones thousands of years ago. A servant race, they exist only to enact the Great Plan of the Old Ones. The Old Ones brought with them the First Generation of Slann and spawned four more generations to rule over the warlike Saurus, nimble Skinks and mighty Kroxigor. However a Great Catastrophe struck the world and heralded the arrival of Chaos at the poles; since that time the Old Ones have been absent. In their stead, the Lizardmen stand as guardians against Chaos and shape the world according to the Great Plan. Largely isolated in Lustria, the Lizardmen have watched and waited for a time when Chaos might be defeated and the world restored for the glorious return of their masters. Countless years of divination and consultation with the stars has revealed that time to be now and with the Awakening God the lizardmen shall set the world right once again."
+#summary "Race: Skinks, Saurus and other creatures ruled by ancient Slann.
+Military: Skink skirmishers, powerful Saurus warriors and large jungle creatures.
+Magic: Extremely powerful Astral, Nature and Elemental magic with a separate path into Blood.
+Priests: Very Powerful. Prefer heat scale 2."
+#flag "./Warhammer-Complete/flagLZ.tga"
+#templepic 14
+#startsite "The Great Pyramid"
+#startsite "Spawning Pools"
+
+
+#homerealm 6 -- middle americas
+#homerealm 9 -- deeps
+#addgod 266 -- green dragon
+#addgod 265 -- red dragon
+#addgod 158 -- oracle
+#addgod 1348 -- titan of serpents and healing
+
+
+
+--Sets what forts they will use.
+ -- All Great City
+#startfort 5 -- citadel
+--defaultfort 31
+--mountainfort 31
+--swampfort 31
+--forestfort 31
+
+#fortera 3 -- only big expensive forts
+#fortcost 100 -- all forts 50% more expensive
+
+
+
+------- Add soldiers
+
+#forestrec 3324 -- Skinks (blowpipe)
+#swamprec 3324 -- Skinks (blowpipe)
+#forestrec 3323 -- Skink Skirmishers (jav and shield)
+#addrecunit 3323 -- Skink Skirmishers (jav and shield)
+#addrecunit 3325 -- Skink Archers
+#forestrec 3325 -- Skink Archers
+#swamprec 3325 -- Skink Archers
+#forestrec 3326 -- Red Crested Skinks
+#swamprec 3326 -- Red Crested Skinks
+#addrecunit 3322 -- Chameleon Skinks
+#addrecunit 3319 -- Skink Cavalry
+#forestrec 3336 -- Terradon Rider
+#mountainrec 3359 -- Ripperdactyl
+#addrecunit 3311 -- Saurus Warrior (spear)
+#addrecunit 3310 -- Saurus Warrior (sword)
+#addrecunit 3327 -- Saurus Cavalry
+#swamprec 3316 -- Kroxigor
+#swamprec 3317 -- Salamander
+#addrecunit 3345 -- Stegadon
+--addrecunit 3347 -- xhotl
+
+
+------- Add leaders
+
+
+#addreccom 3294 -- Chameleon Scout
+#addreccom 3295 -- Skink Warchief
+#forestcom 3295 -- Skink Warchief
+#addreccom 3290 -- Saurus Scar Veteran
+#addreccom 3293 -- Saurus Oldblood on Cold One
+#forestcom 3300 -- Skink Shaman
+#swampcom 3300 -- Skink Shaman
+#addreccom 3291 -- Skink Priest
+#forestcom 3292 -- Priest of Sotek
+#swampcom 3292 -- Priest of Sotek
+--addreccom 3296 -- Fifth Generation Slann
+#addreccom 3305 -- Fifth Generation Slann with Guards
+--addreccom 3298 -- Fourth Generation Slann (cap only)
+--addreccom 3301 -- third gen slann
+--addreccom 3341 -- nightscale of huanchi
+--addreccom 3339 -- deepscale of tzunki
+--addreccom 3342 -- Bloodscale of Sotek
+--addreccom 3346 -- sunscale chotec
+--addreccom 3354 -- lorescale tepok
+--addreccom 3353 -- spinescale quetzl
+--addreccom 3349 -- wardscale xhotl
+--addreccom 3351 -- nullscale of tlazcotl
+--addreccom 3303 -- Zlatlan
+--addreccom 3356 -- Nakai
+--addreccom 3309 -- Tiktaqto
+--addreccom 3352 -- Chakax
+--addreccom 3288 -- Adohi-Tehga
+--addreccom 3358 -- Tehenhauin
+--addreccom 3357 -- Gor Rok
+--addreccom 3361 -- Oxyotl
+--addreccom 3362 -- Mazdamundi
+
+
+
+
+------- Province Defence
+
+--Sets the units to be used in province defense.
+
+#defcom1 3295 -- Skink Warchief
+#defcom2 3291 -- Skink Priest
+#defunit1 3323 -- Skink Skirmishers
+#defunit1b 3324 -- Skink blowpipes
+#defunit2 3325 -- Skink Archers
+#defunit2b 3316 -- Kroxigor
+
+
+--Sets how many of the units to appear per point.
+
+#defmult1 10
+#defmult1b 10
+#defmult2 10
+#defmult2b 5
+
+
+------- Hero Settings
+
+#multihero1 3307 -- 3rd gen slann (awakening)
+#hero1 3356 -- Nakai
+#hero2 3309 -- Tiktaqto
+#hero3 3352 -- Chakax
+#hero4 3357 -- Gor Rok
+#hero5 3361 -- Oxyotl
+
+
+#idealcold -2
+#color 0.3 0.3 0.8
+#templecost 600
+
+
+#startcom 3290 -- Saurus Scar Veteran
+#startunittype1 3310 -- saurus warrior sword
+#startunitnbrs1 10
+#startunittype2 3311 -- saurus warrior spear
+#startunitnbrs2 10
+#startscout 3294 -- Chameleon Scout
 #end
 
 
