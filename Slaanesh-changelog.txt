@@ -7,6 +7,7 @@ By JoanSam
 -- Look at combat spells, consider adding Cacaphonic Choir, consider making the best W/D crosspath
 -- Also look at items again, now that magic is so different.
 -- Remove some attacks from monsters with newly doubled Slaaneshi Claws
+-- Look at gods, esp. human form of Avatar
 
 
 --Version 1.00 - Finished Changes:
