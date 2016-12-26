@@ -1,4 +1,4 @@
-#modname "TMP Slaanesh"
+#modname "T"
 #description "All Warhammer nations, mostly compatible with each other (also no lizardmen for some reason)."
 #version 0.59
 
