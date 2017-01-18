@@ -17343,16 +17343,16 @@ TWEAK - Flagellants are undisciplined
 #spr2 "./Warhammer-Complete/Wizard Amber2.tga"
 #name "Amber Wizard"
 #descr "The Wizards of the Amber Order study the Lore of Beasts, the Eighth and final Lore of Magic, the wind of Ghur. The symbol of the Eighth Lore is the Arrow and the colour of the Order's garb is brown. The energies of Ghur are those of beasts and wild places most inimicable to man. Members of the order can be easily recognised by their savage appearance. Adorned in furs, bones, feathers and other talismans, Amber wizards are superb woodsmen with a natural affinity for the beasts of the wild. Solitary individuals who live reclusive lives across the forests of the Empire, they are nonetheless quick to heed the call to arms against the foes of man. The Amber College maintains no building in the capital, but when necessary the scattered mages of the Order will come together in a network of forest lairs. All Amber Wizards gain power when in the forests of the wild."
-#hp 15 (+2)
+#hp 15 --(+2)
 #size 2
 #prot 0
 #mor 13
-#mr 15 (+1)
+#mr 15 --(+1)
 #enc 3
-#str 13 (+1)
-#att 12 (+1)
-#def 12 (+1)
-#prec 12 (+1)
+#str 13 --(+1)
+#att 12 --(+1)
+#def 12 --(+1)
+#prec 12 --(+1)
 #mapmove 2
 #ap 12
 #gcost 170
@@ -17424,17 +17424,17 @@ TWEAK - Flagellants are undisciplined
 #spr2 "./Warhammer-Complete/Wizard Lord Amber2.tga"
 #name "Amber Wizard Lord"
 #descr "The Wizards of the Amber Order study the Lore of Beasts, the Eighth and final Lore of Magic, the wind of Ghur. The symbol of the Eighth Lore is the Arrow and the colour of the Order's garb is brown. The energies of Ghur are those of beasts and wild places most inimicable to man. Amber Wizard Lords are even more reclusive and wild than their brothers in the Order and will often go years without any human contact whatsoever. To attain the rank of Lord, an Amber Wizard must confront one of the giant bears of the Great Forest, stare down the beast and form a permament bond with its primitive mind. From that day forth they are as one, mage and beast tearing through the enemy ranks in perfect destructive harmony. All Amber Wizards gain power when in the forests of the wild."
-#hp 55 (+10)
+#hp 55 --(+10)
 #size 4
 #prot 5
-#mor 16 (+1)
-#mr 17 (+1)
+#mor 16 --(+1)
+#mr 17 --(+1)
 #enc 3
 #mounted
-#str 16 (+2)
-#att 13 (+1)
-#def 13 (+1)
-#prec 13 (+1)
+#str 16 --(+2)
+#att 13 --(+1)
+#def 13 --(+1)
+#prec 13 --(+1)
 #mapmove 2
 #ap 18
 #gcost 0
@@ -17451,7 +17451,7 @@ TWEAK - Flagellants are undisciplined
 #magicboost 6 1
 #forestsurvival
 #mountainsurvival
-#animalawe 5 (+2)
+#animalawe 5 --(+2)
 #poisonres 10
 #poorleader
 #nametype 104
@@ -17486,7 +17486,7 @@ TWEAK - Flagellants are undisciplined
 #mounted
 #armor "Robes"
 #weapon "Pyros"
-#quarterstaff
+#weapon "quarterstaff"
 #magicskill 0 2
 #magicskill 3 3
 #magicskill 2 2
@@ -17720,7 +17720,7 @@ TWEAK - Flagellants are undisciplined
 #nametype 104
 #mounted
 #autohealer 60
-#springpower
+#springpower 50
 #entangle
 #mountainsurvival
 #forestsurvival
@@ -18585,7 +18585,7 @@ Priests: Strong."
 
 #addrecunit 3401 -- Moot Militia
 #addrecunit 3400 -- Free Infantry (N)
-#foreinrecunit 3400 -- Free Infantry (N)
+#addforeignunit 3400 -- Free Infantry (N)
 #addrecunit 3399 -- Archer (N)
 #addrecunit 3403 -- State Spearman (N)
 #addrecunit 3404 -- State Halberdier (N)
@@ -18829,7 +18829,7 @@ NEW PRETENDERS
 #blunt
 #end
 
-#newweapon 1009			<-----------
+#newweapon 1009			-----------
 #name "Moonbow"
 #dmg 25
 #nostr
@@ -19068,7 +19068,7 @@ NEW PRETENDERS
 #newarmor 356
 #name "Lion Cloak"
 #rcost 2
-#type 4	Shield
+#type 4	--Shield
 #def 4
 #enc 0
 #prot 16
@@ -19077,7 +19077,7 @@ NEW PRETENDERS
 #newarmor 357
 #name "Phoenix Ward"
 #rcost 10
-#type 4	Shield
+#type 4	--Shield
 #enc 0
 #prot 30
 #def 4
@@ -19087,7 +19087,7 @@ NEW PRETENDERS
 #newarmor 359
 #name "Dragon Armor"
 #rcost 20
-#type 5	Armor
+#type 5	--Armor
 #enc 2
 #prot 20
 #def -2
@@ -19096,7 +19096,7 @@ NEW PRETENDERS
 #newarmor 360
 #name "Dragon Helmet"
 #rcost 5
-#type 6	Helmet
+#type 6	--Helmet
 #enc 0
 #prot 20
 #def 0
@@ -19105,7 +19105,7 @@ NEW PRETENDERS
 #newarmor 361
 #name "Phoenix Armor"
 #rcost 13
-#type 5	Armor
+#type 5	--Armor
 #enc 2
 #prot 14
 #def -2
@@ -19114,7 +19114,7 @@ NEW PRETENDERS
 #newarmor 362
 #name "The Shadow Crown"
 #rcost 0
-#type 6	Helmet
+#type 6	--Helmet
 #enc -1
 #prot 12
 #def 2
@@ -19123,7 +19123,7 @@ NEW PRETENDERS
 #newarmor 363
 #name "Stone of Midnight"
 #rcost 0
-#type 4	Shield
+#type 4	--Shield
 #enc 0
 #prot 0
 #def 2
@@ -19132,7 +19132,7 @@ NEW PRETENDERS
 #newarmor 364
 #name "Deflection"
 #rcost 2
-#type 4	Shield
+#type 4	--Shield
 #enc 0
 #prot 16
 #def 4
@@ -19141,7 +19141,7 @@ NEW PRETENDERS
 #newarmor 365
 #name "Attuned to Magic"
 #rcost 0
-#type 4	Shield
+#type 4	--Shield
 #enc 0
 #prot 30
 #def 4
@@ -19150,7 +19150,7 @@ NEW PRETENDERS
 #newarmor 366
 #name "Pelt of Charandis"
 #rcost 0
-#type 4	Shield
+#type 4	--Shield
 #enc 1
 #prot 20
 #def 4
@@ -20849,7 +20849,7 @@ NEW PRETENDERS
 #restricted 110
 #fatiguecost 100
 #aoe 5
-#prec 5
+#precision 5
 #damage 9
 #range 20
 #nextspell "Flames of the Phoenix 2"
@@ -20868,7 +20868,7 @@ NEW PRETENDERS
 #restricted 110
 #fatiguecost 25
 #aoe 1001
-#prec 5
+#precision 5
 #damage 1
 #range 0
 #effect 23
@@ -20938,7 +20938,7 @@ NEW PRETENDERS
 #restricted 110
 #fatiguecost 25
 #aoe 0
-#prec 2
+#precision 2
 #nreff 2004
 #damage 2010
 #range 25
@@ -20961,7 +20961,7 @@ NEW PRETENDERS
 #restricted 110
 #fatiguecost 100
 #aoe 666
-#prec 0
+#precision 0
 #damage 3
 #range 25
 #spec 144
@@ -20982,7 +20982,7 @@ NEW PRETENDERS
 #researchlevel 6
 #restricted 110
 #fatiguecost 50
-#prec 2
+#precision 2
 #nreff 1002
 #range 25
 #sound 16
@@ -21390,7 +21390,7 @@ Magic: Very strong Astral and Fire, strong Air and Nature, some Water and Earth.
 ------- Non-commanders
 
 #addrecunit 6001	Archer
-#addrecunit 6016	Archer w/armor
+#addrecunit 6016	Archer with armor
 #addrecunit 6002	Spearman
 #addrecunit 6007	Ellyrian Reaver
 #addrecunit 6008	Silver Helm
@@ -21481,7 +21481,7 @@ Version 1.1
 #pierce
 #armorpiercing
 #dmg 5
-#res 4
+#rcost 4
 #len 2
 #def 1
 #sound 8
@@ -21672,7 +21672,7 @@ Version 1.1
 #pillagebonus 1
 #wastesurvival
 #mountainsurvival
-#woundfend
+--#woundfend
 #end
 
 
@@ -21769,7 +21769,7 @@ Version 1.1
 #xpshape 200
 #end
 
-#newmonster 4632 -50p -- Chaos Spawn Greater
+#newmonster 4632 -- -50p -- Chaos Spawn Greater
 #spr1 "./Warhammer-Complete/chaosSpawnGreater1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawnGreater2.tga"
 #name "Greater Chaos Spawn"
@@ -24632,7 +24632,7 @@ Priests: Khorne needs no priests."
 #deathdisease 5
 #diseasecloud 2
 #poisonres 25
-#stealth 0
+#stealthy 0
 #diseaseres 100
 #end
 
@@ -31290,7 +31290,7 @@ Like other orcs Black Orcs can recover from even the most devastating affliction
 #armor "Half Helmet"
 #maxage 35
 #startage 15
-#woundfend
+#woundfend 50
 #mountainsurvival
 #chaosrec 2
 #end
@@ -31706,7 +31706,7 @@ Savage Orcs believe so much in their warpaint that, despite its uselessness on l
 #name "Savage Orc Boar Boy"
 #descr "Even more than normal orcs, Savage Orc Boar Boyz delight on riding into battle on the back of a wild tusker that is almost as angry as the savage orcs themselves!  Armed with choppas and wearing their warpaint the rider is a threat, but the huge tusks on these boars are just as dangerous than the orc riding them when they charge.
 
-Should the rider be killed the bad tempered boar will continue to fight, but will run off after the battle is over. Savage Orcs believe so much in their warpaint that, despite its uselessness on literally any other creature, it actually protects them from harm. Like other orcs, Savage Orcs have great recuperative abilities and hit extra hard when first entering battle, but unlike other orcs they tend to go berserk at the site of blood, anyone's blood!""
+Should the rider be killed the bad tempered boar will continue to fight, but will run off after the battle is over. Savage Orcs believe so much in their warpaint that, despite its uselessness on literally any other creature, it actually protects them from harm. Like other orcs, Savage Orcs have great recuperative abilities and hit extra hard when first entering battle, but unlike other orcs they tend to go berserk at the site of blood, anyone's blood!"
 #size 3
 #mor 10
 #enc 5
@@ -32933,7 +32933,6 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #damagemon "Waaghboy"
 #restricted 160
 #restricted 161
-#holy
 #end
 
 #newspell
@@ -37175,7 +37174,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4567 -24p
+#newmonster 4567 --  -24p
 #copystats 4550
 #name "Carrion"
 #descr "Carrion are huge undead birds of prey that feed on the corpses of the fallen."
@@ -37195,11 +37194,11 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #weapon "Claws"
 #weapon "Beak"
-#fly
+#flying
 #end
 
 
-#newmonster 4568 -170p
+#newmonster 4568 -- -170p
 --#copystats 4550
 #name "Khemrian Warsphinx"
 #descr "Khemrian Warsphinxes are giant leonine statues that wade through the ranks of their foes, crushing them underfoot as if they were nothing more than bothersome insects."
@@ -37237,7 +37236,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #itemslots 12288 --2misc
 #end
 
-#newmonster 4569 -55p
+#newmonster 4569 -- -55p
 #name "Sepulchral Stalker"
 #descr "Sepulchral Stalkers lie in wait beneath the desert sands, waiting for intruders to pass by before launching a devastating ambush. When the trap is sprung, several horrifying, snake-like forms burst from the ground to surround their prey."
 #spr1 "./Warhammer-Complete/SepulchralStalker1.tga"
@@ -37364,7 +37363,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #poorundeadleader
 #magicskill 5 1
 #magicskill 8 1
-#custommagic 6144 66 DS
+#custommagic 6144 66 -- DS
 #holy
 #weapon "Dagger"
 #weapon "Dagger"
@@ -37389,10 +37388,10 @@ enchanced further by the powerful magic animating them. They are also competent 
 #prec 10
 
 #goodundeadleader
-#magicskill 4 1 S
-#magicskill 5 2 Death
-#magicskill 8 2 Holy
-#custommagic 4096 50 D
+#magicskill 4 1 --Astral
+#magicskill 5 2 --Death
+#magicskill 8 2 --Holy
+#custommagic 4096 50 --D
 #holy
 #weapon "Magic Staff"
 #end
@@ -37418,10 +37417,10 @@ enchanced further by the powerful magic animating them. They are also competent 
 #prec 12
 
 #goodundeadleader
-#magicskill 4 1 S
-#magicskill 5 4 Death
-#magicskill 8 3 Holy
-#custommagic 4096 50 D
+#magicskill 4 1 --S
+#magicskill 5 4 --Death
+#magicskill 8 3 --Holy
+#custommagic 4096 50 --D
 #holy
 #immortal
 
@@ -37455,9 +37454,9 @@ enchanced further by the powerful magic animating them. They are also competent 
 #armor "Kite Shield"
 
 #magicskill 4 1
-#magicskill 5 4 Death
+#magicskill 5 4 --Death
 #magicskill 8 4
-#custommagic 5120 50 DE
+#custommagic 5120 50 --DE
 
 #deathcurse
 #trample
@@ -37485,8 +37484,8 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 4 1
 #magicskill 5 5
 #magicskill 8 5
-#custommagic 5120 100 DE
-#custommagic 5120 50 DE
+#custommagic 5120 100 --DE
+#custommagic 5120 50 --DE
 
 #mor 30
 #hp 30
@@ -37507,7 +37506,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 
 
 
-#newmonster 4559 -85p
+#newmonster 4559 -- -85p
 #name "Tomb Scorpion"
 #spr1 "./Warhammer-Complete/BoneScorpion1.tga"
 #spr2 "./Warhammer-Complete/BoneScorpion2.tga"
@@ -37588,7 +37587,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 --#stonebeing
 --#end
 
-#newmonster 4570 -170p
+#newmonster 4570 -- -170p
 --#copystats 4550
 #name "Hierotitan"
 #descr "The Hierotitan is a huge, animated statue of Nehekharan gods. It radiates a malevolent aura of magic."
@@ -42296,7 +42295,7 @@ although most are too sickened by the revelation of their vampirism to truly wis
 #hp 11
 #str 11
 #patrolbonus 1
-#age 25
+#startage 25
 #nametype 104
 #secondshape 5223
 #end
@@ -42675,7 +42674,7 @@ leadership are diminished."
 #fear 0
 #popkill 2
 #stealthy 25
-#forstsurvival
+#forestsurvival
 #regeneration 20
 #magicboost 1 -1 -- Wolves aren't good with their hands - -1 air magic
 #magicboost 5 -1 -- Wolves aren't good with their hands - -1 death magic
@@ -45101,7 +45100,7 @@ Nametypes 	172,173,174
 #fireres -5
 #poisonres 15
 #weapon "Razor sharp talons"
-#woundfend
+#woundfend 50
 #xpshape 50
 #end
 
@@ -45131,7 +45130,7 @@ Nametypes 	172,173,174
 #holy
 #fireres -5
 #poisonres 15
-#woundfend
+#woundfend 50
 #weapon "Tree Whack" --+attacks?
 #xpshape 100
 #end
@@ -45168,7 +45167,7 @@ Nametypes 	172,173,174
 #holy
 #fireres -7
 #poisonres 15
-#woundfend
+#woundfend 50
 #weapon "Tree Whack" --+attacks?
 #weapon "Tree Whack" --+attacks?
 #weapon "Strangleroots"
@@ -45204,13 +45203,13 @@ Nametypes 	172,173,174
 #bonusspells 1
 
 #goodleader
-#woundfend
+#woundfend 50
 #bonusspells 1
 #fear 7
 #holy
 #fireres -10
 #poisonres 15
-#woundfend
+#woundfend 50
 #weapon "Tree Whack" --+attacks?
 #weapon "Tree Whack" --+attacks?
 #weapon "Strangleroots"
@@ -45273,7 +45272,7 @@ Nametypes 	172,173,174
 #fear 7
 #itemslots 12288
 #flying
-#woundfend
+#woundfend 50
 #poisonres 15
 #weapon "Dragon claws"
 #weapon "Soporific Breath"
@@ -45307,7 +45306,7 @@ Nametypes 	172,173,174
 #prot 16
 
 #illusion
-#reinvigorate 5
+#reinvigoration 5
 #superiorleader
 #weapon "Swift Asrai Spear"
 #weapon "Swift Asrai Longbow"
@@ -45576,7 +45575,7 @@ Nametypes 	172,173,174
 #pathlevel 0 2 	--
 #researchlevel 4
 #aoe 4
-#dmg 4
+#damage 4
 #fatiguecost 50
 #end
 
@@ -45607,7 +45606,7 @@ Nametypes 	172,173,174
 #damage 8
 #precision 0
 #explspr 10149
-#flightspr 10143 7
+#flightspr 10143 -- 7
 #fatiguecost 40
 #end
 
@@ -45833,8 +45832,8 @@ Nametypes 	172,173,174
 #rarity 5
 #homecom 4417 --Glade Lord
 #homecom 4420 --Spellweaver
-#gems 4 2	S
-#gems 6 3	N
+#gems 4 2	--S
+#gems 6 3	--N
 #end
 
 #newsite 1706
@@ -45908,7 +45907,7 @@ Priests: Average."
 #color 0.15 0.75 0.15
 
 
-#templepic 10	Forest
+#templepic 10	--Forest
 #likesterr 128
 
 ///////////////// AI Hints \\\\\\\\\\\\\\\\\\\\
@@ -49120,7 +49119,7 @@ Priests: Average."
 #armor "Magic Barrier"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
@@ -49174,7 +49173,7 @@ Priests: Average."
 #armor "Magic Barrier"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
@@ -49230,7 +49229,7 @@ Priests: Average."
 #weapon "Contemplate"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
