@@ -1,9 +1,23 @@
-#modname "Warhammer-Complete"
-#description "All Warhammer nations, mostly compatible with each other (also no lizardmen for some reason)."
-#version 0.59
+﻿#modname "Warhammer-Complete"
+#description "All Warhammer nations, mostly compatible with each other."
+#version 0.60
 
 
---Many thanks to the mod compiler, all I've done (so far) is put this on Dom4Mods. -Joansam
+--Many thanks to the mod compiler -Joansam
+
+--USED BY SEVERAL NATIONS
+--WEAPONS
+
+#newweapon 1220
+#name "Warhorse Hoof"
+#dmg 14
+#att 1
+#def 0
+#len 0
+#bonus
+#nostr
+#end
+
 -- Thanks to Sombre for his work on Skaven for Dom3. thanks bro your my hero
 
 
@@ -3422,18 +3436,7 @@ Priests: Powerful, can perform blood sacrifices"
 -------- WEAPONS (space from 715 to 729) --------
 
 
-#newweapon 1040
-#name "Destrier Hoof"
-#rcost 1
-#bonus
-#blunt
-#att 1
-#len 0
-#dmg 12
-#nostr
-#end
-
-#newweapon 1041
+#newweapon 1030
 #name "Breton Heavy Lance"
 #rcost 3
 #pierce
@@ -3846,8 +3849,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 10
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Plate Hauberk"
@@ -3910,8 +3913,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -3978,8 +3981,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4016,8 +4019,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 13
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4186,8 +4189,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4223,8 +4226,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 11
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4263,8 +4266,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4299,8 +4302,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 8 --Broadsword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4338,8 +4341,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 14
 #prot 0
 #weapon 75 -- Enchanted Sword
-#weapon 1040 -- Destrier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4380,8 +4383,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 14
 #prot 0
 #weapon 75 -- Enchanted Sword
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4429,7 +4432,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 16
 #prot 5
 #weapon 1023 -- Heroic Blade
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #weapon 1022 -- Heroic Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -4491,8 +4494,8 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Sword of Swiftness"
-#weapon 1040 -- Destier Hoof
-#weapon 1041 -- Breton Heavy Lance
+#weapon 1220 -- WH
+#weapon 1030 -- Breton Heavy Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4553,7 +4556,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1023 -- Heroic Blade
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #weapon 1022 -- Heroic Lance
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -4614,7 +4617,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1027 -- Birth Sword
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4672,7 +4675,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 1028 -- Axe of Brionne
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #mounted
@@ -4791,7 +4794,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon 173 -- Star of Heroes
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #armor "Kite Shield"
@@ -4851,7 +4854,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 16
 #prot 0
 #weapon "Axe of Sharpness"
-#weapon 1040 -- Destier Hoof
+#weapon 1220 -- WH
 #weapon 1040 -- Virtue of the joust
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -4910,7 +4913,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Enchanted Sword"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #onebattlespell 821 -- Foul Vapors, changed into AoE 20 air shield
@@ -4967,7 +4970,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Wave Breaker"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Kite Shield"
 #armor "Full Plate Mail"
@@ -5027,7 +5030,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Enchanted Sword"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Kite Shield"
 #armor "Full Plate Mail"
@@ -5087,7 +5090,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 15
 #prot 0
 #weapon "Star of Quenelles"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Kite Shield"
 #armor "Full Plate Mail"
@@ -5654,7 +5657,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon "broadsword"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #weapon "lance"
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -5694,7 +5697,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon "broadsword"
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #weapon "lance"
 #armor "Kite Shield"
 #armor "Full Helmet"
@@ -5841,7 +5844,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 1023 -- Heroic Blade
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #mounted
@@ -5881,7 +5884,7 @@ Priests: Powerful, can perform blood sacrifices"
 #str 12
 #prot 0
 #weapon 1023 -- Heroic Blade
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Full Helmet"
 #armor "Full Plate Mail"
 #batstartsum1 3185 --Battle Pilgrim
@@ -6039,7 +6042,7 @@ Priests: Powerful, can perform blood sacrifices"
 #prot 0
 #weapon 75 -- Enchanted Sword
 #weapon 1022 -- Heroic Lance
-#weapon 1020 -- Destier Hoof
+#weapon 1220 -- WH
 #armor "Shield of Valor"
 #armor "Full Helmet"
 #armor "Full Plate Mail"
@@ -7936,7 +7939,7 @@ New Units: 	- Sea Dragon Rider
 #armor "Ring Mail Cuirass"
 #armor "Leather Hood"
 #weapon "Light Lance"
-#weapon "Warhorse Hoof"
+#weapon 1220
 #weapon 1170
 #weapon 1171
 #pillagebonus 3
@@ -13804,20 +13807,6 @@ TWEAK - Flagellants are undisciplined
 #end
 
 
---------------- CBM Warhorse hoof, overlap ok
-
-#newweapon 710
-#name "Warhorse Hoof"
-#dmg 12
-#att 2
-#def 0
-#len 0
-#bonus
-#nostr
-#blunt
-#end
-
-
 ---- War Wagon Form 1 Longrange
 
 #newweapon 780
@@ -14831,7 +14820,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #nametype 104
 #end
@@ -14864,7 +14853,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Full Helmet"
 #weapon "Broad Sword"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #nametype 104
 #end
@@ -15065,7 +15054,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #awe 1
 #nametype 104
@@ -15100,7 +15089,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Morningstar"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #fireres 50
 #nametype 104
@@ -15135,7 +15124,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #nametype 104
 #end
@@ -15168,7 +15157,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Full Helmet"
 #weapon "Silver Scythe"
-#weapon 710
+#weapon 1220
 #armor "Shield"
 #nametype 104
 #darkvision 50
@@ -15269,7 +15258,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Plate Hauberk"
 #armor "Iron Cap"
 #weapon "Battleaxe"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #forestsurvival
 #supplybonus 4
@@ -15305,7 +15294,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #nametype 104
 #end
@@ -15339,7 +15328,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Falchion"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #wastelandsurvival
 #nametype 104
@@ -15376,7 +15365,7 @@ TWEAK - Flagellants are undisciplined
 #weapon "Falchion"
 #weapon "Falchion"
 #ambidextrous 6
-#weapon 710
+#weapon 1220
 #nametype 104
 #end
 
@@ -15411,7 +15400,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Runefang"
 #armor "Kite Shield"
-#weapon 710
+#weapon 1220
 #awe 1
 #superiorleader
 #fixedname "Kurt Helborg"
@@ -15449,7 +15438,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Iron Cap"
 #weapon "Runefang"
 #weapon "Short Sword"
-#weapon 710
+#weapon 1220
 #superiorleader
 #fixedname "Marius Leitdorf"
 #itemslots 13442 -- everything but feet and one hand
@@ -15488,7 +15477,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Half Helmet"
 #weapon "Sword of Justice"
-#weapon 710
+#weapon 1220
 #okleader
 #inspirational 3
 #fixedname "Ludwig Schwarzhelm"
@@ -15563,7 +15552,7 @@ TWEAK - Flagellants are undisciplined
 #rcost 6
 #weapon "Maul"
 #armor "Plate Hauberk"
-#weapon 710
+#weapon 1220
 #expertleader
 #magicskill 8 4
 #fear 6
@@ -16002,7 +15991,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Half Helmet"
 #weapon "Hammer"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #expertleader
 #nametype 104
@@ -16038,7 +16027,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Half Helmet"
 #weapon "Hammer"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #expertleader
 #nametype 104
@@ -16072,7 +16061,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Half Helmet"
 #weapon "Broad Sword"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #expertleader
 #nametype 104
@@ -16108,7 +16097,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Half Helmet"
 #weapon "Broad Sword"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #expertleader
 #nametype 104
@@ -16550,7 +16539,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Full Helmet"
 #weapon "Morningstar"
 #weapon "Blazing Lance of Myrmidia"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #fireres 50
 #awe 1
@@ -16591,7 +16580,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Plate Hauberk"
 #armor "Full Helm"
 #weapon "Axe of Hate"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #forestsurvival
 #mountainsurvival
@@ -16634,7 +16623,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Empire Full Plate"
 #armor "Full Helmet"
 #weapon "Tyrant Flail"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #animalawe 2
 #unique
@@ -16674,7 +16663,7 @@ TWEAK - Flagellants are undisciplined
 #armor "Dueterberg Helm"
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #inspirational 1
 #unique
@@ -16715,7 +16704,7 @@ TWEAK - Flagellants are undisciplined
 #weapon "Main Gauche of Parrying"
 #weapon "Sword of Swiftness"
 #ambidextrous 6
-#weapon 710
+#weapon 1220
 #fixedname "Alessio Barbarini"
 #itemslots 13440 - body, 2misc, head
 #unique
@@ -16750,7 +16739,7 @@ TWEAK - Flagellants are undisciplined
 #rcost 5
 #armor "Empire Full Plate"
 #weapon "Silver Scythe"
-#weapon 710
+#weapon 1220
 #armor "Shield"
 #fixedname "Piotr Kronn"
 #darkvision 100
@@ -16793,7 +16782,7 @@ TWEAK - Flagellants are undisciplined
 #weapon 237 -- dmg 18 bite
 #weapon 236 -- dmg 16 claw
 #weapon "Falchion"
-#weapon 710
+#weapon 1220
 #armor "Kite Shield"
 #unique
 #nametype 104
@@ -18991,16 +18980,6 @@ NEW PRETENDERS
 #pierce
 #end
 
-#newweapon 1012
-#name "Warhorse Hoof"
-#dmg 12
-#att 2
-#def 0
-#len 0
-#bonus
-#nostr
-#end
-
 #newweapon 1013
 #name "Bastard Sword of Hoeth"
 #dmg 9
@@ -19549,7 +19528,7 @@ NEW PRETENDERS
 #ressize 2
 #weapon "Spear"
 #weapon "Short Bow"
-#weapon "Hoof"
+#weapon 56
 #armor "Scale Mail Cuirass"
 #armor "Legionary Helmet"
 
@@ -19585,7 +19564,7 @@ NEW PRETENDERS
 
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon "Hoof"
+#weapon 56
 #armor "Plate hauberk"
 #armor "Legionary Helmet"
 #armor "Kite Shield"
@@ -19614,7 +19593,7 @@ NEW PRETENDERS
 #mor 14
 
 #weapon "Dragon Lance"
-#weapon "Hoof"
+#weapon 1220
 #armor "Dragon Armor"
 #armor "Dragon Helmet"
 #armor "Kite Shield"
@@ -19654,7 +19633,7 @@ NEW PRETENDERS
 #weapon "Spear"
 #weapon "Long Bow"
 #weapon "Long Bow"
-#weapon "Hoof"
+#weapon 56
 #armor "Plate Hauberk"
 #armor "Legionary Helmet"
 #armor "Buckler"
@@ -19767,7 +19746,7 @@ NEW PRETENDERS
 
 #weapon "Lance"
 #weapon "Sword of Swiftness"
-#weapon "Hoof"
+#weapon 1220
 #armor "Plate Hauberk"
 #armor "Legionary Helmet"
 #armor "Shield"
@@ -19808,7 +19787,7 @@ NEW PRETENDERS
 
 #weapon "Lance"
 #weapon "Sword of Swiftness"
-#weapon "Hoof"
+#weapon 1220
 #armor "Dragon Armor"
 #armor "Legionary Helmet"
 #armor "Shield"
@@ -19849,7 +19828,7 @@ NEW PRETENDERS
 
 #weapon "Sword of Swiftness"
 #weapon "Spear"
-#weapon "Hoof"
+#weapon 56
 #armor "Plate Hauberk"
 #armor "Legionary Helmet"
 #armor "Shield"
@@ -20223,7 +20202,7 @@ NEW PRETENDERS
 
 #weapon "Spear"
 #weapon "Short Bow"
-#weapon "Hoof"
+#weapon 56
 #armor "Scale Mail Cuirass"
 #armor "Legionary Helmet"
 #armor "Kite Shield"
@@ -21589,7 +21568,7 @@ Version 1.1
 /////////////////SLOTS USED\\\\\\\\\\\\\\\\\\\\
 
 --nationslot 138
---weaponslots 1300-19
+--weaponslots 1301-19
 --armour slot 700-9
 --unitslots 4600-4699
 --siteslots 1700-4
@@ -21599,17 +21578,6 @@ Version 1.1
 
 ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
-#newweapon 1300
-#name "Chaos Steed Hoof"
-#dmg 6
-#att 1
-#def 0
-#len 0
-#bonus
-#nostr
-#sound 38
-#blunt
-#end
 
 #newweapon 1301
 #name "Daemon-forged Broad Sword"
@@ -22718,7 +22686,7 @@ Version 1.1
 
 #weapon "Rusty Throwing Axe"
 #weapon "Axe"
-#weapon "Hoof"
+#weapon 56
 #armor "Leather Hauberk"
 #armor "Shield"
 #mounted
@@ -22750,7 +22718,7 @@ Version 1.1
 
 #weapon "Rusty Throwing Axe"
 #weapon "Axe"
-#weapon "Hoof"
+#weapon 56
 #armor "Leather Hauberk"
 #armor "Shield"
 #mounted
@@ -22784,7 +22752,7 @@ Version 1.1
 #prec 11
 
 #weapon "Chaos Axe"
-#weapon "Chaos Steed hoof"
+#weapon 1220
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #armor "Kite Shield"
@@ -22823,7 +22791,7 @@ Version 1.1
 
 #weapon "Lance"
 #weapon "Chaos Axe"
-#weapon "Chaos Steed Hoof"
+#weapon 1220
 #armor 193 --"Champions Helmet"
 #armor "Chaos Armor"
 #armor "Kite Shield"
@@ -22869,7 +22837,7 @@ Version 1.1
 
 #weapon "Rusty Throwing Axe"
 #weapon "Spear"
-#weapon "Hoof"
+#weapon 56
 #armor "Leather Hauberk"
 #armor "Shield"
 #mounted
@@ -22901,7 +22869,7 @@ Version 1.1
 
 #weapon "Rusty Throwing Axe"
 #weapon "Spear"
-#weapon "Hoof"
+#weapon 56
 #armor "Leather Hauberk"
 #armor "Shield"
 #mounted
@@ -22932,8 +22900,8 @@ Version 1.1
 #coldres 5
 #weapon "Whip"
 #weapon "Halberd"
-#weapon "Chaos Steed Hoof"
-#weapon "Chaos Steed Hoof"
+#weapon 1220
+#weapon 1220
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #animal
@@ -23257,7 +23225,7 @@ Version 1.1
 #poorundeadleader
 #weapon "Rusty Throwing Axe"
 #weapon "Axe"
-#weapon "Hoof"
+#weapon 56
 #armor "Leather Hauberk"
 #armor "Shield"
 #mounted
@@ -23305,7 +23273,7 @@ Version 1.1
 #bloodattuned 100
 
 #weapon "Blade of Blood"
-#weapon "Chaos steed hoof"
+#weapon 1220
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #armor "Kite Shield"
@@ -23350,7 +23318,7 @@ Version 1.1
 #popkill 5
 
 #weapon "Blade of Blood"
-#weapon "Chaos Steed Hoof"
+#weapon 1220
 #armor 193 --"champ Helmet"
 #armor "Chaos Armor"
 #startitem 701
@@ -23675,7 +23643,7 @@ Version 1.1
 #ambidextrous 3
 
 #weapon "Lance"
-#weapon "Chaos steed hoof"
+#weapon 1220
 #weapon 75
 #armor "Full Helmet"
 #armor "Chaos Armor"
@@ -23834,7 +23802,7 @@ Version 1.1
 #researchlevel 1
 #path 0 7
 #pathlevel 0 2
-#fatiguecost 1300
+#fatiguecost 1220
 #effect 10001
 #damage 4650 --harpy
 #nreff 5
@@ -24321,18 +24289,6 @@ Priests: Khorne needs no priests."
 
 -------- WEAPONS --------
 
-#newweapon 1454
-#name "Chaos steed hoof"
-#dmg 15
-#att 1
-#def 0
-#len 0
-#bonus
-#nostr
-#sound 38
-#blunt
-#natural
-#end
 
 #newweapon 1450
 #name "Plaguesword"
@@ -25144,7 +25100,7 @@ Priests: Khorne needs no priests."
 #itemslots 13446
 #weapon "Lance"
 #weapon 1452
-#weapon 1454
+#weapon 1220
 #armor "Full Helmet"
 #armor 685
 #armor "Kite Shield"
@@ -25810,7 +25766,7 @@ Priests: Khorne needs no priests."
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
 #startitem 968
 #weapon 1457
-#weapon 1454
+#weapon 1220
 #armor "Full Helmet"
 #armor 685
 #armor "Shield"
@@ -31488,7 +31444,6 @@ Like other orcs Black Orcs can recover from even the most devastating affliction
 #gcost 20
 #rcost 4
 #weapon "Light Lance"
-#weapon "Short Sword"
 #weapon "Small Bow"
 #weapon 237 -- Bite (str 18 bite, intrinsic weapon)
 #armor "Leather Cap"
@@ -33777,42 +33732,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #addname "Shaklug Madzog"
 #end
 
--- SLAANESH WARHOST
-
---Version 1.00 - Finished Changes:			(By JoanSam)
---New unit: Exalted Daemon, with other Slaanesh mod sprite and summon spell.
--- Magic changes:
--- Blood scales with priest level.
--- Human magic focuses on Water, Air, Fire, in no order.
--- Daemon magic focuses on Water, Death, Astral, in that order.
--- Exalted Champion and Lord no longer have magic
--- Custom blessings removed; they were a silly workaround. Sorcerers and daemons now have priest levels.
-
--- Cultist removed for now (in unit and in rec list), could add later if necessary. Should give them blood if they come back in though.
--- Lots of description changes...those who are interested can compare these to Sensori's original descriptions.
--- Commanders much more autocosted
--- Chammpion, Exalted Champion, Lord no longer have the magic item Chaos Armor, they now have the equipment. Actually, since it's magic armor you might want to do something about it.
--- Scythetalons no longer AP, debatable though.
--- Aura of Slaanesh was broken, now does 33 stun damage instead of 5. Also now AoE1; it's an Aura in WH, not actually a weapon.
--- Daemon-Forged broadswords and morningstars used by Chosen and Champions are now much more in line with WH stats. They have 2 attacks, and are not magic or AP. They are now named Chaos broadsword and morningstar. All units have been updated accordingly.
--- Slaanesh Chaos Armor prot 17 -> 18, def penalty 2 -> 1.
--- Sigvald the Magnificent: His sword, Sliverslash, now gets 6 attacks, from 2. Awe 3 -> 6. Added base prot 15 - otherwise headshots are brutal. No longer immortal.
--- Dameonette AP increased by 1.
--- Sprite of Herald changed to Amazonian Chosen - used for Exalted Champion in the other Slaanesh mod. Also changed stealth 20 -> 60, added inquisitor tag (is priest 2). Can summon dameonettes.
--- All summon spells changed from Conjuration to Blood, path req often lowered by 1, pathreqs trimmed and number of 'gems' required multiplied by 3 (standard stuff).
--- Added an extra attack to fiends, fiends now summon 4 instead of 2...seemed underpowered
--- Keeper of Secrets hugely improved - all-around better stats and has 1d6 fiends in battle, among more typical changes. Magic completely redone.
--- Items and armors changed to appropriate paths
-
-
-
-
 
 
 
 -- Version 0.93 - Warriors of Slaanesh had the str of Warriors of Nurgle. Second Chosen of Slaanesh had reclimit 3. Pretender prices now autocalced and 20 off their prices. Added #natural to Chaos steed hoof, Slaaneshi claw and Scythetalon.
 
 -- Version 0.92 - Sombre made the Keeper of Secrets attack sprite a new mouth! #reclimits on Chosen make a comeback, Lords became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (autocalc decides Exalted Sorcs price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when propheted. Lowered #xpshape thresholds. Added a cultist event. Human followers now use 115 for nametypes.
+
 -- Version 0.91 - Slightly adjusted Light Chaos Armor's #rcost and #prot down. #blunt to Chaos steed hoof. Removed Slaanesh Plate Armor for simplicity's sake (and since Warriors etc. have Chaos Armor in tabletop). Increased Sorcerers' AP to 12, since that's human norm. Changes to #chaosrecs here and there. Champion lacked #chaosrec altogether. Added sounds to some weapons. Added Aura of Slaanesh to both Seekers of Slaanesh and Fiends of Slaanesh, removed one Scythetalon from the Seekers of Slaanesh (Fiend is now #awe 2, too).
 
 -- Version 0.90 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who also became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; and the research bonus on the Exalted and Lord were too high anyway, so I got a bit of a price reduction from there). Massive changes to Daemon command structure. Hammer Warriors had 11 att/def, 12 was what they were supposed to have (thanks Indract!). Daemon Princess had her #coldres upped to 5. Slaanesh's Plate Armor had -2 def, it was supposed to have -1 def (which Tzeentch's Plate Armor was enjoying), oops! To combat ridiculous morale bonuses from commanders, used #command where applicable and dropped #inspirational here and there. Gave the same higher Beastmen Slaanesh's gimmick as Nurgle's and Tzeentch's Beastmen have. Removed dt_cap from the Exalted Champ's whip.
@@ -33845,24 +33771,26 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #nostr
 #blunt
 #sound 38
+#natural
 #end
 
 #newweapon 1851
 #name "Scythetalon"
-#dmg 6
+#dmg 5
 #att 0
 #def 0
 #len 2
 #magic
 #rcost 0
 #slash
-
+#armorpiercing
 #sound 38
+#natural
 #end
 
 #newweapon 1852
 #name "Aura of Slaanesh"
-#dmg 33
+#dmg 5
 #nostr
 #magic
 #armornegating
@@ -33874,21 +33802,19 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #len 0
 #bonus
 #rcost 0
-#aoe 1
 #end
 
 #newweapon 1853
-#name "Chaos Broadsword"
+#name "Daemon-forged Broad Sword"
 #dmg 6
-
+#magic
 #slash
-
+#armorpiercing
 #att 1
 #def 0
 #len 2
-#rcost 3
+#rcost 5
 #sound 8
-#nratt 2
 #end
 
 #newweapon 1854
@@ -33917,7 +33843,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 5
 #sound 8
 #bonus
-#nratt 2
 #end
 
 #newweapon 1856
@@ -33934,7 +33859,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 #newweapon 1857
-#name "Slaaneshi Claws"
+#name "Slaaneshi Claw"
 #dmg 5
 #magic
 #slash
@@ -33944,7 +33869,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #len 1
 #bonus
 #sound 38
-#nratt 2
+#natural
 #end
 
 #newweapon 1858
@@ -33957,13 +33882,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def 0
 #len 3
 #sound 8
-#nratt 6
+#nratt 2
 #end
 
 #newweapon 1859
-#name "Chaos Morningstar"
-
-
+#name "Daemon-forged Morningstar"
+#magic
+#armorpiercing
 #pierce
 #blunt
 #dmg 6
@@ -33971,9 +33896,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def -2
 #len 3
 #flail
-#rcost 3
+#rcost 5
 #sound 11
-#nratt 2
 #end
 
 #newweapon 1860
@@ -33990,14 +33914,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #secondaryeffect 156
 #end
 
-
+-----Armour-----
 
 #newarmor 801
 #name "Slaanesh Chaos Armor"
 #type 5
-#prot 18
+#prot 17
 #enc 1
-#def -1
+#def -2
 #rcost 15
 #end
 
@@ -34477,7 +34401,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 3
 #itemslots 13446
 #weapon "Broad Sword"
-#weapon "Chaos Steed hoof"
+#weapon 1220 -CSH
 #weapon "Lance"
 #armor "Full Helmet"
 #armor 801
@@ -34588,6 +34512,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #chaosrec 3
 #rcost 1
 #coldres 5
+#weapon 1853
 #armor "Full Helmet"
 #armor "Slaanesh Chaos Armor"
 #armor "Kite Shield"
@@ -34599,7 +34524,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startage 34
 #maxage 1200
 #reclimit 5
-#weapon 1853
 #end
 
 
@@ -34643,15 +34567,15 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Foreignrec Cultist
 
---#newmonster 6543
---#copyspr 6510
---#copystats 6510
---#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
---#slowrec
---#gcost 90
---#chaosrec 4
---#sailing 4 2
---#end
+#newmonster 6543
+#copyspr 6510
+#copystats 6510
+#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
+#slowrec
+#gcost 90
+#chaosrec 4
+#sailing 4 2
+#end
 
 -- Forsaken Champion
 
@@ -34900,8 +34824,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 14
 #mor 13
-#custommagic 896 100 -- SAWB
-#gcost 10000
+#magicskill 2 1
+#magicskill 1 1
+#custommagic 19200 100 -- SAWB
+#custommagic 19200 10 -- SAWB
+#gcost 125
 #researchbonus 1
 #rcost 1
 #weapon "Fist"
@@ -34910,9 +34837,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 3
 #startage 45
 #maxage 1500
-#magicskill 2 1
-#magicskill 7 1
-#magicskill 8 1
 #end
 
 -- Exalted Sorcerer of Slaanesh
@@ -34936,10 +34860,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 12
 #holy
 #magicskill 2 2
-#magicskill 7 2
-#magicskill 8 2
-#custommagic 896 100 -- SAWB
-#custommagic 896 66 -- SAWB
+#magicskill 1 1
+#magicskill 7 1
+#custommagic 19200 100 -- SAWB
+#custommagic 19200 10 -- SAWB
+#custommagic 768 10 -- AW
 #gcost 10000
 #rcost 1
 #weapon 172
@@ -34970,11 +34895,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mr 17
 #mor 14
 #coldres 3
-#magicskill 2 2
-#magicskill 7 3
-#custommagic 2944 200 -- SAWB
-#custommagic 2944 200 -- AW
-#gcost 10000
+#magicskill 2 3
+#magicskill 1 2
+#magicskill 7 1
+#custommagic 19200 100 -- SAWB
+#custommagic 19200 10 -- SAWB
+#custommagic 768 100 -- AW
+#gcost 380
 #slowrec
 #rcost 1
 #weapon "Magic Staff"
@@ -34984,7 +34911,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startage 250
 #maxage 5000
 #holy
-#magicskill 8 3
 #end
 
 
@@ -35012,6 +34938,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #holy
 #awe 1
+#custommagic 2816 100
 #okleader
 #undcommand 5
 #weapon 1853
@@ -35024,6 +34951,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mountainsurvival
 #coldres 5
 #itemslots 15494
+#startitem 969
+#researchbonus -6
 #xpshape 50
 #prophetshape 6527
 #end
@@ -35047,11 +34976,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 15
 #mor 15
-#gcost 10000
+#gcost 195
 #chaosrec 8
 #rcost 1
 #holy
 #seduce 10
+#custommagic 2816 100
 #goodleader
 #command -20
 #undcommand 5
@@ -35059,6 +34989,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor 801
 #armor "Shield"
 #itemslots 15494
+#startitem 969
 #startage 70
 #maxage 2500
 #coldres 5
@@ -35091,14 +35022,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 11
 #mr 17
 #mor 17
+#magicskill 2 1
+#custommagic 2816 100
 #itemslots 13446
+#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
 #mounted
-#gcost 10000
+#gcost 285
 #chaosrec 12
 #rcost 7
 #holy
@@ -35141,14 +35075,18 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #ambidextrous 5
-#weapon 1855
+#weapon 1853
+#weapon 1853
+#weapon 1853
+#weapon 1853
 #weapon 1855
 #weapon 1855
 #armor 801
 #startage 4500
 #maxage 20000
-#magicskill 1 2
+#magicskill 1 1
 #itemslots 13470
+#startitem 969
 #holy
 #invulnerable 10
 #demon
@@ -35192,7 +35130,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Shield"
 #startage 350
 #maxage 10000
-#magicskill 1 2
+#magicskill 1 1
 #holy
 #inspirational 1
 #goodleader
@@ -35200,14 +35138,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #poorundeadleader
 #float
 #seduce 20
-#awe 6
+#awe 3
+#immortal
 #regeneration 15
 #onebattlespell "Blessing"
 #coldres 5
 #wastesurvival
 #forestsurvival
 #batstartsum1d6 6546
-#prot 15
 #end
 
 -- Sigvald's bodyguards
@@ -35245,6 +35183,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 2 1
 #magicskill 1 1
 #itemslots 13446
+#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
@@ -35385,9 +35324,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #custommagic 2816 100
 #custommagic 2816 66
 #itemslots 13446
+#startitem 969
 #weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
-#weapon 1850
+#weapon 1220
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
@@ -35414,17 +35354,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Daemonette
 
 #newmonster 6535
-#spr1 "./Warhammer-Complete/daemonette1.tga"
-#spr2 "./Warhammer-Complete/daemonette2.tga"
+#spr1 "./Warhammer-Complete/daemonette_1.tga"
+#spr2 "./Warhammer-Complete/daemonette_2.tga"
 #name "Daemonette"
 #nametype 257
 #descr "Gifted with disturbing beauty, Daemonettes are the Lesser Daemons of Slaanesh. What unearthly delights they might pleasure your soul with none can say, but upon the reeking field of battle, pain is what they bring. Vicious, spiteful, yet loving in the fatal affections they lavish upon those who dare refuse their chaotic charms, Daemonettes are swift and deadly to all who cross their path. On lithe legs they surge across the battlefield, dancing from foe to foe, gifting each in turn with gaping wounds from their scythe-like talons."
-#ap 15
+#ap 14
 #mapmove 3
 #hp 12
 #prot 10
 #size 2
-#str 12
+#str 14
 #enc 1
 #att 13
 #def 13
@@ -35448,14 +35388,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #invulnerable 15
 #magicpower 1
 #female
-#weapon 1852
 #end
 
 -- Herald of Slaanesh
 
 #newmonster 6536
-#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
-#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
+#spr1 "./Warhammer-Complete/herald_of_slaanesh_1.tga"
+#spr2 "./Warhammer-Complete/herald_of_slaanesh_2.tga"
 #name "Herald of Slaanesh"
 #nametype 257
 #descr "Heralds of Slaanesh not only attend to Slaanesh's whimsical desires, but muster his armies, plot his campaigns and carry his creed to the mortal realm, returning to bring morsels of courtly intrigue to Slaanesh's ears. Such scraps can lead to the corrupting of a mortal ruler and the Dark Prince is always carefully attentive."
@@ -35474,7 +35413,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #magicskill 2 1
-#custommagic 2560 100
+#custommagic 2816 50
 #ambidextrous 5
 #itemslots 15488
 #weapon "Scythetalon"
@@ -35483,6 +35422,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #maxage 10000
 #poisonres 15
 #demon
+#stealthy 20
 #spy
 #awe 1
 #female
@@ -35492,19 +35432,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #invulnerable 15
 #magicpower 1
-#stealthy 60
-#magicskill 4 1
-#magicskill 7 2
-#magicskill 8 2
-#makemonsters1 6535
-#inquisitor
 #end
 
 -- Seeker of Slaanesh
 
 #newmonster 6537
-#spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
-#spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
+#spr1 "./Warhammer-Complete/seeker_1.tga"
+#spr2 "./Warhammer-Complete/seeker_2.tga"
 #name "Seeker of Slaanesh"
 #nametype 257
 #descr "Daemonettes often ride into battle upon elegant mounts that are swifter than any mortal steed. Like all Slaaneshi creatures, these lithe daemonic mounts possess a disturbingly hypnotic appearance and unmistakable sinuous beauty. These siren hunters use the speed of their steeds to toy with their mortal prey and often delay the moment of the kill in favour of prolonging the suffering of their quarry."
@@ -35524,7 +35458,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #ambidextrous 3
- #weapon 1852 #itemslots 13440 -- legless and armless
+#weapon "Scythetalon"
+#weapon 1852
+#weapon 1220 -CSH
+#itemslots 13440 -- legless and armless
 #startage 20
 #maxage 10000
 #poisonres 15
@@ -35536,9 +35473,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #invulnerable 15
 #magicpower 1
 #female
- #weapon 1851
-#weapon 1851
-#weapon 1851
 #end
 
 
@@ -35569,6 +35503,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ambidextrous 5
 #weapon "Scythetalon"
 #weapon "Scythetalon"
+#weapon 1852
 #startage 20
 #maxage 10000
 #poisonres 15
@@ -35577,8 +35512,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #awe 2
 #magicpower 1
-#weapon 1851
-#weapon 1852
 #end
 
 -- Chaos Fury
@@ -35616,52 +35549,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #end
 
-#newmonster 6543
-#spr1 "./Warhammer-Complete/exalteddaemon1.tga"
-#spr2 "./Warhammer-Complete/exalteddaemon2.tga"
-#name "Exalted Daemon of Slaanesh"
-#nametype 257
-#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magical power is still great by the standard of most mortal spellcasters."
-#ap 22
-#mapmove 3
-#hp 54
-#size 3
-#str 18
-#enc 1
-#att 18
-#def 16
-#prec 13
-#mr 17
-#mor 30
-#gcost 0
-#rcost 1
-#pathcost 50
-#startdom 3
-#coldres 5
-#poisonres 25
-#invulnerable 10
-#weapon 1855
-#armor 801
-#itemslots 15494
-#startitem 969
-#startage 4000
-#maxage 10000
-#magicskill 2 1
-#inspirational 1
-#expertleader
-#expertundeadleader
-#awe 2
-#flying
-#demon
-#female
-#magicpower 1
-#neednoteat
-#seduce 15
-#magicskill 7 2
-#custommagic 6656 200
-#magicskill 8 2
-#end
-
 -- Keeper of Secrets
 
 #newmonster 6540
@@ -35669,23 +35556,23 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
 #name "Keeper of Secrets"
 #nametype 257
-#descr "Many-limbed and jewel-eyed, sensuous in movement yet deadly and fierce, a Keeper of Secrets is the Greater Daemon of Slaanesh. They are gifted with the subtle and insidious magic of the Dark Prince, wracking the enemy with spasms of agony, clouding their minds with dark whispers of glory, and creating illusions of their worst fears and greatest desires. Formed of the stuff of Chaos, Slaanesh has granted these servants his greatest gifts and protected them from enemy magic almost as well as from mortal weapons. Those few brave mortals who face up to such a monster must be pure of heart and mind, for a Keeper of Secrets is surrounded by many enchantments that lull the mind and deaden the senses. It can invade the thoughts and senses of its enemies, penetrating their every psychic defence - sending them false visions of glory, stroking their egos and their innermost desires to lead the fools astray."
+#descr "A Keeper of Secrets is a ruiner of purity, a despoiler of the faithful and a harbinger of damnation. It draws strength from the corruption of others, and feasts upon sin and excess as a mortal might sup fine wines and sweetmeats. To a Keeper of Secrets, fear and lust are the most succulent of dishes, but any mortal rapture provides sustenance - particularly if the victim can be propelled from the heights of one to the depths of another. Nothing is more delectable to a Keeper than the act of snatching a prideful popinjay from the adulation of his followers, drowning him in stark terror, then returning him, broken-minded and wallowing in his own involuntary filth, to the mockery of the comrades who once roared his praises."
 #ap 18
 #mapmove 3
 #enc 1
-#hp 80
-#prot 20
+#hp 85
+#prot 10
 #size 4
-#str 24
+#str 19
 #att 16
 #def 16
 #prec 10
-#mr 20
+#mr 18
 #mor 30
 #gcost 0
 #rcost 1
 #ambidextrous 3
-#weapon 1855 -- Daemon-forged Broad Sword
+#weapon 1853 -- Daemon-forged Broad Sword
 #weapon 1852 -- Aura of Slaan
 #weapon 1857 -- Slaaneshi Claw
 #weapon 1857 -- Slaaneshi Claw
@@ -35693,47 +35580,80 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor 803
 #startage 40
 #maxage 10000
-#magicskill 2 3
-#custommagic 23040 150
+#magicskill 2 2
+#custommagic 2816 100
+#custommagic 768 66
 #holy
+#invulnerable 20
 #inspirational 1
 #goodleader
 #expertundeadleader
-#fear 10
-#awe 6
+#female
+#fear 5
+#awe 4
 #stealthy 0
-#poisonres 20
+#succubus 20
+#poisonres 15
 #demon
 #onebattlespell "Divine Blessing"
 #neednoteat
 #magicpower 1
-#magicskill 4 2
-#magicskill 5 3
-#coldres 25
-#fireres 15
-#shockres 25
-#regeneration 10
-#heal
-#itemslots 31878
-#batstartsum1d6 6538
-#spreaddom 1
-#magicskill 7 4
-#magicskill 8 4
-#custommagic 20992 100
 #end
 
--- Daemon Princess
+----------- PRETENDERS - Sorcerer Lord and Daemon Princess
+
+-- Sorcerer Lord of Slaanesh
+
+#newmonster 6541
+#spr1 "./Warhammer-Complete/Sorc_Lord_Pretender_1.tga"
+#spr2 "./Warhammer-Complete/Sorc_Lord_Pretender_2.tga"
+#name "Sorcerer Lord of Slaanesh"
+#nametype 115
+#descr "Sitting upon a palanquin carried by fervent followers of Slaanesh, this formidable Sorcerer Lord of Slaanesh has gained such power and favor from his patron god that there is nothing left to achieve for him in the mortal realm than godhood. Forever bound to the Dark God, however, the Sorcerer Lord would act as a channel between the two realms, and act as His surrogate in a place where He cannot manifest."
+#ap 12
+#mapmove 2
+#hp 30
+#size 3
+#ressize 2
+#str 12
+#enc 3
+#att 12
+#def 12
+#prec 12
+#mr 18
+#mor 30
+#coldres 3
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 7 1
+#gcost 10000
+#pathcost 10
+#startdom 1
+#rcost 1
+#weapon "Magic Staff"
+#armor 803
+#armor "Full Helmet"
+#itemslots 62592
+#okleader
+#startage 900
+#maxage 10000
+#mounted
+#researchbonus 11
+#inspiringres 1
+#end
+
+-- Pretender Daemon Princess
 
 #newmonster 6542
-#spr1 "./Warhammer-Complete/daemonprincess1.tga"
-#spr2 "./Warhammer-Complete/daemonprincess2.tga"
+#spr1 "./Warhammer-Complete/daemon_princess_1.tga"
+#spr2 "./Warhammer-Complete/daemon_princess_2.tga"
 #name "Daemon Princess of Slaanesh"
 #nametype 257
 #descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for her to become a true Goddess within this realm. Still true to Slaanesh, however, she would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
 #ap 22
 #mapmove 3
-#hp 66
-#size 3
+#hp 75
+#size 4
 #str 19
 #enc 1
 #att 18
@@ -35741,21 +35661,21 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 13
 #mr 18
 #mor 30
-#gcost 0
+#gcost 10000
 #rcost 1
 #pathcost 50
 #startdom 3
 #coldres 5
 #poisonres 25
 #invulnerable 10
-#weapon 1855
+#weapon 1853
 #armor 801
 #itemslots 15494
 #startitem 969
 #startage 4000
 #maxage 10000
-#magicskill 5 2
-#magicskill 2 3
+#magicskill 1 1
+#magicskill 2 2
 #inspirational 1
 #expertleader
 #expertundeadleader
@@ -35766,104 +35686,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicpower 1
 #neednoteat
 #seduce 15
-#magicskill 7 3
-#custommagic 6656 200
-#magicskill 8 3
 #end
-
------------ PRETENDERS - Avatars of Slaanesh
-
--- Sorcerer Lord of Slaanesh
-
--- Avatar Sorcerer Shape
-#newmonster 4215
-#nametype 115
-#startdom 1
-#gcost 50
-#pathcost 20
-#name "Slaanesh"
-#spr1 "./Warhammer-Complete/avatarhum1.tga"
-#spr2 "./Warhammer-Complete/avatarhum2.tga"
-#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as a human sorcerer on a wave of magical energy, and will lead his armies to everlasting bliss. But the Dark Prince is merely using this illusion of a body for convenience - life does not flow through it, nor does Slaanesh's mind inhabit it."
-#magicskill 2 2
-#magicskill 1 1
-#magicskill 0 1
-#hp 30
-#mr 24
-#str 10
-#def 12
-#enc 3
-#weapon "fist"
-#mor 50
-#inanimate
-#magicbeing
-#mapmove 3
-#prec 1
-#att 1
-#ap 15
-#size 3
-#enc 0
-#end
-
-
--- Avatar Daemonic shape
-#newmonster 4214
-#nametype 115
-#startdom 3
-#gcost 270
-#pathcost 60
-#name "Slaanesh"
-#spr1 "./Warhammer-Complete/avatar1.tga"
-#spr2 "./Warhammer-Complete/avatar2.tga"
-#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual.Slaanesh has chosen to appear this time as a human sorcerer on one of his Daemons, and will lead his armies to everlasting bliss."
-#magicskill 2 1
-#magicskill 5 1
-#magicskill 7 2
-#hp 120
-#size 6
-#prot 20
-#ap 18
-#mapmove 3
-#mr 24
-#str 24
-#att 16
-#def 16
-#enc 1
-#prec 15
-#ambidextrous 3
-#weapon "fist"
-#mor 50
-#inanimate
-#demon
-#weapon 1852 -- Aura of Slaan
-#weapon 1857 -- Slaaneshi Claws
-#weapon 1857 -- Slaaneshi Claws
-#chaospower 2
-#magicpower 2
-#coldres 25
-#fireres 15
-#shockres 25
-#poisonres 20
-#regeneration 10
-#heal
-#itemslots 31878
-#startage 40
-#maxage 10000
-#inspirational 1
-#goodleader
-#expertundeadleader
-#fear 10
-#awe 6
-#end
-
-
-
-
-
-
-
-
-
 
 --------------------------------------
 
@@ -35873,11 +35696,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Daemonettes"
 #descr "With this spell, the caster summons a group of Daemonettes, the Lesser Daemons of Slaanesh, beings possessed of the hypnotic glamour for which all Daemons of Slaanesh are abhorred."
 #restricted 159
-#school 6
+#school 0
 #researchlevel 3
-#path 0 7
-#pathlevel 0 2
-#fatiguecost 2100
+#path 0 2
+#path 1 1
+#pathlevel 0 3
+#fatiguecost 700
 #effect 10001
 #damage 6535
 #nreff 4
@@ -35892,7 +35716,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #school -1
 #path 0 2
 #pathlevel 0 3
-#fatiguecost 2100
+#fatiguecost 0
 #effect 10001
 #damage 6535
 #nreff 1007
@@ -35903,11 +35727,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Banquet of Slaanesh"
 #descr "The caster forms a Slaaneshi cult within an unsuspecting village, which tears at the very humanity of its 'followers'. They take part in every form of vile debauchery including that of cannibalism, starting with kidnappings of the weakest and least cared for. As the horrors continue and the villagers begin to suspect foul play, the caster finally sheds all reason, sacrificing all his 'followers' to Slaanesh; in their place manifest a score of Daemonettes. It is then that the caster assails the village in earnest with the aid of the Daemonettes, killing and feasting upon the flesh of the innocent and guilty alike. Once the village has been brought to the ground, the caster finds himself less human; he craves mortal flesh, his soul corrupted but his body healed of afflictions. The Daemonettes thus manifested then join his cause."
 #restricted 159
-#school 6
+#school 4
 #researchlevel 3
-#path 0 7
-#pathlevel 0 2
-#fatiguecost 4500
+#path 0 2
+#pathlevel 0 3
+#fatiguecost 1500
 #nextspell "Daemonette summoning"
 #end
 
@@ -35915,27 +35739,15 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Seekers of Slaanesh"
 #descr "With this spell, the caster summons a group of Seekers of Slaanesh, the outriders of the Prince of Chaos, darkling Daemonettes mounted on swift daemonic Steeds."
 #restricted 159
-#school 6
-#researchlevel 4
-#path 0 7
+#school 0
+#researchlevel 5
+#path 0 2
+#path 1 1
 #pathlevel 0 3
-#fatiguecost 3000
+#pathlevel 1 1
+#fatiguecost 1100
 #effect 10001
 #damage 6537
-#nreff 6
-#end
-
-#newspell
-#name "Summon Fiends of Slaanesh"
-#descr "With this summoning, the caster brings forth a couple of Fiends of Slaanesh, strange creatures which are swift and terrible."
-#restricted 159
-#school 6
-#researchlevel 5
-#path 0 7
-#pathlevel 0 3
-#fatiguecost 2000
-#effect 10001
-#damage 6538
 #nreff 4
 #end
 
@@ -35943,55 +35755,43 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon Herald of Slaanesh"
 #descr "With this spell, the summoner brings forth a Herald of Slaanesh, one of the most favored Daemonettes of Slaanesh."
 #restricted 159
-#school 6
+#school 0
 #researchlevel 5
-#path 0 7
-#pathlevel 0 3
-#fatiguecost 6000
+#path 0 2
+#pathlevel 0 4
+#fatiguecost 1500
 #effect 10021
 #damage 6536
 #nreff 1
 #end
 
 #newspell
-#name "Summon Exalted Daemon of Slaanesh"
-#descr "With this spell, the sorcerer courts Slaanesh's favor with threescore victims. In return, one of his fellows is possessed by a daemon of great power to aid his men in their conquest of the civilized realms."
+#name "Summon Fiends of Slaanesh"
+#descr "With this summoning, the caster brings forth a couple of Fiends of Slaanesh, strange creatures which are swift and terrible."
 #restricted 159
-#school 6
+#school 0
 #researchlevel 6
-#path 0 7
+#path 0 2
+#path 1 1
 #pathlevel 0 4
-#fatiguecost 6000
-#effect 10021
-#damage 6543
-#nreff 1
-#end
-
-#newspell
-#name "Summon Daemon Princess of Slaanesh"
-#descr "The caster proves his devotion to the Dark Prince with an offering of nearly a hundred mortals. In return, the Prince rewards this sorcerer with one of his most terrifying and alluring servants, a Daemon Princess to lay waste to the lands of mortal men."
-#restricted 159
-#school 6
-#researchlevel 7
-#path 0 7
-#pathlevel 0 4
-#fatiguecost 8000
+#pathlevel 1 2
+#fatiguecost 800
 #effect 10001
-#damage 6542
-#nreff 1
+#damage 6538
+#nreff 2
 #end
 
 #newspell
 #name "Summon Keeper of Secrets"
-#descr "With this ultimate dark ritual, the caster sorcerer offers tenscore victims of pure blood to his Dark Prince. Out of the void comes a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce. The Keeper will lead the sorcerer's armies to victory, engulfing all that stands in its path."
+#descr "With this dark ritual, the caster brings forth a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce."
 #restricted 159
-#school 6
+#school 0
 #researchlevel 8
-#path 0 7
-#path 3 5
+#path 0 2
+#path 1 1
 #pathlevel 0 5
 #pathlevel 1 2
-#fatiguecost 12000
+#fatiguecost 5000
 #effect 10021
 #damage 6540
 #nreff 1
@@ -36002,17 +35802,53 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Summon the Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Slaanesh cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
 #restricted 159
-#school 6
+#school 0
 #researchlevel 2
-#path 0 7
-#pathlevel 0 1
-#fatiguecost 1200
+#path 0 2
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 400
 #effect 10001
 #damage 6539
-#nreff 8
+#nreff 10
 #end
 
 -- Combat spells --
+
+-- Blessing -
+
+#newspell
+#copyspell 151
+#name "Blessing of Slaanesh"
+#descr "With this incantation, the caster brings forth the blessings of Slaanesh upon a number of His followers, be they those mortals whom have been marked by Slaanesh, or His Daemonic servants."
+#restricted 159
+#school 4
+#path 0 2
+#explspr 10006
+#pathlevel 0 1
+#spec 12615680
+#sound 23
+#end
+
+-- Biggererer Blessing -
+
+#newspell
+#name "Greater Blessing of Slaanesh"
+#descr "By the power of this incantation, all those with the Mark of Slaanesh as well as His Daemonic servants find themselves blessed with the power of Slaanesh."
+#restricted 159
+#school 4
+#path 0 2
+#pathlevel 0 3
+#effect 10
+#damage 1
+#precision 100
+#range 0
+#aoe 666
+#spec 12615680
+#explspr 10006
+#sound 23
+#end
 
 -- Slicing Shards -
 
@@ -36072,7 +35908,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 #newspell
 #name "Acquiescence"
-#descr "With a languid gesture, the caster engulfs his foe with a haze of broken dreams and unattainable desires."
+#descr "With an almost lackadaisical gesture, the caster engulfs his foe with a haze of broken dreams and unattainable desires."
 #restricted 159
 #school 2
 #researchlevel 2
@@ -36363,7 +36199,7 @@ Priests: Weak. Can blood sacrifice."
 
 
 ---- GODS
-#cleargods
+
 #addgod 2462 -- Golden Idol
 #addgod 180 -- demilich
 #addgod 158 -- Oracle
@@ -36382,11 +36218,10 @@ Priests: Weak. Can blood sacrifice."
 #addgod 1231 -- Drakaina
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
-#addgod 4214 -- Daemonic Avatar of Slaanesh
-#addgod 4215 -- Human Avatar of Slaanesh
-#cheapgod20 4214
-#cheapgod20 4215
-
+#addgod 6541 -- Sorcerer Lord
+#cheapgod20 6541
+#addgod 6542 -- Daemon Princess
+#cheapgod20 6542
 
 ---- RECRUITS
 #clearrec
@@ -36420,7 +36255,7 @@ Priests: Weak. Can blood sacrifice."
 ---- LEADERS
 
 #addreccom 6510 -- Cultist
---#addforeigncom 6543 -- foreign Cultist
+#addforeigncom 6543 -- foreign Cultist
 #wastecom 6517 -- Forsaken Champion
 #forestcom 6518 -- Ungor Raider Halfhorn
 #forestcom 6520 -- Wargor
@@ -37172,7 +37007,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #selectmonster 259
 #copystats 4550
-#name "Tomb Guard"
+#name "Tomb Guard" -30g
 #descr "The Tomb Guard were originally an elite corps of troops assigned to protecting a necropolis containing the tombs of past kings. Over time the order grew and began to act as a part of the main army, and was imitated in the other kingdoms of Nehekhara. They were found to be very effective in war due to their superior equipment and training. The Tomb Guard are much more heavily armored than most Nehekharan soldiers, and wield deadly falchions."
 #spr1 "./Warhammer-Complete/TombGuard1.tga"
 #spr2 "./Warhammer-Complete/TombGuard2.tga"
@@ -37198,7 +37033,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #newmonster 4554
 #copystats 4551
-#name "Immortal"
+#name "Immortal" -50g
 #descr "Many of the Tomb Kings were filled with paranoia on their burial - who knew what lay ahead? Most of all they feared being left stranded and alone, their guardian troops lost to them. The kings themselves were protected by awesome enchantments, almost impossible to permanently destroy, but they knew that their guards were far more vulnerable. And so the most powerful of the Tomb Kings set about, with the aid of their priests, to create a personal bodyguard of their most trusted troops that could themselves never be destroyed. No matter what befell them, their bodies would always reform in their tombs. These bodyguards, known as Immortals, are highly disciplined and effective troops, and as the closest guardians of the sacred Tomb Kings, they are sacred to the Nehekharans. However, powerful magic is needed to revive the Immortals, and their enchantment requires frequent renewal with costly incenses and balms."
 #spr1 "./Warhammer-Complete/Immortal1.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
@@ -37286,7 +37121,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4560
+#newmonster 4560 -50p
 #name "Ushabti"
 #spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
 #spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
@@ -37319,7 +37154,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4567
+#newmonster 4567 -24p
 #copystats 4550
 #name "Carrion"
 #descr "Carrion are huge undead birds of prey that feed on the corpses of the fallen."
@@ -37339,11 +37174,11 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #weapon "Claws"
 #weapon "Beak"
-#flying
+#fly
 #end
 
 
-#newmonster 4568
+#newmonster 4568 -170p
 --#copystats 4550
 #name "Khemrian Warsphinx"
 #descr "Khemrian Warsphinxes are giant leonine statues that wade through the ranks of their foes, crushing them underfoot as if they were nothing more than bothersome insects."
@@ -37381,7 +37216,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #itemslots 12288 --2misc
 #end
 
-#newmonster 4569
+#newmonster 4569 -55p
 #name "Sepulchral Stalker"
 #descr "Sepulchral Stalkers lie in wait beneath the desert sands, waiting for intruders to pass by before launching a devastating ambush. When the trap is sprung, several horrifying, snake-like forms burst from the ground to surround their prey."
 #spr1 "./Warhammer-Complete/SepulchralStalker1.tga"
@@ -37613,7 +37448,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #end
 
 
-#newmonster 4556
+#newmonster 4571
 #copystats 4551
 #name "Tomb King"
 #descr "The Tomb Kings of Nehehkhara were individuals of extraordinary power. With the passing of the previous king, the new ruler would be chosen on the basis of his wisdom and strength, and the contenders were always exceptional. Invariably drawn from the senior ranks of the priesthood these individuals had been able to extend their lives indefinitely, and they did not fail to make use of their time, learning mysterious magic and travelling foreign lands. Once chosen, his acolytes would endlessly perform incantations to further strengthen the physical and magical powers of their near-divine ruler. A Tomb Kings would often rule for several centuries, before deciding that his time in this life had come to an end, and would retreat to his tomb to await paradise. Such are the strength of the enchantments on the reawakened king that he is almost impossible to destroy, although if he is very badly injured the release of magical energies needed to keep him alive will leave him severely weakened. He can summon 2 Immortal allies every month."
@@ -38332,13 +38167,14 @@ capable of trampling large numbers of enemy troops."
 #newspell
 #name "Awaken Tomb King"
 #descr "The Tomb Kings of Nehehkhara were immortal individuals of extraordinary power (E2S1D5H5)."
+#school 0
 #restricted 112
 #researchlevel 7
 #path 0 5
 #pathlevel 0 7
 #fatiguecost 5000
 #effect 10021
-#damage 4556
+#damage 4571
 #nreff 1
 #end
 
@@ -38902,19 +38738,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 #magic
 #hardmrneg
 #sound 16
-#end
-
-#newweapon 732
-#name "Chaos Steed hoof"
-#dmg 15
-#att 1
-#def 0
-#len 0
-#bonus
-#nostr
-#sound 38
-#blunt
-#natural
 #end
 
 #newweapon 733
@@ -39503,7 +39326,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #itemslots 13446
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon "Chaos Steed hoof"
+#weapon 1220
 #armor "Full Helmet"
 #armor 449
 #armor "Kite Shield"
@@ -42076,7 +41899,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -- Weapons
 -------------------------------------------------------------------------
 
-#newweapon 834
+#newweapon 1221
 #name "Runeblade"
 #dmg 12
 #att 2
@@ -42088,7 +41911,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #twohanded
 #end
 
-#newweapon 835 -- Ghoul claw
+#newweapon 1222 -- Ghoul claw
 #name "Ghoul Claw"
 #dmg 0
 #att 0
@@ -42097,7 +41920,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #secondaryeffect 414 -- MR-resistable disease
 #end
 
-#newweapon 836
+#newweapon 1223
 #name "Blood Drain" -- This is a kind of a dummy attack which is intended to give
 #armornegating      -- MR resistability to the weakness which follows.
 #dt_cap
@@ -42105,7 +41928,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #secondaryeffect 306 -- Weakness (not MR resistable)
 #end
 
-#newweapon 837
+#newweapon 1224
 #name "Bat Bite"
 #dmg 0
 #att -2
@@ -42115,7 +41938,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #bonus
 #end
 
-#newweapon 838
+#newweapon 1225
 #name "Fell Bat Bite"
 #dmg 2
 #att 2
@@ -42125,7 +41948,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #bonus
 #end
 
-#newweapon 839
+#newweapon 1226
 #name "Vampire Bite"
 #dmg 2
 #att 0
@@ -42139,17 +41962,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #bonus -- Naughtily changing a base game weapon! I think this is virtually a bug fix though.
 #end
 
---------------- CBM Warhorse hoof, overlap ok
-
-#newweapon 833
-#name "Warhorse Hoof"
-#dmg 12
-#att 2
-#def 0
-#len 0
-#bonus
-#nostr
-#end
 
 -------------------------------------------------------------------------
 -- Recruitables
@@ -42521,7 +42333,7 @@ blessings of their Warrior Priests."
 #armor "Full Helmet"
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon 833 -- Warhorse Hoof
+#weapon 1220 -- Warhorse Hoof
 #armor "Kite Shield"
 #nametype 104
 #holy
@@ -42594,7 +42406,7 @@ are experienced and effective generals as well as skilled fighters."
 #armor "Full Chain Mail"
 #armor "Full Helmet"
 #weapon "Broad Sword"
-#weapon 833 -- Warhorse Hoof
+#weapon 1220 -- Warhorse Hoof
 #armor "Kite Shield"
 #goodleader
 #nametype 104
@@ -44695,7 +44507,7 @@ Nametypes 	172,173,174
 
 ---- Stave of Avelorn
 --
-#newweapon 1044
+#newweapon 1363
 #name "Stave of Avelorn 2h"
 #type 2
 #dmg 10
@@ -44706,7 +44518,7 @@ Nametypes 	172,173,174
 #nratt 3
 #end
 
-#selectitem 1044
+#selectitem 1363
 #restricted 111
 #spr "./Warhammer-Complete/staveavelorn.tga"
 #name "Stave of Avelorn"
@@ -44825,7 +44637,7 @@ Nametypes 	172,173,174
 #mounted
 #illusion
 #weapon "Asrai Spear"
-#weapon "Hoof"
+#weapon 56 -hoof
 #weapon "Asrai Longbow"
 #armor "Elven Galea"
 #armor "Leather Hauberk"
@@ -44908,7 +44720,7 @@ Nametypes 	172,173,174
 
 #holy
 #weapon "Asrai Spear"
-#weapon "Antler"
+#weapon 1362 -antlers
 #armor "Kite Shield"
 #armor "Stag Helmet"
 #armor "Leather Hauberk"
@@ -45248,7 +45060,7 @@ Nametypes 	172,173,174
 #awe 2
 #holy
 #weapon "Impale"
-#weapon "Hoof"
+#weapon 56
 #end
 
 -- Dryad 11p
