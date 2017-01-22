@@ -1,0 +1,4 @@
+Version .6
+Slaanesh - see Slaanesh changelog
+Orcs - Added Face of Mork - same sprite as Face of Gork, but now Morka doesn't have to worship Gork.
+Chaos - Chosen of Tzeentch and Nurgle reclimit 5 removed. Gold cost decreased from 60 to 50.
