@@ -6485,7 +6485,7 @@ Priests: Powerful, can perform blood sacrifices"
 #flightspr -1
 #explspr 10168
 #provrange 5
-#walkable
+#walkable 1
 #spec 16384
 #researchlevel 4
 #nextspell 822
@@ -6537,7 +6537,7 @@ Priests: Powerful, can perform blood sacrifices"
 #school -1
 #onlyowndst 1
 #provrange 4
-#walkable
+#walkable 1 --Path must be walkable. Previously was causing an error because value wasn't specified.
 #effect 10001
 #fatiguecost 1200
 #damage 3160 --Questig Knight wwihtout summons
@@ -33635,6 +33635,20 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- SLAANESH WARHOST
 
+-- For more specific info, use the mod inspector. This is partially an explanation of the current faction.
+-- (Basically every unit and spell has been changed in some way from pre-1.00 the version.)
+
+-- VERSION 1.05
+-- Battlefield magic changes - reworked spell "Acquiescence". 20+5/lvl AN dmg, MR neg, friendlies only, range 25+ and AoE 5+. W2, Evo 5. Slicing Shards and Phantasmagoria removed so as not to give lots of unique battlemagic.
+                             -- added spell "Bliss in Torment" - basically Celestial Music for Slaanesh's daemons.
+-- Sorc given W1 instead of WAF random, Sorc Lord now has W4 and a +3 A/F random. Cost discounts for Sorc Lord, Exalted Sorc for being priest mages.
+-- Daemon resistances standardized - as they are made of Chaos energy, resistant to all elements. Base prot decreased by 2 for all daemons.
+-- Assorted minor stat changes - removed fear from daemon princess, removed stealthy from daemonettes, added recup to exalted daemon, etc.
+-- Avatars of Slaanesh cost changed - Daemon avatar is 350 points, human avatar is 130.
+-- Nation description changed - less lore, more clarity about what it actually is.
+-- Blood summons recosted, non-commanders a bit more numerous to make it less annoying to get lots of them.
+
+
 -- VERSION 1.04 - Yes, I skipped a bit. This is a big update, and 1.05 will be nice for the more definitive version.
 
 -- New sprite - Eziky's cultist instead of the old one! It's much cooler - she's got a fun color scheme and interesting robes. Also cultists now have inquisitor - cause they go corrupt enemy lands.
@@ -33741,8 +33755,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def 0
 #len 0
 #bonus
-#natural
-#rcost 0
 #end
 
 #newweapon 1853
@@ -34425,7 +34437,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
 #ap 12
 #mapmove 2
-#hp 22
+#hp 20
 #size 2
 #str 15
 #enc 1
@@ -34460,7 +34472,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
 #ap 12
 #mapmove 2
-#hp 22
+#hp 20
 #size 2
 #str 15
 #enc 1
@@ -34792,7 +34804,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 14
 #mor 13
-#custommagic 896 100 -- SAWB
 #gcost 10015
 #researchbonus 2
 #rcost 1
@@ -34804,6 +34815,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #maxage 1500
 #magicskill 4 1
 #holy
+#magicskill 2 1
 #end
 
 -- Exalted Sorcerer of Slaanesh
@@ -34814,6 +34826,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Exalted Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Prince of Chaos, yet they always seek for more in their never ending quest for magical power."
+#gcost 9970
 #ap 12
 #mapmove 2
 #hp 20
@@ -34831,7 +34844,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 8 2
 #custommagic 896 100 -- SAWB
 #custommagic 896 100 -- SAWB
-#gcost 10000
 #rcost 1
 #weapon 172
 #armor "Robes"
@@ -34848,8 +34860,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2SL.tga"
 #name "Sorcerer Lord"
 #nametype 115
-#descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the magical arts have grown exponentially, well beyond those of lesser Sorcerers, as has his depravity; in sheer magical power, he is only second to those who bear the mark of Tzeentch. Yet, his quest for more is unending, no matter the cost to his humanity, if there is any still left. The Prince of Excess may have gifted the Sorcerer Lord more than any other, it is still never going to quench his thirst for more. Thus is the way of Chaos."
+#descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the magical arts have grown exponentially, well beyond those of lesser Sorcerers, as has his depravity; in sheer magical power, he is only second to those who bear the mark of Tzeentch. Yet, his quest for more is unending, no matter the cost to his humanity, if any remains. The Prince of Excess may have gifted the Sorcerer Lord more than any other mortal, but it won't quench his thirst for more. Thus is the way of Chaos."
 #ap 12
+#gcost 9940
 #mapmove 2
 #hp 30
 #size 2
@@ -34861,10 +34874,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mr 17
 #mor 14
 #coldres 5
-#magicskill 2 2
-#magicskill 7 3
-#custommagic 2944 300 -- SAWB
-#gcost 10000
+#magicskill 7 3 -- Blood
+#magicskill 8 3 -- Priest
 #slowrec
 #rcost 1
 #weapon "Magic Staff"
@@ -34874,8 +34885,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startage 250
 #maxage 5000
 #holy
-#magicskill 8 3
-#custommagic 896 200
+#magicskill 2 4
+#custommagic 384 300 -- AF
 #end
 
 
@@ -35315,7 +35326,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 16
 #mapmove 3
 #hp 12
-#prot 10
+#prot 8
 #size 2
 #str 10
 #enc 1
@@ -35326,13 +35337,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 30
 #gcost 0
 #rcost 1
-#ambidextrous 3
 #itemslots 64640
 #startage 20
 #maxage 10000
 #poisonres 5
 #demon
-#stealthy 0
 #awe 2
 #holy
 #magicpower 1
@@ -35344,55 +35353,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #shockres 5
 #end
 
--- Herald of Slaanesh
-
-#newmonster 6536
-#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
-#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
-#name "Herald of Slaanesh"
-#nametype 257
-#descr "Heralds of Slaanesh do not only attend to Slaanesh's whimsical desires. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. They can also summon their sisters from the Void."
-#ap 16
-#mapmove 3
-#hp 20
-#prot 10
-#size 2
-#str 12
-#enc 1
-#att 13
-#def 13
-#prec 11
-#mr 14
-#mor 30
-#gcost 0
-#rcost 1
-#magicskill 2 1
-#ambidextrous 5
-#itemslots 15488
-#weapon 1852
-#startage 20
-#maxage 10000
-#poisonres 10
-#demon
-#spy
-#awe 3
-#female
-#okleader
-#expertundeadleader
-#holy
-#magicpower 1
-#stealthy 20
-#magicskill 4 1
-#magicskill 7 2
-#magicskill 8 2
-#makemonsters1 6535
-#inquisitor
-#weapon 1854
-#weapon 1854
-#coldres 15
-#fireres 5
-#shockres 5
-#end
 
 -- Seeker of Slaanesh
 
@@ -35405,7 +35365,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 26
 #mapmove 3
 #hp 12
-#prot 10
+#prot 8
 #size 3
 #ressize 2
 #str 12
@@ -35417,7 +35377,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 30
 #gcost 0
 #rcost 1
-#ambidextrous 3
 #weapon 1852
 #itemslots 13440 -- legless and armless
 #startage 20
@@ -35447,7 +35406,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 26
 #mapmove 3
 #hp 25
-#prot 13
+#prot 11
 #size 3
 #str 14
 #enc 1
@@ -35459,7 +35418,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 0
 #rcost 1
 #noitem
-#ambidextrous 5
 #startage 20
 #maxage 10000
 #poisonres 10
@@ -35475,6 +35433,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #shockres 10
 #end
 
+
 -- Chaos Fury
 
 #newmonster 6539
@@ -35486,7 +35445,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 15
 #mapmove 3
 #hp 8
-#prot 8
+#prot 6
 #size 2
 #str 10
 #enc 1
@@ -35509,6 +35468,61 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 10
 #end
 
+
+-- Herald of Slaanesh
+
+#newmonster 6536
+#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
+#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
+#name "Herald of Slaanesh"
+#nametype 257
+#descr "Heralds of Slaanesh do not only attend to Slaanesh's whimsical desires. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. They can also summon their sisters from the Void."
+#ap 16
+#mapmove 3
+#hp 20
+#prot 8
+#size 2
+#str 12
+#enc 1
+#att 13
+#def 13
+#prec 11
+#mr 14
+#mor 30
+#gcost 0
+#rcost 1
+#ambidextrous 5
+#itemslots 15488
+#weapon 1852
+#startage 20
+#maxage 10000
+#poisonres 5
+#coldres 10
+#shockres 5
+#demon
+#spy
+#awe 3
+#female
+#okleader
+#expertundeadleader
+#holy
+#magicpower 1
+#stealthy 20
+#magicskill 7 2
+#magicskill 8 2
+#custommagic 6656 100
+#makemonsters1 6535
+#inquisitor
+#weapon 1854
+#weapon 1854
+#coldres 15
+#fireres 5
+#shockres 5
+#end
+
+
+-- Exalted Daemon
+
 #newmonster 6543
 #spr1 "./Warhammer-Complete/exalteddaemon1.tga"
 #spr2 "./Warhammer-Complete/exalteddaemon2.tga"
@@ -35519,11 +35533,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mapmove 3
 #hp 54
 #heal
-#prot 13
+#prot 11
 #size 3
 #str 17
 #enc 3
-#att 18
+#att 16
 #def 16
 #prec 13
 #mr 17
@@ -35532,15 +35546,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #pathcost 50
 #startdom 3
-#coldres 5
-#poisonres 25
+#coldres 10
+#poisonres 10
+#fireres 10
+#shockres 10
 #itemslots 15494
 #startage 4000
 #maxage 10000
 #magicskill 2 1
 #inspirational 1
-#expertleader
-#expertundeadleader
+#okleader
+#okundeadleader
 #awe 2
 #demon
 #female
@@ -35552,7 +35568,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 1855
 #weapon 1851
 #armor 803
+#heal
 #end
+
 
 -- Keeper of Secrets
 
@@ -35566,12 +35584,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mapmove 3
 #enc 1
 #hp 90
-#prot 20
+#prot 18
 #size 5
 #str 22
 #att 16
 #def 16
-#prec 10
+#prec 15
 #mr 21
 #mor 30
 #gcost 0
@@ -35612,11 +35630,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/daemonprincess2.tga"
 #name "Daemon Princess of Slaanesh"
 #nametype 257
-#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has been pulled through the Void to destroy the enemies of the Dark Prince. Inside the form of the possessed champion vast magical forces roil, and the power of the Void emanates from her body. It confounds and terrifies her lesser foes, leaving her free to vanquish enemy lords and spellcasters."
+#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has been pulled through the Void to destroy the enemies of the Dark Prince. Inside the form of the possessed champion vast magical forces roil, and the power of the Void emanates from her body. It confounds and terrifies her lesser foes, leaving her free to command Slaanesh's armies, or vanquish enemy lords and spellcasters."
 #ap 22
 #mapmove 3
 #hp 48
-#prot 15
+#prot 12
 #size 3
 #str 18
 #enc 1
@@ -35640,7 +35658,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #expertleader
 #expertundeadleader
 #awe 5
-#fear 5
 #flying
 #demon
 #female
@@ -35661,7 +35678,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newmonster 4215
 #nametype 115
 #startdom 1
-#gcost 10000
+#gcost 9910
 #pathcost 20
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatarhum1.tga"
@@ -35699,7 +35716,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newmonster 4214
 #nametype 115
 #startdom 3
-#gcost 10100
+#gcost 10000
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
@@ -35710,7 +35727,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 7 2
 #hp 120
 #size 6
-#prot 20
+#prot 18
 #ap 18
 #mapmove 3
 #mr 24
@@ -35765,10 +35782,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 3
 #path 0 7
 #pathlevel 0 2
-#fatiguecost 2100
+#fatiguecost 4000
 #effect 10001
 #damage 6535
-#nreff 4
+#nreff 8
 #end
 
 -- Secondary Daemonette summon and affliction removal
@@ -35807,10 +35824,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 4
 #path 0 7
 #pathlevel 0 3
-#fatiguecost 3000
+#fatiguecost 2500
 #effect 10001
 #damage 6537
-#nreff 6
+#nreff 4
 #end
 
 #newspell
@@ -35824,7 +35841,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #fatiguecost 2000
 #effect 10001
 #damage 6538
-#nreff 4
+#nreff 3
 #end
 
 #newspell
@@ -35906,7 +35923,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 #newspell
 #name"Slicing Shards II"
-#descr "The after-effect of Slicing shards."
+#descr "The after-effect of Slicing shards - causes bleeding."
 #restricted 159
 #school -1
 #researchlevel 0
@@ -35917,84 +35934,76 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spec 1099511631936
 #end
 
-#newspell
-#name "Slicing Shards"
-#descr "The caster flicks his wrists and a cloud of razor-sharp darts burst from his hands, flensing the minds, bodies and souls of his foes."
-#restricted 159
-#school 2
-#researchlevel 4
-#path 0 2
-#path 1 1
-#pathlevel 0 3
-#pathlevel 1 1
-#fatiguecost 40
-#nreff 4
-#effect 2
-#damage 15
-#aoe 1
-#flightspr -1
-#explspr 10130
-#precision 1
-#range 30
-#sound 40
-#spec 1099511631936
-#nextspell "Slicing Shards II"
-#end
+--#newspell
+--#name "Slicing Shards"
+--#descr "The caster flicks his wrists and a cloud of razor-sharp darts burst from his hands, flensing the minds, bodies and souls of his foes."
+--#restricted 159
+--#school 2
+--#researchlevel 4
+--#path 2 -1
+--#pathlevel 3 0
+--#fatiguecost 40
+--#effect 2
+--#damage 15
+--#aoe 4
+--#flightspr -1
+--#explspr 10130
+--#precision 1
+--#range 30
+--#sound 40
+--#spec 1099511631936
+--#nextspell "Slicing Shards II"
+--#end
 
 -- Acquiescence -
 
 #newspell
-#name "Acquiescence II"
-#descr "Second effect of Acquiescence."
-#restricted 159
-#school -1
-#path 0 2
-#path 1 1
-#aoe 3
-#effect 67
-#damage 3
-#pathlevel 0 2
-#pathlevel 1 1
-#spec 151680
-#end
-
-#newspell
+#clear
+#copyspell 460
 #name "Acquiescence"
-#descr "With a languid gesture, the caster engulfs his foe with a haze of broken dreams and unattainable desires."
+#descr "The caster's foes are engulfed in Slaanesh's delusions. They feel their limbs grow heavy with the weight of seductive dreams and twisted desires. A powerful mage can project the delusions much more effectively than a weak one."
+#range 5015
+#aoe 1003
+#precision 5
 #restricted 159
 #school 2
-#researchlevel 2
 #path 0 2
-#path 1 1
 #pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 35
-#range 30
-#aoe 3
-#effect 66
-#damage 5
-#spec 151680
+#researchlevel 5
+#fatiguecost 50
+#damage 5010
+#spec 397440
 #explspr 10011
 #sound 21
-#nextspell "Acquiescence II"
 #end
 
 -- Phantasmagoria -
 
+--#newspell
+--#clear
+--#copyspell 895
+--#name "Phantasmagoria"
+--#descr "With a complex sign, the caster summons illusory creatures in the minds of his enemies, their dark promises of fulfilment seducing and terrifying the helpless foe."
+--#aoe 1002
+--#restricted 159
+--#school 2
+--#researchlevel 5
+--#path 0 2
+--#pathlevel 0 3
+--#range 5010
+--#explspr 10052
+--#sound 23
+--#end
+
 #newspell
-#copyspell "Terror"
-#name "Phantasmagoria"
-#descr "With a complex sign, the caster summons illusory creatures who flit and broil across the battlefield, their dark promises of fulfilment seducing and bewildering the hapless foe."
+#copyspell 363
+#name "Bliss in Torment"
+#descr "A tremor of Slaanesh's energy runs through the battlefield. His daemons feel it course through them, and are aroused to the highest levels of lust, pain, and pleasure. They feed on these emotions and become altogether more terrifying: faster, nimbler, and focused with complete clarity on the coming slaughter."
 #restricted 159
-#school 2
-#researchlevel 5
+#spec 13139976 --4751368-- 4227080 -- (demons, sacreds, no undead, friendlies, can use underwater)
+#school 4
 #path 0 2
-#path 1 1
-#pathlevel 0 3
-#pathlevel 1 1
-#aoe 10
-#explspr 10052
-#sound 23
+#pathlevel 0 4
 #end
 
 -------- MAGIC ITEMS ---------
@@ -36235,13 +36244,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #epithet "Seduction of Corruption"
 #era 2
 #idealcold 2
-#brief "To be touched by Slaanesh is to indulge in every perversion and to feel every sensation the world has to offer. And as such, those who follow the Prince of Excess have made themselves numb to anything that could be considered 'normal'; they need ever increasing sensation, ever increasing horrors to sate their dark desires."
-#descr "Slaanesh. The Prince of Excess. The Prince of Pleasure. It was His damning influence that lead to the creation of the Dark Elves, and their subsequent exile. His cults flourish within the lands of Men, even though His mortal followers are generally motivated by self-indulgence rather than furthering their own personal power; His principle of indulging in every whim and vice easily makes Him the most popular of the Dark Gods within the 'civilized' lands. His most feared followers are Daemons from the Void, possessing all manner of gruesome Gifts and immune to many of the dangers of the mortal realm."
+#brief "Barbarous Northmen, mutated by Slaanesh into fearsome superhuman warriors, and mighty summoned Daemons with magicpower."
+#descr "Slaanesh. The Prince of Excess. The Prince of Pleasure. It was His damning influence that lead to the creation of the Dark Elves, and their subsequent exile. His cults flourish within the lands of Men, even though His mortal followers are generally motivated by self-indulgence rather than furthering their own personal power; His principle of indulging in every whim and vice easily makes Him the most popular of the Dark Gods within the 'civilized' lands. His most feared followers are Daemons from the Void, possessing all manner of his Gifts and immune to many of the dangers of the mortal realm. Daemons depend on the winds of magic to manifest in this world, and their powers will vary accordingly."
 #summary "Race: Brutal Chaos Warriors, Beastmen and Daemons. Ocean Sailing. Prefer cold scale +2.
 
-Military: Powerful armored infantry and cavalry, limited ranged units, powerful magic and Daemonic summons.
+Military: Powerful armored infantry and cavalry, limited ranged units, Daemons with magicpower and terrifying Daemonic lords.
 
-Magic: Primarily Water, with Air, Fire, and Astral for human sorcerers and Blood, Death and Astral through Daemons. Some Death through Beastmen.
+Magic: Primarily Water, with Air and Fire for human sorcerers and Blood, Death and Astral through Daemons. Some Death through Beastmen.
 
 Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #flag "./Warhammer-Complete/flagSL.tga"
@@ -36267,12 +36276,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #addgod 1231 -- Drakaina
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
-#addgod 4214 -- Daemonic Avatar of Slaanesh
-#addgod 4215 -- Human Avatar of Slaanesh
-#cheapgod20 4214
-#cheapgod20 4215
-
-
+#cheapgod20 4214 -- Daemonic Avatar of Slaanesh
+#cheapgod20 4215 -- Human Avatar of Slaanesh
+#addgod 4214
+#addgod 4215
 ---- RECRUITS
 #clearrec
 #wasterec 6500 -- Warhound
@@ -36382,8 +36389,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startunittype2 6502
 #startunitnbrs2 10
 #end
-
-
 
 -- Thanks to llamabeast for the work on the Dom3 Mod!
 -- Taorec
