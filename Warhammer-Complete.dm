@@ -36222,7 +36222,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gems 2 2
 #gems 0 1
 #gems 1 1
-#gems 4 3
+#gems 4 2
 #end
 
 #newsite 1951
