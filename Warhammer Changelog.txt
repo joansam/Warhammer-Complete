@@ -1,4 +1,23 @@
-Version .6
-Slaanesh - see Slaanesh changelog
+Version .62
+JoanSam's Slaanesh changes detailed in the relevant section of the .dm
+Also removed the 'warhorse hoof' weapon and just replaced them with hooves. Only did 1 more damage anyway.
+Courtesy of Zonk:
+* All fixed cost pretenders switched to autocalc+0 and #cheapgod20. 
+Many will need cost adjustements to account for abilities autocalc can't account for, such as #onebattlespell, but it's a start. Please report any unreasonable costs.
+* Pretenders with MR < 18 and morale < 30 raised to that, except for Avatar of Horus who only got MR 14->16 (still fits his description, but less crippling)
+* #makemonsterX -> #makemonstersX (so commanders meant to summon allies actually can)
+* Skaven #cavenation 2 (will always start in caves in possible, previously it was 1 so 'can start in caves')
+* Removed many obsolete or redundant pretenders, commands and comments, Orcs' Warpaint and Shadow King's Stone 'armor' (they did nothing, so waste of slots).
+* Enabled pretenders for 
+Wood Elves : Irminsul, Nature Dragon, Lord of the Wild, Volla of the Bountiful Forest, Idol of Beasts, Bitch Queen
+Sylvania : Fountain of Blood, Vampire Queen, Demilich, Prince of Death, Statue of the Underworld, Master Lich, Dracolich, Raven of 
+the Underworld, Linnormr, Bog Mummy, Frost Father, Bitch Queen, Ghost King
+Tomb Kings : Master Lich, Demilich, Lich Queen, Prince of Death, Ghost King, Neter of the Underworld, Statue of the Underworld, Sphinx
+* Light Wizard Lord: healer 20->2
+
+Version .61
+
+Version .60 -JoanSam
+Slaanesh changes in changelog
 Orcs - Added Face of Mork - same sprite as Face of Gork, but now Morka doesn't have to worship Gork.
 Chaos - Chosen of Tzeentch and Nurgle reclimit 5 removed. Gold cost decreased from 60 to 50.

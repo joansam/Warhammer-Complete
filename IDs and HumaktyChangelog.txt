@@ -2,7 +2,6 @@ ID Numbers :
 Nations are sorted as in the code
 
 Weapons : 
-Several : 1220
 Skaven : 1900-1935
 Bretonnia : 1022-1033 / 1040
 Naggarond : 1170-1188
@@ -49,7 +48,7 @@ Khorne : 4600-4607 / 4610-4613 / 4615-4618 / 4620-4623 / 4625-4627 / 4629-4638 /
 Nurgle : 5000-5050
 Ogre : 5497-5539
 Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
-Slaanesh : 6500-6546
+Slaanesh : 6500-6546, minus wherever the 2 extra marauders were.
 Tomb Kings : 184 / 186-198 / 259 / 260 / 1657-1658 / 4132 / 4146 / 4147 / 4550-4571
 Tzeentch : 4330-4350 / 4796-4798 / 4800-4835
 VC : 5200-5268 / 5269-5275
