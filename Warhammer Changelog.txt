@@ -1,6 +1,7 @@
 Version .62
 JoanSam's Slaanesh changes detailed in the relevant section of the .dm
 Also removed the 'warhorse hoof' weapon and just replaced them with hooves. Only did 1 more damage anyway.
+
 Courtesy of Zonk:
 * All fixed cost pretenders switched to autocalc+0 and #cheapgod20. 
 Many will need cost adjustements to account for abilities autocalc can't account for, such as #onebattlespell, but it's a start. Please report any unreasonable costs.
@@ -16,6 +17,32 @@ Tomb Kings : Master Lich, Demilich, Lich Queen, Prince of Death, Ghost King, Net
 * Light Wizard Lord: healer 20->2
 
 Version .61
+
+(Slaanesh changes in the relevant section of the .dm, this was 1.05 I believe) - JoanSam
+
+Zonk:
+
+NULN & ALTDORF
+* Priest MR: Initiate of Sigmar 10->13, Warrior Priest 10->14, Arch Lector 10->15
+
+* Flagellant: mor 30->20 (30 means they completely ignore morale effects even when not berserk, which seems excessive)
+
+* Arch Lector MR 10->15 (+1 over Warrior Priest)
+
+* Jade Wizard healer 20->2 & springpower 1->10, Jade Wizard Lord healer 60->5 & springpower 50->25 (healer was % to heal troops in province in Dom3, springpower is a negative -% HP in fall so more isn't always better)
+
+* Removed obsolete lines in .dm referencing Dom3 forts
+
+* Extra blank lines in #summary so it formats properly.
+
+* Altdorf can now recruit the correct units
+
+? Warrior Priest has two costs (100 in recruited form, 80 in tranformed). Inteded, to have a lower upkeep, or to give lower upkeep, or mistake?
+
+? Moot Militia: Uses Short Bows, size 1 units usually use Small Bows instead. This would be a huge nerf however (damage 9->6, range 30->20, ammo 12->8) and make them nearly useless.
+
+? The stronger forestshape of Amber Wizards does not have separate Altdorf & Nuln versions, and so always turns back to the Nuln one. This can be fixed by creating a new unit, or we can accept the 10 gold difference and save an unit ID.
+
 
 Version .60 -JoanSam
 Slaanesh changes in changelog

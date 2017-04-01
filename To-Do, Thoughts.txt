@@ -1,0 +1,46 @@
+To-Do - Main Tasks:
+1. Get new High Elves
+2. Look at forums
+3. Transfer SlaaneshWIP files to WHComplete
+4. Fix Altdorf's starting army, right now it's Marignon's.
+5. Compatibility - WH, ME
+6. Also spreadsheet
+
+
+Thoughts/Less Urgent:
+
+Chaos:
+Weapon standardization - fun stuff...
+
+Dwarfs:
+Dwarf Pretender, Brother of War, is too powerful (6 paths, 80 point cost), move to autocost minus something.
+And their Ancient King pretender is too expensive.
+
+TKs:
+Overall limited pret choice
+First King has Holy 4, probly to summon Immortals. Remove the Holy, give a summon allies and look at cost.
+
+Tzeentch:
+Pretty limited pretender choice, not terrible tho
+
+Nurgle:
+Same
+
+Khorne:
+Needs a ton of help, but pretender choice is shit and Lord of the End Times pretender should probably be revised
+
+Morka:
+Still has the Face of Gork
+
+Dark Elves:
+Witch King supposedly has a retinue but it isn't there
+
+Skaven:
+Pretty limited pret choice, though they have 3 custom ones.
+
+VCs:
+Pretty limited pret choice, no discounts for e.g. Vamp Queen
+Cultist doesn't have a holy path, probly simple bug
+
+Lizardmen:
+Seems they have a very limited unit recruitment list...check and make sure nothing else should be there.

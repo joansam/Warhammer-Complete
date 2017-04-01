@@ -41364,7 +41364,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 -- Herald
 
 #newspell
-#name "Summon Herald"
+#name "Summon Herald of Tzeentch"
 #descr "With this ritual, the caster brings forth a Herald which stands upon a Disc of Tzeentch, to aid and command the lesser Daemonic forces of Tzeentch."
 #restricted 120
 #school 0
