@@ -5,7 +5,7 @@ To-Do - Main Tasks:
 4. Fix Altdorf's starting army, right now it's Marignon's.
 5. Compatibility - WH, ME
 6. Also spreadsheet
-
+7. Use SuperHams Tomb Kings - Wood Elves weren't fixed
 
 Thoughts/Less Urgent:
 
