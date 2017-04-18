@@ -1,9 +1,11 @@
 Version .70 - Still JoanSam
-Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
-since there's no way to know what they wanted. Thought I had already done these a while ago...maybe I lost the version somewhere.
-Yeah, just lots of miscellaneous bug fixes highlighted by the inspector. The errors it shows now should just be new modding commands.
-Updated Dark Elves and High Elves to Deathjester's recent versions.
-Slaanesh changes in their own changelog.
+-- Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
+   since there's no way to know what they wanted. Thought I had already done these a while ago...maybe I lost the version somewhere.
+   Yeah, just lots of miscellaneous bug fixes highlighted by the inspector. The errors it shows now should just be new modding commands.
+-- Wood Elf multihero crash should be fixed. The multiheroes were just copystats of other units, 
+   so they were deleted and the units themselves are now recruitable and multiheroes.
+-- Updated Dark Elves and High Elves to Deathjester's recent versions.
+-- Slaanesh changes in their own changelog.
 
 
 Version .62

@@ -7148,19 +7148,170 @@ Priests: Powerful."
 
 
 
---This mod is simply fanmade content and does not impose a copywrite claim anywhere, anytime, or for any reason whatsoever. It also does not challenge any copywrite anywhere in existance. This mod is made freely available to all those who are interested in using it at no charge. Warhammer Fantasy Battle is a property of the Games Workshop.
+--This mod is simply fanmade content and does not impose a copywrite claim anywhere, anytime, or for any reason whatsoever. It also does not challenge any copywrite anywhere in existance. This mod is made freely available to all those who are interested in using it at no charge. Warhammer Fantasy Battle is a property of the Games Workshop. 
 
 ---------------------------------
 
 monster ids: 5100-5151 (But not 5132)
 
-weapons ids: 1170-1188
+weapons ids: 1170-1190
 
 armour ids: 259-264 (But not 260)
 
 site ids: 1900-1901
 
 nation id: 178 (MA)
+---------------------------------VERSION 0.715
+
+-- Mountain Hydra spell now castable again.
+-- New magic path bug fix. Now correct:
+Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
+Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
+
+--The Dark Elves do not battlesummon the following undead:
+--Animate Skeleton		773
+--Animate Dead			774
+--Raise skeletons		791
+--Raise Dead			801
+--Horde of skeletons	818
+
+---------------------------------VERSION 0.714
+New magic paths:
+
+Coven initiate 		D1S1	+100% AWD1
+Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
+Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
+
+
+---------------------------------VERSION 0.713 (by Deathjester)
+
+- HP upped by 1 for most troops, 2 for some elites. Commander HP generally upped by 2.
+--str increased to a baseline of 10 	DE does have murderous prowess and should deal good damage.
+--morale baseline increased 11->12, generally all units morale increased by 1
+--Almost all commanders given sailing ability, but restricted to themselves.
+
+--Repeater crossbow better: 2xshots per turn, dmg 8->9, range 20->30
+
+--Hatred changed - it now does no damage, but in effect makes their opponents "parry" and lose defence.
+--New weapon: Eternal Hatred - blackguards now distract their opponents with their fierce onslaught of hate every turn.
+-- Draich users, most notably Executioners, given Killing Blow weapon that triggers 50% of the time, giving them AP attacks.
+
+--Corsairs:
+att and def 13->12
+gcost 15->20
+heavier armour, sea dragon cloak is now a bonus armor (+4 armor), and given half helmet
+
+--dark riders 
+hp 12->10, 
+att/def 13->12
+prec 13-12
+ap 26->28
+pillagebonus 3->2
+ressize 2
+gcost 23->34
+
+--Cold one knights
+hp 10->11
+str 9->12
+morale 12->14
+enc 7->5
+helmet changed to half helmet
+armor changed to plate hauberk, their armor save is 2+ in tabletop
+shields added
+gcost 40->60
+reclimit 5
+Cold One Knights #mounted
+
+--witch elves 
+enc 2->3
+def 11->12
+frenzy 3->4
+morale 12->15
+ap 16->14
+
+--executioner
+hp 9->10
+att 13->14
+def 12->13
+str 9->11
+morale 12->13
+mapmove 1->2
+gcost 30
+reclimit 5
+
+--shades 
+patrolbonus 3->2
+att 12->14
+def 12->13
+morale 11->13
+gcost 25
+reclimit 5
+
+--Black Guard 
+eternal hatred
+formation fighter
+hp 11
+def 14->13
+str 10->11
+mr 11->12
+mor 14->15
+mapmove 1->2
+gcost 32
+reclimit 5
+armor changed to "full scale mail"
+
+--Sea dragon riders
+hp 10->11
+str 9->12
+morale 11->14
+enc 4
+
+--Sisters of slaughter
+holy
+illusion
+another weapon: "Slaughter Blade" - normal damage but double damage vs larger
+gcost 20
+ 
+--Bloodshades
+att/def 13->14
+morale 13->14
+
+--assassin 
+mr 11->12
+morale 14->15
+
+--corsair captain
+hp 10->11
+prec 12->13
+pillagebonus 10->7, still more than any other commander
+
+--Dreadlord
+str 11->12
+prec 12->13
+mr 11->12
+enc 3->2
+
+--hags
+mr 12->13
+morale 15->16
+
+--sorceresses
+mr +1
+
+--supr sorceresses
+mr +1
+morale +1
+
+--death hag
+morale 14->15
+
+--Cold One Lord
+str 9->12
+prec 12->13
+MR 11->12
+enc 7->5
+
+
 
 ---------------------------------VERSION 0.70
 
@@ -7220,7 +7371,7 @@ New Spells:	- Call Mountain Hydra
 -Lifetaker crossbows are super deadly, like wow. Const level 4 and a price increase.
 -'Great Temple of Khaine' renamed to 'Temple of Khaine'
 -More sprite modifications
--Hag Queen 'Main Gauge' exchanged for 'Falchion'
+-Hag Queen "Main Gauge' exchanged for 'Falchion'
 
 ---------------------------------VERSION 0.40
 
@@ -7284,7 +7435,7 @@ New Units: 	- Sea Dragon Rider
 -Raised the starting dominion of the Witch King
 -Gave the sorceresses the oracle ability, for fluff reasons
 -Removed sorceress research bonus
--Removed 1 air magic from the sorceress. She now starts with only D2.
+-Removed 1 air magic from the sorceress. She now starts with only D2. 
 -Increased corsair pillage bonus by 1, to a total ability of two. Dark elves are 		nothing if not skilled.
 -Removed Witch Elves as a forgein unit.
 -Added shades as a forgein unit.
@@ -7302,21 +7453,40 @@ New Units: 	- Sea Dragon Rider
 #name "Hatred"
 #rcost 0
 #dmg 0
-#att -1
+#att -2
 #def 0
 #len 5
 #bonus
 #norepel
+#unrepel
+#nostr
+#dt_stun
 #ammo 1
+#dt_normal
+#end
+
+#newweapon 1190
+#name "Eternal Hatred"
+#rcost 0
+#dmg 0
+#att -2
+#def 0
+#len 5
+#bonus
+#norepel
+#unrepel
+#nostr
+#dt_stun
 #dt_normal
 #end
 
 #newweapon 1171
 #name "Repeater Crossbow"
 #rcost 5
-#dmg 8
+#dmg 9
 #att 1
-#range 20
+#range 30
+#nratt 2
 #ammo 12
 #twohanded
 #sound 13
@@ -7327,12 +7497,30 @@ New Units: 	- Sea Dragon Rider
 #pierce
 #end
 
+#newweapon 1189
+#name "Killing Blow"
+#rcost 0
+#dmg 9
+#att 1
+#def 2
+#len 3
+#norepel
+#melee50
+#skip
+#sound 8
+#slash
+#armorpiercing
+#sizeresist
+#bonus
+#twohanded
+#end
+
 #newweapon 1172
 #name "Draich"
 #rcost 5
-#dmg 8
-#att 0
-#def 0
+#dmg 9
+#att 1
+#def 2
 #len 3
 #twohanded
 #sound 8
@@ -7565,12 +7753,24 @@ New Units: 	- Sea Dragon Rider
 #slash
 #end
 
+#newweapon 1191
+#name "Slaughter Blade"
+#dmg 5
+#att 0
+#def 2
+#len 1
+#pierce
+#slash
+#sound 12
+#dt_large
+#end
+
 ---------------New Armor
 
 #newarmor 259
 #name "Sea Dragon Cloak"
 #type 5
-#prot 10
+#prot 4
 #def 0
 #enc 0
 #rcost 3
@@ -7712,13 +7912,13 @@ New Units: 	- Sea Dragon Rider
 #spr2 "./Warhammer-Complete/darkelfshield1.tga"
 #name "Dark Elf Dreadspear"
 #descr "Dark Elves, or the Druchii, are among the most evil and cruel races in the Old World, delighting in the suffering of others. Every one of them revels in murder, torture and causing the greatest misery possible. Though every Dark Elf uses cunning, intrigue and subtle means to advance themselves in society, there is always a need for soldiers. Citizen-armies raised in the six cities are trained rigorously in almost every aspect of warfare. Many join the Witch King's armies in hopes of gaining prestige, slaves or a military command. All of these are steps to power, which every Dark Elf craves dearly."
-#hp 8
+#hp 9
 #size 2
 #prot 0
-#mor 11
-#mr 11
-#enc 3
-#str 9
+#mor 12
+#mr 11		
+#enc 3		
+#str 10
 #att 12
 #def 12
 #prec 12
@@ -7728,8 +7928,8 @@ New Units: 	- Sea Dragon Rider
 #rcost 1
 #armor "Ring Mail Cuirass"
 #armor "Crested Helmet"
+#weapon 1170-- hatred
 #weapon "Spear"
-#weapon 1170
 #armor "Shield"
 #nametype 111
 #startage 150
@@ -7739,29 +7939,18 @@ New Units: 	- Sea Dragon Rider
 ------Dark Elf Warrior (Sword)
 
 #newmonster 5101
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfsword.tga"
 #spr2 "./Warhammer-Complete/darkelfsword1.tga"
 #name "Dark Elf Bleaksword"
 #descr "Dark Elves, or the Druchii, are among the most evil and cruel races in the Old World, delighting in the suffering of others. Every one of them revels in murder, torture and causing the greatest misery possible. Though every Dark Elf uses cunning, intrigue and subtle means to advance themselves in society, there is always a need for soldiers. Citizen-armies raised in the six cities are trained rigorously in almost every aspect of warfare. Many join the Witch King's armies in hopes of gaining prestige, slaves or a military command. All of these are steps to power, which every Dark Elf craves dearly."
-#hp 8
-#size 2
-#prot 0
-#mor 11
-#mr 11
-#enc 3
-#str 9
-#att 12
-#def 12
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 14
 #rcost 1
 #armor "Ring Mail Cuirass"
 #armor "Crested Helmet"
 #armor "Shield"
+#weapon 1170-- hatred
 #weapon "Falchion"
-#weapon 1170
 #nametype 111
 #startage 150
 #maxage 2000
@@ -7770,28 +7959,17 @@ New Units: 	- Sea Dragon Rider
 ------Dark Elf Warrior (Pike)
 
 #newmonster 5102
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfpike.tga"
 #spr2 "./Warhammer-Complete/darkelfpike1.tga"
 #name "Dark Elf Warrior"
 #descr "Dark Elves, or the Druchii, are among the most evil and cruel races in the Old World, delighting in the suffering of others. Every one of them revels in murder, torture and causing the greatest misery possible. Though every Dark Elf uses cunning, intrigue and subtle means to advance themselves in society, there is always a need for soldiers. Citizen-armies raised in the six cities are trained rigorously in almost every aspect of warfare. Many join the Witch King's armies in hopes of gaining prestige, slaves or a military command. All of these are steps to power, which every Dark Elf craves dearly."
-#hp 8
-#size 2
-#prot 0
-#mor 11
-#mr 11
-#enc 3
-#str 9
-#att 12
-#def 12
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 14
 #rcost 1
 #armor "Ring Mail Cuirass"
 #armor "Crested Helmet"
+#weapon 1170 -- hatred
 #weapon "Pike"
-#weapon 1170
 #nametype 111
 #startage 150
 #maxage 2000
@@ -7800,29 +7978,18 @@ New Units: 	- Sea Dragon Rider
 ------Dark Elf Warrior (Crossbow)
 
 #newmonster 5103
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfcrossbow.tga"
 #spr2 "./Warhammer-Complete/darkelfcrossbow1.tga"
 #name "Dark Elf Darkshard"
 #descr "Dark Elves, or the Druchii, are among the most evil and cruel races in the Old World, delighting in the suffering of others. Every one of them revels in murder, torture and causing the greatest misery possible. Though every Dark Elf uses cunning, intrigue and subtle means to advance themselves in society, there is always a need for soldiers. Citizen-armies raised in the six cities are trained rigorously in almost every aspect of warfare. Many join the Witch King's armies in hopes of gaining prestige, slaves or a military command. All of these are steps to power, which every Dark Elf craves dearly."
-#hp 8
-#size 2
-#prot 0
-#mor 11
-#mr 11
-#enc 3
-#str 9
-#att 12
-#def 12
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 14
 #rcost 1
 #armor "Ring Mail Cuirass"
 #armor "Crested Helmet"
+#weapon 1170-- hatred
 #weapon "Dagger"
-#weapon 1170
-#weapon 1171
+#weapon 1171 - repeater crossbow
 #nametype 111
 #startage 150
 #maxage 2000
@@ -7831,29 +7998,22 @@ New Units: 	- Sea Dragon Rider
 ------Corsair
 
 #newmonster 5104
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/corsair.tga"
 #spr2 "./Warhammer-Complete/corsair1.tga"
 #name "Black Ark Corsair"
 #descr "Dark Elf society is fuelled by slave labour. The Druchii do not build anything on their own and rely on slaves for their labor force. Central to this practice are the Black Arks, floating fortress-islands the size of small cities. Using these as a base for their fleets, troops are dispatched to snatch the unwary into servitude for the rest of their lives. The corsairs are the Dark Elves who do this horrible deed, performing lightning raids before sailing off with many new slaves. It is considered a great honor to be a corsair."
-#hp 8
-#size 2
-#prot 0
 #mor 12
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 13
-#prec 12
-#mapmove 2
-#ap 14
+#att 12
+#def 12
 #gcost 15
 #rcost 1
-#armor 259
-#armor "Crested Helmet"
+#armor "Ring Mail Cuirass"
+#armor 259 -- sea cloak
+#armor "Half Helmet"
+#weapon 1170-- hatred
 #weapon "Falchion"
 #weapon "Falchion"
-#weapon 1170
 #pillagebonus 2
 #nametype 111
 #ambidextrous 3
@@ -7865,29 +8025,19 @@ New Units: 	- Sea Dragon Rider
 ------Corsair (Net)
 
 #newmonster 5105
+#copystats 5104 -- Basestats Corsair
 #spr1 "./Warhammer-Complete/corsairnet.tga"
 #spr2 "./Warhammer-Complete/corsairnet1.tga"
 #name "Black Ark Corsair"
 #descr "Dark Elf society is fuelled by slave labour. The Druchii do not build anything on their own and rely on slaves for their labor force. Central to this practice are the Black Arks, floating fortress-islands the size of small cities. Using these as a base for their fleets, troops are dispatched to snatch the unwary into servitude for the rest of their lives. The corsairs are the Dark Elves who do this horrible deed, performing lightning raids before sailing off with many new slaves. It is considered a great honor to be a corsair."
-#hp 8
-#size 2
-#prot 0
-#mor 12
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 13
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 15
 #rcost 1
-#armor 259
-#armor "Crested Helmet"
+#armor "Ring Mail Cuirass"
+#armor 259 -- sea cloak
+#armor "Half Helmet"
+#weapon 1170-- hatred
 #weapon "Falchion"
 #weapon "Net"
-#weapon 1170
 #pillagebonus 2
 #ambidextrous 3
 #nametype 111
@@ -7898,35 +8048,34 @@ New Units: 	- Sea Dragon Rider
 ------Dark Rider
 
 #newmonster 5106
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkrider.tga"
 #spr2 "./Warhammer-Complete/darkrider1.tga"
 #name "Dark Rider"
 #descr "The Dark Riders are the heralds of Naggaroth. The horses they use are transplanted from the famous elven steeds of Ellyrion. Corrupted by dark magics, they are horses no more. Entire forests were felled to make room for the beasts while the steeds fed on the dying slaves used to make their pastures. Their use has been lessened in favour of Cold One mounts, but Dark Riders are still desired by generals for their speed and skill. Dark Riders scout ahead of the main army to cause as much chaos as they can before the main force arrives."
-#hp 11
+#hp 10
 #size 3
-#prot 0
 #mor 12
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 13
-#prec 13
+#enc 3 -- due to unusual steeds 
+#att 12
+#def 12
+#prec 12
 #mapmove 3
-#ap 26
-#gcost 23
+#ap 28
+#gcost 34
 #rcost 1
 #armor "Ring Mail Cuirass"
 #armor "Leather Hood"
+#weapon 1170-- hatred
 #weapon "Light Lance"
-#weapon 56
-#weapon 1170
-#weapon 1171
-#pillagebonus 3
+#weapon 56 --hoof
+#weapon 1171 - repeater cross bow
+#pillagebonus 2
 #nametype 111
 #startage 175
 #maxage 2000
 #mounted
+#ressize 2
 #stealthy 0
 #end
 
@@ -7965,36 +8114,39 @@ New Units: 	- Sea Dragon Rider
 ------Cold One Knight
 
 #newmonster 5108
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/coldoneknight.tga"
 #spr2 "./Warhammer-Complete/coldoneknight1.tga"
 #name "Cold One Knight"
 #descr "Deep below Naggaroth, there are a multitude of caverns and caves that have never been explored. In the depths of the Blackspine Mountains the Dark Elves discovered the Cold Ones, reptilian beasts of amazing agility and strength. They are a different breed from their Lustrian cousins, being unintelligent and possessing an odd metabolism. The Cold Ones of Naggaroth are also not as robust as other lizards, but make up for it with sheer ferocity. The Beastmasters have trained the Cold Ones well and they serve as heavy cavalry for the Druchii. Their riders are trained to use them to their greatest effect and to keep the stupid creatures in line. Cold Ones will finish the battle if the rider dies."
-#hp 8
+#hp 11
 #size 4
 #prot 7
-#mor 12
-#mr 11
-#enc 7
-#str 9
+#mor 14
+#enc 5
 #att 13
 #def 13
+#str 12
 #prec 11
 #mapmove 3
 #ap 18
-#gcost 40
+#gcost 60
+#reclimit 5
 #rcost 14
-#armor "Ring Mail Cuirass"
-#armor "Crested Helmet"
+#ressize 2
+#mounted
+#armor "Plate Hauberk"
+#armor "Half Helmet"
+#armor "Shield"
+#weapon 1170-- hatred
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 1170
-#weapon 19
+#weapon 19   - lizard bite
 #mounted
 #nametype 111
 #startage 225
 #maxage 2000
 #secondtmpshape 5107
-#ressize 2
 #coldres 8
 #mountainsurvival
 #end
@@ -8002,31 +8154,24 @@ New Units: 	- Sea Dragon Rider
 ------Witch Elf
 
 #newmonster 5109
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/witchelf.tga"
 #spr2 "./Warhammer-Complete/witchelf1.tga"
 #name "Witch Elf"
 #descr " The main god of the Dark Elf pantheon is Khaine, Lord of Murder. He demands that blood be spilt in his name and the Dark Elves do so constantly from their depraved temples in the six cities. The Witch Elves are called the Brides of Khaine due to their unyielding desire to spill blood for him and are his most devout worshippers and priestesses. Before combat, they drink Witchbrew to send them into a frenzy of death, shunning reason in eagerness to appease their fell god. Woe to those poor souls the Witch Elves find alive after a battle, for that fate is far worse than death. There are none who would doubt the faith of these crazed zealots and they are considered sacred."
-#hp 8
-#size 2
-#prot 0
 #mor 15
 #mr 12
-#enc 2
-#str 9
 #att 13
-#def 11
-#prec 8
-#mapmove 2
-#ap 16
-#gcost 14
+#ap 14
+#gcost 15
 #rcost 1
+#weapon 1170-- hatred
 #weapon 1177
 #weapon "Poison Dagger"
-#weapon 1170
 #female
 #holy
 #ambidextrous 3
-#berserk 3
+#berserk 4
 #nametype 112
 #startage 175
 #maxage 2000
@@ -8034,30 +8179,21 @@ New Units: 	- Sea Dragon Rider
 
 ------ Harpy
 #newmonster 5110
+#copystats 239 -- Vanilla Harpy
 #spr1 "./Warhammer-Complete/darkelfharpy.tga"
 #spr2 "./Warhammer-Complete/darkelfharpy1.tga"
 #name "Harpy"
 #descr "Wild harpies from the cold ridges of Naggaroth are oddly fitting. They appear as creatures with the torso of a beautiful women but have horrible wings and distorted legs. Their vicious nature and violent temperament are comparable to the Dark Elves' own behavior, leading many to think that they are the souls of dead Witch Elves given form. Though harpies are not known to be intelligent, the Dark Elves find them useful, and so allow them to live in the towering cities of the dark elves and follow druchii warships to battle where they feast on the carnage of war. Harpies fly quickly and are able to take lightly armored infantry by surprise. The Dark Elves consider harpies to be below them, like all other races, and see the ones that follow an army as little more than aerial fodder."
-#hp 10
-#size 3
+#hp 8
 #prot 3
 #mor 10
-#mr 10
 #enc 4
-#str 10
-#att 10
+#str 9
+#att 9
 #def 11
-#prec 6
-#mapmove 2
-#ap 14
-#gcost 15
+#gcost 9
 #rcost 1
-#weapon 33
-#flying
-#female
-#animal
 #mountainsurvival
-#undisciplined
 #supplybonus -1
 #startage 20
 #maxage 40
@@ -8067,28 +8203,24 @@ New Units: 	- Sea Dragon Rider
 ------ Executioner
 
 #newmonster 5111
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/executioner.tga"
 #spr2 "./Warhammer-Complete/executioner1.tga"
 #name "Executioner"
-#descr " The Executioners are a different branch of holy warriors of Khaine. They do not gain a mad frenzy like the Witch Elves, opting to retain their minds for battle. That is where their differences end, for they are still cold and bloodthirsty killers of dangerous skill. Every one of them knows a myriad of ways to kill with one strike of their huge Draich swords. They hail from Har Ganeth where the High Temple of Khaine looms. There, for years, they are trained in the art of the blade and learn to slay foes with little effort. The Temple sends them with Dark Elf armies all over the world, where they can put their butchery to best use. While they are pious to Khaine, and see themselves as holy warriors, they are not considered sacred."
-#hp 8
-#size 2
-#prot 0
-#mor 12
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 12
-#prec 11
-#mapmove 1
-#ap 14
-#gcost 18
+#descr " The Executioners are a different branch of holy warriors of Khaine. They do not gain a mad frenzy like the Witch Elves, opting to retain their minds for battle. That is where their differences end, for they are still cold and bloodthirsty killers of dangerous skill. Every one of them knows a myriad of ways to kill with one strike of their huge Draich swords and have an uncanny ability to find unprotected flesh if their opponents do not fend themselves well enough. They hail from Har Ganeth where the High Temple of Khaine looms. There, for years, they are trained in the art of the blade and learn to slay foes with little effort. The Temple sends them with Dark Elf armies all over the world, where they can put their butchery to best use. While they are pious to Khaine, and see themselves as holy warriors, they are not considered sacred."
+#hp 10
+#mor 13
+#str 11
+#att 14
+#def 13
+#mapmove 2
+#gcost 30
 #rcost 1
 #armor "Full Ring Mail"
 #armor "Crested Helmet"
-#weapon 1172
-#weapon 1170
+#weapon 1170-- hatred
+#weapon 1189 -- killing blow
+#weapon 1172 -- draich
 #nametype 111
 #startage 250
 #maxage 2000
@@ -8096,34 +8228,28 @@ New Units: 	- Sea Dragon Rider
 
 ------Dark Elf Shade
 #newmonster 5112
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfshade.tga"
 #spr2 "./Warhammer-Complete/darkelfshade1.tga"
 #name "Dark Elf Shade"
 #descr "Naggaroth, the Land of Chill, is a cold and barren continent. Only in the towers and streets of the Six Cities does life thrive, but there are a few who choose to shun these  cities in favor of the wasteland. These are the Shades, wandering Druchii who inhabit the Blackspine mountains. Shades live most of their lives in the wastelands of Naggaroth and are almost supernaturally keen survivalists and scouts. They fight both in hope of gaining slaves and to battle High Elves, whom they hate bitterly. They favor attacking from shadows and guerilla warfare, which they are very good at."
-#hp 8
-#size 2
-#prot 0
-#mor 11
-#mr 11
-#enc 3
-#str 9
-#att 12
-#def 12
 #prec 13
-#mapmove 2
-#ap 14
-#gcost 15
+#att 14
+#def 13
+#mor 13
+#gcost 25
+#reclimit 5
 #rcost 1
 #armor "Full Leather Armor"
 #armor "Leather Cap"
+#weapon 1170-- hatred
 #weapon "Falchion"
-#weapon 1170
 #weapon 1171
 #stealthy 10
 #mountainsurvival
 #wastesurvival
 #coldres 5
-#patrolbonus 3
+#patrolbonus 2
 #startage 200
 #maxage 2000
 #ambidextrous 2
@@ -8132,59 +8258,52 @@ New Units: 	- Sea Dragon Rider
 ------Black Guard of Naggarond
 
 #newmonster 5113
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/blackguard.tga"
 #spr2 "./Warhammer-Complete/blackguard1.tga"
 #name "Black Guard"
-#descr "Among all the warriors of the Dark Elves, the Black Guard are the most hardy and loyal. They are tasked with guarding the Witch King and his property and thus are sent to many places in Naggaroth to protect his interests. This position is one of great honor and respect, but the duty is grave. Selected by the Witch King from birth, they are trained relentlessly until they are made to fight each other to the death. Only the strongest and most merciless survive. The Black Guard are masters of combat, using great halberds to chop opponents to pieces."
-#hp 9
-#size 2
-#prot 0
-#mor 14
-#mr 11
-#enc 3
-#str 10
+#descr "Among all the warriors of the Dark Elves, the Black Guard are the most hardy and loyal. They are tasked with guarding the Witch King and his property and thus are sent to many places in Naggaroth to protect his interests. This position is one of great honor and respect, but the duty is grave. Selected by the Witch King from birth, they are trained relentlessly until they are made to fight each other to the death. Only the strongest and most merciless survive. The Black Guard are masters of combat, using great halberds to chop opponents to pieces. Their unrelenting hatred unnerves opponents who sometimes falter in their defence, falling under the cleaving halberds."
+#hp 11
+#mor 15
+#str 11
 #att 14
-#def 14
-#prec 12
-#mapmove 1
-#ap 14
-#gcost 30
+#def 13
+#mr 12
+#mapmove 2
+#gcost 32
 #rcost 1
 #armor "Half Helmet"
-#armor "Scale Mail Hauberk"
+#armor "Full Scale Mail"
+#weapon 1190-- eternal hatred
 #weapon "Halberd"
-#weapon 1170
 #startage 300
 #maxage 2000
 #castledef 2
 #bodyguard 1
+#formationfighter 1
 #end
 
 ------Endless
 
 #newmonster 5114
+#copystats 5100 -- Basestats
 #name "Endless"
 #spr1 "./Warhammer-Complete/endless.tga"
 #spr2 "./Warhammer-Complete/endless1.tga"
 #descr "The Endless are an almost mythical order of Druchii warriors whose sworn duty is to guard the Witch King with their lives. They wear silver masks fashioned into the shape of skulls, for theirs is the face of death. The Endless serve as both the Witch King's personal guard and secret police, cutting out dissent and rebellion before they take root. The Endless are likely the most skilled swordsmen in the Old World, having fought with the blade for hundreds of years. They move with supernatural speed and even the Swordmasters of Hoeth find the Endless to be difficult opponents. The Endless number only a few but their dedication and sheer slaughter potential see many of them on clandestine operations for the Witch King."
-#hp 8
-#size 2
-#prot 0
+#hp 10
 #mor 14
-#mr 11
 #enc 2
-#str 9
 #att 16
 #def 16
-#prec 12
-#mapmove 2
 #ap 18
 #gcost 0
 #rcost 1
 #armor "Scale Mail Cuirass"
 #armor "Skullface"
-#weapon "Great Sword"
-#weapon 1170
+#weapon 1170-- hatred
+#weapon 1189 -- killing blow
+#weapon 1172 -- draich
 #stealthy 0
 #bodyguard 1
 #startage 1000
@@ -8194,35 +8313,32 @@ New Units: 	- Sea Dragon Rider
 ------Reaper Bolt Thrower
 
 #newmonster 5129
+#copystats 5100 -- Basestats
 #name "Reaper Bolt Thrower"
 #spr1 "./Warhammer-Complete/reaper.tga"
 #descr "Normally used aboard Druchii ships to clear decks of foes, recent innovation has seen the Reaper deployed in Dark Elven ground forces. There is not much difference between this and the original bolt thrower design of the High Elves, except that the Dark Elves prefer their bolts barbed to give more grievous wounds. While it is a far, far less effective war machine that those made by men and dwarfs, it has an elegance that elves appreciate. Such an odd design comes at a price, for it is slow to deploy. The spotter both loads the bolts and shouts which direction to aim over the heat of battle."
-#hp 8
+#hp 20
 #size 5
-#prot 0
-#mor 12
-#mr 11
-#enc 5
-#str 9
-#att 12
-#def 12
-#prec 14
+#prot 5
+#mor 15
 #mapmove 1
-#ap 6
-#gcost 175
-#rcost 15
+#ap 7
+#gcost 200
+#rcost 40
 #armor "Ring Mail Cuirass"
 #armor "Crested Helmet"
+#weapon 1170-- hatred
 #weapon "Falchion"
-#weapon 1170
+#weapon "Falchion"
 #weapon 1180
 #slowrec
 #reclimit 1
 #aisinglerec
 #startage 250
+#ambidextrous 10
 #maxage 2000
-#noitem
 #ressize 2
+#noitem
 #end
 
 ------	Druchii Slaves
@@ -8233,7 +8349,7 @@ New Units: 	- Sea Dragon Rider
 #name "Druchii Slave"
 #descr "The Druchii do not enlist their own for the day to day tasks of living. For all menial labor the dark elves employ slavery, working slaves to death every day. Those that have no value as workers or concubines are sacrificed to Khaine in bloody rituals. Dark elves love to see slaves die in fantastic ways, and so give worn out slaves to the beastmasters, who beat them into shape for use as cannon fodder on the battlefield. Clad in whatever they can scavage or throw together, these slaves are a sorry sight to behold. They are covered in the scars of years spent in torture and abuse. All seek either a chance to flee or death. Between their horrible elven masters and whatever enemy they face, they are likely to get what they desire."
 #hp 10
-#prot 1
+#prot 0
 #att 7
 #def 7
 #str 9
@@ -8256,7 +8372,7 @@ New Units: 	- Sea Dragon Rider
 #name "Druchii Slave"
 #descr "The Druchii do not enlist their own for the day to day tasks of living. For all menial labor the dark elves employ slavery, working slaves to death every day. Those that have no value as workers or concubines are sacrificed to Khaine in bloody rituals. Dark elves love to see slaves die in fantastic ways, and so give worn out slaves to the beastmasters, who beat them into shape for use as cannon fodder on the battlefield. Clad in whatever they can scavage or throw together, these slaves are a sorry sight to behold. They are covered in the scars of years spent in torture and abuse. All seek either a chance to flee or death. Between their horrible elven masters and whatever enemy they face, they are likely to get what they desire."
 #hp 10
-#prot 1
+#prot 0
 #att 7
 #def 7
 #str 9
@@ -8280,7 +8396,7 @@ New Units: 	- Sea Dragon Rider
 #name "Druchii Slave"
 #descr "The Druchii do not enlist their own for the day to day tasks of living. For all menial labor the dark elves employ slavery, working slaves to death every day. Those that have no value as workers or concubines are sacrificed to Khaine in bloody rituals. Dark elves love to see slaves die in fantastic ways, and so give worn out slaves to the beastmasters, who beat them into shape for use as cannon fodder on the battlefield. Clad in whatever they can scavage or throw together, these slaves are a sorry sight to behold. They are covered in the scars of years spent in torture and abuse. All seek either a chance to flee or death. Between their horrible elven masters and whatever enemy they face, they are likely to get what they desire."
 #hp 10
-#prot 1
+#prot 0
 #att 7
 #def 7
 #str 9
@@ -8302,7 +8418,7 @@ New Units: 	- Sea Dragon Rider
 #name "Druchii Slave"
 #descr "The Druchii do not enlist their own for the day to day tasks of living. For all menial labor the dark elves employ slavery, working slaves to death every day. Those that have no value as workers or concubines are sacrificed to Khaine in bloody rituals. Dark elves love to see slaves die in fantastic ways, and so give worn out slaves to the beastmasters, who beat them into shape for use as cannon fodder on the battlefield. Clad in whatever they can scavage or throw together, these slaves are a sorry sight to behold. They are covered in the scars of years spent in torture and abuse. All seek either a chance to flee or death. Between their horrible elven masters and whatever enemy they face, they are likely to get what they desire."
 #hp 10
-#prot 1
+#prot 0
 #att 7
 #def 7
 #str 9
@@ -8322,24 +8438,21 @@ New Units: 	- Sea Dragon Rider
 ------	Sea Dragon Rider (Land Form)
 
 #newmonster 5135
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/seadragonriderland.tga"
 #spr2 "./Warhammer-Complete/seadragonriderland.tga"
 #name "Sea Dragon Rider"
 #descr "It takes much skill, patience and funding to properly find and tame a Sea Dragon. The creatures can only be tamed when newly born, but many are too violent even at birth and cannot be trained properly. Those dark elves that learn how to ride the ferocious beasts are valuable, for they patrol the waters for the Druchii, acting as advanced scouts for Black Arks. This rider has spent a long time training and can direct the focus of the Sea Dragon's wrath. While on land, Riders are merely skilled warriors, but know how to call their dragon from far away when the time comes to take to the seas."
-#hp 9
-#mor 12
-#mr 11
-#enc 3
-#str 9
+#hp 11
 #att 13
 #def 13
-#prec 12
-#mapmove 2
-#ap 14
+#str 12
+#mor 14
+#enc 4
 #gcost 90
 #rcost 1
+#weapon 1170-- hatred
 #weapon "Spear"
-#weapon 1170
 #armor "Leather Cuirass"
 #armor "Leather Cap"
 #pooramphibian
@@ -8386,11 +8499,12 @@ New Units: 	- Sea Dragon Rider
 #end
 
 #newmonster 5137
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/doomfirewarlock.tga"
 #spr2 "./Warhammer-Complete/doomfirewarlock1.tga"
 #name "Doomfire Warlock"
 #descr "There is a reason that only females are allowed to practice magic among the dark elves. Long ago, the great elf Caledor prophesied that a 'Dark King' would fall to a male sorcerer. The Witch King believes this prophecy referes to him, and as such has declared all sorcery among males to be banned. Yet the Druchii are a magic people. Male sorcerers hide among the population, barred from the Covenant but still studying and even, occasionally, finding employment. Those found by the Witch King's agents face a horrible fate indeed. Their soul is forever cursed, bound partly to the mortal world and partly to the realms of Slaanesh. The Dark God will tear all their souls apart, eventually. The process can be delayed with the sacrifice of blood, so roving packs of Doomfire Warlocks form to hunt and sustain their miserable lives a little longer. Slaanesh may horror mark the Doomfire Warlock whose time has come."
-#hp 12
+#hp 13
 #size 3
 #prot 0
 #mor 12
@@ -8405,9 +8519,9 @@ New Units: 	- Sea Dragon Rider
 #gcost 0
 #rcost 1
 #armor "Leather Cuirass"
+#weapon 1170-- hatred
 #weapon 1177
 #weapon 1173
-#weapon 1170
 #startage 300
 #maxage 2000
 #mounted
@@ -8447,6 +8561,7 @@ New Units: 	- Sea Dragon Rider
 #itemslots 4096
 #noleader
 #shrinkhp 75
+#sailsize 4
 #end
 
 #newmonster 5147
@@ -8481,6 +8596,7 @@ New Units: 	- Sea Dragon Rider
 #noleader
 #growhp 76
 #shrinkhp 50
+#sailsize 4
 #end
 
 #newmonster 5148
@@ -8513,6 +8629,7 @@ New Units: 	- Sea Dragon Rider
 #noleader
 #growhp 51
 #shrinkhp 25
+#sailsize 4
 #end
 
 #newmonster 5149
@@ -8542,26 +8659,26 @@ New Units: 	- Sea Dragon Rider
 #itemslots 4096
 #noleader
 #growhp 26
+#sailsize 4
 #end
 
 #newmonster 5150
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/sisterofslaughter.tga"
 #spr2 "./Warhammer-Complete/sisterofslaughter1.tga"
 #name "Sister of Slaughter"
-#descr "Disciples of the elven god of blades, these maidens of battle move with undescribable grace in combat formations that they create on the spot. Their reputation as dangerous warriors is earned in the dark elven fighting pits, where they compete with everything from captured slaves to deranged monsters. There are no rules in these horrible arenas for foul play is like a fine perfume to the dark elves. Sisters fight for little pay to test their skills against worthy opponents. Once the battle is over, they return to their home arena."
-#hp 8
-#enc 2
-#str 9
-#att 14
-#def 13
-#prec 12
-#mr 11
+#descr "Disciples of the elven god of blades, these maidens of battle move with undescribable grace in combat formations that they create on the spot. Their reputation as dangerous warriors is earned in the dark elven fighting pits, where they compete with everything from captured slaves to deranged monsters. There are no rules in these horrible arenas for foul play is like a fine perfume to the dark elves. Sisters fight for little pay to test their skills against worthy opponents and are particularly keen at felling larger foes with critical strikes. Once the battle is over, they return to their home arena."
+#hp 10
+#att 15
+#def 14
 #mor 15
+#mr 12
 #ap 16
-#mapmove 2
-#gcost 10
+#gcost 20
 #rcost 5
-#weapon 1188
+#weapon 1170-- hatred
+#weapon 1188 -- barbed whip
+#weapon 1191 -- Slaughter Blade
 #armor "Skullface"
 #armor "Shield"
 #startage 150
@@ -8569,6 +8686,8 @@ New Units: 	- Sea Dragon Rider
 #female
 #formationfighter 1
 #singlebattle
+#holy
+#illusion
 #end
 
 --------- COMMANDERS
@@ -8576,28 +8695,22 @@ New Units: 	- Sea Dragon Rider
 ------	Bloodshade Summoning form
 
 #newmonster 5115
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfbshade.tga"
 #spr2 "./Warhammer-Complete/darkelfbshade1.tga"
 #name "Bloodshade"
 #descr "Naggaroth, the Land of Chill, is a cold and barren continent. Only in the towers and streets of the Six Cities does life thrive, but there are a few who choose to shun these cities in favor of the wasteland. These are the Shades, wandering Druchii who inhabit the Blackspine mountains. Shades live most of their lives in the wastelands of Naggaroth and are almost supernaturally keen survivalists and scouts. Bloodshades are the most skilled of these, often finding employment among other Dark Elves as scouts. They fight both in hope of gaining slaves and to battle High Elves, whom they hate bitterly. They are experts at guerilla warfare and will stoop to any level to harass the enemy. When hired, Bloodshades will bring a small band of five shades with them."
-#hp 8
-#size 2
-#prot 0
-#mor 13
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 13
+#hp 10
+#mor 14
+#att 14
+#def 14
 #prec 14
-#mapmove 2
-#ap 14
 #gcost 100
 #rcost 1
 #armor "Full Leather Armor"
 #armor "Leather Hood"
+#weapon 1170-- hatred
 #weapon "Falchion"
-#weapon 1170
 #weapon 1171
 #stealthy 30
 #spy
@@ -8611,33 +8724,27 @@ New Units: 	- Sea Dragon Rider
 #ambidextrous 3
 #summon5 5112
 #firstshape 5116
+#sailing 2 2
 #end
 
 ------Bloodshade
 
 #newmonster 5116
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfbshade.tga"
 #spr2 "./Warhammer-Complete/darkelfbshade1.tga"
 #name "Bloodshade"
 #descr "Naggaroth, the Land of Chill, is a cold and barren continent. Only in the towers and streets of the Six Cities does life thrive, but there are a few who choose to shun these cities in favor of the wasteland. These are the Shades, wandering Druchii who inhabit the Blackspine mountains. Shades live most of their lives in the wastelands of Naggaroth and are almost supernaturally keen survivalists and scouts. Bloodshades are the most skilled of these, often finding employment among other Dark Elves as scouts. They fight both in hope of gaining slaves and to battle High Elves, whom they hate bitterly. They are experts at guerilla warfare and will stoop to any level to harass the enemy."
-#hp 8
-#size 2
-#prot 0
-#mor 13
-#mr 11
-#enc 3
-#str 9
-#att 13
-#def 13
+#mor 14
+#att 14
+#def 14
 #prec 14
-#mapmove 2
-#ap 14
-#gcost 100
+#gcost 60
 #rcost 1
 #armor "Leather Cuirass"
 #armor "Leather Hood"
+#weapon 1170-- hatred
 #weapon "Falchion"
-#weapon 1170
 #weapon 1171
 #stealthy 30
 #spy
@@ -8650,34 +8757,31 @@ New Units: 	- Sea Dragon Rider
 #maxage 2000
 #ambidextrous 3
 #nametype 111
+#sailing 2 2
 #end
 
 ------Dark Elf Assassin
 
 #newmonster 5117
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfassassin.tga"
 #spr2 "./Warhammer-Complete/darkelfassassin1.tga"
 #name "Dark Elf Assassin"
 #descr "There are few in the world that can match the skill of a Dark Elf Assassin. Taken from their families as mere boys during the Death Night, those that survive the merciless initiations are trained relentlessly, emerging as highly skilled assassins. Stealthy murders are by no means unheard of in Dark Elf society as it is a means to forward many schemes and plots, where stealth is a convenience for the wary. Skin, especially that of humans, is valuable and assassins will often make leathers out of the remains of past kills. Dark Elf Assassins spill blood without mercy and are considered sacred to Khaine."
-#hp 8
-#size 2
-#prot 0
-#mor 14
-#mr 11
-#enc 3
-#str 9
+#hp 10
+#mor 15
+#mr 12
 #att 15
 #def 15
 #prec 14
-#mapmove 2
 #ap 18
 #gcost 100
 #rcost 1
 #armor "Full Leather Armor"
 #armor "Leather Hood"
+#weapon 1170-- hatred
 #weapon "Poison Dagger"
 #weapon 1177
-#weapon 1170
 #nametype 111
 #startage 500
 #maxage 2000
@@ -8689,98 +8793,89 @@ New Units: 	- Sea Dragon Rider
 #ambidextrous 4
 #darkvision 50
 #noleader
+#sailing 2 2
 #end
 
 ------ Black Ark Corsair Captain
 
 #newmonster 5118
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/newcaptain.tga"
-#spr2 "./Warhammer-Complete/captain1DE.tga"
+#spr2 "./Warhammer-Complete/captain1.tga"
 #name "Corsair Captain"
 #descr "Leaders of the dreaded corsairs, these elves are cold blooded and merciless. It is they who lead the raids to capture slaves and treasure from among the other races of the Old World. From their giant floating harbours, the Black Arks, they are capable of sailing just about any where and striking at any time. Given the independant nature of their trade, captains know it unwise to be seen leading large armies, for it is strictly forbidden to raise an army without the approval of the Witch King. Still, nobody objects if they personally lead a raiding force to battle, for with each attack their fame increases, which inflates an already massive ego. Being experienced raiders, they are effective at pillaging provinces."
-#hp 8
-#size 2
-#prot 0
+#hp 11
 #mor 13
-#mr 11
-#enc 3
-#str 9
 #att 13
 #def 13
-#prec 12
-#mapmove 2
-#ap 14
+#prec 13
 #gcost 80
 #rcost 1
 #armor 259
+#weapon 1170-- hatred
 #weapon "Falchion"
 #weapon 1171
-#weapon 1170
 #okleader
 #nametype 111
 #startage 450
 #maxage 2000
-#pillagebonus 10
-#sailing 999 6
+#pillagebonus 7
+#sailing 999 4
 #taskmaster 1
 #end
 
 ------ Dreadlord
 
 #newmonster 5119
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/dreadlord.tga"
 #spr2 "./Warhammer-Complete/dreadlord1.tga"
 #name "Dreadlord"
 #descr "Dreadlords are exceedingly skilled Dark Elf warriors that have been given a military command. For many Druchii, this is the culmination of their desires for glory and power. Dreadlords are not only brilliant tacticians but master combatants, having practiced the arts of war longer than most others have been alive. They have become exceedingly arrogant over their long lives and their confidence borders on the megalomanical. This allows Dreadlords to not only exude the cold confidence necessary to lead Dark Elf warriors but lets them keep their cool in the heat of battle. Dreadlords love beating slaves to death and know how to keep the lot of them in line."
-#hp 9
-#size 2
-#prot 0
+#hp 11
 #mor 15
-#mr 11
-#enc 3
-#str 10
+#mr 12
+#str 12
 #att 14
 #def 14
-#prec 12
-#mapmove 2
-#ap 14
+#prec 13
+#enc 2
 #gcost 100
 #rcost 1
 #armor "Full Ring Mail"
 #armor "Half Helmet"
-#weapon 1172
-#weapon 1170
+#weapon 1170-- hatred
+#weapon 1189 -- killing blow
+#weapon 1172 -- draich
 #goodleader
 #nametype 111
 #startage 650
 #maxage 2000
 #taskmaster 2
+#sailing 2 2
 #end
 
 ------ Slaaneshi Cultist
 
 #newmonster 5120
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/cultist.tga"
 #spr2 "./Warhammer-Complete/cultist1.tga"
 #name "Slaaneshi Cultist"
 #descr "Slaanesh is a horrible god of Chaos, one who empowers itself on the decadent and debased sins of mortals. It was the Cult of Pleasure, elven servants of Slaanesh, that were responsible for the Elven Civil War that split the High and Dark elves. While the name of Slaanesh is spoken with contempt by most Dark Elves there are those who continue to worship this depraved being. Rather than face annihilation, the Cult of Pleasure serves the Pretender at face value while secretly worshipping Slaanesh. The Pretender is not ignorant of this and, having found some good use for them, lets them live for now. They know many foul secrets of Chaos."
-#hp 8
-#size 2
-#prot 0
+#hp 10
 #mor 13
 #mr 12
-#enc 3
-#str 8
+#str 9
 #att 10
 #def 13
 #prec 11
-#mapmove 2
 #ap 16
 #gcost 75
 #rcost 1
 #armor "Robes"
+#weapon 1170-- hatred
 #weapon "Fist"
-#weapon 1170
 #female
 #noleader
 #startage 200
@@ -8791,32 +8886,29 @@ New Units: 	- Sea Dragon Rider
 #magicskill 7 1
 #custommagic 18944 50
 #nametype 112
+#sailing 2 2
 #end
 
 ------ Witch Elf Hag
 
 #newmonster 5121
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfhag.tga"
 #spr2 "./Warhammer-Complete/darkelfhag1.tga"
 #name "Witch Elf Hag"
 #descr "The Witch Elves are priestesses of Khaine, the chief diety of the Dark Elves. Hags are older Witch Elves that have survived many brutal conflicts and lead younger zealots screaming into battle, granting the divine blessings of Khaine to her fellow brides. They are the ones responsible for the sacrificial orgies that dominate Khaine's temples. The constant bloody rituals Witch Elf Hags endure cause them to age quickly. Hags always bring along a blood slave unsuitable for rituals into combat, where spilt blood can fuel the conflict."
-#hp 8
-#size 2
-#prot 0
-#mor 15
-#mr 12
-#enc 3
+#hp 10
+#mor 16
+#mr 13
 #str 9
 #att 13
-#def 12
 #prec 8
-#mapmove 2
 #ap 15
 #gcost 100
 #rcost 1
 #weapon 1177
+#weapon 1170-- hatred
 #weapon "Poison Dagger"
-#weapon 1170
 #okleader
 #female
 #holy
@@ -8826,77 +8918,67 @@ New Units: 	- Sea Dragon Rider
 #tmpbloodslaves 1
 #startage 1000
 #maxage 1500
-#magicskill 7 1
-#magicskill 8 1
+#magicskill 7 1		--blood
+#magicskill 8 1		--priest
 #nametype 112
+#sailing 2 2
 #end
 
 ------ Coven Initiate
 
 #newmonster 5122
-#spr1 "./Warhammer-Complete/initiateDE.tga"
-#spr2 "./Warhammer-Complete/initiate1DE.tga"
+#copystats 5100 -- Basestats
+#spr1 "./Warhammer-Complete/initiate.tga"
+#spr2 "./Warhammer-Complete/initiate1.tga"
 #name "Coven Initiate"
 #descr "Dark Elves have the same intuitive gift for magic as High Elves. The Dark Covenants, which almost all mages in Naggaroth are members of, mainly teach the most vile magic, the dark wind of Dhar. Dark Elves in particular excel at the practice of Dhar, mastering it more quickly than the lesser races. Through dedication, maliciousness and their inherent aptitude for magic, initiates quickly learn several types of magic. Many say that they even look to the Chaos Wastes for magical lore and to divine the future, but this is not spoken too loudly. Black Ark captains will not carry an Initiate, as they lack influence or connections."
-#hp 8
-#size 2
-#prot 0
+#hp 10
 #mor 12
 #mr 13
-#enc 3
 #str 8
-#att 12
-#def 12
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 175
 #rcost 1
+#weapon 1170-- hatred
 #weapon "Quarterstaff"
-#weapon 1170
 #female
 #poorleader
 #startage 180
 #maxage 2000
-#magicskill 5 1
-#custommagic 4992 100
-#custommagic 4992 100
+#magicskill 5 1			--DEATH
+#magicskill 4 1			-ASTRAL
+#custommagic 4864 100	--AWD
 #nametype 112
 #nobadevents 4
+#sailing 2 2
 #end
 
 ------ Coven Sorceress
 
 #newmonster 5123
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/sorceress.tga"
 #spr2 "./Warhammer-Complete/sorceress1.tga"
 #name "Coven Sorceress"
 #descr "Dark Elves have the same intuitive gift for magic as High Elves. The Dark Covenants, which almost all mages in Naggaroth are members of, mainly teach the most vile magic, the dark wind of Dhar. Dark Elves in particular excel at the practice of Dhar, mastering it more quickly than the lesser races. Upon passing twelve dangerous trials, in addition to surviving the brutal Dark Elf power struggles, a Sorceress is fully accepted as a member of the Dark Covenant and ritually married to the Witch King. They will serve him for the rest of their lives. They are the Witch King's brides and no Black Ark Captain afloat would miss the chance to curry favour with one or both of them."
-#hp 8
-#size 2
-#prot 0
+#hp 10
 #mor 13
-#mr 14
-#enc 3
+#mr 15
 #str 8
-#att 12
-#def 12
-#prec 12
 #mapmove 1
-#ap 14
 #gcost 300
 #rcost 1
+#weapon 1170-- hatred
 #weapon 59
-#weapon 1170
 #female
 #poorleader
 #startage 700
 #maxage 2000
-#sailing 999 6
-#magicskill 1 1
-#magicskill 5 2
-#custommagic 4992 100
-#custommagic 4992 100
+#sailing 999 4
+#magicskill 1 1			--AIR
+#magicskill 5 2			--DEATH
+#magicskill 4 2			-ASTRAL
+#custommagic 4864 100	--AWD
+#custommagic 1792 10	--AWE
 #nametype 112
 #nobadevents 8
 #end
@@ -8904,41 +8986,37 @@ New Units: 	- Sea Dragon Rider
 ------ Supreme Sorceress
 
 #newmonster 5124
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/darkelfhighsorceress.tga"
 #spr2 "./Warhammer-Complete/darkelfhighsorceress1.tga"
 #name "Supreme Sorceress"
 #descr "Dark Elves have a natural affinity for magic and the Druchii who dedicate themselves to honing it will inevitably find great power. In Naggaroth, only women are allowed to be mages and the Supreme Sorceresses are the mightiest of them all. These darkly beautiful elves do not fear the powers of Chaos like the High Elves, so they spy into the Chaos Wastes to learn it's secrets and divine the future. The hierarchy of the Dark Covenant is unknown but, given their awesome magical might, it is very likely that these mysterious mages are the leaders. Other than the vampires of Sylvania, there are perhaps no greater masters of the dark wind, Dhar. Black Arks are always willing to give passage to a Sorceress, to please the Witch King as much as avoid the wrath of the Sorceress."
-#hp 8
-#size 2
-#prot 0
-#mor 14
-#mr 15
-#enc 3
+#hp 12
+#mor 15
+#mr 16
 #str 8
 #att 11
 #def 11
 #prec 13
 #mapmove 1
-#ap 14
 #gcost 450
 #rcost 1
 #armor "Robes"
+#weapon 1170-- hatred
 #weapon 59
-#weapon 1170
 #female
 #poorleader
 #startage 1000
 #older 30
 #maxage 2000
-#sailing 999 6
+#sailing 999 4
 #awe 1
 #slowrec
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 5 3
-#custommagic 4992 100
-#custommagic 4992 100
-#custommagic 896 100
+#magicskill 1 2			--AIR
+#magicskill 5 3			--DEATH
+#magicskill 4 2			-ASTRAL
+#custommagic 4864 100	--AWD
+#custommagic 3840 30	--AWES
 #nametype 112
 #nobadevents 12
 #end
@@ -8946,27 +9024,19 @@ New Units: 	- Sea Dragon Rider
 ------	Beastmaster
 
 #newmonster 5125
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/beastmaster.tga"
 #spr2 "./Warhammer-Complete/beastmaster1.tga"
 #name " Dark Elf Beastmaster"
 #descr "When the Dark Elves first came to Naggaroth, they found many types of strange creatures of awesome power. The Dark Elven Beastmasters are respected for their ability to brutally command the creatures that are considered below them, including Cold Ones, Dark Steeds, Humans and Harpies just to name a few. The most impressive feat of the Beastmasters is the taming of the Sea Dragons, which skilled Druchii can learn to ride. Beastmasters can tame the mighty dragons, but only in the waters and oceans of the world where they can gather small herds of the creatures with their personal Sea Dragon. Dark Elves are naturally attuned to magic, thus a skilled Beastmaster may develop water magic on her own."
-#hp 8
-#size 2
-#prot 0
+#hp 10
 #mor 12
-#mr 11
-#enc 3
-#str 9
 #att 14
-#def 12
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 90
 #rcost 1
 #armor "Leather Cuirass"
+#weapon 1170-- hatred
 #weapon "Whip"
-#weapon 1170
 #female
 #okleader
 #startage 350
@@ -8978,11 +9048,13 @@ New Units: 	- Sea Dragon Rider
 #taskmaster 3
 #makemonsters3 -3200
 #watershape 5133
+#sailing 2 2
 #end
 
 ------ Beastmaster on Sea Dragon
 
 #newmonster 5133
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/seadragonrider.tga"
 #spr2 "./Warhammer-Complete/seadragonrider1.tga"
 #name "Beastmaster on Sea Dragon"
@@ -8991,12 +9063,8 @@ New Units: 	- Sea Dragon Rider
 #size 5
 #prot 15
 #mor 14
-#mr 11
-#enc 3
 #str 9
 #att 14
-#def 12
-#prec 12
 #mapmove 1
 #ap 18
 #gcost 100
@@ -9021,25 +9089,20 @@ New Units: 	- Sea Dragon Rider
 ------	Death Hag
 
 #newmonster 5131
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/deathhag.tga"
 #spr2 "./Warhammer-Complete/deathhag1.tga"
 #name "Death Hag"
 #descr "Death Hags are the highest leaders of the witch elves of Khaine, the fell-handed god of murder. They mix the brews that send witch elves into violent spirals of death and know the rites of blood that appease their god. They are just as murderous as their youngers, but age and abuse have taken a toll on their bodies and they suffer from old age. A Hag can rememdy this by washing in sacrificial blood, of which there is no shortage in the Temples of Khaine. Death Hags both bless witch elves and bring a blood sacrifice to battle, which are used in their evil spells."
-#hp 8
-#mor 14
+#mor 15
 #mr 13
-#enc 3
-#str 9
 #att 14
-#def 12
-#prec 12
 #mapmove 1
-#ap 14
 #gcost 145
 #rcost 1
+#weapon 1170-- hatred
 #weapon 1177
 #weapon "Poison Dagger"
-#weapon 1170
 #startage 1375
 #maxage 1500
 #ambidextrous 3
@@ -9052,39 +9115,42 @@ New Units: 	- Sea Dragon Rider
 #magicskill 7 2
 #magicskill 8 2
 #nametype 112
+#sailing 2 2
 #end
 
 ------ Cold one Lord
 
 #newmonster 5151
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/coldoneleader.tga"
 #spr2 "./Warhammer-Complete/coldoneleader1.tga"
 #name "Cold One Lord"
 #descr "Dreadlords are exceedingly skilled Dark Elf warriors that have been given a military command. For many Druchii, this is the culmination of their desires for glory and power. Dreadlords are not only brilliant tacticians but master combatants, having practiced the arts of war longer than most others have been alive. They have become exceedingly arrogant over their long lives and their confidence borders on the megalomanical. This allows Dreadlords to not only exude the cold confidence necessary to lead Dark Elf warriors but lets them keep their cool in the heat of battle. Dreadlords use only the best trained cold ones. As such, the lizards will always retreat when their rider is slain."
-#hp 12
+#hp 14
 #size 4
 #prot 7
+#mr 12
 #mor 15
-#mr 11
 #enc 5
-#str 10
 #att 14
 #def 14
-#prec 12
-#mapmove 2
+#str 12
+#prec 13
 #ap 18
 #gcost 120
 #rcost 10
 #armor "Full Ring Mail"
 #armor "Half Helmet"
-#weapon 1172
-#weapon 1170
+#weapon 1170-- hatred
+#weapon 1189 -- killing blow
+#weapon 1172 -- draich
 #goodleader
 #nametype 111
 #startage 650
 #maxage 2000
 #taskmaster 2
 #mounted
+#sailing 4 4
 #end
 
 ----------HEROES
@@ -9092,31 +9158,26 @@ New Units: 	- Sea Dragon Rider
 ------	Lokhir Fellheart
 
 #newmonster 5126
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/lokhir.tga"
 #spr2 "./Warhammer-Complete/lokhir1.tga"
 #name "Fellheart"
 #descr "Lokhir Fellheart is a famous hero among the Druchii. From the already famous Fellheart family, he cemented his own name into legend when he was made the captain of a Black Ark named the Tower of Blessed Dread and dared to raid the underwater city of the Old Ones, Chupayotl. Lokhir returned from the sunken city with wealth untold as well as his strange red blades and kraken-shaped helmet. They are magic items of great power and he refuses to use any alternative to them. The red blades are supernaturally balanced and the helmet both heals him and makes those that behold him terrified. Since his raid on Chupayotl he has sailed up and down the Old World, taking huge numbers of slaves as he goes."
-#hp 12
-#size 2
-#prot 0
+#hp 14
 #mor 15
-#mr 11
-#enc 3
-#str 10
+#mr 12
+#str 11
 #att 15
 #def 16
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 0
 #rcost 1
 #armor 259
 #armor 261
+#weapon 1170-- hatred
 #weapon 1174
 #weapon 1175
-#weapon 1170
 #unique
-#sailing 999 6
+#sailing 999 4
 #startage 450
 #maxage 2000
 #ambidextrous 4
@@ -9133,28 +9194,24 @@ New Units: 	- Sea Dragon Rider
 ------	Malus Darkblade
 
 #newmonster 5127
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/malus.tga"
 #spr2 "./Warhammer-Complete/malus1.tga"
 #name "Darkblade"
 #descr "Darkblade is not an honorary title. It is the name given to bastards. In Malus' quest for power he sought an ancient treasure, but was instead possessed by a powerful daemon of Chaos named Tz'arkan. The daemon would take his soul unless he recovered several magic arifacts in one year. Through adventures too numberous to recount, including his murder of his own true father, Malus succeeded, only to be left soulless by the vile Tz'arkan. Malus eventually found Tz'arkan again and earned his soul back in battle but the demon is forever bound to him. His quest earned him the Warpsword of Khaine, a powerful weapon that is wrapped in prophecy. Tz'arkan and the Warpsword have changed Malus into something more than an elf, for it is whispered that he will end the world. He knows for certain that with his abilities and sheer hatred, anything is possible."
-#hp 18
-#size 2
-#prot 0
+#hp 19
 #mor 15
 #mr 14
 #enc 1
-#str 12
+#str 13
 #att 15
 #def 15
-#prec 12
-#mapmove 2
-#ap 14
 #gcost 0
 #rcost 1
 #armor "Plate Cuirass"
 #armor "Shield"
+#weapon 1170-- hatred
 #weapon 1176
-#weapon 1170
 #demon
 #unique
 #stealthy 10
@@ -9165,17 +9222,18 @@ New Units: 	- Sea Dragon Rider
 #onebattlespell "Personal Luck"
 #itemslots 31874
 #fixedname "Malus"
+#sailing 2 2
 #end
 
 ------ Morathi, the Hag Sorceress
 
 #newmonster 5130
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/morathi.tga"
 #spr2 "./Warhammer-Complete/morathi1.tga"
 #name "Hag Sorceress"
 #descr "Morathi is the single most powerful Dark Elf in all of Naggaroth, except for the Witch King, who is her true son. She has taught him much and though many would say their relationship is unnatural, they rule the Dark Elves together. It was she who founded the Cult of Pleasure that eventually led to the Sundering. She, who perfected the dark sorcery the Covenant practices. She, who manipulated the Pretender into letting the cultists of Slaanesh live. With her mastery of guile and enchanting beauty she has fooled all. Some say she guides the wrath of the Dark Elves, as her ultimate plan is to destroy the magic vortex in Ulthuan to bring Chaos surging into the Old World. Morathi is easily one of the most powerful users of magic in the world and was tainted with Chaos early in her life. She can project her sorceries farther than normal."
-#hp 12
-#size 2
+#hp 14
 #mor 16
 #mr 18
 #enc 2
@@ -9183,15 +9241,14 @@ New Units: 	- Sea Dragon Rider
 #att 14
 #def 13
 #prec 14
-#mapmove 2
 #ap 16
 #gcost 0
 #rcost 1
+#weapon 1170-- hatred
 #weapon 1181
-#weapon 1170
 #startage 7000
 #maxage 10000
-#sailing 999 6
+#sailing 999 4
 #awe 3
 #magicskill 4 4
 #magicskill 5 4
@@ -9209,25 +9266,24 @@ New Units: 	- Sea Dragon Rider
 ------ Shadowblade, Master of Assassins
 
 #newmonster 5142
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/shadowblade.tga"
 #name "Master of Assassins"
 #descr "Shadowblade is an assassin like no other before him. He is very young for an elf, but already his exploits have become legend among his people. He kills for the Hag Queen herself and has been sent on many dangerous missions. The most famous of which was when he slew the entire crew of a High Elf Hawkship over several tense days. He left one survivor to recite the tale of his crew that tried, and failed, to capture Shadowblade. Not even the Hag Queen he kills for knows what Shadowblade actually looks like. His dark reputation is not unfounded, for he seems to enjoy many strange blessings. Whether this is actually Khaine's gifts or some sorcery is unknown to all but Shadowblade himself. Many say his strange amulet assures that his eventual death will not go unavenged."
-#hp 10
+#hp 12
 #mor 14
-#mr 11
-#enc 3
+#mr 13
 #att 16
 #def 16
 #prec 14
-#mapmove 2
 #ap 16
 #gcost 0
 #rcost 1
 #armor "Full Leather Armor"
 #armor "Leather Hood"
+#weapon 1170-- hatred
 #weapon "Poisoned Dagger"
 #weapon "Poisoned Dagger"
-#weapon 1170
 #startage 150
 #maxage 2000
 #noleader
@@ -9236,7 +9292,7 @@ New Units: 	- Sea Dragon Rider
 #stealthy 40
 #assassin
 #patience 4
-#sailing 999 6
+#sailing 999 4
 #holy
 #unique
 #deathfire 2
@@ -9247,6 +9303,7 @@ New Units: 	- Sea Dragon Rider
 ------ Manticore Rider
 
 #newmonster 5136
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/manticorerider.tga"
 #spr2 "./Warhammer-Complete/manticorerider1.tga"
 #name "Manticore Rider"
@@ -9255,21 +9312,18 @@ New Units: 	- Sea Dragon Rider
 #size 6
 #prot 6
 #mor 14
-#mr 11
 #enc 5
-#str 9
 #att 14
 #def 14
-#mapmove 2
 #ap 18
 #gcost 0
 #rcost 1
 #armor "Full Ring Mail"
 #armor "Crested Helmet"
 #weapon "Falchion"
+#weapon 1170-- hatred
 #weapon 1183
 #weapon 1184
-#weapon 1170
 #flying
 #startage 500
 #maxage 2000
@@ -9280,25 +9334,25 @@ New Units: 	- Sea Dragon Rider
 #end
 
 #newmonster 5143
+#copystats 5100 -- Basestats
 #spr1 "./Warhammer-Complete/hellebron.tga"
 #spr2 "./Warhammer-Complete/hellebron1.tga"
 #name "Hag Queen"
 #descr "Hellebron is leader of the cult of Khaine and ruler of the foul city of Har Ganeth. Her rivalry with Morathi, mother of the Witch King, is legendary and the Sorceress would not let Hellebron bathe in the Cauldrons of Blood to restore her youth. With the coming of the Pretender, her conviction, and youth, have been mostly restored. Hellebron rightly suspects Morathi of consorting with Chaos cults and she has sworn to annihilate their influence from Naggarond forever. Despite everything, she is the head of the most important religion in Naggaroth. Her wrath is not taken lightly. She comes to battle with a few blood slaves and the protection of Khaine himself."
-#hp 20
-#prot 0
+#hp 22
 #mor 16
 #mr 15
 #enc 2
-#str 10
+#str 11
 #att 15
 #def 13
 #mapmove 1
 #ap 18
 #gcost 0
 #rcost 1
+#weapon 1170-- hatred
 #weapon "Enchanted Sword"
 #weapon "Falchion"
-#weapon 1170
 #unique
 #holy
 #ambidextrous 6
@@ -9313,6 +9367,7 @@ New Units: 	- Sea Dragon Rider
 #maxage 5000
 #itemslots 19590
 #fixedname "Hellebron"
+#sailing 2 2
 #end
 
 #newmonster 5144
@@ -9333,9 +9388,9 @@ New Units: 	- Sea Dragon Rider
 #ap 2
 #gcost 0
 #rcost 1
+#weapon 1170-- hatred
 #weapon 1177
 #weapon "Poison Dagger"
-#weapon 1170
 #startage 1375
 #maxage 1500
 #ambidextrous 3
@@ -9354,6 +9409,8 @@ New Units: 	- Sea Dragon Rider
 #itemslots 12288
 #nametype 112
 #cleanshape
+#sailsize 4
+#sailing 4 4
 #end
 
 #newmonster 5145
@@ -9386,6 +9443,8 @@ New Units: 	- Sea Dragon Rider
 #neednoteat
 #noleader
 #itemslots 12288
+#sailsize 4
+#sailing 4 4
 #end
 
 ----------PRETENDERS
@@ -9407,14 +9466,15 @@ New Units: 	- Sea Dragon Rider
 #prec 14
 #mapmove 2
 #ap 16
+#gcost 50
 #rcost 1
 #armor 262
 #armor 263
+#weapon 1170-- hatred
 #weapon "Enchanted Sword"
-#weapon 1170
 #startage 6000
 #maxage 10000
-#sailing 999 6
+#sailing 999 4
 #fear 5
 #fireres 8
 #itemslots 14342
@@ -9423,12 +9483,39 @@ New Units: 	- Sea Dragon Rider
 #magicskill 7 1
 #summon1 5114
 #superiorleader
-#gcost 10000
 #pathcost 20
 #startdom 3
 #end
 
 ----------SPELLS
+
+-- This block removes the following undead battle summoning spells:
+--Animate Skeleton		773
+--Animate Dead			774
+--Raise skeletons		791
+--Raise Dead			801
+--Horde of skeletons	818
+
+#selectspell 773
+#notfornation 178
+#end
+
+#selectspell 774
+#notfornation 178
+#end
+
+#selectspell 791
+#notfornation 178
+#end
+
+#selectspell 801
+#notfornation 178
+#end
+
+#selectspell 818
+#notfornation 178
+#end
+-- End of removal block
 
 #newspell
 #name "Rite of Blood"
@@ -9486,9 +9573,9 @@ New Units: 	- Sea Dragon Rider
 #school 1
 #restricted 178
 #researchlevel 6
-#path 0 0
+#path 0 1
 #path 1 5
-#pathlevel 0 3
+#pathlevel 0 2
 #pathlevel 1 3
 #effect 10001
 #fatiguecost 1800
@@ -9639,7 +9726,7 @@ Military: Light to medium infantry with quick and vicious cavalry.
 Magic: Strong death, moderate fire, water, air. Priests have blood magic.
 
 Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blood sacrifice."
-#flag "./Warhammer-Complete/flag1DE.tga"
+#flag "./Warhammer-Complete/flag1.tga"
 #templepic 0
 #startsite "Naggarond"
 #startsite "Temple of Khaine"
@@ -9661,13 +9748,13 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #addrecunit 5108	-- Cold One Knight
 --addrecunit 5113	-- Black Guard
 --addrecunit 5114	-- Endless
---addrecunit 5129	-- Reaper Bolt Thrower
 --addrecunit 5138	-- Druchii Slave (Sword)
 --addrecunit 5139	-- Druchii Slave (Club)
 --addrecunit 5140	-- Druchii Slave (Spear)
 --addrecunit 5141	-- Druchii Slave (Bow)
 #addrecunit 5150	-- Sister of Slaughter
 #coastunit1 5135	-- Sea Dragon Rider (Land Shape)
+--coastunit2 5129	-- Reaper Bolt Thrower
 #addforeignunit 5112	-- Shade
 
 
@@ -16353,7 +16440,6 @@ TWEAK - Flagellants are undisciplined
 #rcost 120
 #magicskill 8 5
 #magicskill 1 1
-#mindless
 #holy
 #maxage 4000
 #startage 1
@@ -16465,7 +16551,6 @@ TWEAK - Flagellants are undisciplined
 #gcost 0
 #magicskill 8 6
 #magicskill 1 1
-#mindless
 #holy
 #maxage 4000
 #startage 1
@@ -49908,7 +49993,6 @@ Priests: Average."
 #nreff 1
 #end
 
-
 ---- Awaken Second Generation Slann of Fire
 
 #newspell
@@ -49924,7 +50008,6 @@ Priests: Average."
 #damage 3288
 #nreff 1
 #end
-
 
 ---- Awaken Second Generation Slann of Earth
 
@@ -49961,7 +50044,6 @@ Priests: Average."
 
 -------- SITES
 
-
 #newsite 1510
 #name "Spawning Pools"
 #path 6
@@ -49972,7 +50054,6 @@ Priests: Average."
 --homecom 3293 -- Oldblood on Cold One
 #end
 
-
 #newsite 1511
 #name "The Great Pyramid"
 #path 8
@@ -49981,7 +50062,6 @@ Priests: Average."
 #gems 4 3
 #homecom 3306 -- Fourth Generation Slann (awakening)
 #end
-
 
 -------- ITEMS
 
@@ -50001,7 +50081,6 @@ Priests: Average."
 #weapon 838 -- piranha blade
 #end
 
-
 -- Blade of Realities --
 
 #newitem
@@ -50017,7 +50096,6 @@ Priests: Average."
 #restricted 101
 #weapon 840 -- blade of realities
 #end
-
 
 -- Skavenpelt Banner --
 
@@ -50041,10 +50119,7 @@ Priests: Average."
 #end
 
 
-
-
 -------- NATION
-
 
 #selectnation 101
 #clearnation
@@ -50063,7 +50138,6 @@ Priests: Very Powerful. Prefer heat scale 2."
 #startsite "The Great Pyramid"
 #startsite "Spawning Pools"
 
-
 #homerealm 6 -- middle americas
 #homerealm 9 -- deeps
 #addgod 266 -- green dragon
@@ -50071,11 +50145,8 @@ Priests: Very Powerful. Prefer heat scale 2."
 #addgod 158 -- oracle
 #addgod 1348 -- titan of serpents and healing
 
-
 #fortera 3 -- only big expensive forts
 #fortcost 100 -- all forts 50% more expensive
-
-
 
 ------- Add soldiers
 
@@ -50100,9 +50171,7 @@ Priests: Very Powerful. Prefer heat scale 2."
 #addrecunit 3345 -- Stegadon
 --addrecunit 3347 -- xhotl
 
-
 ------- Add leaders
-
 
 #addreccom 3294 -- Chameleon Scout
 #addreccom 3295 -- Skink Warchief
@@ -50136,9 +50205,6 @@ Priests: Very Powerful. Prefer heat scale 2."
 --addreccom 3361 -- Oxyotl
 --addreccom 3362 -- Mazdamundi
 
-
-
-
 ------- Province Defence
 
 --Sets the units to be used in province defense.
@@ -50150,14 +50216,12 @@ Priests: Very Powerful. Prefer heat scale 2."
 #defunit2 3325 -- Skink Archers
 #defunit2b 3316 -- Kroxigor
 
-
 --Sets how many of the units to appear per point.
 
 #defmult1 10
 #defmult1b 10
 #defmult2 10
 #defmult2b 5
-
 
 ------- Hero Settings
 
@@ -50168,11 +50232,9 @@ Priests: Very Powerful. Prefer heat scale 2."
 #hero4 3357 -- Gor Rok
 #hero5 3361 -- Oxyotl
 
-
 #idealcold -2
 #color 0.3 0.3 0.8
 #templecost 600
-
 
 #startcom 3290 -- Saurus Scar Veteran
 #startunittype1 3310 -- saurus warrior sword
@@ -50180,9 +50242,4 @@ Priests: Very Powerful. Prefer heat scale 2."
 #startunittype2 3311 -- saurus warrior spear
 #startunitnbrs2 10
 #startscout 3294 -- Chameleon Scout
-#end
-
-
-
-
 #end
