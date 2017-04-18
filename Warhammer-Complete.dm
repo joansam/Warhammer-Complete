@@ -33285,6 +33285,28 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- SLAANESH WARHOST
 
+
+--VERSION 1.15 - Fucking with balance
+
+-- Chaos Fury size 2 -> 1, cause they look like size 1, and imps are. Prot 6 -> 4.
+-- Keeper of Secrets and Daemon Princess spells 1 research level later, Keeper of Secrets 3rd misc slot removed.
+-- Marauders buffed slightly: cost 11 -> 10, attack skill 10 -> 11, MR 11 -> 12. Marauder horseman cost 25 -> 20 and increased MR.
+-- Bray Shaman has leadership 10 instead of 40.
+-- Slaanbull has 80 leadership and no Awe. Health 30 -> 40.
+-- Ungor raider (archer) given a dagger, previously had useless kick
+-- Removed ambidextrous from Daemon Avatar pretender, she doesn't have hand slots. Changed nametype to new Daemonic.
+-- Decreased Daemonette and Seeker defense by 1
+-- Champion cost 45 -> 75, Exalted Champ 55 -> 100, Chosen cost 70 -> 60, Chaos Warrior 35 -> 30, Standard Bearer 45 -> 40, Chaos Knight 60 -> 50
+-- Gave exalted champ +20 leadership and a helmet.
+-- Removed inquisitor from Herald and Cultist, potentially too powerful.
+-- Adjusted summon costs for Daemonettes, Seekers and Fiends slightly upward, especially Fiends - they were underpriced.
+-- Fiend health 25 -> 20, description changed to reflect their awesome offensive power.
+-- Exalted sorc description fix
+-- Decreased cost of sorc and exalted sorc by 5...apparently something is putting them 5 over the value shown in the inspector.
+-- Increased base rescost of mounted marauder to 6 and knight to 20, as per vanilla standards.
+-- Daemon-forged blade no longer AP, 3 attacks instead of 2, and no longer intrinsic. Silverslash back to AP and 3 attacks.
+
+
 -- VERSION 1.10 (Cause I can do whatever I want with these numbers)
 
 -- New, improved sprites for Sigvald's Chosen, Chosen w/sword, Seeker, and Sorcerer!
@@ -33299,7 +33321,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 	-- Increased human morale by 2, to simulate the Mark of Slaanesh: "Immune to Psychology" effect.
 	-- Gave Chaos Champion Holy 1 and Chaos Lord B1 Holy 2, so that leading Chosen isn't a huge pain. Also made cultists poor leaders (10 guys).
 	-- Fixed Exalted Champ's leadership - had 20 for some reason, now has 40. +autocost, minor stat increases and benefits from Daemonic whip.
-	-- Fixed chaosrec values for Champ, Exalted Champ, and Lord.
 	-- Removed mountain survival for like...all human units. Isn't actually thematic, and Chaos should have slow movement.
 	-- Removed reclimit for foreignrec marauders. In the process, eliminated 2 gratuitous unit IDs.
 	-- Increased knight cost from 50 to 60, base defense from 12 to 13.
@@ -33494,14 +33515,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #dmg 8
 #magic
 #slash
-#armorpiercing
 #att 3
 #def 1
 #len 3
 #rcost 10
 #sound 8
-#bonus
-#nratt 2
+#nratt 3
 #end
 
 #newweapon 1856
@@ -33560,7 +33579,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def 0
 #len 3
 #sound 8
-#nratt 4
+#nratt 3
+#armorpiercing
 #end
 
 #newweapon 1859
@@ -33657,6 +33677,355 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 5
 #armor 44
 #weapon 223
+#end
+
+
+-- Marauder of Slaanesh #1
+
+#newmonster 6501
+#spr1 "./Warhammer-Complete/marauder_axe_1.tga"
+#spr2 "./Warhammer-Complete/marauder_axe_2.tga"
+#name "Marauder"
+#nametype 115
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#hp 11
+#size 2
+#mor 10
+#mr 12
+#enc 3
+#str 11
+#att 11
+#def 10
+#prec 10
+#mapmove 2
+#ap 12
+#gcost 10
+#chaosrec 1
+#rcost 1
+#coldres 5
+#weapon "Axe"
+#weapon "Throwing Axe"
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#pillagebonus 1
+#wastesurvival
+#end
+
+-- Foreignrec Marauder #1
+
+-- Marauder of Slaanesh #2
+
+#newmonster 6502
+#spr1 "./Warhammer-Complete/marauder_1SL.tga"
+#spr2 "./Warhammer-Complete/marauder_2SL.tga"
+#name "Marauder"
+#nametype 115
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#hp 11
+#size 2
+#mor 10
+#mr 12
+#enc 3
+#str 11
+#att 11
+#def 10
+#prec 10
+#mapmove 2
+#ap 12
+#gcost 10
+#chaosrec 1
+#coldres 5
+#rcost 1
+#weapon "Morningstar"
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#wastesurvival
+
+#pillagebonus 1
+#end
+
+-- Chaos Marauder Horsemen
+
+#newmonster 6503
+#spr1 "./Warhammer-Complete/marauder_horseman_1SL.tga"
+#spr2 "./Warhammer-Complete/marauder_horseman_2SL.tga"
+#name "Marauder Horsemen"
+#nametype 115
+#descr "These mounted raiders are a constant threat along the borders of more civilised lands, and when Marauders gather in strength it is scouting parties of these riders that guide them to the richest settlements."
+#ap 24
+#mapmove 3
+#hp 12
+#size 3
+#str 12
+#enc 4
+#att 11
+#def 10
+#prec 10
+#mr 12
+#mor 10
+#gcost 20
+#chaosrec 2
+#rcost 6
+#coldres 5
+#itemslots 13446
+#weapon "Morningstar"
+#weapon 56
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#mounted
+#wastesurvival
+#pillagebonus 1
+#end
+
+-- Warrior of Slaanesh #1
+
+#newmonster 6504
+#spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_1.tga"
+#spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
+#name "Chaos Warrior"
+#nametype 115
+#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
+#ap 12
+#mapmove 1
+#hp 14
+#size 2
+#enc 2
+#str 13
+#att 12
+#def 12
+#prec 10
+#mr 13
+#mor 15
+#gcost 30
+#chaosrec 2
+#rcost 1
+#coldres 5
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#wastesurvival
+
+#startage 26
+#maxage 900
+#weapon 1862
+#end
+
+
+-- Warrior of Slaanesh #2
+
+#newmonster 6505
+#spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_1.tga"
+#spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_2.tga"
+#name "Chaos Warrior"
+#nametype 115
+#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. This warrior bears the Mark of Slaanesh, strengthening his lust and desire for battle."
+#ap 12
+#mapmove 1
+#hp 14
+#size 2
+#str 13
+#enc 2
+#att 12
+#def 12
+#prec 10
+#mr 13
+#mor 15
+#gcost 30
+#chaosrec 2
+#rcost 1
+#coldres 5
+#weapon 1853
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#wastesurvival
+
+#startage 26
+#maxage 900
+#end
+
+
+-- Knights of Slaanesh
+
+#newmonster 6506
+#spr1 "./Warhammer-Complete/chaosknight_1SL.tga"
+#spr2 "./Warhammer-Complete/chaosknight_2SL.tga"
+#name "Chaos Knight"
+#nametype 115
+#descr "Chaos Knights are towering brutes clad in thickest plate, heavily armed and riding massive warhorses. They ride to war with great lances, evil-looking polearms designed to impale and tear; and cruel blades. This knight bears the Mark of Slaanesh, strengthening his lust and desire for battle."
+#ap 18
+#mapmove 2
+#hp 14
+#size 3
+#str 14
+#enc 4
+#att 12
+#def 13
+#prec 10
+#mr 13
+#mor 15
+#coldres 5
+#itemslots 13446
+#armor "Full Helmet"
+#armor "Kite Shield"
+#mounted
+#gcost 50
+#chaosrec 3
+#rcost 20
+#ressize 2
+#wastesurvival
+#startage 31
+#maxage 900
+#armor 801
+#weapon "Lance"
+#weapon 1853
+#weapon 56
+#end
+
+
+-- Standard Bearer
+
+#newmonster 6507
+#spr1 "./Warhammer-Complete/standard_bearer_1SL.tga"
+#spr2 "./Warhammer-Complete/standard_bearer_2SL.tga"
+#name "Standard Bearer"
+#nametype 115
+#descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to the Prince of Excess."
+#ap 12
+#mapmove 1
+#hp 14
+#size 2
+#str 13
+#enc 2
+#att 12
+#def 12
+#prec 10
+#mr 13
+#mor 15
+#gcost 40
+#chaosrec 3
+#rcost 1
+#coldres 5
+#armor 801
+#standard 1
+#wastesurvival
+#startage 28
+#maxage 900
+#weapon 1853
+#armor "Full Helmet"
+#armor "Kite Shield"
+#end
+
+-- Chosen of Slaanesh #1
+
+#newmonster 6508
+#spr1 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_1.tga"
+#spr2 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_2.tga"
+#name "Chosen"
+#nametype 115
+#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
+#ap 12
+#mapmove 2
+#hp 16
+#size 2
+#str 15
+#enc 2
+#att 13
+#def 13
+#prec 10
+#mr 14
+#mor 17
+#gcost 70
+#chaosrec 2
+#rcost 1
+#coldres 5
+#weapon 1859
+#armor "Full Helmet"
+#armor "Slaanesh Chaos Armor"
+#armor "Kite Shield"
+#holy
+#itemslots 14470
+
+#wastesurvival
+#startage 34
+#maxage 1200
+#end
+
+-- Chosen of Slaanesh #2
+
+#newmonster 6509
+#spr1 "./Warhammer-Complete/Chosen_Slaanesh_sword_1.tga"
+#spr2 "./Warhammer-Complete/Chosen_Slaanesh_sword_2.tga"
+#name "Chosen"
+#nametype 115
+#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
+#ap 12
+#mapmove 2
+#hp 16
+#size 2
+#str 15
+#enc 2
+#att 13
+#def 13
+#prec 10
+#mr 14
+#mor 17
+#gcost 60
+#chaosrec 2
+#rcost 1
+#coldres 5
+#armor "Full Helmet"
+#armor "Slaanesh Chaos Armor"
+#armor "Kite Shield"
+#holy
+#itemslots 14470
+
+#wastesurvival
+#startage 34
+#maxage 1200
+#weapon 1853
+#end
+
+
+------- COMMANDERS
+
+
+-- Slaanesh Cultist
+
+#newmonster 6510
+#spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
+#spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
+#name "Slaanesh Cultist"
+#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, often in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men. When not corrupting the enemy, cultists often bring fresh sacrifices to Slaanesh to gain his gifts and his favor."
+#hp 10
+#size 2
+#mor 13
+#mr 14
+#enc 3
+#str 10
+#att 10
+#def 10
+#prec 10
+#mapmove 2
+#ap 12
+#magicskill 7 1
+#magicskill 8 1
+#gcost 10000
+#chaosrec 3
+#rcost 1
+#weapon "Dagger"
+#startage 30
+#maxage 150
+#wastesurvival
+#coldres 5
+#userestricteditem 6566
+#holy
+#poorleader
+#stealthy 20
+#armor "Robes"
 #end
 
 -- Minotaur of Slaanesh
@@ -33826,6 +34195,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #forestsurvival
 #coldres 7
 #armor 44
+#weapon 9
 #weapon "Short Bow"
 #stealthy 10
 #end
@@ -33872,356 +34242,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #montag 69402
 #end
 
--- Marauder of Slaanesh #1
-
-#newmonster 6501
-#spr1 "./Warhammer-Complete/marauder_axe_1.tga"
-#spr2 "./Warhammer-Complete/marauder_axe_2.tga"
-#name "Marauder"
-#nametype 115
-#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
-#hp 11
-#size 2
-#mor 10
-#mr 11
-#enc 3
-#str 11
-#att 10
-#def 10
-#prec 10
-#mapmove 2
-#ap 12
-#gcost 11
-#chaosrec 1
-#rcost 1
-#coldres 5
-#weapon "Axe"
-#weapon "Throwing Axe"
-#armor "Iron Cap"
-#armor "Leather Hauberk"
-#armor "Shield"
-#pillagebonus 1
-#wastesurvival
-#end
-
--- Foreignrec Marauder #1
-
--- Marauder of Slaanesh #2
-
-#newmonster 6502
-#spr1 "./Warhammer-Complete/marauder_1SL.tga"
-#spr2 "./Warhammer-Complete/marauder_2SL.tga"
-#name "Marauder"
-#nametype 115
-#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
-#hp 11
-#size 2
-#mor 10
-#mr 11
-#enc 3
-#str 11
-#att 10
-#def 10
-#prec 10
-#mapmove 2
-#ap 12
-#gcost 11
-#chaosrec 1
-#coldres 5
-#rcost 1
-#weapon "Morningstar"
-#armor "Iron Cap"
-#armor "Leather Hauberk"
-#armor "Shield"
-#wastesurvival
-
-#pillagebonus 1
-#end
-
--- Chaos Marauder Horsemen
-
-#newmonster 6503
-#spr1 "./Warhammer-Complete/marauder_horseman_1SL.tga"
-#spr2 "./Warhammer-Complete/marauder_horseman_2SL.tga"
-#name "Marauder Horsemen"
-#nametype 115
-#descr "These mounted raiders are a constant threat along the borders of more civilised lands, and when Marauders gather in strength it is scouting parties of these riders that guide them to the richest settlements."
-#ap 24
-#mapmove 3
-#hp 12
-#size 3
-#str 12
-#enc 4
-#att 11
-#def 10
-#prec 10
-#mr 11
-#mor 10
-#gcost 25
-#chaosrec 2
-#rcost 1
-#coldres 5
-#itemslots 13446
-#weapon "Morningstar"
-#weapon 56
-#armor "Iron Cap"
-#armor "Leather Hauberk"
-#armor "Shield"
-#mounted
-#wastesurvival
-
-#pillagebonus 1
-#end
-
--- Warrior of Slaanesh #1
-
-#newmonster 6504
-#spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_1.tga"
-#spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
-#name "Chaos Warrior"
-#nametype 115
-#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
-#ap 12
-#mapmove 1
-#hp 14
-#size 2
-#enc 2
-#str 13
-#att 12
-#def 12
-#prec 10
-#mr 13
-#mor 15
-#gcost 35
-#chaosrec 2
-#rcost 1
-#coldres 5
-#armor "Full Helmet"
-#armor 801
-#armor "Kite Shield"
-#wastesurvival
-
-#startage 26
-#maxage 900
-#weapon 1862
-#end
-
-
--- Warrior of Slaanesh #2
-
-#newmonster 6505
-#spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_1.tga"
-#spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_2.tga"
-#name "Chaos Warrior"
-#nametype 115
-#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. This warrior bears the Mark of Slaanesh, strengthening his lust and desire for battle."
-#ap 12
-#mapmove 1
-#hp 14
-#size 2
-#str 13
-#enc 2
-#att 12
-#def 12
-#prec 10
-#mr 13
-#mor 15
-#gcost 35
-#chaosrec 2
-#rcost 1
-#coldres 5
-#weapon 1853
-#armor "Full Helmet"
-#armor 801
-#armor "Kite Shield"
-#wastesurvival
-
-#startage 26
-#maxage 900
-#end
-
-
--- Knights of Slaanesh
-
-#newmonster 6506
-#spr1 "./Warhammer-Complete/chaosknight_1SL.tga"
-#spr2 "./Warhammer-Complete/chaosknight_2SL.tga"
-#name "Chaos Knight"
-#nametype 115
-#descr "Chaos Knights are towering brutes clad in thickest plate, heavily armed and riding massive warhorses. They ride to war with great lances, evil-looking polearms designed to impale and tear; and cruel blades. This knight bears the Mark of Slaanesh, strengthening his lust and desire for battle."
-#ap 18
-#mapmove 2
-#hp 14
-#size 3
-#str 14
-#enc 4
-#att 12
-#def 13
-#prec 10
-#mr 13
-#mor 15
-#coldres 5
-#itemslots 13446
-#armor "Full Helmet"
-#armor "Kite Shield"
-#mounted
-#gcost 60
-#chaosrec 3
-#rcost 6
-#ressize 2
-#wastesurvival
-#startage 31
-#maxage 900
-#armor 801
-#weapon "Lance"
-#weapon 1853
-#weapon 56
-#end
-
-
--- Standard Bearer
-
-#newmonster 6507
-#spr1 "./Warhammer-Complete/standard_bearer_1SL.tga"
-#spr2 "./Warhammer-Complete/standard_bearer_2SL.tga"
-#name "Standard Bearer"
-#nametype 115
-#descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to the Prince of Excess."
-#ap 12
-#mapmove 1
-#hp 14
-#size 2
-#str 13
-#enc 2
-#att 12
-#def 12
-#prec 10
-#mr 13
-#mor 15
-#gcost 45
-#chaosrec 3
-#rcost 1
-#coldres 5
-#armor 801
-#standard 1
-#wastesurvival
-#startage 28
-#maxage 900
-#weapon 1853
-#armor "Full Helmet"
-#armor "Kite Shield"
-#end
-
--- Chosen of Slaanesh #1
-
-#newmonster 6508
-#spr1 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_1.tga"
-#spr2 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_2.tga"
-#name "Chosen"
-#nametype 115
-#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
-#ap 12
-#mapmove 2
-#hp 16
-#size 2
-#str 15
-#enc 2
-#att 13
-#def 13
-#prec 10
-#mr 14
-#mor 17
-#gcost 70
-#chaosrec 2
-#rcost 1
-#coldres 5
-#weapon 1859
-#armor "Full Helmet"
-#armor "Slaanesh Chaos Armor"
-#armor "Kite Shield"
-#holy
-#itemslots 14470
-
-#wastesurvival
-#startage 34
-#maxage 1200
-#end
-
--- Chosen of Slaanesh #2
-
-#newmonster 6509
-#spr1 "./Warhammer-Complete/Chosen_Slaanesh_sword_1.tga"
-#spr2 "./Warhammer-Complete/Chosen_Slaanesh_sword_2.tga"
-#name "Chosen"
-#nametype 115
-#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
-#ap 12
-#mapmove 2
-#hp 16
-#size 2
-#str 15
-#enc 2
-#att 13
-#def 13
-#prec 10
-#mr 14
-#mor 17
-#gcost 70
-#chaosrec 2
-#rcost 1
-#coldres 5
-#armor "Full Helmet"
-#armor "Slaanesh Chaos Armor"
-#armor "Kite Shield"
-#holy
-#itemslots 14470
-
-#wastesurvival
-#startage 34
-#maxage 1200
-#weapon 1853
-#end
-
-
-------- COMMANDERS
-
-
--- Slaanesh Cultist
-
-#newmonster 6510
-#spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
-#spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
-#name "Slaanesh Cultist"
-#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, often in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men. When not corrupting the enemy, cultists often bring fresh sacrifices to Slaanesh to gain his gifts and his favor."
-#hp 10
-#size 2
-#mor 13
-#mr 14
-#enc 3
-#str 10
-#att 10
-#def 10
-#prec 10
-#mapmove 2
-#ap 12
-#magicskill 7 1
-#magicskill 8 1
-#gcost 10000
-#chaosrec 3
-#rcost 1
-#weapon "Dagger"
- #startage 30
-#maxage 150
-#wastesurvival
-
-#coldres 5
-#userestricteditem 6566
-#holy
-#inquisitor
-#poorleader
-#stealthy 20
-#armor "Robes"
-#end
 
 -- Foreignrec Cultist
 
@@ -34325,7 +34345,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "Slaanbulls are Doombulls blessed with the mark of Slaanesh. Doombulls are the Lords of the Minotaurs, not so much set apart from their lesser kin by their intelligence but by their sheer animal bloodlust which they can spread to those who surround them. They are capable of leadership, after a fashion; it is a Doombull who bellows the raw will of the Dark Ones, triggering a terrifying stampede that can only end when the horde's unnatural thirst is quenched with the blood of men. As such, meeting them on the battlefield is often a horrifying and bloody affair."
 #ap 16
 #mapmove 2
-#hp 30
+#hp 40
 #size 3
 #str 18
 #enc 2
@@ -34338,7 +34358,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prot 6
 #chaosrec 4
 #rcost 6
-#poorleader
+
 #heal
 #ambidextrous 3
 #weapon 331
@@ -34350,11 +34370,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #maxage 500
 #forestsurvival
 #berserk 6
-#awe 1
 #trample
 #pillagebonus 1
 #onebattlespell 917
 #coldres 10
+#goodleader
 #end
 
 -- Wargor
@@ -34461,7 +34481,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #custommagic 14336 10 -- NSD
 #rcost 1
 #weapon "Magic Staff"
-#okleader
+
 #forestsurvival
 #startage 55
 #maxage 1500
@@ -34469,6 +34489,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 10
 #gcost 10010
 #holy
+#poorleader
 #end
 
 -- Sorcerer of Slaanesh
@@ -34479,7 +34500,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Chaos Sorcerer"
 #nametype 115
 #descr "Chaos Sorcerers are madmen and malcontents all. Sorcerers with the Mark of Slaanesh, while not as magically inclined as those who follow Tzeentch, make useful followers. Many come from the civilized realms, where they studied the fundamental forms of magic to unlock its deepest secrets. They follow the Dark Prince in hopes of yet greater knowledge, proving invaluable scholars and theorists."
-#gcost 10005
+#gcost 10000
 #ap 12
 #mapmove 2
 #hp 15
@@ -34512,8 +34533,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/exalted_slaanesh_sorcerer_2.tga"
 #name "Exalted Chaos Sorcerer"
 #nametype 115
-#descr "As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Prince of Chaos, yet they always seek for more in their never ending quest for magical power."
-#gcost 9970
+#descr "As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Prince of Chaos, yet they always seek more in their never ending quest for magical power."
+#gcost 9965
 #ap 12
 #mapmove 2
 #hp 20
@@ -34598,7 +34619,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 12
 #mr 14
 #mor 17
-#gcost 10005
+#gcost 10030
 #chaosrec 2
 #rcost 1
 #holy
@@ -34636,14 +34657,15 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 12
 #mr 15
 #mor 18
-#gcost 10000
+#gcost 10040
 #chaosrec 3
 #rcost 1
 #holy
 #undcommand 5
+#armor 21
 #armor 801
 #armor "Shield"
-#itemslots 7326
+#itemslots 15494
 #startage 70
 #maxage 2500
 #coldres 5
@@ -34652,6 +34674,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #xpshape 100
 #prophetshape 6528
 #okleader
+#command 20
 #magicskill 8 1
 #weapon 1854
 #end
@@ -34678,14 +34701,14 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mr 17
 #mor 18
 #itemslots 13446
-#weapon "Enchanted Spear"
 #weapon "Aura of Slaanesh"
+#weapon "Enchanted Spear"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
 #mounted
 #gcost 10010
-#chaosrec 9
+#chaosrec 8
 #rcost 7
 #holy
 #awe 2
@@ -34805,18 +34828,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #poisonres 15
 #fireres 15
 #shockres 15
-#end
-
--- Sigvald's bodyguards
-
-#newmonster 6546
-#copystats 6509
-#spr1 "./Warhammer-Complete/Chosen_Sigvald_1.tga"
-#spr2 "./Warhammer-Complete/Chosen_Sigvald_2.tga"
-#name "Sigvald's Chosen"
-#descr "As Sigvald's utterly devoted elite bodyguards, these Chosen bear mirrored shields so that he may bask in his own divine glory."
-#nametype 257
-#gcost 0
 #end
 
 -- Styrkaar
@@ -35042,7 +35053,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #str 10
 #enc 1
 #att 10
-#def 12
+#def 11
 #prec 11
 #mr 14
 #mor 30
@@ -35057,115 +35068,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicpower 1
 #female
 #weapon 1851
-#coldres 10
-#end
-
-
--- Seeker of Slaanesh
-
-#newmonster 6537
-#spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
-#spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
-#name "Seeker of Slaanesh"
-#nametype 257
-#descr "Daemonettes often ride into battle upon elegant mounts that are swifter than any mortal steed. Like all Slaaneshi creatures, these lithe daemonic mounts possess a disturbingly hypnotic appearance and unmistakable sinuous beauty. These siren hunters use the speed of their steeds to toy with their mortal prey and often delay the moment of the kill in favour of prolonging the suffering of their quarry."
-#ap 26
-#mapmove 3
-#hp 12
-#prot 8
-#size 3
-#ressize 2
-#str 12
-#enc 1
-#att 12
-#def 14
-#prec 11
-#mr 14
-#mor 30
-#gcost 0
-#rcost 1
-#itemslots 13440 -- legless and armless
-#startage 20
-#maxage 10000
-#mounted
-#demon
-#awe 2
-#holy
-#magicpower 1
-#female
-#weapon 1851
-#coldres 10
-#end
-
-
--- Fiend of Slaanesh
-
-#newmonster 6538
-#spr1 "./Warhammer-Complete/fiend_1.tga"
-#spr2 "./Warhammer-Complete/fiend_2.tga"
-#name "Fiend of Slaanesh"
-#nametype 257
-#descr "Fiends are incredibly swift, able to skitter and scuttle across all manner of terrain at frightening speed. There is something unnameably disturbing about a Fiend's gait, for its twitching dance rocks it from side to side. In this way, a Fiend will take at least three or four steps for every pace it advances, splayed legs beating out an arrhythmic toccata that praises the glory of the Dark Prince of Chaos. The Fiends sing to one another as they run, emanating a high-pitched and pervasive chitter that few mortals consciously hear. Though a Fiend is perhaps frailer than other Daemons of the same stature, only a fool would underestimate its combat prowess."
-#ap 26
-#mapmove 3
-#hp 25
-#prot 11
-#size 3
-#str 14
-#enc 1
-#att 13
-#def 13
-#prec 7
-#mr 15
-#mor 30
-#gcost 0
-#rcost 1
-#noitem
-#startage 20
-#maxage 10000
-#poisonres 5
-#demon
-#holy
-#awe 1
-#magicpower 1
-#weapon 1851
-#weapon 1851
-#coldres 10
-#fireres 5
-#shockres 5
-#end
-
-
--- Chaos Fury
-
-#newmonster 6539
-#spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
-#spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
-#name "Chaos Fury"
-#nametype 257
-#descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
-#ap 15
-#mapmove 3
-#hp 8
-#prot 6
-#size 2
-#str 10
-#enc 1
-#att 9
-#def 10
-#prec 8
-#mr 12
-#mor 30
-#gcost 0
-#rcost 1
-#magicpower 1
-#noitem
-#weapon "Claws"
-#startage 20
-#maxage 10000
-#flying
-#demon
-#holy
 #coldres 10
 #end
 
@@ -35205,7 +35107,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #awe 3
 #female
 #okleader
-
 #holy
 #magicpower 1
 #stealthy 20
@@ -35213,7 +35114,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 8 2
 #custommagic 6656 100
 #makemonsters1 6535
-#inquisitor
 #weapon 1854
 #weapon 1854
 #coldres 15
@@ -35223,54 +35123,112 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 
--- Exalted Daemon
+-- Seeker of Slaanesh
 
-#newmonster 6543
-#spr1 "./Warhammer-Complete/exalteddaemon1.tga"
-#spr2 "./Warhammer-Complete/exalteddaemon2.tga"
-#name "Exalted Daemon of Slaanesh"
+#newmonster 6537
+#spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
+#spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
+#name "Seeker of Slaanesh"
 #nametype 257
-#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magical power is still great by the standard of most mortal spellcasters."
-#ap 20
+#descr "Daemonettes often ride into battle upon elegant mounts that are swifter than any mortal steed. Like all Slaaneshi creatures, these lithe daemonic mounts possess a disturbingly hypnotic appearance and unmistakable sinuous beauty. These siren hunters use the speed of their steeds to toy with their mortal prey and often delay the moment of the kill in favour of prolonging the suffering of their quarry."
+#ap 26
 #mapmove 3
-#hp 54
-#heal
-#prot 11
+#hp 12
+#prot 8
 #size 3
-#str 17
-#enc 3
-#att 16
-#def 16
-#prec 13
-#mr 17
+#ressize 2
+#str 12
+#enc 1
+#att 12
+#def 13
+#prec 11
+#mr 14
 #mor 30
 #gcost 0
 #rcost 1
-#pathcost 50
-#startdom 3
-#coldres 10
-#poisonres 10
-#fireres 10
-#shockres 10
-#itemslots 15494
-#startage 4000
+#itemslots 13440 -- legless and armless
+#startage 20
 #maxage 10000
-#magicskill 2 1
-#inspirational 1
-#okleader
-#okundeadleader
-#awe 2
+#mounted
 #demon
-#female
+#awe 2
+#holy
 #magicpower 1
-#magicskill 7 2
-#custommagic 6656 200
-#magicskill 8 2
-#weapon 1852
-#weapon 1855
+#female
 #weapon 1851
-#armor 803
-#heal
+#coldres 10
+#end
+
+
+-- Fiend of Slaanesh
+
+#newmonster 6538
+#spr1 "./Warhammer-Complete/fiend_1.tga"
+#spr2 "./Warhammer-Complete/fiend_2.tga"
+#name "Fiend of Slaanesh"
+#nametype 257
+#descr "Fiends are incredibly swift, able to skitter and scuttle across all manner of terrain at frightening speed. There is something unnameably disturbing about a Fiend's gait, for its twitching dance rocks it from side to side. In this way, a Fiend will take at least three or four steps for every pace it advances, splayed legs beating out an arrhythmic toccata that praises the glory of the Dark Prince of Chaos. The Fiends sing to one another as they run, emanating a high-pitched and pervasive chitter that few mortals consciously hear. Though a Fiend is perhaps frailer than other Daemons of their size, their razor-sharp talons eviscerate mortal foes before they have the chance to react."
+#ap 26
+#mapmove 3
+#hp 20
+#prot 11
+#size 3
+#str 14
+#enc 1
+#att 13
+#def 13
+#prec 7
+#mr 15
+#mor 30
+#gcost 0
+#rcost 1
+#noitem
+#startage 20
+#maxage 10000
+#poisonres 5
+#demon
+#holy
+#awe 1
+#magicpower 1
+#weapon 1851
+#weapon 1851
+#coldres 10
+#fireres 5
+#shockres 5
+#end
+
+
+-- Chaos Fury
+
+#newmonster 6539
+#spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
+#spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
+#name "Chaos Fury"
+#nametype 257
+#descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
+#ap 15
+#mapmove 3
+#hp 8
+#prot 4
+#size 1
+#str 10
+#enc 1
+#att 9
+#def 10
+#prec 8
+#mr 12
+#mor 30
+#gcost 0
+#rcost 1
+#magicpower 1
+#noitem
+#weapon "Claws"
+#startage 20
+#maxage 10000
+#flying
+#demon
+#holy
+#coldres 10
 #end
 
 
@@ -35309,7 +35267,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #custommagic 23040 300
 #holy
 #goodleader
-
 #fear 10
 #awe 6
 #poisonres 20
@@ -35318,7 +35275,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 20
 #fireres 20
 #shockres 20
-#itemslots 31878
+#itemslots 15494
 #batstartsum1d6 6538
 #spreaddom 1
 #magicskill 8 4
@@ -35373,6 +35330,70 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #shockres 15
 #end
 
+
+-- Exalted Daemon
+
+#newmonster 6543
+#spr1 "./Warhammer-Complete/exalteddaemon1.tga"
+#spr2 "./Warhammer-Complete/exalteddaemon2.tga"
+#name "Exalted Daemon of Slaanesh"
+#nametype 257
+#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magical power is still great by the standard of most mortal spellcasters."
+#ap 20
+#mapmove 3
+#hp 54
+#heal
+#prot 11
+#size 3
+#str 17
+#enc 3
+#att 16
+#def 16
+#prec 13
+#mr 17
+#mor 30
+#gcost 0
+#rcost 1
+#pathcost 50
+#startdom 3
+#coldres 10
+#poisonres 10
+#fireres 10
+#shockres 10
+#itemslots 15494
+#startage 4000
+#maxage 10000
+#magicskill 2 1
+#inspirational 1
+#okleader
+#okundeadleader
+#awe 2
+#demon
+#female
+#magicpower 1
+#magicskill 7 2
+#custommagic 6656 200
+#magicskill 8 2
+#weapon 1852
+#weapon 1855
+#weapon 1851
+#armor 803
+#heal
+#end
+
+
+-- Sigvald's bodyguards
+
+#newmonster 6546
+#copystats 6509
+#spr1 "./Warhammer-Complete/Chosen_Sigvald_1.tga"
+#spr2 "./Warhammer-Complete/Chosen_Sigvald_2.tga"
+#name "Sigvald's Chosen"
+#descr "As Sigvald's utterly devoted elite bodyguards, these Chosen bear mirrored shields so that he may bask in his own divine glory."
+#nametype 257
+#gcost 0
+#end
+
 ----------- PRETENDERS - Avatars of Slaanesh
 
 -- Sorcerer Lord of Slaanesh
@@ -35419,7 +35440,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Avatar Daemonic shape
 #newmonster 4214
-#nametype 115
+#nametype 257
 #startdom 3
 #gcost 10000
 #pathcost 60
@@ -35441,7 +35462,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #def 16
 #enc 1
 #prec 15
-#ambidextrous 3
 #mor 50
 #inanimate
 #demon
@@ -35461,9 +35481,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #expertundeadleader
 #fear 10
 #awe 6
+#weapon 1852
 #weapon 1857
 #weapon 1861
-#weapon 1852
 #end
 
 
@@ -35487,17 +35507,17 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 3
 #path 0 7
 #pathlevel 0 2
-#fatiguecost 4000
+#fatiguecost 2100
 #effect 10001
 #damage 6535
-#nreff 8
+#nreff 4
 #end
 
 -- Secondary Daemonette summon and affliction removal
 
 #newspell
 #name "Daemonette summoning"
-#descr "With this spell, the caster summons a group of Daemonettes, the Lesser Daemons of Slaanesh, beings possessed of the hypnotic glamour for which all Daemons of Slaanesh are abhorred."
+#descr "Used in Banquet of Slaanesh"
 #restricted 159
 #school -1
 #path 0 2
@@ -35529,7 +35549,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 4
 #path 0 7
 #pathlevel 0 3
-#fatiguecost 2500
+#fatiguecost 2800
 #effect 10001
 #damage 6537
 #nreff 4
@@ -35543,7 +35563,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 5
 #path 0 7
 #pathlevel 0 3
-#fatiguecost 2000
+#fatiguecost 3000
 #effect 10001
 #damage 6538
 #nreff 3
@@ -35582,7 +35602,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "The caster proves his devotion to the Dark Prince with an offering of nearly a hundred mortals. In return, the Prince rewards this sorcerer with one of his most terrifying and alluring servants, a Daemon Princess to lay waste to the lands of mortal men."
 #restricted 159
 #school 6
-#researchlevel 7
+#researchlevel 8
 #path 0 7
 #pathlevel 0 4
 #fatiguecost 8000
@@ -35596,7 +35616,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "With this ultimate dark ritual, the caster sorcerer offers tenscore victims of pure blood to his Dark Prince. Out of the void comes a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce. The Keeper will lead the sorcerer's armies to victory, engulfing all that stands in its path."
 #restricted 159
 #school 6
-#researchlevel 8
+#researchlevel 9
 #path 0 7
 #path 3 5
 #pathlevel 0 5
