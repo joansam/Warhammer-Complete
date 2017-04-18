@@ -1,22 +1,28 @@
 To-Do - Main Tasks:
-1. Get new High Elves
-2. Look at forums
-3. Transfer SlaaneshWIP files to WHComplete
-4. Fix Altdorf's starting army, right now it's Marignon's.
-5. Compatibility - WH, ME
-6. Also spreadsheet
-7. Use SuperHams Tomb Kings - Wood Elves weren't fixed
+1. Get new High Elves -done. New Dark Elves?
+2. Transfer SlaaneshWIP files to WHComplete
+3. Fix Altdorf's starting army, right now it's Marignon's. - done. Also fixed PD.
+4. Compatibility - WH, ME
+5. Also spreadsheet
+6. Use SuperHams Tomb Kings/VC - Wood Elves weren't fixed
 
 Thoughts/Less Urgent:
 
 Chaos:
 Weapon standardization - fun stuff...
+Chaos Broadsword, Hammer, Mace, etc.
+Chaos armor
+Scythetalons
+Look at screamers and flamers
 
 Dwarfs:
 Dwarf Pretender, Brother of War, is too powerful (6 paths, 80 point cost), move to autocost minus something.
 And their Ancient King pretender is too expensive.
 
 TKs:
+Shit
+Immortals desc says they have upkeep but they don't
+Necropolis Knights say they're riding horses but are riding yellow things
 Overall limited pret choice
 First King has Holy 4, probly to summon Immortals. Remove the Holy, give a summon allies and look at cost.
 

@@ -16391,7 +16391,6 @@ TWEAK - Flagellants are undisciplined
 #gcost 0
 #magicskill 8 5
 #magicskill 1 1
-#mindless
 #holy
 #maxage 4000
 #startage 1
@@ -16429,7 +16428,6 @@ TWEAK - Flagellants are undisciplined
 #rcost 120
 #magicskill 8 6
 #magicskill 1 1
-#mindless
 #holy
 #maxage 4000
 #startage 1
@@ -18532,6 +18530,32 @@ Priests: Strong."
 #addreccom 3430 -- Tribute to Order
 #addreccom 3422 -- Greater Tribute to Order
 
+-STARTING ARMY
+#defcom1 3436 -- State Captain (A)
+#defcom2 3429 -- Warrior Priest
+
+#defunit1 3399 -- Archer
+#defunit1b 3450 -- State Spearman (A)
+#defunit2 3451 -- State Halberdier (A)
+#defunit2b 3453 -- State Crossbowman (A)
+
+
+--Sets how many of the units to appear per 10 points.
+
+#defmult1 10
+#defmult1b 10
+#defmult2 10
+#defmult2b 10
+
+#idealcold 0
+#color 0 0 150
+
+#startcom 3436 - non summoning state captain (A)
+#startunittype1 3450 -- spearmen (A)
+#startunitnbrs1 10
+#startunittype2 3420 -- crossbowmen (A)
+#startunitnbrs2 10
+#startscout "Scout"
 #end
 
 
@@ -22848,7 +22872,7 @@ Version 1.1
 #bloodattuned 75
 
 #demon
-#gemprod 5
+#gemprod 7 5
 #incunrest 15
 #popkill 15
 #neednoteat
@@ -23129,7 +23153,7 @@ Version 1.1
 #startage 50
 #maxage 10000
 
-#gemprod 3
+#gemprod 7 3
 #incunrest 10
 #popkill 10
 
@@ -23157,10 +23181,9 @@ Version 1.1
 #spr2 "./Warhammer-Complete/daemon_prince_khorne_2.tga"
 #name "Daemon Prince"
 #nametype 140
-#descr "Daemonhood is the ultimate goal for those who tread the path of Chaos. It is the reward for decades of dedication to the Dark Gods, giving immortality and unimagined strength and power. Daemon Princes are considered by some to be even more dangerous than the Greater Daemons, for they still retain much of their individuality and independence, unlike other daemons which are merely vessels of their master�s will. All of them are born aloft by huge wings, one of the signs of daemonhood, enabling them to fly across the battlefield, laying waste to the enemy with gigantic weapons imbued with raw Chaos energy."
+#descr "Daemonhood is the ultimate goal for those who tread the path of Chaos. It is the reward for decades of dedication to the Dark Gods, giving immortality and unimagined strength and power. Daemon Princes are considered by some to be even more dangerous than the Greater Daemons, for they still retain much of their individuality and independence, unlike other daemons which are merely vessels of their master's will. All of them are born aloft by huge wings, one of the signs of daemonhood, enabling them to fly across the battlefield, laying waste to the enemy with gigantic weapons imbued with raw Chaos energy."
 #startage 1337
 #maxage 10000
-
 #ap 10
 #mapmove 3
 #hp 45
@@ -23173,29 +23196,24 @@ Version 1.1
 #mr 16
 #mor 40
 #prot 24
-
 #demon
-#gemprod 5
-#incunrest 15
+#gemprod 7 5
+#incunrest 150
 #popkill 15
 #neednoteat
 #poisonres 25
 #magicpower 1
 #holy
-
 #inspirational 1
 #superiorleader
 #goodundeadleader
 #fear 7
 #flying
 #berserk 5
-
 #magicskill 7 1
-
 #weapon "Greater Hellblade"
 #armor "Chaos Armor"
 #itemslots 12288 -- 2 misc
-
 #gcost 10000
 #startdom 3
 #pathcost 80
@@ -23209,7 +23227,6 @@ Version 1.1
 #name "Exalted Chaos Sorcerer"
 #nametype 140
 #descr "Those who use the raw Winds of Magic to cast spells are known as Sorcerers, powerful spellcasters, able to unleash black bolts of energy from their fingertips, transport themselves from shadow to shadow, or flay their foes with burning fires. But such potency comes at a cost, and the gods often demand a high payment for the power they bestow upon a Sorcerer, gradually eroding their sanity whilst their bodies twist and mutate with the energies coursing through them. Chaos Sorcerers are seen amongst the Northmen as the oracles of the gods, and often act as advisors and counsellors to the northern tribes. They interpret the will of the Ruinous Powers, divining with sacrifices and daemon summoning."
-
 #ap 10
 #mapmove 2
 #hp 17
@@ -23222,13 +23239,10 @@ Version 1.1
 #mr 18
 #mor 30
 #prot 5
-
 #holy
-
 #magicskill 0 1
 #magicskill 4 1
 #magicskill 7 1
-
 #armor "Light Chaos Armor"
 #weapon "Wand"
 #goodleader
@@ -23236,7 +23250,6 @@ Version 1.1
 #startage 40
 #maxage 900
 #coldres 3
-
 #gcost 10000
 #startdom 1
 #pathcost 20
@@ -27238,7 +27251,7 @@ Priests: Weak. Can blood sacrifice."
 #att 1
 #def 1
 #magic
-#secondaryeffect "Curse"
+#secondaryeffect 118 - Curse
 #len 3
 #blunt
 #end
@@ -29300,7 +29313,7 @@ Priests: Weak. Can blood sacrifice."
 #pathlevel 0 3
 #pathlevel 1 2
 #school 6
-#prec 15
+#precision 15
 #fatiguecost 40
 #end
 
@@ -29316,7 +29329,7 @@ Priests: Weak. Can blood sacrifice."
 #researchlevel 0
 #aoe 15
 #range 15
-#prec 100
+#precision 100
 #spec 4194304
 #path 0 7
 #path 1 8
@@ -30332,7 +30345,7 @@ Wounds that would be fatal for other warriors are often shrugged off by orcs - i
 #weapon "Bash'em Ladz"
 #maxage 30
 #startage 12
-#woundfend
+#woundfend 50
 #nametype 210
 #chaosrec 1
 #end
@@ -30346,12 +30359,12 @@ Wounds that would be fatal for other warriors are often shrugged off by orcs - i
 #name "Orc Boy"
 #descr "Orcs, often known as Orc Boyz or just 'Da Boyz,' are the heart of most greenskin tribes. Orcs are a warrior race and there is nothing they like as much as a good scrap, and do so constantly, more often than not with one another. They are strong, tough, and live for the WAAAAAGH! which is a great horde of greenskins that seek only 'good loot ana good foight!'  Their favored method of combat is to run forward really fast and hack enemies really hard until they are really dead. These orcs are armed with choppas.
 
-Wounds that would be fatal for other warriors are often shrugged off by orcs - if they suffer serious injury, like having an arm chopped off, they can just sew it back on and they will be fine. All orcs are so excited to enter battle that their first strike carries an extra punch! (bash 'em Ladz!) Unlike Orc Boyz that use pointy choppas or arrers to stay safer in combat, Orc Boyz who use choppas will eventually become Big 'Uns with enough experience.
+Wounds that would be fatal for other warriors are often shrugged off by orcs - if they suffer serious injury, like having an arm chopped off, they can just sew it back on and they will be fine. All orcs are so excited to enter battle that their first strike carries an extra punch! (bash 'em Ladz!) Unlike Orc Boyz that use pointy choppas or arrers to stay safer in combat, Orc Boyz who use choppas will eventually become Big 'Uns with enough experience."
 #armor "Shield"
 #armor "Leather Hauberk"
 #weapon "Choppa"
 #weapon "Bash'em Ladz"
-#xpshape
+-#xpshape not sure what goes here
 #end
 
 
@@ -31236,7 +31249,6 @@ Savage Orcs believe so much in their warpaint that, despite its uselessness on l
 #spr2 "./Warhammer-Complete/savageorc2hwep1.tga"
 #name "Savage Orc Boy"
 - #descr "While normal orcs have taken to basic forms of forging and invention, some orcs live in the wastelands far from these novelties. They are called Savage Orcs, for they alone practice the ways that all orcdom used to live in. Their weapons are made of bone or rock and they wear no armor in battle. Savage Orcs are prone to outlandish superstition, random chanting, improvised altar building, sudden hallucination, cranial implosion and a great many other oddities that other orcs find, 'kinda weird.' Still, they are the closest to Gork and Mork and fight with great fury. These Savage Orcs are armed with a huge makeshift choppa.
-
 Savage Orcs believe so much in their warpaint that, despite its uselessness on literally any other creature, it actually protects them from harm. Like other orcs, Savage Orcs have great recuperative abilities and hit extra hard when first entering battle, but unlike other orcs they tend to go berserk at the site of blood, anyone's blood!"
 #landshape 3844 - becomes 3844 Savage Orc Boy when bought
 #end
@@ -31248,7 +31260,6 @@ Savage Orcs believe so much in their warpaint that, despite its uselessness on l
 #spr2 "./Warhammer-Complete/savorc1.tga"
 #name "Savage Orc Boy"
 #descr "While normal orcs have taken to basic forms of forging and invention, some orcs live in the wastelands far from these novelties. They are called Savage Orcs, for they alone practice the ways that all orcdom used to live in. Their weapons are made of bone or rock and they wear no armor in battle. Savage Orcs are prone to outlandish superstition, random chanting, improvised altar building, sudden hallucination, cranial implosion and a great many other oddities that other orcs find, 'kinda weird.' Still, they are the closest to Gork and Mork and fight with great fury.
-
 Savage Orcs believe so much in their warpaint that, despite its uselessness on literally any other creature, it actually protects them from harm. Like other orcs, Savage Orcs have great recuperative abilities and hit extra hard when first entering battle, but unlike other orcs they tend to go berserk at the site of blood, anyone's blood!"
 #weapon "Choppa"
 #weapon "Choppa"
@@ -31264,7 +31275,6 @@ Savage Orcs believe so much in their warpaint that, despite its uselessness on l
 #spr2 "./Warhammer-Complete/orcboarboyz1.tga"
 #name "Savage Orc Boar Boy"
 #descr "Even more than normal orcs, Savage Orc Boar Boyz delight on riding into battle on the back of a wild tusker that is almost as angry as the savage orcs themselves!  Armed with choppas and wearing their warpaint the rider is a threat, but the huge tusks on these boars are just as dangerous than the orc riding them when they charge.
-
 Should the rider be killed the bad tempered boar will continue to fight, but will run off after the battle is over. Savage Orcs believe so much in their warpaint that, despite its uselessness on literally any other creature, it actually protects them from harm. Like other orcs, Savage Orcs have great recuperative abilities and hit extra hard when first entering battle, but unlike other orcs they tend to go berserk at the site of blood, anyone's blood!"
 #size 3
 #mor 10
@@ -31289,7 +31299,6 @@ Should the rider be killed the bad tempered boar will continue to fight, but wil
 #spr2 "./Warhammer-Complete/waaghboy2.tga"
 #name "Waaghboy"
 #descr "The most fervent of orcs are dubbed Waaghboys. These crazed savages follow the great shamans, leaping into battle with not a care in the world. They disdain all armor, trusting in Mork to save them--or to grow back any body parts they might lose along the way.
-
 Surprisingly, Mork actually does sometimes save them--especially from hostile magics, which seems to simply bounce off them. Waaghboys feel no pain or fatigue; they can only be stopped by death itself."
 #att 13
 #mr 16
@@ -31498,7 +31507,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Bash'em Ladz"
 #maxage 40
 #startage 18
-#woundfend
+#woundfend 50
 #taskmaster 3
 #onebattlespell 889
 #okleader
@@ -31534,7 +31543,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Bash'em Ladz"
 #maxage 40
 #startage 21
-#woundfend
+#woundfend 50
 #taskmaster 4
 #inspirational 2
 #goodleader
@@ -31569,11 +31578,11 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #startage 18
 #magicskill 8 2
 #holy
-#divineins
+#divineins 2
 #custommagic 384 100
 #custommagic 384 25
 #onebattlespell "Power of the Spheres"
-#woundfend
+#woundfend 50
 #noleader
 #nametype 210
 #chaosrec 5
@@ -31643,7 +31652,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #magicskill 8 1
 #custommagic 12288 25
 #holy
-#divineins
+#divineins 2
 #noleader
 #stealthy
 #nametype 211
@@ -31680,7 +31689,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #custommagic 12288 50
 #forestsurvival
 #holy
-#divineins
+#divineins 2
 #poorleader
 #chaosrec 10
 #end
@@ -31752,14 +31761,14 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #maxage 40
 #startage 18
 #holy
-#woundfend
+#woundfend 50
 #okleader
 #magicskill 0 1
 #magicskill 1 1
 #magicskill 8 3
 #custommagic 384 100
 #custommagic 384 50
-#divineins
+#divineins 2 
 #onebattlespell "Power of the Spheres"
 #chaosrec 5
 #end
@@ -31916,7 +31925,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #darkvision 100
 #mountainsurvival
 #holy
-#divineins
+#divineins 2
 #poorleader
 #stealthy
 #chaosrec 10
@@ -31937,7 +31946,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #berserk 3
 #onebattlespell 894
 #chaosrec 5
-#invulnerability 12
+#invulnerable 12
 #xpshape 50
 #end
 
@@ -31955,7 +31964,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #startage 20
 #berserk 5
 #onebattlespell 897
-#invulnerability 15
+#invulnerable 15
 #end
 
 #newmonster 3878
@@ -31978,7 +31987,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Gaze of Gork"
 #startage 10
 #maxage 30
-#woundfend
+#woundfend 50
 #chaosrec 5
 #noleader
 #berserk 2
@@ -32016,7 +32025,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #maxage 40
 #startage 18
 #holy
-#woundfend
+#woundfend 50
 #okleader
 #berserk 4
 #magicskill 0 1
@@ -32160,7 +32169,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #custommagic 9216 50
 #forestsurvival
 #holy
-#divineins
+#divineins 2
 #okleader
 #stealthy
 #batstartsum2d6 "Large Spider"
@@ -32199,7 +32208,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Great Gaze of Gork"
 #startage 30
 #maxage 70
-#woundfend
+#woundfend 50
 #goodleader
 #magicskill 0 2
 #magicskill 1 1
@@ -36450,7 +36459,7 @@ Nametypes 	162
 
 --FREESPAWN
 
-#selectmonster 197 -soulless
+#newmonster 4530 -soulless
 #copystats 4550
 #clearweapons
 #cleararmor
@@ -36463,20 +36472,21 @@ Nametypes 	162
 #weapon "Claw"
 #end
 
-#selectmonster 198 -ghoul
+#newmonster 4531 -ghoul
 #copystats 4551
 #name "Tomb Mummy"
 #descr "Mummies are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform."
+#spr1 "./Warhammer-Complete/Mummy.tga"
+#spr2 "./Warhammer-Complete/Mummy2.tga"
 #clearweapons
 #cleararmor
-
 #hp 8
 #weapon 20 -bite
 #armor "Rags"
 #end
 
 
-#selectmonster 191
+#newmonster 4532
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36484,12 +36494,11 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/Infantry2.tga"
 #clearweapons
 #cleararmor
-
 #weapon "Spear"
 #armor "Nehekharan Shield"
 #end
 
-#selectmonster 192
+#newmonster 4533
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36497,12 +36506,11 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/Infantry2.tga"
 #clearweapons
 #cleararmor
-
 #weapon "Spear"
 #armor "Nehekharan Shield"
 #end
 
-#selectmonster 193
+#newmonster 4534
 #copystats 4550
 #name "Skeleton Spearman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36510,12 +36518,11 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/Infantry2.tga"
 #clearweapons
 #cleararmor
-
 #weapon "Spear"
 #armor "Nehekharan Shield"
 #end
 
-#selectmonster 194
+#newmonster 4535
 #copystats 4550
 #name "Armored Skeleton Swordsman"
 #descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36523,13 +36530,49 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/HInfantryB2.tga"
 #clearweapons
 #cleararmor
-
 #mr 12
 #weapon "Falchion"
 #armor "Shoulder Guard"
 #armor "Nehekharan Shield"
 #end
 
+#newmonster 4538
+#copystats 4550
+#name "Skeleton Archer"
+#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a critical role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time-consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such these archers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/Archer1TK.tga"
+#spr2 "./Warhammer-Complete/Archer2TK.tga"
+#clearweapons
+#cleararmor
+#weapon "Dagger"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#end
+
+#newmonster 4542 -horsemen
+#copystats 4550
+#name "Nehekharan Cavalry"
+#descr "The light cavalry of Nehekhara carry bows and spears, raining arrows down on their enemies before flanking them on their swift skeletal steeds. The Nehekharans placed great value on horses, and the highly trained animals were buried with almost as much ceremony as their masters. Like all the troops of Nehekhara the cavalry are highly resistant to enemy magic because of the powerful and ancient enchantments animating them."
+#spr1 "./Warhammer-Complete/Cavalry1.tga"
+#spr2 "./Warhammer-Complete/Cavalry2.tga"
+#clearweapons
+#cleararmor
+#size 3
+#mr 11
+#att 12
+#def 10
+#prec 8
+#ap 20
+#mapmove 3
+#mounted
+#weapon "Spear"
+#weapon "Hoof"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#armor "Shield"
+#end
 
 #selectmonster 1657 -triarius
 #copystats 4550
@@ -36539,7 +36582,6 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/HInfantryB2.tga"
 #clearweapons
 #cleararmor
-
 #mr 12
 #weapon "Falchion"
 #armor "Shoulder Guard"
@@ -36554,15 +36596,13 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/HInfantry2.tga"
 #clearweapons
 #cleararmor
-
 #mr 12
 #weapon "Spear"
 #armor "Shoulder Guard"
 #armor "Nehekharan Shield"
 #end
 
-
-#selectmonster 195
+#selectmonster 186  -Velite? Then why does it say archer?
 #copystats 4550
 #name "Skeleton Archer"
 #descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
@@ -36570,37 +36610,6 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/Archer2TK.tga"
 #clearweapons
 #cleararmor
-
-#weapon "Dagger"
-#weapon "Composite Bow"
-#armor "Shoulder Guard"
-#armor "Circlet"
-#end
-
-#selectmonster 196
-#copystats 4550
-#name "Skeleton Archer"
-#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
-#spr1 "./Warhammer-Complete/Archer1TK.tga"
-#spr2 "./Warhammer-Complete/Archer2TK.tga"
-#clearweapons
-#cleararmor
-
-#weapon "Dagger"
-#weapon "Composite Bow"
-#armor "Shoulder Guard"
-#armor "Circlet"
-#end
-
-#selectmonster 186 -velite
-#copystats 4550
-#name "Skeleton Archer"
-#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
-#spr1 "./Warhammer-Complete/Archer1TK.tga"
-#spr2 "./Warhammer-Complete/Archer2TK.tga"
-#clearweapons
-#cleararmor
-
 #weapon "Dagger"
 #weapon "Composite Bow"
 #armor "Shoulder Guard"
@@ -36615,7 +36624,6 @@ Nametypes 	162
 #spr2 "./Warhammer-Complete/Archer2TK.tga"
 #clearweapons
 #cleararmor
-
 #weapon "Dagger"
 #weapon "Composite Bow"
 #armor "Shoulder Guard"
@@ -36636,7 +36644,6 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #spr2 "./Warhammer-Complete/AspArcher2.tga"
 #clearweapons
 #cleararmor
-
 #mr 11
 #prec 13
 #weapon "Dagger"
@@ -36644,33 +36651,6 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #armor "Bronze Armor"
 #armor "Circlet"
 #holy
-#end
-
-
-#selectmonster 189 -horsemen
-#copystats 4550
-#name "Nehekharan Cavalry"
-#descr "The light cavalry of Nehekhara carry bows and spears, raining arrows down on their enemies before flanking them on their swift skeletal steeds. The Nehekharans placed great value on horses, and the highly trained animals were buried with almost as much ceremony as their masters. Like all the troops of Nehekhara the cavalry are highly resistant to enemy magic because of the powerful and ancient enchantments animating them."
-#spr1 "./Warhammer-Complete/Cavalry1.tga"
-#spr2 "./Warhammer-Complete/Cavalry2.tga"
-#clearweapons
-#cleararmor
-#size 3
-
-#mr 11
-#att 12
-#def 10
-#prec 8
-#ap 20
-#mapmove 3
-
-#mounted
-#weapon "Spear"
-#weapon "Hoof"
-#weapon "Composite Bow"
-#armor "Shoulder Guard"
-#armor "Circlet"
-#armor "Shield"
 #end
 
 
@@ -36683,7 +36663,6 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #clearweapons
 #cleararmor
 #size 4
-
 #ap 20
 #hp 30
 #prot 14
@@ -36692,10 +36671,8 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #att 10
 #def 10
 #prec 10
-
 #trample
 #mounted
-
 #weapon "Spear"
 #weapon "Composite Bow"
 #weapon "Composite Bow"
@@ -36714,16 +36691,13 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #spr2 "./Warhammer-Complete/NecropolisKnight2.tga"
 #clearweapons
 #cleararmor
-
 #hp 27
 #size 3
 #att 12
 #def 10
 #mr 14
-
 #ap 24
 #mapmove 3
-
 #mounted
 #holy
 #weapon "Venomous Bite"
@@ -36735,13 +36709,12 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #selectmonster 259
 #copystats 4550
-#name "Tomb Guard" -30g
+#name "Tomb Guard" --30g
 #descr "The Tomb Guard were originally an elite corps of troops assigned to protecting a necropolis containing the tombs of past kings. Over time the order grew and began to act as a part of the main army, and was imitated in the other kingdoms of Nehekhara. They were found to be very effective in war due to their superior equipment and training. The Tomb Guard are much more heavily armored than most Nehekharan soldiers, and wield deadly falchions."
 #spr1 "./Warhammer-Complete/TombGuard1.tga"
 #spr2 "./Warhammer-Complete/TombGuard2.tga"
 #clearweapons
 #cleararmor
-
 #hp 12
 #att 10
 #def 10
@@ -36749,7 +36722,6 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #prot 4
 #mr 14
 #mor 30
-
 #holy
 #weapon "Tomb Guard Falchion"
 #armor "Bronze Armor"
@@ -36761,7 +36733,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 
 #newmonster 4554
 #copystats 4551
-#name "Immortal" -50g
+#name "Immortal" --50g
 #descr "Many of the Tomb Kings were filled with paranoia on their burial - who knew what lay ahead? Most of all they feared being left stranded and alone, their guardian troops lost to them. The kings themselves were protected by awesome enchantments, almost impossible to permanently destroy, but they knew that their guards were far more vulnerable. And so the most powerful of the Tomb Kings set about, with the aid of their priests, to create a personal bodyguard of their most trusted troops that could themselves never be destroyed. No matter what befell them, their bodies would always reform in their tombs. These bodyguards, known as Immortals, are highly disciplined and effective troops, and as the closest guardians of the sacred Tomb Kings, they are sacred to the Nehekharans. However, powerful magic is needed to revive the Immortals, and their enchantment requires frequent renewal with costly incenses and balms."
 #spr1 "./Warhammer-Complete/Immortal1.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
@@ -36784,7 +36756,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4557
+#newmonster 4551
 #name "Tomb Swarm"
 #descr "Tomb Swarms consist of thousands upon thousands of long-dead insects, spiders and scorpions. Over the millenia these creatures have died in and around the Nehekharan Tombs, before being awakened by the same release of twisted necromantic magic that awoke the Nehekharans themselves. Some powerful Nehekharan mages are able to summon these swarms to the battlefield where they overwhelm enemy troops, consuming their flesh and reducing them to skeletons in seconds. Since they consist of huge numbers of tiny creatures Tomb Swarms are almost immune to arrows and are difficult to destroy with normal weapons. However, they are extremely vulnerable to fire and banishment."
 #spr1 "./Warhammer-Complete/TombSwarm1.tga"
@@ -36849,7 +36821,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4560 -50p
+#newmonster 4560 --50p
 #name "Ushabti"
 #spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
 #spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
@@ -36882,7 +36854,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4567 --  -24p
+#newmonster 4567 --24p
 #copystats 4550
 #name "Carrion"
 #descr "Carrion are huge undead birds of prey that feed on the corpses of the fallen."
@@ -36891,7 +36863,6 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #clearweapons
 #cleararmor
 #size 4
-
 #hp 18
 #att 10
 #def 10
@@ -36899,14 +36870,13 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #prot 6
 #mr 11
 #mor 30
-
 #weapon "Claws"
 #weapon "Beak"
 #flying
 #end
 
 
-#newmonster 4568 -- -170p
+#newmonster 4568 --170p
 --#copystats 4550
 #name "Khemrian Warsphinx"
 #descr "Khemrian Warsphinxes are giant leonine statues that wade through the ranks of their foes, crushing them underfoot as if they were nothing more than bothersome insects."
@@ -36944,7 +36914,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #itemslots 12288 --2misc
 #end
 
-#newmonster 4569 -- -55p
+#newmonster 4569 --55p
 #name "Sepulchral Stalker"
 #descr "Sepulchral Stalkers lie in wait beneath the desert sands, waiting for intruders to pass by before launching a devastating ambush. When the trap is sprung, several horrifying, snake-like forms burst from the ground to surround their prey."
 #spr1 "./Warhammer-Complete/SepulchralStalker1.tga"
@@ -37017,7 +36987,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #armor "Circlet"
 #end
 
-#selectmonster 188 -mound king2
+#selectmonster 4559 -mound king2?
 #copystats 4551
 #name "Necrotect"
 #spr1 "./Warhammer-Complete/Necrotect1.tga"
@@ -37025,7 +36995,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #descr "Necrotects were the artisans of ancient Nehekhara. They were not common labourers, but architects of extraordinary skill whose ambitions far outpaced what could be achieved in a mortal lifespan. After years entombed, the Necrotects awoke to find their work in tatters, ruined by the ravages of time and invading armies. As a result, they have been driven to a blinding rage, their own goal to seek revenge upon those that would desecrate their work. In battle, these hate-fuelled warriors march alongside the Skeleton legions, imbuing nearby warriors with a portion of their wrath. He can build 1 Skeleton Chariot every month."
 #clearweapons
 #cleararmor
-
 #hp 15
 #mor 30
 #att 10
@@ -37033,12 +37002,10 @@ enchanced further by the powerful magic animating them. They are also competent 
 #str 13
 #mr 13
 #prot 6
-
 #castledef 10
 #siegebonus 10
 #magicskill 3 2
 #custommagic 1024 50
-
 #okundeadleader
 #weapon "Demon Whip"
 #weapon "Dagger"
@@ -37057,7 +37024,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #spr2 "./Warhammer-Complete/Acolyte2.tga"
 #clearweapons
 #cleararmor
-
 #mor 30
 #hp 5
 #prot 0
@@ -37066,8 +37032,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #att 10
 #def 10
 #prec 8
-
-
 #poorundeadleader
 #magicskill 5 1
 #magicskill 8 1
@@ -37075,6 +37039,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #holy
 #weapon "Dagger"
 #weapon "Dagger"
+#summon1 4530
 #end
 
 #newmonster 4555
@@ -37094,7 +37059,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #att 10
 #def 10
 #prec 10
-
 #goodundeadleader
 #magicskill 4 1 --Astral
 #magicskill 5 2 --Death
@@ -37102,8 +37066,8 @@ enchanced further by the powerful magic animating them. They are also competent 
 #custommagic 4096 50 --D
 #holy
 #weapon "Magic Staff"
+#summon3 4530
 #end
-
 
 #newmonster 4556
 #copystats 4551
@@ -37114,7 +37078,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 --#gcost 380
 #clearweapons
 #cleararmor
-
 #mor 30
 #hp 19
 #prot 6
@@ -37123,7 +37086,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #att 10
 #def 10
 #prec 12
-
 #goodundeadleader
 #magicskill 4 1 --S
 #magicskill 5 4 --Death
@@ -37131,8 +37093,8 @@ enchanced further by the powerful magic animating them. They are also competent 
 #custommagic 4096 50 --D
 #holy
 #immortal
-
 #weapon "Magic Staff"
+#summon5 4531
 #end
 
 
@@ -37152,20 +37114,16 @@ enchanced further by the powerful magic animating them. They are also competent 
 #def 14
 #mr 17
 #prot 14
-
 #ap 20
 #mapmove 3
-
 #weapon "Holy Spear of Kharnut"
 #armor "Gilded Armor"
 #armor "Circlet"
 #armor "Kite Shield"
-
 #magicskill 4 1
 #magicskill 5 4 --Death
 #magicskill 8 4
 #custommagic 5120 50 --DE
-
 #deathcurse
 #trample
 #mounted
@@ -37173,10 +37131,14 @@ enchanced further by the powerful magic animating them. They are also competent 
 #holy
 #immortal
 #makemonsters1 4554
+#summon3 4532
+#summon2 4533
+#summon1 4535
+#summon4 4539
 #end
 
 
-#newmonster 4571
+#newmonster 4557
 #copystats 4551
 #name "Tomb King"
 #descr "The Tomb Kings of Nehehkhara were individuals of extraordinary power. With the passing of the previous king, the new ruler would be chosen on the basis of his wisdom and strength, and the contenders were always exceptional. Invariably drawn from the senior ranks of the priesthood these individuals had been able to extend their lives indefinitely, and they did not fail to make use of their time, learning mysterious magic and travelling foreign lands. Once chosen, his acolytes would endlessly perform incantations to further strengthen the physical and magical powers of their near-divine ruler. A Tomb Kings would often rule for several centuries, before deciding that his time in this life had come to an end, and would retreat to his tomb to await paradise. Such are the strength of the enchantments on the reawakened king that he is almost impossible to destroy, although if he is very badly injured the release of magical energies needed to keep him alive will leave him severely weakened. He can summon 2 Immortal allies every month."
@@ -37194,7 +37156,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #magicskill 8 5
 #custommagic 5120 100 --DE
 #custommagic 5120 50 --DE
-
 #mor 30
 #hp 30
 #str 14
@@ -37202,7 +37163,6 @@ enchanced further by the powerful magic animating them. They are also competent 
 #def 16
 #mr 18
 #prot 10
-
 #holy
 #expertundeadleader
 #deathcurse
@@ -37210,11 +37170,15 @@ enchanced further by the powerful magic animating them. They are also competent 
 #armor "Gilded Armor"
 #armor "Royal Headdress"
 #makemonsters2 4554
+#summon3 4542
+#summon5 4533
+#summon1 4553
+#summon4 4539
 #end
 
 
 
-#newmonster 4559 -- -85p
+#newmonster 4559 --85p
 #name "Tomb Scorpion"
 #spr1 "./Warhammer-Complete/BoneScorpion1.tga"
 #spr2 "./Warhammer-Complete/BoneScorpion2.tga"
@@ -37353,6 +37317,11 @@ They are exceptionally skilled fighters and leaders."
 #goodleader
 #okundeadleader
 #goodmagicleader
+#magicbeing
+#darkvision 100
+#weapon "Falchion"
+#weapon "Falchion"
+#armor "Shoulder Guard"
 #stonebeing
 #end
 
@@ -37629,7 +37598,7 @@ of enemy soldiers with ease."
 --#pathlevel 0 4
 --#effect 1
 --#flightspr -1
---#damage 4557
+--#damage 4571	-Check to make sure is working as intended.
 --#spec 5060
 --#explspr 10057
 --#precision 0
@@ -37712,7 +37681,7 @@ capable of trampling large numbers of enemy troops."
 #pathlevel 0 4
 #fatiguecost 2000
 #effect 10001
-#damage 4568
+#damage 4599
 #nreff 1
 #end
 
@@ -37902,7 +37871,7 @@ capable of trampling large numbers of enemy troops."
 #pathlevel 0 7
 #fatiguecost 5000
 #effect 10021
-#damage 4571
+#damage 4557
 #nreff 1
 #end
 
@@ -38239,15 +38208,16 @@ emerging from their tombs to rebuild their lost kingdoms."
 
 /////////////////// FORTS \\\\\\\\\\\\\
 
+#startfort 4
 #fortera 2
 #labcost 400
 
 ///////////////// Starting units \\\\\\\\\\\\\\\\\\\\
 
 #startcom 190 -herald
-#startunittype1 191 -spearmen
+#startunittype1 4534 -spearmen
 #startunitnbrs1 15
-#startunittype2 195 -archer
+#startunittype2 4539 -archer
 #startunitnbrs2 15
 #startscout 260
 
@@ -38271,7 +38241,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 --#addrecunit 192 -- Infantry
 --#addrecunit 187 -- Heavy Infantry
 --#addrecunit 4104 -- Archer
---#addrecunit 189 -- Asp Archer
+--#addrecunit 4552 -- Asp Archer
 --#addrecunit 4106 -- Cavalry
 --#addrecunit 4553 -- Chariot
 --#addrecunit  -- Tomb Guard
@@ -38286,11 +38256,11 @@ emerging from their tombs to rebuild their lost kingdoms."
 --
 --#addreccom 190 -- Tomb Herald
 --#addreccom 4562 -- Tomb Prince
---#addreccom 188 -- Necrotect
+--#addreccom 4599 -- Necrotect
 --#addreccom 260 -- Acolyte
 --#addreccom 4555 -- Liche riest
 --#addreccom 4556 -- Liche High Priest
---#addreccom 4556 -- Tomb King
+--#addreccom 4557 -- Tomb King
 --#addreccom 4570 -- Titan
 
 
@@ -43007,7 +42977,7 @@ its other property - having drunk the blood once, the baron must drink it every 
 #mapmove 2
 #nametype 104
 #expertleader
-#darvision 50
+#darkvision 50
 #end
 
 #newmonster 5267
@@ -43135,7 +43105,7 @@ for magic and will not change to an animal form. In battle he will descend immed
 -------------------------------------------------------------------------
 
 #newmonster 5254 -- Pre-soulless with massive onebattlespell reanimation.
-#copystat 915 -- Soulless
+#copystats 915 -- Soulless
 #copyspr 915 -- Soulless
 #summon1 197 -- Give him a few soulless friends so it doesn't seem so odd that he's on his own after battle.
 #summon5 197
@@ -43147,7 +43117,7 @@ for magic and will not change to an animal form. In battle he will descend immed
 #end
 
 #newmonster 5255 -- Pre-soulless. Unit that can be summoned to get soulless without using corpses.
-#copystat 197 -- Soulless
+#copystats 197 -- Soulless
 #copyspr 197 -- Soulless
 #firstshape 197 -- Soulless
 #end
@@ -43241,7 +43211,7 @@ for magic and will not change to an animal form. In battle he will descend immed
 #clearsites
 #name "Sylvania"
 #epithet "Vampire Counts"
-#color .1 .1 .1 -- Charcoal
+#color 0.1 0.1 0.1 -- Charcoal
 
 #era 2
 #flag "./Warhammer-Complete/VampireFlag.tga"
@@ -44112,7 +44082,7 @@ Nametypes 	172,173,174
 
 #newweapon 1356
 #name "Strangleroots"
-#damage 5
+#dmg 5
 #range -2
 #bonus
 #att 0
@@ -44208,7 +44178,7 @@ Nametypes 	172,173,174
 --
 #newweapon 1363
 #name "Stave of Avelorn 2h"
-#type 2
+#twohanded
 #dmg 10
 #att 1
 #def 3
@@ -44967,23 +44937,21 @@ Nametypes 	172,173,174
 #copystats 4400 -Template
 #spr1 "./Warhammer-Complete/Araloth1.tga"
 #spr2 "./Warhammer-Complete/Araloth2.tga"
-#fixedname "Araloth, Lord of Talsyn"
+#name "Lord of Talsyn"
+#fixedname "Araloth"
 #descr "Araloth, the lord of Talsyn was once a feckless coward who allowed others to go to battle in his place. Transformed by an unforeseen encounter he is now a fearless hero of Athel Loren and his triumphs in battle are the inspiration for many songs. Armed with a spear, shield and his flying companion Skaryn “the eye thief”, Araloth defends the forest when the spirits slumber."
 #clearweapons
 #cleararmor
 #mapmove 2
 #ap 10
-
 #mor 30
 #hp 24
 #mr 12
-
 #str 12
 #att 21
 #def 18
 #prec 19
 #prot 16
-
 #illusion
 #reinvigoration 5
 #superiorleader
@@ -44991,14 +44959,6 @@ Nametypes 	172,173,174
 #weapon "Swift Asrai Longbow"
 #armor "Elven Galea"
 #armor "Full Plate Mail"
-#end
-
-#newmonster 4441
-#copystats 4420
-#end
-
-#newmonster 4442
-#copystats 4416
 #end
 
 
@@ -45631,14 +45591,13 @@ Priests: Average."
 
 ///////////////// Province defence \\\\\\\\\\\\\\\\\\\\
 
-#defcom1 4415		stalker
-#defcom2 4416		captain
-
-#defunit1 4401		Archer
+#defcom1 4415		-stalker
+#defcom2 4416		-captain
+#defunit1 4401		-Archer
 #defmult1 10
-#defunit1b 4403		Eternal Guard
+#defunit1b 4403		-Eternal Guard
 #defmult1b 10
-#defunit2 4402		Reavers
+#defunit2 4402		-Reavers
 #defmult2 5
 
 ///////////////// Units \\\\\\\\\\\\\\\\\\\\
@@ -45654,22 +45613,11 @@ Priests: Average."
 #addrecunit 4402	-- Glade Rider
 #addrecunit 4408	-- Griffon Rider
 
-
---#addrecunit 4405	-- Wild Rider
---#addrecunit 4406	-- Wildwood Ranger
--- Great Eagle 4430
--- Unicorn 4425
--- Tree Kin 4427
--- Dryad 4426
-
-
 ------- Commanders
 
 #addreccom 4415 --waystalker
 #addreccom 4419 --Spellsinger
 #addreccom 4416 --Glade Captain
-
---#addreccom  4420--Spellweaver
 --#addreccom 4417 --Glade Lord
 --#homecom  4418--Shadowdancer
 --#homecom 4421 --Branchwraith
@@ -45680,9 +45628,8 @@ Priests: Average."
 ////////////////// Hero Settings \\\\\\\\\\\\\\\\\\\
 
 #hero1 4440 - araloth
-#multihero1 4441 - weaver
-#multihero2 4442 -captain
-
+#multihero1 4420 - weaver
+#multihero2 4416 -captain
 
 #end
 
@@ -46137,7 +46084,7 @@ Priests: Average."
 #rcost 1
 #magic
 #armornegating
-#secondaryeffect "Soulslay"
+#secondaryeffect 194 -Soul slay
 #slash
 #end
 
