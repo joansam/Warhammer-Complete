@@ -2,7 +2,7 @@
 #description "All Warhammer nations, mostly compatible with each other."
 #version 0.62
 
---Many thanks to the mod compiler - Joansam
+--Many thanks to the mod compiler, from Joansam
 
 -- Thanks to Sombre for his work on Skaven for Dom3. Thanks bro you're my hero
 
@@ -14256,18 +14256,6 @@ TWEAK - Flagellants are undisciplined
 #end
 
 
----- Empire Full Plate
-
-
-#newarmor 284
-#name "Empire Full Plate"
-#type 5
-#prot 22
-#def -3
-#enc 3
-#rcost 30
-#end
-
 ---- Wagon Cover
 
 #newarmor 281
@@ -14851,7 +14839,7 @@ TWEAK - Flagellants are undisciplined
 #ap 12
 #gcost 14
 #rcost 1
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #armor "Shield"
@@ -14885,7 +14873,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 40
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
@@ -14919,7 +14907,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 38
 #rcost 5
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon 56
@@ -14952,7 +14940,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 100
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon 799 -- Demigryph Talons
@@ -15119,7 +15107,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
@@ -15154,7 +15142,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Morningstar"
 #weapon "Lance"
@@ -15189,7 +15177,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
@@ -15223,7 +15211,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 5
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Silver Scythe"
 #weapon 56
@@ -15258,7 +15246,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
@@ -15359,7 +15347,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 45
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Lance"
 #weapon "Broad Sword"
@@ -15393,7 +15381,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Falchion"
 #weapon "Lance"
@@ -15429,7 +15417,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 65
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Falchion"
 #weapon "Falchion"
@@ -15465,7 +15453,7 @@ TWEAK - Flagellants are undisciplined
 #gcost 1
 #rcost 6
 #inspirational 1
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Runefang"
 #armor "Kite Shield"
@@ -15503,7 +15491,7 @@ TWEAK - Flagellants are undisciplined
 #gcost 1
 #rcost 1
 #inspirational -1
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Iron Cap"
 #weapon "Runefang"
 #weapon "Short Sword"
@@ -15543,7 +15531,7 @@ TWEAK - Flagellants are undisciplined
 #gcost 1
 #rcost 6
 #inspirational 2
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Half Helmet"
 #weapon "Sword of Justice"
 #weapon 56
@@ -16057,7 +16045,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 100
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Half Helmet"
 #weapon "Hammer"
 #weapon 56
@@ -16093,7 +16081,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 70
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Half Helmet"
 #weapon "Hammer"
 #weapon 56
@@ -16127,7 +16115,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 100
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Half Helmet"
 #weapon "Broad Sword"
 #weapon 56
@@ -16163,7 +16151,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 70
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Half Helmet"
 #weapon "Broad Sword"
 #weapon 56
@@ -16200,7 +16188,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 1
 #rcost 1
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon 800 -- dmg 20 claw x2
@@ -16685,7 +16673,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 0
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Tyrant Flail"
 #weapon 56
@@ -16724,7 +16712,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 0
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Dueterberg Helm"
 #weapon "Broad Sword"
 #weapon "Lance"
@@ -16764,7 +16752,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 0
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Main Gauche of Parrying"
 #weapon "Sword of Swiftness"
@@ -16802,7 +16790,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 0
 #rcost 5
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #weapon "Silver Scythe"
 #weapon 56
 #armor "Shield"
@@ -16841,7 +16829,7 @@ TWEAK - Flagellants are undisciplined
 #ap 18
 #gcost 0
 #rcost 6
-#armor "Empire Full Plate"
+#armor 19 -- Full Plate
 #armor "Full Helmet"
 #weapon "Lance"
 #weapon 237 -- dmg 18 bite
@@ -21164,18 +21152,6 @@ Version 1.1
 ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
 
-#newweapon 1301
-#name "Daemon-forged Broad Sword"
-#slash
-#pierce
-#armorpiercing
-#dmg 5
-#rcost 4
-#len 2
-#def 1
-#sound 8
-#end
-
 
 #newweapon 1302
 #name "Hellblade"
@@ -21228,42 +21204,16 @@ Version 1.1
 #sound 38
 #end
 
-#newweapon 1306
-#name "Daemon Claws"
-#dmg 5
-#att 0
-#def 0
-#len 0
-#armorpiercing
-#slash
-#pierce
-#nratt 2
-#sound 50
-#end
-
 #newweapon 1307
 #name "Chaos Axe"
+#nratt 2
 #dmg 5
 #att 1
-#def 0
-#rcost 5
-#armorpiercing
+#def -2
+#rcost 4
 #pierce
 #slash
-#len 2
-#sound 23
-#end
-
-#newweapon 1308
-#name "Chaos Sword"
-#dmg 8
-#att 0
-#def 1
-#rcost 5
-#slash
-#pierce
-#len 3
-#nratt 2
+#len 1
 #sound 23
 #end
 
@@ -21296,14 +21246,6 @@ Version 1.1
 
 -----Armour-----
 
-#newarmor 700
-#name "Chaos Armor"
-#type 5
-#prot 20
-#enc 2
-#def -2
-#rcost 20
-#end
 
 -- Chaos Armour, Commander armor
 
@@ -21323,14 +21265,6 @@ Version 1.1
 #nofind
 #end
 
-#newarmor 702
-#name "Light Chaos Armor"
-#type 5
-#prot 15
-#enc 1
-#def -1
-#rcost 13
-#end
 
 ////////////////// NEW MONSTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -21483,7 +21417,7 @@ Version 1.1
 #berserk 3
 #coldres 3
 
-#weapon "Daemon Claws"
+#weapon 1857 -- Daemonic Claws
 #weapon 30 -- Venomous Bite
 #weapon 203 -- Barbed Tail
 #weapon 85 -- Tentacle
@@ -21570,7 +21504,7 @@ Version 1.1
 #berserk 2
 #magicpower 1
 #noitem
-#weapon "Daemon Claws"
+#weapon 33 -- Claws
 #startage 20
 #maxage 10000
 #poisonres 15
@@ -21829,7 +21763,7 @@ Version 1.1
 #noitem
 #weapon "Bite"
 --#weapon "Hamstring"
-#weapon "Daemon Claws"
+#weapon 1857 -- Daemonic Claws
 #startage 378
 #maxage 4000
 #xpshape 60
@@ -21869,8 +21803,8 @@ Version 1.1
 #noitem
 --#weapon "Bite"
 --#weapon "Hamstring"
-#weapon "Daemon Claws"
-#weapon "Daemon Claws"
+#weapon 1857 -- Daemonic Claws
+#weapon 1857 -- Daemonic Claws
 #startage 20
 #maxage 40
 #end
@@ -22066,7 +22000,7 @@ Version 1.1
 #weapon "Battleaxe"
 #weapon "Rusty Throwing Axe"
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 
 #reclimit 3
 #berserk 1
@@ -22099,10 +22033,9 @@ Version 1.1
 #prot 5
 
 #weapon "Chaos Axe"
-#weapon "Chaos Axe"
 #weapon "Rusty Throwing Axe"
 #armor 193 --"Champions Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #ambidextrous 4
 #berserk 2
 #reinvigoration 1
@@ -22191,9 +22124,9 @@ Version 1.1
 #prec 12
 #prot 5
 
-#weapon "Daemon-forged Broad Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 
 #reclimit 3
@@ -22226,9 +22159,9 @@ Version 1.1
 #prec 13
 #prot 5
 
-#weapon "Chaos Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor 193 --"Champions Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 
 #ambidextrous 4
@@ -22339,7 +22272,7 @@ Version 1.1
 #weapon "Chaos Axe"
 #weapon 56
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 
 #mounted
@@ -22378,7 +22311,7 @@ Version 1.1
 #weapon "Chaos Axe"
 #weapon 56
 #armor 193 --"Champions Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 
 #reinvigoration 2
@@ -22488,7 +22421,7 @@ Version 1.1
 #weapon 56
 #weapon 56
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #animal
 #mounted
 #trample
@@ -22527,7 +22460,7 @@ Version 1.1
 
 #weapon "Kick"
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #holy
 
 #standard 2
@@ -22860,7 +22793,7 @@ Version 1.1
 #weapon "Blade of Blood"
 #weapon 56
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 #startitem 701
 #startage 30
@@ -22905,7 +22838,7 @@ Version 1.1
 #weapon "Blade of Blood"
 #weapon 56
 #armor 193 --"champ Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #startitem 701
 #armor "Kite Shield"
 #mounted
@@ -23013,7 +22946,7 @@ Version 1.1
 #ambidextrous 3
 #weapon "Axe of Khorne"
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 #startitem 701
 #startage 30
@@ -23056,7 +22989,7 @@ Version 1.1
 
 #weapon "Blade of Blood"
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Shield"
 #startitem 701
 #inspirational 1
@@ -23095,7 +23028,7 @@ Version 1.1
 #weapon "Axe of Khorne"
 #armor "Kite Shield"
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #startitem 701
 #expertleader
 #poorundeadleader
@@ -23231,7 +23164,7 @@ Version 1.1
 #weapon 56
 #weapon 75
 #armor "Full Helmet"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #armor "Kite Shield"
 #startitem 701
 #mounted
@@ -23297,7 +23230,7 @@ Version 1.1
 #berserk 5
 #magicskill 7 1
 #weapon "Greater Hellblade"
-#armor "Chaos Armor"
+#armor 801 - Chaos Armor
 #itemslots 12288 -- 2 misc
 #gcost 10000
 #startdom 3
@@ -23938,7 +23871,7 @@ Priests: Khorne needs no priests."
 #dmg 10
 #magic
 #nratt 2
-#att 1
+#att 2
 #def 1
 #len 3
 #twohanded
@@ -24031,19 +23964,6 @@ Priests: Khorne needs no priests."
 #magic
 #sound 10
 #rcost 3
-#armorpiercing
-#end
-
-#newweapon 1463
-#name "Daemon-forged Axe"
-#slash
-#magic
-#dmg 8
-#att 0
-#def 0
-#len 1
-#rcost 2
-#sound 10
 #armorpiercing
 #end
 
@@ -24150,14 +24070,6 @@ Priests: Khorne needs no priests."
 
 -----Armour-----
 
-#newarmor 685
-#name "Nurgle Chaos Armor"
-#type 5
-#prot 18
-#enc 2
-#def -2
-#rcost 18
-#end
 
 -------- UNITS ----------
 
@@ -24606,7 +24518,7 @@ Priests: Khorne needs no priests."
 #rcost 1
 #weapon 1452
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
@@ -24641,9 +24553,9 @@ Priests: Khorne needs no priests."
 #gcost 20
 #chaosrec 1
 #rcost 1
-#weapon "Axe"
+#weapon 1307 -- Chaos Axe
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
@@ -24679,7 +24591,7 @@ Priests: Khorne needs no priests."
 #weapon 1452
 #weapon 56
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #mounted
 #gcost 50
@@ -24720,7 +24632,7 @@ Priests: Khorne needs no priests."
 #rcost 1
 #weapon "Short Sword"
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #standard 1
 #poisonres 15
@@ -24755,9 +24667,9 @@ Priests: Khorne needs no priests."
 #gcost 50
 #chaosrec 3
 #rcost 1
-#weapon 1453
+#weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #itemslots 14470
 #holy
@@ -24795,9 +24707,9 @@ Priests: Khorne needs no priests."
 #gcost 50
 #chaosrec 3
 #rcost 1
-#weapon 1463
+#weapon 1307 -- Chaos Axe
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #itemslots 14470
 #holy
@@ -24894,7 +24806,7 @@ Priests: Khorne needs no priests."
 #poisonres 25
 #weapon "Mace"
 #weapon 1451
-#armor 685
+#armor 801
 #itemslots 15494
 #startitem 968
 #startage 50
@@ -25256,7 +25168,7 @@ Priests: Khorne needs no priests."
 #undcommand 5
 #weapon 1462
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Kite Shield"
 #itemslots 15494
 #startitem 968
@@ -25302,7 +25214,7 @@ Priests: Khorne needs no priests."
 #command -20
 #undcommand 5
 #weapon 1455
-#armor 685
+#armor 801
 #itemslots 15494
 #startitem 968
 #startage 75
@@ -25343,7 +25255,7 @@ Priests: Khorne needs no priests."
 #weapon 1457
 #weapon 56
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #armor "Shield"
 #mounted
 #gcost 285
@@ -25449,7 +25361,7 @@ Priests: Khorne needs no priests."
 #custommagic 12288 66
 #weapon 1457
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
 #startitem 968
 #mounted
@@ -25548,7 +25460,7 @@ Priests: Khorne needs no priests."
 #magicskill 6 1
 #weapon 1458
 #armor "Full Helmet"
-#armor 685
+#armor 801
 #itemslots 15494
 #startitem 968
 #gcost 0
@@ -26096,7 +26008,7 @@ Priests: Khorne needs no priests."
 #poisonres 75
 #invulnerable 10
 #weapon 347
-#armor 685
+#armor 801
 #armor "Full Helmet"
 #itemslots 15494
 #startitem 968
@@ -26421,7 +26333,7 @@ Priests: Khorne needs no priests."
 #name "Nurgle Chaos Armour"
 #descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
-#armor "Nurgle Chaos Armor"
+#armor "Chaos Armor"
 #cursed
 #bless
 #nofind
@@ -26441,7 +26353,7 @@ Priests: Khorne needs no priests."
 #name "Nurgle Chaos Armour"
 #descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
-#armor "Nurgle Chaos Armor"
+#armor "Chaos Armor"
 #cursed
 #bless
 #nofind
@@ -33413,7 +33325,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Scythetalons no longer AP but have 2 attacks, debatable though.
 -- Aura of Slaanesh was broken, now does 33 stun damage instead of 5. Also now AoE1; it's an Aura in WH, not actually a weapon.
 -- Daemon-Forged broadswords and morningstars used by Chosen and Champions are now much more in line with WH stats. They have 2 attacks, and are not magic or AP. They are now named Chaos broadsword and morningstar. All units have been updated accordingly.
--- Slaanesh Chaos Armor prot 17 -> 18, def penalty 2 -> 1.
+-- Chaos Armor prot 17 -> 18, def penalty 2 -> 1.
 -- Sigvald the Magnificent: His sword, Sliverslash, now gets 6 attacks, from 2. Awe 3 -> 6. Added base prot 15 - otherwise headshots are brutal. No longer immortal.
 -- Sprite of Herald changed to Amazonian Chosen - used for Exalted Champion in the other Slaanesh mod. Also changed stealth 20 -> 60, added inquisitor tag (is priest 2). Can summon dameonettes.
 -- All summon spells changed from Conjuration to Blood, path req often lowered by 1, pathreqs trimmed and number of 'gems' required multiplied by 3 for blood slaves(standard stuff).
@@ -33562,6 +33474,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newweapon 1862
 #copyweapon 13
 #name "Chaos Warhammer"
+#nratt 2
 #def -2
 #rcost 4
 #att 1
@@ -33584,7 +33497,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 #newweapon 1859
-#name "Chaos Morningstar"
+#name "Chaos Flail"
 #pierce
 #blunt
 #dmg 6
@@ -33614,7 +33527,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 
 #newarmor 801
-#name "Slaanesh Chaos Armor"
+#name "Chaos Armor"
 #type 5
 #prot 18
 #enc 2
@@ -33623,7 +33536,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 #newarmor 803
-#name "Light Slaanesh Chaos Armor"
+#name "Light Chaos Armor"
 #type 5
 #prot 12
 #enc 1
@@ -33944,7 +33857,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 5
 #weapon 1859
 #armor "Full Helmet"
-#armor "Slaanesh Chaos Armor"
+#armor 801
 #armor "Kite Shield"
 #holy
 #itemslots 14470
@@ -33978,7 +33891,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #coldres 5
 #armor "Full Helmet"
-#armor "Slaanesh Chaos Armor"
+#armor 801
 #armor "Kite Shield"
 #holy
 #itemslots 14470
@@ -35743,10 +35656,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mainlevel 2
 #secondarypath 1
 #secondarylevel 1
-#name "Slaanesh Chaos Armour"
+#name "Chaos Armour"
 #descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
-#armor "Slaanesh Chaos Armor"
+#armor "Chaos Armor"
 #nofind
 #morale 5
 #end
@@ -35761,10 +35674,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mainlevel 2
 #secondarypath 1
 #secondarylevel 1
-#name "Slaanesh Chaos Armour"
+#name "Chaos Armour"
 #descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
-#armor "Slaanesh Chaos Armor"
+#armor "Chaos Armor"
 #nofind
 #end
 
@@ -38385,7 +38298,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 
 #end
 
-
+-- Version .7 of WHComplete - Daemon-forged battleaxe renamed Chaos Battleaxe, not a magic weapon.
 
 -- Version 1.01 - Wand of Whimsy was missing a type and apparently went in the Misc slot. Oops! Warhounds now get a more devastating Venomous Bite. Made Pretender gcosts autocalc, also made the national Pretenders 20 cheaper. Added #natural to Chaos Steed hoof and Scythetalon. Lowered combat spell precision to 5 where applicable.
 
@@ -38431,20 +38344,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 
 -------- WEAPONS --------
 
-#newweapon 724
-#name "Scythetalon"
-#dmg 5
-#att 0
-#def 0
-#len 2
-#magic
-#rcost 0
-#bonus
-#slash
-#armorpiercing
-#natural
-#end
-
 #newweapon 725
 #name "Halberd of Tzeentch"
 #dmg 10
@@ -38460,12 +38359,12 @@ emerging from their tombs to rebuild their lost kingdoms."
 #end
 
 #newweapon 726
-#name "Daemon-forged Battleaxe"
+#name "Chaos Battleaxe"
 #dmg 10
 #att 1
 #def 0
 #len 3
-#magic
+
 #rcost 6
 #twohanded
 #slash
@@ -38503,19 +38402,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 #secondaryeffectalways 232
 #bonus
 #hardmrneg
-#end
-
-#newweapon 729
-#name "Daemon-forged Broad Sword"
-#dmg 6
-#magic
-#slash
-#armorpiercing
-#att 1
-#def 0
-#len 2
-#rcost 5
-#sound 8
 #end
 
 #newweapon 730
@@ -38647,25 +38533,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 #sound 24
 #end
 
------Armour-----
-
-#newarmor 449
-#name "Tzeentch Chaos Armor"
-#type 5
-#prot 20
-#enc 2
-#def -2
-#rcost 23
-#end
-
-#newarmor 450
-#name "Light Tzeentch Chaos Armor"
-#type 5
-#prot 13
-#enc 1
-#def -1
-#rcost 13
-#end
 
 -------- UNITS ----------
 
@@ -39071,7 +38938,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #coldres 3
 #weapon "Broad Sword"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Kite Shield"
 #wastesurvival
 #mountainsurvival
@@ -39105,7 +38972,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #coldres 3
 #weapon "Axe"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Kite Shield"
 #wastesurvival
 #mountainsurvival
@@ -39139,7 +39006,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Broad Sword"
 #weapon 56
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Kite Shield"
 #mounted
 #gcost 50
@@ -39179,7 +39046,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Short Sword"
 #armor "Kite Shield"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #standard 1
 #wastesurvival
 #mountainsurvival
@@ -39211,9 +39078,9 @@ emerging from their tombs to rebuild their lost kingdoms."
 #chaosrec 3
 #rcost 1
 #coldres 5
-#weapon "Daemon-forged Broad Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Kite Shield"
 #itemslots 14470
 #mountainsurvival
@@ -39248,9 +39115,9 @@ emerging from their tombs to rebuild their lost kingdoms."
 #chaosrec 3
 #rcost 1
 #coldres 5
-#weapon "Daemon-forged Battleaxe"
+#weapon "Chaos Battleaxe"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #itemslots 14470
 #mountainsurvival
 #wastesurvival
@@ -39342,7 +39209,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #undcommand 5
 #coldres 5
 #weapon "Mace"
-#armor 449
+#armor 801
 #itemslots 15494
 #startitem 967
 #startage 50
@@ -39653,7 +39520,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #slowrec
 #rcost 1
 #weapon "Magic Staff"
-#armor 450
+#armor 802
 #poorleader
 #startage 250
 #maxage 5000
@@ -39689,9 +39556,9 @@ emerging from their tombs to rebuild their lost kingdoms."
 #magicskill 4 1
 #researchbonus -8
 #custommagic 2176 66
-#weapon "Daemon-forged Broad Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Kite Shield"
 #itemslots 15494
 #startitem 967
@@ -39740,7 +39607,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #ambidextrous 3
 #weapon "Chaotic Fire"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #itemslots 13446
 #startitem 967
 #startage 70
@@ -39785,7 +39652,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Chaos Fire"
 #weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #startitem 967
 #armor "Shield"
 #itemslots 13446
@@ -39839,7 +39706,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
 #weapon 735
-#armor 449
+#armor 801
 #armor "Full Helmet"
 #itemslots 12416 -- 1 head, 2 misc
 #startage 300
@@ -39931,7 +39798,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Thomin's Sword"
 #weapon 347
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #itemslots 14732 -- 4 hands, 2 heads, 1 feet, 2 misc
 #gcost 0
 #rcost 1
@@ -40019,7 +39886,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon "Chaos Fire"
 #weapon "Melekh's Halberd"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Shield"
 #itemslots 13446
 #startitem 967
@@ -40068,7 +39935,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #gcost 0
 #rcost 1
 #weapon "Magic Staff"
-#armor 450
+#armor 802
 #goodleader
 #okundeadleader
 #startage 270
@@ -40119,11 +39986,10 @@ emerging from their tombs to rebuild their lost kingdoms."
 #custommagic 384 100
 #coldres 5
 #trample
-#weapon "Scythetalon"
-#weapon "Scythetalon"
+#weapon 1851 -- Daemonic Scythetalons
 #weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #armor "Shield"
 #itemslots 13446
 #startitem 967
@@ -40173,7 +40039,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #magicskill 0 1
 #weapon "Windblade"
 #armor "Full Helmet"
-#armor 449
+#armor 801
 #itemslots 15494
 #startitem 967
 #startage 600
@@ -40415,8 +40281,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #invulnerable 15
 #magicpower 1
 #undisciplined
-#weapon "Scythetalon"
-#weapon "Scythetalon"
+#weapon 1851 -- Daemonic Scythetalons
 #startage 20
 #maxage 10000
 #poisonres 25
@@ -40605,7 +40470,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #weapon 3
 #poisonres 25
 #coldres 5
-#armor 450
+#armor 802
 #startage 1000
 #maxage 10000
 #magicskill 0 1
@@ -40779,7 +40644,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #startdom 1
 #rcost 1
 #weapon "Magic Staff"
-#armor 450
+#armor 802
 #itemslots 13446
 #okleader
 #startage 900
@@ -40818,7 +40683,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #poisonres 25
 #invulnerable 10
 #weapon 738
-#armor 450
+#armor 802
 #startage 4000
 #maxage 10000
 #magicskill 0 1
@@ -41337,7 +41202,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #name "Tzeentch Chaos Armour"
 #descr "The armor worn by the elite Chosen of Tzeentch, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
-#armor "Tzeentch Chaos Armor"
+#armor "Chaos Armor"
 #cursed
 #bless
 #mr 2
@@ -41357,7 +41222,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #name "Tzeentch Chaos Armour"
 #descr "The armor worn by the elite Chosen of Tzeentch, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
-#armor "Tzeentch Chaos Armor"
+#armor "Chaos Armor"
 #cursed
 #bless
 #nofind

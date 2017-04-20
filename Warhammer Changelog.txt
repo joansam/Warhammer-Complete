@@ -6,6 +6,8 @@ Version .70 - Still JoanSam
    so they were deleted and the units themselves are now recruitable and multiheroes.
 -- Updated Dark Elves and High Elves to Deathjester's recent versions.
 -- Slaanesh changes in their own changelog.
+-- Chaos weaponry and armor standardized, condensed to Slaanesh versions where possible.
+-- Empire full plate removed, replaced with vanilla full plate. Vanilla plate has 2 more enc but is 5 res cheaper.
 
 
 Version .62
