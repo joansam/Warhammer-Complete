@@ -33192,6 +33192,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 
+
 -- SLAANESH WARHOST
 
 
@@ -33510,11 +33511,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newweapon 1860
 #name "Witstealer Sword"
 #magic
-#armorpiercing
+#nratt 4
 #slash
+#pierce
 #len 2
 #def 2
-#att 2
+#att 3
 #dmg 10
 #rcost 5
 #sound 8
@@ -33526,10 +33528,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newarmor 801
 #name "Chaos Armor"
 #type 5
-#prot 18
+#prot 21
 #enc 2
 #def -2
-#rcost 17
+#rcost 25
 #end
 
 #newarmor 803
@@ -33782,7 +33784,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Full Helmet"
 #armor "Kite Shield"
 #mounted
-#gcost 60
+#gcost 50
 #chaosrec 3
 #rcost 20
 #ressize 2
@@ -33854,7 +33856,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 5
 #weapon 1859
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #holy
 #itemslots 14470
@@ -33888,7 +33890,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #coldres 5
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #holy
 #itemslots 14470
@@ -34195,7 +34197,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 1857
 #armor 801
 #itemslots 15494
-#startitem 969
 #startage 50
 #maxage 5000
 #forestsurvival
@@ -35649,16 +35650,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #restricted 159
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 4
-#mainpath 2
-#mainlevel 2
-#secondarypath 1
-#secondarylevel 1
+#mainpath 7 -- Blood
+#mainlevel 1
 #name "Chaos Armour"
 #descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
 #armor "Chaos Armor"
-#nofind
-#morale 5
+#morale 2
 #end
 
 -- Chaos Armour copy
@@ -35675,7 +35673,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
 #armor "Chaos Armor"
-#nofind
 #end
 
 -- Witstealer Sword
@@ -35685,34 +35682,32 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr "./Warhammer-Complete/wit_stealer.tga"
 #name "Witstealer Sword"
 #type 1
-#mainpath 2
-#mainlevel 3
-#secondarypath 1
-#secondarylevel 2
+#mainpath 7
+#mainlevel 4
+#secondarypath 5
+#secondarylevel 4
 #constlevel 8
-#descr "The Witstealer Sword was forged in the molten heat of desire and cooled in a vat of Slaanesh's blood. Thus did the Dark Prince think to arm His champion N'kari fit to defeat Skarbrand. Alas, desire has never burned so hot as wrath, and N'kari saw swift defeat."
+#descr "The Witstealer Sword was forged in the molten heat of desire and cooled in a vat of Slaanesh's blood. Long ago, Slaanesh armed his champion N'kari with this sword for single combat. His blood courses into the veins of wounded enemies, rendering them stupefied before His pleasure." 
 #weapon 1860
-#nofind
 #end
 
 -- Icon of Slaanesh
 
-#newitem
-#restricted 159
-#spr "./Warhammer-Complete/Icon_of_Slaanesh.tga"
-#constlevel 2
-#mainpath 2
-#mainlevel 1
-#secondarypath 1
-#secondarylevel 1
-#descr "With the use of specialized Icons, the followers of Slaanesh strengthen themselves in various ways. These particular Icons, however, only lend themselves to grant the leaders of Slaanesh's cults with additional priestly authority."
-#name "Icon of Slaanesh"
-#type 8
-#nofind
-#cursed
-#magicboost 8 1
-#restricteditem 6566
-#end
+--#newitem
+--#restricted 159
+--#spr "./Warhammer-Complete/Icon_of_Slaanesh.tga"
+--#mainpath 2
+--#mainlevel 1
+--#secondarypath 1
+--#secondarylevel 1
+--#descr "With the use of specialized Icons, the followers of Slaanesh strengthen themselves in various ways. These particular Icons, however, only lend themselves to grant the leaders of Slaanesh's cults with additional priestly authority."
+--#name "Icon of Slaanesh"
+--#type 8
+--#nofind
+--#cursed
+--#magicboost 8 1
+--#restricteditem 6566
+--#end
 
 -------- EVENTS --------
 
