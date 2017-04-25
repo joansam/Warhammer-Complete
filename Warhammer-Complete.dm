@@ -35696,6 +35696,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 --#newitem
 --#restricted 159
 --#spr "./Warhammer-Complete/Icon_of_Slaanesh.tga"
+--#constlevel 12
 --#mainpath 2
 --#mainlevel 1
 --#secondarypath 1
