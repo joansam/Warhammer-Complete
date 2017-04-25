@@ -21462,7 +21462,6 @@ Version 1.1
 #berserk 1
 #magicpower 1
 #noitem
-#weapon "Bite"
 #weapon "Claws"
 #startage 20
 #maxage 10000
@@ -40309,7 +40308,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 #rcost 1
 #magicpower 1
 #noitem
-#weapon "Bite"
 #weapon "Claws"
 #startage 20
 #maxage 10000

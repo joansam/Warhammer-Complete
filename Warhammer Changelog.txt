@@ -16,6 +16,7 @@ Version .70 - Still JoanSam
 -- Chaos battleaxe (used by Tzeentch's shieldless Chosen) no longer AP but has 2 attacks, res cost increased by 1.
 -- TK skeletons commented out, normal skellies should be summoned from now on.
 -- Flames of Tzeentch no longer AoE 1, now single target. Flames and Lightning have 20 ammo from 50.
+-- Bite attack removed from Chaos Furies of Tzeentch and Nurgle.
 
 
 Version .62
