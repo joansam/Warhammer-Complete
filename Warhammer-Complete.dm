@@ -38385,7 +38385,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #newweapon 728
 #name "Lightning of Tzeentch"
 #att 0
-#ammo 50
+#ammo 20
 #range 30
 #dmg 0
 #magic
@@ -38401,14 +38401,13 @@ emerging from their tombs to rebuild their lost kingdoms."
 #name "Flames of Tzeentch"
 #nostr
 #armorpiercing
-#aoe 1
 #bonus
 #dmg 8
 #att 0
 #fire
 #magic
 #range 30
-#ammo 50
+#ammo 20
 #flyspr 133 4
 #explspr 10113
 #sound 16
