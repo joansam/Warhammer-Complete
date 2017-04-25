@@ -6,8 +6,15 @@ Version .70 - Still JoanSam
    so they were deleted and the units themselves are now recruitable and multiheroes.
 -- Updated Dark Elves and High Elves to Deathjester's recent versions.
 -- Slaanesh changes in their own changelog.
--- Chaos weaponry and armor standardized, condensed to Slaanesh versions where possible.
+-- Chaos weaponry and armor standardized, condensed to Slaanesh versions where possible. This changes a LOT.
+-- Costs changed for Chaos Warriors (20 -> 30), Chaos Knights (50 -> 60) and Chosen (50 -> 65, Slaanesh 60 cause they have no special abilities.)
 -- Empire full plate removed, replaced with vanilla full plate. Vanilla plate has 2 more enc but is 5 res cheaper.
+-- Skaven Moulder Packmaster now summons 3 rats instead of 9 rats and 3 Maharishi...no idea why that was happening.
+-- Skaven starting army was 60 slaves and 30 clanrats, now 30 and 20 respectively.
+-- Crashes caused by Dark Elf flag and initiate and High Elf flag, archer, and spearman sprites fixed.
+-- Screamers summon spell now summons 9 instead of 10 screamers, they also have non-AP weapons now.
+-- Chaos battleaxe (used by Tzeentch's shieldless Chosen) no longer AP but has 2 attacks, res cost increased by 1.
+-- TK skeletons commented out, normal skellies should be summoned from now on.
 
 
 Version .62

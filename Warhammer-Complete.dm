@@ -1631,7 +1631,6 @@ inspirational 2
 #gcost 50
 #rcost 1
 #taskmaster 4
-#makemonsters3 2549
 #weapon "Moulder Whip"
 #armor "Ring Mail Cuirass"
 #armor "Leather Cap"
@@ -1648,9 +1647,7 @@ inspirational 2
 #wastesurvival
 #swampsurvival
 #darkvision 75
-#makemonsters1 6120
-#makemonsters4 6120
-#makemonsters5 6120
+#makemonsters3 6120
 #end
 
 
@@ -3261,8 +3258,8 @@ Priests: Powerful, can perform blood sacrifices"
 
 #startscout 6130
 #startcom 6132
-#startunitnbrs1 60
-#startunitnbrs2 30
+#startunitnbrs1 30
+#startunitnbrs2 20
 #startunittype1 6113
 #startunittype2 6111
 
@@ -8928,8 +8925,8 @@ New Units: 	- Sea Dragon Rider
 
 #newmonster 5122
 #copystats 5100 -- Basestats
-#spr1 "./Warhammer-Complete/initiate.tga"
-#spr2 "./Warhammer-Complete/initiate1.tga"
+#spr1 "./Warhammer-Complete/initiateDE.tga"
+#spr2 "./Warhammer-Complete/initiate1DE.tga"
 #name "Coven Initiate"
 #descr "Dark Elves have the same intuitive gift for magic as High Elves. The Dark Covenants, which almost all mages in Naggaroth are members of, mainly teach the most vile magic, the dark wind of Dhar. Dark Elves in particular excel at the practice of Dhar, mastering it more quickly than the lesser races. Through dedication, maliciousness and their inherent aptitude for magic, initiates quickly learn several types of magic. Many say that they even look to the Chaos Wastes for magical lore and to divine the future, but this is not spoken too loudly. Black Ark captains will not carry an Initiate, as they lack influence or connections."
 #hp 10
@@ -9726,7 +9723,7 @@ Military: Light to medium infantry with quick and vicious cavalry.
 Magic: Strong death, moderate fire, water, air. Priests have blood magic.
 
 Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blood sacrifice."
-#flag "./Warhammer-Complete/flag1.tga"
+#flag "./Warhammer-Complete/flag1DE.tga"
 #templepic 0
 #startsite "Naggarond"
 #startsite "Temple of Khaine"
@@ -19358,8 +19355,8 @@ Version 0,55
 -- High Elf Archer wo/ armor
 
 #newmonster 6001
-#spr1 "./Warhammer-Complete/Archer1.tga"
-#spr2 "./Warhammer-Complete/Archer2.tga"
+#spr1 "./Warhammer-Complete/Archer1HE.tga"
+#spr2 "./Warhammer-Complete/Archer2HE.tga"
 #name "Archer"
 #descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet."
 #clearweapons
@@ -20089,8 +20086,8 @@ Version 0,55
 
 #newmonster 6014
 #copystats 6001 - Spearman
-#spr1 "./Warhammer-Complete/Captain1.tga"
-#spr2 "./Warhammer-Complete/Captain2.tga"
+#spr1 "./Warhammer-Complete/Captain1HE.tga"
+#spr2 "./Warhammer-Complete/Captain2HE.tga"
 #name "Lothern Sea Guard Captain"
 #descr "The Sea Guards from Lothern are always in full force, and man the glorious warships of the High Elves. In war, they join the armies to secure beachheads and spearhead attacks on foreign shores. To be able to effectively fight at sea and be versatile enough, they are full trained with bows as well as with spears, combining the best aspects of Elf Spearmen and Archers. There is no doubt that the Sea Guard are the finest marines in the Old World and beyond. The captains of the Seaguard can sail across the seas with their Seaguard."
 #nametype 172	-Elven names
@@ -20960,7 +20957,7 @@ They can lead other birds and animals well."
 
 #selectnation 110
 #era 2
-#flag "./Warhammer-Complete/Flag.tga"
+#flag "./Warhammer-Complete/FlagHE.tga"
 #name "Ulthuan"
 #epithet "Guardians of the Flame"
 #descr "The origins of the High Elves are rooted in the nativity of the World. They were once the greatest and most powerful race in the whole world and their actions shaped history. Now their people are in decline, but still they fight on resolutely. For their diminishing race to survive, the High Elves must possess an army of unequalled skill. To this end all High Elves are taught from an early age to master the sword, spear and bow. Citizen soldiers form the core of their armies, while those completely devoted to the martial arts rank among the most fearful warriors in the old world. The High Elves were the first race to study magic and remain the greatest masters in the known world. Their magic is a siphon to chaos, and their skills in controlling, shaping and, when needed, draining magic are unsurpassed."
@@ -21207,7 +21204,7 @@ Version 1.1
 #newweapon 1307
 #name "Chaos Axe"
 #nratt 2
-#dmg 5
+#dmg 7
 #att 1
 #def -2
 #rcost 4
@@ -21975,7 +21972,7 @@ Version 1.1
 #xpshape 40
 #end
 
-#newmonster 4612 --Chaos Warrior Axe
+#newmonster 4612 --Chaos Warrior w/Axe
 #copystats 4600
 #spr1 "./Warhammer-Complete/chaoswarriorAxe1.tga"
 #spr2 "./Warhammer-Complete/chaoswarriorAxe2.tga"
@@ -21986,7 +21983,7 @@ Version 1.1
 #clearweapons
 #cleararmor
 
-#gcost 35
+#gcost 40
 #mor 13
 #hp 14
 #mr 12
@@ -21997,7 +21994,7 @@ Version 1.1
 #prec 12
 #prot 5
 
-#weapon "Battleaxe"
+#weapon 726 -- Chaos Battleaxe
 #weapon "Rusty Throwing Axe"
 #armor "Full Helmet"
 #armor 801 - Chaos Armor
@@ -22021,18 +22018,18 @@ Version 1.1
 #clearweapons
 #cleararmor
 
-#gcost 50
+#gcost 65
 #mor 14
 #hp 17
 #mr 13
 
 #str 14
-#att 17
-#def 16
+#att 16
+#def 15
 #prec 13
 #prot 5
 
-#weapon "Chaos Axe"
+#weapon 726 -- Chaos Battleaxe
 #weapon "Rusty Throwing Axe"
 #armor 193 --"Champions Helmet"
 #armor 801 - Chaos Armor
@@ -22113,7 +22110,7 @@ Version 1.1
 #clearweapons
 #cleararmor
 
-#gcost 35
+#gcost 40
 #mor 13
 #hp 14
 #mr 12
@@ -22148,14 +22145,14 @@ Version 1.1
 #clearweapons
 #cleararmor
 
-#gcost 50
+#gcost 65
 #mor 14
 #hp 17
 #mr 13
 
 #str 14
-#att 17
-#def 16
+#att 16
+#def 15
 #prec 13
 #prot 5
 
@@ -24513,7 +24510,7 @@ Priests: Khorne needs no priests."
 #prec 10
 #mr 11
 #mor 13
-#gcost 20
+#gcost 30
 #chaosrec 1
 #rcost 1
 #weapon 1452
@@ -24550,7 +24547,7 @@ Priests: Khorne needs no priests."
 #prec 10
 #mr 11
 #mor 13
-#gcost 20
+#gcost 30
 #chaosrec 1
 #rcost 1
 #weapon 1307 -- Chaos Axe
@@ -24594,7 +24591,7 @@ Priests: Khorne needs no priests."
 #armor 801
 #armor "Kite Shield"
 #mounted
-#gcost 50
+#gcost 60
 #coldres 3
 #chaosrec 3
 #rcost 6
@@ -24664,7 +24661,7 @@ Priests: Khorne needs no priests."
 #mr 13
 #prot 4
 #mor 15
-#gcost 50
+#gcost 65
 #chaosrec 3
 #rcost 1
 #weapon 1859 -- Chaos Flail
@@ -24704,7 +24701,7 @@ Priests: Khorne needs no priests."
 #mr 13
 #prot 4
 #mor 15
-#gcost 50
+#gcost 65
 #chaosrec 3
 #rcost 1
 #weapon 1307 -- Chaos Axe
@@ -33785,7 +33782,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Full Helmet"
 #armor "Kite Shield"
 #mounted
-#gcost 50
+#gcost 60
 #chaosrec 3
 #rcost 20
 #ressize 2
@@ -36477,31 +36474,31 @@ Nametypes 	162
 
 --FREESPAWN
 
-#newmonster 4530 -soulless
-#copystats 4550
-#clearweapons
-#cleararmor
-#name "Skeleton"
-#descr "Skeletal warriors of ancient times, reanimated to do battle with the living. "
-#spr1 "./Warhammer-Complete/Skeleton1.tga"
-#spr2 "./Warhammer-Complete/Skeleton2.tga"
+--#newmonster 4530 -soulless
+--#copystats 4550
+--#clearweapons
+--#cleararmor
+--#name "Skeleton"
+--#descr "Skeletal warriors of ancient times, reanimated to do battle with the living. "
+--#spr1 "./Warhammer-Complete/Skeleton1.tga"
+--#spr2 "./Warhammer-Complete/Skeleton2.tga"
 
-#hp 8
-#weapon "Claw"
-#end
+--#hp 8
+--#weapon "Claw"
+--#end
 
-#newmonster 4531 -ghoul
-#copystats 4551
-#name "Tomb Mummy"
-#descr "Mummies are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform."
-#spr1 "./Warhammer-Complete/Mummy.tga"
-#spr2 "./Warhammer-Complete/Mummy2.tga"
-#clearweapons
-#cleararmor
-#hp 8
-#weapon 20 -bite
-#armor "Rags"
-#end
+--#newmonster 4531 -ghoul
+--#copystats 4551
+--#name "Tomb Mummy"
+--#descr "Mummies are humans under the curse of Hunger. By eating the flesh of dead humans, their bodies and minds decay and transform."
+--#spr1 "./Warhammer-Complete/Mummy.tga"
+--#spr2 "./Warhammer-Complete/Mummy2.tga"
+--#clearweapons
+--#cleararmor
+--#hp 8
+--#weapon 20 -bite
+--#armor "Rags"
+--#end
 
 
 #newmonster 4532
@@ -38364,12 +38361,12 @@ emerging from their tombs to rebuild their lost kingdoms."
 #att 1
 #def 0
 #len 3
-
-#rcost 6
+#nratt 2
+#rcost 7
 #twohanded
 #slash
 #sound 10
-#armorpiercing
+
 #secondaryeffectalways 509
 #end
 
@@ -38379,10 +38376,10 @@ emerging from their tombs to rebuild their lost kingdoms."
 #armorpiercing
 #aoe 1
 #bonus
+#len 0
 #dmg 10
 #att 0
 #def 0
-#len 0
 #fire
 #magic
 #hardmrneg
@@ -38932,7 +38929,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #prec 10
 #mr 14
 #mor 13
-#gcost 20
+#gcost 30
 #chaosrec 1
 #rcost 1
 #coldres 3
@@ -38966,7 +38963,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #prec 10
 #mr 14
 #mor 13
-#gcost 20
+#gcost 30
 #chaosrec 1
 #rcost 1
 #coldres 3
@@ -39003,13 +39000,13 @@ emerging from their tombs to rebuild their lost kingdoms."
 #coldres 3
 #itemslots 13446
 #weapon "Lance"
-#weapon "Broad Sword"
+#weapon 1853 -- Chaos Broadsword
 #weapon 56
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
 #mounted
-#gcost 50
+#gcost 60
 #chaosrec 3
 #rcost 6
 #ressize 2
@@ -39074,7 +39071,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #prec 10
 #mr 15
 #mor 15
-#gcost 50
+#gcost 65
 #chaosrec 3
 #rcost 1
 #coldres 5
@@ -39111,7 +39108,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #prec 10
 #mr 15
 #mor 15
-#gcost 50
+#gcost 65
 #chaosrec 3
 #rcost 1
 #coldres 5
@@ -40263,7 +40260,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #name "Screamer of Tzeentch"
 #nametype 235
 #descr "From the ether of Chaos come the Screamers, glimmering sky-sharks that ride upon the Winds of Magic as a bird glides upon the breeze. Festooned with fangs, horns, and spurs, they dive. Trailing multi-coloured tendrils in the air, their slashing blades tear through the enemy before they soar skywards once more. Screamers have no real conscious thought, existing merely on instinct and mindlessly hunting along the Winds of Magic for mortal souls. When a Chaos army gathers, they are drawn down from the Realm of Chaos by the pulses of emotion, attracted to battlefields by the carnage and hatred generated. Here they gather in shoals, diving down upon the enemy and feasting on the escaping souls of the slain."
-#ap 24
+#ap 12
 #mapmove 3
 #hp 10
 #prot 10
@@ -40871,7 +40868,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #fatiguecost 1500
 #effect 10001
 #damage 4812
-#nreff 10
+#nreff 9
 #end
 
 -- Herald
