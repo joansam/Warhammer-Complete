@@ -24511,7 +24511,7 @@ Priests: Khorne needs no priests."
 #mr 11
 #mor 13
 #gcost 30
-#chaosrec 1
+#chaosrec 2
 #rcost 1
 #weapon 1452
 #armor "Full Helmet"
@@ -24548,7 +24548,7 @@ Priests: Khorne needs no priests."
 #mr 11
 #mor 13
 #gcost 30
-#chaosrec 1
+#chaosrec 2
 #rcost 1
 #weapon 1307 -- Chaos Axe
 #armor "Full Helmet"
@@ -24624,10 +24624,10 @@ Priests: Khorne needs no priests."
 #prec 10
 #mr 12
 #mor 13
-#gcost 20
-#chaosrec 1
+#gcost 40
+#chaosrec 2
 #rcost 1
-#weapon "Short Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -25044,8 +25044,7 @@ Priests: Khorne needs no priests."
 #magicskill 6 1
 #custommagic 28672 100
 #custommagic 28672 10
-#researchbonus 1
-#gcost 125
+#gcost 10000
 #rcost 1
 #weapon "Fist"
 #armor "Robes"
@@ -38910,7 +38909,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #mr 14
 #mor 13
 #gcost 30
-#chaosrec 1
+#chaosrec 2
 #rcost 1
 #coldres 3
 #weapon "Broad Sword"
@@ -38944,7 +38943,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #mr 14
 #mor 13
 #gcost 30
-#chaosrec 1
+#chaosrec 2
 #rcost 1
 #coldres 3
 #weapon "Axe"
@@ -39016,11 +39015,11 @@ emerging from their tombs to rebuild their lost kingdoms."
 #prec 10
 #mr 14
 #mor 13
-#gcost 20
-#chaosrec 1
+#gcost 40
+#chaosrec 2
 #rcost 1
 #coldres 3
-#weapon "Short Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Kite Shield"
 #armor "Full Helmet"
 #armor 801
@@ -39402,6 +39401,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #name "Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. However, only those deemed worthy by the Great Sorcerer Himself are marked by the Changer of Ways, and their power is indeed greater than that of those Chaos Sorcerers who follow the other Dark Gods."
+#gcost 10000
 #ap 10
 #mapmove 2
 #hp 10
@@ -39418,8 +39418,6 @@ emerging from their tombs to rebuild their lost kingdoms."
 #magicskill 7 1
 #custommagic 2432 100 -- SFA
 #custommagic 16768 10 -- FAB
-#gcost 125
-#researchbonus 1
 #rcost 1
 #weapon "Fist"
 #armor "Robes"

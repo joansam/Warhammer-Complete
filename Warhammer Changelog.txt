@@ -1,6 +1,7 @@
 Version .72 (.71 was Slaanesh changes)
 -- Nurgle's diseaseres completely redone. Most humans now have some disease vulnerability, but daemons are immune.
 	Previously, some humans were immune, some humans and most daemons had low or no diseaseres.
+-- Nurgle and Tzeentch sorcerers autocalced from 125 gold, also removed adept researcher.
 
 Version .70 - Still JoanSam
 -- Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
