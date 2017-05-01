@@ -34685,8 +34685,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #heal
 #coldres 10
 #poisonres 10
-#fireres 10
-#shockres 10
 #end
 
 -- Sigvald the Magnificent
@@ -34736,8 +34734,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #heal
 #coldres 15
 #poisonres 15
-#fireres 15
-#shockres 15
 #end
 
 -- Styrkaar
@@ -34833,8 +34829,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #neednoteat
 #coldres 15
 #poisonres 15
-#fireres 15
-#shockres 15
 #prot 15
 #heal
 #fear 5
@@ -34890,8 +34884,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #itemslots 28672
 #magicpower 1
 #demon
-#fireres 10
-#shockres 10
 #end
 
 -- Chosen Lord of Slaanesh
@@ -34937,8 +34929,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #coldres 10
 #researchbonus -12
 #poisonres 5
-#fireres 5
-#shockres 5
 #heal
 #okundeadleader
 #magicskill 7 2
@@ -35011,7 +35001,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #maxage 10000
 #poisonres 5
 #coldres 10
-#shockres 5
 #demon
 #spy
 #awe 3
@@ -35027,8 +35016,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 1854
 #weapon 1854
 #coldres 15
-#fireres 5
-#shockres 5
 #goodundeadleader
 #end
 
@@ -35103,8 +35090,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 1851
 #weapon 1851
 #coldres 10
-#fireres 5
-#shockres 5
 #end
 
 
@@ -35183,8 +35168,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #demon
 #magicpower 2
 #coldres 20
-#fireres 20
-#shockres 20
 #itemslots 15494
 #batstartsum1d6 6538
 #spreaddom 1
@@ -35223,8 +35206,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #itemslots 15494
 #startage 4000
 #maxage 10000
-#magicskill 5 2
 #magicskill 2 3
+#magicskill 7 3
+#magicskill 8 3
+#magicskill 5 2
+#custommagic 6144 200
 #expertleader
 #expertundeadleader
 #awe 5
@@ -35232,12 +35218,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #demon
 #female
 #magicpower 2
-#magicskill 7 3
-#custommagic 6656 200
-#magicskill 8 3
 #weapon 1855
-#fireres 15
-#shockres 15
 #end
 
 
@@ -35268,8 +35249,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #startdom 3
 #coldres 10
 #poisonres 10
-#fireres 10
-#shockres 10
 #itemslots 15494
 #startage 4000
 #maxage 10000
@@ -35338,8 +35317,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #demon
 #coldres 25
 #poisonres 20
-#fireres 20
-#shockres 20
 #weapon "fist"
 #heal
 #awe 4
@@ -35360,7 +35337,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as one of his Greater Daemons, and will lead his armies to everlasting bliss."
 #magicskill 2 1
 #magicskill 5 1
-#magicskill 7 2
+#magicskill 7 1
 #hp 120
 #size 6
 #prot 18
@@ -35378,8 +35355,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 1857 -- Slaaneshi Claws
 #magicpower 2
 #coldres 25
-#fireres 20
-#shockres 20
 #poisonres 20
 #regeneration 10
 #heal
