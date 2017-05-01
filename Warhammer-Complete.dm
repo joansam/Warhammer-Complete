@@ -24102,7 +24102,7 @@ Priests: Khorne needs no priests."
 #wastesurvival
 #forestsurvival
 #mountainsurvival
-#diseaseres 50
+#diseaseres 90
 #end
 
 -- Bile Troll
@@ -24140,6 +24140,7 @@ Priests: Khorne needs no priests."
 #startage 250
 #swampsurvival
 #wastesurvival
+#diseaseres 100
 #end
 
 
@@ -24256,7 +24257,7 @@ Priests: Khorne needs no priests."
 #pillagebonus 1
 #forestsurvival
 #stealthy 0
-#diseaseres 50
+#diseaseres 90
 #end
 
 -- Ungor of Nurgle
@@ -24288,7 +24289,7 @@ Priests: Khorne needs no priests."
 #armor "Shield"
 #pillagebonus 1
 #forestsurvival
-#diseaseres 25
+#diseaseres 80
 #end
 
 -- Ungor Raider
@@ -24321,7 +24322,7 @@ Priests: Khorne needs no priests."
 #weapon 9
 #pillagebonus 1
 #forestsurvival
-#diseaseres 25
+#diseaseres 80
 #end
 
 -- Forsaken
@@ -24397,7 +24398,7 @@ Priests: Khorne needs no priests."
 #pillagebonus 1
 #wastesurvival
 #mountainsurvival
-#diseaseres 25
+#diseaseres 60
 #end
 
 -- Marauders of Nurgle #2
@@ -24430,7 +24431,7 @@ Priests: Khorne needs no priests."
 #wastesurvival
 #mountainsurvival
 #pillagebonus 1
-#diseaseres 25
+#diseaseres 60
 #end
 
 -- Marauder #1 - foreignrec
@@ -24486,7 +24487,7 @@ Priests: Khorne needs no priests."
 #mountainsurvival
 #pillagebonus 1
 #coldres 3
-#diseaseres 25
+#diseaseres 60
 #end
 
 -- Warrior of Nurgle #1
@@ -24522,7 +24523,7 @@ Priests: Khorne needs no priests."
 #coldres 3
 #startage 28
 #maxage 900
-#diseaseres 100
+#diseaseres 80
 #end
 
 
@@ -24559,7 +24560,7 @@ Priests: Khorne needs no priests."
 #coldres 3
 #startage 26
 #maxage 900
-#diseaseres 100
+#diseaseres 80
 #end
 
 -- Plague knights
@@ -24595,7 +24596,7 @@ Priests: Khorne needs no priests."
 #chaosrec 3
 #rcost 6
 #ressize 2
-#diseaseres 100
+#diseaseres 90
 #poisonres 15
 #wastesurvival
 #mountainsurvival
@@ -24637,7 +24638,7 @@ Priests: Khorne needs no priests."
 #mountainsurvival
 #startage 28
 #maxage 900
-#diseaseres 100
+#diseaseres 80
 #end
 
 -- Chosen of Nurgle #1
@@ -24677,7 +24678,7 @@ Priests: Khorne needs no priests."
 #coldres 5
 #startage 34
 #maxage 1200
-#diseaseres 100
+#diseaseres 90
 #end
 
 -- Chosen of Nurgle #2
@@ -24717,7 +24718,7 @@ Priests: Khorne needs no priests."
 #coldres 5
 #startage 34
 #maxage 1200
-#diseaseres 100
+#diseaseres 90
 #end
 
 ------- COMMANDERS
@@ -24756,7 +24757,7 @@ Priests: Khorne needs no priests."
 #startage 30
 #maxage 150
 #userestricteditem 6565
-#diseaseres 25
+#diseaseres 80
 #end
 
 -- Cultist (foreignrec)
@@ -24850,7 +24851,7 @@ Priests: Khorne needs no priests."
 #weapon 9
 #pillagebonus 1
 #forestsurvival
-#diseaseres 25
+#diseaseres 80
 #end
 
 -- Doombull of Nurgle
@@ -24938,7 +24939,7 @@ Priests: Khorne needs no priests."
 #deathdisease 4
 #poisonres 25
 #heal
-#diseaseres 50
+#diseaseres 80
 #end
 
 -- Marauder Chieftain
@@ -24978,7 +24979,7 @@ Priests: Khorne needs no priests."
 #mountainsurvival
 #pillagebonus 1
 #sailing 999 3
-#diseaseres 25
+#diseaseres 60
 #end
 
 -- Bray-Shaman
@@ -25016,7 +25017,7 @@ Priests: Khorne needs no priests."
 #maxage 1500
 #stealthy 0
 #poisonres 25
-#diseaseres 50
+#diseaseres 90
 #end
 
 
@@ -25052,7 +25053,7 @@ Priests: Khorne needs no priests."
 #startage 45
 #maxage 1500
 #coldres 3
-#diseaseres 50
+#diseaseres 60
 #end
 
 -- Exalted Sorcerer of Nurgle
@@ -25089,7 +25090,7 @@ Priests: Khorne needs no priests."
 #startage 150
 #maxage 2500
 #coldres 3
-#diseaseres 50
+#diseaseres 90
 #end
 
 -- Sorcerer Lord
@@ -25127,7 +25128,7 @@ Priests: Khorne needs no priests."
 #startage 250
 #maxage 5000
 #coldres 3
-#diseaseres 50
+#diseaseres 100
 #end
 
 -- Champion of Nurgle
@@ -25173,7 +25174,7 @@ Priests: Khorne needs no priests."
 #wastesurvival
 #mountainsurvival
 #xpshape 50
-#diseaseres 100
+#diseaseres 90
 #prophetshape 5015
 #end
 
@@ -25430,6 +25431,7 @@ Priests: Khorne needs no priests."
 #invulnerable 25
 #magicpower 1
 #itemslots 13446
+#diseaseres 100
 #end
 
 -- Valnir the Reaper
@@ -25479,6 +25481,7 @@ Priests: Khorne needs no priests."
 #onebattlespell "Blessing"
 #wastesurvival
 #mountainsurvival
+#diseaseres 100
 #end
 
 -- Festus the Leechlord
@@ -25568,6 +25571,7 @@ Priests: Khorne needs no priests."
 #onebattlespell 155
 #batstartsum3 -69402
 #itemslots 13446
+#diseaseres 100
 #end
 
 ----------- Daemon Summonables ------------
@@ -25606,6 +25610,7 @@ Priests: Khorne needs no priests."
 #magicpower 1
 #invulnerable 15
 #heal
+#diseaseres 100
 #end
 
 -- Nurgling #1
@@ -25643,6 +25648,7 @@ Priests: Khorne needs no priests."
 #montag 69402
 #stealthy 0
 #heal
+#diseaseres 100
 #end
 
 -- Nurgling #2
@@ -25680,6 +25686,7 @@ Priests: Khorne needs no priests."
 #montag 69402
 #stealthy 0
 #heal
+#diseaseres 100
 #end
 
 -- Nurgling #3
@@ -25717,6 +25724,7 @@ Priests: Khorne needs no priests."
 #montag 69402
 #stealthy 0
 #heal
+#diseaseres 100
 #end
 
 -- Herald of Nurgle
@@ -25760,6 +25768,7 @@ Priests: Khorne needs no priests."
 #magicpower 1
 #invulnerable 20
 #heal
+#diseaseres 100
 #end
 
 -- Beast of Nurgle
@@ -25801,6 +25810,7 @@ Priests: Khorne needs no priests."
 #itemslots 12288
 #slimer 1
 #heal
+#diseaseres 100
 #end
 
 -- Chaos Fury
@@ -25836,6 +25846,7 @@ Priests: Khorne needs no priests."
 #neednoteat
 #holy
 #magicpower 1
+#diseaseres 100
 #end
 
 -- Plague Drone
@@ -25882,6 +25893,7 @@ Priests: Khorne needs no priests."
 #itemslots 12288
 #holy
 #heal
+#diseaseres 100
 #end
 
 -- Rot Fly (Plague Drone second form)
@@ -25926,6 +25938,7 @@ Priests: Khorne needs no priests."
 #undisciplined
 #holy
 #heal
+#diseaseres 100
 #end
 
 -- Great Unclean One
@@ -25973,6 +25986,7 @@ Priests: Khorne needs no priests."
 #magicpower 1
 #poisonres 75
 #heal
+#diseaseres 100
 #end
 
 ----------- PRETENDERS, Daemon Prince of Nurgle and Sorcerer Lord of Nurgle
@@ -26021,6 +26035,7 @@ Priests: Khorne needs no priests."
 #deathdisease 6
 #magicpower 1
 #neednoteat
+#diseaseres 100
 #end
 
 -- Sorcerer Lord of Nurgle Pretender
@@ -33192,6 +33207,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 
 
+--Start copying here
+
 -- SLAANESH WARHOST
 
 
@@ -33698,7 +33715,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
 #name "Chaos Warrior"
 #nametype 115
-#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
+#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. This warrior bears the Mark of Slaanesh, strengthening his lust and desire for battle."
 #ap 12
 #mapmove 1
 #hp 14
@@ -33849,7 +33866,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 10
 #mr 14
 #mor 17
-#gcost 70
+#gcost 60
 #chaosrec 2
 #rcost 1
 #coldres 5
@@ -33859,7 +33876,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Kite Shield"
 #holy
 #itemslots 14470
-
 #wastesurvival
 #startage 34
 #maxage 1200
@@ -33893,7 +33909,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Kite Shield"
 #holy
 #itemslots 14470
-
 #wastesurvival
 #startage 34
 #maxage 1200
@@ -34413,7 +34428,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 10000
 #ap 12
 #mapmove 2
-#hp 15
+#hp 10
 #size 2
 #str 10
 #enc 3
@@ -34447,7 +34462,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 9965
 #ap 12
 #mapmove 2
-#hp 20
+#hp 14
 #size 2
 #str 10
 #enc 3
@@ -34483,7 +34498,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 12
 #gcost 9940
 #mapmove 2
-#hp 30
+#hp 20
 #size 2
 #str 12
 #enc 3
@@ -34518,6 +34533,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are the greatest fighters of the Chaos worshippers. Their presence on the battlefield can turn the tide of a closely fought combat. The Champions of Slaanesh surrender themselves completely to the excesses that are personified by their god, the Dark Prince."
+#gcost 10020
 #ap 12
 #mapmove 2
 #hp 20
@@ -34529,8 +34545,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 12
 #mr 14
 #mor 17
-#gcost 10030
-#chaosrec 2
+#chaosrec 3
 #rcost 1
 #holy
 #okleader
@@ -34556,6 +34571,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Chaos Champion. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them. They have also gained powers in the cult of Slaanesh, although these are limited."
+#gcost 10030
 #ap 12
 #mapmove 2
 #hp 28
@@ -34567,8 +34583,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 12
 #mr 15
 #mor 18
-#gcost 10040
-#chaosrec 3
+#chaosrec 4
 #rcost 1
 #holy
 #undcommand 5
@@ -34792,7 +34807,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/Azazel_2.tga"
 #name "Prince of Damnation"
 #fixedname "Azazel"
-#descr "In the ancient past, Azazel was the chief of the Gerreon tribe, one of the twelve human tribes united by Sigmar, whom Azazel betrayed. After his betrayal, he fled to the Chaos Wastes where he pledged his eternal loyalty to the Dark Prince, and was in return gifted with Daemonhood. Now, he leads the armies of Slaanesh. But he is so much more than just that. Indeed, he sees into the very hearts and souls of men, and even their deepest desires and hidden passions are plain to him. With his silvery voice Azazel whispers to his opponents, promising them all they have ever desired if they abandon the folly of opposing Slaanesh and embrace the Prince of Chaos instead. And few are those who can resist his temptations; all who know of him dread to face him in battle, for the cost of losing to Azazel is not only th death of the body, but the damnation of the soul as well."
+#descr "In the ancient past, Azazel was the chief of the Gerreon tribe, one of the twelve human tribes united by Sigmar, whom Azazel betrayed. After his betrayal, he fled to the Chaos Wastes where he pledged his eternal loyalty to the Dark Prince, and was in return gifted with Daemonhood. Now, he leads the armies of Slaanesh. But he is so much more than just that. Indeed, he sees into the very hearts and souls of men, and even their deepest desires and hidden passions are plain to him. With his silvery voice Azazel whispers to his opponents, promising them all they have ever desired if they abandon the folly of opposing Slaanesh and embrace the Prince of Chaos instead. And few are those who can resist his temptations; all who know of him dread to face him in battle, for the cost of losing to Azazel is not only the death of the body, but the damnation of the soul as well."
 #ap 20
 #mapmove 3
 #hp 88
@@ -34818,14 +34833,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #holy
 #inspirational 1
 #expertleader
-#command 40
-#goodundeadleader
+#expertundeadleader
 #awe 4
 #flying
 #magicpower 2
 #demon
 #seduce 20
-#onebattlespell "Divine Blessing"
 #neednoteat
 #coldres 15
 #poisonres 15
@@ -35305,8 +35318,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #str 15
 #def 12
 #enc 1
- #mor 50
-#inanimate
+#mor 50
 #magicbeing
 #mapmove 3
 #prec 15
@@ -35316,7 +35328,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #enc 1
 #demon
 #coldres 25
-#poisonres 20
+#poisonres 25
 #weapon "fist"
 #heal
 #awe 4
@@ -35329,7 +35341,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newmonster 4214
 #nametype 257
 #startdom 3
-#gcost 10020
+#gcost 10050
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
@@ -35350,11 +35362,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #enc 1
 #prec 15
 #mor 50
-#inanimate
 #demon
 #magicpower 2
 #coldres 25
-#poisonres 20
+#poisonres 25
 #regeneration 10
 #heal
 #itemslots 31872
@@ -35365,10 +35376,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #expertundeadleader
 #fear 10
 #awe 6
-#weapon 1852
+#weapon 1852 -- Aura
 #weapon 1857 -- Slaaneshi Claws
 #weapon 1857
-#weapon 1861
+#weapon 1861 -- Daemonic Tentacles
 #end
 
 
@@ -35514,7 +35525,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 
 #newspell
-#name "Summon the Furies"
+#name "Summon Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Slaanesh cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
 #restricted 159
 #school 6
@@ -35524,7 +35535,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #fatiguecost 1200
 #effect 10001
 #damage 6539
-#nreff 8
+#nreff 7
 #end
 
 -- Combat spells --

@@ -9,11 +9,15 @@ To-Do - Main Tasks:
 Thoughts/Less Urgent:
 
 Chaos:
+Nurgle's daemons don't have diseaseres
+Also should maybe decrease the diseaseres of their humans - for example, warriors to 90.
+Also need to update Chaosrec for Nurgle and Tzeentch's warriors, chosen and cav.
 Weapon standardization - fun stuff...
 Chaos Broadsword, Hammer, Mace, etc.
 Chaos armor
 Scythetalons
 Look at screamers and flamers
+Remove Nurgle sorc research boost
 
 Dwarfs:
 Dwarf Pretender, Brother of War, is too powerful (6 paths, 80 point cost), move to autocost minus something.

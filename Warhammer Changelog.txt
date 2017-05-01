@@ -1,3 +1,7 @@
+Version .72 (.71 was Slaanesh changes)
+-- Nurgle's diseaseres completely redone. Most humans now have some disease vulnerability, but daemons are immune.
+	Previously, some humans were immune, some humans and most daemons had low or no diseaseres.
+
 Version .70 - Still JoanSam
 -- Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
    since there's no way to know what they wanted. Thought I had already done these a while ago...maybe I lost the version somewhere.
