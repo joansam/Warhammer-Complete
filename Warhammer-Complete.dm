@@ -35144,7 +35144,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #str 22
 #att 16
 #def 16
-#prec 15
+#prec 12
 #mr 21
 #mor 30
 #gcost 0
@@ -35193,7 +35193,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #enc 1
 #att 16
 #def 18
-#prec 13
+#prec 14
 #mr 18
 #mor 30
 #gcost 0
@@ -35329,7 +35329,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #newmonster 4214
 #nametype 257
 #startdom 3
-#gcost 10000
+#gcost 10020
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
@@ -35352,7 +35352,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 50
 #inanimate
 #demon
-#weapon 1857 -- Slaaneshi Claws
 #magicpower 2
 #coldres 25
 #poisonres 20
@@ -35367,6 +35366,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #fear 10
 #awe 6
 #weapon 1852
+#weapon 1857 -- Slaaneshi Claws
 #weapon 1857
 #weapon 1861
 #end
