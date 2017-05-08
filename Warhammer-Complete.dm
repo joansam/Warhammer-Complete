@@ -50037,7 +50037,7 @@ Priests: Average."
 Military: Skink skirmishers, powerful Saurus warriors and large jungle creatures.
 Magic: Extremely powerful Astral, Nature and Elemental magic with a separate path into Blood.
 Priests: Very Powerful. Prefer heat scale 2."
-#flag "./Warhammer_Lizardmen/flag.tga"
+#flag "./Warhammer-Complete/flagLZ.tga"
 #templepic 14
 #startsite "The Great Pyramid"
 #startsite "Spawning Pools"
