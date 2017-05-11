@@ -1183,7 +1183,7 @@
 #trample
 #reinvigoration 10
 #armor "iron cap"
-#armor "ringmail hauberk"
+#armor "ring mail hauberk"
 #weapon "Warp Blade"
 #weapon "Whirling Blades"
 #weapon 1923
@@ -5631,7 +5631,7 @@ Priests: Powerful, can perform blood sacrifices"
 #descr "Some Bretonnian Knight Lords have the necessary courage and wealth to choose a Bretonnian Pegasus as their mount. Flying mount is a great aid in their lordly tasks, allowing them to easily patrol their fief to find hidden raiders and bandits.  Pegasus Lords are often seen leading a force of Pegsaus Knights when speed is of the essence. Pegasus Lords do not often lead large forces and are inexperienced in commanding large armies. Pegasus lords are accompanied by a fellow pegasus knight as a bodyguard."
 #str 12
 #prot 0
-#weapon "broadsword"
+#weapon "broad sword"
 #weapon 56 -- WH
 #weapon "lance"
 #armor "Kite Shield"
@@ -5671,7 +5671,7 @@ Priests: Powerful, can perform blood sacrifices"
 #descr "Some Bretonnian Knight Lords have the necessary courage and wealth to choose a Bretonnian Pegasus as their mount. Flying mount is a great aid in their lordly tasks, allowing them to easily patrol their fief to find hidden raiders and bandits.  Pegaus Lords are often seen leading a force of Pegaus Knights when speed is of the essence. Pegasus Lords do not often lead large forces and are inexperienced in commanding large armies. Pegasus lords are accompanied by a fellow pegasus knight as a bodyguard."
 #str 12
 #prot 0
-#weapon "broadsword"
+#weapon "broad sword"
 #weapon 56 -- WH
 #weapon "lance"
 #armor "Kite Shield"
@@ -7149,21 +7149,21 @@ Priests: Powerful."
 
 ---------------------------------
 
-monster ids: 5100-5151 (But not 5132)
+--monster ids: 5100-5151 (But not 5132)
 
-weapons ids: 1170-1190
+--weapons ids: 1170-1190
 
-armour ids: 259-264 (But not 260)
+--armour ids: 259-264 (But not 260)
 
-site ids: 1900-1901
+--site ids: 1900-1901
 
-nation id: 178 (MA)
+--nation id: 178 (MA)
 ---------------------------------VERSION 0.715
 
 -- Mountain Hydra spell now castable again.
 -- New magic path bug fix. Now correct:
-Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
-Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
+--Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
+--Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
 
 --The Dark Elves do not battlesummon the following undead:
 --Animate Skeleton		773
@@ -7173,16 +7173,16 @@ Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
 --Horde of skeletons	818
 
 ---------------------------------VERSION 0.714
-New magic paths:
+--New magic paths:
 
-Coven initiate 		D1S1	+100% AWD1
-Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
-Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
+--Coven initiate 		D1S1	+100% AWD1
+--Coven Sorceress 	D2S2A1	+100% AWD1 +10 AWE
+--Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
 
 
 ---------------------------------VERSION 0.713 (by Deathjester)
 
-- HP upped by 1 for most troops, 2 for some elites. Commander HP generally upped by 2.
+-- HP upped by 1 for most troops, 2 for some elites. Commander HP generally upped by 2.
 --str increased to a baseline of 10 	DE does have murderous prowess and should deal good damage.
 --morale baseline increased 11->12, generally all units morale increased by 1
 --Almost all commanders given sailing ability, but restricted to themselves.
@@ -7194,255 +7194,255 @@ Supreme Sorceress	D3S2A2	+100% AWD1 +30% AWES1
 -- Draich users, most notably Executioners, given Killing Blow weapon that triggers 50% of the time, giving them AP attacks.
 
 --Corsairs:
-att and def 13->12
-gcost 15->20
-heavier armour, sea dragon cloak is now a bonus armor (+4 armor), and given half helmet
+--att and def 13->12
+--gcost 15->20
+--heavier armour, sea dragon cloak is now a bonus armor (+4 armor), and given half helmet
 
 --dark riders 
-hp 12->10, 
-att/def 13->12
-prec 13-12
-ap 26->28
-pillagebonus 3->2
-ressize 2
-gcost 23->34
+--hp 12->10, 
+--att/def 13->12
+--prec 13-12
+--ap 26->28
+--pillagebonus 3->2
+--ressize 2
+--gcost 23->34
 
 --Cold one knights
-hp 10->11
-str 9->12
-morale 12->14
-enc 7->5
-helmet changed to half helmet
-armor changed to plate hauberk, their armor save is 2+ in tabletop
-shields added
-gcost 40->60
-reclimit 5
-Cold One Knights #mounted
+--hp 10->11
+--str 9->12
+--morale 12->14
+--enc 7->5
+--helmet changed to half helmet
+--armor changed to plate hauberk, their armor save is 2+ in tabletop
+--shields added
+--gcost 40->60
+--reclimit 5
+--Cold One Knights #mounted
 
 --witch elves 
-enc 2->3
-def 11->12
-frenzy 3->4
-morale 12->15
-ap 16->14
+--enc 2->3
+--def 11->12
+--frenzy 3->4
+--morale 12->15
+--ap 16->14
 
 --executioner
-hp 9->10
-att 13->14
-def 12->13
-str 9->11
-morale 12->13
-mapmove 1->2
-gcost 30
-reclimit 5
+--hp 9->10
+--att 13->14
+--def 12->13
+--str 9->11
+--morale 12->13
+--mapmove 1->2
+--gcost 30
+--reclimit 5
 
 --shades 
-patrolbonus 3->2
-att 12->14
-def 12->13
-morale 11->13
-gcost 25
-reclimit 5
+--patrolbonus 3->2
+--att 12->14
+--def 12->13
+--morale 11->13
+--gcost 25
+--reclimit 5
 
 --Black Guard 
-eternal hatred
-formation fighter
-hp 11
-def 14->13
-str 10->11
-mr 11->12
-mor 14->15
-mapmove 1->2
-gcost 32
-reclimit 5
-armor changed to "full scale mail"
+--eternal hatred
+--formation fighter
+--hp 11
+--def 14->13
+--str 10->11
+--mr 11->12
+--mor 14->15
+--mapmove 1->2
+--gcost 32
+--reclimit 5
+--armor changed to "full scale mail"
 
 --Sea dragon riders
-hp 10->11
-str 9->12
-morale 11->14
-enc 4
+--hp 10->11
+--str 9->12
+--morale 11->14
+--enc 4
 
 --Sisters of slaughter
-holy
-illusion
-another weapon: "Slaughter Blade" - normal damage but double damage vs larger
-gcost 20
- 
+--holy
+--illusion
+--another weapon: "Slaughter Blade" - normal damage but double damage vs larger
+--gcost 20
+
 --Bloodshades
-att/def 13->14
-morale 13->14
+--att/def 13->14
+--morale 13->14
 
 --assassin 
-mr 11->12
-morale 14->15
+--mr 11->12
+--morale 14->15
 
 --corsair captain
-hp 10->11
-prec 12->13
-pillagebonus 10->7, still more than any other commander
+--hp 10->11
+--prec 12->13
+--pillagebonus 10->7, still more than any other commander
 
 --Dreadlord
-str 11->12
-prec 12->13
-mr 11->12
-enc 3->2
+--str 11->12
+--prec 12->13
+--mr 11->12
+--enc 3->2
 
 --hags
-mr 12->13
-morale 15->16
+--mr 12->13
+--morale 15->16
 
 --sorceresses
-mr +1
+--mr +1
 
 --supr sorceresses
-mr +1
-morale +1
+--mr +1
+--morale +1
 
 --death hag
-morale 14->15
+--morale 14->15
 
 --Cold One Lord
-str 9->12
-prec 12->13
-MR 11->12
-enc 7->5
+--str 9->12
+--prec 12->13
+--MR 11->12
+--enc 7->5
 
 
 
 ---------------------------------VERSION 0.70
 
--Dreadlord price changed to 100 (from 150).
--Cold One Lord price changed to 120 (from 180).
--Beasttamer price changed to 90 (from 150).
--Slaaneshi Cultist price changed to 75 (from 100)
--Harpy price changed to 10 (from 15)
--Lowered the price of dark elf crossbowmen by 1.
--Gave the Witch King a level of blood magic.
--Witch king is now size 4, but has 50 health.
--Removed likesterr tag
--Removed dark elves with pikes. They don't have those on the tabletop.
--Lowered the price of some troops across the board.
--More updated sprites
+--Dreadlord price changed to 100 (from 150).
+--Cold One Lord price changed to 120 (from 180).
+--Beasttamer price changed to 90 (from 150).
+--Slaaneshi Cultist price changed to 75 (from 100)
+--Harpy price changed to 10 (from 15)
+--Lowered the price of dark elf crossbowmen by 1.
+--Gave the Witch King a level of blood magic.
+--Witch king is now size 4, but has 50 health.
+--Removed likesterr tag
+--Removed dark elves with pikes. They don't have those on the tabletop.
+--Lowered the price of some troops across the board.
+--More updated sprites
 
 ---------------------------------VERSION 0.62
 
--Changed modname to 'Warhammer MA: Dark Elves'
+--Changed modname to 'Warhammer MA: Dark Elves'
 
 ---------------------------------VERSION 0.61
 
 
--Several bugs fixed with the mod involving the new version of Dom4.
--Lowered the price of sea dragon riders to 100 (From 150).
--Buffed Fellheart a bit with +1 defense.
--Made Supreme Sorceresses worth their price. They gain another random level of magic
--The Witch King fell into uselessness. Restored his level of astral magic and improved his leadership and health.
--Cultist price reduced to 100.
--Hag Queen now has an attack sprite.
--Better sprites all around, especially in the items department. Mostly just adding some polish to make them not so ...dark?
--Made MC compatable.
+--Several bugs fixed with the mod involving the new version of Dom4.
+--Lowered the price of sea dragon riders to 100 (From 150).
+--Buffed Fellheart a bit with +1 defense.
+--Made Supreme Sorceresses worth their price. They gain another random level of magic
+--The Witch King fell into uselessness. Restored his level of astral magic and improved his leadership and health.
+--Cultist price reduced to 100.
+--Hag Queen now has an attack sprite.
+--Better sprites all around, especially in the items department. Mostly just adding some polish to make them not so ...dark?
+--Made MC compatable.
 
 ---------------------------------VERSION 0.60
 
-New Unit: Sister of Slaughter
+--New Unit: Sister of Slaughter
 
-New Commander: Cold One Lord
+--New Commander: Cold One Lord
 
--Improved a few more sprites
--Buffed Doomfire warlocks and the Endless a little
--Cauldron of Blood has cleanshape now
+--Improved a few more sprites
+--Buffed Doomfire warlocks and the Endless a little
+--Cauldron of Blood has cleanshape now
 
 ---------------------------------VERSION 0.50
 
-New Multihero: 	- Cauldron of Blood
+--New Multihero: 	- Cauldron of Blood
 
-New Unit:	- Mountain Hydra
+--New Unit:	- Mountain Hydra
 
-New Spells:	- Call Mountain Hydra
+--New Spells:	- Call Mountain Hydra
 
--Reduced Slaaneshi Cultist price to 130 (from 150)
--You can see all Malus the Darkblade's description now
--Manitcore rider hp improvement to 75 (from 40)
--Removed portions of the manticore rider description
--Raised the cost of "Call Doomfire Warlocks" a bit
--Lifetaker crossbows are super deadly, like wow. Const level 4 and a price increase.
--'Great Temple of Khaine' renamed to 'Temple of Khaine'
--More sprite modifications
--Hag Queen "Main Gauge' exchanged for 'Falchion'
+--Reduced Slaaneshi Cultist price to 130 (from 150)
+--You can see all Malus the Darkblade's description now
+--Manitcore rider hp improvement to 75 (from 40)
+--Removed portions of the manticore rider description
+--Raised the cost of "Call Doomfire Warlocks" a bit
+--Lifetaker crossbows are super deadly, like wow. Const level 4 and a price increase.
+--'Great Temple of Khaine' renamed to 'Temple of Khaine'
+--More sprite modifications
+--Hag Queen "Main Gauge' exchanged for 'Falchion'
 
 ---------------------------------VERSION 0.40
 
-New Hero:	- Hag Queen
+--New Hero:	- Hag Queen
 
--Added a thematic deathfire tag to the Master of Assassins
--Nerfed all assassins (Lowered att+def scores by 1)
--Downgraded the Witch King's leadership value.
--Thought the Witch King was too powerful a pretender, took off his level of astral 	magic.
--Witch King attack and defense value reduced to 14 (from 15)
--Dreadlord attack and defense value reduced to 14 (from 15)
--Raised the price of a Dreadlord to 150 (from 140)
--Darkblade attack value reduced to 15 (from 16)
--Reduced the combat skills of the Hag units.
--All slaves now come with a 20% chance to start with an affliction. Their lives are brutal and short.
--Minor nerfs for the various dark elf magic weapons
--Reaper Bolt Thrower removed until further notice.
--Improved a few sprites
+--Added a thematic deathfire tag to the Master of Assassins
+--Nerfed all assassins (Lowered att+def scores by 1)
+--Downgraded the Witch King's leadership value.
+--Thought the Witch King was too powerful a pretender, took off his level of astral 	magic.
+--Witch King attack and defense value reduced to 14 (from 15)
+--Dreadlord attack and defense value reduced to 14 (from 15)
+--Raised the price of a Dreadlord to 150 (from 140)
+--Darkblade attack value reduced to 15 (from 16)
+--Reduced the combat skills of the Hag units.
+--All slaves now come with a 20% chance to start with an affliction. Their lives are brutal and short.
+--Minor nerfs for the various dark elf magic weapons
+--Reaper Bolt Thrower removed until further notice.
+--Improved a few sprites
 
 ---------------------------------VERSION 0.30
 
-New Hero:	- Master of Assassins
+--New Hero:	- Master of Assassins
 
-New Units:	- Doomfire Warlock
-		- Several types of slave
+--New Units:	- Doomfire Warlock
+--				- Several types of slave
 
-New Spell:	- Call Doomfire Warlocks
+--New Spell:	- Call Doomfire Warlocks
 
--Updated more sprites
--Dreadlord and black guard str is upped to 10. Black guard hp to 9.
--Toned down the magic powers of the Sorceresses. They are still powerful.
--Removed dousing bonus from the Hag units
--Shield of Ghrond iceprot reduced to 1 (Was 3)
--Increased price on the black guard to 30 (Was 25).
--'Hatred' weapon now has -1 attack.
--Fixed the 'multihero' tag. Manticore rider now appears correctly.
--Changed several ids around to fix compatability issues.
--Bath of Blood is slightly more effective
--Incorporated slaves into the beastmasters summon abilities
--Made MC compatable
+--Updated more sprites
+--Dreadlord and black guard str is upped to 10. Black guard hp to 9.
+--Toned down the magic powers of the Sorceresses. They are still powerful.
+--Removed dousing bonus from the Hag units
+--Shield of Ghrond iceprot reduced to 1 (Was 3)
+--Increased price on the black guard to 30 (Was 25).
+--'Hatred' weapon now has -1 attack.
+--Fixed the 'multihero' tag. Manticore rider now appears correctly.
+--Changed several ids around to fix compatability issues.
+--Bath of Blood is slightly more effective
+--Incorporated slaves into the beastmasters summon abilities
+--Made MC compatable
 
 ---------------------------------VERSION 0.20
 
-New Multihero:	- Manticore Rider
+--New Multihero:	- Manticore Rider
 
-New Commander: 	- Beastmaster on Sea Dragon
+--New Commander: 	- Beastmaster on Sea Dragon
 
-New Units: 	- Sea Dragon Rider
+--New Units: 	- Sea Dragon Rider
 
--Updated many, many sprites. Mostly because the shading could be a lot better.
--Updated to version 4.03
--More Pretenders available
--Beastmasters can be recruited anywhere now.
--Removed Clar Karond as a national magic site since beastmasters can be recruited 	everywhere. Naggarond now gives a water gem.
--Stats on various units got moved around for balance. Mostly decreases.
--Removed Druchii Armor since no units now use it
--Added 'norepel' to the Hatred weapon
--Reduced the damage of the Draich weapon
--Reduced protection of Sea Dragon Cloaks by 2 (now prot 10)
--Raised the gold and resource cost of many units
--Raised the starting dominion of the Witch King
--Gave the sorceresses the oracle ability, for fluff reasons
--Removed sorceress research bonus
--Removed 1 air magic from the sorceress. She now starts with only D2. 
--Increased corsair pillage bonus by 1, to a total ability of two. Dark elves are 		nothing if not skilled.
--Removed Witch Elves as a forgein unit.
--Added shades as a forgein unit.
--Lifetaker moved to const 2. Hydra blade reduced to const 4.
--Spelling corrections
+--Updated many, many sprites. Mostly because the shading could be a lot better.
+--Updated to version 4.03
+--More Pretenders available
+--Beastmasters can be recruited anywhere now.
+--Removed Clar Karond as a national magic site since beastmasters can be recruited 	everywhere. Naggarond now gives a water gem.
+--Stats on various units got moved around for balance. Mostly decreases.
+--Removed Druchii Armor since no units now use it
+--Added 'norepel' to the Hatred weapon
+--Reduced the damage of the Draich weapon
+--Reduced protection of Sea Dragon Cloaks by 2 (now prot 10)
+--Raised the gold and resource cost of many units
+--Raised the starting dominion of the Witch King
+--Gave the sorceresses the oracle ability, for fluff reasons
+--Removed sorceress research bonus
+--Removed 1 air magic from the sorceress. She now starts with only D2. 
+--Increased corsair pillage bonus by 1, to a total ability of two. Dark elves are 		nothing if not skilled.
+--Removed Witch Elves as a forgein unit.
+--Added shades as a forgein unit.
+--Lifetaker moved to const 2. Hydra blade reduced to const 4.
+--Spelling corrections
 --In a horrible cropping accident, Lokhir lost both legs. Thankfully, they grew back 	to their correct proportions this time. Everyone is grateful.
 
 
 ---------------------------------VERSION 0.10
--UPDATED TO DOMINIONS 4. MANY CHANGES HAVE BEEN MADE. MONSTER NUMBERS GOT SWITCHED AROUND SO MUCH I CAN'T EVEN KEEP TRACK.
+--UPDATED TO DOMINIONS 4. MANY CHANGES HAVE BEEN MADE. MONSTER NUMBERS GOT SWITCHED AROUND SO MUCH I CAN'T EVEN KEEP TRACK.
 
 --------------New Weapons
 
@@ -9279,8 +9279,8 @@ New Units: 	- Sea Dragon Rider
 #armor "Full Leather Armor"
 #armor "Leather Hood"
 #weapon 1170-- hatred
-#weapon "Poisoned Dagger"
-#weapon "Poisoned Dagger"
+#weapon "Poison Dagger"
+#weapon "Poison Dagger"
 #startage 150
 #maxage 2000
 #noleader
@@ -16628,7 +16628,7 @@ TWEAK - Flagellants are undisciplined
 #gcost 0
 #rcost 6
 #armor "Plate Hauberk"
-#armor "Full Helm"
+#armor "Full Helmet"
 #weapon "Axe of Hate"
 #weapon 56
 #armor "Kite Shield"
@@ -23692,7 +23692,7 @@ Priests: Khorne needs no priests."
 ---- LEADERS
 
 #forestcom 4633 --WarGor
-#forestcom Bray Shaman
+#forestcom "Bray-Shaman"
 #addreccom 4638 -- Scholar
 --#addreccom 4635 -- Chaos Cultist
 --#addreccom  -- Sorcerer of Chaos
@@ -26052,7 +26052,7 @@ Priests: Khorne needs no priests."
 #startdom 1
 #rcost 1
 #weapon "Magic Staff"
-#armor "Robe"
+#armor "Robes"
 #trample
 #okleader
 #startage 900
@@ -31327,7 +31327,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #ap 14
 #gcost 6
 #rcost 1
-#weapon "Poison Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
 #weapon "Stone Hand Axe"
 #maxage 20
 #startage 5
@@ -31352,9 +31352,9 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Stone Hand Axe"
 #weapon "Stone Hand Axe"
 #weapon "Stone Hand Axe"
-#weapon "Poison Throwing Daggers"
-#weapon "Poison Throwing Daggers"
-#weapon "Poison Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
 #ambidextrous 3
 #patrolbonus 1
 #siegebonus 1
@@ -31376,9 +31376,9 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #weapon "Stone Hand Axe"
 #weapon "Stone Hand Axe"
 #weapon "Stone Hand Axe"
-#weapon "Poison Throwing Daggers"
-#weapon "Poison Throwing Daggers"
-#weapon "Poison Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
 #ambidextrous 3
 #end
 
@@ -31396,8 +31396,8 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #gcost 10
 #weapon "Stone Hand Axe"
 #weapon "Stone Hand Axe"
-#weapon "Poison Throwing Daggers"
-#weapon "Poison Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
 #ambidextrous 2
 #end
 
@@ -31428,7 +31428,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #ap 18
 #gcost 25
 #weapon "Stone Hand Axe"
-#weapon "Poison Throwing Daggers"
+#weapon "Poisoned Throwing Daggers"
 #weapon 447 -- Weak Venomous Bite
 #armor "Buckler"
 #itemslots 13446
@@ -31463,8 +31463,8 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #str 16
 #ap 16
 #enc 6
-#weapon "Stinky Mushrooms"
-#weapon "Stinky Mushrooms"
+#weapon "Stinky Mushroom"
+#weapon "Stinky Mushroom"
 #weapon "Dagger"
 #weapon "Dagger"
 #trample
@@ -31571,7 +31571,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #startage 18
 #magicskill 8 2
 #holy
-#divineins 2
+#divineins
 #custommagic 384 100
 #custommagic 384 25
 #onebattlespell "Power of the Spheres"
@@ -31645,7 +31645,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #magicskill 8 1
 #custommagic 12288 25
 #holy
-#divineins 2
+#divineins
 #noleader
 #stealthy
 #nametype 211
@@ -31682,7 +31682,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #custommagic 12288 50
 #forestsurvival
 #holy
-#divineins 2
+#divineins
 #poorleader
 #chaosrec 10
 #end
@@ -31761,7 +31761,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #magicskill 8 3
 #custommagic 384 100
 #custommagic 384 50
-#divineins 2 
+#divineins
 #onebattlespell "Power of the Spheres"
 #chaosrec 5
 #end
@@ -31880,7 +31880,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #darkvision 100
 #mountainsurvival
 #holy
-#divineins 3
+#divineins
 #noleader
 #stealthy 10
 #chaosrec 5
@@ -31918,7 +31918,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #darkvision 100
 #mountainsurvival
 #holy
-#divineins 2
+#divineins
 #poorleader
 #stealthy
 #chaosrec 10
@@ -31986,7 +31986,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #berserk 2
 #magicskill 8 2
 #holy
-#divineins 3
+#divineins
 #invulnerable 12
 #custommagic 8320 100
 #custommagic 8320 50
@@ -32024,7 +32024,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #magicskill 0 1
 #magicskill 6 1
 #magicskill 8 3
-#divineins 3
+#divineins
 #invulnerable 15
 #custommagic 8576 100
 #custommagic 8576 50
@@ -32126,7 +32126,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #custommagic 9216 50
 #forestsurvival
 #holy
-#divineins 3
+#divineins
 #poorleader
 #stealthy 10
 #batstartsum1d6 "Large Spider"
@@ -32162,7 +32162,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #custommagic 9216 50
 #forestsurvival
 #holy
-#divineins 2
+#divineins
 #okleader
 #stealthy
 #batstartsum2d6 "Large Spider"
@@ -32532,7 +32532,8 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #fatiguecost 0
 #range 40
 #precision 100
-#restricted 179
+#restricted 160
+#restricted 161
 #spec 8409088
 #flightspr -1
 #explspr 10222
@@ -35528,7 +35529,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #school 6
 #researchlevel 9
 #path 0 7
-#path 3 5
+#path 1 5
 #pathlevel 0 5
 #pathlevel 1 2
 #fatiguecost 12000
@@ -36766,7 +36767,7 @@ Tomb King the Goddess found worthy, where their great skills would often turn th
 #end
 
 
-#newmonster 4551
+#newmonster
 #name "Tomb Swarm"
 #descr "Tomb Swarms consist of thousands upon thousands of long-dead insects, spiders and scorpions. Over the millenia these creatures have died in and around the Nehekharan Tombs, before being awakened by the same release of twisted necromantic magic that awoke the Nehekharans themselves. Some powerful Nehekharan mages are able to summon these swarms to the battlefield where they overwhelm enemy troops, consuming their flesh and reducing them to skeletons in seconds. Since they consist of huge numbers of tiny creatures Tomb Swarms are almost immune to arrows and are difficult to destroy with normal weapons. However, they are extremely vulnerable to fire and banishment."
 #spr1 "./Warhammer-Complete/TombSwarm1.tga"
@@ -36997,7 +36998,7 @@ enchanced further by the powerful magic animating them. They are also competent 
 #armor "Circlet"
 #end
 
-#selectmonster 4559 -mound king2?
+#newmonster
 #copystats 4551
 #name "Necrotect"
 #spr1 "./Warhammer-Complete/Necrotect1.tga"
@@ -37691,7 +37692,7 @@ capable of trampling large numbers of enemy troops."
 #pathlevel 0 4
 #fatiguecost 2000
 #effect 10001
-#damage 4599
+#damagemon "Khemrian Warsphinx"
 #nreff 1
 #end
 
@@ -38197,7 +38198,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 #addgod 4132	--avatar of horus
 #cheapgod20 4132
 #addgod 4146 	--gilded scorpion
-#cheapgod 4146
+#cheapgod20 4146
 
 --#homerealm 7 --africa
 #addgod 179		--master lich
@@ -38218,7 +38219,7 @@ emerging from their tombs to rebuild their lost kingdoms."
 
 /////////////////// FORTS \\\\\\\\\\\\\
 
-#startfort 4
+--#startfort 4
 #fortera 2
 #labcost 400
 
@@ -42783,7 +42784,7 @@ a cunning beyond that of any normal wolves."
 #holy
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon "Warhorse Hoof"
+#weapon 56 -- Warhorse Hoof
 #armor "Plate Hauberk"
 #armor "Iron Cap"
 #armor "Shield"
@@ -44147,7 +44148,7 @@ Nametypes 	172,173,174
 #nratt 3
 #end
 
-#selectitem 1363
+#newitem
 #restricted 111
 #spr "./Warhammer-Complete/staveavelorn.tga"
 #name "Stave of Avelorn"
@@ -44158,7 +44159,7 @@ Nametypes 	172,173,174
 #constlevel 12
 #mainpath 6
 #mainlevel 2
-#weapon 1020
+#weapon 1363
 #cursed
 #end
 
@@ -44657,7 +44658,7 @@ Nametypes 	172,173,174
 #holy
 #fireres -5
 #weapon "Razor sharp talons"
-#woundfend
+#woundfend 50 --just a guess
 #makemonsters2 4426 --dryad
 #end
 
@@ -46096,7 +46097,7 @@ Priests: Average."
 #magic
 #aoe 3
 #armorpiercing
-#dt_fire
+#fire
 #explspr 10113
 #slash
 #end
@@ -46216,7 +46217,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #nametype 123
 #end
@@ -46249,7 +46250,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #nametype 123
 #end
@@ -46282,7 +46283,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -46318,7 +46319,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -46352,7 +46353,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -46386,7 +46387,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #diseaseres 70
 #poisonres 15
 #berserk 0
@@ -46423,7 +46424,7 @@ Priests: Average."
 #swampsurvival
 #forestsurvival
 #nametype 123
-#coldblooded
+#coldblood
 #end
 
 
@@ -46527,7 +46528,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #holy
 #nametype 123
@@ -46563,7 +46564,7 @@ Priests: Average."
 #maxage 500
 #startage 100
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #mounted
 #secondtmpshape 3320 -- Horned One
@@ -46597,7 +46598,7 @@ Priests: Average."
 #maxage 500
 #startage 100
 #forestsurvival
-#coldblooded
+#coldblood
 #animal
 #poisonres 8
 #animal
@@ -46632,7 +46633,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 10
 #stealthy 40
 #nametype 123
@@ -46670,7 +46671,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 10
 #stealthy 40
 #secondshape 3321
@@ -46711,7 +46712,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #secondshape 3312
@@ -46751,7 +46752,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #secondshape 3313
@@ -46789,7 +46790,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #stealthy 0
 #secondshape 3314
@@ -46826,7 +46827,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #diseaseres 70
 #poisonres 15
 #berserk 0
@@ -46865,7 +46866,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #heal
 #secondtmpshape 3328
@@ -46900,7 +46901,7 @@ Priests: Average."
 #maxage 500
 #startage 100
 #forestsurvival
-#coldblooded
+#coldblood
 #animal
 #poisonres 8
 #animal
@@ -46937,7 +46938,7 @@ Priests: Average."
 #maxage 500
 #startage 100
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #mounted
 #secondtmpshape 3337 -- Terradon
@@ -46973,7 +46974,7 @@ Priests: Average."
 #maxage 500
 #startage 100
 #forestsurvival
-#coldblooded
+#coldblood
 #animal
 #poisonres 7
 #animal
@@ -47014,7 +47015,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #mountainsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #mounted
 #secondtmpshape 3360 -- Ripperdactyl
@@ -47054,7 +47055,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #mountainsurvival
-#coldblooded
+#coldblood
 #animal
 #poisonres 10
 #animal
@@ -47094,7 +47095,7 @@ Priests: Average."
 #animal
 #trample
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #itemslots 12288
 #fear 5
@@ -47135,7 +47136,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 25
 #diseaseres 70
 #berserk 4
@@ -47172,7 +47173,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 25
 #berserk 6
 #fear 5
@@ -47210,7 +47211,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #amphibian
 #coldres 5
@@ -47247,7 +47248,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #amphibian
 #coldres 5
@@ -47286,7 +47287,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 10
 #amphibian
 #coldres 12
@@ -47326,7 +47327,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 10
 #amphibian
 #coldres 12
@@ -47366,9 +47367,9 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #mountainsurvival
-#wastelandsurvival
+#wastesurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #holy
 #darkvision 100
@@ -47408,9 +47409,9 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #mountainsurvival
-#wastelandsurvival
+#wastesurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 25
 #holy
 #magicskill 8 1
@@ -47451,7 +47452,7 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #fireres 10
-#coldblooded
+#coldblood
 #poisonres 5
 #castledef 2
 #holy
@@ -47489,7 +47490,7 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #fireres 10
-#coldblooded
+#coldblood
 #poisonres 5
 #castledef 5
 #holy
@@ -47527,7 +47528,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #holy
 #nametype 123
@@ -47564,7 +47565,7 @@ Priests: Average."
 #maxage 10000
 #startage 1000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #holy
 #magicskill 8 1
@@ -47604,7 +47605,7 @@ Priests: Average."
 #poisonres 20
 #shockres 20
 #coldres 20
-#coldblooded
+#coldblood
 #holy
 #nametype 123
 #secondshape 3348
@@ -47641,7 +47642,7 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #poisonres 5
-#coldblooded
+#coldblood
 #holy
 #nametype 123
 #firstshape 3347
@@ -47678,7 +47679,7 @@ Priests: Average."
 #poisonres 20
 #shockres 20
 #coldres 20
-#coldblooded
+#coldblood
 #holy
 #nametype 123
 #secondshape 3350
@@ -47719,7 +47720,7 @@ Priests: Average."
 #startage 1000
 #forestsurvival
 #poisonres 5
-#coldblooded
+#coldblood
 #holy
 #nametype 123
 #firstshape 3349
@@ -47798,7 +47799,6 @@ Priests: Average."
 #fireres 30
 #awe 2
 #holy
-#priest
 #nametype 123
 #magicskill 8 1
 #end
@@ -47902,7 +47902,7 @@ Priests: Average."
 #animal
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 25
 #itemslots 12288
 #end
@@ -47933,7 +47933,7 @@ Priests: Average."
 #animal
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 25
 #itemslots 12288
 #end
@@ -47974,7 +47974,7 @@ Priests: Average."
 #maxage 10000
 #startage 3000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #okleader
 #older 300
@@ -48009,7 +48009,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 8
 #poorleader
 #onebattlespell "communion slave"
@@ -48050,7 +48050,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 15
 #poorleader
 #magicskill 7 1
@@ -48093,7 +48093,7 @@ Priests: Average."
 #maxage 10000
 #startage 7000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 5
 #goodleader
 #secondtmpshape 3328 -- cold one
@@ -48130,7 +48130,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poorleader
 #poisonres 10
 #stealthy 40
@@ -48166,7 +48166,7 @@ Priests: Average."
 #maxage 500
 #startage 50
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 8
 #okleader
 #stealthy 0
@@ -48270,7 +48270,7 @@ Priests: Average."
 #firstshape 3296 -- normal fifth generation
 #bonusspells 2
 #float
-#slowrecruit
+#slowrec
 #end
 
 
@@ -48426,7 +48426,7 @@ Priests: Average."
 #summon5 3318 -- Temple Guard
 #domsummon 3318 -- Temple Guard
 #firstshape 3298 -- normal fourth generation
-#slowrecruit
+#slowrec
 #bonusspells 2
 #float
 #end
@@ -48517,7 +48517,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 8
 #poorleader
 #custommagic 1920 100
@@ -48725,7 +48725,7 @@ Priests: Average."
 #armor "Magic Barrier"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
@@ -48778,7 +48778,7 @@ Priests: Average."
 #armor "Magic Barrier"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
@@ -48833,7 +48833,7 @@ Priests: Average."
 #weapon "Contemplate"
 #maxage 100000
 #forestsurvival
-#amphibious
+#amphibian
 #magicskill 8 5
 #magicskill 4 5
 #magicskill 6 3
@@ -49274,7 +49274,7 @@ Priests: Average."
 #maxage 700
 #startage 300
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 8
 #mounted
 #nametype 123
@@ -49319,7 +49319,7 @@ Priests: Average."
 #maxage 10000
 #startage 6000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 7
 #onebattlespell "Quicken Self"
 #holy
@@ -49358,7 +49358,7 @@ Priests: Average."
 #maxage 10000
 #startage 6000
 #forestsurvival
-#coldblooded
+#coldblood
 #poisonres 8
 #shockres 5
 #fireres 5
@@ -49402,7 +49402,7 @@ Priests: Average."
 #forestsurvival
 #swampsurvival
 #stealthy 20
-#coldblooded
+#coldblood
 #poisonres 25
 #berserk 3
 #fixedname "Tehenhauin"
@@ -49454,7 +49454,7 @@ Priests: Average."
 #startage 100
 #forestsurvival
 #swampsurvival
-#coldblooded
+#coldblood
 #poisonres 10
 #stealthy 80
 #nametype 123
@@ -50054,7 +50054,7 @@ Priests: Very Powerful. Prefer heat scale 2."
 
 --Sets what forts they will use.
  -- All Great City
-#startfort 5 -- citadel
+--#startfort 5 -- citadel
 --defaultfort 31
 --mountainfort 31
 --swampfort 31
@@ -50069,7 +50069,7 @@ Priests: Very Powerful. Prefer heat scale 2."
 
 
 #addrecunit 3324 -- skink skirmisher
-#foresstrec 3324 -- skirmisher
+#forestrec 3324 -- skirmisher
 #swamprec 3324 -- skirmisher
 #forestrec 3323 -- Skink blowpipe
 #addrecunit 3323 -- Skink blowpipe
