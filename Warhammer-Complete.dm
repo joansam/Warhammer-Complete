@@ -36477,8 +36477,8 @@ Nametypes 	166
 #name "Tomb Guard"
 #gcost 14
 #descr "The Tomb Guard were originally an elite corps of troops assigned to protecting a necropolis containing the tombs of past kings. Over time the order grew and began to act as a part of the main army, and was imitated in the other kingdoms of Nehekhara. They were found to be very effective in war due to their superior equipment and training. The Tomb Guard are much more heavily armored than most Nehekharan soldiers, and wield deadly falchions."
-#spr1 "./Warhammer-Complete/Tomb_Guard1.tga"
-#spr2 "./Warhammer-Complete/Tomb_Guard2.tga"
+#spr1 "./Warhammer-Complete/TombGuard1.tga"
+#spr2 "./Warhammer-Complete/TombGuard2.tga"
 #att 12
 #def 12
 #str 11
