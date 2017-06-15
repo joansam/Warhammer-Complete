@@ -2,22 +2,22 @@ ID Numbers :
 Nations are sorted as in the code
 
 Weapons : 
-Skaven : 1900-1935
-Bretonnia : 1022-1033 / 1040
-Naggarond : 1170-1188
-Khazad : 842-860 / 916-926
+Skaven : 1900-35
+Bretonnia : 1022-33 / 1040
+Naggarond : 1170-88
+Khazad : 842-60 / 916-26
 Empire : 776-802
-HE : 1001-1011 / 1013-1024
-Khorne : 1301-1310
-Nurgle : 1450-1453 / 1455-1471
-Ogre : 927-950
-Orc : 1041-1060
-Slaanesh : 1851-1862
-Tomb Kings : 1400-1413
-Tzeentch : 724-731 / 733-739
-VC : 1221-1226 
-WE : 1350-1363
-Itza : 810-840 
+HE : 1001-24 (except 1012)
+Khorne : 1301-10
+Nurgle : 1450-71 (except 1454)
+Ogre : 927-50
+Orc : 1041-60
+Slaanesh : 1851-62
+Tomb Kings : 1400-6
+Tzeentch : 724-9 (except 732)
+VC : 1221-6 
+WE : 1350-63
+Itza : 810-40 
 
 Armors : 
 Skaven : 900-902
@@ -49,7 +49,7 @@ Nurgle : 5000-5050
 Ogre : 5497-5539
 Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
 Slaanesh : 6500-6546, minus wherever the 2 extra marauders were. Also 4215-6
-Tomb Kings : 184 / 186-198 / 259 / 260 / 1657-1658 / 4132 / 4146 / 4147 / 4550-4571
+Tomb Kings : 3241-75
 Tzeentch : 4330-4350 / 4796-4798 / 4800-4835
 VC : 5200-5268 / 5269-5275
 WE : 4400-4408 / 4415-4421 / 4425-4431 / 4440-4442 / 6041
@@ -57,22 +57,24 @@ Itza : 3288-3365
 
 Sites : 
 Skaven : 1777-1779
-Bretonnia : 1551 / 1552
-Naggarond : 1900 / 1901
+Bretonnia : 1551 and 1552
+Naggarond : 1900 and 1901
 Khazad : 1550
 Empire : 1512-1516
 HE : 1601-1604
 Khorne : 1701-1703
-Nurgle : 1925 / 1926
-Ogre : 1988 / 1989
+Nurgle : 1925 and 1926
+Ogre : 1988 and 1989
 Orc : 1910-1912
-Slaanesh : 1950 / 1951
-Tomb Kings : 1650 / 1651
+Slaanesh : 1950 and 1951
+Tomb Kings : 1930 and 31
 Tzeentch : 1842 / 1844
 VC : 1597-1599
-WE : 1705 / 1706
-Itza : 1510 / 1511
+WE : 1705 and 1706
+Itza : 1510 and 1511
 
+
+HUMAKTY CHANGELOG
 DONE : 
 Shared weapons :
 Warhorse Hoof (1220) : dam 14 att 1 (HE, Naggarond, VC and Empire), replaces 710 for Empire (Mmh, choosing 710 would have been smarter, on afterthoughts)
