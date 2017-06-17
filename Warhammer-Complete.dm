@@ -10545,7 +10545,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #armornegating
 #shock
 #nostr
-#explspr 10233 -- Rising light which will form a  \  symbol in the air
+#explspr 10233 -- Rising light which will form a \ symbol in the air
 #end
 
 #newweapon 920
@@ -12771,7 +12771,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #descr "This spell will channel the power of many grudges of the dwarf race and force that power on some enemy soldiers. The affected units will feel the sins of their fathers bearing on them as they march against the dwarf forces. They will be encumbered and suffer additional fatigue with each step or a swing of a weapon they make. Enemies with a strong force of will can resist this effect."
 #flightspr -1
 #restricted 107
-#explspr 10233 -- Rising light which will form a ”\” symbol in the air
+#explspr 10233 -- Rising light which will form a ï¿½\ï¿½ symbol in the air
 #path 0 8
 #aoe 1002
 #range 25
@@ -21144,7 +21144,7 @@ Version 1.1
 --siteslots 1700-4
 --nametypes 234
 
--- Khorne´s Gift: +1Str,+1Att,Berserk
+-- Khorne's Gift: +1Str,+1Att,Berserk
 
 ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
@@ -23042,7 +23042,7 @@ Version 1.1
 
 
 
-#newmonster 4648 -50p -- Chaos Spawn Greater
+#newmonster 4648 --50p -- Chaos Spawn Greater
 #spr1 "./Warhammer-Complete/chaosSpawnGreater1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawnGreater2.tga"
 #name "Greater Spawn of Chaos"
@@ -29973,7 +29973,7 @@ Priests: Weak. Can blood sacrifice."
 -- Empire scholars have finally determined the correct spelling of Waaagh!, references throughout this document change to that spelling.
 -- Big Ol' Choppa damage reduced to 9 (same as great swords and battle axes)
 -- chance for additional path changed to 50% for all types of shaman
--- corrected #xpshape – the way it was set up before all orcs and not just basic orcs were #xpshaping into random things
+-- corrected #xpshape - the way it was set up before all orcs and not just basic orcs were #xpshaping into random things
 -- goblin stacks were not useful because they died too quickly and rarely had any impact. They're still supposed to be weaker troops that die quickly, but to address this their attack was raised to nine (some ability to hit) and their defence was raised to 12 (they're not better with their weapons, but little things easily scramble out of the way). All other goblins were adjusted based on this.
 -- to properly represent larger goblin stacks represent multiple goblins, goblin stacks of three or four received patrol bonuses and siege bonuses
 -- fixed invulnerability on savage orc bosses and shaman (some had it missing, some had the wrong level)
@@ -31571,9 +31571,9 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 #armor "Robes"
 #maxage 40
 #startage 18
-#magicskill 8 2
 #holy
 #divineins
+#magicskill 8 2
 #custommagic 384 100
 #custommagic 384 25
 #onebattlespell "Power of the Spheres"
@@ -32281,7 +32281,7 @@ Surprisingly, Mork actually does sometimes save them--especially from hostile ma
 
 #newspell
 #name "Summon Snotling Pump Wagon"
-#descr "No one remembers which Forest Goblin Shaman was first inspired by Mork, or maybe Gork, to influence Snotlings to build the first Snotling Pump Wagon, but the knowledge of how to do it soon circulated throughout the orc and goblin tribes.  These are often called, using nature gems to take control of the little snotlings minds, not because pump wagons are particularly devastating – although they can be – but because it amuses the goblins and orcs so much to see snotlings furiously pumping the levers to make the thing rumble forward."
+#descr "No one remembers which Forest Goblin Shaman was first inspired by Mork, or maybe Gork, to influence Snotlings to build the first Snotling Pump Wagon, but the knowledge of how to do it soon circulated throughout the orc and goblin tribes.  These are often called, using nature gems to take control of the little snotlings minds, not because pump wagons are particularly devastating - although they can be - but because it amuses the goblins and orcs so much to see snotlings furiously pumping the levers to make the thing rumble forward."
 #school 3
 #researchlevel 3
 #path 0 6
@@ -43834,7 +43834,7 @@ Nametypes 	172,173,174
 #spr1 "./Warhammer-Complete/WildRider1.tga"
 #spr2 "./Warhammer-Complete/WildRider2.tga"
 #name "Wild Rider"
-#descr "Wild Riders are fey and dangerous creatures who serve as Orion’s personal guard. They are borne into battle on snarling steeds of Kurnous, which are as reckless and aggressive as their riders."
+#descr "Wild Riders are fey and dangerous creatures who serve as Orion's personal guard. They are borne into battle on snarling steeds of Kurnous, which are as reckless and aggressive as their riders."
 #clearweapons
 #cleararmor
 #size 4
@@ -44202,7 +44202,7 @@ Nametypes 	172,173,174
 #spr1 "./Warhammer-Complete/Dryad1.tga"
 #spr2 "./Warhammer-Complete/Dryad2.tga"
 #name "Dryad"
-#descr "The  Dryads are a howling, screaming manifestation of the forest’s wrath, falling upon those who defile their sacred glades with a malign violence that borders on glee. Dancing lithely between their opponents with a grace that belies their nature, they stab and choke foes with vicious talons, and few who invoke their wrath make it away alive."
+#descr "The Dryads are a howling, screaming manifestation of the forest's wrath, falling upon those who defile their sacred glades with a malign violence that borders on glee. Dancing lithely between their opponents with a grace that belies their nature, they stab and choke foes with vicious talons, and few who invoke their wrath make it away alive."
 #clearweapons
 #cleararmor
 #mor 20
@@ -44403,7 +44403,7 @@ Nametypes 	172,173,174
 #spr2 "./Warhammer-Complete/Araloth2.tga"
 #name "Lord of Talsyn"
 #fixedname "Araloth"
-#descr "Araloth, the lord of Talsyn was once a feckless coward who allowed others to go to battle in his place. Transformed by an unforeseen encounter he is now a fearless hero of Athel Loren and his triumphs in battle are the inspiration for many songs. Armed with a spear, shield and his flying companion Skaryn “the eye thief”, Araloth defends the forest when the spirits slumber."
+#descr "Araloth, the lord of Talsyn was once a feckless coward who allowed others to go to battle in his place. Transformed by an unforeseen encounter he is now a fearless hero of Athel Loren and his triumphs in battle are the inspiration for many songs. Armed with a spear, shield and his flying companion Skaryn, "The Eye Thief", Araloth defends the forest when the spirits slumber."
 #clearweapons
 #cleararmor
 #mapmove 2
@@ -45558,7 +45558,7 @@ Priests: Average."
 #rcost 1
 #magic
 #armornegating
-#secondaryeffect "Soulslay"
+#secondaryeffect 194 -- Soul Slay
 #slash
 #end
 
@@ -49450,7 +49450,7 @@ Priests: Average."
 #rarity 5
 #gems 6 1
 #gems 2 1
-#homemon 3317 salamander
+#homemon 3317 --salamander
 --homecom 3293 -- Oldblood on Cold One
 #end
 

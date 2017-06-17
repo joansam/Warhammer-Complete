@@ -3,6 +3,7 @@ Llama's new Tomb Kings and Vampire Counts are in!
 Fixed bugs in Vampire Counts as reported on the forums
 Added domunrest 2 to VC because Llama definitely wants domunrest but forgot to add it.
 2 is a placeholder, seems reasonable but we'll see.
+Also fixed some miscellaneous bugs.
 
 
 Version .72 (.71 was Slaanesh changes)
