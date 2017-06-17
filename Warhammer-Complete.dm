@@ -34695,7 +34695,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #goodundeadleader
 #awe 3
 #female
-#onebattlespell "Blessing"
 #wastesurvival
 #forestsurvival
 #fear 5
@@ -35507,7 +35506,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #path 0 7
 #pathlevel 0 4
 #fatiguecost 8000
-#effect 10001
+#effect 10021
 #damage 6542
 #nreff 1
 #end
@@ -40980,6 +40979,18 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #end
 
 
+--END OF TZEENTCH, BEGINNING OF VAMPIRE COUNTS
+
+
+
+---------- VAMPIRE COUNTS -----------
+----Mod IDs used:
+
+-nation             113
+-weapons            710, 741-747
+-monsters           3000-3069
+-sites              1520-1522
+-onebattlespells    605-609 (see below)
 
 -- The following spells are copied and then used by #onebattlespell slots.
 -- The only effect this will have is that this mod will clash with any other mods which
@@ -40994,28 +41005,29 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -- Weapons
 -------------------------------------------------------------------------
 
-#newweapon 1221
+#newweapon 741
 #name "Runeblade"
 #dmg 12
 #att 2
 #def 1
 #len 3
 #dt_raise
-#slash
 #magic
+#slash
 #twohanded
 #end
 
-#newweapon 1222 -- Ghoul claw
+#newweapon 742 -- Ghoul claw
 #name "Ghoul Claw"
 #dmg 0
 #att 0
 #def 0
 #len 0
 #secondaryeffect 414 -- MR-resistable disease
+#slash
 #end
 
-#newweapon 1223
+#newweapon 743
 #name "Blood Drain" -- This is a kind of a dummy attack which is intended to give
 #armornegating      -- MR resistability to the weakness which follows.
 #dt_cap
@@ -41023,34 +41035,45 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #secondaryeffect 306 -- Weakness (not MR resistable)
 #end
 
-#newweapon 1224
+#newweapon 744
 #name "Bat Bite"
 #dmg 0
 #att -2
 #def 0
 #len 1
-#secondaryeffect 836
+#pierce
+#secondaryeffect 743 -- Blood Drain
 #bonus
 #end
 
-#newweapon 1225
+#newweapon 745
 #name "Fell Bat Bite"
 #dmg 2
 #att 2
 #def 0
 #len 2
+#pierce
 #secondaryeffect 414 -- MR-resistable disease
 #bonus
 #end
 
-#newweapon 1226
+#newweapon 746
 #name "Vampire Bite"
 #dmg 2
 #att 0
 #def 0
 #len 1
+#pierce
 #secondaryeffect 63 -- Life drain
 #bonus
+#end
+
+#newweapon 747
+#name "Tail" -- For dragons.
+#dmg 0
+#att 0
+#def 0
+#len 4
 #end
 
 #selectweapon 189 -- This is "Enslavement"
@@ -41062,7 +41085,34 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -- Recruitables
 -------------------------------------------------------------------------
 
-#newmonster 5200 -- Corpse, purely for copystatting.
+#newmonster 3069 -- Soulless, purely for copystatting. Unlike normal soulless, the soulless of Sylvania are not Undisciplined.
+#name "Soulless"
+#descr "Recently deceased warriors unnaturally animated into a state of false life, soulless warriors are armed with the weapons they died with. Soulless do not have any vital organs, but their bodies are in a state of decomposition, so they are easier to destroy than a wight or a lich. Soulless are often called zombies. They do not rout unless their master is killed. The soulless are mindless and will quickly dissolve if they are broken on the battlefield."
+#spr1 "./Warhammer-Complete/Peasant_Soulless_1.tga"
+#spr2 "./Warhammer-Complete/Peasant_Soulless_2.tga"
+#pooramphibian
+#gcost 0
+#hp 15
+#mor 50
+#mr 5
+#size 2
+#enc 0
+#str 8
+#att 7
+#def 5
+#prec 5
+#mapmove 2
+#ap 6
+#undead
+#inanimate
+#poisonres 25
+#coldres 15
+#neednoteat
+#noheal
+#weapon "Spear"
+#end
+
+#newmonster 3000 -- Corpse, purely for copystatting.
 #name "Corpse"
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #gcost 0
@@ -41080,13 +41130,13 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #prec 0
 #undead
 #inanimate
-#poisonres 15
+#poisonres 25
 #coldres 15
 #neednoteat
 #noheal
 #end
 
-#newmonster 5201 -- Peasant
+#newmonster 3001 -- Peasant
 #copystats 1565 -- Peasant
 #spr1 "./Warhammer-Complete/Peasant_1.tga"
 #spr2 "./Warhammer-Complete/Peasant_2.tga"
@@ -41095,58 +41145,62 @@ have led to many grim and short lives. With the arrival of the dark god many pea
 are killed, reanimated and sent into battle regardless. The peasants have been cursed by the Von Carsteins and if slain their corpses will not lie still for long."
 #weapon "Spear"
 #mapmove 1
-#secondshape 5202
+#secondshape 3002
 #gcost 6
 #prec 7
 #end
 
-#newmonster 5202 -- Peasant Corpse
+#newmonster 3002 -- Peasant Corpse
 #spr1 "./Warhammer-Complete/Peasant_Corpse_1.tga"
-#copystats 5200 -- Corpse
-#firstshape 5203 -- Soulless
+#copystats 3000 -- Corpse
+#firstshape 3003 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5203
+#newmonster 3003
 #spr1 "./Warhammer-Complete/Peasant_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Peasant_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Spear"
-#secondshape 5202
+#secondshape 3002
 #end
 
-#newmonster 5204 -- Peasant bowman
-#copystats 5201 -- Peasant
+#newmonster 3004 -- Peasant bowman
+#copystats 3001 -- Peasant
 #name "Peasant Bowman"
 #spr1 "./Warhammer-Complete/Peasant_Bowman_1VC.tga"
 #spr2 "./Warhammer-Complete/Peasant_Bowman_2VC.tga"
 #descr "The peasants of Sylvania suffered a miserable existence long before the coming of the vampires. The cold weather, poor soil and relentless attacks by bandits, wolves and monsters
 have led to many grim and short lives. With the arrival of the dark god many peasants have been rounded up, given simple weapons and told to attack the enemies of Sylvania. Those who refuse
 are killed, reanimated and sent into battle regardless. The peasants have been cursed by the Von Carsteins and if slain their corpses will not lie still for long."
+#weapon "Dagger"
 #weapon "Short Bow"
 #prec 8
 #mapmove 1
-#nametype 104
-#secondshape 5205
+#nametype 104 -- Ulm male
+#secondshape 3005
 #gcost 7
 #end
 
-#newmonster 5205 -- Peasant bowman corpse
+#newmonster 3005 -- Peasant bowman corpse
 #spr1 "./Warhammer-Complete/Peasant_Bowman_Corpse_1.tga"
-#copystats 5200 -- Corpse
-#firstshape 5206 -- Soulless
+#copystats 3000 -- Corpse
+#firstshape 3006 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5206
+#newmonster 3006 -- Peasant bowman soulless
 #spr1 "./Warhammer-Complete/Peasant_Bowman_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Peasant_Bowman_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
+#weapon "Dagger"
 #weapon "Short Bow"
-#secondshape 5205
+#secondshape 3005
 #end
 
-#newmonster 5207 -- Archer
+#newmonster 3007 -- Archer
 #spr1 "./Warhammer-Complete/Archer_1.tga"
 #spr2 "./Warhammer-Complete/Archer_2.tga"
 #name "Archer"
@@ -41163,31 +41217,32 @@ their masters."
 #weapon "Short Sword"
 #enc 3
 #mor 9
-#nametype 104
-#secondshape 5208
+#nametype 104 -- Ulm male
+#secondshape 3008
 #end
 
-#newmonster 5208 -- Archer corpse
+#newmonster 3008 -- Archer corpse
 #spr1 "./Warhammer-Complete/Archer_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Ring mail cuirass"
 #armor "Iron cap"
-#firstshape 5209 -- Soulless
+#firstshape 3009 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5209
+#newmonster 3009
 #spr1 "./Warhammer-Complete/Archer_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Archer_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #armor "Ring mail cuirass"
 #armor "Iron Cap"
 #weapon "Short Bow"
 #weapon "Short Sword"
-#secondshape 5208
+#secondshape 3008
 #end
 
-#newmonster 5210 -- Spearman
+#newmonster 3010 -- Spearman
 #name "Spearman"
 #spr1 "./Warhammer-Complete/Spearman_1.tga"
 #spr2 "./Warhammer-Complete/Spearman_2.tga"
@@ -41204,32 +41259,33 @@ their masters."
 #armor "Ring mail cuirass"
 #armor "Shield"
 #armor "Iron cap"
-#nametype 104
-#secondshape 5211
+#nametype 104 -- Ulm male
+#secondshape 3011
 #end
 
-#newmonster 5211 -- Spearman corpse
+#newmonster 3011 -- Spearman corpse
 #spr1 "./Warhammer-Complete/Spearman_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Ring mail cuirass"
 #armor "Shield"
 #armor "Iron cap"
-#firstshape 5212 -- Soulless
+#firstshape 3012 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5212
+#newmonster 3012
 #spr1 "./Warhammer-Complete/Spearman_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Spearman_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Spear"
 #armor "Ring mail cuirass"
 #armor "Shield"
 #armor "Iron cap"
-#secondshape 5211
+#secondshape 3011
 #end
 
-#newmonster 5213 -- Halberdier
+#newmonster 3013 -- Halberdier
 #name "Halberdier"
 #spr1 "./Warhammer-Complete/Halberdier_1.tga"
 #spr2 "./Warhammer-Complete/Halberdier_2.tga"
@@ -41245,34 +41301,35 @@ their masters."
 #weapon "Halberd"
 #armor "Chain mail cuirass"
 #armor "Iron cap"
-#nametype 104
-#secondshape 5214
+#nametype 104 -- Ulm male
+#secondshape 3014
 #end
 
-#newmonster 5214 -- Halberdier corpse
+#newmonster 3014 -- Halberdier corpse
 #spr1 "./Warhammer-Complete/Halberdier_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Chain mail cuirass"
 #armor "Iron cap"
-#firstshape 5215 -- Soulless
+#firstshape 3015 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5215
+#newmonster 3015
 #spr1 "./Warhammer-Complete/Halberdier_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Halberdier_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Halberd"
 #armor "Chain mail cuirass"
 #armor "Iron cap"
-#secondshape 5214
+#secondshape 3014
 #end
 
-#newmonster 5216 -- Crossbowman
+#newmonster 3016 -- Crossbowman
 #name "Crossbowman"
 #spr1 "./Warhammer-Complete/Crossbowman_1.tga"
 #spr2 "./Warhammer-Complete/Crossbowman_2.tga"
-#descr "Originaly imported from the Empire, crossbows are relatively rare and highly prized weapons in Sylvania. Many have become family heirlooms, brought out only to protect a farm from a
+#descr "Originally imported from the Empire, crossbows are relatively rare and highly prized weapons in Sylvania. Many have become family heirlooms, brought out only to protect a farm from a
 rampaging wolf or monster. Significant effort is required to locate and repair these weapons, not least because their owners may prefer to hide or sabotage them rather than contribute to the
 Sylvanian war effort."
 #gcost 11
@@ -41283,31 +41340,32 @@ Sylvanian war effort."
 #weapon "Dagger"
 #armor "Ring Mail Cuirass"
 #armor "Iron cap"
-#nametype 104
-#secondshape 5217
+#nametype 104 -- Ulm male
+#secondshape 3017
 #end
 
-#newmonster 5217 -- Crossbowman corpse
+#newmonster 3017 -- Crossbowman corpse
 #spr1 "./Warhammer-Complete/Crossbowman_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Leather Hauberk"
 #armor "Leather cap"
-#firstshape 5218 -- Soulless
+#firstshape 3018 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5218
+#newmonster 3018
 #spr1 "./Warhammer-Complete/Crossbowman_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Crossbowman_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Crossbow"
 #weapon "Dagger"
 #armor "Leather Hauberk"
 #armor "Leather cap"
-#secondshape 5217
+#secondshape 3017
 #end
 
-#newmonster 5219 -- Swordsman
+#newmonster 3019 -- Swordsman
 #name "Castle Guard"
 #spr1 "./Warhammer-Complete/Swordsman_1.tga"
 #spr2 "./Warhammer-Complete/Swordsman_2.tga"
@@ -41325,32 +41383,33 @@ although most are too sickened by the revelation of their vampirism to truly wis
 #mor 10
 #att 12
 #def 11
-#nametype 104
-#secondshape 5220
+#nametype 104 -- Ulm male
+#secondshape 3020
 #end
 
-#newmonster 5220 -- Swordsman corpse
+#newmonster 3020 -- Swordsman corpse
 #spr1 "./Warhammer-Complete/Swordsman_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Chain Mail Hauberk"
 #armor "Iron Cap"
 #armor "Kite Shield"
-#firstshape 5221 -- Soulless
+#firstshape 3021 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5221
+#newmonster 3021
 #spr1 "./Warhammer-Complete/Swordsman_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Swordsman_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Broad sword"
 #armor "Chain Mail Hauberk"
 #armor "Iron Cap"
 #armor "Kite Shield"
-#secondshape 5220
+#secondshape 3020
 #end
 
-#newmonster 5222 -- Forester
+#newmonster 3022 -- Forester
 #name "Sylvanian Forester"
 #spr1 "./Warhammer-Complete/Forester_1.tga"
 #spr2 "./Warhammer-Complete/Forester_2.tga"
@@ -41371,32 +41430,33 @@ although most are too sickened by the revelation of their vampirism to truly wis
 #str 11
 #patrolbonus 1
 #startage 25
-#nametype 104
-#secondshape 5223
+#nametype 104 -- Ulm male
+#secondshape 3023
 #end
 
-#newmonster 5223 -- Forester corpse
+#newmonster 3023 -- Forester corpse
 #spr1 "./Warhammer-Complete/Forester_Corpse_1.tga"
-#copystats 5200 -- Corpse
+#copystats 3000 -- Corpse
 #armor "Chain Mail Cuirass"
 #armor "Iron Cap"
 #armor "Shield"
-#firstshape 5224 -- Soulless
+#firstshape 3024 -- Soulless
 #descr "The dead of Sylvania do not rest easy. If it is not destroyed this corpse will rise as a Soulless zombie after the battle."
 #end
 
-#newmonster 5224
+#newmonster 3024
 #spr1 "./Warhammer-Complete/Forester_Soulless_1.tga"
 #spr2 "./Warhammer-Complete/Forester_Soulless_2.tga"
-#copystats 197
+#copystats 3069
+#montag 9500
 #weapon "Axe"
 #armor "Chain Mail Cuirass"
 #armor "Iron Cap"
 #armor "Shield"
-#secondshape 5223
+#secondshape 3023
 #end
 
-#newmonster 5225
+#newmonster 3025
 #spr1 "./Warhammer-Complete/Knight_of_the_Rose_1.tga"
 #spr2 "./Warhammer-Complete/Knight_of_the_Rose_2.tga"
 #name "Knight of the Rose"
@@ -41428,9 +41488,9 @@ blessings of their Warrior Priests."
 #armor "Full Helmet"
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon 56 -- Warhorse Hoof
+#weapon 56 -- Hoof
 #armor "Kite Shield"
-#nametype 104
+#nametype 104 -- Ulm male
 #holy
 #end
 
@@ -41438,12 +41498,12 @@ blessings of their Warrior Priests."
 -- Commanders
 -------------------------------------------------------------------------
 
-#newmonster 5226 -- Commander
+#newmonster 3026 -- Commander
 #spr1 "./Warhammer-Complete/Commander_1.tga"
 #spr2 "./Warhammer-Complete/Commander_2.tga"
 #descr "Like the soldiers they lead, the commanders of Sylvania's army have little choice but to serve. Resigned to their fates,
 they do their best to preserve the lives of their soldiers."
-#copystats 5219 -- Swordsman
+#copystats 3019 -- Swordsman
 #gcost 20
 #name "Commander"
 #str 11
@@ -41453,8 +41513,8 @@ they do their best to preserve the lives of their soldiers."
 #mapmove 2
 #end
 
-#newmonster 5227 -- Forester Commander
-#copystats 5222
+#newmonster 3027 -- Forester Commander
+#copystats 3022
 #name "Forester Commander"
 #descr "The leaders of the Foresters are drawn from the veterans of the organisation, and are masters of survival in the wilderness.
 Although they may have defeated countless bandits and monsters they are sometimes jaded by the number yet remaining. The rise of the
@@ -41471,7 +41531,7 @@ so long to protect keeps them loyal."
 #supplybonus 2
 #end
 
-#newmonster 5228
+#newmonster 3028
 #spr1 "./Warhammer-Complete/Commander_of_the_Rose_1.tga"
 #spr2 "./Warhammer-Complete/Commander_of_the_Rose_2.tga"
 #name "Commander of the Rose"
@@ -41482,7 +41542,7 @@ some remained behind. These knights have seen so much suffering and misery in Sy
 life is a curse, and death a mercy. They seek to bring relief to the world, and in the dark god they see a hope for the
 final annihilation of life. Their purity of purpose makes them sacred to the Sylvanians. The commanders of the Order of the Rose
 are experienced and effective generals as well as skilled fighters."
-#gcost 60
+#gcost 100
 #hp 11
 #size 3
 #mounted
@@ -41501,15 +41561,16 @@ are experienced and effective generals as well as skilled fighters."
 #armor "Full Chain Mail"
 #armor "Full Helmet"
 #weapon "Broad Sword"
-#weapon 56 -- Warhorse Hoof
+#weapon 56 -- Hoof
 #armor "Kite Shield"
 #goodleader
-#nametype 104
+#poorundeadleader
+#inspirational 1
+#nametype 104 -- Ulm male
 #holy
-#nametype 100
 #end
 
-#newmonster 5229
+#newmonster 3029
 #spr1 "./Warhammer-Complete/Priest_of_the_Rose_1.tga"
 #spr2 "./Warhammer-Complete/Priest_of_the_Rose_2.tga"
 #name "Warrior Priest of the Rose"
@@ -41538,18 +41599,19 @@ alongside. Chosen from among the strongest members of a military order, the Prie
 #magicskill 8 2
 #holy
 #rcost 1
-#standard 10
+#inspirational 1
 #armor "Plate Hauberk"
 #armor "Iron cap"
 #weapon "Maul"
 #okleader
-#nametype 104
+#okundeadleader
+#nametype 104 -- Ulm male
 #end
 
-#newmonster 5230 -- Cultist
+#newmonster 3030 -- Cultist
 #spr1 "./Warhammer-Complete/Cultist_1.tga"
 #spr2 "./Warhammer-Complete/Cultist_2.tga"
-#copystats 354 -- Ermorian Cultist
+#copystats 554 -- Ermorian Cultist
 #name "Sylvanian Cultist"
 #descr "Some will welcome even the darkest misery. Among the corpses and filth of the mistreated peasantry, some few commoners greet
 the arrival of the new god with open arms. Through hope of personal power or sheer madness, these peasants have organised themselves into
@@ -41558,24 +41620,24 @@ cults to worship the dark god and spread the word of his coming."
 #enc 3
 #end
 
-#newmonster 5231 -- Necromancer
+#newmonster 3031 -- Necromancer
 #copystats 310 -- Necromancer
 #name "Necromancer"
 #spr1 "./Warhammer-Complete/Necromancer_1.tga"
 #spr2 "./Warhammer-Complete/Necromancer_2.tga"
 #descr "With the arrival of the dark god and the revealing of the vampires, the province of Sylvania has become an attractive haven for
 necromancers. While elsewhere they are reviled and persecuted, in Sylvania their skills are welcomed, while the vampires
-offers the promise of greater power or even immortality who show themselves the most skilled. Necromancers sometimes have knowledge of
+offer the promise of greater power or even immortality who show themselves the most skilled. Necromancers sometimes have knowledge of
 other paths of magic in addition to Death magic."
 #gcost 130
 #custommagic 19712 100 -- AESB
 #custommagic 19712 10 -- AESB
 #end
 
-#newmonster 5272 -- Occultist
+#newmonster 3032 -- Occultist
 #spr1 "./Warhammer-Complete/Occultist_1.tga"
 #spr2 "./Warhammer-Complete/Occultist_2.tga"
-#copystats 5231 -- Necromancer
+#copystats 3031 -- Necromancer
 #name "Occultist"
 #descr "As a result of the abundance of dark magic in Sylvania there have always been those who have dabbled in dark arts. However such Occultists lived
 in fear of discovery, for the superstitious peasants who surrounded them would be certain to burn them for witchcraft. Now however, these petty
@@ -41585,10 +41647,11 @@ reanimation of dead animals or the summoning of lowly demons. Many of the Occult
 #clearmagic
 #custommagic 4096 80  -- 80% D
 #custommagic 18432 50 -- 50% SB
+#poorundeadleader
 #end
 
-
-#newmonster 5232
+#newmonster 3033
+ --Note that Necrarch is summonable not recruitable
 #name "Necrarch"
 #descr "The Necrarchs are ancient vampires who have devoted their unlives to the study of dark magics. While mysterious, secretive
 and solitary, the goal of all Necrarchs appears to be the same - the annihilation of all life. Compared to other vampires they are
@@ -41613,28 +41676,31 @@ For the Necrarchs though, the subjugation of the living will only be the first s
 #mapmove 3
 #undead
 #neednoteat
-#coldres 10
-#fireres -5
-#poisonres 25
-#fear 0
+#coldres 15
+#fireres -10
+#poisonres 15
+#fear 5
 #startage 1000
 #maxage 2000
 #magicskill 5 4 -- 4 Death
 #magicskill 7 3 -- 3 Blood
 #custommagic 22784 100 -- 100% ADSB
 #custommagic 22784 20 -- 20% ADSB
-#researchbonus 2
-#nametype 111 -- Caelum male, as a test
+#researchbonus 3
+#nametype 105 -- Undead
 #okleader
 #goodundeadleader
-#onebattlespell "Polymorph" -- The Polymorph spell is later overwritten by a battlefield-wide regeneration for undead.
+#onebattlespell "Ground Army" -- The Ground Army spell is later overwritten by a battlefield-wide regeneration for undead.
+#invulnerable 15
+#noriverpass
 #end
 
-#newmonster 5233 -- Necrarch Acolyte
+#newmonster 3034 -- Necrarch Acolyte
 #copystats 310 -- Necromancer
 #spr1 "./Warhammer-Complete/Acolyte_1.tga"
 #spr1 "./Warhammer-Complete/Acolyte_2.tga"
 #name "Acolyte"
+#slowrec
 #descr "The Necrarchs, ancient vampires and masters of dark magics, are known on occasion to take in Acolytes and tutor them. They
 select these students from the most gifted of the human necromancers and demonologists who seek them out, while those not found worthy
 are drained of blood or used in the Necrarchs' twisted experiments. The chosen Acolytes act as the eyes and ears of the Necrarchs,
@@ -41649,22 +41715,14 @@ there. Their instructions are to send back information, and to assist in any wor
 #magicskill 7 2 -- 2 Blood
 #custommagic 7424 100
 #custommagic 7424 10
-#nametype 104
+#nametype 104 -- Ulm male
 #startage 40
 #end
 
-
 -- Von Carstein vampire in his various forms
--- These shape changes work:
--- Vampire to bat
--- Bat to wolf
--- Wolf to bat
--- However, there is no way of getting back to the vampire. The clumsy workaround will be
--- bat->vampire by #firstshape. So, if you turn into an animal you'll have to wait a turn to
--- turn back. Wolves don't turn back in case they're busy being stealthy.
 
-#newmonster 5269 -- Von Carstein, House of Dust
-#size 2
+#newmonster 3035 -- Von Carstein, House of Dust
+#name "Von Carstein, House of Dust"
 #spr1 "./Warhammer-Complete/VC_Dust_1.tga"
 #spr2 "./Warhammer-Complete/VC_Dust_2.tga"
 #descr "The Von Carsteins are a noble lineage of Sylvania stretching back for hundreds of years. The first
@@ -41675,7 +41733,7 @@ is extraordinarily powerful, and they enjoy great physical might, magical power 
 greatest innate power to raise the living dead of any being in existence. The bloodline has diverged into two mutually suspicious Houses,
 with differing traits. Vampires of the House of Dust are known for their ferocity and animalistic traits. They are able to take the form
 of wolves, and have great power over the packs that haunt the Sylvanian forests."
-#name "Von Carstein, House of Dust"
+#size 2
 #gcost 450
 #hp 52
 #prot 4
@@ -41690,41 +41748,43 @@ of wolves, and have great power over the packs that haunt the Sylvanian forests.
 #mapmove 3
 #ap 14
 #undead
-#popkill 2 -- Vampire !!
+#popkill 3 -- Vampire !!
 #neednoteat
-#coldres 10
-#poisonres 10
-#fireres -5
+#coldres 15
+#poisonres 15
+#fireres -10
 #startage 500
 #maxage 1000
-#shapechange 5234 --> Wolf
+#shapechange 3037 --> Wolf
 #magicskill 1 1 -- A1
 #magicskill 3 1 -- E1
 #magicskill 5 3 -- D3
 #custommagic 5376 10
-#nametype 104
+#nametype 104 -- Ulm male
 #goodleader
 #expertundeadleader
 #berserk 3
-#fear 0
 #heal
-#domsummon2 5244 -- Wolf
-#domsummon20 5245 -- Dire Wolf
-#makemonsters5 5244 -- Wolf
+-domsummon2 3050 -- Wolf
+#domsummon20 3051 -- Dire Wolf
+#makemonsters5 3050 -- Wolf
 #weapon "Runeblade"
 #armor "Full Ring Mail"
 #armor "Full Helmet"
-#onebattlespell	"Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
+#onebattlespell "Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
+#slowrec
+#invulnerable 15
+#noriverpass
 #end
 
-#newmonster 5271 -- Newly created House of Dust vampire
-#copystats 5269
-#copyspr 5269
+#newmonster 3036 -- Newly created House of Dust vampire
+#copystats 3035
+#copyspr 3035
 #startage 50
-#firstshape 5269
+#firstshape 3035
 #end
 
-#newmonster 5234 -- Von Carstein in wolf form
+#newmonster 3037 -- Von Carstein in wolf form
 #spr1 "./Warhammer-Complete/vC_Wolf_1.tga"
 #spr2 "./Warhammer-Complete/vC_Wolf_2.tga"
 #name "Von Carstein, House of Dust"
@@ -41743,11 +41803,10 @@ leadership are diminished."
 #mr 16
 #undead
 #neednoteat
-#coldres 10
-#poisonres 10
-#fireres -5
-#fear 0
-#popkill 2
+#coldres 15
+#poisonres 15
+#fireres -10
+#popkill 3
 #stealthy 25
 #forestsurvival
 #regeneration 20
@@ -41757,19 +41816,18 @@ leadership are diminished."
 #weapon "Bite"
 #weapon "Claw"
 #itemslots 12288 -- 2 misc slots only
-#domsummon2 5244 -- Wolf
-#domsummon20 5245 -- Dire Wolf
-#makemonsters5 5244 -- Wolf
+-domsummon2 3050 -- Wolf
+#domsummon20 3051 -- Dire Wolf
+#makemonsters5 3050 -- Wolf
 #okleader
 #okundeadleader
 #forestsurvival
 #mountainsurvival
-#shapechange 5269
-#onebattlespell	"Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
+#shapechange 3035
+#onebattlespell "Crumble" -- Summons dire wolves then gives battlefield-wide strength boost for undead
 #end
 
-
-#newmonster 5270 -- Von Carstein, House of Shadows
+#newmonster 3038 -- Von Carstein, House of Shadows
 #size 2
 #spr1 "./Warhammer-Complete/VC_Shadows_1.tga"
 #spr2 "./Warhammer-Complete/VC_Shadows_2.tga"
@@ -41796,41 +41854,43 @@ are able to transform into vampire bats, and can summon them in large numbers."
 #mapmove 3
 #ap 14
 #undead
-#popkill 2 -- Vampire !!
+#popkill 3 -- Vampire !!
 #neednoteat
-#coldres 10
-#poisonres 10
-#fireres -5
+#coldres 15
+#poisonres 15
+#fireres -10
 #startage 500
 #maxage 1000
-#shapechange 5235 --> bat
+#shapechange 3040 -> bat
 #magicskill 5 3 -- D3
 #magicskill 1 1 -- A1
-#custommagic 4352 100
+#custommagic 4352 100 
 #custommagic 4352 10
-#nametype 104
+#nametype 104 -- Ulm male
 #expertleader
 #superiorundeadleader
-#fear 0
 #heal
-#researchbonus 1
+#researchbonus 2
 #weapon "Runeblade"
 #armor "Full Ring Mail"
 #armor "Full Helmet"
--domsummon2 5240 -- Vampire bats
-#domsummon20 5243 -- Fell bat
-#makemonsters5 5240 -- Vampire bats
-#onebattlespell	"Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
+-domsummon2 3046 -- Vampire bats
+#domsummon20 3049 -- Fell bat
+#makemonsters5 3046 -- Vampire bats
+#onebattlespell "Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
+#slowrec
+#invulnerable 15
+#noriverpass
 #end
 
-#newmonster 5273 -- Newly created House of Shadows vampire
-#copystats 5270
-#copyspr 5270
+#newmonster 3039 -- Newly created House of Shadows vampire
+#copystats 3038
+#copyspr 3038
 #startage 50
-#firstshape 5270
+#firstshape 3038
 #end
 
-#newmonster 5235 -- Von Carstein in bat form. Very good stats for a bat!
+#newmonster 3040 -- Von Carstein in bat form. Very good stats for a bat!
 #spr1 "./Warhammer-Complete/vC_Bat_1.tga"
 #spr2 "./Warhammer-Complete/vC_Bat_2.tga"
 #name "Von Carstein, House of Shadows"
@@ -41855,42 +41915,28 @@ to travel in the shadows and on moonless nights, and cannot cross terrain as qui
 #ap 4
 #undead
 #neednoteat
-#coldres 10
-#poisonres 10
-#fireres -5
-#popkill 2
+#coldres 15
+#poisonres 15
+#fireres -10
+#popkill 3
 #magicboost 5 -1 -- Bats aren't good with their hands - -1 death magic
 #itemslots 12288 -- 2 misc slots only
 #maxage 1000
 #regeneration 20
-#domsummon2 5240 -- Vampire bats
-#domsummon20 5243 -- Fell bat
-#makemonsters5 5240 -- Vampire bats
+-domsummon2 3046 -- Vampire bats
+#domsummon20 3049 -- Fell bat
+#makemonsters5 3046 -- Vampire bats
 #okleader
 #okundeadleader
-#shapechange 5270
-#onebattlespell	"Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
+#shapechange 3038
+#onebattlespell "Disintegrate" -- Summons vampire bats then gives battlefield-wide strength boost for undead
 #end
-
--newmonster 5236 -- Newly created Von Carstein vampire. As normal von Carsteins except in age.
--copystats 2
--copyspr 2
--descr "The Von Carsteins are a noble lineage of Sylvania stretching back for hundreds of years. The first
-Count of Sylvania ruled effectively if harshly for some decades before revealing himself as a vampire. The colossal war which
-followed was the closest the Empire has ever come to destruction. While the Count was destroyed, his vampiric blood was passed on, with
-his descendants for the most part keeping their vampirism a secret until the arrival of the dark god. The bloodline of the Von Carsteins
-is extraordinarily powerful, and they enjoy great physical might, magical power and the ability to shift forms as well as perhaps the
-greatest innate power to raise the living dead of any being in existence. The Von Carsteins are known for the ability to change their
-shape into that of a bat or wolf, although they have less control over the transformation than their terrified subjects imagine. Once
-transformed to an animal form a Von Carstein may not change back until a month has passed."
--startage 50
--end
 
 -------------------------------------------------------------------------
 -- Summons
 -------------------------------------------------------------------------
 
-#newmonster 5237 -- Crypt ghoul
+#newmonster 3041 -- Crypt ghoul
 #gcost 0
 #name "Crypt Ghoul"
 #spr1 "./Warhammer-Complete/Crypt_Ghoul_1.tga"
@@ -41909,7 +41955,7 @@ dominated by vampires and may overcome their cowardice for long enough to attack
 #ap 18
 #mapmove 3
 #enc 3
-#poisonres 10
+#poisonres 7
 #neednoteat
 #darkvision 100
 #weapon "Ghoul Claw"
@@ -41917,8 +41963,8 @@ dominated by vampires and may overcome their cowardice for long enough to attack
 #nametype 105 -- Undead
 #end
 
-#newmonster 5238 -- Sewer ghoul. This shape makes only a brief appearance, to summon 5 non-eating sewer ghouls.
-#copystats 5237 -- Crypt ghoul
+#newmonster 3042 -- Sewer ghoul. This shape makes only a brief appearance, to summon 5 non-eating sewer ghouls.
+#copystats 3041 -- Crypt ghoul
 #name "Sewer Ghoul"
 #spr1 "./Warhammer-Complete/Sewer_Ghoul_1.tga"
 #spr2 "./Warhammer-Complete/Sewer_Ghoul_2.tga"
@@ -41936,17 +41982,18 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #incunrest -1
 #popkill 1
 #nametype 105 -- Undead
-#firstshape 5274
-#summon5 5275 -- Non-eating sewer ghoul
+#firstshape 3043
+ --Normal sewer ghoul
+#summon5 3044 -- Non-eating sewer ghoul
 #end
 
-#newmonster 5274 -- Normal sewer ghoul.
-#copystats 5237 -- Crypt ghoul
+#newmonster 3043 -- Normal sewer ghoul.
+#copystats 3041 -- Crypt ghoul
 #name "Sewer Ghoul"
 #spr1 "./Warhammer-Complete/Sewer_Ghoul_1.tga"
 #spr2 "./Warhammer-Complete/Sewer_Ghoul_2.tga"
 #descr "Sewer Ghouls lack the strength of their cousins the Crypt Ghouls, but more than compensate with considerable cunning.
-Able to overcome their cowardice, they live amongst human settlements, preying the weak and unwary and dragging them down into
+Able to overcome their cowardice, they live amongst human settlements, preying on the weak and unwary and dragging them down into
 their hiding places in the dark. In the service of a Necrarch, Sewer Ghouls may be used as spies among the populace, watching from the
 shadows for those who speak out against their masters and killing them should they ever walk alone. Any province inhabited by Sewer
 Ghouls will experience both decreased unrest and a steady decline in population. Sewer Ghouls are also able to enter enemy territory
@@ -41961,13 +42008,13 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #nametype 105 -- Undead
 #end
 
-#newmonster 5275 -- Non-pop-eating sewer ghoul (looks the same).
-#copystats 5237 -- Crypt ghoul
+#newmonster 3044 -- Non-pop-eating sewer ghoul (looks the same).
+#copystats 3041 -- Crypt ghoul
 #name "Sewer Ghoul"
 #spr1 "./Warhammer-Complete/Sewer_Ghoul_1.tga"
 #spr2 "./Warhammer-Complete/Sewer_Ghoul_2.tga"
 #descr "Sewer Ghouls lack the strength of their cousins the Crypt Ghouls, but more than compensate with considerable cunning.
-Able to overcome their cowardice, they live amongst human settlements, preying the weak and unwary and dragging them down into
+Able to overcome their cowardice, they live amongst human settlements, preying on the weak and unwary and dragging them down into
 their hiding places in the dark. In the service of a Necrarch, Sewer Ghouls may be used as spies among the populace, watching from the
 shadows for those who speak out against their masters and killing them should they ever walk alone. Any province inhabited by Sewer
 Ghouls will experience both decreased unrest and a steady decline in population. Sewer Ghouls are also able to enter enemy territory
@@ -41981,8 +42028,8 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #nametype 105 -- Undead
 #end
 
-#newmonster 5239 -- Swamp ghoul
-#copystats 5237 -- Crypt ghoul
+#newmonster 3045 -- Swamp ghoul
+#copystats 3041 -- Crypt ghoul
 #name "Swamp Ghoul"
 #spr1 "./Warhammer-Complete/Swamp_Ghoul_1.tga"
 #spr2 "./Warhammer-Complete/Swamp_Ghoul_2.tga"
@@ -41993,7 +42040,7 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #nametype 105 -- Undead
 #end
 
-#newmonster 5240 -- 3 vampire bats
+#newmonster 3046 -- 3 vampire bats
 #gcost 0
 #spr1 "./Warhammer-Complete/Vampire_Bats_3_1.tga"
 #spr2 "./Warhammer-Complete/Vampire_Bats_3_2.tga"
@@ -42019,23 +42066,23 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #size 2
 #startage 1
 #maxage 5
-#secondshape 5241
+#secondshape 3047
 #nametype 144 -- Nature beasts
 #end
 
-#newmonster 5241 -- 2 vampire bats
+#newmonster 3047 -- 2 vampire bats
 #gcost 0
-#copystats 5240
+#copystats 3046
 #descr "Vampire bats are larger than normal bats, have a vicious bite and crave human blood. They are drawn to the dark magic of the House of Shadows like moths to a flame and when a powerful vampire of the House rides to war the bats swarming overhead may block the light of the sun. In battle the bats will descend in large numbers on their unfortunate targets. While their victims fend off some of the creatures, others will sink their teeth into exposed flesh. The bite of the bats drains the strength of their victims. The dark magic which infuses the beasts prevents the wounds they inflict from healing properly, and their victims will never regain their lost strength."
 #spr1 "./Warhammer-Complete/Vampire_Bats_2_1.tga"
 #spr2 "./Warhammer-Complete/Vampire_Bats_2_2.tga"
 #weapon "Bat Bite"
 #weapon "Bat Bite"
-#secondshape 5242
+#secondshape 3048
 #nametype 144 -- Nature beasts
 #end
 
-#newmonster 5242 -- 1 vampire bat
+#newmonster 3048 -- 1 vampire bat
 #gcost 0
 #spr1 "./Warhammer-Complete/Vampire_Bats_1_1.tga"
 #spr2 "./Warhammer-Complete/Vampire_Bats_1_2.tga"
@@ -42058,11 +42105,11 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #enc 3
 #size 1
 #startage 1
-#maxage	5
+#maxage 5
 #nametype 144 -- Nature beasts
 #end
 
-#newmonster 5243
+#newmonster 3049
 #gcost 0
 #spr1 "./Warhammer-Complete/Fell_Bat_1.tga"
 #spr2 "./Warhammer-Complete/Fell_Bat_2.tga"
@@ -42091,9 +42138,9 @@ without being seen, and are just as happy to eat the peasants of the enemy."
 #itemslots 12288 -- 2 misc
 #end
 
-#newmonster 5244 -- Giant Wolf
+#newmonster 3050 -- Giant Wolf
 #gcost 0
-#copystats 284 -- "Giant Wolf"
+#copystats 284 -- "Wolf"
 #spr1 "./Warhammer-Complete/Wolf_1.tga"
 #spr2 "./Warhammer-Complete/Wolf_2.tga"
 #name "Giant Wolf"
@@ -42116,9 +42163,9 @@ unwary travellers, but whole armies."
 #itemslots 12288 -- 2 misc
 #end
 
-#newmonster 5245 -- Dire wolf
+#newmonster 3051 -- Dire wolf
 #gcost 0
-#copystats 5244 -- Giant Wolf (from mod)
+#copystats 3050 -- Giant Wolf (from mod)
 #spr1 "./Warhammer-Complete/Dire_Wolf_1.tga"
 #spr2 "./Warhammer-Complete/Dire_Wolf_2.tga"
 #name "Dire Wolf"
@@ -42143,7 +42190,7 @@ a cunning beyond that of any normal wolves."
 #itemslots 12288 -- 2 misc
 #end
 
-#newmonster 5246 -- Grave Guard
+#newmonster 3052 -- Grave Guard
 #gcost 0
 #spr1 "./Warhammer-Complete/Grave_Guard_1.tga"
 #spr2 "./Warhammer-Complete/Grave_Guard_2.tga"
@@ -42160,7 +42207,7 @@ a cunning beyond that of any normal wolves."
 #ap 11
 #mapmove 3
 #pooramphibian
-#coldres 25
+#coldres 15
 #poisonres 25
 #undead
 #inanimate
@@ -42171,12 +42218,13 @@ a cunning beyond that of any normal wolves."
 #armor "Chain Mail Hauberk"
 #armor "Iron Cap"
 #armor "Shield"
+#pierceres
 #end
 
-#newmonster 5247 -- Grave Guard commander
+#newmonster 3053 -- Grave Guard commander
 #spr1 "./Warhammer-Complete/Grave_Guard_Commander_1.tga"
 #spr2 "./Warhammer-Complete/Grave_Guard_Commander_2.tga"
-#copystats 5246 -- Copy from normal grave guard
+#copystats 3052 -- Copy from normal grave guard
 #name "Grave Guard Commander"
 #descr "The Grave Guard are the reanimated skeletons of long dead heroes and knights, recovered from the hidden crypts of abandoned castles. They are sacred to the dark god of Sylvania."
 #att 12
@@ -42185,7 +42233,7 @@ a cunning beyond that of any normal wolves."
 #goodundeadleader
 #end
 
-#newmonster 5248 -- Skeletal knight
+#newmonster 3054 -- Skeletal knight
 #gcost 0
 #spr1 "./Warhammer-Complete/Skeletal_Knight_1.tga"
 #spr2 "./Warhammer-Complete/Skeletal_Knight_2.tga"
@@ -42204,7 +42252,7 @@ a cunning beyond that of any normal wolves."
 #ap 22
 #mapmove 4
 #pooramphibian
-#coldres 25
+#coldres 15
 #poisonres 25
 #undead
 #inanimate
@@ -42213,14 +42261,15 @@ a cunning beyond that of any normal wolves."
 #holy
 #weapon "Lance"
 #weapon "Broad Sword"
-#weapon 56 -- Warhorse Hoof
+#weapon 56 -- Hoof
 #armor "Plate Hauberk"
 #armor "Iron Cap"
 #armor "Shield"
 #itemslots 13446 -- No feet
+#pierceres
 #end
 
-#newmonster 5249 -- Preserved
+#newmonster 3055 -- Preserved
 #gcost 0
 #spr1 "./Warhammer-Complete/Preserved_1.tga"
 #spr2 "./Warhammer-Complete/Preserved_2.tga"
@@ -42239,7 +42288,7 @@ powerful undead. The Preserved are sacred to the dark god of Sylvania."
 #prec 10
 #mapmove 3
 #ap 9
-#coldres 25
+#coldres 15
 #poisonres 25
 #fireres -5
 #undead
@@ -42251,10 +42300,10 @@ powerful undead. The Preserved are sacred to the dark god of Sylvania."
 #armor "Leather Cap"
 #end
 
-#newmonster 5250 -- Preserved chieftain
+#newmonster 3056 -- Preserved chieftain
 #spr1 "./Warhammer-Complete/Preserved_Chieftain_1.tga"
 #spr2 "./Warhammer-Complete/Preserved_Chieftain_2.tga"
-#copystats 5249 -- Copy from normal Preserved.
+#copystats 3055 -- Copy from normal Preserved.
 #name "Preserved Chieftain"
 #gcost 0
 #descr "The Preserved are what remains of ancient tribes which inhabited the swamps of the land now known as Sylvania. When a member of the tribes died, their bodies were laid to rest in the peat
@@ -42266,7 +42315,7 @@ bogs, where they have been preserved ever since. The chiefs of the tribes wore h
 #goodundeadleader
 #end
 
-#newmonster 5252 -- Zombie Dragon
+#newmonster 3057 -- Zombie Dragon
 #spr1 "./Warhammer-Complete/Zombie_Dragon_1.tga"
 #spr2 "./Warhammer-Complete/Zombie_Dragon_2.tga"
 #name "Zombie Dragon"
@@ -42275,16 +42324,16 @@ powerful monster."
 #gcost 0
 #size 6
 #mor 50
-#coldres 25
+#coldres 15
 #poisonres 25
 #undead
 #inanimate
 #neednoteat
 #noleader
-#fear 5
+#fear 10
 #mr 18
-#hp 180
-#prot 16
+#hp 280
+#prot 18
 #enc 0
 #flying
 #str 28
@@ -42295,11 +42344,12 @@ powerful monster."
 #mapmove 3
 #weapon "Bite"
 #weapon "Claws"
+#weapon 747 -- Dragon tail
 #weapon "Bile"
 #itemslots 12416 -- Head, 2 misc
 #end
 
-#newmonster 5253 -- Draconic Demon
+#newmonster 3058 -- Draconic Demon
 #spr1 "./Warhammer-Complete/Draconic_Demon_1.tga"
 #spr2 "./Warhammer-Complete/Draconic_Demon_2.tga"
 #name "Draconic Demon"
@@ -42313,7 +42363,7 @@ powerful monster."
 #inanimate
 #neednoteat
 #noleader
-#fear 0
+#fear 10
 #mr 18
 #hp 160
 #prot 14
@@ -42327,23 +42377,19 @@ powerful monster."
 #mapmove 3
 #weapon "Bite"
 #weapon "Claws"
+#weapon 747 -- Dragon tail
 #magicskill 0 2
 #magicskill 5 3
 #magicskill 7 3
 #itemslots 28800 -- Head, 3 misc
 #end
 
--------------------------------------------------------------------------
--- Pretenders
--------------------------------------------------------------------------
-
-
 
 -------------------------------------------------------------------------
 -- Heroes
 -------------------------------------------------------------------------
 
-#newmonster 5251 -- Corrupted noble.
+#newmonster 3059 -- Corrupted noble.
 #gcost 0
 #spr1 "./Warhammer-Complete/Corrupted_Noble_1.tga"
 #spr2 "./Warhammer-Complete/Corrupted_Noble_2.tga"
@@ -42365,18 +42411,18 @@ its other property - having drunk the blood once, the baron must drink it every 
 #mr 14
 #enc 1
 #mapmove 2
-#nametype 104
+#nametype 104 -- Ulm male
 #expertleader
 #darkvision 50
 #end
 
-#newmonster 5267
+#newmonster 3060
 #gcost 0
 #name "Tomb Guard"
 #descr "The Tomb Guard were an elite corps of troops assigned to protecting the necropolises of Nehekhara. Along with the rest of Nehekharan civilization they have lain
 entombed for thousands of years. Some of their skeletons have been stolen by the vampiresses of Lahmia to be reanimated as their servants."
-#spr1 "./Warhammer-Complete/Tomb_Guard_1.tga"
-#spr2 "./Warhammer-Complete/Tomb_Guard_2.tga"
+#spr1 "./Warhammer-Complete/TombGuard1.tga"
+#spr2 "./Warhammer-Complete/TombGuard2.tga"
 #mor 30
 #mr 15
 #hp 8
@@ -42386,11 +42432,10 @@ entombed for thousands of years. Some of their skeletons have been stolen by the
 #ap 12
 #mapmove 3
 #neednoteat
-#coldres 25
+#coldres 15
 #poisonres 25
 #inanimate
 #undead
-#nametype 127
 #rcost 3
 #startage 2705
 #maxage 5000
@@ -42403,9 +42448,10 @@ entombed for thousands of years. Some of their skeletons have been stolen by the
 #weapon "Falchion"
 #armor "Bronze Scale Hauberk"
 #armor "Tower Shield"
+#pierceres
 #end
 
-#newmonster 5268 -- Lahmian vampiress
+#newmonster 3061 -- Lahmian vampiress
 #gcost 0
 #name "Lahmian Vampiress"
 #spr1 "./Warhammer-Complete/Lahmian_1.tga"
@@ -42414,6 +42460,7 @@ entombed for thousands of years. Some of their skeletons have been stolen by the
 manipulation and guile. This vampiress has brought a large cache of ancient skeletons from her ancestral home of Nehekhara. Given time she can reanimate a new skeletal army to serve
 her alongside her mortal thralls."
 #weapon "Enslavement"
+#weapon "Enslavement"
 #weapon "Quarterstaff"
 #hp 24
 #regeneration 10
@@ -42421,30 +42468,33 @@ her alongside her mortal thralls."
 #str 14
 #mor 18
 #mr 16
-#awe 3
+#awe 4
 #att 11
-#def 9
+#def 14
 #female
-#seduce 14
+#seduce 18
 #spy
 #stealthy 15
 #enc 0
 #mapmove 3
-#standard 5
+#inspirational 1
 #undead
-#coldres 25
+#coldres 15
 #poisonres 25
 #magicskill 5 3 -- 3 Death
 #magicskill 2 2 -- 2 Water
-#makemonsters2 5267 -- Tomb Guard
+#makemonsters2 3060 -- Tomb Guard
+#invulnerable 15
+#noriverpass
 #end
 
-#newmonster 5236 -- Konrad Von Carstein
+#newmonster 3062 -- Konrad Von Carstein
 #gcost 0
 #size 2
 #spr1 "./Warhammer-Complete/Konrad_1.tga"
 #spr2 "./Warhammer-Complete/Konrad_2.tga"
 #name "Konrad Von Carstein"
+#fixedname "Konrad Von Carstein"
 #descr "Konrad Von Carstein is a deranged vampire, known for his insane blood rages in which he massacres all those around him and gorges himself on their blood. He lacks the patience
 for magic and will not change to an animal form. In battle he will descend immediately into a berserk rage. He is tolerated by his relatives only for his extraordinary competence in battle."
 #gcost 0
@@ -42462,26 +42512,23 @@ for magic and will not change to an animal form. In battle he will descend immed
 #ap 14
 #undead
 #neednoteat
-#coldres 10
-#poisonres 10
-#fireres -5
+#coldres 15
+#poisonres 15
+#fireres -10
 #startage 500
 #maxage 1000
-#nametype 104
-#goodleader
-#expertundeadleader
-#fear 0
 #heal
 #weapon "Runeblade"
 #armor "Full Chain Mail"
 #popkill 5 -- Mad vampire !!
 #expertleader
 #superiorundeadleader
-#fear 5
+#fear 10
 #berserk 5
 #onebattlespell "Wizard's Tower"
+#invulnerable 15
+#noriverpass
 #end
-
 
 -Planned hero list:
 -(Necrarch)
@@ -42494,7 +42541,7 @@ for magic and will not change to an animal form. In battle he will descend immed
 -- Units for spell effects
 -------------------------------------------------------------------------
 
-#newmonster 5254 -- Pre-soulless with massive onebattlespell reanimation.
+#newmonster 3063 -- Pre-soulless with massive onebattlespell reanimation.
 #copystats 915 -- Soulless
 #copyspr 915 -- Soulless
 #summon1 197 -- Give him a few soulless friends so it doesn't seem so odd that he's on his own after battle.
@@ -42506,48 +42553,38 @@ for magic and will not change to an animal form. In battle he will descend immed
 #okundeadleader
 #end
 
-#newmonster 5255 -- Pre-soulless. Unit that can be summoned to get soulless without using corpses.
-#copystats 197 -- Soulless
-#copyspr 197 -- Soulless
-#firstshape 197 -- Soulless
+#newmonster 3065 -- Pre-unit for Army of the Crypts, gives Grave Guard commander.
+#copyspr 3053
+#copystats 3053
+#domsummon 3052 -- Dom summons up to 15 grave guard
+#domsummon2 3052
+#domsummon20 3054 -- Skeletal knight
+#firstshape 3053
 #end
 
-#newmonster 5256 -- Pre-unit for Army of the Crypts, gives Grave Guard commander.
-#copyspr 5247
-#copystats 5247
-#domsummon 5246 -- Dom summons up to 15 grave guard
-#domsummon2 5246
-#domsummon20 5248 -- Skeletal knight
-#firstshape 5247
-#end
-
-#newmonster 5257 -- Pre-unit for Army of the Swamps, gives Preserved Chieftain.
-#copyspr 5250
-#copystats 5250
-#domsummon 5249 -- Dom summons up to 15 Preserved
-#domsummon2 5249
+#newmonster 3066 -- Pre-unit for Army of the Swamps, gives Preserved Chieftain.
+#copyspr 3056
+#copystats 3056
+#domsummon 3055 -- Dom summons up to 15 Preserved
+#domsummon2 3055
 #domsummon20 1388 -- Ziz
-#firstshape 5250
+#firstshape 3056
 #end
 
-#newmonster 5258 -- Pre-unit for ghouls which kills population as it's summoned.
+#newmonster 3067 -- Pre-unit for ghouls which kills population as it's summoned.
 #copyspr 198
 #copystats 198
 #firstshape 198
 #popkill 1
 #end
 
-#newmonster 5259 -- Pre-unit for villages which kills population and reduces unrest as its summoned.
-#copyspr 5203
-#copystats 5203
-#firstshape 5203
+#newmonster 3068 -- Pre-unit for villagers which kills population and reduces unrest as its summoned.
+#copyspr 3003
+#copystats 3003
+#firstshape 3003
 #popkill 1
-#incunrest -2
+#incunrest -40
 #end
-
-
-
-
 
 
 -------------------------------------------------------------------------
@@ -42575,7 +42612,6 @@ for magic and will not change to an animal form. In battle he will descend immed
 #rarity 5
 #gems 5 2
 #gems 1 1
-#homecom 5233 -- Acolyte
 #homecom 5269 -- Von Carstein, House of Dust
 #homecom 5270 -- Von Carstein, House of Shadows
 #end
@@ -42593,16 +42629,16 @@ for magic and will not change to an animal form. In battle he will descend immed
 #path 8
 #level 0 - Nice stronghold picture.
 #rarity 5
-#homemon 5225 -- Knight of the Rose
+#homemon 3025 -- Knight of the Rose
 #end
 
-#selectnation 194
+#selectnation 113
 #clearnation
 #clearsites
 #name "Sylvania"
 #epithet "Vampire Counts"
 #color 0.1 0.1 0.1 -- Charcoal
-
+#domunrest 2
 #era 2
 #flag "./Warhammer-Complete/VampireFlag.tga"
 #templepic 7 -- "Foreboding" temple picture
@@ -42626,36 +42662,59 @@ Magic: Death and Blood, with some Air, Astral and Earth
 Priests: Average"
 
 #brief "Sylvania is a desolate province of forests and swamps inhabited by humans. A powerful bloodline of
-vampires has siezed control of the nation,
-and force the living soldiers to fight alongside their hordes of undead."
-
-
+vampires has seized control of the nation, and forces the living soldiers to fight alongside their hordes of undead."
+#fortera 2
 #startsite "Drakenhof Castle"
 #startsite "Sylvanian Swamps"
 #startsite "Stronghold of the Rose"
 
+--Pretenders
+
+#homerealm 10 -- Default
+#homerealm 2 -- Celtic
+#addgod 2438 --Annunaki of the Underworld
+#addgod 395 --Lich Queen
+#addgod 120 --Moloch
+#addgod 1230 --Forge Lord
+#addgod 1561 --Father of Winters
+#addgod 657 --Monolith
+#addgod "Prince of Death"
+#addgod "Ghost King"
+#addgod "Vampire Queen"
+#addgod "Neter of Chaos"
+#addgod "Neter of the Underworld"
+#addgod "Devourer of Souls"
+#addgod "Monument"
+#addgod "Sphinx"
+#addgod "Lord of the Wild"
+#addgod "Irminsul"
+#addgod "Bitch Queen"
+#addgod "Statue of War"
+#addgod "Titan of the Underworld"
+#addgod "Titan of Death and Rebirth"
+
 -- Heroes
-#multihero1 5232 -- Necrarch
-#multihero2 5251 -- Corrupted Noble
-#hero1 5268 -- Lahmian Vampiress
-#hero2 5236 -- Konrad Von Carstein
+#multihero1 3033 -- Necrarch
+#multihero2 3059 -- Corrupted Noble
+#hero1 3061 -- Lahmian Vampiress
+#hero2 3062 -- Konrad Von Carstein
 
 
 --Set starting troops, commander, and bonus commander.
-#startcom 5226
+#startcom 3026
 #startunitnbrs1 15
 #startunitnbrs2 15
-#startunittype1 5210
-#startunittype2 5207
+#startunittype1 3010
+#startunittype2 3007
 #startscout 426
 
 --Set the units to be used in province defense.
-#defcom1 5226 -- Commander
-#defcom2 5231 -- Necromancer
-#defunit1 5210 -- Spearman
-#defunit1b 5204 -- Peasant bowman
-#defunit2 5219 -- Swordsman
-#defunit2b 5207 -- Archer
+#defcom1 3026 -- Commander
+#defcom2 3031 -- Necromancer
+#defunit1 3010 -- Spearman
+#defunit1b 3004 -- Peasant bowman
+#defunit2 3019 -- Swordsman
+#defunit2b 3007 -- Archer
 
 --Set how many of the units to appear per point.
 #defmult1 10
@@ -42663,50 +42722,29 @@ and force the living soldiers to fight alongside their hordes of undead."
 #defmult2 10
 #defmult2b 10
 
-#addrecunit 5201 -- Peasant
-#addrecunit 5204 -- Peasant Bowman
-#addrecunit 5207 -- Archer
-#addrecunit 5216 -- Crossbowman
-#addrecunit 5210 -- Spearman
-#addrecunit 5213 -- Halberdier
-#addrecunit 5219 -- Swordsman
-#addrecunit 5222 -- Forester
+#addrecunit 3001 -- Peasant
+#addrecunit 3004 -- Peasant Bowman
+#addrecunit 3007 -- Archer
+#addrecunit 3016 -- Crossbowman
+#addrecunit 3010 -- Spearman
+#addrecunit 3013 -- Halberdier
+#addrecunit 3019 -- Swordsman
+#addrecunit 3022 -- Forester
 #addreccom 426 -- Scout
-#addreccom 5226 -- Commander
-#addreccom 5227 -- Forester Commander
-#addreccom 5228 -- Commander of the Rose
-#addreccom 5229 -- Warrior Priest of the Rose
-#addreccom 5230 -- Cultist
-#addreccom 5272 -- Occultist
-#addreccom 5231 -- Necromancer
+#addreccom 3026 -- Commander
+#addreccom 3027 -- Forester Commander
+#addreccom 3028 -- Commander of the Rose
+#addreccom 3029 -- Warrior Priest of the Rose
+#addreccom 3030 -- Cultist
+#addreccom 3032 -- Occultist
+#addreccom 3031 -- Necromancer
+#addreccom 3034 -- Acolyte
 
--addreccom 5252 -- Zombie Dragon
--addreccom 5253 -- Draconic Demon
--addreccom 5236 -- Konrad
--addreccom 5268 -- Lahmian Vampiress
+-addreccom 3057 -- Zombie Dragon
+-addreccom 3058 -- Draconic Demon
+-addreccom 3062 -- Konrad
+-addreccom 3061 -- Lahmian Vampiress
 
-
-#bloodnation
-
-#addgod 395 -- Lich Queen
-#addgod 120 -- Moloch
-#addgod 1230 -- Forge Lord
-#addgod 1561 -- Father of Winters
-#addgod 657 -- Monolith
-#addgod 1340 -- Tiwaz of War
-#addgod 656 -- Fountain of Blood
-#addgod 180 -- Demilich
-#addgod 383 -- Prince of Death
-#addgod 2850 -- Statue of the Underworld
-#addgod 179 -- Master Lich
-#addgod 644 -- Dracolich
-#addgod 2789 -- Raven of the Underworld
-#addgod 2801 -- Linnormr
-#addgod 643 -- Bog Mummy
-#addgod 862 -- Vampire Queen
-#addgod 250 -- Frost Father
-#addgod 401 -- Bitch Queen
-#addgod 872 -- Ghost King
 #end
 
 
@@ -42719,12 +42757,12 @@ and force the living soldiers to fight alongside their hordes of undead."
 -------------------------------------------------------------------------
 
 -- Make a spell just to give the Battlefield Enchantment symbol when a vampire is present.
--- This is a kind of in-game documentation for the non-obvious #onebattlespell effects.
+-- This is a kind of in-game documentation for the non-obvious onebattlespell effects.
 #newspell
 #copyspell "Mist" -- Gives the Battlefield Enchantment icon.
 #name "Vampiric Power"
 #fatiguecost 0
-#descr "The presence of one or more vampires serves to augment the powers of undead fighting for Sylvania. Von Carstein vampires increase the physical strength of their undead servants. Necrarchs grant their minions the power of regeneration, their corpses knitting back together in front of their horrified enemies. The more vampires present, the greater the portion of the army that will receive the benefits. Weaker undead are more likely to be affected."
+#descr "The presence of one or more vampires serves to augment the powers of undead fighting for Sylvania. Von Carstein vampires increase the physical strength of their undead servants. Necrarchs grant their minions the power of regeneration, their corpses knitting back together in front of their horrified enemies. The more vampires that are present, the greater the portion of the army that will receive the benefits. Weaker undead are more likely to be affected."
 #damage 14 -- This makes the spell do "Eyes of God", which I hope means that it does nothing in battle!
 #school -1
 #researchlevel 0
@@ -42737,16 +42775,17 @@ and force the living soldiers to fight alongside their hordes of undead."
 #school -1
 #researchlevel 0
 #aoe 663 -- Half of Entire battlefield
-#spec 96468992 - MR-negates easily, friendly undead only, works	underwater
+#spec 96468992 - MR-negates easily, friendly undead only, works underwater
 #nextspell "Vampiric Power"
 #end
 
 -- Regeneration for Necrarchs
--- Going to be a #onebattlespell, so have to use the spell slot	of an existing spell. Choose arbitrarily to use	Polymorph.
+-- Going to be a onebattlespell, so have to use the spell slot of an existing spell. Choose arbitrarily to use Ground Army.
 #newspell
-#copyspell "Polymorph"
+#copyspell "Ground Army"
+#name "Ground Army Original"
 #end
-#selectspell "Polymorph"
+#selectspell "Ground Army"
 #copyspell "Rush of Strength"
 #name "Necrarch Regeneration Boost"
 #school -1
@@ -42757,13 +42796,15 @@ and force the living soldiers to fight alongside their hordes of undead."
 #spec 96468992 - MR-negates easily, friendly undead only, works underwater
 #nextspell "Vampiric Power"
 #end
-
+#selectspell "Ground Army Original"
+#name "Ground Army"
+#end
 
 -- Berserk for Konrad Von Carstein
 #newspell
 #copyspell "Wizard's Tower"
+#name "Wizard's Tower Original"
 #end
-
 #selectspell "Wizard's Tower" -- Self-berserk for Konrad Von Carstein
 #copyspell "Eagle Eyes"
 #effect 10
@@ -42771,35 +42812,47 @@ and force the living soldiers to fight alongside their hordes of undead."
 #school -1
 #researchlevel 0
 #end
+#selectspell "Wizard's Tower Original"
+#name "Wizard's Tower"
+#end
+
+----
 
 #newspell
 #copyspell "Crumble"
+#name "Crumble Original"
 #end
 #selectspell "Crumble"
 #name "Dire Wolves In Battle"
 #school -1
 #researchlevel 0
 #effect 1
-#damage 5245
+#damage 3051
 #nreff 3
 #range 1
 #nextspell "Von Carstein Strength Boost"
 #end
+#selectspell "Crumble Original"
+#name "Crumble"
+#end
 
 #newspell
 #copyspell "Disintegrate"
+#name "DisintegrateOriginal"
 #end
 #selectspell "Disintegrate"
 #name "Vampire Bats In Battle"
 #school -1
 #researchlevel 0
 #effect 1
-#damage 5240
+#damage 3046
 #nreff 4
 #range 1
 #nextspell "Von Carstein Strength Boost"
 #end
-
+#selectspell "DisintegrateOriginal"
+#name "Disintegrate"
+#end
 
 
 -------------------------------------------------------------------------
@@ -42819,7 +42872,7 @@ and force the living soldiers to fight alongside their hordes of undead."
 #aoe 666
 #fatiguecost 200 -- Costs 2 death gems
 #explspr 10060 -- 10059 is rising lurid green mist. An alternative might be 10060, which is black.
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Vampiric Ward, national MR boost for undead
@@ -42832,7 +42885,7 @@ and force the living soldiers to fight alongside their hordes of undead."
 #researchlevel 5
 #spec 71303168 -- Only affects friendly undead, no MR check
 #fatiguecost 100 -- Costs 1 death gem
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Longdead of Sylvania
@@ -42840,29 +42893,33 @@ and force the living soldiers to fight alongside their hordes of undead."
 #name "Longdead of Sylvania"
 #descr "The lands of Sylvania are suffused with dark magic, and the dead do not rest easy in their tombs. A skilled necromancer can seek out those graves where the dead are
 most restless, and awaken them to serve him without any expenditure of magical gems."
-#nreff 5
+#nreff 12
 #researchlevel 1
 #fatiguecost 0
-#restricted 194
+#restricted 113
+#pathlevel 0 2 -- D2
 #end
 
--- Army of the Crypts
+---- Army of the Crypts
+
 #newspell -- Crypt ghouls for "Army of the Crypts"
 #copyspell "Reanimation"
 #name "Crypt Ghouls from Crypts"
-#damage 5237 -- Crypt Ghoul
-#nreff 6
-#school	-1
+#damage 3041 -- Crypt Ghoul
+#nreff 10
+#school -1
 #researchlevel 0
 #end
+
 #newspell -- Skeleton horsemen for "Army of the Crypts"
 #copyspell "Pale Riders"
 #name "Horsemen from Crypts"
-#nreff 5
+#nreff 10
 #school -1
 #researchlevel 0
 #nextspell "Crypt Ghouls from Crypts"
 #end
+
 #newspell -- Longdead for "Army of the Crypts"
 #copyspell "Reanimation"
 #name "Skeletons from Crypts"
@@ -42871,6 +42928,7 @@ most restless, and awaken them to serve him without any expenditure of magical g
 #school -1
 #researchlevel 0
 #end
+
 #newspell -- Army of the Crypts
 #name "Army of the Crypts"
 #descr "The necromancer scours the crypts and tombs of Sylvania and reanimates an army of longdead warriors led by a skeletal general. In strong friendly dominion sacred undead troops will be reanimated."
@@ -42880,40 +42938,45 @@ most restless, and awaken them to serve him without any expenditure of magical g
 #pathlevel 0 3 -- D3
 #fatiguecost 1200
 #effect 10021
-#damage 5256
+#damage 3065
 #nreff 1
 #nextspell "Skeletons from Crypts"
-#restricted 194
+#restricted 113
 #end
+
 --
 
 -- Army of the Swamps
-#newspell -- Sewer ghouls for "Army of the Swamps"
+
+#newspell -- Swamp ghouls for "Army of the Swamps"
 #copyspell "Reanimation"
 #name "Swamp Ghouls from Swamps"
-#damage 5239 -- Swamp Ghoul
-#nreff 10
-#school	-1
+#damage 3045 -- Swamp Ghoul
+#nreff 18
+#school -1
 #researchlevel 0
 #end
+
 #newspell -- Ghouls for "Army of the Swamps"
 #copyspell "Reanimation"
 #name "Ghouls from Swamps"
 #damage 198 -- Ghoul
-#nreff 14
+#nreff 30
 #nextspell "Swamp Ghouls from Swamps"
 #school -1
 #researchlevel 0
 #end
+
 #newspell -- Soulless for "Army of the Swamps"
 #copyspell "Reanimation"
 #name "Soulless from Swamps"
-#damage 5255 - Pre-soulless
+#damage -9500 - Soulless
 #nreff 40
 #nextspell "Ghouls from Swamps"
 #school -1
 #researchlevel 0
 #end
+
 #newspell -- Army of the Swamps
 #name "Army of the Swamps"
 #descr "The swamps of Sylvania are foul expanses of rotten and dying land coated in a thick miasma of fog and decay. Countless peasants, travellers and wild beasts have died in them while seeking safety, and the mud is thick with corpses. Dark magic twists all that it finds there, and tales tell of villagers trying to subsist on the borders of the swamps gradually transforming into monstrous ghouls, hungering only for human flesh. The necromancer raises a monstrous army from the swamps to serve him. In strong friendly dominion powerful sacred undead troops will be reanimated."
@@ -42921,37 +42984,40 @@ most restless, and awaken them to serve him without any expenditure of magical g
 #researchlevel 2
 #path 0 5
 #pathlevel 0 3 -- D3
-#fatiguecost 800
+#fatiguecost 1200
 #effect 10021
-#damage 5257
+#damage 3066
 #nreff 1
 #nextspell "Soulless from Swamps"
-#restricted 194
+#restricted 113
 #end
---
+
+
+----
 
 #newspell -- Army of Distant Graves
 #copyspell "Carrion Reanimation"
 #name "Army of Distant Graves"
 #descr "The necromancer reaches out to a distant friendly province and locates the site of an ancient battle or a crypt in which warriors are entombed. A small army of longdead soldiers is reanimated to serve the necromancer."
-#damage -2
+#damage 195
 #nreff 40
 #school 4
 #researchlevel 4
 #path 0 5
 #pathlevel 0 2
 #fatiguecost 800
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Grave Guard
 #copyspell "Reanimation"
 #name "Grave Guard"
-#damage 5246 -- Grave Guard
+#damage 3052 -- Grave Guard
 #nreff 12
 #school -1
 #researchlevel 0
 #end
+
 #newspell -- Longdead of Sylvania
 #copyspell "Reanimation"
 #name "The Sacred Dead"
@@ -42963,8 +43029,8 @@ the dark god of Sylvania."
 #pathlevel 0 4
 #fatiguecost 1400
 #nreff 10
-#damage 5248 -- Skeletal knight
-#restricted 194
+#damage 3054 -- Skeletal knight
+#restricted 113
 #nextspell "Grave Guard"
 #end
 
@@ -42974,11 +43040,10 @@ the dark god of Sylvania."
 
 #newspell
 #name "Raise Victims"
-#descr "Over the course of a month the vampire reanimates the corpses of the strongest of his mortal victims, raising a small army of blood-drained soulless. The number of corpses in the province
-is not diminished."
+#descr "Over the course of a month the vampire reanimates the corpses of the strongest of his mortal victims, raising a small army of blood-drained soulless. Since the Von Carsteins prefer to hunt down rebels and uncooperative militias for their sustenance, the resulting soulless are often armed."
 #effect 10001
-#damage 5255 -- Pre-soulless, so as not to use up corpses.
-#nreff 12
+#damage -9500 -- 3064 -- Pre-soulless, so as not to use up corpses.
+#nreff 20
 #path 0 5 -- Death
 #pathlevel 0 3 -- D3
 #path 1 1 -- Air
@@ -42986,14 +43051,14 @@ is not diminished."
 #researchlevel 0
 #fatiguecost 0 -- Free spell
 #school 5 -- Thaumaturgy
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Restless dead - cheap 50-strong Carrion Reanimation.
 #copyspell "Fires from Afar"
 #name "Restless Dead"
-#descr "The Von Carstein vampires have an extraordinary innate ability to reanimate the dead. With this spell up to fifty corpses are raised as soulless in a distant province. The spell may be
-cast on enemy as well as friendly provinces."
+#descr "The Von Carstein vampires have an extraordinary innate ability to reanimate the dead. With this spell up to one hundred corpses are raised as soulless in a distant province. The spell
+may be cast on enemy as well as friendly provinces."
 #path 0 5 -- Death
 #pathlevel 0 3 -- D3
 #path 1 1 -- Air
@@ -43003,26 +43068,27 @@ cast on enemy as well as friendly provinces."
 #effect 10037
 #damage -1
 #school 5 -- Thaumaturgy
-#nreff 50 -- Up to 50 soulless (dependent on corpses)
-#restricted 194
+#nreff 100 -- Up to 50 soulless (dependent on corpses)
+#restricted 113
 #spec 276824064
 #end
 
--- Call Giant Wolves
+---- Call Giant Wolves
 #newspell
 #copyspell "Reanimation"
 #name "Call Dire Wolf"
-#damage 5245 -- Dire Wolf
+#damage 3051 -- Dire Wolf
 #nreff 2
 #school -1
 #researchlevel 0
 #end
+
 #newspell
 #name "Call Giant Wolves"
 #descr "Vampires of the House of Dust have a strong affinity with the wolves which prowl the Sylvanian forests. With this spell a vampire calls on a large pack
 to come forth and serve him."
 #effect 10001
-#damage 5244 -- Giant wolf
+#damage 3050 -- Giant wolf
 #nreff 18
 #path 0 5 -- Death
 #pathlevel 0 3 -- D3
@@ -43031,25 +43097,28 @@ to come forth and serve him."
 #researchlevel 1
 #fatiguecost 400
 #school 5 -- Thaumaturgy
-#restricted 194
+#restricted 113
 #nextspell "Call Dire Wolf"
 #end
+
 --
 
 -- Call Vampire Bats
+
 #newspell
 #copyspell "Reanimation"
 #name "Call Fell Bat"
-#damage 5243 -- Fell Bat
+#damage 3049 -- Fell Bat
 #nreff 2
 #school -1
 #researchlevel 0
 #end
+
 #newspell
 #name "Call Vampire Bats"
 #descr "Vampires of the House of Shadows have great powers over bats of all kinds. When this spell is cast all the bats within a mile of the vampire's location will be drawn mindlessly to his location, forming a vast swarm which descends upon him. Once they are summoned the vampire is easily able to dominate the bats and bind them to his service."
 #effect 10001
-#damage 5240 -- Vampire bats
+#damage 3046 -- Vampire bats
 #nreff 18
 #path 0 5 -- Death
 #pathlevel 0 3 -- D3
@@ -43058,11 +43127,11 @@ to come forth and serve him."
 #researchlevel 1
 #fatiguecost 400
 #school 5 -- Thaumaturgy
-#restricted 194
+#restricted 113
 #nextspell "Call Fell Bat"
 #end
---
 
+----
 
 #newspell
 #name "Gift of Dust"
@@ -43076,10 +43145,10 @@ of mortal man into immortal vampire."
 #pathlevel 1 1 -- E1
 #researchlevel 2
 #effect 10021
-#damage 5271 -- Newly created House of Dust vampire
+#damage 3036 -- Newly created House of Dust vampire
 #fatiguecost 3000
 #nreff 1
-#restricted 194
+#restricted 113
 #end
 
 #newspell
@@ -43094,10 +43163,10 @@ of mortal man into immortal vampire."
 #pathlevel 1 2 -- A2
 #researchlevel 2
 #effect 10021
-#damage 5273 -- Newly created House of Shadows vampire
+#damage 3039 -- Newly created House of Shadows vampire
 #fatiguecost 3000
 #nreff 1
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Punishment
@@ -43105,20 +43174,20 @@ of mortal man into immortal vampire."
 #name "Punishment"
 #descr "The Von Carsteins will brook no disobedience from their human herd. With this spell the inhabitants of an unruly province
 are taught a brutal lesson. In a night of slaughter the dead rise from their graves to massacre the population, and any known
-troublemakers are certain to amongst those slain. When the killing subsides the dead return to their graves, but the corpses
-of those who had stood against the vampires rise in permanent servitude, as a stark lesson to their comrades. Five hundred people
-people will be killed in the target province, but unrest will be dramatically reduced and a small army of reanimated peasants will
+troublemakers are certain to be amongst those slain. When the killing subsides the dead return to their graves, but the corpses
+of those who stood against the vampires rise in permanent servitude, as a stark lesson to their comrades. Five hundred people
+will be killed in the target province, but unrest will be dramatically reduced and a small army of reanimated peasants will
 remain."
 #school 5 -- Thaumaturgy
 #path 0 5 -- Death
 #pathlevel 0 3 -- D3
 #path 1 1 -- Air
 #pathlevel 1 1 -- A1
-#damage 5259
+#damage 3068
 #nreff 50
 #researchlevel 3
 #fatiguecost 600
-#restricted 194
+#restricted 113
 #end
 
 #newspell
@@ -43134,9 +43203,9 @@ Death gems. All unburied dead in a province are consumed. Enemy provinces can be
 #pathlevel 0 3 -- D3
 #path 1 1 -- Air
 #pathlevel 1 1 -- A1
-#researchlevel 3
+#researchlevel 0
 #fatiguecost 100
-#restricted 194
+#restricted 113
 #end
 
 #newspell
@@ -43152,12 +43221,10 @@ for the casting of this spell. However, only friendly provinces can be targeted.
 #pathlevel 0 4 -- D4
 #path 1 1 -- Air
 #pathlevel 1 1 -- A1
-#researchlevel 6
+#researchlevel 2
 #fatiguecost 0
-#restricted 194
+#restricted 113
 #end
-
-
 
 #newspell -- Endless dead - 1000-strong Carrion Reanimation.
 #copyspell "Restless Dead"
@@ -43167,16 +43234,16 @@ the vampire. This spell may be cast at enemy as well as friendly provinces."
 #researchlevel 4
 #fatiguecost 400
 #nreff 999 -- Up to 999 soulless (dependent on corpses)
-#restricted 194
+#restricted 113
 #end
 
 #newspell
 #name "Reanimate Dragon"
-#descr "The vampire undergoes a long and challening quest to locate the skeleton of a long dead dragon. When suitable remains have been found, the vampire channels
+#descr "The vampire undergoes a long and challenging quest to locate the skeleton of a long dead dragon. When suitable remains have been found, the vampire channels
 all of his innate power over the dead to reanimate the mighty beast. The resulting Zombie Dragon has lost much of the power it had in life, but nonetheless remains
 a fearsome monster."
 #effect 10021
-#damage 5252 -- Zombie dragon
+#damage 3057 -- Zombie dragon
 #nreff 1
 #path 0 5 -- Death
 #pathlevel 0 4 -- D4
@@ -43185,12 +43252,14 @@ a fearsome monster."
 #researchlevel 7
 #fatiguecost 2000
 #school 5 -- Thaumaturgy
-#restricted 194
+#restricted 113
 #end
 
--- The Blackest Curse
-#newspell -- Massive version of Raise Dead, for #onebattlespell use by the commander summoned by The Blackest Curse.
+---- The Blackest Curse
+
+#newspell -- Massive version of Raise Dead, for onebattlespell use by the commander summoned by The Blackest Curse.
 #copyspell "Will of the Fates"
+#name "Will of the Fates Original"
 #end
 #selectspell "Will of the Fates"
 #copyspell "Raise Dead"
@@ -43198,30 +43267,34 @@ a fearsome monster."
 #researchlevel 0
 #school -1
 #end
+#selectspell "Will of the Fates Original"
+#name "Will of the Fates"
+#end
+
 #newspell -- Remote dead-raising soulless
-#copyspell "Call of the Winds"
+#copyspell "Ghost Riders"
 #name "Remote Soulless Raiser"
-#damage 5254
+#damage 3069
 #researchlevel 0
 #school -1
-#nreff 1
+#nreff 250
 #end
+
 #newspell -- The Blackest Curse
 #copyspell "Black Death"
 #name "The Blackest Curse"
 #descr "With this terrible spell a Von Carstein vampire afflicts a distant province with the blackest of curses. A virulent disease is spread throughout the land, killing no fewer than half
-of the population. Some days after their death, the corpses begin to stir once more, and reawaken to slaughter the surviving defenders of the province and claim it for their vampire
-master. When the spell has run its course most of the soulless will revert to inanimate corpses, although a few will remain to guard their prize."
-#researchlevel 0
+of the population. Some days after their death, many of the corpses begin to stir once more, and reawaken to slaughter the surviving defenders of the province. When the spell has run its course the
+soulless will fall back lifeless to the ground, leaving behind nothing but devastation."
 #path 0 5 -- Death
-#pathlevel 0 4 -- D4
+#pathlevel 0 4 -- D5
 #path 1 1 -- Air
 #pathlevel 1 1 -- A1
-#researchlevel 8
-#fatiguecost 1500
+#researchlevel 7
+#fatiguecost 2500
 #nextspell "Remote Soulless Raiser"
 #spec 0
-#restricted 194
+#restricted 113
 #end
 --
 
@@ -43240,12 +43313,11 @@ the dark god of Sylvania."
 #pathlevel 1 2 -- D2
 #researchlevel 0
 #effect 10021
-#damage 5232 -- Necrarch
+#damage 3033 -- Necrarch
 #fatiguecost 7000
 #nreff 1
-#restricted 194
+#restricted 113
 #end
-
 
 #newspell -- Curse of Hunger, summons a few ghouls for free
 #copyspell "Reanimation"
@@ -43261,8 +43333,8 @@ they have devoured during their degeneration."
 #researchlevel 0
 #fatiguecost 0 -- Gem-free summon
 #nreff 12
-#damage 5258 -- Pre-ghoul which kills population
-#restricted 194
+#damage 3067 -- Pre-ghoul which kills population
+#restricted 113
 #end
 
 #newspell
@@ -43281,7 +43353,7 @@ great speed. This spell complements the effects of Unholy Vigor."
 #aoe 666
 #fatiguecost 100 -- Costs 1 blood slave
 #explspr 10043 -- Rising red mist.
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Call Crypt Ghouls, summons a few Crypt Ghouls for free
@@ -43297,8 +43369,8 @@ master."
 #researchlevel 1
 #fatiguecost 0 -- Gem-free summon
 #nreff 8
-#damage 5237 -- Crypt Ghoul
-#restricted 194
+#damage 3041 -- Crypt Ghoul
+#restricted 113
 #end
 
 -newspell
@@ -43313,10 +43385,10 @@ he may count himself among the ranks of the Necrarchs. Transformed into a monstr
 -pathlevel 1 3 -- B3
 -researchlevel 2
 -effect 10021
--damage 5233
+-damage 3033
 -fatiguecost 3000
 -nreff 1
--restricted 194
+-restricted 113
 -end
 
 #newspell -- Send Sewer Ghouls, sends Sewer Ghouls to a distant friendly province
@@ -43332,9 +43404,9 @@ due to their depredations."
 #pathlevel 1 3 -- D3
 #researchlevel 2
 #fatiguecost 2000 -- Costs blood slaves
-#damage 5238 -- Sewer Ghoul
+#damage 3042 -- Sewer Ghoul
 #nreff 15
-#restricted 194
+#restricted 113
 #end
 
 #newspell -- Morbid Feast, summons lots of crypt ghouls
@@ -43345,7 +43417,7 @@ Once they have devoured the flesh, the Ghouls will serve the Necrarch."
 #nreff 40
 #researchlevel 3
 #fatiguecost 800
-#restricted 194
+#restricted 113
 #end
 
 #newspell
@@ -43358,15 +43430,17 @@ Once they have devoured the flesh, the Ghouls will serve the Necrarch."
 #pathlevel 1 5 -- D5
 #researchlevel 7
 #effect 10021
-#damage 5253 -- Draconic Demon
+#damage 3058 -- Draconic Demon
 #fatiguecost 8000
 #nreff 1
-#restricted 194
+#restricted 113
 #end
 
 
+-- END OF VAMPIRE COUNTS, BEGINNING OF WOOD ELVES
 
 
+------------------- WOOD ELVES -------------------
 -- I used sprites from the following Dom3 mods: LA Sylvania [Zepath, Sombre], Red Wood[GFSnl],Wood Elves [alansmithee][Happerry],
 --Author: Taorec
 

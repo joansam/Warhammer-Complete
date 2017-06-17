@@ -1,6 +1,14 @@
+Version .8
+Llama's new Tomb Kings and Vampire Counts are in!
+Fixed bugs in Vampire Counts as reported on the forums
+Added domunrest 2 to VC because Llama definitely wants domunrest but forgot to add it.
+2 is a placeholder, seems reasonable but we'll see.
+
+
 Version .72 (.71 was Slaanesh changes)
 -- Nurgle's diseaseres completely redone. Most humans now have some disease vulnerability, but daemons are immune.
 	Previously, some humans were immune, some humans and most daemons had low or no diseaseres.
+	UPDATE: Doh. Daemons had no diseaseres because they aren't affected by disease. Re-removed it.
 -- Nurgle and Tzeentch sorcerers autocalced from 125 gold, also removed adept researcher.
 
 Version .70 - Still JoanSam

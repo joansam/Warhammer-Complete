@@ -1,10 +1,7 @@
 To-Do - Main Tasks:
-1. Get new High Elves -done. New Dark Elves?
-2. Transfer SlaaneshWIP files to WHComplete
-3. Fix Altdorf's starting army, right now it's Marignon's. - done. Also fixed PD.
-4. Compatibility - WH, ME
-5. Also spreadsheet
-6. Use SuperHams Tomb Kings/VC - Wood Elves weren't fixed
+1. New Dark Elves?
+2. Fix Altdorf's starting army, right now it's Marignon's. - done. Also fixed PD.
+3. Compatibility - Summod
 
 Thoughts/Less Urgent:
 

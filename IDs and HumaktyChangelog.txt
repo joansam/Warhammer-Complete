@@ -15,7 +15,7 @@ Orc : 1041-60
 Slaanesh : 1851-62
 Tomb Kings : 1400-6
 Tzeentch : 724-9 (except 732)
-VC : 1221-6 
+VC : 741-7
 WE : 1350-63
 Itza : 810-40 
 
@@ -51,7 +51,7 @@ Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 38
 Slaanesh : 6500-6546, minus wherever the 2 extra marauders were. Also 4215-6
 Tomb Kings : 3241-75
 Tzeentch : 4330-4350 / 4796-4798 / 4800-4835
-VC : 5200-5268 / 5269-5275
+VC : 3000-69
 WE : 4400-4408 / 4415-4421 / 4425-4431 / 4440-4442 / 6041
 Itza : 3288-3365
 
@@ -69,7 +69,7 @@ Orc : 1910-1912
 Slaanesh : 1950 and 1951
 Tomb Kings : 1930 and 31
 Tzeentch : 1842 / 1844
-VC : 1597-1599
+VC : 1520-2
 WE : 1705 and 1706
 Itza : 1510 and 1511
 
