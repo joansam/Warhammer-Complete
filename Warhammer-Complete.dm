@@ -8797,8 +8797,8 @@ Priests: Powerful."
 
 #newmonster 5118
 #copystats 5100 -- Basestats
-#spr1 "./Warhammer-Complete/newcaptain.tga"
-#spr2 "./Warhammer-Complete/captain1.tga"
+#spr1 "./Warhammer-Complete/captain1DE.tga"
+#spr2 "./Warhammer-Complete/captain2DE.tga"
 #name "Corsair Captain"
 #descr "Leaders of the dreaded corsairs, these elves are cold blooded and merciless. It is they who lead the raids to capture slaves and treasure from among the other races of the Old World. From their giant floating harbours, the Black Arks, they are capable of sailing just about any where and striking at any time. Given the independant nature of their trade, captains know it unwise to be seen leading large armies, for it is strictly forbidden to raise an army without the approval of the Witch King. Still, nobody objects if they personally lead a raiding force to battle, for with each attack their fame increases, which inflates an already massive ego. Being experienced raiders, they are effective at pillaging provinces."
 #hp 11
@@ -20330,8 +20330,8 @@ Version 0,55
 
 - Great Eagle
 #newmonster 6035
-#spr1 "./Warhammer-Complete/Greateagle1.tga"
-#spr2 "./Warhammer-Complete/Greateagle2.tga"
+#spr1 "./Warhammer-Complete/Greateagle1HE.tga"
+#spr2 "./Warhammer-Complete/Greateagle2HE.tga"
 #name "Great Eagle of Ulthuan"                                                                                                                                                                
 #descr "The Great Eagles of Ulthuan have been allies to the Elves for ages, 
 since the Deamon invasion and before that, fighting side by side in conflict after conflict. 
