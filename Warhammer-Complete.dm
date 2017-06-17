@@ -20331,8 +20331,8 @@ Version 0,55
 
 - Great Eagle
 #newmonster 6035
-#spr1 "./Warhammer-Complete/Greateagle1HE.tga"
-#spr2 "./Warhammer-Complete/Greateagle2HE.tga"
+#spr1 "./Warhammer-Complete/GreatEagle1HE.tga"
+#spr2 "./Warhammer-Complete/GreatEagle2HE.tga"
 #name "Great Eagle of Ulthuan"                                                                                                                                                                
 #descr "The Great Eagles of Ulthuan have been allies to the Elves for ages, 
 since the Deamon invasion and before that, fighting side by side in conflict after conflict. 
