@@ -1,6 +1,7 @@
 #modname "Warhammer-Complete"
 #description "All Warhammer nations, mostly compatible with each other."
-#version 0.62
+#version 1.0
+#icon "Warhammer-Complete/ModBanner.tga"
 
 --Many thanks to the mod compiler, from Joansam
 
