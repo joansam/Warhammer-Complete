@@ -27753,8 +27753,6 @@ Priests: Weak. Can blood sacrifice."
 
 
 #newmonster 5508
-#copystats 1010
-#clearmagic#clearmagic#clearmagic
 #spr1 "./Warhammer-Complete/Gorger.tga"
 #spr2 "./Warhammer-Complete/Gorger2.tga"
 #name "Gorger"
@@ -27763,25 +27761,27 @@ Priests: Weak. Can blood sacrifice."
 #size 4
 #prot 9
 #mor 20
-#mr 10
-#enc 4
+#mr 11
+#enc 3
 #str 20
 #att 10
 #def 9
 #prec 3
 #mapmove 3
 #ap 18
-#gcost 1
+#gcost 0
 #rcost 1
 #berserk 3
 #weapon "Bite"
 #weapon "Claws"
-#ambidextrous 2
 #maxage 30
 #supplybonus -3
 #darkvision 75
 #nametype 193
 #undisciplined
+#mountainsurvival
+#wastesurvival
+#coldres 3
 #end
 
 
@@ -42613,8 +42613,8 @@ for magic and will not change to an animal form. In battle he will descend immed
 #rarity 5
 #gems 5 2
 #gems 1 1
-#homecom 5269 -- Von Carstein, House of Dust
-#homecom 5270 -- Von Carstein, House of Shadows
+#homecom 3035 -- Von Carstein, House of Dust
+#homecom 3038 -- Von Carstein, House of Shadows
 #end
 
 #newsite 1598
