@@ -23784,7 +23784,7 @@ Priests: Khorne needs no priests."
 
 -- Version 0.5 - Initial release of the mod! Utilizes a lot of edited Tzeentch warhost assets (which is not to say that there wouldn't be any new ones) as well as the Dom3 Chaos Undivided's .dm as base.
 
--- Weapon IDs: 1450 - 1471
+-- Weapon IDs: 1750-71
 -- Armor IDs: 685
 -- Unit IDs: 5000 - 5049
 -- Nation ID: 136
@@ -23797,7 +23797,7 @@ Priests: Khorne needs no priests."
 -------- WEAPONS --------
 
 
-#newweapon 1450
+#newweapon 1750
 #name "Plaguesword"
 #dmg 8
 #att 1
@@ -23805,12 +23805,12 @@ Priests: Khorne needs no priests."
 #len 2
 #magic
 #slash
-#secondaryeffect 1469
+#secondaryeffect 1769
 #sound 8
 #rcost 3
 #end
 
-#newweapon 1456
+#newweapon 1756
 #name "Large Plaguesword"
 #dmg 10
 #att 1
@@ -23818,12 +23818,12 @@ Priests: Khorne needs no priests."
 #len 3
 #magic
 #slash
-#secondaryeffect 1469
+#secondaryeffect 1769
 #sound 8
 #rcost 5
 #end
 
-#newweapon 1451
+#newweapon 1751
 #name "Poison Tentacle"
 #dmg -5
 #armorpiercing
@@ -23836,7 +23836,7 @@ Priests: Khorne needs no priests."
 #natural
 #end
 
-#newweapon 1452
+#newweapon 1752
 #name "One-handed Flail"
 #dmg 2
 #att 0
@@ -23849,7 +23849,7 @@ Priests: Khorne needs no priests."
 #sound 11
 #end
 
-#newweapon 1453
+#newweapon 1753
 #name "Daemon-forged Flail"
 #dmg 2
 #att 0
@@ -23863,7 +23863,7 @@ Priests: Khorne needs no priests."
 #sound 11
 #end
 
-#newweapon 1455
+#newweapon 1755
 #name "Daemon-forged Two-Handed Sword"
 #dmg 10
 #magic
@@ -23878,7 +23878,7 @@ Priests: Khorne needs no priests."
 #slash
 #end
 
-#newweapon 1457
+#newweapon 1757
 #name "Daemon-forged Scythe"
 #armorpiercing
 #dmg 8
@@ -23893,7 +23893,7 @@ Priests: Khorne needs no priests."
 #secondaryeffectalways 431
 #end
 
-#newweapon 1458
+#newweapon 1758
 #name "Valnir's Flail"
 #dmg 3
 #att 0
@@ -23908,7 +23908,7 @@ Priests: Khorne needs no priests."
 #twohanded
 #end
 
-#newweapon 1459
+#newweapon 1759
 #name "Pestilent Potion"
 #nostr
 #bonus
@@ -23916,12 +23916,12 @@ Priests: Khorne needs no priests."
 #dmg 4
 #ammo 4
 #armornegating
-#secondaryeffect 1468
+#secondaryeffect 1768
 #hardmrneg
 #acid
 #end
 
-#newweapon 1460
+#newweapon 1760
 #name "Necrotic Missiles"
 #bonus
 #magic
@@ -23931,12 +23931,12 @@ Priests: Khorne needs no priests."
 #range -1
 #aoe 1
 #armornegating
-#secondaryeffect 1469
+#secondaryeffect 1769
 #hardmrneg
 #nratt -2
 #end
 
-#newweapon 1461
+#newweapon 1761
 #name "Plaguesword"
 #dmg 12
 #nostr
@@ -23947,11 +23947,11 @@ Priests: Khorne needs no priests."
 #magic
 #rcost 0
 #slash
-#secondaryeffect 1469
+#secondaryeffect 1769
 #sound 8
 #end
 
-#newweapon 1462
+#newweapon 1762
 #name "Daemon-forged Cleaver"
 #dmg 9
 #slash
@@ -23964,7 +23964,7 @@ Priests: Khorne needs no priests."
 #armorpiercing
 #end
 
-#newweapon 1464
+#newweapon 1764
 #name "Rabid Bite"
 #dmg 2
 #slash
@@ -23972,11 +23972,11 @@ Priests: Khorne needs no priests."
 #def -1
 #len 0
 #bonus
-#secondaryeffect 1465
+#secondaryeffect 1765
 #natural
 #end
 
-#newweapon 1465
+#newweapon 1765
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -23987,7 +23987,7 @@ Priests: Khorne needs no priests."
 #secondaryeffect 143
 #end
 
-#newweapon 1466
+#newweapon 1766
 #name "Filth Mace"
 #dmg 5
 #att 0
@@ -24000,7 +24000,7 @@ Priests: Khorne needs no priests."
 #sound 10
 #end
 
-#newweapon 1467
+#newweapon 1767
 #name "Balesword"
 #dmg 8
 #att 1
@@ -24009,11 +24009,11 @@ Priests: Khorne needs no priests."
 #magic
 #rcost 3
 #sound 8
-#secondaryeffect 1468
+#secondaryeffect 1768
 #slash
 #end
 
-#newweapon 1468
+#newweapon 1768
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -24025,7 +24025,7 @@ Priests: Khorne needs no priests."
 #secondaryeffect 414
 #end
 
-#newweapon 1469
+#newweapon 1769
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -24037,7 +24037,7 @@ Priests: Khorne needs no priests."
 #secondaryeffectalways 515
 #end
 
-#newweapon 1470
+#newweapon 1770
 #name "Rusted Cleaver"
 #dmg 6
 #slash
@@ -24048,7 +24048,7 @@ Priests: Khorne needs no priests."
 #sound 10
 #end
 
-#newweapon 1471
+#newweapon 1771
 #name "Infected Vomit"
 #bonus
 #dmg 15
@@ -24093,7 +24093,7 @@ Priests: Khorne needs no priests."
 #gcost 10
 #rcost 1
 #noitem
-#weapon 1464
+#weapon 1764
 #stealthy 10
 #animal
 #coldres 5
@@ -24127,7 +24127,7 @@ Priests: Khorne needs no priests."
 #mr 14
 #weapon "Rusted Cleaver"
 #weapon "Rabid Bite"
-#weapon 1471
+#weapon 1771
 #regeneration 5
 #heal
 #rcost 2
@@ -24213,7 +24213,7 @@ Priests: Khorne needs no priests."
 #reclimit 8
 #startage 28
 #maxage 200
-#weapon 1452
+#weapon 1752
 #armor "Chain Mail Cuirass"
 #armor "Shield"
 #forestsurvival
@@ -24351,7 +24351,7 @@ Priests: Khorne needs no priests."
 #coldres 3
 #itemslots 15488
 #weapon 85
-#weapon 1451
+#weapon 1751
 #armor "Leather Hauberk"
 #pillagebonus 1
 #wastesurvival
@@ -24425,7 +24425,7 @@ Priests: Khorne needs no priests."
 #chaosrec 1
 #rcost 1
 #coldres 3
-#weapon 1452
+#weapon 1752
 #armor "Iron Cap"
 #armor "Leather Hauberk"
 #armor "Shield"
@@ -24478,7 +24478,7 @@ Priests: Khorne needs no priests."
 #chaosrec 2
 #rcost 1
 #itemslots 13446
-#weapon 1452
+#weapon 1752
 #weapon 56
 #armor "Iron Cap"
 #armor "Leather Hauberk"
@@ -24514,7 +24514,7 @@ Priests: Khorne needs no priests."
 #gcost 30
 #chaosrec 2
 #rcost 1
-#weapon 1452
+#weapon 1752
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -24586,7 +24586,7 @@ Priests: Khorne needs no priests."
 #mor 13
 #itemslots 13446
 #weapon "Lance"
-#weapon 1452
+#weapon 1752
 #weapon 56
 #armor "Full Helmet"
 #armor 801
@@ -24803,7 +24803,7 @@ Priests: Khorne needs no priests."
 #coldres 5
 #poisonres 25
 #weapon "Mace"
-#weapon 1451
+#weapon 1751
 #armor 801
 #itemslots 15494
 #startitem 968
@@ -25163,7 +25163,7 @@ Priests: Khorne needs no priests."
 #okleader
 #researchbonus -6
 #undcommand 5
-#weapon 1462
+#weapon 1762
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -25210,7 +25210,7 @@ Priests: Khorne needs no priests."
 #goodleader
 #command -20
 #undcommand 5
-#weapon 1455
+#weapon 1755
 #armor 801
 #itemslots 15494
 #startitem 968
@@ -25249,7 +25249,7 @@ Priests: Khorne needs no priests."
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
 #startitem 968
-#weapon 1457
+#weapon 1757
 #weapon 56
 #armor "Full Helmet"
 #armor 801
@@ -25310,7 +25310,7 @@ Priests: Khorne needs no priests."
 #invulnerable 20
 #ambidextrous 5
 #weapon 331 -- Gore
-#weapon 1451 --
+#weapon 1751 -- Poison Tentacle
 #weapon 62 -- Bile
 #weapon 30 -- Venomous Bite
 #weapon 203 -- Barbed Tail
@@ -25356,7 +25356,7 @@ Priests: Khorne needs no priests."
 #magicskill 5 1
 #custommagic 12288 100
 #custommagic 12288 66
-#weapon 1457
+#weapon 1757
 #armor "Full Helmet"
 #armor 801
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
@@ -25408,8 +25408,8 @@ Priests: Khorne needs no priests."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1456
-#weapon 1460
+#weapon 1756
+#weapon 1760
 #trample
 #startage 190
 #maxage 10000
@@ -25456,7 +25456,7 @@ Priests: Khorne needs no priests."
 #mor 17
 #magicskill 5 2
 #magicskill 6 1
-#weapon 1458
+#weapon 1758
 #armor "Full Helmet"
 #armor 801
 #itemslots 15494
@@ -25506,7 +25506,7 @@ Priests: Khorne needs no priests."
 #gcost 0
 #rcost 1
 #weapon "Magic Staff"
-#weapon 1459
+#weapon 1759
 #startage 190
 #maxage 10000
 #magicskill 5 2
@@ -25552,7 +25552,7 @@ Priests: Khorne needs no priests."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1456
+#weapon 1756
 #trample
 #startage 190
 #maxage 10000
@@ -25597,7 +25597,7 @@ Priests: Khorne needs no priests."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1450
+#weapon 1750
 #startage 20
 #maxage 10000
 #poisonres 75
@@ -25744,7 +25744,7 @@ Priests: Khorne needs no priests."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1450
+#weapon 1750
 #goodleader
 #expertundeadleader
 #startage 20
@@ -25788,10 +25788,10 @@ Priests: Khorne needs no priests."
 #gcost 0
 #rcost 1
 #noitem
-#weapon 1451
-#weapon 1451
-#weapon 1451
-#weapon 1451
+#weapon 1751
+#weapon 1751
+#weapon 1751
+#weapon 1751
 #startage 20
 #maxage 10000
 #poisonres 75
@@ -25868,7 +25868,7 @@ Priests: Khorne needs no priests."
 #rcost 1
 #magicpower 1
 #ambidextrous 3
-#weapon 1461
+#weapon 1761
 #weapon 271
 #weapon 557
 #weapon 43
@@ -25953,7 +25953,7 @@ Priests: Khorne needs no priests."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1456
+#weapon 1756
 #startage 190
 #maxage 10000
 #magicskill 5 2
@@ -26370,7 +26370,7 @@ Priests: Khorne needs no priests."
 #name "Filth Mace"
 #type 1
 #fear 5
-#weapon 1466
+#weapon 1766
 #nofind
 #end
 
@@ -26385,7 +26385,7 @@ Priests: Khorne needs no priests."
 #descr "Legend tells that there is one Balesword for each of Nurgle's favored plagues. Moreover, each blade is thought to have been congealed from the infected waste matter that each plague draws forth."
 #name "Balesword"
 #type 1
-#weapon 1467
+#weapon 1767
 #nofind
 #end
 
@@ -33580,7 +33580,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Warhound of Slaanesh
 
-#newmonster 6500
+#newmonster 4150
 #spr1 "./Warhammer-Complete/warhound_1.tga"
 #spr2 "./Warhammer-Complete/warhound_2.tga"
 #name "Warhound"
@@ -33617,7 +33617,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Marauder of Slaanesh #1
 
-#newmonster 6501
+#newmonster 4151
 #spr1 "./Warhammer-Complete/marauder_axe_1.tga"
 #spr2 "./Warhammer-Complete/marauder_axe_2.tga"
 #name "Marauder"
@@ -33651,7 +33651,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Marauder of Slaanesh #2
 
-#newmonster 6502
+#newmonster 4152
 #spr1 "./Warhammer-Complete/marauder_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_2SL.tga"
 #name "Marauder"
@@ -33683,7 +33683,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Chaos Marauder Horsemen
 
-#newmonster 6503
+#newmonster 4153
 #spr1 "./Warhammer-Complete/marauder_horseman_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_horseman_2SL.tga"
 #name "Marauder Horsemen"
@@ -33717,7 +33717,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Warrior of Slaanesh #1
 
-#newmonster 6504
+#newmonster 4154
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
 #name "Chaos Warrior"
@@ -33751,7 +33751,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Warrior of Slaanesh #2
 
-#newmonster 6505
+#newmonster 4155
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_2.tga"
 #name "Chaos Warrior"
@@ -33785,7 +33785,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Knights of Slaanesh
 
-#newmonster 6506
+#newmonster 4156
 #spr1 "./Warhammer-Complete/chaosknight_1SL.tga"
 #spr2 "./Warhammer-Complete/chaosknight_2SL.tga"
 #name "Chaos Knight"
@@ -33823,7 +33823,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Standard Bearer
 
-#newmonster 6507
+#newmonster 4157
 #spr1 "./Warhammer-Complete/standard_bearer_1SL.tga"
 #spr2 "./Warhammer-Complete/standard_bearer_2SL.tga"
 #name "Standard Bearer"
@@ -33856,7 +33856,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Chosen of Slaanesh #1
 
-#newmonster 6508
+#newmonster 4158
 #spr1 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_2.tga"
 #name "Chosen"
@@ -33890,7 +33890,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Chosen of Slaanesh #2
 
-#newmonster 6509
+#newmonster 4159
 #spr1 "./Warhammer-Complete/Chosen_Slaanesh_sword_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Slaanesh_sword_2.tga"
 #name "Chosen"
@@ -33928,7 +33928,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Slaanesh Cultist
 
-#newmonster 6510
+#newmonster 4160
 #spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
 #spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
 #name "Slaanesh Cultist"
@@ -33963,7 +33963,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Minotaur of Slaanesh
 
-#newmonster 6511
+#newmonster 4161
 #spr1 "./Warhammer-Complete/slaan_minotaur_1.tga"
 #spr2 "./Warhammer-Complete/slaan_minotaur_2.tga"
 #name "Minotaur of Slaanesh"
@@ -34001,7 +34001,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Slaangor
 
-#newmonster 6512
+#newmonster 4162
 #spr1 "./Warhammer-Complete/slaangor_1.tga"
 #spr2 "./Warhammer-Complete/slaangor_2.tga"
 #name "Slaangor"
@@ -34035,7 +34035,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Gor of Slaanesh
 
-#newmonster 6513
+#newmonster 4163
 #spr1 "./Warhammer-Complete/gor_1SL.tga"
 #spr2 "./Warhammer-Complete/gor_2SL.tga"
 #name "Gor"
@@ -34069,7 +34069,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Ungor of Slaanesh
 
-#newmonster 6514
+#newmonster 4164
 #spr1 "./Warhammer-Complete/ungor_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_2SL.tga"
 #name "Ungor"
@@ -34102,7 +34102,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Ungor Raider
 
-#newmonster 6515
+#newmonster 4165
 #spr1 "./Warhammer-Complete/ungor_raider_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_2SL.tga"
 #name "Ungor Raider"
@@ -34135,7 +34135,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Forsaken
 
-#newmonster 6516
+#newmonster 4166
 #spr1 "./Warhammer-Complete/forsaken_1SL.tga"
 #spr2 "./Warhammer-Complete/forsaken_2SL.tga"
 #name "Forsaken"
@@ -34178,7 +34178,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Foreignrec Cultist
 
---#newmonster 6543
+--#newmonster 4195
 --#copyspr 6510
 --#copystats 6510
 --#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
@@ -34190,7 +34190,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Forsaken Champion
 
-#newmonster 6517
+#newmonster 4167
 #spr1 "./Warhammer-Complete/forsaken_slaanesh_champion_1.tga"
 #spr2 "./Warhammer-Complete/forsaken_slaanesh_champion_2.tga"
 #name "Forsaken Champion"
@@ -34234,7 +34234,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Ungor Raider Halfhorn
 
-#newmonster 6518
+#newmonster 4168
 #spr1 "./Warhammer-Complete/ungor_raider_halfhorn_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_halfhorn_2SL.tga"
 #name "Ungor Raider Halfhorn"
@@ -34267,9 +34267,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon "Short Bow"
 #end
 
--- Doombull of Slaanesh
+-- Doombull of Slaanesh (Slaanbull)
 
-#newmonster 6519
+#newmonster 4169
 #spr1 "./Warhammer-Complete/slaanbull_1.tga"
 #spr2 "./Warhammer-Complete/slaanbull_2.tga"
 #name "Slaanbull"
@@ -34311,7 +34311,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Wargor
 
-#newmonster 6520
+#newmonster 4170
 #spr1 "./Warhammer-Complete/wargor_1SL.tga"
 #spr2 "./Warhammer-Complete/wargor_2SL.tga"
 #nametype 109
@@ -34348,7 +34348,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Marauder Chieftain
 
-#newmonster 6521
+#newmonster 4171
 #spr1 "./Warhammer-Complete/marauder_chieftain_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_chieftain_2SL.tga"
 #name "Marauder Chieftain"
@@ -34387,7 +34387,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Bray-Shaman
 
-#newmonster 6522
+#newmonster 4172
 #spr1 "./Warhammer-Complete/bray-shaman_1SL.tga"
 #spr2 "./Warhammer-Complete/bray-shaman_2SL.tga"
 #name "Bray-Shaman"
@@ -34426,7 +34426,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Sorcerer of Slaanesh
 
-#newmonster 6523
+#newmonster 4173
 #spr1 "./Warhammer-Complete/Slaanesh_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/Slaanesh_sorcerer_2.tga"
 #name "Chaos Sorcerer"
@@ -34460,7 +34460,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Exalted Sorcerer of Slaanesh
 
-#newmonster 6524
+#newmonster 4174
 #spr1 "./Warhammer-Complete/exalted_slaanesh_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/exalted_slaanesh_sorcerer_2.tga"
 #name "Exalted Chaos Sorcerer"
@@ -34496,7 +34496,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Sorcerer Lord
 
-#newmonster 6525
+#newmonster 4175
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_1SL.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2SL.tga"
 #name "Chaos Sorcerer Lord"
@@ -34532,9 +34532,9 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #end
 
 
--- Champion of Slaanesh
+-- Chaos Champion (Champion of Slaanesh)
 
-#newmonster 6526
+#newmonster 4176
 #spr1 "./Warhammer-Complete/champion_1SL.tga"
 #spr2 "./Warhammer-Complete/champion_2SL.tga"
 #name "Chaos Champion"
@@ -34572,7 +34572,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Exalted Champion of Slaanesh
 
-#newmonster 6527
+#newmonster 4177
 #spr1 "./Warhammer-Complete/exalted_champion_1.tga"
 #spr2 "./Warhammer-Complete/exalted_champion_2.tga"
 #name "Exalted Chaos Champion"
@@ -34614,7 +34614,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Lord of Slaanesh
 
-#newmonster 6528
+#newmonster 4178
 #spr1 "./Warhammer-Complete/lord_of_slaanesh_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_slaanesh_2.tga"
 #name "Chaos Lord"
@@ -34660,7 +34660,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Dechala the Denied One
 
-#newmonster 6529
+#newmonster 4179
 #spr1 "./Warhammer-Complete/dechala_1.tga"
 #spr2 "./Warhammer-Complete/dechala_2.tga"
 #name "Denied One"
@@ -34710,7 +34710,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Sigvald the Magnificent
 
-#newmonster 6530
+#newmonster 4180
 #spr1 "./Warhammer-Complete/sigvald_1.tga"
 #spr2 "./Warhammer-Complete/sigvald_2.tga"
 #name "Magnificent"
@@ -34759,7 +34759,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Styrkaar
 
-#newmonster 6531
+#newmonster 4181
 #spr1 "./Warhammer-Complete/Styrkaar_1.tga"
 #spr2 "./Warhammer-Complete/Styrkaar_2.tga"
 #name "Chosen Servant of Slaanesh"
@@ -34808,7 +34808,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Azazel the Prince of Damnation
 
-#newmonster 6532
+#newmonster 4182
 #spr1 "./Warhammer-Complete/Azazel_1.tga"
 #spr2 "./Warhammer-Complete/Azazel_2.tga"
 #name "Prince of Damnation"
@@ -34860,7 +34860,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Spawn of Slaanesh
 
-#newmonster 6533
+#newmonster 4183
 #spr1 "./Warhammer-Complete/chaos_spawn_1SL.tga"
 #spr2 "./Warhammer-Complete/chaos_spawn_2SL.tga"
 #name "Spawn of Slaanesh"
@@ -34907,7 +34907,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Chosen Lord of Slaanesh
 
-#newmonster 6534
+#newmonster 4184
 #spr1 "./Warhammer-Complete/chosen_lord_1.tga"
 #spr2 "./Warhammer-Complete/chosen_lord_2.tga"
 #name "Chosen Chaos Lord"
@@ -34958,7 +34958,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Daemonette
 
-#newmonster 6535
+#newmonster 4185
 #spr1 "./Warhammer-Complete/daemonette1.tga"
 #spr2 "./Warhammer-Complete/daemonette2.tga"
 #name "Daemonette of Slaanesh"
@@ -34993,7 +34993,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Herald of Slaanesh
 
-#newmonster 6536
+#newmonster 4186
 #spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
 #spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
 #name "Herald of Slaanesh"
@@ -35041,7 +35041,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Seeker of Slaanesh
 
-#newmonster 6537
+#newmonster 4187
 #spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
 #spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
 #name "Seeker of Slaanesh"
@@ -35078,7 +35078,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Fiend of Slaanesh
 
-#newmonster 6538
+#newmonster 4188
 #spr1 "./Warhammer-Complete/fiend_1.tga"
 #spr2 "./Warhammer-Complete/fiend_2.tga"
 #name "Fiend of Slaanesh"
@@ -35114,7 +35114,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Chaos Fury
 
-#newmonster 6539
+#newmonster 4189
 #spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
 #spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
 #name "Chaos Fury"
@@ -35148,7 +35148,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Keeper of Secrets
 
-#newmonster 6540
+#newmonster 4190
 #spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
 #spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
 #name "Keeper of Secrets"
@@ -35197,7 +35197,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Daemon Princess
 
-#newmonster 6542
+#newmonster 4191
 #spr1 "./Warhammer-Complete/daemonprincess1.tga"
 #spr2 "./Warhammer-Complete/daemonprincess2.tga"
 #name "Daemon Princess of Slaanesh"
@@ -35243,7 +35243,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Exalted Daemon
 
-#newmonster 6543
+#newmonster 4192
 #spr1 "./Warhammer-Complete/exalteddaemon1.tga"
 #spr2 "./Warhammer-Complete/exalteddaemon2.tga"
 #name "Exalted Daemon of Slaanesh"
@@ -35291,7 +35291,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 -- Sigvald's bodyguards
 
-#newmonster 6546
+#newmonster 4193
 #copystats 6509
 #spr1 "./Warhammer-Complete/Chosen_Sigvald_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Sigvald_2.tga"
@@ -35306,7 +35306,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Sorcerer Lord of Slaanesh
 
 -- Avatar Sorcerer Shape
-#newmonster 4215
+#newmonster 4193
 #nametype 115
 #startdom 1
 #gcost 9910
@@ -35343,7 +35343,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 
 -- Avatar Daemonic shape
-#newmonster 4214
+#newmonster 4194
 #nametype 257
 #startdom 3
 #gcost 10050
@@ -35410,7 +35410,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 2
 #fatiguecost 2100
 #effect 10001
-#damage 6535
+#damage 4185
 #nreff 4
 #end
 
@@ -35425,7 +35425,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 3
 #fatiguecost 2100
 #effect 10001
-#damage 6535
+#damage 4185
 #nreff 1007
 #end
 
@@ -35452,7 +35452,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 3
 #fatiguecost 2800
 #effect 10001
-#damage 6537
+#damage 4187
 #nreff 4
 #end
 
@@ -35466,7 +35466,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 3
 #fatiguecost 3000
 #effect 10001
-#damage 6538
+#damage 4188
 #nreff 3
 #end
 
@@ -35480,7 +35480,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 3
 #fatiguecost 4000
 #effect 10021
-#damage 6536
+#damage 4186
 #nreff 1
 #end
 
@@ -35494,7 +35494,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 4
 #fatiguecost 6000
 #effect 10021
-#damage 6543
+#damage 4192
 #nreff 1
 #end
 
@@ -35508,7 +35508,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 4
 #fatiguecost 8000
 #effect 10021
-#damage 6542
+#damage 4191
 #nreff 1
 #end
 
@@ -35524,7 +35524,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 1 2
 #fatiguecost 12000
 #effect 10021
-#damage 6540
+#damage 4190
 #nreff 1
 #end
 
@@ -35539,7 +35539,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pathlevel 0 1
 #fatiguecost 1200
 #effect 10001
-#damage 6539
+#damage 4189
 #nreff 7
 #end
 
@@ -35720,11 +35720,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #msg "A corrupt cult of hedonism honoring the Prince of Excess has sprung up in the province!"
 #unrest 50
 #incdom 10
-#2com 6510
-#com 6526
+#2com 4160 -- Cultist
+#com 4176 -- Chaos Champion
 #3d6units 31
-#1d6units 6535
-#2d6units 6510
+#1d6units 4185 -- Daemonette
+#2d6units 4160 -- Cultist
 #end
 
 -------- NAMES -----------
@@ -35915,10 +35915,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #path 3
 #level 0
 #rarity 5
-#homecom 6528 -- Lord of Slaan
-#homecom 6525 -- Sorcerer Lord
-#homemon 6508 -- Chosen of Slaanesh #1
-#homemon 6509 -- Chosen of Slaanesh #2
+#homecom 4178 -- Lord of Slaan
+#homecom 4193 -- Sorcerer Lord
+#homemon 4158 -- Chosen of Slaanesh #1
+#homemon 4159 -- Chosen of Slaanesh #2
 #end
 
 -------- NATIONS ---------
@@ -35961,28 +35961,28 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #addgod 1231 -- Drakaina
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
-#cheapgod20 4214 -- Daemonic Avatar of Slaanesh
-#cheapgod20 4215 -- Human Avatar of Slaanesh
+#cheapgod20 4194 -- Daemonic Avatar of Slaanesh
+#cheapgod20 4193 -- Human Avatar of Slaanesh
 #addgod 4214
 #addgod 4215
 ---- RECRUITS
 #clearrec
-#wasterec 6500 -- Warhound
-#wasterec 6516 -- Forsaken
-#forestrec 6515 -- Ungor Raider
-#forestrec 6514 -- Ungor
-#forestrec 6513 -- Gor
---#forestrec 6512 -- Slaangor
---#forestrec 6511 -- Minotaur
-#addrecunit 6501 -- Marauder #1
-#addrecunit 6502 -- Marauder #2
-#addforeignunit 6501 
-#addforeignunit 6502 
-#addrecunit 6503 -- Marauder Horsemen
-#addrecunit 6504 -- Warrior of Slaanesh #1
-#addrecunit 6505 -- Warrior of Slaanesh #2
-#addrecunit 6507 -- Standard Bearer
-#addrecunit 6506 -- Knight of Slaanesh
+#wasterec 4150 -- Warhound
+#wasterec 4166 -- Forsaken
+#forestrec 4165 -- Ungor Raider
+#forestrec 4164 -- Ungor
+#forestrec 4163 -- Gor
+--#forestrec 4162 -- Slaangor
+--#forestrec 4161 -- Minotaur
+#addrecunit 4151 -- Marauder #1
+#addrecunit 4152 -- Marauder #2
+#addforeignunit 4151
+#addforeignunit 4152 
+#addrecunit 4153 -- Marauder Horsemen
+#addrecunit 4154 -- Warrior of Slaanesh #1
+#addrecunit 4155 -- Warrior of Slaanesh #2
+#addrecunit 4157 -- Standard Bearer
+#addrecunit 4156 -- Knight of Slaanesh
 --addrecunit 6508 -- Chosen of Slaanesh #1, cap only
 --addrecunit 6509 -- Chosen of Slaanesh #2, cap only
 --addrecunit 6539 -- Chaos Fury, summon
@@ -35996,19 +35996,19 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 ---- LEADERS
 
-#addreccom 6510 -- Cultist
---#addforeigncom 6543 -- foreign Cultist
-#wastecom 6517 -- Forsaken Champion
-#forestcom 6518 -- Ungor Raider Halfhorn
-#forestcom 6520 -- Wargor
-#forestcom 6519 -- Slaanbull
-#forestcom 6522 -- Bray-Shaman
-#addreccom 6521 -- Marauder Chief
-#addreccom 6526 -- Champion of Slaanesh
-#addreccom 6527 -- Exalted Champion
-#addreccom 6523 -- Sorcerer of Slaanesh
-#addreccom 6524 -- Exalted Sorcerer of Slaanesh
---addreccom 6525 -- Sorcerer Lord, cap only
+#addreccom 4160 -- Cultist
+--addforeigncom 4195 -- foreign Cultist
+#wastecom 4167 -- Forsaken Champion
+#forestcom 4168 -- Ungor Raider Halfhorn
+#forestcom 4170 -- Wargor
+#forestcom 4169 -- Slaanbull
+#forestcom 4172 -- Bray-Shaman
+#addreccom 4181 -- Marauder Chief
+#addreccom 4176 -- Champion of Slaanesh
+#addreccom 4177 -- Exalted Champion
+#addreccom 4173 -- Sorcerer of Slaanesh
+#addreccom 4174 -- Exalted Sorcerer of Slaanesh
+--addreccom 6525 -- Sorcerer Lord, cap only (NOTE - these are all old ID values).
 --addreccom 6528 -- Lord of Slaanesh, cap only
 --addreccom 6529 -- Dechala the Denied One, hero
 --addreccom 6530 -- Sigvald the Magnificent, hero
@@ -36021,12 +36021,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 ----- HEROES
 
-#hero1 6529 -- Dechala the Denied One
-#hero2 6530 -- Sigvald the Magnificent
-#hero3 6531 -- Styrkaar
-#hero4 6532 -- Azazel the Prince of Damnation
+#hero1 4179 -- Dechala the Denied One
+#hero2 4180 -- Sigvald the Magnificent
+#hero3 4181 -- Styrkaar
+#hero4 4182 -- Azazel the Prince of Damnation
 --#multihero1 6533 -- Spawn of Slaanesh
-#multihero2 6534 -- Chosen Lord of Slaanesh
+#multihero2 4184 -- Chosen Lord of Slaanesh
 
 
 ----- STARTSITES
@@ -36052,12 +36052,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 ------- PROVINCE DEFENCE
 
 --Sets the units to be used in province defense.
-#defcom1 6521 -- Marauder Chief
-#defcom2 6523 -- Sorcerer of Slaanesh
-#defunit1 6501 -- Marauder #1 (axe)
-#defunit1b 6502 -- Marauder #2 (morningstar)
-#defunit2 6504 -- Warrior #1
-#defunit2b 6503 -- Marauder Horseman
+#defcom1 4181 -- Marauder Chief
+#defcom2 4173 -- Sorcerer of Slaanesh
+#defunit1 4151 -- Marauder #1 (axe)
+#defunit1b 4152 -- Marauder #2 (morningstar)
+#defunit2 4154 -- Warrior #1
+#defunit2b 4153 -- Marauder Horseman
 
 --Sets how many of the units to appear per 10 points.
 #defmult1 10
@@ -36067,11 +36067,11 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 ------- STARTING UNITS
 
-#startcom 6521
-#startscout 6510
-#startunittype1 6501
+#startcom 4181 -- Marauder Chief
+#startscout 4160
+#startunittype1 4151
 #startunitnbrs1 20
-#startunittype2 6502
+#startunittype2 4152
 #startunitnbrs2 10
 #end
 
@@ -36083,7 +36083,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 Nation 		112
 Monsters 	3241-75
 Sites 		1930 and 31
-Weapons 	1400-6
+Weapons 	1700-6
 Armor 		552-62
 Nametypes 	166
 
@@ -36113,7 +36113,7 @@ Nametypes 	166
 
 ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
-#newweapon 1400
+#newweapon 1700
 #name "Cobra Staff"
 #dmg 4
 #att 1
@@ -36126,7 +36126,7 @@ Nametypes 	166
 #blunt
 #end
 
-#newweapon 1401
+#newweapon 1701
 #name "Ritual Blade"
 #slash
 #dmg 12
@@ -36137,7 +36137,7 @@ Nametypes 	166
 #twohanded
 #end
 
-#newweapon 1402
+#newweapon 1702
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison
@@ -36145,7 +36145,7 @@ Nametypes 	166
 #mrnegates
 #end
 
-#newweapon 1403
+#newweapon 1703
 #name "Dart Crossbow"
 #pierce
 #range 10
@@ -36155,12 +36155,12 @@ Nametypes 	166
 #armornegating
 #att 0
 #ammo 2
-#secondaryeffect 1402 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
+#secondaryeffect 1702 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
 #rcost 1
 #flyspr 109 1
 #end
 
-#newweapon 1404
+#newweapon 1704
 #name "Spear of Horus"
 #pierce
 #dmg 8
@@ -36171,7 +36171,7 @@ Nametypes 	166
 #secondaryeffect 221
 #end
 
-#newweapon 1405
+#newweapon 1705
 #name "Blade of Horus"
 #slash
 #nratt 2
@@ -36185,7 +36185,7 @@ Nametypes 	166
 #twohanded
 #end
 
-#newweapon 1406
+#newweapon 1706
 #name "Asp Bow"
 #pierce
 #range 35
@@ -37759,7 +37759,7 @@ Priests: Strong"
 -- Weaponslots: 724-739
 -- Armor slots: 449-450
 -- Unit slots: 4330-4350, 4796-4798, 4800-4835
--- Site slots: 1842, 1844
+-- Site slots: 1952, 1953
 -- Nametypes: 235
 -- Montag: 60006
 -- Restricted items: 6567, 6568
@@ -40793,7 +40793,7 @@ Priests: Strong"
 
 -------- SITES -----------
 
-#newsite 1842
+#newsite 1952
 #name "Chaos Vortex of Tzeentch"
 #path 3
 #level 0
@@ -40803,7 +40803,7 @@ Priests: Strong"
 #gems 1 1
 #end
 
-#newsite 1844
+#newsite 1953
 #name "Halls of Tzeentch"
 #path 3
 #level 0
