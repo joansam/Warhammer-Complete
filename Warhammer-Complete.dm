@@ -35520,7 +35520,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #researchlevel 9
 #path 0 7
 #path 3 5
-#pathlevel 0 5
+#pathlevel 0 7
 #pathlevel 1 2
 #fatiguecost 12000
 #effect 10021
