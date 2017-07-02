@@ -50,35 +50,33 @@
 
 
 ---Warlock Pistol
-#newitem
-#name "Warplock Pistol"
-#spr "./Warhammer-Complete/Pistol1.tga"
-#descr "Clan Skryre's short barreled version of the Warplock Jezzail."
-#type 1
-#constlevel 4
-#mainpath 4
-#mainlevel 1
-#restricted 190
-#weapon 1936
-#end
+--#newitem
+--#name "Warplock Pistol"
+--#spr "./Warhammer-Complete/Pistol1.tga"
+--#descr "Clan Skryre's short barreled version of the Warplock Jezzail."
+--#type 1
+--#constlevel 4
+--#mainpath 4
+--#mainlevel 1
+--#restricted 190
+--#weapon 1936
+--#end
 
-#newweapon 1936
-#name "Warplock Pistol"
-#dmg 10
-#nratt 1
-#att 2
-#def 0
-#range 25
-#range0
-#sound 45
-#pierce
-#magic
-#armornegating
-#secondaryeffect 64
-#nostr
-#flyspr 111 1
-#ammo 6
-#end
+--#newweapon 1936
+--#name "Warplock Pistol"
+--#dmg 10
+--#nratt 1
+--#att 0
+--#def 0
+--#range 20
+--#sound 45
+--#pierce
+--#magic
+--#armorpiercing
+--#nostr
+--#flyspr 111 1
+--#ammo 6
+--#end
 
 
 
@@ -219,7 +217,7 @@
 #rcost 1
 #magic
 #flail
-#secondaryeffectalways 64
+#secondaryeffectalways 1927
 #end
 
 -- Queek's two weapons
@@ -269,8 +267,9 @@
 #def -1
 #len 0
 #rcost 0
+#pierce
 #bonus
-#secondaryeffect 52
+#secondaryeffect 98
 #end
 
 
@@ -283,6 +282,8 @@
 #len 4
 #twohanded
 #rcost 4
+#slash
+#pierce
 #end
 
 
@@ -290,7 +291,6 @@
 #name "Whirling Blades"
 #armorpiercing
 #nostr
-#magic
 #dt_small
 #dmg 6
 #nratt 4
@@ -298,6 +298,7 @@
 #def 0
 #len 5
 #rcost 0
+#slash
 #end
 
 
@@ -317,13 +318,10 @@
 #newweapon 1914
 #name "Weeping Blade"
 #dmg 6
-#att 2
+#att 1
 #def 1
 #len 3
-#nratt 2
-#acid
 #magic
-#armornegating
 #secondaryeffect 51
 #end
 
@@ -335,9 +333,9 @@
 #def -1
 #len 4
 #rcost 5
+#blunt
 #flail
-#magic
-#secondaryeffectalways 143
+#secondaryeffectalways 1927
 #end
 
 #newweapon 1916
@@ -347,19 +345,20 @@
 #def 0
 #len 3
 #rcost 4
-#magic
-#secondaryeffectalways 143
+#blunt
+#secondaryeffectalways 1927
 #end
 
 #newweapon 1917
 #name "Eshin Shuriken"
-#dmg 0
+#dmg -1
 #att 1
 #def 0
 #len 0
 #range 10
 #ammo 4
-#nratt 2
+#nratt 1
+#pierce
 #sound 19
 #flyspr 111 1
 #secondaryeffect 50
@@ -369,11 +368,11 @@
 #newweapon 1918
 #name "Gutter Blade"
 #dmg 5
-#magic
 #att 1
 #def 1
 #len 1
 #rcost 1
+#slash
 #secondaryeffect 50
 #sound 8
 #rcost 0
@@ -382,7 +381,6 @@
 #newweapon 1919
 #name "Pestilent Bite"
 #dmg 0
-#magic
 #att -1
 #def -1
 #len 0
@@ -422,16 +420,15 @@
 #name "Warplightning Thrower"
 #shock
 #armornegating
-#range 60
+#range 15
 #sound 24
-#dmg 20
-#aoe 4
+#dmg 4
 #nostr
 #ammo 10
-#nratt -2
+#nratt 7
 #magic
 #flyspr 210 4
-#att 4
+#att -3
 #secondaryeffectalways 232
 #end
 
@@ -445,11 +442,11 @@
 #sound 24
 #dmg 4
 #nostr
-#ammo 2
-#nratt 2
+#ammo 1
+#nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 114
+#secondaryeffectalways 1909
 #att -3
 #end
 
@@ -462,11 +459,11 @@
 #sound 24
 #dmg 4
 #nostr
-#ammo 2
-#nratt 4
+#ammo 1
+#nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 114
+#secondaryeffectalways 1909
 #att -3
 #end
 
@@ -478,11 +475,11 @@
 #sound 24
 #dmg 4
 #nostr
-#ammo 2
-#nratt 8
+#ammo 1
+#nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 114
+#secondaryeffectalways 1909
 #att -3
 #end
 
@@ -519,16 +516,13 @@
 
 #newweapon 1928
 #name "Poison Wind Globe"
-#dmg 0
-#att 0
+#dmg -2
+#att -3
 #def 0
 #ammo 5
 #range 15
-#secondaryeffectalways 52
+#secondaryeffectalways 1929
 #flyspr 111 1
-#aoe 1
-#magic
-#nostr
 #poison
 #end
 
@@ -536,70 +530,31 @@
 #newweapon 1929
 #name "Poison Wind"
 #dmg 6
-#range 10
-#poison
 #dt_poison
-#secondaryeffectalways 64
-#secondaryeffect 255
 #armornegating
 #poison
 #nostr
 #explspr 10139
-#aoe 5
-#magic
-#end
-
-#newweapon 1930
-#name "Rattling Pump Gun"
-#dmg 10
-#att 0
-#ammo 50
-#nratt 10
-#magic
-#range 30
-#armorpiercing
-#flyspr 111 1
+#aoe 3
 #end
 
 
-
-#newweapon 1931
-#name "Plague Catapult"
-#poison
-#armornegating
-#range 60
-#sound 24
-#dmg 8
-#nostr
-#ammo 20
-#nratt -2
-#magic
-#flyspr 404 4
-#explspr 10041
-#att 2
-#aoe 6
-#secondaryeffectalways 143
-#end
-
-
-#newweapon 1932
-#name "Warplock Jezzail"
-#dmg 10
-#nratt -3
-#att 4
-#def 0
-#range 50
-#rcost 6
-#twohanded
-#sound 45
-#pierce
-#magic
-#armornegating
-#secondaryeffect 64
-#nostr
-#flyspr 111 1
-#ammo 12
-#end
+--#newweapon 1932
+--#name "Warplock Jezzail"
+--#dmg 11
+--#nratt -2
+--#att 0
+--#def 0
+--#range 35
+--#rcost 6
+--#twohanded
+--#sound 45
+--#pierce
+--#armorpiercing
+--#nostr
+--#flyspr 111 1
+--#ammo 12
+--#end
 
 
 #newweapon 1933
@@ -662,33 +617,30 @@
 #spr2 "./Warhammer-Complete/Clanrat Sword2.tga"
 #name "Clanrat"
 #descr "Clanrat warriors form the bulk of every Skaven army. On their own, Clanrats are not exceptional fighters, lacking the discipline, determination and physical strength of other races, however with numbers on their side their superior agility and infamous natural ferocity make them fearsome opponents. These Clanrats are of higher status and are better equipped than their spear carrying brethren."
-#hp 10
+#hp 9
 #size 2
 #prot 0
 #mor 8
 #mr 10
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 8
 #mapmove 2
-#ap 12
-#armor "Ring Mail Cuirass"
+#ap 15
+#armor "Ring Mail Hauberk"
 #armor "Iron cap"
 #weapon "falchion"
 #armor "shield"
-#poisonres 10
-#startage 1
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 10
+#gcost 8
 #rcost 0
 #end
 
@@ -700,33 +652,30 @@
 #spr2 "./Warhammer-Complete/Clanrat Spear2.tga"
 #name "Clanrat"
 #descr "Clanrat warriors form the bulk of every Skaven army. On their own, Clanrats are not exceptional fighters, lacking the discipline, determination and physical strength of other races, however with numbers on their side their superior agility and infamous natural ferocity make them fearsome opponents. These Clanrats are of lower status and have worse equipment than their sword armed brethren."
-#hp 10
+#hp 9
 #size 2
 #prot 0
 #mor 8
 #mr 10
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 8
 #mapmove 2
-#ap 12
+#ap 15
 #armor "Ring Mail Cuirass"
 #armor "Iron cap"
 #weapon "spear"
 #armor "shield"
-#poisonres 10
-#startage 1
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 10
+#gcost 8
 #rcost 0
 #end
 
@@ -743,29 +692,101 @@
 #mor 6
 #mr 8
 #enc 3
-#str 6
+#str 7
 #att 8
 #def 9
 #prec 8
 #mapmove 2
-#ap 12
+#ap 15
 #armor "leather cuirass"
 #weapon "club"
 #poisonres 10
-#startage 1
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #slave
 #undisciplined
 #gcost 5
 #rcost 1
 #end
+
+--Skavenslave squad
+--#newmonster 6168
+--#spr1 "./Warhammer Skaven/GroupSkavenslaveA.tga"
+--#spr2 "./Warhammer Skaven/GroupSkavenslaveA2.tga"
+--#name "Skavenslave Pack"
+--#descr "Masses of slaves are often pushed at the head of Skaven armies as a screen against missile fire or to test the strength of the enemy. Skaven generals --send them to be butchered without the slighest hesitation and other Skaven care little for their fate. Often malnourished and weakened, they are still --capable of tiring and overwhelming some enemies."
+--#hp 6
+--#size 5
+--#ressize 2
+--#prot 0
+--#mor 6
+--#mr 8
+--#enc 3
+--#str 7
+--#att 8
+--#def 9
+--#prec 8
+--#mapmove 2
+--#ap 15
+--#armor "leather cuirass"
+--#weapon "club"
+--#weapon "club"
+--#weapon "club"
+--#ambidextrous 3
+--#poisonres 10
+--#stealthy 0
+--#maxage 30
+--#siegebonus 1
+--#nametype 148
+--#mountainsurvival
+--#darkvision 75
+--#slave
+--#undisciplined
+--#secondshape 6169
+--#gcost 15
+--#rcost 3
+--#end
+
+--Skavenslave squad 2
+--#newmonster 6169
+--#spr1 "./Warhammer Skaven/GroupSkavenslaveB.tga"
+--#spr2 "./Warhammer Skaven/GroupSkavenslaveB2.tga"
+--#name "Skavenslaves"
+--#descr "Masses of slaves are often pushed at the head of Skaven armies as a screen against missile fire or to test the strength of the enemy. Skaven generals --send them to be butchered without the slighest hesitation and other Skaven care little for their fate. Often malnourished and weakened, they are still --capable of tiring and overwhelming some enemies."
+--#hp 6
+--#size 4
+--#ressize 2
+--#prot 0
+--#mor 6
+--#mr 8
+--#enc 3
+--#str 7
+--#att 8
+--#def 9
+--#prec 8
+--#mapmove 2
+--#ap 15
+--#armor "leather cuirass"
+--#weapon "club"
+--#weapon "club"
+--#ambidextrous 2
+--#poisonres 10
+--#stealthy 0
+--#maxage 30
+--#siegebonus 1
+--#nametype 148
+--#mountainsurvival
+--#darkvision 75
+--#slave
+--#undisciplined
+--#secondshape 6113
+--#gcost 10
+--#rcost 2
+--#end
 
 
 ----Stormvermin
@@ -775,32 +796,29 @@
 #spr2 "./Warhammer-Complete/Stormvermin2.tga"
 #name "Stormvermin"
 #descr "The fur of larger Skaven tends to be darker than normal and for this reason black-furred Skaven are respected and feared by their brethren. These stronger, more vicious warriors are normally hand-picked by Warlords or powerful Chiefs to create elite units of Stormvermin. Better equipped than their comrades, Stormvermin on the battlefield are inevitably either safeguarding an important Skaven leader or have been given the task of eliminating their elite opposites amongst enemy ranks, once they have been suitably weakened by slaves, clanrats and various support troops. They are armed with lethal glaives, perfect for cutting down fatigued armoured troops or finishing off larger enemies. They are a little more courageous than Clanrats, but retain the naturally cautious nature of their race."
-#hp 12
+#hp 11
 #size 2
 #prot 0
-#mor 10
+#mor 9
 #mr 10
 #enc 3
-#str 12
-#att 12
+#str 10
+#att 11
 #def 12
-#prec 11
+#prec 9
 #mapmove 2
-#ap 12
-#armor "Full Scale Mail"
-#armor "Iron cap"
-#weapon "Halberd"
-#poisonres 10
-#startage 1
+#ap 15
+#armor "Scale Mail Hauberk"
+#armor "Half Helmet"
+#weapon "Glaive"
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 13
+#gcost 11
 #rcost 0
 #end
 
@@ -812,34 +830,33 @@
 #spr2 "./Warhammer-Complete/Night Runner2.tga"
 #name "Eshin Night Runner"
 #descr "Night Runners are the lowest ranking troops in Clan Eshin and have a notoriously low survival rate, compounded by their lack of armour and role as skirmishers whose task is to neutralise more dangerous enemies. They are armed with nets and short blades and are given basic training in stealth warfare and martial arts by their masters, but only the luckiest, most determined or sneakiest are expected to survive battle; perfect candidates for the ranks of the Gutter Runners."
-#hp 11
+#hp 9
 #size 2
 #prot 0
-#mor 11
+#mor 9
 #mr 10
 #enc 3
-#str 10
-#att 13
-#def 13
-#prec 12
+#str 9
+#att 10
+#def 12
+#prec 10
 #mapmove 2
-#ap 15
+#ap 16
 #armor "Leather Cuirass"
 #armor "Leather Cap"
 #weapon "net"
 #weapon "short sword"
-#poisonres 10
+#poisonres 5
 #stealthy 10
-#startage 1
 #maxage 30
-#siegebonus 2
+#siegebonus 1
 #nametype 148
 #mountainsurvival
 #forestsurvival
 #wastesurvival
 #swampsurvival
 #darkvision 100
-#gcost 13
+#gcost 10
 #rcost 1
 #end
 
@@ -852,27 +869,26 @@
 #spr2 "./Warhammer-Complete/Gutter Runner2.tga"
 #name "Eshin Gutter Runner"
 #descr "Gutter Runners are feared Eshin troops, well trained in the art of infiltration, ambush and sabotage. They are highly proficient at digging tunnels and are often used when sieging enemy fortifications. They wear light but effective armour under their black robes and have a surprisingly high survival rate for Skaven, due mainly to their ability to pick and choose where and when they will fight. They are armed with both poisoned blades for close combat and also venomous thrown shuriken, making them versatile troops. Their skills, however, come at rather a high price."
-#hp 12
+#hp 9
 #size 2
 #prot 0
-#mor 12
-#mr 11
+#mor 10
+#mr 10
 #enc 3
-#str 11
-#att 14
-#def 14
-#prec 13
+#str 9
+#att 12
+#def 13
+#prec 11
 #mapmove 2
-#ap 17
+#ap 16
 #armor "Scale mail cuirass"
 #armor "Leather Cap"
 #weapon "Gutter Blade"
 #weapon "Gutter Blade"
 #weapon "Eshin Shuriken"
-#ambidextrous 5
-#poisonres 15
+#ambidextrous 2
+#poisonres 10
 #stealthy 20
-#startage 1
 #maxage 30
 #siegebonus 3
 #nametype 148
@@ -892,34 +908,32 @@
 #spr2 "./Warhammer-Complete/Plague Monk2.tga"
 #name "Pestilens Plague Monk"
 #descr "Plague Monks form the bulk of Clan Pestilens' troops. They wear tattered robes and bandages to cover their disease ridden, sore-covered and horribly scarred bodies. So used are they to constant pain and disease that it appears to affect them not at all, indeed it is taken as a sign of their God's blessing and they must be hacked to pieces before they will cease fighting, such is their fanatical zeal. Plague Monks have been exposed to so many toxins and poisons that they have become nearly immune to them."
-#hp 15
+#hp 12
 #size 2
-#prot 5
-#mor 13
-#mr 11
+#prot 3
+#mor 9
+#mr 9
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 8
 #mapmove 2
-#ap 12
+#ap 15
 #reqtemple
 #ambidextrous 3
-#weapon "Morningstar"
-#weapon "Plague Scepter"
+#weapon "short sword"
+#weapon 1919
 #poisonres 20
-#startage 1
+#diseaseres 100
+#stealthy 0
 #maxage 30
-#berserk 4
+#berserk 1
 #siegebonus 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 12
+#gcost 8
 #rcost 1
 #end
 
@@ -931,34 +945,31 @@
 #spr2 "./Warhammer-Complete/Plague Censer2.tga"
 #name "Pestilens Censer Bearer"
 #descr "Only the most deranged and fanatical worshippers of disease are chosen for the honour of carrying a plague censer. These weapons are heavy flails whose spiked heads are filled with burning warpstone incense. The Censer Bearers are fed a special brew laced with warpstone which further enhances their zeal and physical prowess. In battle Censer bearers charge ahead of the ranks of Plague Monks, reciting the Liturgicus Infecticus at a frenzied pitch. They then charge the enemy and begin swinging their heavy censers, releasing a cloud of poisonous gas which is almost as fatal to the Skaven as it is to their foes. This proves to be little deterrent to these fanatic ratmen who scream prayers of thanks to God even as they die, their lungs filled with blood and pus. With the awakening of God, the Censers have become sacred to all Skaven."
-#hp 20
+#hp 16
 #size 2
 #prot 5
-#mor 15
-#mr 13
+#mor 12
+#mr 10
 #enc 3
-#str 10
+#str 11
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 8
 #mapmove 2
-#ap 12
+#ap 15
 #reqtemple
 #reqlab
 #weapon "Plague Censer"
-#poisoncloud 6
+#weapon 1919
 #poisonres 25
-#startage 1
+#diseaseres 100
 #maxage 30
-#berserk 5
+#berserk 3
 #swampsurvival
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 15
+#gcost 25
 #rcost 1
 #holy
 #end
@@ -970,34 +981,30 @@
 #spr2 "./Warhammer-Complete/Council Guard2.tga"
 #name "Council Guard"
 #descr "The albino Guard of the Council of Thirteen are an ever present and intimidating military force in Skavenblight. They are utterly loyal to the Council and when they march it is usually on a mission of great importance. It is rumoured that they were secretly bred and presented to the Council by Clan Moulder in order to ensure their seat. It is not known whether the Council Guard were bred to be mute, or whether they take a vow; all that is known is that they are utterly silent and utterly loyal. These extremely unskavenlike traits have only added to their mystique and they are regarded as sacred amongst the ratmen. They are armed identically to Stormvermin and have similar training, though they are even larger and more skilled in battle."
-#hp 14
+#hp 13
 #size 2
 #prot 0
 #mor 12
 #mr 11
 #enc 3
-#str 13
-#att 13
+#str 11
+#att 12
 #def 13
-#prec 12
+#prec 10
 #mapmove 2
-#ap 12
-#reclimit 5
+#ap 15
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
-#weapon "halberd"
-#poisonres 10
-#startage 1
+#weapon "glaive"
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #nametype 148
 #bodyguard 2
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 20
+#gcost 25
 #rcost 0
 #reqtemple
 #holy
@@ -1011,34 +1018,65 @@
 #spr2 "./Warhammer-Complete/Giant Rat2.tga"
 #name "Moulder Giant Rat"
 #descr "Clan Moulder has grown these horrible rat-beasts to the size of wolves, retaining their ferocity and everlasting hunger. Relatively easy to breed, these are the cheapest beasts for Warlord clans to buy and are a common sight amongst any Skaven army. A seething mass of stinking fur and sharp fangs, these creatures can overwhelm even the most disciplined enemies."
-#hp 5
+#hp 7
 #size 2
 #prot 2
-#mor 6
-#mr 8
-#enc 1
-#str 5
-#att 5
-#def 7
+#mor 7
+#mr 5
+#enc 5
+#str 8
+#att 9
+#def 11
 #prec 4
 #mapmove 2
 #ap 17
 #weapon "bite"
 #poisonres 10
-#startage 1
+#diseaseres 25
 #maxage 16
 #animal
-#supplybonus 2
 #nametype 148
 #mountainsurvival
 #forestsurvival
-#wastesurvival
 #swampsurvival
 #slave
 #undisciplined
 #darkvision 75
-#gcost 1
+#gcost 0
 #rcost 1
+#end
+
+----Pestilens Plague Rat
+
+#newmonster 6170
+#spr1 "./Warhammer-Complete/Giant Rat.tga"
+#spr2 "./Warhammer-Complete/Giant Rat2.tga"
+#name "Giant Rat"
+#descr "Clan Moulder do not have a total monopoly on the breeding of deadly creatures; Clan Pestilens developed their own methods for breeding dog sized rats while in the steaming jungles of Lustria. Often unable to militarily overpower their mortal foes, the native Lizardmen, the Plague Priests turned to their extensive knowledge of contagion for answers and refined a bewildering variety of plagues. Their rats made the perfect carriers; fast, vicious and utterly expendable. Upon their return to Skavenblight, the Plague Priests set about developing new contagions and unleashing them upon the world. These rats are at first glance virtually identical to the common Moulder variety; a trait which has often helped the Skaven deliver them into the heart of the enemy ranks with their virulent payload."
+#hp 7
+#size 2
+#prot 2
+#mor 7
+#mr 5
+#enc 5
+#str 8
+#att 9
+#def 11
+#prec 4
+#mapmove 2
+#ap 17
+#gcost 0
+#rcost 1
+#weapon "Plague Bite"
+#poisonres 25
+#diseaseres 100
+#stealthy 0
+#maxage 16
+#animal
+#nametype 148
+#mountainsurvival
+#darkvision 75
+#swampsurvival
 #end
 
 
@@ -1048,35 +1086,31 @@
 #spr1 "./Warhammer-Complete/Globadier.tga"
 #spr2 "./Warhammer-Complete/Globadier2.tga"
 #name "Skryre Poison Wind Globadier"
-#descr "Globadiers are highly specialised troops armed with deadly poison wind globes. These fragile spheres of glass are filled with toxic warpstone-derived fumes produced by the Warlock Engineers in their secret laboratories. Small groups of Globaiders can often be found scuttling on the flanks of Skaven armies, lobbing their grenades against elite units whose thick armour proves no defence at all. Like most Skryre units they are particularly useful in a siege. Because of the clear risks of their occupation, trained Globadiers demand high pay."
-#hp 10
+#descr "Globadiers are highly specialised troops armed with deadly poison wind globes. These fragile spheres of glass are filled with toxic warpstone-derived fumes produced by the Warlock Engineers in their secret laboratories. Small groups of Globadiers can often be found scuttling on the flanks of Skaven armies, lobbing their grenades against elite units whose thick armour proves no defence at all. Like most Skryre units they are particularly useful in a siege. Because of the clear risks of their occupation, trained Globadiers demand high pay."
+#hp 9
 #size 2
 #prot 0
-#mor 10
-#mr 10
+#mor 8
+#mr 12
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 10
-#prec 11
+#def 11
+#prec 9
 #mapmove 2
-#reqlab
-#ap 12
+#ap 15
 #weapon "Poison Wind Globe"
 #armor "Ring Mail Cuirass"
 #armor "Full Helmet"
 #weapon "short sword"
-#poisonres 20
-#startage 1
+#poisonres 10
+#stealthy 0
 #maxage 30
-#siegebonus 1
+#siegebonus 2
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 1
+#gcost 15
 #rcost 1
 #end
 
@@ -1088,35 +1122,32 @@
 #spr2 "./Warhammer-Complete/Rat Ogre2.tga"
 #name "Moulder Rat Ogre"
 #descr "Rat Ogres are the masterpiece of Clan Moulder's mad research. They are massive hulking monsters, created from a warped mix of different creatures. Only the strongest Rat Ogres survive the terrible conditions that the Packmasters impose on them from birth, forcing them to compete for food and shelter. The ones that survive to maturity are little more than a mass of sinewy muscles and razor-sharp claws, moved only by their strong instinct to kill."
-#hp 25
+#hp 30
 #size 3
-#prot 8
+#prot 6
 #mor 10
-#mr 12
+#mr 10
 #enc 3
-#str 17
+#str 20
 #att 10
-#def 8
-#prec 9
+#def 11
+#prec 4
 #mapmove 2
 #ap 17
 #slave
-#berserk 5
-#weapon "Claw"
+#berserk 2
 #weapon "Claw"
 #weapon "Bite"
 #ambidextrous 2
-#poisonres 20
+#poisonres 10
+#diseaseres 25
 #maxage 20
+#stealthy 0
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 1
+#gcost 0
 #rcost 1
-#siegebonus 1
 #end
 
 
@@ -1130,35 +1161,36 @@
 #name "Skryre Warpfire Thrower"
 #descr "The Warpfire Thrower is one of Clan Skryre's oldest and most popular inventions, widely employed by all clans in warfare both above and below ground. It is operated by a team of two Skaven; one to aim the nozzle of the Thrower itself and one to haul and tinker with the storage tank full of unstable Warpfire. The thrower is far from accurate, but friendly casualties are entirely accepted amongst the Skaven, particularly when most of them are inflicted upon lowly Skavenslaves. If sufficiently damaged, the Warpfire Thrower will become even more unstable and dangerous to all around it. Warpfire throwers were designed by Skryre to require a continuous supply of replacement parts and can be expensive to maintain."
 #hp 10
-#size 2
+#size 3
 #prot 0
 #mor 8
-#mr 10
+#mr 12
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 8
 #mapmove 2
-#ap 12
+#ap 15
+#gcost 35
+#rcost 1
 #armor "Scale mail hauberk"
 #armor "Half Helmet"
 #weapon "short sword"
 #weapon 1933
-#fireres 50
-#poisonres 10
-#startage 2
+#weapon 1933
+#fireres 10
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 5
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 1
+#gcost 25
 #rcost 1
 #end
+
 
 ---- Skryre Doomwheel
 
@@ -1167,209 +1199,75 @@
 #spr2 "./Warhammer-Complete/Doomwheel.tga"
 #name "Skryre Doomwheel"
 #descr "The Doomwheel is perhaps Clan Skryre's most exotic war machine; a huge pair of spiked wheels driven by rats constantly jolted into motion with blasts of energy, controlled by nothing more than the frantic and possibly insane Warlock driver and a single guide wheel at the rear. As the Doomwheel tears forward towards the enemy it unleashes energy from its warpstone generators which manifests in warplightning which is cast in the rough direction of the foe. The closer the Doomwheel gets, the stronger the crackling blasts of warplightning become. In addition to this fearsome ranged attack, the Doomwheel is quite capable of simply running over enemy formations, crushing even heavily armoured troops beneath the great wheels."
-#hp 25
+#hp 10
 #size 5
-#prot 13
-#mor 15
-#mr 17
+#prot 8
+#mor 13
+#mr 16
 #enc 3
-#str 16
+#str 14
 #att 10
 #def 12
-#prec 12
+#prec 8
 #mapmove 3
-#siegebonus 5
 #ap 25
 #mounted
 #trample
-#reinvigoration 10
 #armor "iron cap"
-#armor "ring mail hauberk"
+#armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon "Whirling Blades"
 #weapon 1923
 #weapon 1924
 #weapon 1925
-#shockres 10
-#poisonres 10
-#startage 2
-#maxage 100
+#shockres 25
+#poisonres 5
+#maxage 30
 #nametype 148
 #darkvision 75
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#gcost 1
+#gcost 30
 #rcost 1
-#end
-
-
--- Ratling Pump Gun
-
-
-#newmonster 6156
-#name "Ratling Pump Gun"
-#fixedname "Ratling Pump Gun"
-#descr "A Warpstone-based Gatling Gun"
-#spr1 "./Warhammer-Complete/Ratling Gun.tga"
-#spr2 "./Warhammer-Complete/Ratling Gun2.tga"
-#hp 10
-#size 2
-#prot 0
-#mor 8
-#mr 10
-#enc 3
-#str 10
-#att 10
-#def 10
-#prec 10
-#mapmove 2
-#ap 12
-#poisonres 10
-#startage 1
-#maxage 35
-#siegebonus 2
-#nametype 148
-#mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#darkvision 75
-#weapon 1930
-#weapon "Warp Blade"
-#armor "Ring Mail Cuirass"
-#armor "Full Helmet"
 #end
 
 
 -- Warplock Jezzails
-#newmonster 6158
-#name "Warplock Jezzails"
-#fixedname "Warplock Jezzails"
-#descr "Warplock Jezzails are long-barrelled rifles that fire a high velocity bullet made of refined warpstone. Due to their length, Jezzails can fire an incredible distance and still strike with enough force to punch clean through even the toughest armour. If the target does not die from their injuries, they will quickly succumb to the toxic effects of the warpstone that hit them. Of course, such power does come with a price and Jezzail teams have often found themselves on the receiving end of return fire."
-#spr1 "./Warhammer-Complete/WarplockA.tga"
-#spr2 "./Warhammer-Complete/WarplockB.tga"
-#hp 10
-#size 2
-#prot 0
-#mor 8
-#mr 10
-#enc 3
-#str 10
-#att 10
-#def 10
-#prec 11
-#mapmove 2
-#ap 12
-#poisonres 10
-#startage 1
-#maxage 35
-#siegebonus 2
-#nametype 148
-#mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#darkvision 75
-#weapon 1932
-#weapon "Short Sword"
-#armor "Ring Mail Cuirass"
-#armor "Full Helmet"
-#reqlab
-#gcost 25
-#rcost 14
-#end
+--#newmonster 6158
+--#name "Warplock Jezzails"
+--#fixedname "Warplock Jezzails"
+--#descr "Warplock Jezzails are long-barrelled rifles that fire a high velocity bullet made of refined warpstone. Due to their length, Jezzails can fire an incredible distance and still strike with enough force to punch clean through even the toughest armour."
+--#spr1 "./Warhammer-Complete/WarplockA.tga"
+--#spr2 "./Warhammer-Complete/WarplockB.tga"
+--#hp 10
+--#size 2
+--#prot 0
+--#mor 8
+--#mr 10
+--#enc 3
+--#str 10
+--#att 10
+--#def 10
+--#prec 10
+--#mapmove 2
+--#ap 12
+--#poisonres 5
+--#startage 1
+--#maxage 35
+--#siegebonus 2
+--#nametype 148
+--#mountainsurvival
+--#forestsurvival
+--#wastesurvival
+--#swampsurvival
+--#darkvision 75
+--#weapon 1932
+--#weapon "Short Sword"
+--#armor "Ring Mail Cuirass"
+--#armor "Full Helmet"
+--#reqlab
+--#gcost 12
+--#rcost 1
+--#end
 
-
-
--- Hell Pit Abomination
-
-#newmonster 6165
-#spr1 "./Warhammer-Complete/EODA.tga"
-#spr2 "./Warhammer-Complete/EODB.tga"
-#name "Hell Pit Abomination"
-#descr "The Skaven of Clan Moulder will regularly create new and terrifying creatures to unleash upon the world, but none quite as depraved and horrific as the Hell Pit Abomination. A writhing mass of muscle, bone and mechanical components, the Hell Pit Abomination is a living mountain of misshapen flesh that towers over the battlefield below ready to crush, tear and devour anything in its path."
-#hp 80
-#size 5
-#prot 10
-#mor 30
-#mr 13
-#enc 1
-#str 21
-#att 9
-#def 8
-#prec 6
-#mapmove 2
-#siegebonus 10
-#deathdisease 10
-#ap 20
-#weapon 33
-#weapon 20
-#weapon 20
-#weapon 239
-#weapon 65
-#weapon 251
-#weapon 248
-#weapon 249
-#weapon 146
-#weapon 250
-#weapon 43
-#berserk 3
-#trample
-#trampswallow
-#incorporate 10
-#reinvigoration 10
-#regeneration 10
-#fireres -5
-#poisonres 10
-#startage 1
-#maxage 100
-#nametype 148
-#mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#darkvision 75
-#gcost 1
-#rcost 1
-#end
-
--- Plague Catapult
-
-#newmonster 6166
-#spr1 "./Warhammer-Complete/Plague CatapultA.tga"
-#spr2 "./Warhammer-Complete/Plague CatapultB.tga"
-#name "Clan Pestilens Plagueclaw Catapult"
-#descr "Plague Monks of Clan Pestilens are busy launching toxic sludge from their Plagueclaw Catapults, which brings long-range death."
-#hp 14
-#size 3
-#prot 8
-#mor 8
-#mr 13
-#enc 3
-#str 10
-#att 10
-#def 8
-#prec 11
-#mapmove 2
-#siegebonus 15
-#ap 15
-#armor "Scale mail hauberk"
-#armor "Half Helmet"
-#weapon "Short Sword"
-#weapon 1931
-#poisonres 10
-#maxage 30
-#nametype 148
-#mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#darkvision 75
-#gcost 1
-#rcost 1
-#end
 
 -- Warp Lightning Thrower
 
@@ -1378,33 +1276,29 @@
 #spr2 "./Warhammer-Complete/Warp Lightning ThrowerB.tga"
 #name "Skryre Warplightning Cannnon"
 #descr "The Warplightning Cannon is Clan Skryre's latest invention, designed and perfected by none other than Master Warlock Ikkit Claw himself. Much like the Warpfire Thrower, it is an unpredictable and devastating weapon powered by specially treated warpstone which is carried into battle by a team of two Skaven. Warplightning throwers were designed by Skryre to require a continuous supply of replacement parts and can be expensive to maintain."
-#hp 20
+#hp 14
 #size 3
-#prot 8
+#prot 0
 #mor 8
 #mr 13
 #enc 3
-#str 10
+#str 9
 #att 10
-#def 8
-#prec 11
+#def 11
+#prec 8
 #mapmove 2
-#siegebonus 15
 #ap 15
 #armor "Scale mail hauberk"
 #armor "Half Helmet"
 #weapon "Short Sword"
 #weapon "Warplightning Thrower"
-#shockres 10
-#poisonres 10
+#shockres 15
+#poisonres 5
 #maxage 30
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 1
+#gcost 25
 #rcost 1
 #end
 
@@ -1425,63 +1319,51 @@
 #att 10
 #def 11
 #prec 6
-#mapmove 2
-#siegebonus 15
+#mapmove 1
 #ap 12
-#poisonarmor
 #armor "Scale mail hauberk"
 #armor "Full Helmet"
 #armor "Whirling Blades"
 #weapon "Whirling Blades"
-#fear 5
 #poisonres 10
 #maxage 30
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #awe 1
-#gcost 1
+#gcost 25
 #rcost 1
 #end
 
--- Standard Bearer
+---- Crazed Vermin
 
 #newmonster 6167
-#spr1 "./Warhammer-Complete/skabannerA.tga"
-#spr2 "./Warhammer-Complete/skabannerB.tga"
-#name "Standard Bearer"
-#descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to the horned rat."
-#hp 10
+#spr1 "./Warhammer-Complete/Crazed Rat.tga"
+#spr2 "./Warhammer-Complete/Crazed Rat2.tga"
+#name "Crazed Vermin"
+#descr "Spawned from the malevolent mind of the caster, these crazed rats have mere minutes before they dissolve back into shadows and will spend that time devouring everything in their path. Alone they are of little concern, but in large numbers they may pose a serious threat."
+#hp 9
 #size 2
-#prot 0
-#mor 11
-#mr 10
-#enc 3
-#str 10
+#prot 2
+#mor 50
+#mr 5
+#enc 5
+#str 9
 #att 10
-#def 10
-#prec 10
+#def 11
+#prec 4
 #mapmove 2
-#ap 12
-#standard 1
-#armor "Scale mail cuirass"
-#armor "Leather Cap"
-#weapon "Gutter Blade"
-#poisonres 10
-#startage 1
-#maxage 30
-#siegebonus 1
-#nametype 148
-#mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#darkvision 75
-#gcost 20
+#ap 23
+#gcost 1
 #rcost 1
+#weapon "bite"
+#poisonres 40
+#stealthy 0
+#maxage 16
+#animal
+#mountainsurvival
+#darkvision 75
+#swampsurvival
 #end
 
 
@@ -1512,16 +1394,12 @@
 #armor "Iron cap"
 #weapon "Spear"
 #armor "Shield"
-#poisonres 10
+#poisonres 5
 #stealthy 10
-#startage 1
 #maxage 30
 #noleader
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #gcost 15
 #rcost 1
@@ -1550,20 +1428,17 @@
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
 #weapon "Glaive"
-#poisonres 10
-#startage 2
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #inspirational 1
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #okleader
 #nametype 148
 #mountainsurvival
 #darkvision 75
-#gcost 45
+#gcost 10000
 #rcost 1
 #end
 
@@ -1593,17 +1468,14 @@
 #weapon "falchion"
 #weapon "falchion"
 #ambidextrous 3
-#poisonres 10
-#startage 3
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 3
 inspirational 2
 #expertleader
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #gcost 10000
 #rcost 1
@@ -1629,26 +1501,24 @@ inspirational 2
 #prec 8
 #mapmove 2
 #ap 15
-#gcost 50
+#gcost 60
 #rcost 1
-#taskmaster 4
+#taskmaster 1
 #weapon "Moulder Whip"
 #armor "Ring Mail Cuirass"
 #armor "Leather Cap"
 #beastmaster 2
-#poisonres 10
-#startage 2
+#poisonres 5
+#stealthy 0
 #maxage 30
 #siegebonus 1
 #okleader
 #nametype 148
 #animalawe 1
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#makemonsters3 6120
+#onebattlespell 131
+#makemonsters1 6120
 #end
 
 
@@ -1670,7 +1540,7 @@ inspirational 2
 #att 14
 #def 15
 #prec 12
-#mapmove 3
+#mapmove 2
 #ap 17
 #ressize 1
 #armor "Scale mail cuirass"
@@ -1679,19 +1549,15 @@ inspirational 2
 #weapon "Weeping Blade"
 #weapon "Eshin Shuriken"
 #ambidextrous 3
-#patience 3
-#poisonres 20
+#patience 2
+#poisonres 10
 #stealthy 30
 #assassin
-#startage 4
 #maxage 30
 #spy
 #siegebonus 5
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 100
 #poorleader
 #gcost 80
@@ -1719,22 +1585,20 @@ inspirational 2
 #mapmove 2
 #ap 15
 #weapon "falchion"
-#poisonres 20
-#startage 5
+#weapon 1919
+#poisonres 25
+#older -10
+#stealthy 0
 #maxage 50
 #berserk 2
 #magicskill 8 1
 #custommagic 20480 100
 #swampsurvival
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #holy
 #poorleader
 #nametype 148
 #darkvision 75
-#autodisgrinder 2
 #reqtemple
 #gcost 65
 #rcost 1
@@ -1767,20 +1631,17 @@ inspirational 2
 #berserk 3
 #magicskill 8 2
 #magicskill 5 1
-#magicskill 7 2
 #custommagic 20480 100
 #custommagic 20480 30
 #holy
-#startage 5
+#stealthy 0
+#older -10
 #maxage 60
 #goodleader
 #mountainsurvival
-#forestsurvival
-#wastesurvival
 #swampsurvival
 #nametype 148
 #darkvision 75
-#autodisgrinder 5
 #gcost 10000
 #rcost 1
 #reqtemple
@@ -1809,22 +1670,15 @@ inspirational 2
 #armor "Leather Hauberk"
 #armor "Iron cap"
 #weapon "Warp Blade"
-#poisonres 10
-#startage 5
+#poisonres 5
+#stealthy 0
 #maxage 75
 #siegebonus 4
-#magicskill 0 1
-#magicskill 3 1
-#magicskill 5 1
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
+#custommagic 1152 100
+#custommagic 5248 100
 #researchbonus 4
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #poorleader
 #gcost 10000
@@ -1855,25 +1709,20 @@ inspirational 2
 #armor "Full helmet"
 #weapon "Warp Halberd"
 #armor "Ring mail Cuirass"
-#poisonres 10
-#startage 5
+#poisonres 5
+#older -10
 #maxage 75
 #siegebonus 10
 #magicskill 0 1
 #magicskill 3 1
-#magicskill 4 1
 #magicskill 5 1
-#custommagic 32640 100
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
-#forgebonus 10
-#mastersmith 2
+#custommagic 1152 100
+#custommagic 5248 30
+#researchbonus 4
+#stealthy 0
+#mastersmith 1
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #okleader
 #gcost 10000
@@ -1901,29 +1750,24 @@ inspirational 2
 #mapmove 2
 #ap 15
 #weapon "quarterstaff"
-#poisonres 10
-#startage 10
+#poisonres 5
+#older -25
 #maxage 100
-#magicskill 8 3
-#magicskill 4 2
 #magicskill 5 2
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
+#magicskill 4 2
+#magicskill 8 3
+#custommagic 6144 100
+#custommagic 6144 100
+#custommagic 6144 10
 #holy
 #superiorleader
 #nametype 148
 #nobadevents 13
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #gcost 10000
 #rcost 1
+#slowrec
 #end
 
 
@@ -1949,19 +1793,12 @@ inspirational 2
 #armor "Scale mail cuirass"
 #weapon "Creature Killer"
 #beastmaster 3
-##taskmaster 3
-#poisonres 15
-#startage 5
-#maxage 80
+#poisonres 10
+#stealthy 0
+#maxage 45
 #siegebonus 1
-#magicskill 3 2
-#magicskill 7 2
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
+#magicskill 7 1
+#magicskill 3 1
 #douse 1
 #okleader
 #nametype 148
@@ -1971,7 +1808,7 @@ inspirational 2
 #wastesurvival
 #swampsurvival
 #darkvision 75
-#gcost 10000
+#gcost 100
 #rcost 1
 #end
 
@@ -1983,49 +1820,41 @@ inspirational 2
 #spr2 "./Warhammer-Complete/Screaming Bell2.tga"
 #name "Screaming Bell"
 #descr "Screaming Bells are unholy altars from which the Grey Seers preach to the Skaven. The Bell is an ever present symbol in the legends describing the creation of the Skaven race, and its sound reaches deep within the evil hearts of the rat-men, inspiring awe and devotion. In battle the ominous sound of the Bell can be heard above the clamour of the fighting; a message of death for the rat-men's enemies and of victory for the Skaven. The Screaming Bell spreads His dominion in much the same fashion as a prophet. Furthermore, the warpstone brazier on the Screaming Bell empowers the Grey Seer making him an even more potent spellcaster and accurate farseer."
-#hp 50
+#hp 18
 #size 6
-#prot 22
-#mor 18
+#prot 14
+#mor 16
 #mr 18
 #enc 3
 #str 11
 #att 11
 #def 12
 #prec 12
-#mapmove 2
-#ap 15
-#gcost 1
+#mapmove 1
+#ap 5
+#gcost 0
 #rcost 1
 #mounted
 #weapon "Warp Blade"
 #poisonres 25
-#startage 1
-#maxage 1000
-#magicskill 8 3
-#magicskill 4 4
+#older -70
+#maxage 125
 #magicskill 5 3
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
+#magicskill 4 3
+#magicskill 8 3
+#custommagic 6144 100
+#custommagic 6144 10
 #holy
-#horrormark
-#nobadevents 20
-#bonusspells 1
+#nobadevents 13
 #superiorleader
 #trample
-#spreaddom 2
-#inspirational 20
+#spreaddom 1
+#inspirational 5
 #fear 5
 #nametype 148
-#nobadevents 21
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
+#onebattlespell "Fanaticism"
 #end
 
 
@@ -2038,17 +1867,17 @@ inspirational 2
 #descr "The Vermin Lords are thought to be daemonic forms of ancient Lords of Decay, warped by the influence of the Horned Rat into immortal servants. They are terrifying, powerful creatures surrounded by an aura of creeping decay and inscrutable knowledge. Their heads are bedecked with the spiral horns and sloughing flesh of the Horned Rat himself, while warpstone amulets and torcs adorn their body. Vermin Lords arm themselves with huge, wicked-looking glaives, but their chisel-teeth, sharp claws and powerful hooves are almost as dangerous. Only Grey Seers hold the key to summoning Vermin Lords into the material world and they are loath to do so without great need. Vermin Lords are wiser and more wicked than any living Skaven and retain their former lust for power and betrayal. Vermin Lords convey the blessing of the Horned Rat on all around them."
 #hp 70
 #size 4
-#prot 15
+#prot 13
 #mor 30
 #mr 18
 #enc 1
 #str 22
 #att 16
 #def 16
-#prec 14
+#prec 13
 #mapmove 3
 #ap 20
-#gcost 1
+#gcost 0
 #rcost 1
 #weapon "Doom Halberd"
 #weapon "Hoof"
@@ -2057,24 +1886,15 @@ inspirational 2
 #demon
 #stealthy 10
 #magicskill 5 3
-#magicskill 4 4
+#magicskill 4 3
 #magicskill 7 3
 #magicskill 8 3
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
 #holy
 #superiorleader
-#inspirational 10
-#fear 10
+#inspirational 3
+#fear 5
 #itemslots 15366 -- Full slots other than head
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #end
 
 
@@ -2085,46 +1905,39 @@ inspirational 2
 #spr2 "./Warhammer-Complete/Pox Cauldron2.tga"
 #name "Cauldron of a Thousand Poxes"
 #descr "The Cauldron of a Thousand Poxes is a corrupt, festering altar of Clan Pestilens mounted by a Plague Pontifex trained in the creation of virulent contagions. Within the immense cauldron itself bubble countless vile strains of plague that release a cloud of poison lethal to any who stray too close and at the start of each battle the Pontifex will direct winds of foul toxic vapour across the entire field. The Pontifex is also empowered by proximity to such potent diseases and is amongst one of the most powerful mages available to Clan Pestilens. Like the Screaming Bell, the Cauldron of a Thousand Poxes will spread the dominion of the Horned Rat."
-#hp 50
+#hp 28
 #size 5
-#prot 18
+#prot 13
 #mor 17
 #mr 17
 #enc 3
 #str 13
 #att 11
-#def 15
+#def 11
 #prec 11
-#mapmove 2
-#ap 15
-#gcost 1
+#mapmove 1
+#ap 6
+#gcost 0
 #rcost 1
 #mounted
 #weapon "Plague Scepter"
-#weapon "Poison Wind"
 #poisonres 25
 #poisoncloud 13
-#startage 1
+#diseaseres 100
+#older -90
 #maxage 125
 #magicskill 5 3
 #magicskill 7 3
 #magicskill 8 3
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
 #holy
 #superiorleader
 #spreaddom 1
-#inspirational 12
+#inspirational 2
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
 #swampsurvival
 #darkvision 75
+#onebattlespell "Foul Vapors"
 #end
 
 -------- New Heroes
@@ -2138,7 +1951,7 @@ inspirational 2
 #spr1 "./Warhammer-Complete/Hero Queek.tga"
 #spr2 "./Warhammer-Complete/Hero Queek2.tga"
 #fixedname "Queek Head Taker"
-#hp 30
+#hp 28
 #size 2
 #prot 3
 #mor 14
@@ -2147,28 +1960,25 @@ inspirational 2
 #str 13
 #att 15
 #def 15
-#prec 12
+#prec 10
 #mapmove 2
 #ap 15
-#gcost 1
+#gcost 0
 #rcost 1
 #armor "Warpstone Armour"
 #armor "Half Helmet"
 #weapon "The Gouger"
 #weapon "Dwarf Slayer"
-#domsummon2 6119
 #ambidextrous 8
-#poisonres 15
-#startage 10
+#poisonres 5
+#stealthy 0
 #maxage 60
-#inspirational 8
+#older -26
+#inspirational 2
 #superiorleader
 #nametype 148
 #itemslots 14464
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #end
 
@@ -2181,19 +1991,20 @@ inspirational 2
 #spr1 "./Warhammer-Complete/Hero Deathmaster.tga"
 #spr2 "./Warhammer-Complete/Hero Deathmaster2.tga"
 #fixedname "Deathmaster Snikch"
-#hp 25
+#hp 21
 #size 2
-#prot 5
+#prot 2
 #mor 16
-#mr 15
-#enc 2
-#str 15
-#att 16
-#def 20
+#mr 13
+#enc 3
+#str 20
+#att 18
+#def 19
 #prec 16
-#mapmove 3
-#ap 25
+#mapmove 2
+#ap 19
 #armor "Cloak of Shadows"
+#armor "Reinforced leather cap"
 #weapon "Weeping Blade"
 #weapon "Weeping Blade"
 #weapon "Weeping Blade"
@@ -2208,12 +2019,10 @@ inspirational 2
 #ethereal
 #mountainsurvival
 #darkvision 100
-#swampsurvival
-#forestsurvival
-#wastesurvival
-#patience 8
-#startage 10
-#maxage 75
+#onebattlespell "Darkness"
+#patience 5
+#maxage 60
+#older -20
 #end
 
 
@@ -2227,6 +2036,7 @@ inspirational 2
 #spr2 "./Warhammer-Complete/Hero Plaguelord2.tga"
 #fixedname "Plaguelord Skrolk"
 #hp 44
+#size 3
 #prot 13
 #mor 17
 #mr 17
@@ -2236,27 +2046,32 @@ inspirational 2
 #def 13
 #prec 9
 #mapmove 2
-#startage 50
-#maxage 600
-#domsummon2 6118
+#maxage 1313
+#older -500
+#heal
+#poisonarmor
+#fear 5
+#makemonster2 6118
 #ap 12
-#gcost 1
+#gcost 0
 #rcost 1
+#holy
+#blind
 #weapon 1906 -- Rod of Corruption
 #weapon "Fly Swarm"
 #weapon "Life Drain"
 #magicskill 8 3
 #magicskill 7 2
 #magicskill 5 3
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
 #ambidextrous 8
 #poisonres 25
+#diseaseres 100
 #berserk 5
+#expertleader
+#stealthy 0
+#swampsurvival
+#itemslots 15488
+#mountainsurvival
 #end
 
 #newmonster 6147
@@ -2277,43 +2092,35 @@ inspirational 2
 #prec 12
 #mapmove 2
 #ap 15
-#gcost 1
+#gcost 0
 #rcost 1
 #weapon "Staff of the Horned One"
 #weapon "Falchion"
 #ambidextrous 8
-#poisonres 15
+#poisonres 10
 #stealthy 20
 #magicskill 5 4
 #magicskill 4 4
 #magicskill 8 3
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
 #holy
 #regeneration 15
-#superiorleader
+#expertleader
 #nametype 148
 #spy
 #nobadevents 50
 #itemslots 15488
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#startage 10
+#older -120
 #maxage 140
+#onebattlespell 181 -- summon boneripper
 #end
 
 
 ---- Boneripper
 
 #newmonster 6148
-#name "Bonerippers"
+#name "Boneripper"
 #descr "Boneripper is a heavily augmented Rat Ogre specially designed to protect Grey Seers and to follow his every order. Boneripper is always at his Seer's side, adding to his commanding presence and deterring assailants, both from enemy and friendly forces. Clan Skryre has outfitted this hulking beast with a miniature warpfire thrower, an extra blade arm, warpstone enhanced vision and a variety of protective devices. The end result is a true killing machine."
 #spr1 "./Warhammer-Complete/Hero Boneripper.tga"
 #spr2 "./Warhammer-Complete/Hero Boneripper2.tga"
@@ -2329,26 +2136,23 @@ inspirational 2
 #def 10
 #prec 8
 #mapmove 2
-#ap 20
-#gcost 1
+#ap 16
+#gcost 0
 #rcost 1
 #bodyguard 5
 #weapon "Bite"
 #weapon "Claw"
 #weapon "Warp Blade"
 #weapon 1935
+#stealthy 0
 #ambidextrous 8
-#poisonres 20
+#poisonres 25
 #fireres 10
 #shockres 10
 #berserk 4
 #regeneration 10
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 100
-#startage 2
 #maxage 50
 #end
 
@@ -2357,12 +2161,12 @@ inspirational 2
 
 
 #newmonster 6149
-#name "Ikrit Claw"
+#name "Ikit Claw"
 #descr "Ikit Claw has dedicated his life to the study of all forms of magic, even those of Elves and Men. In decades past, Ikit travelled to the far corners of the under-empire, aquiring arcana and artifacts from Cathay, Naggaroth, Lustria and even Albion. Ikit's brilliant mind absorbed all he experienced and in his travels he went further and saw more than perhaps any other mortal. By the time he returned to Skavenblight he was already one of the most powerful mages in the known world and quickly rose to the position of Chief Warlock in Clan Skryre. In addition to his encylcopedic knowledge of magic, Ikit is an engineering prodigy credited with the design of both the Doomwheel and Warplightning Thrower. Crippled in a lab explosion, Ikit fashioned himself a complex mechanical mask and claw and devised the warp halberd Storm Daemon to supply him with magical energy."
 #spr1 "./Warhammer-Complete/Hero Ikit.tga"
 #spr2 "./Warhammer-Complete/Hero Ikit2.tga"
-#fixedname "Ikrit Claw"
-#hp 25
+#fixedname "Ikit Claw"
+#hp 20
 #size 2
 #prot 4
 #mor 17
@@ -2373,34 +2177,30 @@ inspirational 2
 #def 12
 #prec 11
 #mapmove 2
-#ap 15
+#ap 12
 #armor "Ring mail Cuirass"
 #armor "Full helmet"
 #weapon "Storm Daemon"
 #weapon "Mechanical Claw"
-#poisonres 15
-#shockres 15
+#poisonres 20
+#shockres 25
 #startage 30
-#maxage 200
-#reinvigoration 5
+#maxage 120
+#older -180
+#reinvigoration 3
 #siegebonus 20
 #magicskill 0 2
-#magicskill 1 2
-#magicskill 2 2
 #magicskill 3 2
+#magicskill 1 2
 #magicskill 4 2
 #magicskill 5 2
 #magicskill 6 2
-#magicskill 7 2
-#forgebonus 25
-#mastersmith 3
+#fixforgebonus 2
+#mastersmith 1
 #ambidextrous 8
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
-#gcost 1
+#gcost 0
 #rcost 1
 #end
 
@@ -2415,40 +2215,35 @@ inspirational 2
 #descr "Unequalled in experience, power or cruelty, Throt the Unclean embodies the spirit of Clan Moulder. Obsessed with the effects of warpstone mutation, he has performed countless experiments on living creatures, even himself. His scarred form is nearly as large as that of a Rat Ogre, his blood courses with warpstone energy and he wields the infamous Dominator Whip, a Creature Killer and a sword with three powerful arms. Having spawned literally hundreds of offspring, Throt is something of a patriarchal figure in Clan Moulder, though in typical Skaven fashion, he has personally killed many of his own brood who threatened his position. In addition to his sheer power in combat, Throt is a feared general who handpicks the strongest Rat Ogres as his personal guard."
 #hp 45
 #size 3
-#prot 15
-#mor 15
+#prot 11
+#mor 13
 #mr 15
 #enc 3
 #str 17
 #att 14
 #def 13
-#prec 13
+#prec 9
 #mapmove 2
 #ap 16
-#gcost 1
+#gcost 0
 #rcost 1
 #armor "Ring mail hauberk"
 #armor "Iron cap"
 #weapon "Falchion"
 #weapon "Dominator Whip"
 #weapon "Creature Killer"
-#inspirational 6
+#inspirational 3
 #summon1 6124
 #poisonres 25
-#startage 100
-#maxage 400
-#siegebonus 5
+#stealthy 0
+#maxage 300
+#older -60
+#siegebonus 1
 #crossbreeder 10
 #magicskill 7 2
 #magicskill 3 2
-#custommagic 32640 100
-#custommagic 32640 100
-#custommagic 32640 75
-#custommagic 32640 50
-#custommagic 32640 25
-#custommagic 32640 10
 #douse 1
-#superiorleader
+#expertleader
 #nametype 148
 #animalawe 10
 #fear 5
@@ -2456,9 +2251,6 @@ inspirational 2
 #itemslots 31872
 #ambidextrous 10
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #swampsurvival
 #end
@@ -2475,7 +2267,7 @@ inspirational 2
 #descr "A Packmaster must learn when to ply the lash, how to control infighting, and how far beasts can be pushed before they'll turn. None are better attuned to their foul creations than Skweel Gnawtooth, the most successful Packmaster in Hell Pit. Skweel was a runt who survived by relying not on other Skaven, but on Giant Rats. In time this undersized anomaly became a celebrated Packmaster, always accompanied by a teeming horde of his beasts. In battle these creatures need not be driven into battle with pain, rather they act seemingly as extensions of the Packmaster's will. Whether this is the result of a mutation, some new form of magic or simply willpower and experience is unclear, but none can deny the results. Away from battle Skweel is able to train a huge number of rats each month."
 #hp 20
 #size 2
-#prot 8
+#prot 5
 #mor 11
 #mr 14
 #enc 3
@@ -2489,15 +2281,15 @@ inspirational 2
 #rcost 1
 #armor "Scale mail hauberk"
 #weapon "Warplash"
-#beastmaster 10
+#beastmaster 3
 #makemonsters5 6120 -- giant rat
 #makemonsters4 6120-- giant rat
 #makemonsters3 6120 -- giant rat
 #makemonsters2 6120 -- giant rat
 #makemonsters1 6120 -- giant rat
-#summon5 6120
-#poisonres 20
-#startage 10
+#poisonres 25
+#diseaseres 50
+#stealthy 0
 #maxage 70
 #siegebonus 15
 #patrolbonus 15
@@ -2507,8 +2299,6 @@ inspirational 2
 #itemslots 31872
 #ambidextrous 10
 #mountainsurvival
-#forestsurvival
-#wastesurvival
 #swampsurvival
 #darkvision 75
 #unique
@@ -2533,30 +2323,29 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #prec 10
 #mapmove 2
 #ap 15
-#gcost 1
+#gcost 0
 #rcost 1
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
 #weapon "Falchion"
 #weapon "Falchion"
 #weapon "Shortsword"
-#poisonres 10
+#poisonres 5
 #stealthy 30
 #startage 1
 #maxage 66
+#older -10
 #siegebonus 1
-#inspirational 3
-#summon5 6130 -- clanrat with spear
+#inspirational 1
+#summon5 6112 -- clanrat with spear
 #superiorleader
 #nametype 148
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #darkvision 75
 #immortal
 #itemslots 15374 -- body, feet, 3 arms, 2 misc
 #unique
+#onebattlespell "Personal Luck"
 #end
 
 
@@ -2585,17 +2374,13 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #mapmove 2
 #ap 15
 #rcost 1
-#weapon "Warp Blade"
-#poisonres 10
+#weapon "falchion"
+#poisonres 5
+#stealthy 0
 #magicskill 5 1
 #magicskill 4 1
 #expertleader
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
-#wastesurvival
-#swampsurvival
 #gcost 10000
 #pathcost 20
 #startdom 2
@@ -2603,7 +2388,7 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #darkvision 75
 #nobadevents 33
 #makemonsters3 6119
-#startage 200
+#onebattlespell "Personal Luck"
 #maxage 2000
 #end
 
@@ -2637,17 +2422,13 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #magicskill 4 1
 #magicskill 7 1
 #superiorleader
-#fear 10
+#fear 5
 #itemslots 15360 -- Full slots other than head and hands
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #gcost 10000
 #pathcost 80
 #startdom 2
 #ambidextrous 8
-#startage 500
 #maxage 5000
 #end
 
@@ -2657,7 +2438,7 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #spr1 "./Warhammer-Complete/Pretender Arch Plaguelord.tga"
 #spr2 "./Warhammer-Complete/Pretender Arch Plaguelord2.tga"
 #name "Arch Plaguelord"
-#descr "Since the end of the Skaven civil war the Arch Plaguelords of Clan Pestilens have occupied a seat on the Council of Thirteen. The original seat won by Nurglitch I in single combat was the seventh and lowest, but in the centuries since then the Arch Plaguelords have clawed their way to the second seat, below only the Arch Warlock and Seerlord of seats one and twelve. The Arch Plaguelord rides into battle atop a fetid pox rat, a Pestilens creation which releases a constant cloud of poisonous vapour. As a living vessel of pure contagion, the Arch Plaguelord is both terrifying to behold and incredibly resilient. Even to approach him enemies must brave a swarm of toxic flies and in his clawed hand he clutches the Bubonic Sceptre, a symbol of power which ravages the body and soul of any being it touches with a thousand corruptions, reducing them to festering sludge in a matter of seconds. The Arch Plaguelord may anoint new Censer Bearers each month spent in a friendly domain."
+#descr "Since the end of the Skaven civil war the Arch Plaguelords of Clan Pestilens have occupied a seat on the Council of Thirteen. The original seat won by Nurglitch I in single combat was the seventh and lowest, but in the centuries since then the Arch Plaguelords have clawed their way to the second seat, below only the Arch Warlock and Seerlord of seats one and twelve. The Arch Plaguelord rides into battle atop a fetid pox rat, a Pestilens creation which releases a constant cloud of poisonous vapour. As a living vessel of pure contagion, the Arch Plaguelord is both terrifying to behold and incredibly resilient. Even to approach him enemies must brave a swarm of toxic flies and in his clawed hand he clutches the Bubonic Sceptre, a symbol of power which ravages the body and soul of any being it touches with a thousand corruptions, reducing them to festering sludge in a matter of seconds. The Arch Plaguelord may anoint new Censer Bearers each month."
 #hp 50
 #size 5
 #prot 13
@@ -2676,29 +2457,137 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #weapon "Bubonic Sceptre"
 #weapon "Pestilent Bite"
 #weapon "Fly Swarm"
-#domsummon 6118
+#makemonsters3 6118
 #heal
 #poisonres 25
+#diseaseres 100
 #stealthy 10
 #magicskill 5 1
 #magicskill 7 1
 #superiorleader
-#fear 2
+#fear 5
 #itemslots 13442 -- No feet and only 1 hand
 #mountainsurvival
-#forestsurvival
-#wastesurvival
-#swampsurvival
 #gcost 10000
 #pathcost 80
 #startdom 3
 #ambidextrous 8
 #darkvision 75
-#startage 200
 #maxage 2000
 #end
 
+---SPELLS
 
+
+---- Make a copy of contact kitsune so I can use id 221
+
+#newspell
+#copyspell "Contact Kitsune"
+#end
+
+
+---- MR negates easily version of combustion for the warpstatic spell
+
+
+#selectspell 221
+#clear
+#copyspell "Combustion"
+#name "Combustion mr negates"
+--spec 20971552 -- for mr negates easily
+#spec 4198432 -- for mr negates
+#researchlevel 0
+#school -1
+#restricted 190
+#explspr 0
+#end
+
+
+
+
+---- Warpstatic
+
+#newspell
+#copyspell "Charge Body"
+#name "Warp Static"
+#descr "Feeding a chunk of raw warpstone into a whirring brass device, the Warlock is moments later engulfed in a blinding cascade of warplightning. Gesturing across the squeaking horde in front of him, he directs a roil of barely suppressed energy over them. The chittering of the Skaven builds to a terrible pitch as their fur stands on end and green arcs of energy play across their ranks. The stench of burning fur fills the air as some skaven simply burst into flames. When struck the warp power crackling around the ratmen will discharge in a violent blast, hopefully as lethal for their foe as it is for the unfortunate Skaven. While this Skryre magic is powerful it is extremely tiring and should only be used on expendable troops or those adequately protected from shock and fire." 
+#restricted 190
+#researchlevel 4
+#nreff 1
+#aoe 1020
+#precision 0
+#path 0 3
+#path 1 0
+#pathlevel 0 2
+#pathlevel 1 2
+#fatiguecost 100
+#range 10
+#nextspell 221 -- mr negates version of combustion
+--spec 4198400 -- mr negates version
+#spec 4194304 -- only on friendlies
+#flightspr 10247
+#explspr 10087
+#end
+
+
+
+---- Giant Rat combat summon for Skweel Gnawtooth
+
+#newspell
+#copyspell "Ermorian Legion"
+#end
+
+
+#selectspell 132 -- Ermorian Legion
+#clear
+#nreff 50
+#damage 6120 -- Giant Rat
+#researchlevel 0
+#school -1
+#effect 1
+#range 1
+#restricted 190
+#end
+
+
+
+
+---- Giant Rat combat summon for packmasters
+
+#newspell
+#copyspell "Lictorian Legion"
+#end
+
+
+#selectspell 131 -- Lictorian Legion
+#clear
+#nreff 5
+#damage 6120 -- Giant Rat
+#researchlevel 0
+#school -1
+#effect 1
+#range 1
+#restricted 190
+#end
+
+
+
+---- Boneripper combat summon for Thanquol
+
+#newspell
+#copyspell "Bind Beast Bats"
+#end
+
+
+#selectspell 181 -- Bind Beast Bats
+#clear
+#nreff 1
+#damage 6148 -- Boneripper
+#researchlevel 0
+#school -1
+#effect 1
+#range 1
+#restricted 190
+#end
 
 #newspell
 #copyspell "cross breeding"
@@ -2711,7 +2600,7 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #path 1 3
 #pathlevel 0 1
 #pathlevel 1 1
-#fatiguecost 1000
+#fatiguecost 1200
 #end
 
 #newspell
@@ -2744,6 +2633,24 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #nreff 16
 #end
 
+---- Breed Pestilens Plague Rats
+
+#newspell
+#name "Breed Pestilens Plague Rats"
+#descr "The Plague Priests breed their own variety of Giant Rat which they then infect with a deadly bubonic payload which may be transmitted via the rat's virulent bite. These rats look identical to Moulder Giant Rats and so are often hidden amongst them as a nasty surprise for an enemy army." 
+#school 6
+#restricted 190
+#researchlevel 3
+#path 0 7
+#path 1 5
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#fatiguecost 700
+#damage 6170
+#nreff 5
+#end
+
 #newspell
 #name "Breed Rat Ogres"
 #descr "As with other Moulder breeding techniques, the production of suitably fierce and strong rat ogres requires the lives of many slaves. Rat Ogres are powerful though rather stupid creatures who are driven by an overwhelming desire to kill."
@@ -2766,8 +2673,8 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #school 3
 #restricted 190
 #researchlevel 2
-#path 0 5
-#path 1 3
+#path 0 3
+#path 1 5
 #pathlevel 0 1
 #pathlevel 1 1
 #effect 10001
@@ -2792,38 +2699,6 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #nreff 1
 #end
 
-#newspell
-#name "Outfit Ratling PumpGun"
-#descr "Given the right materials and motivation, the Warlocks of Clan Skryre are capable of outfitting and training a Ratling PumpGun Team to accompany the armies of the Warlord Clans."
-#school 3
-#restricted 190
-#researchlevel 3
-#path 0 0
-#path 1 3
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#fatiguecost 400
-#damage 6156
-#nreff 1
-#end
-
-
-#newspell
-#name "Build Plague Catapult"
-#descr "The Warlocks of Clan Skryre are capable of building and outfitting a Plague Catapult to accompany the armies of the Warlord Clans. The warlock will serve as the commander"
-#school 3
-#restricted 190
-#researchlevel 4
-#path 0 5
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10001
-#fatiguecost 600
-#damage 6166
-#nreff 1
-#end
 
 #newspell
 #name "Build Warp Lightning Cannon"
@@ -2831,45 +2706,13 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #school 3
 #restricted 190
 #researchlevel 4
-#path 0 4
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10001
-#fatiguecost 600
-#damage 6160
-#nreff 1
-#end
-
-#newspell
-#name "Summon Hell Pit Abomination"
-#descr "Summons the dreader Hell Pit Abomination"
-#school 6
-#restricted 190
-#researchlevel 5
-#path 0 7
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10001
-#fatiguecost 800
-#damage 6165
-#nreff 1
-#end
-
-#newspell
-#name "Summon Boneripper"
-#descr "Summons a Boneripper to sever as a commander's bodyguard"
-#school 6
-#restricted 190
-#researchlevel 5
-#path 0 7
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 2
+#path 0 3
+#path 1 0
+#pathlevel 0 1
+#pathlevel 1 1
 #effect 10001
 #fatiguecost 400
-#damage 6148
+#damage 6160
 #nreff 1
 #end
 
@@ -2900,43 +2743,41 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #pathlevel 0 2
 #pathlevel 1 2
 #effect 10001
-#fatiguecost 1500
+#fatiguecost 1000
 #damage 6159
 #nreff 1
 #end
 
 #newspell
 #name "Construct Screaming Bell"
-#descr "Unlike other Skaven constructs the Screaming Bell is not produced by Clan Skryre and requires the Warlocks only when forging the huge bell itself. The work of blessing this huge construction, inscribing it with forbidden lore etched in warpstone and channeling into the bell the maddening power of the Horned Rat Himself is a duty for the Grey Seer fortunate and powerful enough to stand atop it. The Screaming Bell grants the Grey Seer additional powers, marks him with the favour of the Horned Rat and spreads his dominion far and wide. In battle the peals of the Screaming Bell inspire rabid ferocity amongst all Skaven and severely dishearten their foes. The cursed chimes of a Screaming Bell can toppel the strongest Fortification.  The Grey Seer leaves his old position to become the bell's alocyte"
+#descr "Unlike other Skaven constructs the Screaming Bell is not produced by Clan Skryre and requires the Warlocks only when forging the huge bell itself. The work of blessing this huge construction, inscribing it with forbidden lore etched in warpstone and channeling into the bell the maddening power of the Horned Rat Himself is a duty for the Grey Seer fortunate and powerful enough to stand atop it. The Screaming Bell grants the Grey Seer additional powers, marks him with the favour of the Horned Rat and spreads his dominion far and wide. In battle the peals of the Screaming Bell inspire rabid ferocity amongst all Skaven and severely dishearten their foes."
 #school 3
 #restricted 190
-#researchlevel 6
+#researchlevel 7
 #path 0 4
 #path 1 5
-#pathlevel 0 2
+#pathlevel 0 3
 #pathlevel 1 2
 #effect 10021
 #fatiguecost 3300
 #damage 6141
 #nreff 1
-#nextspell 91 -- Kill Caster
 #end
 
 #newspell
 #name "Mix a Thousand Poxes"
-#descr "Having tested innumerable contagions and ills on a great many blood slaves, a Pontifex of Clan Pestilens selects a thousand terrible poxes and confines them to a warpstone studded Cauldron. Riding the Cauldron of a Thousand Poxes into battle, the Pontifex wields great magical power and his mere presence will cause poisonous winds to sweep the battlefield. Like the Screaming Bell, the Cauldron is a symbol of the Horned Rat's favour and will spread the dominion of the Skaven far and wide.  The Plague Priest will be with the caulden's owner."
+#descr "Having tested innumerable contagions and ills on a great many blood slaves, a Pontifex of Clan Pestilens selects a thousand terrible poxes and confines them to a warpstone studded Cauldron. Riding the Cauldron of a Thousand Poxes into battle, the Pontifex wields great magical power and his mere presence will cause poisonous winds to sweep the battlefield. Like the Screaming Bell, the Cauldron is a symbol of the Horned Rat's favour and will spread the dominion of the Skaven far and wide."
 #school 6
 #restricted 190
 #researchlevel 7
 #path 0 7
 #path 1 5
 #pathlevel 0 2
-#pathlevel 1 1
+#pathlevel 1 3
 #effect 10021
 #fatiguecost 7700
 #damage 6143
 #nreff 1
-#nextspell 91 -- Kill Caster
 #end
 
 #newspell
@@ -2955,6 +2796,22 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #nreff 1
 #end
 
+#newspell
+#copyspell "resist poison"
+#name "Favour of Nurglitch"
+#descr "Crumbling corrupted warpstone in his fist, the caster hisses some words from a forgotten tongue and motions the dust over his troops, granting them the favour of Nurglitch, Lord of Decay. They are given total immunity to all poisons."
+#restricted 190
+#researchlevel 3
+#school 4
+#path 0 5
+#path 1 8
+#pathlevel 0 1
+#pathlevel 1 1
+#fatiguecost 100
+#range 8
+#aoe 45
+#spec 4194304 -- friendlies only
+#end
 
 #newspell
 #copyspell "berserkers"
@@ -2998,7 +2855,7 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #precision -2
 #path 0 5
 #path 1 8
-#pathlevel 0 1
+#pathlevel 0 2
 #pathlevel 1 1
 #fatiguecost 50
 #effect 1
@@ -3011,18 +2868,18 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #sound 0
 #end
 
---newspell
---copyspell "Gift of Flight"
---name "Skitterleap"
---descr "Reaching into the netherworld the Grey Seer twists dark energy around nearby allies and allows them to hurtle across the battlefield to strike at distant foes."
---restricted 190
---researchlevel 2
---path 0 5
---path 1 4
---pathlevel 0 1
---pathlevel 1 1
---explspr 10060
---end
+#newspell
+#copyspell "Gift of Flight"
+#name "Skitterleap"
+#descr "Reaching into the netherworld the Grey Seer twists dark energy around nearby allies and allows them to hurtle across the battlefield to strike at distant foes."
+#restricted 190
+#researchlevel 2
+#path 0 5
+#path 1 4
+#pathlevel 0 1
+#pathlevel 1 1
+#explspr 10060
+#end
 
 #newspell
 #copyspell "Lightning Bolt"
@@ -3055,45 +2912,32 @@ himself a master of guile. Even for a Skaven, who expect duplicitous tactics, it
 #explspr 10247
 #end
 
+
 -- START SITES
 
 #newsite 1777
 #name "Pillars of Skavenblight"
-
-
 #path 8
 #level 0
-
-
 #rarity 5
-
 #gems 5 1
 #gems 4 1
 #end
 
 #newsite 1778
 #name "Council Chambers"
-
-
 #path 8
 #level 0
-
-
 #rarity 5
-#gems 7 2
-#homecom 6138
 #homecom 6139
-#homecom 6140
+#homemon 6119
 #end
 
 #newsite 1779
 #name "The Undercity"
 #path 3
 #level 0
-
-
 #rarity 5
-
 #gems 0 1
 #gems 3 2
 #end
@@ -3224,11 +3068,11 @@ Priests: Powerful, can perform blood sacrifices"
 --- GODS
 #cleargods
 #addgod 6162  -- Seerlord
-#cheapgod20 6162
+--#cheapgod20 6162
 #addgod 6163  -- Keeper of the Pillar
-#cheapgod20 6163
+--#cheapgod20 6163
 #addgod 6164  -- Arch Plaguelord
-#cheapgod20 6164
+--#cheapgod20 6164
 #addgod 656 -- Fountain of Blood
 #addgod 1348 -- Titan of Serpents and Medicine
 #addgod 2431 -- Titan of the Underworld
@@ -3262,16 +3106,15 @@ Priests: Powerful, can perform blood sacrifices"
 #startunitnbrs1 30
 #startunitnbrs2 20
 #startunittype1 6113
-#startunittype2 6111
+#startunittype2 6112
 
 #clearrec
 #addrecunit 6113
 --addrecunit 6120
-#addrecunit 6158
+--#addrecunit 6158
 #addrecunit 6111
 #addrecunit 6112
 #addrecunit 6114
-#addrecunit 6167  --STD
 #addrecunit 6115
 #addrecunit 6116
 #addrecunit 6117
@@ -3287,6 +3130,8 @@ Priests: Powerful, can perform blood sacrifices"
 #addreccom 6135
 #addreccom 6136
 #addreccom 6137
+#addreccom 6138
+#addreccom 6140
 
 #hero1 6144
 #hero2 6145
@@ -3294,6 +3139,8 @@ Priests: Powerful, can perform blood sacrifices"
 #hero4 6147
 #hero5 6149
 #hero6 6150
+#multihero1 6151
+#multihero2 6152
 
 
 -- No Fort
@@ -3305,7 +3152,6 @@ Priests: Powerful, can perform blood sacrifices"
 --addforeignunit 6120
 #addforeigncom 6130
 #addforeigncom 6131
-#addforeigncom 6133
 #addforeigncom 6135
 
 ------ Province Defence
@@ -3315,22 +3161,20 @@ Priests: Powerful, can perform blood sacrifices"
 #defcom1 6131  -- Chief
 #defcom2 6135  -- Plague Chanter
 
-#defunit1 6113 -- Clan Rat
-#defunit1b 6111 -- Slaves
+#defunit1 6112 -- Clan Rat
+#defunit1b 6113 -- Slaves
 #defunit2 6117 -- Monks
---defunit2b 6120 -- Rats
+#defunit2b 6120 -- Rats
 
 --Sets how many of the units to appear per 10 points.
 
-#defmult1 30
-#defmult1b 50
-#defmult2 30
-#defmult2b 50
+#defmult1 12
+#defmult1b 18
+#defmult2 10
+#defmult2b 15
 
 --- AI HINT
 #bloodnation
-
-
 #end
 
 
