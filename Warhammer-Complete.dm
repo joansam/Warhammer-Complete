@@ -38777,7 +38777,7 @@ Priests: Strong"
 #slowrec
 #rcost 1
 #weapon "Magic Staff"
-#armor 802
+#armor 803
 #poorleader
 #startage 250
 #maxage 5000
@@ -39192,7 +39192,7 @@ Priests: Strong"
 #gcost 0
 #rcost 1
 #weapon "Magic Staff"
-#armor 802
+#armor 803
 #goodleader
 #okundeadleader
 #startage 270
@@ -39726,7 +39726,7 @@ Priests: Strong"
 #weapon 3
 #poisonres 25
 #coldres 5
-#armor 802
+#armor 803
 #startage 1000
 #maxage 10000
 #magicskill 0 1
@@ -39900,7 +39900,7 @@ Priests: Strong"
 #startdom 1
 #rcost 1
 #weapon "Magic Staff"
-#armor 802
+#armor 803
 #itemslots 13446
 #okleader
 #startage 900
@@ -39939,7 +39939,7 @@ Priests: Strong"
 #poisonres 25
 #invulnerable 10
 #weapon 738
-#armor 802
+#armor 803
 #startage 4000
 #maxage 10000
 #magicskill 0 1

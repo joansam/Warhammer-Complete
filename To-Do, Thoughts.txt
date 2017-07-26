@@ -1,7 +1,5 @@
 To-Do - Main Tasks:
 1. New Dark Elves?
-2. Fix Altdorf's starting army, right now it's Marignon's. - done. Also fixed PD.
-3. Compatibility - Summod
 
 Thoughts/Less Urgent:
 
