@@ -3,7 +3,7 @@
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
 
---Many thanks to the mod compiler, from Joansam
+-- Many thanks to the mod compiler - from Joansam
 
 -- Thanks to Sombre for his work on Skaven for Dom3. Thanks bro you're my hero
 
@@ -3068,7 +3068,7 @@ Priests: Powerful, can perform blood sacrifices"
 --- GODS
 #cleargods
 #addgod 6162  -- Seerlord
---#cheapgod20 6162
+#cheapgod20 6162
 #addgod 6163  -- Keeper of the Pillar
 --#cheapgod20 6163
 #addgod 6164  -- Arch Plaguelord
@@ -6871,6 +6871,7 @@ Priests: Powerful."
 #addgod 2435 --Annunaki of Love and War
 #addgod 1231 --Draikana
 #addgod 862 --Vampire Queen
+#cheapgod20 862
 #addgod 1343 --Titan of Love
 #addgod 1348 --Titan of Serpents and Medicine
 
@@ -9308,7 +9309,7 @@ Priests: Powerful."
 #prec 14
 #mapmove 2
 #ap 16
-#gcost 50
+#gcost 10000
 #rcost 1
 #armor 262
 #armor 263
@@ -9620,6 +9621,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 
 #homerealm 6
 #homerealm 10
+#cheapgod20 5128
 #addgod 5128
 
 -----------HEROES
@@ -12216,8 +12218,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #siegebonus 5
 #berserk 4
 #masterrit -10
-#mastersmith -9
-#fixforgebonus -9
+#mastersmith -10
 #douse -10
 #magicskill 0 2
 #magicskill 3 2
@@ -12231,7 +12232,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #ap 10
 #prec 12
 #enc 2
-#gcost 10000
+#gcost 10170
 #pathcost 60
 #startdom 3
 #rcost 1
@@ -12264,7 +12265,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #ethereal
 #berserk 2
 #magicskill 5 1
-#gcost 10000
+#gcost 9950
 #pathcost 20
 #startdom 3
 #hp 30
@@ -14913,7 +14914,7 @@ TWEAK - Flagellants are undisciplined
 #prec 10
 #mapmove 2
 #ap 13
-#gcost 8
+#gcost 11
 #rcost 1
 #weapon "Flail"
 #holy
@@ -16143,7 +16144,6 @@ TWEAK - Flagellants are undisciplined
 #nametype 104
 #end
 
-
 ---- Warrior Priest of Sigmar summoning form
 
 #newmonster 3429
@@ -16175,7 +16175,6 @@ TWEAK - Flagellants are undisciplined
 #firstshape 3437
 #domsummon 3461 -- flagellant
 #end
-
 
 
 ---- Warrior Priest of Sigmar
@@ -18404,10 +18403,7 @@ Priests: Strong."
 #addrecunit 3451 -- State Halberdier
 #addrecunit 3452 -- State Swordsman
 #addrecunit 3453 -- State Crossbow
---addrecunit 3462 -- Marksman
---addrecunit 3461 -- Flagellant
 #addrecunit 3456 -- Greatsword
---addrecunit 3457 -- Reik Foot
 #addrecunit 3460 -- Nobleborn
 #addrecunit 3459 -- Order Knight (No lance)
 #addrecunit 3458 -- Order Knight (Lance)
@@ -18544,7 +18540,6 @@ Priests: Strong."
 #addrecunit 3414 -- State Swordsman (N)
 #addrecunit 3420 -- State Crossbow (N)
 #addrecunit 3462 -- Marksman
---addrecunit 3461 -- Flagellant
 #addrecunit 3419 -- Greatsword (N)
 #addrecunit 3463 -- Outrider
 #addrecunit 3459 -- Order Knight (No lance)
@@ -20333,7 +20328,7 @@ They can lead other birds and animals well."
 #mapmove 2
 #ap 14
 #weapon "Magic staff"
-#gcost 10000
+#gcost 10010
 #pathcost 10
 #startdom 1
 #rcost 1
@@ -20864,7 +20859,7 @@ Other: Mercenaries are generally not used, and expensive to muster. Some units g
 #addgod 216 -Dragon
 #cheapgod20 216
 #addgod 6034
-#cheapgod40 6034
+#cheapgod20 6034
 
 
 - ancient star dragon
@@ -35001,7 +34996,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 18
 #mapmove 3
 #enc 1
-#hp 90
+#hp 132
 #prot 18
 #size 5
 #str 22
@@ -35012,7 +35007,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 30
 #gcost 0
 #rcost 1
-#regeneration 10
 #heal
 #ambidextrous 4
 #weapon 1852 -- Aura of Slaan
@@ -35199,7 +35193,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 2 1
 #magicskill 5 1
 #magicskill 7 1
-#hp 120
+#hp 166
 #size 6
 #prot 18
 #ap 18
@@ -35215,7 +35209,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicpower 2
 #coldres 25
 #poisonres 25
-#regeneration 10
 #heal
 #itemslots 15488
 #startage 40
@@ -35760,7 +35753,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #level 0
 #rarity 5
 #homecom 4178 -- Lord of Slaan
-#homecom 4193 -- Sorcerer Lord
+#homecom 4175 -- Sorcerer Lord
 #homemon 4158 -- Chosen of Slaanesh #1
 #homemon 4159 -- Chosen of Slaanesh #2
 #end
@@ -35807,8 +35800,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #addgod 1561 -- Father of Winters
 #cheapgod20 4194 -- Daemonic Avatar of Slaanesh
 #cheapgod20 4193 -- Human Avatar of Slaanesh
-#addgod 4214
-#addgod 4215
+#addgod 4194
+#addgod 4193
 ---- RECRUITS
 #clearrec
 #wasterec 4150 -- Warhound
@@ -35847,7 +35840,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #forestcom 4170 -- Wargor
 #forestcom 4169 -- Slaanbull
 #forestcom 4172 -- Bray-Shaman
-#addreccom 4181 -- Marauder Chief
+#addreccom 4171 -- Marauder Chief
 #addreccom 4176 -- Champion of Slaanesh
 #addreccom 4177 -- Exalted Champion
 #addreccom 4173 -- Sorcerer of Slaanesh
@@ -35896,7 +35889,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 ------- PROVINCE DEFENCE
 
 --Sets the units to be used in province defense.
-#defcom1 4181 -- Marauder Chief
+#defcom1 4171 -- Marauder Chief
 #defcom2 4173 -- Sorcerer of Slaanesh
 #defunit1 4151 -- Marauder #1 (axe)
 #defunit1b 4152 -- Marauder #2 (morningstar)
@@ -37051,7 +37044,7 @@ then had himself closed alive in a coffin inside it. Although mad he was also ma
 #newmonster 3275
 #copystats 3242
 #name "First King"
-#gcost 100
+#gcost 10000
 #spr1 "./Warhammer-Complete/FirstKing1.tga"
 #spr2 "./Warhammer-Complete/FirstKing2.tga"
 #descr "The First King was the founder of the earliest of the great kingdoms of Nehekhara. He is a powerful mage, and used his magics to empower his body and lengthen his life, eventually attaining immortality itself. After ruling over his kingdom for hundreds of years, the First King finally entered torpor. Now he has reawakened to rule his tragic kingdom once more."
@@ -37758,7 +37751,6 @@ Priests: Strong"
 #sound 16
 #armorpiercing
 #slash
-#pierce
 #end
 
 #newweapon 737
