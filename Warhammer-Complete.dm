@@ -12194,7 +12194,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #end
 
 
---Grudgebearer
+-- Brother of War
 
 #newmonster 3130
 #spr1 "./Warhammer-Complete/Grimnir_1.tga"
@@ -12232,7 +12232,7 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 #ap 10
 #prec 12
 #enc 2
-#gcost 10170
+#gcost 10240
 #pathcost 60
 #startdom 3
 #rcost 1
