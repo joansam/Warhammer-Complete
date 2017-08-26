@@ -14,7 +14,7 @@ Ogre : 927-50
 Orc : 1041-60
 Slaanesh : 1851-62
 Tomb Kings : 1700-6
-Tzeentch : 724-9 (except 732)
+Tzeentch : 724-9 (except 732, 735 and 738)
 VC : 741-7
 WE : 1350-63
 Itza : 810-40 

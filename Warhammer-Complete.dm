@@ -16150,7 +16150,7 @@ TWEAK - Flagellants are undisciplined
 #spr1 "./Warhammer-Complete/Warrior Priest.tga"
 #spr2 "./Warhammer-Complete/Warrior Priest2.tga"
 #name "Warrior Priest of Sigmar"
-#descr "The Sigmarite church is at the heart of the Empire and is challenged only in presence by the worship of Ulric in the Northern provinces. Sigmar Heldenhammer, founder of the Empire, is a martial god, but relatively few in the Church are Warrior Priests. These men have devoted themselves to the martial service of their God, a fraternity of hammers driven to smite the foul enemies of the Empire. They are well armed and armoured and specialise in leading men against cults, beastmen, undead and other abominations. When a Warrior Priest is recruited in a province of faith, flagellants will follow him, knowing the time of redemption must be near."
+#descr "The Sigmarite church is at the heart of the Empire and is challenged only in presence by the worship of Ulric in the Northern provinces. Sigmar Heldenhammer, founder of the Empire, is a martial god, but relatively few in the Church are Warrior Priests. These men have devoted themselves to the martial service of their God, a fraternity of hammers driven to smite the foul enemies of the Empire. They are well-armed and armoured and specialise in leading men against cults, beastmen, undead and other abominations. When a Warrior Priest is recruited in a province of faith, flagellants will follow him, knowing the time of redemption must be near."
 #hp 14
 #size 2
 #prot 0
@@ -16183,7 +16183,7 @@ TWEAK - Flagellants are undisciplined
 #spr1 "./Warhammer-Complete/Warrior Priest.tga"
 #spr2 "./Warhammer-Complete/Warrior Priest2.tga"
 #name "Warrior Priest of Sigmar"
-#descr "The Sigmarite church is at the heart of the Empire and is challenged only in presence by the worship of Ulric in the Northern provinces. Sigmar Heldenhammer, founder of the Empire, is a martial god, but relatively few in the Church are Warrior Priests. These men have devoted themselves to the martial service of their God, a fraternity of hammers driven to smite the foul enemies of the Empire. They are well armed and armoured and specialise in leading men against cults, beastmen, undead and other abominations."
+#descr "The Sigmarite church is at the heart of the Empire and is challenged only in presence by the worship of Ulric in the Northern provinces. Sigmar Heldenhammer, founder of the Empire, is a martial god, but relatively few in the Church are Warrior Priests. These men have devoted themselves to the martial service of their God, a fraternity of hammers driven to smite the foul enemies of the Empire. They are well-armed and armoured and specialise in leading men against cults, beastmen, undead and other abominations."
 #hp 14
 #size 2
 #prot 0
@@ -16265,7 +16265,7 @@ TWEAK - Flagellants are undisciplined
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1000
+#gcost 900
 #rcost 120
 #magicskill 8 5
 #magicskill 1 1
@@ -16339,7 +16339,7 @@ TWEAK - Flagellants are undisciplined
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1500
+#gcost 1300
 #rcost 120
 #magicskill 8 6
 #magicskill 1 1
@@ -33238,9 +33238,26 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 
 #newweapon 1852
 #name "Aura of Slaanesh"
-
 #dmg 33
 #aoe 1
+#nostr
+#magic
+#armornegating
+#mrnegates
+#unrepel
+#att 0
+#def 0
+#len 0
+#bonus
+#mind
+#friendlyimmune
+#dt_stun
+#end
+
+#newweapon 1863
+#name "Greater Aura of Slaanesh"
+#dmg 33
+#aoe 8
 #nostr
 #magic
 #armornegating
@@ -35009,7 +35026,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #heal
 #ambidextrous 4
-#weapon 1852 -- Aura of Slaan
+#weapon 1863 -- Greater Aura of Slaan
 #weapon 1857 -- Slaaneshi Claws
 #maxage 10000
 #magicskill 2 3
@@ -35218,7 +35235,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #expertundeadleader
 #fear 10
 #awe 6
-#weapon 1852 -- Aura
+#weapon 1863 -- Greater Aura
 #weapon 1857 -- Slaaneshi Claws
 #weapon 1857
 #weapon 1861 -- Daemonic Tentacles
@@ -37520,8 +37537,9 @@ Priests: Strong"
 #homerealm 5 -- Middle East
 #homerealm 7 -- Africa
 #homerealm 10 -- Default
-#addgod 3274
-#addgod 3275
+#addgod 3274 -- Gilded Scorpion
+#addgod 3275 -- First King
+#cheapgod20 3275
 #addgod 607  --Baphomet
 #addgod 661  --Shedu
 #addgod 1097 --Lord of the Summer Plague
@@ -37696,6 +37714,37 @@ Priests: Strong"
 #sound 16
 #end
 
+#newweapon 732
+#name "Aura of Tzeentch"
+#dmg 5
+#aoe 4
+#att 0
+#def 0
+#len 0
+#nostr
+#magic
+#armornegating
+#mrnegateseasily
+#unrepel
+#bonus
+#demonimmune
+#dt_raise
+#raiseshape 4330
+#end
+
+
+#aoe 4
+#dmg 2
+
+#magic
+#sound 24
+#flyspr 210 4
+#explspr 10219
+#secondaryeffectalways 232
+#bonus
+#hardmrneg
+#end
+
 #newweapon 733
 #name "Windblade"
 #dmg 12
@@ -37727,19 +37776,6 @@ Priests: Strong"
 #sound 16
 #end
 
-#newweapon 735
-#name "Chaos Runesword"
-#dmg 14
-#bonus
-#magic
-#nostr
-#att 2
-#len 2
-#slash
-#sound 8
-#armorpiercing
-#end
-
 #newweapon 736
 #name "Melekh's halberd"
 #dmg 11
@@ -37760,18 +37796,6 @@ Priests: Strong"
 #att 1
 #def -1
 #len 2
-#slash
-#sound 8
-#armorpiercing
-#end
-
-#newweapon 738
-#name "Chaos Runesword"
-#dmg 12
-#magic
-#att 1
-#def -1
-#len 3
 #slash
 #sound 8
 #armorpiercing
@@ -38194,7 +38218,7 @@ Priests: Strong"
 #chaosrec 2
 #rcost 1
 #coldres 3
-#weapon "Broad Sword"
+#weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -38962,7 +38986,7 @@ Priests: Strong"
 #rcost 1
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
-#weapon 735
+#weapon 1855
 #armor 801
 #armor "Full Helmet"
 #itemslots 12416 -- 1 head, 2 misc
@@ -39448,6 +39472,7 @@ Priests: Strong"
 #name "Pink Horror"
 #nametype 235
 #descr "Pink Horrors are, in general, identifiable by their luminescent pink skin and their high-pitches squeals of laughter. They whirl about on the battlefield in a frantic and barely controlled ecstasy, all the while giggling insanely. Nothing makes a Pink Horror happier than utilizing their eldritch powers, which cause death and destruction among their enemies."
+#montag 6666
 #ap 12
 #mapmove 3
 #hp 6
@@ -39485,6 +39510,7 @@ Priests: Strong"
 #name "Blue Horror"
 #nametype 235
 #descr "A Blue Horror is very similar to a Pink Horror in stature, but their temperaments are entirely different. Where Pink Horrors are merry, the Blue Horror is sullen and malicious, much like bad-tempered children, on their faces a perpetual scowl as they sneer and grumble their way through battle. They are, in a way, the depressive phase of their manic 'parents'."
+#montag 6666
 #ap 12
 #mapmove 3
 #hp 6
@@ -39520,6 +39546,7 @@ Priests: Strong"
 #name "Screamer of Tzeentch"
 #nametype 235
 #descr "From the ether of Chaos come the Screamers, glimmering sky-sharks that ride upon the Winds of Magic as a bird glides upon the breeze. Festooned with fangs, horns, and spurs, they dive. Trailing multi-coloured tendrils in the air, their slashing blades tear through the enemy before they soar skywards once more. Screamers have no real conscious thought, existing merely on instinct and mindlessly hunting along the Winds of Magic for mortal souls. When a Chaos army gathers, they are drawn down from the Realm of Chaos by the pulses of emotion, attracted to battlefields by the carnage and hatred generated. Here they gather in shoals, diving down upon the enemy and feasting on the escaping souls of the slain."
+#montag 6666
 #ap 12
 #mapmove 3
 #hp 10
@@ -39558,6 +39585,7 @@ Priests: Strong"
 #name "Chaos Fury"
 #nametype 144
 #descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
+#montag 6666
 #ap 15
 #mapmove 3
 #hp 8
@@ -39667,8 +39695,9 @@ Priests: Strong"
 #rcost 1
 #invulnerable 20
 #magicpower 1
+#weapon 732 -- Aura of Tzeentch
 #weapon "Magic Staff"
-#weapon "Chaos Fire"
+--#weapon "Chaos Fire"
 #weapon "Lightning of Tzeentch"
 #startage 400
 #maxage 10000
@@ -39938,7 +39967,7 @@ Priests: Strong"
 #coldres 5
 #poisonres 25
 #invulnerable 10
-#weapon 738
+#weapon 1855
 #armor 803
 #startage 4000
 #maxage 10000
