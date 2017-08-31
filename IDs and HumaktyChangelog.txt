@@ -12,7 +12,7 @@ Khorne : 1301-10
 Nurgle : 1750-71 (except 1754)
 Ogre : 927-50
 Orc : 1041-60
-Slaanesh : 1851-62
+Slaanesh : 1851-64
 Tomb Kings : 1700-6
 Tzeentch : 724-9 (except 732, 735 and 738)
 VC : 741-7

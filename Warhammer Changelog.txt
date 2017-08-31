@@ -1,3 +1,13 @@
+Version .91 , .92 and .93
+(Not an exhaustive list, I likely missed a few things)
+Various bugfixes
+Added better daemonic names to Tzeentch, Nurgle and Khorne
+Added #latehero of various times to Slaanesh and Tzeetch's heroes
+Nerfed some of these heroes when OP
+Commented out mercs - they're not working at all right now.
+Decreased cost of Greater Tribute to Order to 1400
+
+
 Version .8
 Llama's new Tomb Kings and Vampire Counts are in!
 Fixed bugs in Vampire Counts as reported on the forums

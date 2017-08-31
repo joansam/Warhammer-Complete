@@ -13366,45 +13366,45 @@ Priests: Moderate. Preaching does not spread dominion. Dominion spreads with blo
 
 -------- New Mercenaries
 
-#newmerc
-#name "Deathseekers"
-#bossname "Furagrim"
-#com "Giant Slayer"
-#unit "Troll Slayer"
-#nrunits 9
-#level 1
-#minmen 2
-#minpay 200
-#xp 20
-#randequip 2
-#recrate 100
-#eramask 6 -- middle + late
-#end
+--#newmerc
+--#name "Deathseekers"
+--#bossname "Furagrim"
+--#com "Giant Slayer"
+--#unit "Troll Slayer"
+--#nrunits 9
+--#level 1
+--#minmen 2
+--#minpay 200
+--#xp 20
+--#randequip 2
+--#recrate 100
+--#eramask 6 -- middle + late
+--#end
 
-#newmerc
-#name "The Lost Squadron"
-#bossname "Frakrim"
-#com "Prospector"
-#unit "Miner"
-#nrunits 14
-#level 1
-#minmen 5
-#minpay 225
-#xp 20
-#randequip 2
-#recrate 100
-#eramask 6 -- middle + late
-#end
+--#newmerc
+--#name "The Lost Squadron"
+--#bossname "Frakrim"
+--#com "Prospector"
+--#unit "Miner"
+--#nrunits 14
+--#level 1
+--#minmen 5
+--#minpay 225
+--#xp 20
+--#randequip 2
+--#recrate 100
+--#eramask 6 -- middle + late
+--#end
 
-#newmerc
-#name "Gotrek & Felix"
-#com "Doomed Heroes"
-#level 1
-#xp 30
-#bossname "Gotrek Gurnisson & Felix Jaeger"
-#minpay 250
-#eramask 2
-#end
+--#newmerc
+--#name "Gotrek & Felix"
+--#com "Doomed Heroes"
+--#level 1
+--#xp 30
+--#bossname "Gotrek Gurnisson & Felix Jaeger"
+--#minpay 250
+--#eramask 2
+--#end
 
 
 -------- New nations
@@ -16265,7 +16265,7 @@ TWEAK - Flagellants are undisciplined
 #mapmove 0
 #immobile
 #ap 2
-#gcost 900
+#gcost 1000
 #rcost 120
 #magicskill 8 5
 #magicskill 1 1
@@ -16339,7 +16339,7 @@ TWEAK - Flagellants are undisciplined
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1300
+#gcost 1400
 #rcost 120
 #magicskill 8 6
 #magicskill 1 1
@@ -20982,7 +20982,6 @@ Version 1.1
 --armour slot 700-9
 --unitslots 4600-4699
 --siteslots 1700-4
---nametypes 234
 
 -- Khorne's Gift: +1Str,+1Att,Berserk
 
@@ -21142,7 +21141,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/chaosSpawnForsaken1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawnForsaken2.tga"
 #name "Forsaken"
-#nametype 234
+#nametype 257
 #descr "The Forsaken are those poor souls granted at least one too many 'gifts' by their patron god, their intellect reduced to the level of beasts. Whether it is due to some slight against Slaanesh or for great accomplishments, it does not matter. One thing is certain for the Forsaken, however; in their future looms either death or spawndom."
 #clearweapons
 #cleararmor
@@ -21186,7 +21185,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/chaosSpawn1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawn2.tga"
 #name "Chaos Spawn"
-#nametype 234
+#nametype 257
 #descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #clearweapons
 #cleararmor
@@ -21233,7 +21232,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/chaosSpawnGreater1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawnGreater2.tga"
 #name "Greater Chaos Spawn"
-#nametype 234
+#nametype 257
 #descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #clearweapons
 #cleararmor
@@ -21362,7 +21361,7 @@ Version 1.1
 #spr2 "./Warhammer-Complete/bloodletter_2.tga"
 #name "Bloodletter"
 #descr "Bloodletters are Lesser Daemons, known variously as the Foot Soldiers of Khorne, the Warriors of Blood, the Teeth of Death, or the Horned Ones. Carrying blades quenched in the blood of a generation of fallen warriors, they march behind twisted banners that flutter in no earthly breeze, accompanied by the chanting of the names of those slain in battle. They form the core of the vast legions of the Lord of Battle. Believed to have been foremost amongst the Blood God's followers in mortal life, their will is as implacable and blood-hungry as Khorne himself. Festooned with rippling muscles, knotted sinews and driven by an unparallel killing instinct, Bloodletters are fearsome opponents."
-#nametype 234
+#nametype 257
 #clearweapons
 #cleararmor
 #mapmove 2
@@ -21399,7 +21398,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/bloodHerald1.tga"
 #spr2 "./Warhammer-Complete/bloodHerald2.tga"
 #name "Herald of Khorne"
-#nametype 234
+#nametype 257
 #descr "Renowned for their strength and resolve even above and beyond those of the other Bloodletters, the Heralds of Khorne are savage masters of brutality, capable of taking on entire squads of lesser fighters - only once the orders of the Bloodthirsters have been enacted will the Heralds give in to their ever-building bloodlust, however. "
 #mapmove 2
 #enc 2
@@ -21439,7 +21438,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/bloodthirster_1.tga"
 #spr2 "./Warhammer-Complete/bloodthirster_2.tga"
 #name "Bloodthirster"
-#nametype 234
+#nametype 257
 #descr "Of all those who shed blood in the name of Khorne, the Bloodthirster is the most terrifying, the most proficient and the most utterly savage. Wearing archaic armour forged at the base of the Blood God's throne and bearing a whip of hell-fire and an axe larger than a man, the Bloodthirster throws itself into battle upon wings that block out the light of the sun. In battle, the Bloodthirster's presence blesses all the Sacred followers of the Dark Gods."
 #mapmove 3
 #enc 2
@@ -21531,7 +21530,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/fleshhound_1.tga"
 #spr2 "./Warhammer-Complete/fleshhound_2.tga"
 #name "Flesh Hound"
-#nametype 234
+#nametype 257
 #descr "The Hunters of Blood come, unerringly stalking across the silent leagues, merciless predators who know the scent of every mortal creature. Flesh Hounds are brutal beasts with massive iron collars of Khorne around their necks, driven with spikes and studs. Their razor-sharp claws are like swords, their bloodied bodies ripple with unnatural sinew and muscle. As savage as their god, they prey upon any who stand in their path, existing purely for the thrill of the chase and the inevitable kill."
 #size 3
 #mapmove 2
@@ -21570,7 +21569,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/FleshBeast1.tga" -from Dreamers by Amos
 #spr2 "./Warhammer-Complete/FleshBeast2.tga"
 #name "Flesh Beast"
-#nametype 234
+#nametype 257
 #descr "Flesh beast are even further mutated then flesh hounds and even more dangerous."
 #mapmove 3
 #size 4
@@ -21610,7 +21609,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/Juggernaut1.tga" -Atreus, Rise of the Dragon Emperor [Atreidi]
 #spr2 "./Warhammer-Complete/Juggernaut2.tga"
 #name "Juggernaut"
-#nametype 234
+#nametype 257
 #descr "The Juggernaut's heavily armored, partially mechanical bodies are made of living metal and burning blood. They are said to embody the rawest moments of battle, where overwhelming force is prevalent and only the mightiest and toughest can survive."
 #size 5
 
@@ -21817,7 +21816,7 @@ Version 1.1
 #spr2 "./Warhammer-Complete/chaoswarriorAxe2.tga"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
-#nametype 234
+#nametype 115
 #mapmove 1
 #clearweapons
 #cleararmor
@@ -21944,7 +21943,7 @@ Version 1.1
 #spr2 "./Warhammer-Complete/chaoswarriorSword2.tga"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
-#nametype 234
+#nametype 115
 #mapmove 1
 #clearweapons
 #cleararmor
@@ -22886,7 +22885,7 @@ Version 1.1
 #spr1 "./Warhammer-Complete/chaosSpawnGreater1.tga"
 #spr2 "./Warhammer-Complete/chaosSpawnGreater2.tga"
 #name "Greater Spawn of Chaos"
-#nametype 234
+#nametype 257
 #descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 16
 #mapmove 2
@@ -23293,127 +23292,6 @@ Version 1.1
 
 
 
--------- NAMES -----------
-
--- Khorne Names
-#selectnametype 234
-#clear
-#addname "Hotmaim"
-#addname "Banerip"
-#addname "Dreadbeast"
-#addname "Mauldoom"
-#addname "Haterend"
-#addname "Vilerip"
-#addname "Grimblade"
-#addname "Baneblade"
-#addname "Fangwarp"
-#addname "Howlhammer"
-#addname "Battlerage"
-#addname "Thrashhelm"
-#addname "Ripshred"
-#addname "Hothead"
-#addname "Gnawblade"
-#addname "Sharpbreak"
-#addname "Waraxe"
-#addname "Haterend"
-#addname "Bladekeen"
-#addname "Taintfist"
-#addname "Sharpfroth"
-#addname "Greatcleave"
-#addname "Scrapequiver"
-#addname "Axelick"
-#addname "Deathgrim"
-#addname "Rabidrend"
-#addname "Sharpedge"
-#addname "Gnawloon"
-#addname "Banecleave"
-#addname "Goregrind"
-#addname "Bladeblood"
-#addname "Gruntrip"
-#addname "Beastslice"
-#addname "Fistcraze"
-#addname "Blademad"
-#addname "Reapthrash"
-#addname "Hammerheart"
-#addname "Whipsharp"
-#addname "Hackslash"
-#addname "Warbane"
-#addname "Sliceheat"
-#addname "Goregrind"
-#addname "Battlerend"
-#addname "Feastflesh"
-#addname "Swiftcraze"
-#addname "Dreadblade"
-#addname "Hothate"
-#addname "Rendrip"
-#addname "Beastgnash"
-#addname "Furymaul"
-#addname "Whiplash"
-#addname "Fistrend"
-#addname "Bladefury"
-#addname "Heartwrench"
-#addname "Crushslice"
-#addname "Gutsblod"
-#addname "Warblade"
-#addname "Edgeknife"
-#addname "Howlhack"
-#addname "RipSmack"
-#addname "SlashHack"
-#addname "Gorecraze"
-#addname "Twaincut"
-#addname "Rendsharp"
-#addname "Meatmash"
-#addname "Wartide"
-#addname "Doombeast"
-#addname "Doomslayer"
-#addname "Bloodmad"
-#addname "Axemaul"
-#addname "Bladehate"
-#addname "Riprabid"
-#addname "Gutblood"
-#addname "Hategrind"
-#addname "Bloodfury"
-#addname "Lickblade"
-#addname "Gruntcrush"
-#addname "Hackaxe"
-#addname "Ripsmash"
-#addname "Fistfiend"
-#addname "Blademange"
-#addname "Warmaul"
-#addname "Whipsword"
-#addname "Bladestorm"
-#addname "Fistblade"
-#addname "Hellblade"
-#addname "Ripwreck"
-#addname "Gutwrench"
-#addname "Greatslice"
-#addname "Deathdealer"
-#addname "Beastwhip"
-#addname "Deathblade"
-#addname "Heartrend"
-#addname "Crushblunt"
-#addname "Furyblade"
-#addname "Doomslice"
-#addname "Fearmonger"
-#addname "Battleaxe"
-#addname "Ripgnash"
-#addname "Grimbane"
-#addname "Riprend"
-#addname "Fistcraze"
-#addname "Bladeblast"
-#addname "Clawgore"
-#addname "Wighthelm"
-#addname "Bladefire"
-#addname "Howlfiend"
-#addname "Hearttear"
-#addname "Deathbringer"
-#addname "Slicesword"
-#addname "Helmblade"
-#addname "Gruntwhip"
-#addname "Doomblade"
-#addname "Dreadrend"
-#end
-
 -------- SITES -----------
 
 #newsite 1701
@@ -23627,7 +23505,6 @@ Priests: Khorne needs no priests."
 -- Armor IDs: 685
 -- Unit IDs: 5000 - 5049
 -- Nation ID: 136
--- Nametype IDs:  219
 -- Site IDs: 1925 - 1926
 -- Montag IDs: 69402
 -- Restricted items: 6565
@@ -25126,7 +25003,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/spawn_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/spawn_of_nurgle_2.tga"
 #name "Spawn of Nurgle"
-#nametype 219
+#nametype 257
 #descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 15
 #mapmove 2
@@ -25420,7 +25297,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Plaguebearer_1.tga"
 #spr2 "./Warhammer-Complete/Plaguebearer_2.tga"
 #name "Plaguebearer"
-#nametype 219
+#nametype 257
 #descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering every torment imaginable."
 #ap 10
 #mapmove 2
@@ -25456,7 +25333,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Nurgling_1_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_1_2.tga"
 #name "Nurgling"
-#nametype 219
+#nametype 257
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 2
@@ -25493,7 +25370,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Nurgling_2_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_2_2.tga"
 #name "Nurgling"
-#nametype 219
+#nametype 257
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 2
@@ -25530,7 +25407,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Nurgling_3_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_3_2.tga"
 #name "Nurgling"
-#nametype 219
+#nametype 257
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 2
@@ -25567,7 +25444,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Herald_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Herald_of_Nurgle_2.tga"
 #name "Herald of Nurgle"
-#nametype 219
+#nametype 257
 #descr "A mortal who resists the ravages of Nurgle's Rot for a significant time endures an unusually long incubation period for the nascent Plaguebearer, resulting in a larger, tougher individual known as a Herald of Nurgle, who leads the lesser Plaguebearers to battle. Regardless of that however, they are a testament to the fact that even the hardiest of souls cannot indefinitely defy disease. The Herald spreads Nurgle's Rot on his own volition which kills a small amount of the populace, but also creates a Plaguebearer, per month."
 #ap 10
 #mapmove 2
@@ -25610,7 +25487,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/beast_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/beast_of_nurgle_2.tga"
 #name "Beast of Nurgle"
-#nametype 219
+#nametype 257
 #descr "While Beasts of Nurgle are as though perfect physical examples of Nurgle's damning influence, horrifying creatures which can kill small animals and plants with their mere proximity, they behave in the same over-friendly and easily excitable manner as puppies. Indeed, they crave attention, greeting newcomers by slobbering all over them with their slimy tentacles. While this is not a problem for most of Nurgle's servants, it is, indeed, deadly for most mortals."
 #ap 12
 #mapmove 2
@@ -25651,7 +25528,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/chaosfury_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/chaosfury_nurgle_2.tga"
 #name "Chaos Fury"
-#nametype 219
+#nametype 257
 #descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
 #ap 15
 #mapmove 3
@@ -25686,7 +25563,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/plague_drone_1.tga"
 #spr2 "./Warhammer-Complete/plague_drone_2.tga"
 #name "Plague Drone"
-#nametype 219
+#nametype 257
 #descr "High-ranking Plaguebearers are known amongst the Daemon legions as Plague Drones; a title that conveys commendable humility, yet belies the power beneath. These stewards of Nurgle's garden ride into the mortal realm mounted upon Rot Flies - colossal Daemon-insects whose appearance is so repugnant it leaves festering scars upon the mind. From their lofty positions the Plague Drones can properly tally the diseases running rife across the battlefield, as well as swiftly intervene should Nurgle's divine plans meet with heavily-armed resistance."
 #ap 10
 #mapmove 3
@@ -25732,7 +25609,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/rot_fly_1.tga"
 #spr2 "./Warhammer-Complete/rot_fly_2.tga"
 #name "Rot Fly"
-#nametype 219
+#nametype 257
 #descr "A Rot Fly is, simply put, the final form of a Beast of Nurgle, embittered by mortals' reactions to its presence, leading to a metamorphosis from the ever-friendly and overly happy Beast of Nurgle into a creature that hates everything, and wants to exact revenge upon an uncaring world. They are prized steeds for the Plaguebearers, for in their haste to punish the mortals that spurned their larval form, Rot Flies will speed into battle at great pace; something a Palanquin is quite incapable of."
 #ap 10
 #mapmove 3
@@ -25776,7 +25653,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Great_Unclean_One_1.tga"
 #spr2 "./Warhammer-Complete/Great_Unclean_One_2.tga"
 #name "Great Unclean One"
-#nametype 219
+#nametype 257
 #descr "Wreathed in swarms of giggling Nurglings, the Great Unclean One shambles across the battlefield spreading disease and pestilence wherever it passes. To the mortal eye, the Great Unclean One is the foulest of servants of the Ruinous Powers, appearing as a malformed being of weeping pustules and exposed, diseased organs; few men have the stomach, let alone the ability, to oppose such a being."
 #ap 14
 #mapmove 2
@@ -25825,7 +25702,7 @@ Priests: Khorne needs no priests."
 #spr1 "./Warhammer-Complete/Nurgle_Daemon_Prince_1.tga"
 #spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
 #name "Daemon Prince of Nurgle"
-#nametype 219
+#nametype 257
 #descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Nurgle, however, it would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
 #ap 22
 #mapmove 3
@@ -26270,92 +26147,6 @@ Priests: Khorne needs no priests."
 #incdom 7
 #com 5023
 #6d6units 5018
-#end
-
--------- NAMES -----------
-
--- Nurgle Names
-
-#selectnametype 219
-#clear
-#addname "Rippuke"
-#addname "Slugeye"
-#addname "Gutrabid"
-#addname "Rendrabid"
-#addname "Slugflesh"
-#addname "Chewgross"
-#addname "Lashscab"
-#addname "Splitsore"
-#addname "GobblePus"
-#addname "Scumbucket"
-#addname "Spikerotten"
-#addname "Plaguebear"
-#addname "Witherfume"
-#addname "Ichorscum"
-#addname "Fumefang"
-#addname "Fartface"
-#addname "Scabflesh"
-#addname "Bilepuss"
-#addname "Wormfilth"
-#addname "Plagueprey"
-#addname "Goblob"
-#addname "Vomitfiend"
-#addname "Gangrene"
-#addname "GobSnot"
-#addname "Blistergore"
-#addname "Spasmfoul"
-#addname "Sucksore"
-#addname "SlimeLick"
-#addname "Rabidfroth"
-#addname "Hackspew"
-#addname "Pusvomit"
-#addname "Slugwart"
-#addname "Leperwither"
-#addname "Bilepump"
-#addname "Spewspurt"
-#addname "Locust"
-#addname "Sicksight"
-#addname "Grabspittle"
-#addname "Quiverbowel"
-#addname "Gutscum"
-#addname "BlackPlague"
-#addname "Puspop"
-#addname "SnotGulp"
-#addname "Rotgobble"
-#addname "Spoorpox"
-#addname "Rottenvex"
-#addname "Hackspew"
-#addname "Hacklung"
-#addname "Ebola"
-#addname "Spiderfilth"
-#addname "Vomitdung"
-#addname "Blightscrape"
-#addname "Droolsting"
-#addname "Bileslob"
-#addname "Festermouth"
-#addname "Gristlemaw"
-#addname "Soresplit"
-#addname "Mucusbowel"
-#addname "Pukebag"
-#addname "Ichorspot"
-#addname "Vilemouth"
-#addname "Chewspasm"
-#addname "Pilespoor"
-#addname "Bloodpus"
-#addname "Mucusfroth"
-#addname "Blightclaw"
-#addname "Oozerip"
-#addname "Sorefester"
-#addname "Flyswarm"
-#addname "Rotspoor"
-#addname "Grimpox"
-#addname "Spasmscum"
-#addname "Wormsuck"
-#addname "Poxmire"
-#addname "Festerkill"
-#addname "Dreadmucus"
-#addname "Spittlemaggot"
-#addname "Ichordoom"
 #end
 
 
@@ -29396,96 +29187,96 @@ Priests: Weak. Can blood sacrifice."
 
 -------- MERCENARY BANDS
 
-#newmerc
-#name "The Portsmashers"
-#bossname "Black Bort"
-#com 5515 -- Ogre Maneater (west)
-#unit 5515 -- Ogre Maneater (west)
-#nrunits 6 -- number of troops
-#minmen 6 -- below this and recruitment will begin
-#xp 1 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 2 -- powerful random items
-#recrate 100 -- troops restocked 1 per month
-#level 1 -- midgame appearance
-#minpay 400
-#end
+--#newmerc
+--#name "The Portsmashers"
+--#bossname "Black Bort"
+--#com 5515 -- Ogre Maneater (west)
+--#unit 5515 -- Ogre Maneater (west)
+--#nrunits 6 -- number of troops
+--#minmen 6 -- below this and recruitment will begin
+--#xp 1 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 2 -- powerful random items
+--#recrate 100 -- troops restocked 1 per month
+--#level 1 -- midgame appearance
+--#minpay 400
+--#end
 
 
-#newmerc
-#name "The Bloodfist Tribe"
-#bossname "Grok Bloodfist"
-#com 5520 -- Ogre Bruiser
-#unit 5500 -- Ogre Bull Club
-#nrunits 12 -- number of troops
-#minmen 12 -- below this and recruitment will begin
-#xp 1 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 1 -- weakest random items
-#recrate 200 -- troops restocked 2 per month
-#level 0 -- early appearance
-#minpay 180
-#end
+--#newmerc
+--#name "The Bloodfist Tribe"
+--#bossname "Grok Bloodfist"
+--#com 5520 -- Ogre Bruiser
+--#unit 5500 -- Ogre Bull Club
+--#nrunits 12 -- number of troops
+--#minmen 12 -- below this and recruitment will begin
+--#xp 1 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 1 -- weakest random items
+--#recrate 200 -- troops restocked 2 per month
+--#level 0 -- early appearance
+--#minpay 180
+--#end
 
-#newmerc
-#name "Eaters of the Rising Sun"
-#bossname "Yoshima Bladebreaker"
-#com 5516 -- Ogre Maneater (east)
-#unit 5516 -- Ogre Maneater (east)
-#nrunits 5 -- number of troops
-#minmen 3 -- below this and recruitment will begin
-#xp 2 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 2 -- good random items
-#recrate 100 -- troops restocked 1 per month
-#level 0 -- early appearance
-#minpay 400
-#end
+--#newmerc
+--#name "Eaters of the Rising Sun"
+--#bossname "Yoshima Bladebreaker"
+--#com 5516 -- Ogre Maneater (east)
+--#unit 5516 -- Ogre Maneater (east)
+--#nrunits 5 -- number of troops
+--#minmen 3 -- below this and recruitment will begin
+--#xp 2 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 2 -- good random items
+--#recrate 100 -- troops restocked 1 per month
+--#level 0 -- early appearance
+--#minpay 400
+--#end
 
-#newmerc
-#name "Bigfang's Beasts"
-#bossname "Bigfang the Wild"
-#com 5524 -- Ogre Hunter
-#unit 5509 -- Sabretusk
-#nrunits 10 -- number of troops
-#minmen 8 -- below this and recruitment will begin
-#xp 1 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 0 -- no random items
-#recrate 200 -- troops restocked 2 per month
-#level 0 -- early appearance
-#minpay 250
-#end
+--#newmerc
+--#name "Bigfang's Beasts"
+--#bossname "Bigfang the Wild"
+--#com 5524 -- Ogre Hunter
+--#unit 5509 -- Sabretusk
+--#nrunits 10 -- number of troops
+--#minmen 8 -- below this and recruitment will begin
+--#xp 1 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 0 -- no random items
+--#recrate 200 -- troops restocked 2 per month
+--#level 0 -- early appearance
+--#minpay 180
+--#end
 
-#newmerc
-#name "Tibalt's Legbreakers"
-#bossname "Tibalt Bonaducci"
-#com 293 -- Human merc captain
-#unit 5501 -- Ogre Bull Ironfist
-#nrunits 8 -- number of troops
-#minmen 5 -- below this and recruitment will begin
-#xp 0 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 1 -- weak random items
-#recrate 200 -- troops restocked 2 per month
-#level 0 -- early appearance
-#minpay 140
-#end
+--#newmerc
+--#name "Tibalt's Legbreakers"
+--#bossname "Tibalt Bonaducci"
+--#com 293 -- Human merc captain
+--#unit 5501 -- Ogre Bull Ironfist
+--#nrunits 8 -- number of troops
+--#minmen 5 -- below this and recruitment will begin
+--#xp 0 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 1 -- weak random items
+--#recrate 200 -- troops restocked 2 per month
+--#level 0 -- early appearance
+--#minpay 140
+--#end
 
-#newmerc
-#name "Groinstabba"
-#bossname "Groinstabba"
-#com 5511 -- Gnoblar trapper (assassin)
+--#newmerc
+--#name "Groinstabba"
+--#bossname "Groinstabba"
+--#com 5511 -- Gnoblar trapper (assassin)
 --unit 5501 -- Ogre Bull Ironfist
-#nrunits 0 -- number of troops
+--#nrunits 0 -- number of troops
 --minmen 5 -- below this and recruitment will begin
-#xp 2 -- a bonus of xp for troops, x2 for commander
-#eramask 2 -- middle
-#randequip 1 -- weak random items
+--#xp 2 -- a bonus of xp for troops, x2 for commander
+--#eramask 2 -- middle
+--#randequip 1 -- weak random items
 --recrate 200 -- troops restocked 2 per month
-#level 0 -- early appearance
-#minpay 10
-#end
+--#level 0 -- early appearance
+--#minpay 10
+--#end
 
 
 -------- NATION
@@ -33033,7 +32824,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #addname "Shaklug Madzog"
 #end
 
-
+-- END OF GORKA
 
 -- SLAANESH WARHOST
 
@@ -33214,7 +33005,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 --nationslot 159
 --weaponslots 1851 - 1860
 --armor slot 801, 803, 804
---unitslots 6500 - 6546
+--unitslots 4150-95
 --siteslots 1950 - 1951
 --nametypes 257
 --Restricted items 6566
@@ -33240,24 +33031,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #name "Aura of Slaanesh"
 #dmg 33
 #aoe 1
-#nostr
-#magic
-#armornegating
-#mrnegates
-#unrepel
-#att 0
-#def 0
-#len 0
-#bonus
-#mind
-#friendlyimmune
-#dt_stun
-#end
-
-#newweapon 1863
-#name "Greater Aura of Slaanesh"
-#dmg 33
-#aoe 8
 #nostr
 #magic
 #armornegating
@@ -33340,25 +33113,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #nratt 2
 #end
 
-#newweapon 1861
-#copyweapon 85
-#name "Daemonic Tentacles"
-#dmg 0
-#nratt 2
-#magic
-#end
-
-#newweapon 1862
-#copyweapon 13
-#name "Chaos Warhammer"
-#nratt 2
-#def -2
-#rcost 4
-#att 1
-#dmg 7
-#end
-
-
 #newweapon 1858
 #name "Sliverslash"
 #dmg 10
@@ -33402,7 +33156,51 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #secondaryeffect 156
 #end
 
+#newweapon 1861
+#copyweapon 85
+#name "Daemonic Tentacles"
+#dmg 0
+#nratt 2
+#magic
+#end
 
+#newweapon 1862
+#copyweapon 13
+#name "Chaos Warhammer"
+#nratt 2
+#def -2
+#rcost 4
+#att 1
+#dmg 7
+#end
+
+#newweapon 1863
+#name "Greater Aura of Slaanesh"
+#dmg 33
+#aoe 8
+#nostr
+#magic
+#armornegating
+#mrnegates
+#unrepel
+#att 0
+#def 0
+#len 0
+#bonus
+#mind
+#friendlyimmune
+#dt_stun
+#end
+
+#newweapon 1864
+#name "Chaos Spear"
+#copyweapon 1 -- Spear
+#dmg 5
+#len 4
+#def 1
+#nratt 3
+#magic
+#end
 
 #newarmor 801
 #name "Chaos Armor"
@@ -33813,7 +33611,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #userestricteditem 6566
 #holy
 #poorleader
-#stealthy 20
+#stealthy 0
 #armor "Robes"
 #end
 
@@ -34325,7 +34123,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 9965
 #ap 12
 #mapmove 2
-#hp 14
+#hp 16
 #size 2
 #str 10
 #enc 3
@@ -34361,7 +34159,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #ap 12
 #gcost 9940
 #mapmove 2
-#hp 20
+#hp 24
 #size 2
 #str 12
 #enc 3
@@ -34437,7 +34235,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #gcost 10030
 #ap 12
 #mapmove 2
-#hp 28
+#hp 24
 #size 2
 #str 16
 #enc 2
@@ -34478,7 +34276,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. This Chaos Lord rides to war on a Steed of Slaanesh, a daemonic creature gifted to the greatest of Slaanesh's mortal followers, his powers beyond those of any regular Champion. Although Chaos Lords are not adept at performing the magic rituals necessary to gain Slaanesh's favor, they hold his authority nonetheless."
 #ap 20
 #mapmove 3
-#hp 35
+#hp 30
 #size 3
 #ressize 2
 #str 18
@@ -34490,7 +34288,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 18
 #itemslots 13446
 #weapon "Aura of Slaanesh"
-#weapon "Enchanted Spear"
+#weapon 1864 -- Chaos Spear
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
@@ -34562,6 +34360,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #heal
 #coldres 10
 #poisonres 10
+#latehero 18
 #end
 
 -- Sigvald the Magnificent
@@ -34602,7 +34401,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #awe 5
 #regeneration 10
 #wastesurvival
-#batstartsum1d6 6546
+#batstartsum1d6 4193
 #prot 15
 #magicpower 1
 #demon
@@ -34611,6 +34410,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #heal
 #coldres 15
 #poisonres 15
+#latehero 18
 #end
 
 -- Styrkaar
@@ -34633,10 +34433,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prec 11
 #mr 17
 #mor 18
-#magicskill 2 2
-#magicskill 1 2
+#magicskill 2 1
+#magicskill 1 1
 #itemslots 13446
-#weapon "Enchanted Spear"
+#weapon 1864 -- Chaos spear
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
 #armor 801
@@ -34653,13 +34453,12 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #expertleader
 #poorundeadleader
 #wastesurvival
-
-#onebattlespell "Blessing"
 #coldres 10
 #magicpower 1
-#magicskill 7 3
-#magicskill 8 3
+#magicskill 7 2
+#magicskill 8 2
 #heal
+#latehero 6
 #end
 
 -- Azazel the Prince of Damnation
@@ -34707,10 +34506,10 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prot 15
 #heal
 #fear 5
-#regeneration 10
 #magicskill 7 3
 #magicskill 8 3
 #custommagic 768 100
+#latehero 24
 #end
 
 
@@ -34754,14 +34553,13 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #pierceres
 #wastesurvival
 #forestsurvival
-
 #coldres 15
 #itemslots 28672
 #magicpower 1
 #demon
 #end
 
--- Chosen Lord of Slaanesh
+-- Chosen Chaos Lord (of Slaanesh)
 
 #newmonster 4184
 #spr1 "./Warhammer-Complete/chosen_lord_1.tga"
@@ -34771,7 +34569,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #descr "This Chaos Lord has advanced even further on the path to Daemonhood than his less-favored fellows, gaining even more gifts from his dark patron in reward. Mounted upon a Steed of Slaanesh, his powers are indeed unmatched by nigh any other mortal follower of the Prince of Excess."
 #ap 24
 #mapmove 3
-#hp 40
+#hp 36
 #size 3
 #ressize 2
 #str 20
@@ -34783,8 +34581,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 18
 #itemslots 13446
 #weapon "Aura of Slaanesh"
-#weapon "Enchanted Spear"
-#weapon 1861
+#weapon 1864 -- Chaos Spear
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
@@ -34793,14 +34590,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #rcost 1
 #holy
 #awe 2
-#seduce 10
 #inspirational 1
 #startage 400
 #maxage 3500
 #expertleader
-
 #wastesurvival
-
 #coldres 10
 #researchbonus -12
 #poisonres 5
@@ -34808,6 +34602,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #okundeadleader
 #magicskill 7 2
 #magicskill 8 3
+#latehero 6
 #end
 
 ----------- Daemon Summonables ------------
@@ -35147,7 +34942,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Sigvald's bodyguards
 
 #newmonster 4193
-#copystats 6509
+#copystats 4159
 #spr1 "./Warhammer-Complete/Chosen_Sigvald_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Sigvald_2.tga"
 #name "Sigvald's Chosen"
@@ -35161,7 +34956,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 -- Sorcerer Lord of Slaanesh
 
 -- Avatar Sorcerer Shape
-#newmonster 4193
+#newmonster 4195
 #nametype 115
 #startdom 1
 #gcost 9910
@@ -35816,9 +35611,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
 #cheapgod20 4194 -- Daemonic Avatar of Slaanesh
-#cheapgod20 4193 -- Human Avatar of Slaanesh
+#cheapgod20 4195 -- Human Avatar of Slaanesh
 #addgod 4194
-#addgod 4193
+#addgod 4195
 ---- RECRUITS
 #clearrec
 #wasterec 4150 -- Warhound
@@ -35921,7 +35716,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 ------- STARTING UNITS
 
-#startcom 4181 -- Marauder Chief
+#startcom 4171 -- Marauder Chief
 #startscout 4160
 #startunittype1 4151
 #startunitnbrs1 20
@@ -37615,7 +37410,6 @@ Priests: Strong"
 -- Armor slots: 449-450
 -- Unit slots: 4330-4350, 4796-4798, 4800-4835
 -- Site slots: 1952, 1953
--- Nametypes: 235
 -- Montag: 60006
 -- Restricted items: 6567, 6568
 -- Magical item IDs: 967, 971
@@ -39004,9 +38798,10 @@ Priests: Strong"
 #flying
 #coldres 5
 #mounted
-#secondtmpshape 3350
+#secondtmpshape 4349
 #magicboost 8 -7
 #holy
+#latehero 24
 #end
 
 -- Baudros the Chaos Dragon
@@ -39093,6 +38888,7 @@ Priests: Strong"
 #magicboost 8 -7
 #holy
 #invulnerable 10
+#latehero 15
 #end
 
 -- Galrauch the First of the Chaos Dragons
@@ -39139,6 +38935,7 @@ Priests: Strong"
 #neednoteat
 #magicboost 8 -7
 #holy
+#latehero 18
 #end
 
 -- Melekh the Changer
@@ -39188,6 +38985,7 @@ Priests: Strong"
 #magicboost 8 -7
 #holy
 #invulnerable 10
+#latehero 6
 #end
 
 -- Cyspeth the Champion
@@ -39197,7 +38995,7 @@ Priests: Strong"
 #spr2 "./Warhammer-Complete/Cyspeth_2.tga"
 #name "Champion"
 #fixedname "Cyspeth"
-#descr "Cyspeth is Melekh the Changer's mutated son. His head is that of a bird rather than a man, his skin is not of human complexion, to note a few of his mutations. He was fostered by the Shaman of the Aesling tribe while his father was on his quest to find out the true name of a Lord of Change, the two were reunited after his father's triumphant return; the Shaman did not live to see another day. While a Champion by title, Cyspeth is much more a Sorcerer than his father, and his magic is indeed potent, even more so during combat. Also, two Sorcerers enter the fray with Cyspeth whenever he needs to do battle."
+#descr "Cyspeth is Melekh the Changer's mutated son. His head is that of a bird rather than a man, his skin is not of human complexion, to note a few of his mutations. He was fostered by the Shaman of the Aesling tribe while his father was on his quest to find out the true name of a Lord of Change, the two were reunited after his father's triumphant return; the Shaman did not live to see another day. While a Champion by title, Cyspeth is much more a Sorcerer than his father, and his magic is indeed potent, even more so during combat. Two Sorcerers enter the fray with Cyspeth whenever he needs to do battle."
 #ap 13
 #mapmove 2
 #hp 23
@@ -39253,7 +39051,7 @@ Priests: Strong"
 #descr "A Chosen Lord of Tzeentch is a Chaos Lord who has advanced even further on the path to Daemonhood than the 'lesser' of their kind, gaining even more gifts from their dark patron than a Lord of Tzeentch, of whom there already are few. Standing upon a Chariot of Tzeentch, his powers are indeed unmatched by nigh any other mortal followers of the Changer of Ways."
 #ap 25
 #mapmove 3
-#hp 28
+#hp 36
 #size 5
 #ressize 2
 #str 15
@@ -39274,7 +39072,6 @@ Priests: Strong"
 #armor "Shield"
 #itemslots 13446
 #startitem 967
-#fireshield 8
 #invulnerable 10
 #float
 #gcost 0
@@ -39293,6 +39090,7 @@ Priests: Strong"
 #magicboost 8 -7
 #holy
 #researchbonus -12
+#latehero 9
 #end
 
 -- Aekold Helbrass, the Champion of Tzeentch
@@ -39338,6 +39136,7 @@ Priests: Strong"
 #magicboost 8 -7
 #holy
 #invulnerable 10
+#latehero 12
 #end
 
 -- Spawn of Tzeentch
@@ -39346,7 +39145,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/chaos_spawn_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaos_spawn_2TZ.tga"
 #name "Spawn of Tzeentch"
-#nametype 235
+#nametype 257
 #descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 16
 #mapmove 2
@@ -39395,7 +39194,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/Flamer1.tga"
 #spr2 "./Warhammer-Complete/Flamer2.tga"
 #name "Flamer of Tzeentch"
-#nametype 235
+#nametype 257
 #descr "Flamers of Tzeentch are Daemons that use burning limbs to hurl bolts of yellow and blue magical flame at their foes. This magical fire of Tzeeentch burns not only flesh but reality itself, and its caress can shatter the senses as completely as it chars and burns the body. The Flamers are no less deadly in close combat, where they can use their pyrotechnic powers to burn through armour, flesh and bone with ease."
 #ap 10
 #mapmove 2
@@ -39431,7 +39230,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/Changebringer_1.tga"
 #spr2 "./Warhammer-Complete/Changebringer_2.tga"
 #name "Changebringer"
-#nametype 235
+#nametype 257
 #descr "Changebringers are, essentially, Flamers of Tzeentch mounted upon Discs of Tzeentch, giving the Daemonic beings much increased maneuverability, and in turn making them deadlier than they ever could be alone. Their offensive abilities are unaffected by their mode of travel. The Disc itself assaults the Changebringer's enemies as well, making it indeed a greater threat to any hostile force than a normal Flamer."
 #ap 25
 #mapmove 3
@@ -39470,7 +39269,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/Pink_Horror_1.tga"
 #spr2 "./Warhammer-Complete/Pink_Horror_2.tga"
 #name "Pink Horror"
-#nametype 235
+#nametype 257
 #descr "Pink Horrors are, in general, identifiable by their luminescent pink skin and their high-pitches squeals of laughter. They whirl about on the battlefield in a frantic and barely controlled ecstasy, all the while giggling insanely. Nothing makes a Pink Horror happier than utilizing their eldritch powers, which cause death and destruction among their enemies."
 #montag 6666
 #ap 12
@@ -39508,7 +39307,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/Blue_Horror_1.tga"
 #spr2 "./Warhammer-Complete/Blue_Horror_2.tga"
 #name "Blue Horror"
-#nametype 235
+#nametype 257
 #descr "A Blue Horror is very similar to a Pink Horror in stature, but their temperaments are entirely different. Where Pink Horrors are merry, the Blue Horror is sullen and malicious, much like bad-tempered children, on their faces a perpetual scowl as they sneer and grumble their way through battle. They are, in a way, the depressive phase of their manic 'parents'."
 #montag 6666
 #ap 12
@@ -39544,7 +39343,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/screamer1.tga"
 #spr2 "./Warhammer-Complete/screamer2.tga"
 #name "Screamer of Tzeentch"
-#nametype 235
+#nametype 257
 #descr "From the ether of Chaos come the Screamers, glimmering sky-sharks that ride upon the Winds of Magic as a bird glides upon the breeze. Festooned with fangs, horns, and spurs, they dive. Trailing multi-coloured tendrils in the air, their slashing blades tear through the enemy before they soar skywards once more. Screamers have no real conscious thought, existing merely on instinct and mindlessly hunting along the Winds of Magic for mortal souls. When a Chaos army gathers, they are drawn down from the Realm of Chaos by the pulses of emotion, attracted to battlefields by the carnage and hatred generated. Here they gather in shoals, diving down upon the enemy and feasting on the escaping souls of the slain."
 #montag 6666
 #ap 12
@@ -39619,7 +39418,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/herald_1.tga"
 #spr2 "./Warhammer-Complete/herald_2.tga"
 #name "Herald of Tzeentch"
-#nametype 235
+#nametype 257
 #descr "Standing upon a Disc of Tzeentch, the Herald is a more stable, more powerful form of Horror, capable of utilizing magic. Heralds are often seen leading their lesser cousins into battle. The Herald is always accompanied by a small group of Horrors when it enters the fray."
 #ap 25
 #mapmove 3
@@ -39663,7 +39462,7 @@ Priests: Strong"
 -- Herald 2nd form for dom spread
 
 #newmonster 4815
-#nametype 235
+#nametype 257
 #copystats 4814
 #copyspr 4814
 #spreaddom 2
@@ -39677,7 +39476,7 @@ Priests: Strong"
 #spr1 "./Warhammer-Complete/lord_of_change_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_change_2.tga"
 #name "Lord of Change"
-#nametype 235
+#nametype 257
 #descr "To face a Lord of Change in battle is to stand against a master of fate itself. It unravels and deciphers what will come to pass, and uses the knowledge to confound its enemies' plans. The ultimate master of the Winds of Magic, the Lord of Change is second only to Tzeentch himself in mystic power. Its appearance reflects its capricious nature; the Lord of Change is a bizarre creature of multi-hued skin, massive feathered pinions and a bird-like face with eyes that shine with the ruinous light of the very depths of the Realm of Chaos."
 #ap 18
 #mapmove 3
@@ -39723,7 +39522,7 @@ Priests: Strong"
 -- Lord of Change (Extra Dom first summon dealie)
 
 #newmonster 4817
-#nametype 235
+#nametype 257
 #copystats 4816
 #copyspr 4816
 #spreaddom 5
@@ -39796,7 +39595,7 @@ Priests: Strong"
 #newmonster 4796
 #spr1 "./Warhammer-Complete/vortex.tga"
 #name "Unstable Chaos Vortex"
-#nametype 235
+#nametype 257
 #descr "An unstable vortex, created most likely by a vile Sorcerer of Tzeentch. It will allow the passage of several Horrors from the Realm of Chaos into the real world."
 #ethereal
 #mapmove 0
@@ -40568,93 +40367,6 @@ Priests: Strong"
 #end
 
 
--------- NAMES -----------
-
-
--- Tzeentch Names
-
-#selectnametype 235
-#clear
-#addname "Redfist"
-#addname "Brutespider"
-#addname "Dreadpest"
-#addname "Spotash"
-#addname "Flamewhip"
-#addname "Livereat"
-#addname "Grimcraze"
-#addname "Warpflame"
-#addname "Starfire"
-#addname "Flameblast"
-#addname "Warwarp"
-#addname "Firestorm"
-#addname "Gruntfire"
-#addname "Taintmark"
-#addname "Killfire"
-#addname "Riptide"
-#addname "Flashfire"
-#addname "Fleshtremble"
-#addname "Ashcry"
-#addname "Redfire"
-#addname "Wrackkill"
-#addname "Crazespider"
-#addname "Blackflame"
-#addname "Pilemange"
-#addname "Hotwarp"
-#addname "Venomwhine"
-#addname "Taintfire"
-#addname "Hellheat"
-#addname "Starfury"
-#addname "Greenblood"
-#addname "Violetfire"
-#addname "Chaosgnash"
-#addname "Furygristle"
-#addname "Flamelick"
-#addname "Brimstone"
-#addname "Whirlwind"
-#addname "Blackreap"
-#addname "Scrapeblast"
-#addname "Killflame"
-#addname "Warwarp"
-#addname "Fanglick"
-#addname "Eatbrute"
-#addname "Flickflame"
-#addname "Spiderslake"
-#addname "Warprend"
-#addname "Blastfurnace"
-#addname "Firetoad"
-#addname "Furydoom"
-#addname "Flamestorm"
-#addname "Shinewarp"
-#addname "Baneblast"
-#addname "Vortex"
-#addname "Redflame"
-#addname "Wardreg"
-#addname "ShrackSizzle"
-#addname "Warpgnash"
-#addname "Quasar"
-#addname "Flushred"
-#addname "Ashbeetle"
-#addname "Whiteflame"
-#addname "Blueheart"
-#addname "Blackfire"
-#addname "Markspike"
-#addname "Vortex"
-#addname "Hellfire"
-#addname "Vexgnaw"
-#addname "Warpfire"
-#addname "Firecold"
-#addname "Twisttremble"
-#addname "Doomflame"
-#addname "Blackbog"
-#addname "Fluxdrink"
-#addname "Astralfire"
-#addname "Redwarp"
-#addname "Twistquake"
-#addname "Bloodfire"
-#addname "Bloodhack"
-#addname "Dreadfire"
-#addname "Hotblast"
-#end
 
 -------- SITES -----------
 
