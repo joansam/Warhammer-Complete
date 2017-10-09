@@ -3261,6 +3261,7 @@ Priests: Powerful, can perform blood sacrifices"
 #rcost 3
 #pierce
 #bonus
+#norepel
 #charge
 #ammo 1
 #att 1
@@ -3274,6 +3275,7 @@ Priests: Powerful, can perform blood sacrifices"
 #rcost 3
 #bonus
 #charge
+#norepel
 #ammo 1
 #att 1
 #len 4
@@ -3388,6 +3390,7 @@ Priests: Powerful, can perform blood sacrifices"
 #len 4
 #dmg 8
 #aoe 1
+#norepel
 #end
 
 #newweapon 1031
@@ -5802,7 +5805,7 @@ Priests: Powerful, can perform blood sacrifices"
 #end
 
 #newmonster 3227
-#copystats 601 --Devi of Fortunes
+#copystats 159 --Devi of Fortunes
 #cleararmor
 #clearmagic
 #spr1 "./Warhammer-Complete/Grail_1.tga"
@@ -5840,7 +5843,7 @@ Priests: Powerful, can perform blood sacrifices"
 #rcost 1
 #magicbeing
 #startdom 4
-#gcost 10000
+#gcost 9930
 #pathcost 20
 #expertmagicleader
 #expertleader
@@ -6834,7 +6837,7 @@ Priests: Powerful, can perform blood sacrifices"
 #brief "Bretonnia is a feudal kingdom ruled by powerful noble knights and mysterious Grail Damsels with strong magic."
 #descr "The glorious nation of Bretonnia was once nothing more than a loose collection of tribes living in fear of orcs and other monters.  But the great hero Gilles le Breton was blessed by a mysterious lady with a grail. Gilles the Unifier and a few of his closest knights almost singlehandedly drove out the hordes of monsters with a strength and courage that had never been witnessed on the face of the earth. Gilles and his Dukes built a great feudal nation on the lands they cleared, according to the doctrines of the Lady. Recently, the waters of the sacred lake have been stirring. Monsters are on the move, harassing peasants. Sacred visions from the mysterious Damsels call for the mustering of all brave knights of Bretonnia. But the Great Dukes of Bretonnia have been separated from the kingdom and the nation now needs to be reunified to win the Ascension Wars."
 #summary "
-Race: Superstitious humans, laboratories are expensive (800 gold), build cheap Grail Chapels as temples (300 gold)
+Race: Superstitious humans, laboratories are expensive (700 gold), build cheap Grail Chapels as temples (300 gold)
 
 Military: Cheap levee troops, fearsome cavalry and flying pegasus knights. Sacred Grail Knights. Cannot recruit mercenaries
 
@@ -6843,7 +6846,7 @@ Magic: Nature, Water and Air combined with minor Astral and Earth
 Priests: Powerful."
 #flag "./Warhammer-Complete/Bretonnia_icon.tga"
 #templepic 6
-#labcost 800
+#labcost 700
 #templecost 300
 #color 0.1 0.7 0.1
 
@@ -6851,7 +6854,7 @@ Priests: Powerful."
 #cheapgod20 3227
 #addgod 3187 --Lady of the Lake
 #cheapgod20 3187
-
+#addgod 158 -- Oracle
 #addgod 1370 --Volla of the Beautiful Forest
 #addgod 606 --Great Mother
 #addgod 600 --Titan of War and Wisdom
@@ -21525,7 +21528,6 @@ Version 1.1
 
 
 -- Flesh hound 30p
-
 #newmonster 4602
 #spr1 "./Warhammer-Complete/fleshhound_1.tga"
 #spr2 "./Warhammer-Complete/fleshhound_2.tga"
@@ -21544,17 +21546,14 @@ Version 1.1
 #prec 10
 #mr 17 -collar
 #mor 30
-
 #poisonres 15
 #demon
 #incunrest 2
 #popkill 2
 #neednoteat
 #holy
-
 #magicpower 1
 #berserk 2
-
 #noitem
 #weapon "Bite"
 --#weapon "Hamstring"
@@ -21573,7 +21572,6 @@ Version 1.1
 #descr "Flesh beast are even further mutated then flesh hounds and even more dangerous."
 #mapmove 3
 #size 4
-
 #ap 20
 #hp 36
 #prot 18
@@ -21584,17 +21582,14 @@ Version 1.1
 #prec 10
 #mr 17 -collar
 #mor 30
-
 #poisonres 15
 #demon
 #incunrest 5
 #popkill 5
 #neednoteat
 #holy
-
 #magicpower 1
 #berserk 2
-
 #noitem
 #weapon "Bite"
 --#weapon "Hamstring"
@@ -21612,7 +21607,6 @@ Version 1.1
 #nametype 257
 #descr "The Juggernaut's heavily armored, partially mechanical bodies are made of living metal and burning blood. They are said to embody the rawest moments of battle, where overwhelming force is prevalent and only the mightiest and toughest can survive."
 #size 5
-
 #mapmove 3
 #ap 20
 #hp 56
@@ -21623,18 +21617,15 @@ Version 1.1
 #def 16
 #prec 10
 #mr 20 -collar
-#mor 10
-
+#mor 30
 #poisonres 15
 #demon
 #incunrest 10
 #popkill 10
 #neednoteat
 #holy
-
 #magicpower 1
 #berserk 2
-
 #noitem
 --#weapon "Bite"
 --#weapon "Hamstring"
@@ -34104,8 +34095,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor "Robes"
 #noleader
 #coldres 5
-#startage 45
-#maxage 1500
+#maxage 60
 #magicskill 4 1
 
 #magicskill 2 1
@@ -34142,8 +34132,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #weapon 172
 #armor "Robes"
 #poorleader
-#startage 150
-#maxage 2500
+#maxage 90
 #coldres 5
 #chaosrec 12
 #end
@@ -34177,8 +34166,8 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor 803
 #armor "Full Helmet"
 #poorleader
-#startage 250
-#maxage 5000
+#startage 80
+#maxage 200
 #holy
 #magicskill 2 4
 #custommagic 384 300 -- AF
@@ -34216,7 +34205,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #armor 801
 #armor "Shield"
 #startage 30
-#maxage 1500
+#maxage 80
 #wastesurvival
 #coldres 5
 #itemslots 15494
@@ -34682,11 +34671,11 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #magicskill 7 2
 #magicskill 8 2
 #custommagic 6656 100
-#makemonsters1 6535
+#makemonsters1 4185
 #weapon 1854
 #weapon 1854
 #coldres 15
-#goodundeadleader
+#okundeadleader
 #end
 
 
@@ -34867,7 +34856,6 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #mor 30
 #gcost 0
 #rcost 1
-#regeneration 10
 #heal
 #coldres 15
 #poisonres 15
@@ -34898,7 +34886,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #spr2 "./Warhammer-Complete/exalteddaemon2.tga"
 #name "Exalted Daemon of Slaanesh"
 #nametype 257
-#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magical power is still great by the standard of most mortal spellcasters."
+#descr "The favored servants of the Dark Prince sometimes fall just short of full ascension to immortality. Or maybe one of His daemonic servants has proved itself worthy of reward. Either way, Slaanesh grants a mortal host the gift of possession by a powerful daemon, which mutates the host's body to serve its ends. These daemons must constantly exert their will to remain inside the mortal form, and are thus not quite as powerful as Daemon Princes. However, they delight in combat just as much as their brethren, and their magic is still powerful by the standard of most mortal spellcasters."
 #ap 20
 #mapmove 3
 #hp 54
@@ -34906,7 +34894,7 @@ Priests: Powerful Orc Shaman, weaker Goblin Shaman."
 #prot 11
 #size 3
 #str 17
-#enc 3
+#enc 1
 #att 16
 #def 16
 #prec 13
@@ -45529,7 +45517,7 @@ Priests: Average."
 #prec 12
 #mapmove 2
 #ap 18
-#gcost 85
+#gcost 60
 #rcost 1
 #weapon "Salamander Bite"
 #weapon 225 -- non str based fire breath
@@ -45938,7 +45926,7 @@ Priests: Average."
 #prec 8
 #mapmove 2
 #ap 18
-#gcost 75
+#gcost 50
 #rcost 1
 #armor "Shield"
 #weapon "Cold One Bite"
@@ -46159,7 +46147,7 @@ Priests: Average."
 #size 6
 #prot 18
 #mor 13
-#mr 9
+#mr 12
 #enc 3
 #str 26
 #att 11
@@ -46167,7 +46155,7 @@ Priests: Average."
 #prec 10
 #mapmove 2
 #ap 18
-#gcost 300
+#gcost 200
 #rcost 50
 #weapon "Rampage"
 #weapon 826 -- bows
