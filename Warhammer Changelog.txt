@@ -1,3 +1,38 @@
+-- TO-DO
+-- Add pretenders, check existing pretender costs
+-- Work on aura of Tzeentch
+-- Increase cost, remove retinues from most daemons
+-- Consider armor rework - forgeable Chaos Armor different from the normal one
+-- Probably best to just give people normal chain/plate at that point
+-- Would restore unremovable and maybe bless, also increase prot and decrease enc, -def
+-- Would have to remove light chaos armor too, probly
+
+
+-- CONVERSION TO-DO
+-- To add Tzeentch, subtract weapons, armor and modname
+
+-- Version 1.0: Dom 5 Conversion
+-- Added Slaanesh and Tzeentch
+-- Removed reclimits on all units except Forsaken
+-- Added recpoints for units (they're all multiples of 3, because why not?)
+-- Check immortality command - done.
+-- Mapmove convert - done.
+-- Also look at iron armor/weapons - done.
+-- Look at forts, consider making era 1 - done.
+-- Check ranged weapons - done.
+-- Check spell and effect vals, some will likely have changed - Slaanesh done, double-check Tzeentch.
+-- Check UW vals - done.
+-- Check modded onebattlespells - done.
+-- Descr doesn't need double breaks - done.
+-- Mounted units price decrease - good for now.
+-- Check flag - done.
+-- Decreased  weapon lengths by 1
+-- Two-handed do a bit more damage now, maybe compensate - done.
+-- Fixed bugged Tzeentch warrior axe
+-- Changed Tzeentch Daemon Prince's halberd to 3 attacks from 1
+-- Deleted Tzeentch warhound and had it use Slaanesh version w/Khorne sprite
+
+
 Version .91 , .92 and .93
 (Not an exhaustive list, I likely missed a few things)
 Various bugfixes

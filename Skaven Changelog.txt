@@ -1,0 +1,7 @@
+Version 1.0 of Dom5 conversion:
+Recruitment values added for units and commanders
+Death Frenzy changed from copying Berskerkers to Touch of Madness, because Berserkers doesn't exist any more.
+
+Moulder packmaster changed from a onebattlespell that copied Lictorian Legion to summon 5 rats to batstartsum5. Slight nerf to the packmaster,
+but doesn't matter much and is much more elegant than copying the spell just to do an in-battle summon. 
+This way something else can copy the spell if it really needs to.
