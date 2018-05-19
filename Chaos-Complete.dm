@@ -3,6 +3,9 @@
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
 
+-- Version 1.1: Nurgle
+-- Decreased lengths for Tzeentch weapons (forgot earlier)
+
 
 -- Version 1.0: Dom 5 Conversion
 -- Added Slaanesh and Tzeentch
@@ -188,8 +191,8 @@
 
 -- Version 0.93 - Warriors of Slaanesh had the str of Warriors of Nurgle. Second Chosen of Slaanesh had reclimit 3. Pretender prices now autocalced and 20 off their prices. Added #natural to Chaos steed hoof, Slaaneshi claw and Scythetalon.
 
--- Version 0.92 - Sombre made the Keeper of Secrets attack sprite a new mouth! #reclimits on Chosen make a comeback, Lords became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (autocalc decides Exalted Sorcs price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when propheted. Lowered #xpshape thresholds. Added a cultist event. Human followers now use 115 for nametypes.
--- Version 0.91 - Slightly adjusted Light Chaos Armor's #rcost and #prot down. #blunt to Chaos steed hoof. Removed Slaanesh Plate Armor for simplicity's sake (and since Warriors etc. have Chaos Armor in tabletop). Increased Sorcerers' AP to 12, since that's human norm. Changes to #chaosrecs here and there. Champion lacked #chaosrec altogether. Added sounds to some weapons. Added Aura of Slaanesh to both Seekers of Slaanesh and Fiends of Slaanesh, removed one Scythetalon from the Seekers of Slaanesh (Fiend is now #awe 2, too).
+-- Version 0.92 - Sombre made the Keeper of Secrets attack sprite a new mouth! reclimits on Chosen make a comeback, Lords became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (autocalc decides Exalted Sorcs price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when propheted. Lowered #xpshape thresholds. Added a cultist event. Human followers now use 115 for nametypes.
+-- Version 0.91 - Slightly adjusted Light Chaos Armor's rcost and prot down. blunt to Chaos steed hoof. Removed Slaanesh Plate Armor for simplicity's sake (and since Warriors etc. have Chaos Armor in tabletop). Increased Sorcerers' AP to 12, since that's human norm. Changes to #chaosrecs here and there. Champion lacked #chaosrec altogether. Added sounds to some weapons. Added Aura of Slaanesh to both Seekers of Slaanesh and Fiends of Slaanesh, removed one Scythetalon from the Seekers of Slaanesh (Fiend is now #awe 2, too).
 
 -- Version 0.90 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who also became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; and the research bonus on the Exalted and Lord were too high anyway, so I got a bit of a price reduction from there). Massive changes to Daemon command structure. Hammer Warriors had 11 att/def, 12 was what they were supposed to have (thanks Indract!). Daemon Princess had her #coldres upped to 5. Slaanesh's Plate Armor had -2 def, it was supposed to have -1 def (which Tzeentch's Plate Armor was enjoying), oops! To combat ridiculous morale bonuses from commanders, used #command where applicable and dropped #inspirational here and there. Gave the same higher Beastmen Slaanesh's gimmick as Nurgle's and Tzeentch's Beastmen have. Removed dt_cap from the Exalted Champ's whip.
 -- Adjusted Slaanesh Plate Armor's #rcost down and adjusted Warriors' #chaosrec to be 1. Removed #seduce from Champion. Slight increase to Lords' AP. Chosen Lord received slightly more AP and a 66% chance for extra magic. Standard Bearer's #standard reduced to 1, cost reduced to 20 and #chaosrec to 1. Bray-Shaman had less MR than it was supposed to (thanks Indract!). Forgotten to add itemized Chaos Armor to Forsaken Champ. Ungor Raider Halfhorn's price dropped to 35. One of the Marauders had 0 prec (a mistake that came with the CU background, thanks Indract!). Champion's base enc was 3, reduced to 1. Marauder Horseman and Chaos Knights had 5 enc, dropped to 4. Acquiescence was now too powerful, another attempt to adjust it (this time it causes a small amount of Weakness (MR negates) and Paralyzation (MR negates)). Made Lord 285gp.
@@ -452,7 +455,7 @@
 #att 10
 #def 10
 #prec 8
-#mapmove 5
+#mapmove 20
 #ap 18
 #gcost 6
 #rcost 1
@@ -579,8 +582,8 @@
 #name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. This warrior bears the Mark of Slaanesh, strengthening his lust and desire for battle."
-#ap 12
-#mapmove 16
+#ap 11
+#mapmove 14
 #hp 14
 #size 2
 #enc 2
@@ -599,7 +602,6 @@
 #armor 801
 #armor "Kite Shield"
 #wastesurvival
-
 #startage 26
 #maxage 900
 #weapon 1862
@@ -614,7 +616,7 @@
 #name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in armor, a Chaos Warrior is equal to several battle-hardened mortal men. This warrior bears the Mark of Slaanesh, strengthening his lust and desire for battle."
-#ap 12
+#ap 11
 #mapmove 16
 #hp 14
 #size 2
@@ -687,8 +689,8 @@
 #name "Standard Bearer"
 #nametype 115
 #descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to the Prince of Excess."
-#ap 12
-#mapmove 16
+#ap 11
+#mapmove 14
 #hp 14
 #size 2
 #str 13
@@ -846,7 +848,7 @@
 #gcost 55
 #chaosrec 3
 #rcost 5
-#rpcost 15
+#rpcost 18
 #heal
 #weapon "Broad Sword"
 #weapon 331
@@ -1021,7 +1023,7 @@
 #gcost 12
 #chaosrec 1
 #rcost 1
-#rpcost 18
+#rpcost 15
 #itemslots 15488
 #coldres 7
 #weapon 85
@@ -1169,7 +1171,7 @@
 #berserk 6
 #trample
 #pillagebonus 1
-#onebattlespell 1022
+#onebattlespell 1022 -- Growing Fury
 #coldres 10
 #goodleader
 #end
@@ -2083,7 +2085,7 @@
 #heal
 #coldres 15
 #poisonres 15
-#weapon 1852
+#weapon 1863 -- Greater Aura of Slaan
 #itemslots 15494
 #startage 4000
 #maxage 10000
@@ -2186,7 +2188,6 @@
 #def 12
 #enc 1
 #mor 50
-#magicbeing
 #mapmove 16
 #prec 15
 #att 10
@@ -2942,12 +2943,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 -- Version 1.01 - Wand of Whimsy was missing a type and apparently went in the Misc slot. Oops! Warhounds now get a more devastating Venomous Bite. Made Pretender gcosts autocalc, also made the national Pretenders 20 cheaper. Added #natural to Chaos Steed hoof and Scythetalon. Lowered combat spell precision to 5 where applicable.
 
--- Version 1.00 - Version 1.00! How disturbing. --#magicboost 8-7 works now, a lot of clutter removed. Chaos Fury was missing #holy, added. Chosen #reclimits made a comeback and the Lord became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcs by 1, the rest lost theirs (autocalc decides Exalted Sorc's price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Added events to turn Chosen Lords into Spawns or Daemon Princes. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Tzaanbulls now have invuln 15. Lowered #xpshape thresholds. Added a cultist event. Human followers use 115 for nametypes.
+-- Version 1.00 - Version 1.00! How disturbing. --#magicboost 8-7 works now, a lot of clutter removed. Chaos Fury was missing #holy, added. Chosen reclimits made a comeback and the Lord became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcs by 1, the rest lost theirs (autocalc decides Exalted Sorc's price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Added events to turn Chosen Lords into Spawns or Daemon Princes. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Tzaanbulls now have invuln 15. Lowered #xpshape thresholds. Added a cultist event. Human followers use 115 for nametypes.
 
--- Version 0.99 - Slight adjustment down on the #prot and #rcost of the Light Chaos Armor. #blunt to Chaos Steed Hoof. Removed Tzeentch Plate Armor for simplicity's sake (and since Warriors etc. wear Chaos Armor in tabletop). Reduced the start numbers of the second Marauder group to 10 to match the other Warhosts. More alterations to Lord of Change's sprite (Sombre made the head!). Apparently #copyspelling Blessing caused all kinds of issues with the Blessing item on the Cultist, seems to work now that it's no longer a copyspell (also, the Cultist became Sacred; same as every other Cultist). Removed the Discord of Tzeentch (Banishment) item, as you can only have one restricteditem per Commander and that slot is already taken by another item. Screamers are now #stormimmune. Cyspeth's #onebattlespell is no longer wasted on summoning 2 commander cronies, and instead uses #batstartsum2 (since it seems to work properly now on ranged, which means spell slot 180 is now open). Lord of Tzeentch's magical abilities
+-- Version 0.99 - Slight adjustment down on the #prot and #rcost of the Light Chaos Armor. #blunt to Chaos Steed Hoof. Removed Tzeentch Plate Armor for simplicity's sake (and since Warriors etc. wear Chaos Armor in tabletop). Reduced the start numbers of the second Marauder group to 10 to match the other Warhosts. More alterations to Lord of Change's sprite (Sombre made the head!). Apparently copyspelling Blessing caused all kinds of issues with the Blessing item on the Cultist, seems to work now that it's no longer a copyspell (also, the Cultist became Sacred; same as every other Cultist). Removed the Discord of Tzeentch (Banishment) item, as you can only have one restricteditem per Commander and that slot is already taken by another item. Screamers are now #stormimmune. Cyspeth's onebattlespell is no longer wasted on summoning 2 commander cronies, and instead uses #batstartsum2 (since it seems to work properly now on ranged, which means spell slot 180 is now open). Lord of Tzeentch's magical abilities
 -- were changed to stop unboosted teleporting/cloud trapezing. Gave Minotaurs/Tzaanbulls 2 more invuln. Changes to #chaosrecs of many things. Obelisk lost its magic but gained the Cultist's blessing item (still spreads dom) and became capable of using the Greater Blessing item, too.
 
--- Version 0.98 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerers became considerably cheaper, while Exalted Sorcerers and Sorcerer Lords (who became poorleaders, too) became more expensive (I forgot about the massive boon Sacred is! Thanks Indract for reminding me! Made the price hike a bit less steep by halving #researchbonus on Exalted and Sorc Lord). Screamers became undisciplined (as suggested by Orionja). Massive reworking of Daemon command structure. Slightly upped Lord of Tzeentch's gcost. Upped Daemon Prince #coldres to 5. Tzeentch's Plate Armor had -1 def, while that was supposed to be with Slaanesh's Plate Armor (which was -2 def, like Nurgle's), oops! Tzeentch's higher Beastmen got their gimmick from #invulnerable 10. To combat massive morale bonuses from commanders, started using #command where applicable and dropped #inspirational here and there. Discs of Tzeentch lost their flying ability (leaving them with #float), but things with them received a
+-- Version 0.98 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerers became considerably cheaper, while Exalted Sorcerers and Sorcerer Lords (who became poorleaders, too) became more expensive (I forgot about the massive boon Sacred is! Thanks Indract for reminding me! Made the price hike a bit less steep by halving researchbonus on Exalted and Sorc Lord). Screamers became undisciplined (as suggested by Orionja). Massive reworking of Daemon command structure. Slightly upped Lord of Tzeentch's gcost. Upped Daemon Prince #coldres to 5. Tzeentch's Plate Armor had -1 def, while that was supposed to be with Slaanesh's Plate Armor (which was -2 def, like Nurgle's), oops! Tzeentch's higher Beastmen got their gimmick from #invulnerable 10. To combat massive morale bonuses from commanders, started using #command where applicable and dropped #inspirational here and there. Discs of Tzeentch lost their flying ability (leaving them with #float), but things with them received a
 -- boost to AP (upped to 25); this also means I gave the gimmick of Invulnerable 10 given to Beastmen to the human followers, too. Cultists lost S, but received an item they can cast Blessing of Tzeentch with (and there is a 5F gem forgeable item for Discord of Tzeentch), also the Icon of Tzeentch is now just 5S gems. Gave the Flamer and the Changebringer Drake Fire as main mode of attack instead of Flames of Tzeentch, making them less of a copy of the Horrors. Adjusted Warrior's #chaosrec to 1. Standard Bearer's #standard reduced to 1, gcost down to 20 and chaosrec to 1. Spawn of Tzeentch had enc 3, changed to 1 (thanks Indract!) and gave it a tentacle attack (since Nurgle one has one too with just as awkward tentacle positioning). Made lance the Chaos Knight's first attack. Forsaken Champ lacked itemized Chaos Armor. Changed Forsaken's Pincer to be the #bonus weapon Pincer. Ungor Raider Halfhorn's price dropped to 35. Lowered Tzeentch Chaos Armor's res cost to 23. #nostr off Staff of Change. Chaos Knights
 -- and Marauder Horsemen had 5 enc, dropped to 4. Sounds to attack spells.
 
@@ -2955,11 +2956,11 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -- Warriors are now 20gp. Pink Horrors down to research level 3. Massive changes to Beastman pricing etc., removal of Forest Survival on human followers of Tzeentch to accomodate for this change. Got rid of lots of autocalced costs to keep them sameish. Removed Galrauch's leadership and changed his E to A. Removed E and W from random magic lists (except E from Sorc Lord), as the nation isn't supposed to have full access to all magic paths (as the nation gets D and N through Bray-Shamans), left E on Vilitch however (as he has been described as lacklustre; E can be his thing). Added an Unstable Chaos Vortex summon which, in turn, summons ten Pink Horrors and then goes away and "turns" into a Herald of Tzeentch (the Vortex causes unrest and kills population). Gave negative #researchbonus to the Champs, Exalted Champs and Lord to denote their status as fighters. Changes to Spawn of Tzeentch (now it's similar to the other Spawns). Slight edits to #summary. Made #foreignrec Marauders #coldrec.
 -- Reclimits on Chosen uplifted (Sacred is enough of a reclimit). All commanders with Chaos Armor now start with an itemized Chaos Armor in Chest slot. Added #xpshape to Champs and Exalted Champs. People on discs lost their feet slots again. Dropped magical leadership from everything.
 
--- Version 0.96 - Cultist received start/maxage. Added #secondarycolor to nation color. Fixed #summary formatting. Spawn of Tzeentch became longer lived. Upgraded the Champion to Chosen stat levels, also slight ups to Exalted Champ and Lord. Made all the magical items #nofind. Added "MA" to the #modname. Fixed the positioning of the tails of the Daemon Princes. Fixed some other sprites that didn't have two pixels below them (unnoticiable in play, but it bugged the hell out of me!). Halberd of Tzeentch lacked things it probably should've had (#armorpiercing, #pierce and #slash). Made Scythetalon #slash instead of #pierce and made it #armorpiercing.
+-- Version 0.96 - Cultist received start/maxage. Added #secondarycolor to nation color. Fixed #summary formatting. Spawn of Tzeentch became longer lived. Upgraded the Champion to Chosen stat levels, also slight ups to Exalted Champ and Lord. Made all the magical items nofind. Added "MA" to the #modname. Fixed the positioning of the tails of the Daemon Princes. Fixed some other sprites that didn't have two pixels below them (unnoticiable in play, but it bugged the hell out of me!). Halberd of Tzeentch lacked things it probably should've had (#armorpiercing, #pierce and #slash). Made Scythetalon #slash instead of #pierce and made it #armorpiercing.
 
--- Version 0.95 - Removed chest slots from units/commanders with Chaos Armor, because you aren't supposed to replace Chaos Armor (going through #itemslots also means units mounted on Discs of Tzeentch will get leg slots, as there's no reason why you couldn't sit on it while putting boots on); not adding to commanders with Light Chaos Armor. Added a #onebattlespell self-bless for some commanders/heroes with Chaos Armor. Altered Vilitch's itemslots a lot. Added #armorpiercing to a lot of magical weapons. Lowered Spawn of Tzeentch's (renamed it) #prot a little but increased its #invulnerable. Switched the Daemon-forged Battleaxe to use Ulm's Bane of Heresy instead of Halt Sacred, making it even more potent. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Changed the long and short nation descriptions (the long un was basically an edited CU one, so, it was boring).
+-- Version 0.95 - Removed chest slots from units/commanders with Chaos Armor, because you aren't supposed to replace Chaos Armor (going through #itemslots also means units mounted on Discs of Tzeentch will get leg slots, as there's no reason why you couldn't sit on it while putting boots on); not adding to commanders with Light Chaos Armor. Added a onebattlespell self-bless for some commanders/heroes with Chaos Armor. Altered Vilitch's itemslots a lot. Added #armorpiercing to a lot of magical weapons. Lowered Spawn of Tzeentch's (renamed it) #prot a little but increased its #invulnerable. Switched the Daemon-forged Battleaxe to use Ulm's Bane of Heresy instead of Halt Sacred, making it even more potent. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Changed the long and short nation descriptions (the long un was basically an edited CU one, so, it was boring).
 
--- Version 0.94 - Changed the Chaos Vortex to Chaos Vortex of Tzeentch. Made the Daemon-forged Battleaxe a bit more potent (Halt Sacred), and as such made the Chosen wielding it a bit more potent. Brought up MRs pretty much across the board (because my "high" was apparently "mediocre"). Max ages to Chosen and Warriors. Added Tzeentch Plate Armor, gave it to several units below Chosen to make Chaos Armor a bit less common. Altered the itemized Chaos Armor to bless its user. 2S for the Daemon Prince. Removed #unique tags from Heroes. More morale for Warriors. Made Warhounds #undisciplined (since Forsaken are). Fixed the Greater Blessing of Tzeentch (it had no MR check and wasn't usable underwater). Gave Pretenders a version of the Greater Blessing as #onebattlespell. Increased LoC's prot and #invulnerable (also fixed a typo in #invulnerable). Added an extra, middling Blessing type (AOE10 with MR negates). Lowered gem costs of Blessings. Added Obelisk of Tzeentch, which is immobile, has some magic and
+-- Version 0.94 - Changed the Chaos Vortex to Chaos Vortex of Tzeentch. Made the Daemon-forged Battleaxe a bit more potent (Halt Sacred), and as such made the Chosen wielding it a bit more potent. Brought up MRs pretty much across the board (because my "high" was apparently "mediocre"). Max ages to Chosen and Warriors. Added Tzeentch Plate Armor, gave it to several units below Chosen to make Chaos Armor a bit less common. Altered the itemized Chaos Armor to bless its user. 2S for the Daemon Prince. Removed #unique tags from Heroes. More morale for Warriors. Made Warhounds #undisciplined (since Forsaken are). Fixed the Greater Blessing of Tzeentch (it had no MR check and wasn't usable underwater). Gave Pretenders a version of the Greater Blessing as onebattlespell. Increased LoC's prot and #invulnerable (also fixed a typo in #invulnerable). Added an extra, middling Blessing type (AOE10 with MR negates). Lowered gem costs of Blessings. Added Obelisk of Tzeentch, which is immobile, has some magic and
 -- Version 0.94 - spreads Dominion.
 
 -- Version 0.93 - Changed the armors to have the name "Tzeentch" on them to match the Nurgle warhost. Made the startsites match Nurgle warhost. Slight upgrade to Warhound. Removed Warhound from PD and extra PD adjustments. Raised the MR of the Pretenders to 19, as 18 is apparently the "basic" amount and that won't do! Added a national color. Added #armorpiercing to the Daemon-forged Battleaxe, since the Daemon-forged Broad Sword already had it. Altered the costs of the items and fixed Wand of Whimsy's main path.
@@ -2989,7 +2990,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #att -1
 #def -1
 #nratt 3
-#len 4
+#len 3
 #magic
 #rcost 6
 #sound 10
@@ -3003,7 +3004,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #dmg 10
 #att 1
 #def 0
-#len 3
+#len 2
 #nratt 2
 #rcost 7
 #twohanded
@@ -3086,25 +3087,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #nostr
 #magic
 #armornegating
-#mrnegateseasily
+#mrnegates--easily
 #unrepel
 #bonus
 #demonimmune
-#dt_raise
+--#dt_raise
 #raiseshape 4150
-#end
-
-
-#aoe 4
-#dmg 2
-
-#magic
-#sound 24
-#flyspr 210 4
-#explspr 10219
-#secondaryeffectalways 232
-#bonus
-#hardmrneg
 #end
 
 #newweapon 733
@@ -3112,7 +3100,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #dmg 12
 #att 2
 #def 3
-#len 3
+#len 2
 #magic
 #slash
 #armorpiercing
@@ -3143,7 +3131,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #dmg 11
 #att -1
 #def -1
-#len 4
+#len 3
 #magic
 #fire
 #sound 16
@@ -3157,7 +3145,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magic
 #att 1
 #def -1
-#len 2
+#len 1
 #slash
 #sound 8
 #armorpiercing
@@ -3170,7 +3158,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magic
 #att 2
 #def 4
-#len 4
+#len 3
 #blunt
 #hardmrneg
 #secondaryeffect 232
@@ -3204,6 +3192,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 55
 #chaosrec 3
 #rcost 5
+#rpcost 18
 #heal
 #weapon "Axe"
 #weapon 331
@@ -3216,7 +3205,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #trample
 #pillagebonus 1
 --#magicboost 8-7
-#rpcost 15
 #end
 
 -- Tzaangor
@@ -3387,7 +3375,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #wastesurvival
 #forestsurvival
 #mountainsurvival
-#reclimit 8
 #regeneration 5
 #neednoteat
 #undisciplined
@@ -3395,7 +3382,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startage 29
 #maxage 4000
 --#magicboost 8-7
-#rpcost 18
+#rpcost 15
 #end
 
 -- Marauders of Tzeentch #1
@@ -3535,8 +3522,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Warrior of Tzeentch"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
-#ap 12
-#mapmove 16
+#ap 11
+#mapmove 14
 #hp 13
 #size 2
 #str 12
@@ -3570,8 +3557,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Warrior of Tzeentch"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
-#ap 12
-#mapmove 16
+#ap 11
+#mapmove 14
 #hp 13
 #size 2
 #str 12
@@ -3645,8 +3632,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Standard Bearer"
 #nametype 115
 #descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to the Changer of Ways."
-#ap 12
-#mapmove 16
+#ap 11
+#mapmove 14
 #size 2
 #str 12
 #enc 2
@@ -3919,7 +3906,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fear 6
 #trample
 #pillagebonus 1
-#onebattlespell 1022
+#onebattlespell 1022 -- Growing Fury
 --#magicboost 8-7
 #rpcost 1
 #end
@@ -3949,7 +3936,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #chaosrec 3
 #rcost 5
 #startage 35
-#maxage 200
+#maxage 200f
 #pillagebonus 1
 #ambidextrous 2
 #weapon "Axe"
@@ -4031,13 +4018,13 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 10240 100 -- NS
 #custommagic 14336 10 -- NSD
 #gcost 160
+#holy
 #rcost 1
 #weapon "Magic Staff"
 #okleader
 #forestsurvival
 #startage 55
 #maxage 1500
---#magicboost 8-7
 #stealthy 0
 #rpcost 2
 #end
@@ -4051,7 +4038,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. However, only those deemed worthy by the Great Sorcerer Himself are marked by the Changer of Ways, and their power is indeed greater than that of those Chaos Sorcerers who follow the other Dark Gods."
-#ap 10
+#ap 12
 #mapmove 16
 #hp 10
 #size 2
@@ -4069,13 +4056,13 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 16768 10 -- FAB
 #gcost 10000
 #rcost 1
+#rpcost 2
 #weapon "Fist"
 #armor "Robes"
 #noleader
 #startage 45
 #maxage 1500
 --#magicboost 8-7
-#rpcost 2
 #end
 
 -- Exalted Sorcerer of Tzeentch
@@ -4086,7 +4073,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Exalted Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the gifts given by the Changer of Ways, yet they always seek for more in their never ending quest for power."
-#ap 10
+#ap 12
 #mapmove 16
 #hp 15
 #size 2
@@ -4443,7 +4430,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #poorundeadleader
 #mountainsurvival
 #wastesurvival
-#onebattlespell 739
+#onebattlespell 739 -- Power of the Spheres
 --#magicboost 8-7
 #holy
 #invulnerable 10
@@ -5681,7 +5668,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -- Aegis of Orange Fire -
 
 #newspell
-#copyspell 357
+#copyspell 357 -- Tempering the Will
 #name "Aegis of Orange Fire"
 #descr "With this incantation, which calls upon the Dark God Tzeentch, the caster bestows resistance to magic to some of his allies."
 #restricted 120
@@ -5697,7 +5684,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -- Treason of Tzeentch -
 
 #newspell
-#copyspell 1013
+#copyspell 1013 -- Confusion
 #name "Treason of Tzeentch"
 #descr "The caster reaches his thought into the minds of his victims, tormenting them with subtle whispers that stoke the fires of mistrust and treachery, turning them against one another."
 #restricted 120
@@ -5709,6 +5696,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 #newspell
 #name "Blue Fire of Tzeentch"
+#copyspell 561 -- Astral Fires
 #descr "As the caster twists his hands in the air, the bodies of his enemies are consumed with coruscating blue flames. Due to the metaphysical nature of the flames, however, they only burn those weak of will."
 #restricted 120
 #school 2
@@ -5722,7 +5710,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #damage 24
 #aoe 3
 #flightspr -1
-#explspr 10141
+--#explspr 10141 Old sprite effect
 #precision 5
 #range 40
 #spec 4096
@@ -5732,7 +5720,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -- Infernal Gateway -
 
 #newspell
-#copyspell 1117
+#copyspell 1117 -- Infernal Prison
 #name "Infernal Gateway"
 #descr "The caster opens a portal to the dread Realm of Chaos, a magical tear in the mortal plane that sucks the target to nigh certain doom."
 #restricted 120
@@ -5764,7 +5752,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 2
 #onlydemon
 #deathfire 5
-#nofind
 #end
 
 
@@ -5783,7 +5770,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #descr "This stone pulsates with chaotic energy, and it grants its wearer extra magical resources when brought to the battlefield."
 #type 8
 #tmpastralgems 2
-#nofind
 #end
 
 -- Wand of Whimsy
@@ -5802,7 +5788,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #weapon 151
 #autospell "Power of the Spheres"
 #pen 2
-#nofind
 #type 1
 #end
 
@@ -6117,5 +6102,2906 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startunittype1 4331
 #startunitnbrs1 20
 #startunittype2 4332
+#startunitnbrs2 10
+#end
+
+--END OF TZEENTCH, START OF NURGLE
+
+
+-- Sensori's changelog below:
+
+-- Version 0.94 -- Standard Bearer's #prot 4 was missing and Bile Troll's Infected Vomit had -7 in range rather than 7 (pointed out by Omnipwn on the forums! Thanks!). Pretender prices are now autocalced and the national ones received #cheapgod20. Added #natural to Chaos steed hoof, Poison Tentacle and Rabid Bite. Lowered Fleshy Abundance's #precision from 20 to 5.
+
+-- Version 0.93 -- With the coming of #diseaseres, the human followers lose their ability to regenerate, also added lower diseaseres to Marauders, Sorcerers, regular commanders etc. reclimits on Chosen made a comeback, Lord became StR (also increased the Champs', Exalteds' and Lords' research malus). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (Exalted Sorc's price now decided by autocalc). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers (also removed the minibless entirely). Sorcerers are no longer resistant to poison. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Lowered #xpshape thresholds. Added a Daemonic incursion event. Human followers use 115 for nametypes.
+
+-- Version 0.92 -- Removed Nurgle Plate Armor for simplicity's sake (and apparently Warriors, in tabletop, always have Chaos Armor). Pestigor's chaosrec is now 3, as with the others. blunt and #slash to the flail/sword. #blunt to Chaos steed hoof. Sombre noticed that Nurgle Standard Bearers were lacking a shield. Increased and decreased #mr, #ap, #def etc. according to how they are in Slaanesh Warhost where applicable. Altered the Warhost's flag. Changed Lord of Nurgle's magic to be either 2D or 2N and gave the Lord a shield (which is situated on the mount, because I wanted the Lord to show better on the sprite... I don't know why I've been debating myself over giving the Lord a shield). Returned #heal to Warriors and Standard Bearers (still waiting for #diseaseres). Added Bile Troll, a new unit (thanks Sombre!). More changes to #chaosrecs here and there.
+
+-- Version 0.91 -- Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Lord of Nurgle's AP to 20. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; lowered #researchbonus to make the price hike less steep). Massive reworking of Daemon command structure. Daemon Prince's #coldres upped to 5. Apparently Tzaangor (and Slaangor) *now* has #stealthy, so Pestigor got his #stealthy back. To combat ridiculous morale bonuses, started using #command where applicable and dropped #inspirational here and there. Made everything below Chosen have #coldres 3, as with the other Warhosts. Slightly adjusted Nurgle Plate Armor's #rcost downwards and adjusted Warriors' #chaosrec to be 1. Removed recup and regen from Warriors and the Standard Bearer (Plague Knight only lost regen) since other nations' Warriors
+-- don't have their specialties, also lowered poisonres. Had forgotten to add #poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking #armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
+
+-- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and #poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed #acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (#restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
+-- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to #summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
+-- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed #undead from all mortal followers of Nurgle and gave them #regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
+
+-- Version 0.78 - Made everything with #enc 0 except GUOs have #enc 1 or 2 (brings enc to Tzeentch warhost's levels). Protection of Nurgle now requires a gem and 2 levels of Ench research. Standard Bearer now has MM1 like its Tzeentch counterpart. Cultist received start/maxage. Added secondary color to nation colors. Fixed #summary formatting. Tinkered with the long description some more. Added a new spell to Ench, "Consecration of Nurgle", which both removes afflictions (also kills pop and gives your mage a craving for human flesh) and summons Plaguebearers. Slight change to the #summary. Added 'Warhammer' to modname (since Tzeentch warhost has it). Brought the Champion up to Chosen levels and upped the Exalted Champ a little. Lowered the price of the Sorcerer Lord Pretender - it was the same price as the Tzeentch one, which can fly, gets a bit more research and such. Added nofind to items. Fixed the Daemon Prince's tail's positioning. Fixed the positioning of a bunch of sprites
+-- (didn't really show in-game, but it bothered me!).
+
+-- Version 0.77 - Removed chest slots from units with Chaos Armor, because you aren't supposed to replace Chaos Armor. Lowered #poisonres to "normal" undead levels on all except Daemons. Herald received a buff to its leading ability and a #batstartsum. #ambidextrous to Plague Drone and Rot Fly. Lowered the Spawn of Nurgle's #prot a little but increased its #invulnerable. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Gave the nation a new main and brief description (the old ones were... Rather generic).
+
+-- Version 0.76 - Fixed Ku'gath's shadow (it was way too small). Fixed Plaguebearer and Herald of Nurgle sprites (they were 1 pixel too low and had too small shadows). Renamed the Chaos Vortex again, to Chaos Vortex of Nurgle. Added survivals to the Champ, Exalted Champ and Lord (since they were supposed to have matching survivals with the Chosen). Added ages to Chosen and Warriors. Added Nurgle Plate Armor, gave it to several units below Chosen. Altered the itemized Chaos Armor to bless its user (and removed the resistances). Brought up the MRs of the Sorcerers. Made Warhounds #undisciplined (since Forsaken are #undisciplined). Increased morale for units from Warriors to Chosen. More MR to Plague Drones/Rot Flies. Changed some #prots and a lot of #invulnerables. #chaosrec was missing from Lord of Nurgle. Chaos Furies had the wrong path to summon.
+
+-- Version 0.75 - Jump in versions due to "why not?" Ever so slight changes to the Minotaur! Added undisciplined to Rot Fly. Changes to the Warhound (incl. Rabid Bite and reclimit). Foreignrec Cultist added. Changed PD, it was the same way it had been in Dom3 and in Dom4 it looked INCREDIBLY HIGH, also removed Warhound from PD due to weapon change. Removed Pestigor's #stealthy because the Tzaangor isn't stealthy. Gave the nation a national color. Added an item, the Nurgle Chaos Armour. Added Filth Mace and Balesword, which are weapons. Lowered the negative Def and amount of Enc on the Chaos Armor to match the Tzeentch armor, still gives less prot (enc was mostly useless due to everyone using it being undead with no enc anyway, and units generally have less def than their Tzeentch counterparts to begin with). Added #holy to Plague Drone/Rot Fly. Added #armorpiercing to the Daemonforged Axe and made flails take out 2 def. Put a - between all "Daemon" and "forged" to match Tzeentch warhost.
+-- Was supposed to have #dmg in weapon commands, and the mistake lead to pretty much no damage in a lot of custom weapons.
+
+-- Version 0.51 - After some feedback, fixing some silly oversights! Giving 18 MR to the Pretenders due to that being the norm. 2D to the Daemon Prince Pretender. Giving the humans (and Beastmen) who had 10AP 12AP, because that's the norm and Nurgle's effects don't really slow people down. Giving the Chosen with the axe a Daemonforged Axe (it's not supposed to be as good as the Flail one, but not that much worse!). Checking if I can get rid of the range on Protection of Nurgle (also giving it an #explspr). Checking att levels on humans in general (same reason as AP; there's no Rigor Mortis), def levels will stay (or become worse) due to "no pain". Other stuff: Adjusted the prices of the Chosen slightly upwards. Adjusted resource costs of weapons. Gave some spells #sounds and #explsprs.
+
+-- Version 0.5 - Initial release of the mod! Utilizes a lot of edited Tzeentch warhost assets (which is not to say that there wouldn't be any new ones) as well as the Dom3 Chaos Undivided's .dm as base.
+
+-- Weapon IDs: 1750-71
+-- Armor IDs: 685
+-- Unit IDs: 5000 - 5049
+-- Nation ID: 136
+-- Site IDs: 1925 - 1926
+-- Montag IDs: 69402
+-- Restricted items: 6565
+-- Magic item IDs: 968
+
+-------- WEAPONS --------
+
+
+#newweapon 1750
+#name "Plaguesword"
+#dmg 8
+#att 1
+#def 0
+#len 1
+#magic
+#slash
+#secondaryeffect 1769
+#sound 8
+#rcost 3
+#end
+
+#newweapon 1756
+#name "Large Plaguesword"
+#dmg 10
+#att 1
+#def 0
+#len 2
+#magic
+#slash
+#secondaryeffect 1769
+#sound 8
+#rcost 5
+#end
+
+#newweapon 1751
+#name "Poison Tentacle"
+#dmg -5
+#armorpiercing
+#att 0
+#def 0
+#len 0
+#magic
+#bonus
+#secondaryeffect 50
+#natural
+#end
+
+#newweapon 1752
+#name "One-handed Flail"
+#dmg 2
+#att 0
+#def -2
+#len 1
+#rcost 3
+#blunt
+#flail
+#nratt 2
+#sound 11
+#ironweapon
+#end
+
+#newweapon 1753
+#name "Daemon-forged Flail"
+#dmg 2
+#att 0
+#def -2
+#len 1
+#rcost 4
+#blunt
+#flail
+#magic
+#nratt 3
+#sound 11
+#end
+
+#newweapon 1755
+#name "Daemon-forged Two-Handed Sword"
+#dmg 10
+#magic
+#nratt 2
+#att 2
+#def 1
+#len 2
+#twohanded
+#sound 8
+#rcost 4
+#blunt
+#slash
+#end
+
+#newweapon 1757
+#name "Daemon-forged Scythe"
+#armorpiercing
+#dmg 8
+#att 2
+#def 2
+#len 3
+#magic
+#twohanded
+#sound 8
+#slash
+#rcost 4
+#secondaryeffectalways 431
+#end
+
+#newweapon 1758
+#name "Valnir's Flail"
+#dmg 3
+#att 0
+#def 1
+#len 2
+#rcost 4
+#blunt
+#flail
+#magic
+#nratt 3
+#sound 11
+#twohanded
+#end
+
+#newweapon 1759
+#name "Pestilent Potion"
+#nostr
+#bonus
+#magic
+#dmg 4
+#ammo 4
+#armornegating
+#secondaryeffect 1768
+#hardmrneg
+#acid
+#end
+
+#newweapon 1760
+#name "Necrotic Missiles"
+#bonus
+#magic
+#dmg 1
+#nostr
+#ammo 20
+#range -1
+#aoe 1
+#armornegating
+#secondaryeffect 1769
+#hardmrneg
+#nratt -2
+#end
+
+#newweapon 1761
+#name "Plaguesword"
+#dmg 12
+#nostr
+#bonus
+#att 1
+#def 0
+#len 1
+#magic
+#rcost 0
+#slash
+#secondaryeffect 1769
+#sound 8
+#end
+
+#newweapon 1762
+#name "Daemon-forged Cleaver"
+#dmg 9
+#slash
+#att 0
+#def 1
+#len 1
+#magic
+#sound 10
+#rcost 3
+#armorpiercing
+#end
+
+#newweapon 1764
+#name "Rabid Bite"
+#dmg 2
+#slash
+#att 0
+#def -1
+#len 0
+#bonus
+#secondaryeffect 1765
+#natural
+#end
+
+#newweapon 1765
+#name "Infection"
+#mrnegates
+#dmg 2
+#bonus
+#nostr
+#dt_weakness
+#sizeresist
+#secondaryeffect 143
+#end
+
+#newweapon 1766
+#name "Filth Mace"
+#dmg 5
+#att 0
+#def 0
+#len 1
+#magic
+#secondaryeffect 51
+#rcost 4
+#blunt
+#sound 10
+#end
+
+#newweapon 1767
+#name "Balesword"
+#dmg 8
+#att 1
+#def 0
+#len 1
+#magic
+#rcost 3
+#sound 8
+#secondaryeffect 1768
+#slash
+#end
+
+#newweapon 1768
+#name "Poison and Disease"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#magic
+#armornegating
+#secondaryeffect 414
+#end
+
+#newweapon 1769
+#name "Poison and Corrosion"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#magic
+#armornegating
+#secondaryeffectalways 515
+#end
+
+#newweapon 1770
+#name "Rusted Cleaver"
+#dmg 6
+#slash
+#len 2
+#rcost 5
+#att 1
+#def 0
+#sound 10
+#ironweapon
+#end
+
+#newweapon 1771
+#name "Infected Vomit"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#range 7
+#ammo 1
+#flyspr 313
+#explspr 10004
+#aoe 1
+#magic
+#armornegating
+#secondaryeffectalways 414
+#end
+
+-----Armour-----
+
+
+-------- UNITS ----------
+
+-- Warhounds of Nurgle
+
+#newmonster 5000
+#spr1 "./Warhammer-Complete/warhound_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/warhound_nurgle_2.tga"
+#name "Warhound"
+#nametype 144
+#descr "These natural killers are made all the more horrifying by the warping effect of Chaos, causing them to sprout horns, tusks, and spines."
+#hp 12
+#size 2
+#prot 3
+#mor 10
+#mr 9
+#enc 2
+#str 12
+#att 10
+#def 8
+#prec 8
+#mapmove 20
+#ap 18
+#gcost 7
+#rcost 1
+#rpcost 3
+#noitem
+#weapon 1764
+#stealthy 10
+#animal
+#coldres 5
+#berserk 2
+#undisciplined
+#wastesurvival
+#forestsurvival
+#mountainsurvival
+#diseaseres 80
+#end
+
+-- Bile Troll
+
+#newmonster 5050
+#spr1 "./Warhammer-Complete/Bile_Troll_1.tga"
+#spr2 "./Warhammer-Complete/Bile_Troll_2.tga"
+#name "Bile Troll"
+#descr "Bile Trolls are perhaps the most vile of all Troll-kind; they are cursed, tortured creatures, with an appalling hunger that can never be satiated. It is said that they are the descendents of Trolls who feasted upon the dead who had followed Grandfather Nurgle which lead to their malediction, and those among the Troll-kind who have since shared their terrible fate. Never are they given respite of their agony. Their bodies are wracked with disease which their regenerative powers constantly attempt to overcome but never cannot, only to forever continue the cycle of suffering as what ails them will never outright slay them. They are shunned and feared by all, even their kin, as none wish to share their terrible fate."
+#mapmove 16
+#ap 13
+#hp 50
+#str 22
+#att 10
+#size 3
+#enc 3
+#def 8
+#prec 4
+#prot 14
+#mor 12
+#mr 14
+#weapon "Rusted Cleaver"
+#weapon "Rabid Bite"
+#weapon 1771
+#regeneration 5
+#heal
+#rcost 2
+#rpcost 48
+#darkvision 50
+#poisonres 25
+#neednoteat
+#poorleader
+#gcost 65
+#maxage 500
+#startage 250
+#swampsurvival
+#wastesurvival
+#diseaseres 100
+#end
+
+
+-- Minotaur of Nurgle
+
+#newmonster 5035
+#spr1 "./Warhammer-Complete/minotaur_1.tga"
+#spr2 "./Warhammer-Complete/minotaur_2.tga"
+#name "Minotaur of Nurgle"
+#nametype 109
+#descr "Minotaurs are massive bull-headed monstrosities that constantly hunger for blood and red meat. Even though they're less intelligent than the smaller Beastmen, they are unnaturally strong and powerful, which makes them quite formidable warriors. They gather in loose tribes ruled over by the strongest of their number, and when called to battle, they reach into the piles of weapons and armor heaped in offering before the herdstones, equipping themselves with the largest and most formidable weapons they can find."
+#ap 12
+#mapmove 16
+#hp 29
+#size 3
+#str 18
+#enc 3
+#att 10
+#def 9
+#prec 7
+#prot 5
+#mr 12
+#mor 14
+#gcost 55
+#chaosrec 3
+#rcost 5
+#rpcost 18
+#heal
+#weapon 347
+#weapon 331
+#armor 2
+#armor 9
+#startage 40
+#maxage 500
+#forestsurvival
+#berserk 4
+#trample
+#pillagebonus 1
+#regeneration 5
+#deathdisease 6
+#diseasecloud 3
+#poisonres 25
+#diseaseres 100
+#end
+
+-- Pestigor
+
+#newmonster 5036
+#spr1 "./Warhammer-Complete/pestigor_1.tga"
+#spr2 "./Warhammer-Complete/pestigor_2.tga"
+#name "Pestigor"
+#nametype 109
+#descr "Bestigors of Nurgle, Pestigors are, just as their other Bestigor brethren, the strongest and meanest of the Beastmen footsoldiers. Pestigors are racked with pestilence, disease and malformations but still maintain the morbid vigor of their patron god. Another abnormality that they have is that they often bear only a single horn, which is very uncommon among Beastmen. Regardless, just as the other Bestigors, due to their size and ferocity they carve a privileged position within the warherd, constantly enforcing their superiority upon the Gors and Ungors with random acts of violence. Unlike their brethren who prefer large, two handed axes, Pestigors wield flails and shields. Bestigors generally form a chieftain's inner circle of retainers and enforcers, but it is in their nature to constantly strive for ever greater dominance amongst their tribes, which can often lead them to challenge the leadership of the tribal chieftain."
+#ap 12
+#mapmove 14
+#hp 17
+#size 2
+#str 14
+#enc 2
+#att 12
+#def 10
+#prec 10
+#prot 4
+#mr 13
+#mor 11
+#gcost 35
+#chaosrec 3
+#rcost 4
+#rpcost 12
+#startage 28
+#maxage 200
+#weapon 1752
+#armor "Chain Mail Cuirass"
+#armor "Shield"
+#forestsurvival
+#pillagebonus 1
+#heal
+#regeneration 5
+#deathdisease 5
+#diseasecloud 2
+#poisonres 25
+#stealthy 0
+#diseaseres 100
+#end
+
+-- Gor of Nurgle
+
+#newmonster 5037
+#spr1 "./Warhammer-Complete/gor_1NR.tga"
+#spr2 "./Warhammer-Complete/gor_2NR.tga"
+#name "Gor"
+#nametype 109
+#descr "Gors are what form the great mass of the warherds. Their appearance varies, but all combine bestial features with those of a man. The base form of the Beastmen, and that possessed by the vast majority of the Gors, is the head and legs of a goat and the upper torso of a man, albeit a particularly hairy and malodorous one, even if as creatures of Chaos, there can be great variance from Beastman to Beastman. Regardless of that fact, it is the horns of a Beastman without which one cannot be considered a real Gor. Indeed, in the society of Beastmen, horns are the ultimate mark of rank and power, and their leaders are always those with the largest and most spectacular sets."
+#hp 14
+#size 2
+#mor 10
+#mr 11
+#enc 3
+#str 12
+#att 11
+#def 9
+#prec 10
+#prot 4
+#mapmove 16
+#ap 12
+#gcost 13
+#chaosrec 1
+#rcost 1
+#rpcost 6
+#stealthy 0
+#startage 22
+#maxage 150
+#weapon "Club"
+#armor "Shield"
+#pillagebonus 1
+#forestsurvival
+#stealthy 0
+#diseaseres 90
+#end
+
+-- Ungor of Nurgle
+
+#newmonster 5038
+#spr1 "./Warhammer-Complete/ungor_1NR.tga"
+#spr2 "./Warhammer-Complete/ungor_2NR.tga"
+#name "Ungor"
+#nametype 109
+#descr "Ungors are physically weaker than the other Beastmen and their horns, if they have any at all, are less impressive and less numerous. Where the Gors usually have long and spectacular horns as deadly as a sword, Ungors usually, at most, have short prongs or horn buds sprouting from their skulls, which in turn are not recognizable as that of a goat or any other type acknowledged by the Gors. The Ungors occupy the lowest station in the warherd; they must fight for whatever scraps of food left over by the others or try and steal them from the tribe's Warhounds. Regardless of their status, however, they are crucial to the warherd, for it is them who have the dexterity to repair and bind the weaponry of their clumsier Gor brethren; without the Ungors, the other Beastmen would find themselves without weapons."
+#hp 12
+#size 2
+#mor 9
+#mr 10
+#enc 3
+#str 10
+#att 10
+#def 11
+#prec 10
+#mapmove 16
+#ap 12
+#gcost 11
+#chaosrec 1
+#rcost 1
+#rpcost 3
+#startage 20
+#maxage 80
+#stealthy 10
+#weapon "Spear"
+#armor "Shield"
+#pillagebonus 1
+#forestsurvival
+#diseaseres 80
+#end
+
+-- Ungor Raider
+
+#newmonster 5039
+#spr1 "./Warhammer-Complete/ungor_raider_1NR.tga"
+#spr2 "./Warhammer-Complete/ungor_raider_2NR.tga"
+#name "Ungor Raider"
+#nametype 109
+#descr "Ungor Raiders are those Ungors tasked with the role of hunting out enemies for the warherds to prey upon. They have a knowledge of the wilderness that is unsurpassed by even the most intelligent Gor, and it is they who sow the seeds of mayhem that soon blossom into full-blown destruction as the rest of the warherd falls upon their victims. Bands of Ungor Raiders range ahead of the warherd as it travels through the lands, sending runners back and forth to ensure the main body of the Beastman army can bring its might to bear."
+#hp 12
+#size 2
+#mor 9
+#mr 10
+#enc 3
+#str 10
+#att 10
+#def 11
+#prec 10
+#mapmove 16
+#ap 12
+#gcost 13
+#chaosrec 1
+#rcost 1
+#rpcost 3
+#startage 20
+#maxage 80
+#stealthy 15
+#weapon "Short Bow"
+#weapon 9
+#pillagebonus 1
+#forestsurvival
+#diseaseres 80
+#end
+
+-- Forsaken
+
+#newmonster 5040
+#spr1 "./Warhammer-Complete/forsaken_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/forsaken_nurgle_2.tga"
+#name "Forsaken"
+#nametype 115
+#descr "The Forsaken are those poor souls granted at least one too many 'gifts' by their patron god, their intellect reduced to the level of beasts. Whether it is due to some slight against Nurgle or for great accomplishments, it does not matter. One thing is certain for the Forsaken, however; in their future looms either death or spawndom."
+#hp 13
+#size 2
+#mor 30
+#mr 12
+#enc 2
+#str 11
+#att 10
+#def 10
+#prec 10
+#mapmove 14
+#ap 12
+#gcost 12
+#chaosrec 1
+#rcost 1
+#rpcost 15
+#coldres 3
+#itemslots 15488
+#weapon 85
+#weapon 1751
+#armor "Leather Hauberk"
+#pillagebonus 1
+#wastesurvival
+#forestsurvival
+#mountainsurvival
+#regeneration 5
+#neednoteat
+#undisciplined
+#berserk 3
+#startage 29
+#maxage 4000
+#diseaseres 100
+#deathdisease 3
+#poisonres 25
+#end
+
+-- Marauder of Nurgle #1
+
+#newmonster 5001
+#spr1 "./Warhammer-Complete/marauder_nurgle_club_1.tga"
+#spr2 "./Warhammer-Complete/marauder_nurgle_club_2.tga"
+#name "Marauder"
+#nametype 115
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#hp 12
+#size 2
+#mor 10
+#mr 10
+#enc 3
+#str 11
+#att 10
+#def 10
+#prec 10
+#mapmove 16
+#ap 12
+#gcost 11
+#chaosrec 1
+#coldres 3
+#rcost 1
+#rpcost 6
+#weapon "Club"
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#pillagebonus 1
+#wastesurvival
+#mountainsurvival
+#diseaseres 60
+#end
+
+-- Marauder of Nurgle #2
+
+#newmonster 5002
+#spr1 "./Warhammer-Complete/marauder_flail_1.tga"
+#spr2 "./Warhammer-Complete/marauder_flail_2.tga"
+#name "Marauder"
+#nametype 115
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#hp 12
+#size 2
+#mor 10
+#mr 10
+#enc 3
+#str 11
+#att 10
+#def 10
+#prec 10
+#mapmove 16
+#ap 12
+#gcost 11
+#chaosrec 1
+#rcost 1
+#rpcost 6
+#coldres 3
+#weapon 1752
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#wastesurvival
+#mountainsurvival
+#pillagebonus 1
+#diseaseres 60
+#end
+
+-- Marauder #1 - foreignrec
+
+#newmonster 5028
+#copystats 5001
+#copyspr 5001
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#reclimit 10
+#coldrec 2
+#end
+
+-- Marauder #2 - foreignrec
+
+#newmonster 5029
+#copystats 5002
+#copyspr 5002
+#descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
+#reclimit 10
+#coldrec 2
+#end
+
+-- Nurgle Marauder Horsemen
+
+#newmonster 5003
+#spr1 "./Warhammer-Complete/marauder_horseman_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/marauder_horseman_nurgle_2.tga"
+#name "Marauder Horseman"
+#nametype 115
+#descr "These mounted raiders are a constant threat along the borders of more civilised lands, and when Marauders gather in strength it is scouting parties of these riders that guide them to the richest settlements."
+#ap 24
+#mapmove 22
+#hp 13
+#size 3
+#str 12
+#enc 4
+#att 11
+#def 10
+#prec 10
+#mr 10
+#mor 10
+#gcost 25
+#chaosrec 2
+#rcost 1
+#rpcost 18
+#itemslots 13446
+#weapon 1752
+#weapon 56
+#armor "Iron Cap"
+#armor "Leather Hauberk"
+#armor "Shield"
+#mounted
+#wastesurvival
+#mountainsurvival
+#pillagebonus 1
+#coldres 3
+#diseaseres 60
+#end
+
+-- Warrior of Nurgle #1
+
+#newmonster 5004
+#spr1 "./Warhammer-Complete/Warrior_of_Nurgle_flail_1.tga"
+#spr2 "./Warhammer-Complete/Warrior_of_Nurgle_flail_2.tga"
+#name "Warrior of Nurgle"
+#nametype 115
+#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
+#ap 10
+#mapmove 12
+#hp 15
+#size 2
+#enc 2
+#prot 4
+#str 13
+#att 12
+#def 11
+#prec 10
+#mr 11
+#mor 13
+#gcost 30
+#chaosrec 2
+#rcost 1
+#rpcost 18
+#weapon 1752
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#poisonres 15
+#wastesurvival
+#mountainsurvival
+#coldres 3
+#startage 28
+#maxage 900
+#diseaseres 80
+#end
+
+
+-- Warrior of Nurgle #2
+
+#newmonster 5005
+#spr1 "./Warhammer-Complete/Warrior_of_Nurgle_axe_1.tga"
+#spr2 "./Warhammer-Complete/Warrior_of_Nurgle_axe_2.tga"
+#name "Warrior of Nurgle"
+#nametype 115
+#descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
+#ap 10
+#mapmove 12
+#hp 15
+#size 2
+#enc 2
+#prot 4
+#str 13
+#att 12
+#def 11
+#prec 10
+#mr 11
+#mor 13
+#gcost 30
+#chaosrec 2
+#rcost 1
+#rpcost 18
+#weapon 1307 -- Chaos Axe
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#poisonres 15
+#wastesurvival
+#mountainsurvival
+#coldres 3
+#startage 26
+#maxage 900
+#diseaseres 80
+#end
+
+-- Plague knights
+
+#newmonster 5006
+#spr1 "./Warhammer-Complete/plagueknight_1.tga"
+#spr2 "./Warhammer-Complete/plagueknight_2.tga"
+#name "Plague Knight"
+#nametype 115
+#descr "Plague Knights are the mounted elite from amongst the Chaos Warriors whose patron is Nurgle. They are always infected with all manner of disfiguring diseases, and are motivated by a strange and morbid energy; they are known to survive wounds that might slay another Chaos Knight. Indeed, they are of a different kind of terrifying than their kin who follow the other Dark Gods."
+#ap 17
+#mapmove 20
+#hp 16
+#size 3
+#str 14
+#prot 4
+#enc 4
+#att 11
+#def 11
+#prec 10
+#mr 11
+#mor 13
+#itemslots 13446
+#weapon "Lance"
+#weapon 1752
+#weapon 56
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#mounted
+#gcost 60
+#coldres 3
+#chaosrec 3
+#rcost 6
+#rpcost 45
+#ressize 2
+#diseaseres 90
+#poisonres 15
+#wastesurvival
+#mountainsurvival
+#startage 31
+#maxage 900
+#end
+
+-- Standard Bearer
+
+#newmonster 5007
+#spr1 "./Warhammer-Complete/standard_bearer_1NR.tga"
+#spr2 "./Warhammer-Complete/standard_bearer_2NR.tga"
+#name "Standard Bearer"
+#nametype 115
+#descr "The presence of a Standard Bearer may mean the difference between a glorious victory and crushing defeat, for they raise the morale of their allies in battle, their standard paying homage to Grandfather Nurgle."
+#ap 10
+#mapmove 12
+#hp 15
+#prot 4
+#size 2
+#str 13
+#enc 2
+#att 12
+#def 11
+#prec 10
+#mr 12
+#mor 13
+#gcost 40
+#chaosrec 2
+#rcost 1
+#rpcost 18
+#weapon 1853 -- Chaos Broadsword
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#standard 1
+#poisonres 15
+#coldres 3
+#wastesurvival
+#mountainsurvival
+#startage 28
+#maxage 900
+#diseaseres 80
+#end
+
+-- Chosen of Nurgle #1
+
+#newmonster 5008
+#spr1 "./Warhammer-Complete/Chosen_flail_1.tga"
+#spr2 "./Warhammer-Complete/Chosen_flail_2.tga"
+#name "Chosen"
+#nametype 115
+#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
+#ap 11
+#mapmove 14
+#hp 19
+#size 2
+#str 15
+#enc 1
+#att 13
+#def 11
+#prec 10
+#mr 13
+#prot 4
+#mor 15
+#gcost 65
+#chaosrec 3
+#rcost 1
+#rpcost 36
+#weapon 1859 -- Chaos Flail
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#itemslots 14470
+#holy
+#poisonres 25
+#deathdisease 1
+#heal
+#wastesurvival
+#mountainsurvival
+#coldres 5
+#startage 34
+#maxage 1200
+#diseaseres 90
+#end
+
+-- Chosen of Nurgle #2
+
+#newmonster 5009
+#spr1 "./Warhammer-Complete/Chosen_axe_1NR.tga"
+#spr2 "./Warhammer-Complete/Chosen_axe_2NR.tga"
+#name "Chosen"
+#nametype 115
+#descr "There are those amongst the ranks of the Chaos Warriors who bear the favor of their patron god more so than their fellows. Known amongst their kind as Chosen, they possess supernatural abilities to aid them in their constant war against order and sanity, and are dreaded across the Old World and beyond."
+#ap 11
+#mapmove 14
+#hp 19
+#size 2
+#str 15
+#enc 1
+#att 13
+#def 11
+#prec 10
+#mr 13
+#prot 4
+#mor 15
+#gcost 65
+#chaosrec 3
+#rcost 1
+#rpcost 36
+#weapon 1307 -- Chaos Axe
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#itemslots 14470
+#holy
+#poisonres 25
+#deathdisease 1
+#heal
+#wastesurvival
+#mountainsurvival
+#coldres 5
+#startage 34
+#maxage 1200
+#diseaseres 90
+#end
+
+------- COMMANDERS
+
+
+-- Nurgle Cultist
+
+#newmonster 5010
+#spr1 "./Warhammer-Complete/nurgle_cultist_1.tga"
+#spr2 "./Warhammer-Complete/nurgle_cultist_2.tga"
+#name "Cultist"
+#descr "While the cults of Nurgle are not the most spread out nor the strongest of all the cults of the various Dark Gods, it does not mean they are nonextant. Indeed, they are ever present in the lands of men, rotting away the very foundations of civilization."
+#hp 10
+#size 2
+#mor 10
+#mr 11
+#enc 3
+#str 10
+#att 10
+#def 10
+#prec 10
+#mapmove 16
+#ap 12
+#holy
+#gcost 10015
+#rcost 1
+#rpcost 1
+#chaosrec 3
+#coldres 3
+#magicskill 8 1
+#weapon "Dagger"
+#armor "Robes"
+#noleader
+#wastesurvival
+#mountainsurvival
+#stealthy 0
+#startage 30
+#maxage 150
+#userestricteditem 6565
+#diseaseres 80
+#end
+
+-- Cultist (foreignrec)
+
+#newmonster 5049
+#copyspr 5010
+#copystats 5010
+#descr "While the cults of Nurgle are not the most spread out nor the strongest of all the cults of the various Dark Gods, it does not mean they are nonextant. Indeed, they are ever present in the lands of men, rotting away the very foundations of civilization."
+#slowrec
+#gcost 10045
+#chaosrec 4
+#sailing 4 2
+#userestricteditem 6565
+#end
+
+-- Forsaken Champion
+
+#newmonster 5041
+#spr1 "./Warhammer-Complete/forsaken_nurgle_champion_1.tga"
+#spr2 "./Warhammer-Complete/forsaken_nurgle_champion_2.tga"
+#name "Forsaken Champion"
+#nametype 115
+#descr "While it is not the desire of any Champion to walk the path of spawndom, sometimes it is inevitable, as the gifts pile up and the Champion begins to lose his humanity in its entirety. Whether it is due to great accomplishments of the Champion or due to slights against Nurgle, it matters little. Still, the Champion desperately holds onto his sanity, to his mind, whilst he falls into the depths of Chaos."
+#ap 12
+#mapmove 14
+#hp 18
+#size 2
+#str 12
+#enc 1
+#att 11
+#def 11
+#prec 12
+#mr 13
+#prot 4
+#mor 15
+#gcost 10060
+#chaosrec 5
+#rcost 1
+#rpcost 1
+#custommagic 12288 15
+#okleader
+#undcommand 5
+#coldres 5
+#poisonres 25
+#weapon "Mace"
+#weapon 1751
+#armor 801
+#itemslots 15494
+#startitem 968
+#startage 50
+#maxage 5000
+#forestsurvival
+#mountainsurvival
+#wastesurvival
+#berserk 3
+#regeneration 5
+#neednoteat
+#deathdisease 4
+#beastmaster 1
+#animalawe 1
+#diseaseres 100
+#end
+
+-- Ungor Raider Halfhorn
+
+#newmonster 5042
+#spr1 "./Warhammer-Complete/ungor_raider_halfhorn_1NR.tga"
+#spr2 "./Warhammer-Complete/ungor_raider_halfhorn_2NR.tga"
+#name "Ungor Raider Halfhorn"
+#nametype 109
+#descr "Ungor Raider Halfhorns, as with Halfhorns in general, are those Ungors with any kind of horns, and as such lead the various groups of Ungor Raiders sent out to find potential targets for the warherd. And indeed, it is the Halfhorn who decides whether or not the raiding party can take out a target on its own, and it is he who leads the attack if he deems it worth the risk. The risk being, of course, should the warherd's chieftain find out, that they would all be brutally punished, often leaving the Raiders dead in the dirt. Still, such is the sadistic and jealous ire the Ungor have for all other species that more often than not they judge it well worth the cost."
+#hp 12
+#size 2
+#mor 9
+#mr 11
+#prot 2
+#enc 3
+#str 10
+#att 10
+#def 11
+#prec 10
+#mapmove 16
+#ap 12
+#gcost 35
+#chaosrec 3
+#rcost 1
+#rpcost 1
+#startage 25
+#maxage 80
+#stealthy 25
+#poorleader
+#weapon "Short Bow"
+#weapon 9
+#pillagebonus 1
+#forestsurvival
+#diseaseres 80
+#end
+
+-- Doombull of Nurgle
+
+#newmonster 5043
+#spr1 "./Warhammer-Complete/doombull_1NR.tga"
+#spr2 "./Warhammer-Complete/doombull_2NR.tga"
+#name "Pestibull"
+#nametype 109
+#descr "Pestibulls are Doombulls who have been blessed with the Mark of Nurgle. Doombulls are the Lords of the Minotaurs, not so much set apart from their lesser kin by their intelligence but by their sheer animal bloodlust which they can spread to those who surround them. They are capable of leadership, after a fashion; it is a Doombull who bellows the raw will of the Dark Ones, triggering a terrifying stampede that can only end when the horde's unnatural thirst is quenched with the blood of men. As such, meeting them on the battlefield is often a horrifying and bloody affair."
+#ap 13
+#mapmove 14
+#hp 33
+#size 3
+#str 19
+#enc 2
+#att 12
+#def 10
+#prec 8
+#mr 12
+#mor 15
+#gcost 90
+#prot 8
+#chaosrec 4
+#rcost 6
+#rpcost 1
+#poorleader
+#heal
+#ambidextrous 3
+#weapon 331
+#weapon 347
+#weapon "Axe"
+#armor 9
+#armor 118
+#startage 40
+#maxage 500
+#forestsurvival
+#berserk 6
+#fear 6
+#trample
+#pillagebonus 1
+#onebattlespell 1022 -- Growing Fury
+#regeneration 5
+#deathdisease 6
+#poisonres 25
+#diseasecloud 6
+#heal
+#diseaseres 100
+#end
+
+-- Wargor
+
+#newmonster 5044
+#spr1 "./Warhammer-Complete/wargor_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/wargor_nurgle_2.tga"
+#nametype 109
+#name "Wargor of Nurgle"
+#descr "Wargors are the leaders of the warherds, but they care not for the concerns of their tribe. It does not matter to them how their underlings feed themselves or how their disputes are settled. Indeed, all they concern themselves with is battle. Day and night they brood and plot the myriad ways they will enact their race's hatred of Man, the violence they will wreak upon his flesh and the defilement they will heap upon his temples."
+#ap 12
+#mapmove 14
+#hp 20
+#size 2
+#str 13
+#enc 2
+#att 12
+#def 11
+#prec 10
+#prot 6
+#mr 12
+#mor 13
+#gcost 60
+#chaosrec 3
+#rcost 5
+#rpcost 1
+#startage 35
+#maxage 200
+#pillagebonus 1
+#ambidextrous 2
+#weapon "Axe"
+#weapon "Axe"
+#armor 118
+#armor "Chain Mail Cuirass"
+#okleader
+#forestsurvival
+#stealthy 0
+#regeneration 5
+#deathdisease 4
+#poisonres 25
+#heal
+#diseaseres 80
+#end
+
+-- Marauder Chieftain
+
+#newmonster 5027
+#spr1 "./Warhammer-Complete/marauder_chieftain_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/marauder_chieftain_nurgle_2.tga"
+#name "Marauder Chieftain"
+#nametype 115
+#descr "A Marauder Chieftain is a Marauder who has gained power over his kin, be it by force of strength, guile, or any other means deemed necessary. They are often found at the helm of Marauder raids, be they by land or sea. Indeed, Marauders are expert sailors and often they raid the coastlines of the more civilised lands with their longboats."
+#ap 24
+#mapmove 16
+#hp 12
+#size 3
+#ressize 2
+#str 12
+#enc 5
+#att 11
+#def 10
+#prec 10
+#mr 10
+#mor 10
+#gcost 10015
+#chaosrec 3
+#rcost 1
+#rpcost 1
+#okleader
+#undcommand 5
+#coldres 3
+#itemslots 13446
+#weapon "Axe"
+#weapon 56
+#armor "Half Helmet"
+#armor "Chain Mail Hauberk"
+#armor "Shield"
+#mounted
+#wastesurvival
+#mountainsurvival
+#pillagebonus 1
+#sailing 999 3
+#diseaseres 60
+#end
+
+-- Bray-Shaman
+
+#newmonster 5045
+#spr1 "./Warhammer-Complete/bray-shaman_1NR.tga"
+#spr2 "./Warhammer-Complete/bray-shaman_2NR.tga"
+#name "Bray-Shaman"
+#nametype 109
+#descr "Bray-Shamans are born into magic, and they wield it with an instinctive ease. A palpable miasma of fell sorcery surrounds them, and when their wrath is roused reality itself is distorted and maimed. The roots of trees twist and writhe at their passing, the undergrowth boils with unholy life and repugnant parasites scurry at their feet. And within the brutal and bitter world of the Beastmen, they occupy a unique niche. They need not defend themselves from the other members of their tribes, for none would dare to assault them. Indeed, not even the mightiest Beastlord would harm a Bray-Shaman, for they speak the will of the Dark Gods, and those that defy the gods pay the highest price of all."
+#ap 12
+#mapmove 14
+#hp 15
+#size 2
+#str 10
+#prot 3
+#enc 3
+#att 11
+#def 10
+#prec 10
+#mr 14
+#mor 13
+#chaosrec 6
+#magicskill 5 1
+#magicskill 0 1
+#researchbonus -6
+#custommagic 6272 100 -- FSD
+#custommagic 6272 10 -- FSD
+#gcost 160
+#holy
+#rcost 1
+#rpcost 2
+#weapon "Magic Staff"
+#okleader
+#forestsurvival
+#startage 55
+#maxage 1500
+#stealthy 0
+#poisonres 25
+#diseaseres 90
+#end
+
+
+-- Sorcerer of Nurgle
+
+#newmonster 5011
+#spr1 "./Warhammer-Complete/nurgle_sorcerer_1.tga"
+#spr2 "./Warhammer-Complete/nurgle_sorcerer_2.tga"
+#name "Sorcerer"
+#nametype 115
+#descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. While the Sorcerers marked by Nurgle are not necessarily as great magic users as those marked by Tzeentch, it does not mean, by any means, that they are defenseless or weak. Their strengths lie elsewhere; in the realms of despair and decay."
+#ap 12
+#mapmove 16
+#hp 10
+#size 2
+#str 10
+#enc 3
+#att 10
+#def 10
+#prec 10
+#mr 14
+#mor 13
+#magicskill 5 1
+#magicskill 6 1
+#custommagic 28672 100
+#custommagic 28672 10
+#gcost 10000
+#rcost 1
+#rpcost 2
+#weapon "Fist"
+#armor "Robes"
+#noleader
+#startage 45
+#maxage 1500
+#coldres 3
+#diseaseres 60
+#end
+
+-- Exalted Sorcerer of Nurgle
+
+#newmonster 5012
+#spr1 "./Warhammer-Complete/exalted_sorcerer_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/exalted_sorcerer_nurgle_2.tga"
+#name "Exalted Sorcerer"
+#nametype 115
+#descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Great Lord of Decay, yet they always seek for more in their never ending quest for power."
+#ap 12
+#mapmove 16
+#hp 15
+#size 2
+#str 11
+#enc 3
+#att 10
+#def 10
+#prec 10
+#mr 16
+#mor 12
+#holy
+#coldres 3
+#magicskill 5 2
+#magicskill 6 1
+#magicskill 7 1
+#custommagic 28672 100
+#custommagic 28672 10
+#gcost 10000
+#rcost 1
+#rpcost 2
+#weapon "Fist"
+#armor "Robes"
+#poorleader
+#startage 150
+#maxage 2500
+#coldres 3
+#diseaseres 90
+#end
+
+-- Sorcerer Lord
+
+#newmonster 5013
+#spr1 "./Warhammer-Complete/Sorcerer_Lord_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/Sorcerer_Lord_nurgle_2.tga"
+#name "Sorcerer Lord"
+#nametype 115
+#descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the ways of Nurgle, of His many diseases and the like, have grown exponentially, but still, the Lord is never satisfied. No matter what glimpses of the darkness beyond he has seen, it has only served to whet his appetite. Indeed, he may have received great many gifts from Grandfather Nurgle, but it is still never going to quench his thirst for more. Thus is the way of Chaos."
+#ap 12
+#mapmove 16
+#hp 20
+#size 2
+#str 12
+#enc 3
+#att 10
+#def 10
+#prec 10
+#mr 17
+#mor 13
+#holy
+#magicskill 5 3
+#magicskill 6 2
+#magicskill 7 1
+#custommagic 28672 100 -- DNB
+#custommagic 28672 10 -- DNB
+#custommagic 12288 100 -- DN
+#gcost 380
+#slowrec
+#rcost 1
+#rpcost 4
+#weapon "Magic Staff"
+#armor "Robes"
+#poorleader
+#startage 250
+#maxage 5000
+#coldres 3
+#diseaseres 90
+#end
+
+-- Champion of Nurgle
+
+#newmonster 5014
+#spr1 "./Warhammer-Complete/Champion_of_Nurgle_1.tga"
+#spr2 "./Warhammer-Complete/Champion_of_Nurgle_2.tga"
+#name "Champion"
+#nametype 115
+#descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers. Their presence on the battlefield can turn the tide of a closely fought combat. Nurgle's Champions, ravaged by disease, are themselves protected from such plagues, for they have become inured to the pain and discomfort. While their bodies may corrupt, the spirit of Nurgle sustains them when lesser mortals would die."
+#ap 11
+#mapmove 14
+#hp 22
+#size 2
+#str 15
+#enc 1
+#att 13
+#def 12
+#prot 4
+#prec 10
+#mr 13
+#mor 15
+#gcost 100
+#chaosrec 5
+#rcost 1
+#rpcost 2
+#holy
+#deathdisease 3
+#custommagic 12288 100
+#heal
+#poisonres 25
+#coldres 5
+#okleader
+#researchbonus -6
+#undcommand 5
+#weapon 1762
+#armor "Full Helmet"
+#armor 801
+#armor "Kite Shield"
+#itemslots 15494
+#startitem 968
+#startage 54
+#maxage 1500
+#wastesurvival
+#mountainsurvival
+#xpshape 50
+#diseaseres 90
+#prophetshape 5015
+#end
+
+-- Exalted Champion of Nurgle
+
+#newmonster 5015
+#spr1 "./Warhammer-Complete/Exalted_Champion_Nurgle_1.tga"
+#spr2 "./Warhammer-Complete/Exalted_Champion_Nurgle_2.tga"
+#name "Exalted Champion"
+#nametype 115
+#descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them. They roam across the lands, seeking duels to the death with others of their kind."
+#ap 11
+#mapmove 14
+#hp 26
+#size 2
+#str 16
+#enc 1
+#att 14
+#def 13
+#prec 10
+#mr 15
+#prot 4
+#mor 15
+#gcost 180
+#chaosrec 8
+#rcost 1
+#rpcost 2
+#holy
+#researchbonus -8
+#custommagic 12288 100
+#deathdisease 4
+#heal
+#poisonres 25
+#goodleader
+#command -20
+#undcommand 5
+#weapon 1755
+#armor 801
+#itemslots 15494
+#startitem 968
+#startage 75
+#maxage 2500
+#coldres 5
+#wastesurvival
+#mountainsurvival
+#diseaseres 100
+#xpshape 100
+#fear 5
+#prophetshape 5016
+#end
+
+-- Lord of Nurgle
+
+#newmonster 5016
+#spr1 "./Warhammer-Complete/lord_of_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/lord_of_nurgle_2.tga"
+#name "Lord of Nurgle"
+#nametype 115
+#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Lord of Nurgle rides upon a rotting Daemonic steed, a great scythe his weapon of choice. His powers are, indeed, beyond those of any regular Champion."
+#ap 20
+#mapmove 20
+#hp 34
+#size 3
+#ressize 2
+#str 16
+#enc 3
+#att 16
+#def 15
+#prec 11
+#mr 17
+#prot 4
+#mor 17
+#custommagic 12288 200
+#itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
+#startitem 968
+#weapon 1757
+#weapon 56
+#armor "Full Helmet"
+#armor 801
+#armor "Shield"
+#mounted
+#gcost 285
+#rcost 6
+#rpcost 2
+#chaosrec 12
+#researchbonus -10
+#holy
+#inspirational 1
+#startage 300
+#maxage 3000
+#goodleader
+#undcommand 5
+#deathdisease 6
+#heal
+#poisonres 25
+#poisoncloud 10
+#fear 5
+#coldres 5
+#wastesurvival
+#mountainsurvival
+#diseaseres 100
+#slowrec
+#prophetshape 5034
+#end
+
+---- HEROES
+
+
+-- Spawn of Nurgle
+
+#newmonster 5017
+#spr1 "./Warhammer-Complete/spawn_of_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/spawn_of_nurgle_2.tga"
+#name "Spawn of Nurgle"
+#nametype 257
+#descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#ap 15
+#mapmove 16
+#hp 60
+#size 4
+#str 22
+#prot 15
+#enc 1
+#att 14
+#def 13
+#prec 11
+#mr 15
+#mor 30
+#gcost 0
+#rcost 1
+#holy
+#berserk 3
+#coldres 3
+#itemslots 28672
+#invulnerable 20
+#ambidextrous 5
+#weapon 331 -- Gore
+#weapon 1751 -- Poison Tentacle
+#weapon 62 -- Bile
+#weapon 30 -- Venomous Bite
+#weapon 203 -- Barbed Tail
+#weapon 33 -- Claws
+#startage 500
+#maxage 3500
+#noleader
+#regeneration 5
+#poisonres 25
+#pierceres
+#fear 5
+#heal
+#diseaseres 100
+#diseasecloud 6
+#deathdisease 3
+#neednoteat
+#wastesurvival
+#swampsurvival
+#mountainsurvival
+#end
+
+-- Chosen Lord of Nurgle
+
+#newmonster 5034
+#spr1 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_1.tga"
+#spr2 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_2.tga"
+#name "Chosen Lord of Nurgle"
+#nametype 115
+#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Lord of Nurgle stands upon a palanquin of Nurgle, a great scythe his weapon of choice. His powers are beyond even those of Lords of Nurgle."
+#ap 12
+#mapmove 14
+#hp 34
+#size 3
+#ressize 2
+#str 17
+#enc 1
+#att 16
+#def 14
+#prot 4
+#prec 11
+#mr 17
+#mor 17
+#magicskill 5 1
+#custommagic 12288 100
+#custommagic 12288 66
+#weapon 1757
+#armor "Full Helmet"
+#armor 801
+#itemslots 13446 -- 2 hands, 1 head, chest, misc slots
+#startitem 968
+#mounted
+#gcost 0
+#rcost 1
+#holy
+#inspirational 1
+#startage 450
+#maxage 3500
+#expertleader
+#poorundeadleader
+#deathdisease 8
+#heal
+#diseaseres 100
+#poisonres 25
+#fear 5
+#onebattlespell "Blessing"
+#trample
+#coldres 5
+#wastesurvival
+#mountainsurvival
+#researchbonus -6
+#poisoncloud 10
+#end
+
+-- Ku'gath the Plaguefather
+
+#newmonster 5030
+#spr1 "./Warhammer-Complete/Kugath_1.tga"
+#spr2 "./Warhammer-Complete/Kugath_2.tga"
+#name "Plaguefather"
+#fixedname "Ku'gath"
+#descr "Unlike other Great Unclean Ones who aim to spread already extant plagues, Ku'gath is as fascinated by the breeding of new and virulent life as Nurgle himself; it is Ku'gath's ambition to one day breed a plague so potent that it could infect the Gods themselves. While, due to his research, Ku'gath remains relatively unaffected by the shifting balance of power within the Realm of Chaos, but also due to said research he is the most willing of Nurgle's Daemons to enter the mortal realm. It is from mortal beings that he gathers most of his plague reagents. And in his years within the mortal realm, Ku'gath has encountered only one race that has managed to kindle his rage: the Dwarfs. Professionally he hates them due to their inability to succumb to disease. Personally, he is embittered by his defeat at Karaz-a-Karak. Indeed, when Ku'gath manages to prepare his perfect plague, they will be his first test subjects."
+#ap 11
+#mapmove 14
+#hp 130
+#prot 15
+#size 6
+#ressize 5
+#mounted
+#str 19
+#enc 0
+#att 16
+#def 16
+#prec 10
+#mr 18
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1756
+#weapon 1760
+#trample
+#startage 190
+#maxage 10000
+#magicskill 5 2
+#magicskill 6 1
+#holy
+#inspirational 1
+#goodleader
+#command 20
+#expertundeadleader
+#diseasecloud 10
+#deathdisease 10
+#domsummon -69402
+#makemonsters3 -69402
+#poisonres 75
+#fear 8
+#demon
+#neednoteat
+#invulnerable 25
+#magicpower 1
+#itemslots 13446
+#diseaseres 100
+#end
+
+-- Valnir the Reaper
+
+#newmonster 5031
+#spr1 "./Warhammer-Complete/valnir_1.tga"
+#spr2 "./Warhammer-Complete/valnir_2.tga"
+#name "Reaper"
+#fixedname "Valnir"
+#descr "Once Valnir was a mortal man stricken with despair, a great chieftain and warrior who had carved a small empire in the north. He was no apathetic defeatist; he hated the world, and wanted to impose his misery upon all the lands of men. In time, he left his tribe, swearing that he wouldn't return until he had found a way to make the world suffer as he did.  It was this purpose that led Valnir to sail across the Frozen Sea, to travel through the lands of the Kurgans, and finally range far to the north to the Chaos Wastes, where he pledged his soul to Nurgle and became His mighty Champion. Long and terrible was Valnir's service to his god, and horrific indeed was the suffering he inflicted in his master's name; but in the end, he was defeated at the gates of Kislev, as unlikely that might have been, his body carried back to his homeland as was his final wish. Now, he has risen once more. Not truly dead or alive, he is sustained by the daemonic powers of Nurgle."
+#ap 11
+#mapmove 14
+#hp 33
+#size 2
+#str 18
+#prot 4
+#enc 1
+#att 18
+#def 14
+#prec 13
+#mr 16
+#mor 17
+#magicskill 5 2
+#magicskill 6 1
+#weapon 1758
+#armor "Full Helmet"
+#armor 801
+#itemslots 15494
+#startitem 968
+#gcost 0
+#rcost 1
+#holy
+#inspirational 1
+#startage 300
+#maxage 4500
+#goodleader
+#goodundeadleader
+#deathdisease 7
+#diseasecloud 3
+#regeneration 15
+#immortal
+#demon
+#poisonres 25
+#invulnerable 10
+#fear 5
+#coldres 5
+#onebattlespell "Blessing"
+#wastesurvival
+#mountainsurvival
+#end
+
+-- Festus the Leechlord
+
+#newmonster 5032
+#spr1 "./Warhammer-Complete/festus_1.tga"
+#spr2 "./Warhammer-Complete/festus_2.tga"
+#name "Leechlord"
+#fixedname "Festus"
+#descr "Before his fall, Festus was a respected doctor. He founded hospices all over Nordland and under his guidance, many outbreaks of various ailments were overcome. He was a compassionate and gifted man. But as one might expect, it was his compassion that destroyed him; all that was needed was a plague so potent that even he couldn't cure it. Desperate for a cure, he called out for help; it was the Dark God Nurgle who answered. Promised the knowledge necessary to cure this particular plague as well as all the other diseases in the world in exchange for a lifetime of service, Festus, in his desperation, agreed. Now, he is the Leechlord of Nurgle, devoid of all compassion, a being with an intimate knowledge of all disease and a desire to experiment. Though his curative powers are greater than ever before, woe betide the fool who crosses the Doctor,  for he is not above force-feeding his latest concoctions to his victims in his quest to bring even more repugnant forms of life into the world."
+#ap 12
+#mapmove 16
+#hp 25
+#prot 10
+#size 3
+#str 12
+#enc 1
+#att 13
+#def 12
+#prec 10
+#mr 14
+#mor 30
+#gcost 0
+#rcost 1
+#weapon "Magic Staff"
+#weapon 1759
+#startage 190
+#maxage 10000
+#magicskill 5 2
+#magicskill 6 2
+#holy
+#autodishealer 3
+#autodisgrinder 2
+#woundfend 20
+#okleader
+#okundeadleader
+#diseasecloud 2
+#deathdisease 8
+#diseaseres 100
+#regeneration 10
+#bluntres
+#poisonres 25
+#neednoteat
+#coldres 3
+#diseaseres 100
+#end
+
+-- Epidemius the Nurgle's chosen tallyman
+
+#newmonster 5033
+#spr1 "./Warhammer-Complete/Epidemius_1.tga"
+#spr2 "./Warhammer-Complete/Epidemius_2.tga"
+#name "Chosen Tallyman"
+#fixedname "Epidemius"
+#descr "Epidemius is Nurgle's chosen Tallyman, one of the seven Proctors of Pestilence and the cataloguer of all the Plaguelord's diseases. Epidemius' task is an unending one, and it generates a great deal of paperwork, so he rides a palanquin to share the burden; and to more easily force a path through Nurgle's hordes. Two dozen Nurglings attend to the Tallyman's every need, providing the parchment, operating the death's head abacus, excreting the ink for the quill pens and even defending Epidemius from harm should a foolish enemy venture too close. "
+#ap 11
+#mapmove 14
+#hp 20
+#prot 15
+#ressize 3
+#size 5
+#mounted
+#str 17
+#enc 1
+#att 16
+#def 16
+#prec 10
+#mr 15
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1756
+#trample
+#startage 190
+#maxage 10000
+#holy
+#magicskill 5 1
+#inspirational 1
+#goodleader
+#expertundeadleader
+#diseasecloud 8
+#deathdisease 6
+#demon
+#neednoteat
+#invulnerable 20
+#magicpower 1
+#poisonres 75
+#onebattlespell "Divine Blessing"
+#batstartsum3 -69402
+#itemslots 13446
+#end
+
+----------- Daemon Summonables ------------
+
+-- Nurgle Plaguebearer
+
+#newmonster 5018
+#spr1 "./Warhammer-Complete/Plaguebearer_1.tga"
+#spr2 "./Warhammer-Complete/Plaguebearer_2.tga"
+#name "Plaguebearer"
+#nametype 257
+#descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering every torment imaginable."
+#ap 10
+#mapmove 14
+#hp 13
+#prot 12
+#size 2
+#str 13
+#enc 1
+#att 11
+#def 11
+#prec 9
+#mr 13
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1750
+#startage 20
+#maxage 10000
+#poisonres 75
+#diseasecloud 2
+#deathdisease 1
+#demon
+#neednoteat
+#holy
+#magicpower 1
+#invulnerable 15
+#heal
+#end
+
+-- Nurgling #1
+
+#newmonster 5019
+#spr1 "./Warhammer-Complete/Nurgling_1_1.tga"
+#spr2 "./Warhammer-Complete/Nurgling_1_2.tga"
+#name "Nurgling"
+#nametype 257
+#descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
+#ap 12
+#mapmove 16
+#hp 4
+#prot 3
+#size 1
+#str 8
+#enc 1
+#att 10
+#def 10
+#prec 7
+#mr 10
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 43
+#startage 20
+#maxage 10000
+#poisonres 75
+#demon
+#neednoteat
+#holy
+#deathdisease 1
+#magicpower 1
+#invulnerable 15
+#montag 69402
+#stealthy 0
+#heal
+#end
+
+-- Nurgling #2
+
+#newmonster 5020
+#spr1 "./Warhammer-Complete/Nurgling_2_1.tga"
+#spr2 "./Warhammer-Complete/Nurgling_2_2.tga"
+#name "Nurgling"
+#nametype 257
+#descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
+#ap 12
+#mapmove 16
+#hp 4
+#prot 3
+#size 1
+#str 8
+#enc 1
+#att 10
+#def 10
+#prec 7
+#mr 10
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 127
+#startage 20
+#maxage 10000
+#poisonres 75
+#demon
+#neednoteat
+#holy
+#magicpower 1
+#deathdisease 1
+#invulnerable 15
+#montag 69402
+#stealthy 0
+#heal
+#end
+
+-- Nurgling #3
+
+#newmonster 5021
+#spr1 "./Warhammer-Complete/Nurgling_3_1.tga"
+#spr2 "./Warhammer-Complete/Nurgling_3_2.tga"
+#name "Nurgling"
+#nametype 257
+#descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
+#ap 12
+#mapmove 16
+#hp 4
+#prot 3
+#size 1
+#str 8
+#enc 1
+#att 10
+#def 10
+#prec 7
+#mr 10
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 207
+#startage 20
+#maxage 10000
+#poisonres 75
+#demon
+#neednoteat
+#holy
+#deathdisease 1
+#magicpower 1
+#invulnerable 15
+#montag 69402
+#stealthy 0
+#heal
+#end
+
+-- Herald of Nurgle
+
+#newmonster 5022
+#spr1 "./Warhammer-Complete/Herald_of_Nurgle_1.tga"
+#spr2 "./Warhammer-Complete/Herald_of_Nurgle_2.tga"
+#name "Herald of Nurgle"
+#nametype 257
+#descr "A mortal who resists the ravages of Nurgle's Rot for a significant time endures an unusually long incubation period for the nascent Plaguebearer, resulting in a larger, tougher individual known as a Herald of Nurgle, who leads the lesser Plaguebearers to battle. Regardless of that however, they are a testament to the fact that even the hardiest of souls cannot indefinitely defy disease. The Herald spreads Nurgle's Rot on his own volition which kills a small amount of the populace, but also creates a Plaguebearer, per month."
+#ap 10
+#mapmove 14
+#hp 18
+#prot 14
+#size 2
+#str 15
+#enc 1
+#att 14
+#def 13
+#prec 9
+#mr 13
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1750
+#goodleader
+#expertundeadleader
+#startage 20
+#magicskill 5 1
+#custommagic 12288 40
+#maxage 10000
+#poisonres 75
+#diseasecloud 3
+#deathdisease 2
+#batstartsum4 5018
+#summon1 5018
+#popkill 1
+#demon
+#neednoteat
+#holy
+#magicpower 1
+#invulnerable 20
+#heal
+#end
+
+-- Beast of Nurgle
+
+#newmonster 5026
+#spr1 "./Warhammer-Complete/beast_of_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/beast_of_nurgle_2.tga"
+#name "Beast of Nurgle"
+#nametype 257
+#descr "While Beasts of Nurgle are as though perfect physical examples of Nurgle's damning influence, horrifying creatures which can kill small animals and plants with their mere proximity, they behave in the same over-friendly and easily excitable manner as puppies. Indeed, they crave attention, greeting newcomers by slobbering all over them with their slimy tentacles. While this is not a problem for most of Nurgle's servants, it is, indeed, deadly for most mortals."
+#ap 12
+#mapmove 16
+#hp 30
+#prot 14
+#size 2
+#str 7
+#enc 1
+#att 12
+#def 10
+#prec 10
+#mr 13
+#mor 30
+#gcost 0
+#rcost 1
+#noitem
+#weapon 1751
+#weapon 1751
+#weapon 1751
+#weapon 1751
+#startage 20
+#maxage 10000
+#poisonres 75
+#demon
+#invulnerable 20
+#neednoteat
+#holy
+#magicpower 1
+#undisciplined
+#itemslots 12288
+#slimer 1
+#heal
+#end
+
+-- Chaos Fury
+
+#newmonster 5023
+#spr1 "./Warhammer-Complete/chaosfury_nurgle_1.tga"
+#spr2 "./Warhammer-Complete/chaosfury_nurgle_2.tga"
+#name "Chaos Fury"
+#nametype 257
+#descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
+#ap 15
+#mapmove 20
+#hp 8
+#prot 8
+#size 2
+#str 10
+#enc 1
+#att 9
+#def 10
+#prec 8
+#mr 11
+#mor 30
+#gcost 0
+#rcost 1
+#noitem
+#weapon "Bite"
+#weapon "Claws"
+#startage 20
+#maxage 10000
+#poisonres 75
+#flying
+#demon
+#neednoteat
+#holy
+#magicpower 1
+#end
+
+-- Plague Drone
+
+#newmonster 5046
+#spr1 "./Warhammer-Complete/plague_drone_1.tga"
+#spr2 "./Warhammer-Complete/plague_drone_2.tga"
+#name "Plague Drone"
+#nametype 257
+#descr "High-ranking Plaguebearers are known amongst the Daemon legions as Plague Drones; a title that conveys commendable humility, yet belies the power beneath. These stewards of Nurgle's garden ride into the mortal realm mounted upon Rot Flies - colossal Daemon-insects whose appearance is so repugnant it leaves festering scars upon the mind. From their lofty positions the Plague Drones can properly tally the diseases running rife across the battlefield, as well as swiftly intervene should Nurgle's divine plans meet with heavily-armed resistance."
+#ap 14
+#mapmove 18
+#flying
+#float
+#hp 15
+#prot 12
+#size 5
+#ressize 2
+#str 12
+#enc 1
+#att 11
+#def 11
+#prec 12
+#mr 14
+#mor 30
+#gcost 0
+#rcost 1
+#magicpower 1
+#ambidextrous 3
+#weapon 1761
+#weapon 271
+#weapon 557
+#weapon 43
+#weapon 43
+#trample
+#poisonres 75
+#startage 55
+#maxage 10000
+#deathdisease 5
+#demon
+#neednoteat
+#invulnerable 20
+#secondshape 5047
+#itemslots 12288
+#holy
+#heal
+#end
+
+-- Rot Fly (Plague Drone second form)
+
+#newmonster 5047
+#spr1 "./Warhammer-Complete/rot_fly_1.tga"
+#spr2 "./Warhammer-Complete/rot_fly_2.tga"
+#name "Rot Fly"
+#nametype 257
+#descr "A Rot Fly is, simply put, the final form of a Beast of Nurgle, embittered by mortals' reactions to its presence, leading to a metamorphosis from the ever-friendly and overly happy Beast of Nurgle into a creature that hates everything, and wants to exact revenge upon an uncaring world. They are prized steeds for the Plaguebearers, for in their haste to punish the mortals that spurned their larval form, Rot Flies will speed into battle at great pace; something a Palanquin is quite incapable of."
+#ap 14
+#mapmove 22
+#flying
+#float
+#hp 30
+#prot 12
+#size 4
+#str 12
+#enc 1
+#att 11
+#def 11
+#prec 12
+#mr 14
+#mor 30
+#gcost 0
+#rcost 1
+#magicpower 1
+#ambidextrous 5
+#weapon 271
+#weapon 557
+#weapon 43
+#weapon 43
+#trample
+#poisonres 75
+#startage 55
+#maxage 10000
+#deathdisease 6
+#demon
+#neednoteat
+#invulnerable 20
+#itemslots 12288
+#undisciplined
+#holy
+#heal
+#end
+
+-- Great Unclean One
+
+#newmonster 5024
+#spr1 "./Warhammer-Complete/Great_Unclean_One_1.tga"
+#spr2 "./Warhammer-Complete/Great_Unclean_One_2.tga"
+#name "Great Unclean One"
+#nametype 257
+#descr "Wreathed in swarms of giggling Nurglings, the Great Unclean One shambles across the battlefield spreading disease and pestilence wherever it passes. To the mortal eye, the Great Unclean One is the foulest of servants of the Ruinous Powers, appearing as a malformed being of weeping pustules and exposed, diseased organs; few men have the stomach, let alone the ability, to oppose such a being."
+#ap 14
+#mapmove 16
+#hp 105
+#prot 18
+#size 5
+#str 19
+#enc 0
+#att 16
+#def 12
+#prec 10
+#mr 18
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1756
+#startage 190
+#maxage 10000
+#magicskill 5 2
+#custommagic 12288 100
+#custommagic 12288 66
+#custommagic 28672 10
+#holy
+#inspirational 1
+#goodleader
+#command 40
+#expertundeadleader
+#diseasecloud 8
+#deathdisease 6
+#domsummon2 -69402
+#makemonsters2 -69402
+#fear 8
+#demon
+#neednoteat
+#invulnerable 25
+#magicpower 1
+#poisonres 75
+#heal
+#end
+
+----------- PRETENDERS, Daemon Prince of Nurgle and Sorcerer Lord of Nurgle
+
+-- Daemon Prince of Nurgle Pretender
+
+#newmonster 5025
+#spr1 "./Warhammer-Complete/Nurgle_Daemon_Prince_1.tga"
+#spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
+#name "Daemon Prince of Nurgle"
+#nametype 257
+#descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Nurgle, however, it would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
+#ap 22
+#mapmove 22
+#hp 85
+#size 4
+#str 19
+#enc 1
+#att 17
+#def 15
+#prec 13
+#mr 18
+#mor 30
+#gcost 10000
+#rcost 1
+#pathcost 50
+#startdom 3
+#coldres 5
+#poisonres 75
+#invulnerable 10
+#weapon 347
+#armor 801
+#armor "Full Helmet"
+#itemslots 15494
+#startitem 968
+#startage 4000
+#maxage 10000
+#magicskill 5 2
+#magicskill 6 1
+#inspirational 1
+#expertleader
+#expertundeadleader
+#fear 5
+#flying
+#demon
+#deathdisease 6
+#magicpower 1
+#neednoteat
+#end
+
+-- Sorcerer Lord of Nurgle Pretender
+
+#newmonster 5048
+#spr1 "./Warhammer-Complete/Sorcerer_Lord_Pretender_1NR.tga"
+#spr2 "./Warhammer-Complete/Sorcerer_Lord_Pretender_2NR.tga"
+#name "Sorcerer Lord of Nurgle"
+#nametype 115
+#descr "Sitting upon a Palanquin of Nurgle, this formidable Sorcerer Lord of Nurgle has gained such power and favor from his patron god that there is nothing left to achieve for him in the mortal realm than godhood. Forever bound to the Dark God, however, the Sorcerer Lord would act as a channel between the two realms, and act as His surrogate in a place where He cannot manifest."
+#ap 12
+#mapmove 14
+#hp 30
+#size 3
+#ressize 2
+#str 12
+#enc 3
+#att 12
+#def 12
+#prec 12
+#mr 18
+#mor 30
+#coldres 3
+#magicskill 5 1
+#magicskill 6 1
+#magicskill 7 1
+#gcost 10000
+#pathcost 10
+#startdom 1
+#rcost 1
+#weapon "Magic Staff"
+#armor "Robes"
+#trample
+#okleader
+#startage 900
+#maxage 10000
+#mounted
+#researchbonus 10
+#tmpdeathgems 2
+#inspiringres 1
+#itemslots 62592
+#diseaseres 100
+#end
+
+--------------------------------------
+
+-------- SPELLS ----------
+
+--- Summons ---
+
+-- Beasts of Nurgle summon
+
+#newspell
+#name "Summon Beasts of Nurgle"
+#descr "With this spell, the caster summons several Beasts of Nurgle, horrifying beasts with curious personalities."
+#restricted 136
+#school 0
+#researchlevel 5
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 800
+#effect 10001
+#damage 5026
+#nreff 5
+#end
+
+-- Plaguebearers summon
+
+#newspell
+#name "Summon Plaguebearers"
+#descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
+#restricted 136
+#school 0
+#researchlevel 3
+#path 0 5
+#pathlevel 0 2
+#fatiguecost 500
+#effect 10001
+#damage 5018
+#nreff 4
+#end
+
+-- Secondary Plaguebearer summon and affliction removal
+
+#newspell
+#name "Plaguebearer summoning"
+#descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
+#restricted 136
+#school -1
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 0
+#effect 10001
+#damage 5018
+#nreff 1007
+#end
+
+#newspell
+#copyspell 1072 -- Blood Feast
+#name "Consecration of Nurgle"
+#descr "The caster forms a vile cult within an unsuspecting village, infecting his 'followers' with Nurgle's Rot. After they die and form into Plaguebearers, the vile ritual for the Great Lord of Decay begins in earnest, as the caster proceeds to infect, murder and feast upon the flesh of the rest of the villagers as his minions protect his person. As the ritual ends and the village is in ruins, the caster finds himself even less human; he craves mortal flesh, his body changed in ways which have 'healed' some of his afflictions. The Plaguebearers thus formed gleefully join his cause."
+#restricted 136
+#school 4
+#researchlevel 3
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 1500
+#nextspell "Plaguebearer summoning"
+#end
+
+-- Herald summon
+
+#newspell
+#name "Summon Herald of Nurgle"
+#descr "With this summoning, the caster brings forth a Herald of Nurgle to lead its lesser brethren. A Herald is the result of a hardier than usual individual succumbing to Nurgle's Rot."
+#restricted 136
+#school 0
+#researchlevel 5
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 1500
+#effect 10021
+#damage 5022
+#nreff 1
+#end
+
+-- Plague Drone summon
+
+#newspell
+#name "Summon Plague Drone"
+#descr "Summons a Plague Drone, a Plaguebearer sitting atop a Rot Fly, a flying Daemonic mount of Nurgle."
+#restricted 136
+#school 0
+#researchlevel 7
+#path 0 5
+#path 1 6
+#pathlevel 0 5
+#pathlevel 1 2
+#fatiguecost 400
+#effect 10001
+#damage 5046
+#nreff 1
+#end
+
+-- Great Unclean One summon
+
+#newspell
+#name "Summon Great Unclean One"
+#descr "With this grand ritual, the caster brings from the Realm of Chaos to the world a Great Unclean One, a Greater Daemon of Nurgle. The Great Unclean One is gigantic in figure, bloated with decay, disease and all imaginable kinds of physical corruption."
+#restricted 136
+#school 0
+#researchlevel 8
+#path 0 5
+#path 1 6
+#pathlevel 0 5
+#pathlevel 1 2
+#fatiguecost 4000
+#effect 10021
+#damage 5024
+#nreff 1
+#end
+
+-- Chaos Fury summon
+
+#newspell
+#name "Summon Furies"
+#descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Nurgle cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
+#restricted 136
+#school 0
+#researchlevel 2
+#path 0 5
+#pathlevel 0 1
+#fatiguecost 400
+#effect 10001
+#damage 5023
+#nreff 10
+#end
+
+--
+
+-- Bile Troll summon
+
+#newspell
+#name "Bind Bile Trolls"
+#descr "With this vile spell, the caster binds a number of Bile Trolls to his service."
+#restricted 136
+#school 0
+#researchlevel 6
+#path 0 5
+#pathlevel 0 3
+#path 1 6
+#pathlevel 1 1
+#fatiguecost 2000
+#effect 10001
+#damage 5050
+#nreff 1002
+#end
+
+--- Combat spells ---
+
+-- Blessing -
+
+#newspell
+#copyspell "Blessing"
+#name "Blessing of Nurgle"
+#descr "With this incantation, the caster brings forth the blessings of Nurgle upon a number of His followers, be they those mortals whom have been marked by Nurgle, or His Daemonic servants."
+#restricted 136
+#school 5
+#path 0 5
+#pathlevel 0 1
+#spec 12615680
+#sound 41
+#explspr 10007
+#end
+
+-- Biggererer Blessing -
+
+#newspell
+#name "Greater Blessing of Nurgle"
+#descr "By the power of this incantation, all those with the Mark of Nurgle as well as His Daemonic servants find themselves blessed with the power of Nurgle."
+#restricted 136
+#school 5
+#path 0 5
+#pathlevel 0 3
+#effect 10
+#damage 1
+#precision 100
+#range 0
+#aoe 666
+#spec 12615680
+#sound 23
+#explspr 10007
+#sound 41
+#end
+
+-- Fleshy Abundance -
+
+#newspell
+#name "Fleshy Abundance"
+#descr "The caster generously gifts the fortunate recipient with a growth spurt of the most repulsive kind. Great wobbling mounds of grey-green fat spill out to seal wounds moments after they are formed."
+#restricted 136
+#school 4
+#researchlevel 4
+#path 0 5 -- The magic path for casting, IE: fire, water, etc.
+#path 1 6
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 20
+#effect 10 -- Regeneration?
+#damage 32
+#aoe 3
+#precision 5
+#range 40
+#flightspr 404
+#explspr 10004
+#spec 12587008
+#sound 31
+#end
+
+-- Rancid Visitations -
+
+#newspell
+#name "Rancid Visitations"
+#descr "As the caster reaches out, his enemies are seized by a terrible affliction that blackens their flesh and rots their organs to mulch."
+#restricted 136
+#school 4
+#researchlevel 4
+#path 0 5
+#aoe 2
+#flightspr -1
+#explspr 10121
+#pathlevel 0 4
+#fatiguecost 30
+#effect 11 -- Special Damage
+#damage 257 -- Decay and Disease
+#spec 528384 -- Mr negates, no effect on undead, can't be cast uw
+#sound 22
+#end
+
+-- Plague Wind -
+
+#newspell
+#copyspell "Plague"
+#name "Plague Wind"
+#descr "The caster summons forth a maelstrom of maggots, bile and blight-ridden fluids to eat away his enemy's skin, flesh and soul."
+#restricted 136
+#school 4
+#researchlevel 6
+#path 0 5
+#fatiguecost 50
+#end
+
+
+-------- MAGIC ITEMS ---------
+
+-- Chaos Armour
+
+#newitem
+#restricted 136
+#spr "./Warhammer-Complete/chaos_armor.tga"
+#constlevel 4
+#mainpath 5
+#mainlevel 2
+#secondarypath 6
+#secondarylevel 1
+#name "Nurgle Chaos Armour"
+#descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#type 5
+#armor "Chaos Armor"
+#cursed
+#bless
+#nofind
+#str 3
+#end
+
+-- Chaos Armour copy
+
+#selectitem 968
+#restricted 136
+#spr "./Warhammer-Complete/chaos_armor.tga"
+#constlevel 12
+#mainpath 5
+#mainlevel 2
+#secondarypath 6
+#secondarylevel 1
+#name "Nurgle Chaos Armour"
+#descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#type 5
+#armor "Chaos Armor"
+#cursed
+#bless
+#nofind
+#end
+
+-- Filth Mace
+
+#newitem
+#restricted 136
+#spr "./Warhammer-Complete/filth_mace.tga"
+#constlevel 4
+#mainpath 5
+#mainlevel 1
+#descr "This rusted mace drips with Nurgle's choicest plagues and bears an enchantment that ensnares the souls of those crushed beneath its filth-encrusted mass. The screams of these spirits are deafening and fearsome in equal measure, but they are as nothing compared to the terror caused when a fresh soul is bound to the mace, fuelling an epidemic growth of new disease: the wails turn into phlegm-choked laughter and the steady drip of pestilence becomes a weeping flood."
+#name "Filth Mace"
+#type 1
+#fear 5
+#weapon 1766
+#end
+
+-- Balesword
+
+#newitem
+#restricted 136
+#spr "./Warhammer-Complete/balesword.tga"
+#constlevel 4
+#mainpath 6
+#mainlevel 1
+#descr "Legend tells that there is one Balesword for each of Nurgle's favored plagues. Moreover, each blade is thought to have been congealed from the infected waste matter that each plague draws forth."
+#name "Balesword"
+#type 1
+#weapon 1767
+#end
+
+-- Icon of Nurgle
+
+#newitem
+#restricted 136
+#spr "./Warhammer-Complete/Icon_of_Nurgle.tga"
+#constlevel 2
+#mainpath 5
+#mainlevel 1
+#secondarypath 6
+#secondarylevel 1
+#descr "With the use of specialized Icons, the followers of Nurgle strengthen themselves in various ways. These particular Icons, however, only lend themselves to grant the leaders of Nurgle's cults with additional priestly authority."
+#name "Icon of Nurgle"
+#type 8
+#nofind
+#cursed
+#magicboost 8 1
+#restricteditem 6565
+#end
+
+-------- EVENTS --------
+
+#newevent
+#rarity 2
+#req_era 1
+#req_turn 6
+#req_nation 136
+#req_notnation 136
+#req_capital 0
+#req_maxdef 25
+#req_minunrest 50
+#req_land 1
+#req_maxdominion 0
+#req_chaos 1
+#req_magic 1
+#req_maxtroops 100
+#req_indepok 0
+#msg "Nurgle's Carnival has taken place in the province, culminating in a Daemonic incursion!"
+#kill 20
+#unrest 40
+#incdom 7
+#com 5023
+#6d6units 5018
+#end
+
+
+
+-------- SITES -----------
+
+#newsite 1925
+#name "Chaos Vortex of Nurgle"
+#path 3
+#level 0
+#rarity 5
+#gems 5 3
+#gems 6 2
+#end
+
+#newsite 1926
+#name "Halls of Nurgle"
+#path 3
+#level 0
+#rarity 5
+#homemon 5008 -- Chosen of Nurgle #1
+#homemon 5009 -- Chosen of Nurgle #2
+#homecom 5016 -- Chaos Lord of Nurgle
+#homecom 5013 -- Sorcerer Lord of Nurgle
+#end
+
+-------- NATIONS ---------
+
+#selectnation 136
+#clearnation
+#name "Nurgle Warhost"
+#epithet "Despair and Decay"
+#era 2
+#idealcold 2
+#nodeathsupply
+#brief "Disease is what the mortal followers and the Daemonic servants of Nurgle bring, disease, and despair that comes with it. To bring the world down to its knees with disease is what they seek, to bring Nurgle's favor to all; and death to those who do not accept it."
+#descr "It is the ultimate irony of those mortals who worship Nurgle that many of them had been infected by diseases spread by their dark patron, leading them to follow Him out of desperation. Indeed, Nurgle has oft been the root cause of their plight, yet they do not see it. Of course, not all of them are like thus as they seek His attention; not all desperation is the result of Nurgle's meddling. Regardless of the reasons of their affiliation with the Great Lord of Decay, however, it is a known fact that, among other things, these followers of Nurgle raise Warhosts to spread these dubious 'gifts' of their Dark God. Whether it is due to an actual belief in victory over the civilized lands or simply to test another particularly virulent strain of disease, it does not matter. What matters is the danger a Warhost of Nurgle poses to the land and those who inhabit it; for if they are allowed to march unimpeded, disease and death will follow."
+#summary "Race: Nurgle worshipping humans, Beastmen and Daemons. Ocean Sailing. Prefer cold scale +2.
+Military: Powerful infantry and cavalry, no ranged troops beyond Beastmen, strong magic and summons.
+Magic: Death, Nature, Blood. Some Astral through Beastmen.
+Priests: Weak. Can blood sacrifice."
+#flag "./Warhammer-Complete/flagNR.tga"
+
+---- GODS
+
+#addgod 5025 -- Daemon Prince of Nurgle
+#cheapgod20 5025
+#addgod 5048 -- Sorcerer Lord of Nurgle
+#cheapgod20 5048
+#addgod 656 -- Fountain of Blood
+#addgod 1348 -- Titan of Serpents and Medicine
+#addgod 2431 -- Titan of the Underworld
+#addgod 1371 -- Titan of Death and Rebirth
+#addgod 383 -- Prince of Death
+#addgod 2463 -- Statue of War
+#addgod 2138 -- Sphinx
+#addgod 872 -- Ghost King
+#addgod 180 -- Demilich
+#addgod 657 -- Monolith
+#addgod 269 --  Wyrm
+#addgod 216 -- Red Dragon
+#addgod 265 -- Blue Dragon
+#addgod 266 -- Green Dragon
+#addgod 2447 -- Idol of Men
+#addgod 2448 -- Idol of Beasts
+#addgod 2449 -- Idol of Sorcery
+
+---- RECRUITS
+
+#clearrec
+#wasterec 5000 -- Warhound
+#wasterec 5040 -- Forsaken
+#forestrec 5038 -- Ungor
+#forestrec 5039 -- Ungor Raider
+#forestrec 5037 -- Gor
+#forestrec 5036 -- Pestigor
+#swamprec 5050 -- Bile Troll
+#addrecunit 5001 -- Marauder w. Club
+#addforeignunit 5028 -- Foreignrec Marauder #1
+#addrecunit 5002 -- Marauder w. Flail
+#addforeignunit 5029 -- Foreignrec Marauder #2
+#addrecunit 5003 -- Marauder Horsemen
+#addrecunit 5004 -- Nurgle Chaos Warrior #1
+#addrecunit 5005 -- Nurgle Chaos Warrior #2
+#addrecunit 5007 -- Standard Bearer
+--addrecunit 3326 --
+--addrecunit 3327 --
+#addrecunit 5006 -- Chaos Knight
+#forestrec 5035 -- Minotaur
+--addrecunit 5008 -- Chosen of Nurgle #1, cap only
+--addrecunit 5009 -- Chosen of Nurgle #2, cap only
+--addrecunit 3335 --
+--addrecunit 3336 --
+--addrecunit 3364 --
+--addrecunit 3331
+--addrecunit 3337
+--addrecunit 3356
+--addrecunit 3357
+--addrecunit 3358
+--addrecunit 3359
+--addrecunit 3360
+--addrecunit 3361
+--addrecunit 3362
+--addrecunit 3363
+--addrecunit 3366
+
+
+
+
+---- LEADERS
+
+#addreccom 5010 -- Nurgle Cultist
+#addforeigncom 5049 -- N C
+#wastecom 5041 -- Forsaken Champion
+#forestcom 5042 -- Ungor Raider Halfhorn
+#forestcom 5044 -- Wargor
+#forestcom 5043 -- Doombull
+#addreccom 5027 -- Marauder Chieftain
+#addreccom 5014 -- Champion of Nurgle
+#addreccom 5015 -- Exalted Champion of Nurgle
+#forestcom 5045 -- Bray-Shaman
+--addreccom 5016 -- Lord of Nurgle, cap only
+#addreccom 5011 -- Sorcerer of Nurgle
+#addreccom 5012 -- Exalted Sorcerer of Nurgle
+--addreccom 5013 -- Sorcerer Lord of Nurgle, cap only
+--addreccom  --
+--addreccom 5017 -- Spawn of Nurgle
+--addreccom 5033 -- Epidemius
+--addreccom 5032 -- Festus the Leechlord
+--addreccom 5031 -- Valnir the Reaper
+--addreccom 5030 -- Ku'Gath
+--addreccom 5023 -- Herald of Nurgle
+--addreccom 5024 -- Great Unclean One
+--addreccom 5017 -- Spawn of Nurgle
+--addreccom 5034 --  Chosen Lord
+--addreccom 3367
+--addreccom 3368
+--addreccom 3369
+--addreccom 3370
+
+----- HEROES
+
+#hero1 5030 -- Ku'Gath
+#hero2 5031 -- Valnir the Reaper
+#hero3 5032 -- Festus the Leechlord
+#hero4 5033 -- Epidemius
+--#hero5 3349 -- somethingsomething
+#multihero1 5017 -- Spawn of Nurgle
+#multihero2 5034 -- Chosen Lord of Nurgle
+
+
+----- STARTSITES
+
+#sacrificedom
+
+#clearsites
+#startsite "Chaos Vortex of Nurgle"
+#startsite "Halls of Nurgle"
+
+#templepic 13
+
+----- FORTS
+
+#fortera 2
+#fortcost 20
+
+---- COLOR
+
+#color 0 1.0 0
+#secondarycolor 1.0 1.0 0
+
+
+------- PROVINCE DEFENCE
+
+--Sets the units to be used in province defense.
+#defcom1 5027
+#defcom2 5011
+#defunit1 5001
+#defunit1b 5002
+#defunit2 5005
+#defunit2b 5003
+
+--Sets how many of the units to appear per 10 points.
+#defmult1 10
+#defmult1b 10
+#defmult2 5
+#defmult2b 10
+
+------- STARTING UNITS
+
+#startcom 5027
+#startscout 5010
+#startunittype1 5001
+#startunitnbrs1 20
+#startunittype2 5002
 #startunitnbrs2 10
 #end

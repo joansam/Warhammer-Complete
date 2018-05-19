@@ -1,4 +1,11 @@
 -- TO-DO
+-- Effect 44 is transformation - way to give Tzeentch a transform spell?
+-- There's also dt_raise
+-- Consider de-magicking champions for N and Tz, make sure sorc lineups are ok
+-- Look at consistency btwn warrior lines, esp. in hp, strength, att and def.
+-- Same for daemons - likely needs rework.
+-- Do daemon auras for Tzeentch (Nurgle has one already)
+-- Get rid of one-handed flail?
 -- Add pretenders, check existing pretender costs
 -- Work on aura of Tzeentch
 -- Increase cost, remove retinues from most daemons
@@ -9,7 +16,22 @@
 
 
 -- CONVERSION TO-DO
+-- Test effect values, e.g.:
+-- Rancid Visitations, Red Fire, Bolt of Change, Blue Fire, 
+-- Fleshy Abundance, 
 -- To add Tzeentch, subtract weapons, armor and modname
+
+-- Version 1.1: Nurgle Added
+-- Weapon lengths decreased for Nurgle and a few that I missed for Tzeentch, added some iron weapons
+-- Mapmove and recpoint values added to Nurgle, some tinkering with mapmove vals in Slaan and Tzeentch
+-- Copyspell and onebattlespell values fixed
+-- Descr fixed and checked for UW lines
+-- Removed reclimits except on foreignrec marauders
+-- Fixed some minor bugs
+-- Adjusted rpcost of forsaken and minotaurs of all chaos nations
+-- ADJUSTING armored guy lineup to have less mapmove - base 14, maybe more for coms
+-- Made Bray-Shamans holy
+-- Allowed most forged items to be picked up, except chaos armor and icons of each Chaos God.
 
 -- Version 1.0: Dom 5 Conversion
 -- Added Slaanesh and Tzeentch
