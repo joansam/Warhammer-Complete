@@ -812,7 +812,7 @@
 #gcost 10000
 #chaosrec 3
 #rcost 1
-#rpcost 1
+#rpcost 2
 #weapon "Dagger"
 #startage 30
 #maxage 150
