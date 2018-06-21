@@ -327,8 +327,21 @@
 
 #newweapon 1876
 #name "Greater Aura of Tzeentch"
-#copystats 1869
+#dmg 3
 #aoe 8
+#att 0
+#def 0
+#len 0
+#nostr
+#magic
+#armornegating
+#mrnegateseasily
+#unrepel
+#bonus
+#internal
+--#dt_raise
+--#raiseshape -6666
+#end
 #end
 
 
@@ -6187,15 +6200,28 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 
 #newweapon 1748
 #name "Aura of Nurgle"
-#copystats 286 -- Touch of Leprosy
 #aoe 1
-#mrnegates
+#att 0
+#dt_aff
+#dmg 1
+#len 0
+#mrnegateseasily
+#magic
+#unrepel
+#bonus
 #end
 
 #newweapon 1749
 #name "Greater Aura of Nurgle"
-#copystats 1748
 #aoe 8
+#att 0
+#dt_aff
+#dmg 1
+#len 0
+#mrnegateseasily
+#magic
+#unrepel
+#bonus
 #end
 
 #newweapon 1750
@@ -6559,7 +6585,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rcost 5
 #rpcost 18
 #heal
---#weapon 1748 -- Aura
+#weapon 1748 -- Aura
 #weapon 347
 #weapon 331
 #armor 2
@@ -6572,7 +6598,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #pillagebonus 1
 #regeneration 5
 #deathdisease 6
-#diseasecloud 3
 #poisonres 25
 #diseaseres 100
 #end
@@ -6603,6 +6628,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rpcost 12
 #startage 28
 #maxage 200
+#weapon 1748 -- Aura
 #weapon 1859
 #armor "Chain Mail Cuirass"
 #armor "Shield"
@@ -6611,7 +6637,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #heal
 #regeneration 5
 #deathdisease 5
-#diseasecloud 2
 #poisonres 25
 #stealthy 0
 #diseaseres 100
@@ -7295,6 +7320,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #poorleader
 #heal
 #ambidextrous 3
+#weapon 1748 -- Aura
 #weapon 331
 #weapon 347
 #weapon "Axe"
@@ -7311,7 +7337,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #regeneration 5
 #deathdisease 6
 #poisonres 25
-#diseasecloud 6
 #heal
 #diseaseres 100
 #end
@@ -7671,6 +7696,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 17
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
+#weapon 1748 -- Aura
 #weapon 1757
 #weapon 56
 #armor "Full Helmet"
@@ -7691,7 +7717,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 6
 #heal
 #poisonres 25
-#diseasecloud 6
 #fear 5
 #coldres 5
 #wastesurvival
@@ -7731,7 +7756,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #itemslots 28672
 #invulnerable 15
 #ambidextrous 5
-#weapon 331 -- Gore
+#weapon 1748 -- Aura
 #weapon 1751 -- Poison Tentacle
 #weapon 62 -- Bile
 #weapon 30 -- Venomous Bite
@@ -7746,7 +7771,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #fear 5
 #heal
 #diseaseres 100
-#diseasecloud 6
 #deathdisease 3
 #neednoteat
 #wastesurvival
@@ -7787,6 +7811,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #magicskill 5 1
 #custommagic 12288 100
 #custommagic 12288 66
+#weapon 1748 -- Aura
 #weapon 1757
 #armor "Full Helmet"
 #armor 801
@@ -7809,7 +7834,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #coldres 5
 #wastesurvival
 #researchbonus -6
-#diseasecloud 6
 #end
 
 -- Ku'gath the Plaguefather
@@ -7836,6 +7860,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1749 -- Greater Aura
 #weapon 1756
 #weapon 1760
 #trample
@@ -7848,7 +7873,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #goodleader
 #command 20
 #expertundeadleader
-#diseasecloud 10
 #deathdisease 10
 #domsummon -69402
 #makemonsters3 -69402
@@ -7884,6 +7908,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 17
 #magicskill 5 2
 #magicskill 6 1
+#weapon 1748 -- Aura
 #weapon 1758
 #armor "Full Helmet"
 #armor 801
@@ -7899,7 +7924,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #goodleader
 #goodundeadleader
 #deathdisease 7
-#diseasecloud 3
 #regeneration 15
 #immortal
 #demon
@@ -7934,6 +7958,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1748 -- Aura
 #weapon "Magic Staff"
 #weapon 1759
 #startage 190
@@ -7946,7 +7971,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #woundfend 20
 #okleader
 #okundeadleader
-#diseasecloud 2
 #deathdisease 8
 #diseaseres 100
 #regeneration 10
@@ -7981,6 +8005,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1749 -- Greater Aura
 #weapon 1756
 #trample
 #startage 190
@@ -7990,7 +8015,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #inspirational 1
 #goodleader
 #expertundeadleader
-#diseasecloud 8
 #deathdisease 6
 #demon
 #neednoteat
@@ -8014,7 +8038,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering every torment imaginable."
 #ap 10
 #mapmove 14
-#hp 13
+#hp 18
 #prot 12
 #size 2
 #str 13
@@ -8026,11 +8050,11 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1748 -- Aura
 #weapon 1750
 #startage 20
 #maxage 10000
 #poisonres 25
-#diseasecloud 2
 #deathdisease 1
 #demon
 #neednoteat
@@ -8173,6 +8197,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1748 -- Aura
 #weapon 1750
 #goodleader
 #expertundeadleader
@@ -8181,7 +8206,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #custommagic 12288 40
 #maxage 10000
 #poisonres 25
-#diseasecloud 4
 #deathdisease 2
 #batstartsum4 5018
 #summon1 5018
@@ -8217,6 +8241,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #noitem
+#weapon 1748 -- Aura
 #weapon 1751
 #weapon 1751
 #weapon 1751
@@ -8232,7 +8257,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #undisciplined
 #itemslots 12288
 #slimer 1
-#diseasecloud 3
 #heal
 #end
 
@@ -8297,6 +8321,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rcost 1
 #magicpower 1
 #ambidextrous 3
+#weapon 1748 -- Aura
 #weapon 1761
 #weapon 271
 #weapon 557
@@ -8307,7 +8332,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 55
 #maxage 10000
 #deathdisease 5
-#diseasecloud 3
 #demon
 #neednoteat
 #invulnerable 15
@@ -8343,6 +8367,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rcost 1
 #magicpower 1
 #ambidextrous 5
+#weapon 1748 -- Aura
 #weapon 271
 #weapon 557
 #weapon 43
@@ -8352,7 +8377,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 55
 #maxage 10000
 #deathdisease 6
-#diseasecloud 2
 #demon
 #neednoteat
 #invulnerable 15
@@ -8384,6 +8408,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1749 -- Greater Aura
 #weapon 1756
 #startage 190
 #maxage 10000
@@ -8396,7 +8421,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #goodleader
 #command 40
 #expertundeadleader
-#diseasecloud 8
 #deathdisease 6
 #domsummon -69402
 #makemonsters2 -69402
@@ -8963,12 +8987,11 @@ Priests: Weak. Can blood sacrifice."
 #addrecunit 5006 -- Chaos Knight
 #forestrec 5035 -- Minotaur
 
---REMOVE THIS
-#addrecunit 5018 -- Plaguebearer
-#addrecunit 5026 -- Beast
-#addrecunit 5046 -- Plague Drone
-#addrecunit 5047 -- Rot Fly
-#addrecunit 5036 -- Pestigor
+--addrecunit 5018 -- Plaguebearer
+--addrecunit 5026 -- Beast
+--addrecunit 5046 -- Plague Drone
+--addrecunit 5047 -- Rot Fly
+--addrecunit 5036 -- Pestigor
 --addrecunit 3331
 --addrecunit 3337
 --addrecunit 3356
@@ -9006,9 +9029,9 @@ Priests: Weak. Can blood sacrifice."
 --addreccom 5032 -- Festus the Leechlord
 --addreccom 5031 -- Valnir the Reaper
 --addreccom 5030 -- Ku'Gath
---REMOVE THIS
-#addreccom 5022 -- Herald
-#addreccom 5024 -- Great Unclean One
+
+--addreccom 5022 -- Herald
+--addreccom 5024 -- Great Unclean One
 --addreccom 5017 -- Spawn of Nurgle
 --addreccom 3367
 --addreccom 3368
