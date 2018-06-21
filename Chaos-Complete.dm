@@ -215,18 +215,60 @@
 
 -------- WEAPONS --------
 
-#newweapon 1851
-#name "Daemonic Scythetalons"
+
+#newweapon 1862
+#copyweapon 13
+#name "Chaos Warhammer"
 #nratt 2
-#dmg 5
-#att 0
-#def 2
+#att 1
+#def -1
+#rcost 3
+#ironweapon -- normal hammer isn't iron, but it should be
+#end
+
+#newweapon 1853
+#copyweapon 8
+#name "Chaos Broadsword"
+#nratt 2
+#att 1
+#def 1
+#rcost 7
+#end
+
+#newweapon 1859
+#copyweapon 15 -- Morningstar (the flail has weird stats)
+#name "Chaos Flail"
+#nratt 2
+#att 2
+#def -2
 #len 1
-#magic
-#rcost 0
-#slash
-#sound 38
-#bonus
+#rcost 5
+#end
+
+#newweapon 1864
+#copyweapon 1 -- Spear
+#name "Chaos Spear"
+#rcost 7
+#def 1
+#nratt 3
+#end
+
+#newweapon 1871
+#copyweapon 18
+#name "Chaos Battleaxe"
+#att 1
+#def 0
+#len 2
+#nratt 2
+#rcost 8
+#end
+
+#newweapon 1865
+#copyweapon 17
+#name "Chaos Axe"
+#nratt 2
+#att 1
+#rcost 3
 #end
 
 #newweapon 1852
@@ -247,17 +289,62 @@
 #dt_stun
 #end
 
-#newweapon 1853
-#name "Chaos Broadsword"
-#dmg 6
-#slash
-#att 2
+#newweapon 1863
+#name "Greater Aura of Slaanesh"
+#dmg 33
+#aoe 8
+#nostr
+#magic
+#armornegating
+#mrnegates
+#unrepel
+#att 0
 #def 0
-#len 1
-#rcost 7
-#sound 8
+#len 0
+#bonus
+#mind
+#friendlyimmune
+#dt_stun
+#end
+
+#newweapon 1869
+#name "Aura of Tzeentch"
+#dmg 3
+#aoe 1
+#att 0
+#def 0
+#len 0
+#nostr
+#magic
+#armornegating
+#mrnegateseasily
+#unrepel
+#bonus
+#internal
+--#dt_raise
+--#raiseshape -6666
+#end
+
+#newweapon 1876
+#name "Greater Aura of Tzeentch"
+#copystats 1869
+#aoe 8
+#end
+
+
+
+#newweapon 1851
+#name "Daemonic Scythetalons"
 #nratt 2
-#ironweapon
+#dmg 5
+#att 0
+#def 2
+#len 1
+#magic
+#rcost 0
+#slash
+#sound 38
+#bonus
 #end
 
 #newweapon 1854
@@ -286,6 +373,31 @@
 #rcost 10
 #sound 8
 #nratt 3
+#end
+
+#newweapon 1866
+#copyweapon 3 -- Trident
+#name "Daemonic Trident"
+#att 2
+#def 0
+#nratt 3
+#armorpiercing
+#magic
+#end
+
+#newweapon 1870
+#name "Daemonic Halberd"
+#dmg 10
+#att -1
+#def -1
+#nratt 3
+#len 3
+#magic
+#rcost 6
+#sound 10
+#slash
+#pierce
+#armorpiercing
 #end
 
 #newweapon 1856
@@ -329,21 +441,6 @@
 #armorpiercing
 #end
 
-#newweapon 1859
-#name "Chaos Flail"
-#pierce
-#blunt
-#dmg 6
-#att 2
-#def -3
-#len 2
-#flail
-#rcost 6
-#sound 11
-#nratt 2
-#ironweapon
-#end
-
 #newweapon 1860
 #name "Witstealer Sword"
 #magic
@@ -365,45 +462,6 @@
 #dmg 0
 #nratt 2
 #magic
-#end
-
-#newweapon 1862
-#copyweapon 13
-#name "Chaos Warhammer"
-#nratt 2
-#def -2
-#rcost 4
-#att 1
-#dmg 7
-#ironweapon
-#end
-
-#newweapon 1863
-#name "Greater Aura of Slaanesh"
-#dmg 33
-#aoe 8
-#nostr
-#magic
-#armornegating
-#mrnegates
-#unrepel
-#att 0
-#def 0
-#len 0
-#bonus
-#mind
-#friendlyimmune
-#dt_stun
-#end
-
-#newweapon 1864
-#name "Chaos Spear"
-#copyweapon 1 -- Spear
-#dmg 5
-#def 1
-#nratt 3
-#magic
-#ironweapon
 #end
 
 #newarmor 801
@@ -440,6 +498,7 @@
 -- Warhound (all)
 
 #newmonster 4150
+#snow
 #spr1 "./Warhammer-Complete/warhound1KR.tga"
 #spr2 "./Warhammer-Complete/warhound2KR.tga"
 #name "Warhound"
@@ -475,6 +534,7 @@
 -- Marauder of Slaanesh #1
 
 #newmonster 4151
+#snow
 #spr1 "./Warhammer-Complete/marauder_axe_1.tga"
 #spr2 "./Warhammer-Complete/marauder_axe_2.tga"
 #name "Marauder"
@@ -497,7 +557,6 @@
 #rpcost 6
 #coldres 5
 #weapon "Axe"
-#weapon "Throwing Axe"
 #armor "Iron Cap"
 #armor "Leather Hauberk"
 #armor "Shield"
@@ -505,11 +564,10 @@
 #wastesurvival
 #end
 
--- Foreignrec Marauder #1
-
 -- Marauder of Slaanesh #2
 
 #newmonster 4152
+#snow
 #spr1 "./Warhammer-Complete/marauder_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_2SL.tga"
 #name "Marauder"
@@ -542,6 +600,7 @@
 -- Chaos Marauder Horseman
 
 #newmonster 4153
+#snow
 #spr1 "./Warhammer-Complete/marauder_horseman_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_horseman_2SL.tga"
 #name "Marauder Horsemen"
@@ -577,6 +636,7 @@
 -- Warrior of Slaanesh #1
 
 #newmonster 4154
+#snow
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
 #name "Chaos Warrior"
@@ -611,6 +671,7 @@
 -- Warrior of Slaanesh #2
 
 #newmonster 4155
+#snow
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_2.tga"
 #name "Chaos Warrior"
@@ -645,6 +706,7 @@
 -- Knight of Slaanesh
 
 #newmonster 4156
+#snow
 #spr1 "./Warhammer-Complete/chaosknight_1SL.tga"
 #spr2 "./Warhammer-Complete/chaosknight_2SL.tga"
 #name "Chaos Knight"
@@ -684,6 +746,7 @@
 -- Standard Bearer
 
 #newmonster 4157
+#snow
 #spr1 "./Warhammer-Complete/standard_bearer_1SL.tga"
 #spr2 "./Warhammer-Complete/standard_bearer_2SL.tga"
 #name "Standard Bearer"
@@ -718,6 +781,7 @@
 -- Chosen of Slaanesh #1
 
 #newmonster 4158
+#snow
 #spr1 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_2.tga"
 #name "Chosen"
@@ -772,6 +836,7 @@
 #gcost 60
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 36
 #coldres 5
 #armor "Full Helmet"
@@ -785,45 +850,7 @@
 #weapon 1853
 #end
 
-
-------- COMMANDERS
-
-
--- Slaanesh Cultist
-
-#newmonster 4160
-#spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
-#spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
-#name "Cultist"
-#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, often in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men. When not corrupting the enemy, cultists often bring fresh sacrifices to Slaanesh to gain his gifts and his favor."
-#hp 10
-#size 2
-#mor 13
-#mr 14
-#enc 3
-#str 10
-#att 10
-#def 10
-#prec 10
-#mapmove 16
-#ap 12
-#magicskill 7 1
-#magicskill 8 1
-#gcost 10000
-#chaosrec 3
-#rcost 1
-#rpcost 1
-#weapon "Dagger"
-#startage 30
-#maxage 150
-#wastesurvival
-#coldres 5
-#userestricteditem 6566
-#holy
-#poorleader
-#stealthy 0
-#armor "Robes"
-#end
+-- BEGIN FOREIGNREC UNITS
 
 -- Minotaur of Slaanesh
 
@@ -908,17 +935,17 @@
 #descr "Gors are what form the great mass of the warherds. Their appearance varies, but all combine bestial features with those of a man. The base form of the Beastmen, and that possessed by the vast majority of the Gors, is the hea and legs of a goat and the upper torso of a man, albeit a particularly hairy and malodorous one, even if as creatures of Chaos, there can be great variance from Beastman to Beastman. Regardless of that fact, it is the horns of a Beastman without which one cannot be considered a real Gor. Indeed, in the society of Beastmen, horns are the ultimate mark of rank and power, and their leaders are always those with the largest and most spectacular sets."
 #hp 12
 #size 2
-#mor 10
+#mor 11
 #mr 11
 #enc 3
 #str 12
 #att 11
 #def 9
 #prec 10
-#prot 4
+#prot 9
 #mapmove 18
 #ap 14
-#gcost 10
+#gcost 11
 #chaosrec 1
 #rcost 1
 #rpcost 6
@@ -930,7 +957,6 @@
 #coldres 7
 #stealthy 0
 #armor "Shield"
-#armor 44
 #end
 
 -- Ungor of Slaanesh
@@ -948,7 +974,7 @@
 #enc 3
 #str 10
 #att 10
-#def 11
+#def 10
 #prec 10
 #mapmove 18
 #ap 14
@@ -1038,10 +1064,51 @@
 #berserk 3
 #startage 29
 #maxage 4000
-#montag 69402
-#montag 69402
 #end
 
+
+
+------- COMMANDERS
+
+
+-- Cultist of Slaanesh
+
+#newmonster 4160
+#spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
+#spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
+#name "Cultist"
+#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, often in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men. When not corrupting the enemy, cultists often bring fresh sacrifices to Slaanesh to gain his gifts and his favor."
+#hp 10
+#size 2
+#mor 13
+#mr 14
+#enc 3
+#str 10
+#att 10
+#def 10
+#prec 10
+#mapmove 16
+#ap 12
+#magicskill 7 1
+#magicskill 8 1
+#gcost 9985
+#chaosrec 3
+#rcost 1
+#snow
+#rpcost 2
+#weapon "Dagger"
+#startage 30
+#maxage 150
+#wastesurvival
+#coldres 5
+#userestricteditem 6566
+#holy
+#spy
+#poorleader
+#poormagicleader
+#stealthy 0
+#armor "Robes"
+#end
 
 -- Foreignrec Cultist
 
@@ -1237,6 +1304,7 @@
 #gcost 10015
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 1
 #okleader
 #undcommand 5
@@ -1301,7 +1369,7 @@
 #name "Chaos Sorcerer"
 #nametype 115
 #descr "Chaos Sorcerers are madmen and malcontents all. Sorcerers with the Mark of Slaanesh, while not as magically inclined as those who follow Tzeentch, make useful followers. Many come from the civilized realms, where they studied the fundamental forms of magic to unlock its deepest secrets. They follow the Dark Prince in hopes of yet greater knowledge, proving invaluable scholars and theorists."
-#gcost 10000
+#gcost 10015
 #ap 12
 #mapmove 16
 #hp 10
@@ -1315,6 +1383,7 @@
 #mor 13
 #researchbonus 2
 #rcost 1
+#snow
 #rpcost 2
 #weapon "Fist"
 #armor "Robes"
@@ -1322,9 +1391,8 @@
 #coldres 5
 #maxage 60
 #magicskill 4 1
-
 #magicskill 2 1
-#chaosrec 5
+#chaosrec 4
 #end
 
 -- Exalted Sorcerer of Slaanesh
@@ -1335,7 +1403,7 @@
 #name "Exalted Chaos Sorcerer"
 #nametype 115
 #descr "As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Prince of Chaos, yet they always seek more in their never ending quest for magical power."
-#gcost 9965
+#gcost 9985
 #ap 12
 #mapmove 16
 #hp 16
@@ -1354,6 +1422,7 @@
 #custommagic 896 100 -- SAWB
 #custommagic 896 100 -- SAWB
 #rcost 1
+#snow
 #rpcost 2
 #weapon 172
 #armor "Robes"
@@ -1372,7 +1441,7 @@
 #nametype 115
 #descr "A Chaos Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the magical arts has grown exponentially, well beyond those of lesser Sorcerers, as has his depravity; in sheer magical power, he is only second to those who bear the mark of Tzeentch. Yet, his quest for power is unending, no matter the cost to his humanity. Thus is the way of Chaos."
 #ap 12
-#gcost 9940
+#gcost 9910
 #mapmove 16
 #hp 24
 #size 2
@@ -1387,6 +1456,7 @@
 #magicskill 7 3 -- Blood
 #magicskill 8 3 -- Priest
 #rcost 1
+#snow
 #rpcost 4
 #weapon "Magic Staff"
 #armor 803
@@ -1423,6 +1493,7 @@
 #mor 17
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 1
 #holy
 #okleader
@@ -1437,7 +1508,6 @@
 #coldres 5
 #itemslots 15494
 #xpshape 50
-#prophetshape 6527
 #end
 
 -- Exalted Champion of Slaanesh
@@ -1462,6 +1532,7 @@
 #mor 18
 #chaosrec 4
 #rcost 1
+#snow
 #rpcost 1
 #holy
 #undcommand 5
@@ -1475,7 +1546,6 @@
 #awe 1
 #wastesurvival
 #xpshape 100
-#prophetshape 6528
 #okleader
 #command 20
 #magicskill 8 1
@@ -1486,8 +1556,8 @@
 -- Lord of Slaanesh
 
 #newmonster 4178
-#spr1 "./Warhammer-Complete/lord_of_slaanesh_1.tga"
-#spr2 "./Warhammer-Complete/lord_of_slaanesh_2.tga"
+#spr1 "./Warhammer-Complete/chosen_lord_1.tga" -- Sprite intentional
+#spr2 "./Warhammer-Complete/chosen_lord_2.tga"
 #name "Chaos Lord"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. This Chaos Lord rides to war on a Steed of Slaanesh, a daemonic creature gifted to the greatest of Slaanesh's mortal followers, his powers beyond those of any regular Champion. Although Chaos Lords are not adept at performing the magic rituals necessary to gain Slaanesh's favor, they hold his authority nonetheless."
@@ -1523,12 +1593,58 @@
 #undcommand 5
 #wastesurvival
 #coldres 5
-#prophetshape 6534
+#prophetshape 4184
 #magicskill 7 1
 #magicskill 8 2
 #end
 
 ---- HEROES
+
+-- Chosen Chaos Lord (of Slaanesh)
+
+#newmonster 4184
+#spr1 "./Warhammer-Complete/lord_of_slaanesh_1.tga" -- Sprite intentional
+#spr2 "./Warhammer-Complete/lord_of_slaanesh_2.tga"
+#name "Chosen Chaos Lord"
+#nametype 115
+#descr "This Chaos Lord has advanced even further on the path to Daemonhood than his less-favored fellows, gaining even more gifts from his dark patron in reward. Mounted upon a Steed of Slaanesh, his powers are indeed unmatched by nigh any other mortal follower of the Prince of Excess."
+#ap 24
+#mapmove 24
+#hp 36
+#size 3
+#ressize 2
+#str 20
+#enc 3
+#att 18
+#def 16
+#prec 14
+#mr 18
+#mor 18
+#itemslots 13446
+#weapon "Aura of Slaanesh"
+#weapon 1864 -- Chaos Spear
+#armor "Full Helmet"
+#armor 801
+#armor "Shield"
+#mounted
+#gcost 0
+#rcost 1
+#snow
+#holy
+#awe 2
+#inspirational 1
+#startage 400
+#maxage 3500
+#expertleader
+#wastesurvival
+#coldres 10
+#researchbonus -12
+#heal
+#okundeadleader
+#magicskill 7 2
+#magicskill 8 3
+#latehero 6
+#end
 
 -- Dechala the Denied One
 
@@ -1577,7 +1693,6 @@
 #prot 12
 #heal
 #coldres 10
-#poisonres 10
 #latehero 18
 #end
 
@@ -1588,8 +1703,8 @@
 #spr2 "./Warhammer-Complete/sigvald_2.tga"
 #name "Magnificent"
 #fixedname "Sigvald"
-#descr "Though he appears to be little more than sixteen summers of age, Sigvald the Magnificent has blighted the world for over three hundred years. Gifted with overwhelming beauty but corrupt to the core, Sigvald marches at the head of an army of utterly devoted followers who would give their lives for him without a second thought. Such are the depths of Sigvald's self-obsession that he will even call his retainers to attend him with their mirrors in the midst of battle, preening and murmuring compliments to himself as men plunge into battle and die all around him. Sigvald's baroque armor remains forever untarnished by age or the tiniest fleck of dirt, and warm perfumed air surrounds him even during the fiercest blizzard. The ground itself reshapes itself to let Sigvald pass, and his feet float an inch above the world's surface so that his boots are never touched by the mud or gore of the battlefield."
-#ap 13
+#descr "Though he appears to be little more than sixteen summers of age, Sigvald the Magnificent has blighted the world for over three hundred years. Gifted with overwhelming beauty but corrupt to the core, Sigvald marches at the head of an army of utterly devoted followers who would give their lives for him without a second thought. Such are the depths of Sigvald's self-obsession that he will call his retainers to attend him with their mirrors in the midst of battle, preening and murmuring compliments to himself as men fight and die all around him. Sigvald's baroque armor remains forever untarnished by age or the tiniest fleck of dirt, and warm perfumed air surrounds him even during the fiercest blizzard. The ground reshapes itself to let Sigvald pass, and his feet float an inch above the world's surface so that his boots are never touched by the mud or gore of the battlefield."
+#ap 11
 #mapmove 18
 #enc 1
 #hp 44
@@ -1604,7 +1719,7 @@
 #gcost 0
 #rcost 1
 #itemslots 14470
-#weapon "Aura of Slaanesh"
+#weapon "Greater Aura of Slaanesh"
 #weapon 1858
 #armor 804
 #armor "Shield"
@@ -1627,7 +1742,6 @@
 #magicskill 7 3
 #heal
 #coldres 15
-#poisonres 15
 #latehero 18
 #end
 
@@ -1702,7 +1816,7 @@
 #magicskill 2 3
 #magicskill 1 3
 #itemslots 15490
-#weapon 1852
+#weapon 1863 -- Greater Aura
 #weapon 1856
 #weapon 1857
 #armor 803
@@ -1719,7 +1833,6 @@
 #seduce 20
 #neednoteat
 #coldres 15
-#poisonres 15
 #prot 15
 #heal
 #fear 5
@@ -1737,8 +1850,9 @@
 #spr2 "./Warhammer-Complete/chaos_spawn_2SL.tga"
 #name "Spawn of Slaanesh"
 #nametype 257
-#descr "A Champion who is visited by too many gifts of the Prince of Excess eventually succumbs to madness and mutation and becomes a Spawn of Slaanesh. To many Northmen this is seen as a great favor, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#descr "A mortal who is visited by too many of Slaanesh's gifts eventually succumbs to madness and mutation and becomes a Spawn of Slaanesh. To many Northmen this is seen as a great favor, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 16
+#gcost 0
 #mapmove 16
 #hp 50
 #size 4
@@ -1772,55 +1886,51 @@
 #itemslots 28672
 #magicpower 1
 #demon
+#montag 8888
 #end
 
--- Chosen Chaos Lord (of Slaanesh)
-
-#newmonster 4184
-#spr1 "./Warhammer-Complete/chosen_lord_1.tga"
-#spr2 "./Warhammer-Complete/chosen_lord_2.tga"
-#name "Chosen Chaos Lord"
-#nametype 115
-#descr "This Chaos Lord has advanced even further on the path to Daemonhood than his less-favored fellows, gaining even more gifts from his dark patron in reward. Mounted upon a Steed of Slaanesh, his powers are indeed unmatched by nigh any other mortal follower of the Prince of Excess."
-#ap 24
-#mapmove 24
-#hp 36
-#size 3
-#ressize 2
-#str 20
-#enc 3
-#att 18
-#def 16
-#prec 14
-#mr 18
-#mor 18
-#itemslots 13446
-#weapon "Aura of Slaanesh"
-#weapon 1864 -- Chaos Spear
-#armor "Full Helmet"
-#armor 801
-#armor "Shield"
-#mounted
-#gcost 0
-#rcost 1
-#holy
-#awe 2
-#inspirational 1
-#startage 400
-#maxage 3500
-#expertleader
-#wastesurvival
-#coldres 10
-#researchbonus -12
-#poisonres 5
-#heal
-#okundeadleader
-#magicskill 7 2
-#magicskill 8 3
-#latehero 6
+#newmonster 4196 -- Spawn #2, for Lord ascension with montags, 80% chance of becoming Spawn
+#copystats 4183
+#descr "A mortal who is visited by too many of Slaanesh's gifts eventually succumbs to madness and mutation and becomes a Spawn of Slaanesh. To many Northmen this is seen as a great favor, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#copyspr 4183
+#montag 8888
 #end
+
 
 ----------- Daemon Summonables ------------
+
+-- Chaos Fury
+
+#newmonster 4189
+#spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
+#spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
+#name "Chaos Fury"
+#nametype 257
+#descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
+#ap 15
+#mapmove 20
+#hp 8
+#prot 4
+#size 2
+#str 10
+#enc 1
+#att 9
+#def 10
+#prec 8
+#mr 12
+#mor 30
+#gcost 0
+#rcost 1
+#magicpower 1
+#noitem
+#weapon "Claws"
+#startage 20
+#maxage 10000
+#flying
+#demon
+#holy
+#coldres 10
+#end
 
 -- Daemonette
 
@@ -1855,56 +1965,6 @@
 #weapon 1851
 #coldres 10
 #end
-
-
--- Herald of Slaanesh
-
-#newmonster 4186
-#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
-#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
-#name "Herald of Slaanesh"
-#nametype 257
-#descr "Heralds of Slaanesh do not only attend to Slaanesh's whimsical desires. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. They can also summon their sisters from the Void."
-#ap 16
-#mapmove 18
-#hp 20
-#prot 8
-#size 2
-#str 11
-#enc 1
-#att 12
-#def 12
-#prec 12
-#mr 15
-#mor 30
-#gcost 0
-#rcost 1
-#ambidextrous 5
-#itemslots 15488
-#weapon 1852
-#startage 20
-#maxage 10000
-#poisonres 5
-#coldres 10
-#demon
-#spy
-#awe 3
-#female
-#okleader
-#holy
-#magicpower 1
-#stealthy 20
-#magicskill 7 2
-#magicskill 8 2
-#custommagic 6656 100
-#makemonsters1 4185
-#weapon 1854
-#weapon 1854
-#coldres 15
-#okundeadleader
-#batstartsum3 4185
-#end
-
 
 -- Seeker of Slaanesh
 
@@ -1968,7 +2028,6 @@
 #noitem
 #startage 20
 #maxage 10000
-#poisonres 5
 #demon
 #holy
 #awe 1
@@ -1978,132 +2037,52 @@
 #coldres 10
 #end
 
+-- Herald of Slaanesh
 
--- Chaos Fury
-
-#newmonster 4189
-#spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
-#spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
-#name "Chaos Fury"
+#newmonster 4186
+#spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
+#spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
+#name "Herald of Slaanesh"
 #nametype 257
-#descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
-#ap 15
-#mapmove 20
-#hp 8
-#prot 4
-#size 1
-#str 10
+#descr "Heralds of Slaanesh do not only attend to Slaanesh's whimsical desires. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. They can also summon their sisters from the Void."
+#ap 16
+#mapmove 18
+#hp 20
+#prot 8
+#size 2
+#str 11
 #enc 1
-#att 9
-#def 10
-#prec 8
-#mr 12
+#att 12
+#def 12
+#prec 12
+#mr 15
 #mor 30
 #gcost 0
 #rcost 1
-#magicpower 1
-#noitem
-#weapon "Claws"
+#ambidextrous 5
+#itemslots 15488
+#weapon 1852
 #startage 20
 #maxage 10000
-#flying
-#demon
-#holy
 #coldres 10
-#end
-
-
--- Keeper of Secrets
-
-#newmonster 4190
-#spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
-#spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
-#name "Keeper of Secrets"
-#nametype 257
-#descr "Many-limbed and jewel-eyed, sensuous in movement yet deadly and fierce, a Keeper of Secrets is the Greater Daemon of Slaanesh. They are gifted with the subtle and insidious magic of the Dark Prince, wracking the enemy with spasms of agony, clouding their minds with dark whispers of glory, and creating illusions of their worst fears and greatest desires. Formed of the stuff of Chaos, Slaanesh has granted these servants his greatest gifts and protected them from enemy magic almost as well as from mortal weapons. Those few brave mortals who face up to such a monster must be pure of heart and mind, for a Keeper of Secrets is surrounded by many enchantments that lull the mind and deaden the senses. It can invade the thoughts and senses of its enemies, penetrating their every psychic defence - sending them false visions of glory, stroking their egos and their innermost desires to lead the fools astray."
-#ap 18
-#mapmove 18
-#enc 1
-#hp 132
-#prot 18
-#size 5
-#str 22
-#att 16
-#def 16
-#prec 12
-#mr 21
-#mor 30
-#gcost 0
-#rcost 1
-#heal
-#ambidextrous 4
-#weapon 1863 -- Greater Aura of Slaan
-#weapon 1857 -- Slaaneshi Claws
-#maxage 10000
-#magicskill 2 3
-#magicskill 4 2
-#magicskill 5 2
-#magicskill 7 4
-#custommagic 23040 300
-#holy
-#goodleader
-#fear 10
-#awe 6
-#poisonres 20
 #demon
-#magicpower 2
-#coldres 20
-#itemslots 15494
-#spreaddom 1
-#magicskill 8 4
-#weapon 1855
-#goodundeadleader
-#end
-
--- Daemon Princess
-
-#newmonster 4191
-#spr1 "./Warhammer-Complete/daemonprincess1.tga"
-#spr2 "./Warhammer-Complete/daemonprincess2.tga"
-#name "Daemon Princess of Slaanesh"
-#nametype 257
-#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this ancient being has been pulled through the Void to destroy the enemies of the Dark Prince. Inside the form of the possessed champion vast magical forces roil, and the power of the Void emanates from her body. It confounds and terrifies her lesser foes, leaving her free to command Slaanesh's armies, or vanquish enemy lords and spellcasters."
-#ap 22
-#mapmove 22
-#hp 48
-#prot 12
-#size 3
-#str 18
-#enc 1
-#att 16
-#def 18
-#prec 14
-#mr 18
-#mor 30
-#gcost 0
-#rcost 1
-#heal
-#coldres 15
-#poisonres 15
-#weapon 1863 -- Greater Aura of Slaan
-#itemslots 15494
-#startage 4000
-#maxage 10000
-#magicskill 2 3
-#magicskill 7 3
-#magicskill 8 3
-#magicskill 5 2
-#custommagic 6144 200
-#expertleader
-#expertundeadleader
-#awe 5
-#flying
-#demon
+#spy
+#awe 3
 #female
-#magicpower 2
-#weapon 1855
+#okleader
+#holy
+#magicpower 1
+#stealthy 20
+#magicskill 7 2
+#magicskill 8 2
+#custommagic 6656 100
+#makemonsters1 4185
+#weapon 1854
+#weapon 1854
+#coldres 15
+#okundeadleader
+#batstartsum3 4185
 #end
-
 
 -- Exalted Daemon
 
@@ -2131,7 +2110,6 @@
 #pathcost 50
 #startdom 3
 #coldres 10
-#poisonres 10
 #itemslots 15494
 #startage 4000
 #maxage 10000
@@ -2152,6 +2130,94 @@
 #heal
 #end
 
+-- Daemon Princess
+
+#newmonster 4191
+#spr1 "./Warhammer-Complete/daemonprincess1.tga"
+#spr2 "./Warhammer-Complete/daemonprincess2.tga"
+#name "Daemon Princess"
+#nametype 257
+#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this terrible being was once mortal, but has been transformed beyond recognition to please Slaanesh. Inside her newly-incarnated form vast magical forces roil, as the power of the Void emanates from her body. It confounds and terrifies her lesser foes, leaving her free to command Slaanesh's armies, or vanquish enemy lords and spellcasters."
+#ap 22
+#mapmove 22
+#hp 48
+#prot 12
+#size 3
+#str 18
+#enc 1
+#att 16
+#def 18
+#prec 14
+#mr 18
+#mor 30
+#gcost 0
+#rcost 1
+#heal
+#coldres 15
+#weapon 1863 -- Greater Aura of Slaan
+#itemslots 15494
+#startage 4000
+#maxage 10000
+#magicskill 2 3
+#magicskill 7 3
+#magicskill 8 3
+#magicskill 5 2
+#custommagic 6144 200
+#expertleader
+#expertundeadleader
+#awe 5
+#flying
+#demon
+#female
+#magicpower 1
+#weapon 1855
+#montag 8888
+#end
+
+-- Keeper of Secrets
+
+#newmonster 4190
+#spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
+#spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
+#name "Keeper of Secrets"
+#nametype 257
+#descr "Many-limbed and jewel-eyed, sensuous in movement yet deadly and fierce, a Keeper of Secrets is the Greater Daemon of Slaanesh. They are gifted with the subtle and insidious magic of the Dark Prince, wracking the enemy with spasms of agony, clouding their minds with dark whispers of glory, and creating illusions of their worst fears and greatest desires. Formed of the stuff of Chaos, Slaanesh has granted these servants his greatest gifts and protected them from enemy magic almost as well as from mortal weapons. Those few brave mortals who face up to such a monster must be pure of heart and mind, for a Keeper of Secrets is surrounded by many enchantments that lull the mind and deaden the senses. It can invade the thoughts and senses of its enemies, penetrating their every psychic defence - sending them false visions of glory, stroking their egos and their innermost desires to lead the fools astray."
+#ap 18
+#mapmove 18
+#enc 1
+#hp 92
+#prot 18
+#size 5
+#str 22
+#att 16
+#def 16
+#prec 12
+#mr 21
+#mor 30
+#gcost 0
+#rcost 1
+#heal
+#ambidextrous 4
+#weapon 1863 -- Greater Aura of Slaan
+#weapon 1857 -- Slaaneshi Claws
+#maxage 10000
+#magicskill 2 3
+#magicskill 7 4
+#magicskill 4 2
+#custommagic 6144 300
+#holy
+#goodleader
+#fear 10
+#awe 6
+#demon
+#magicpower 2
+#coldres 20
+#itemslots 15494
+#spreaddom 1
+#magicskill 8 4
+#weapon 1855
+#goodundeadleader
+#end
 
 -- Sigvald's bodyguards
 
@@ -2173,21 +2239,21 @@
 #newmonster 4195
 #nametype 115
 #startdom 1
-#gcost 9910
+#gcost 9980
 #pathcost 20
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatarhum1.tga"
 #spr2 "./Warhammer-Complete/avatarhum2.tga"
-#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as a human sorcerer on a wave of magical energy, and will lead his armies to everlasting bliss. But the Dark Prince is merely using this illusion of a body for convenience - life does not flow through it, nor does Slaanesh's mind inhabit it. The body is pure Chaos energy, harnessed to his will."
-#magicskill 2 2
-#magicskill 1 1
-#magicskill 0 1
+#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as a human sorcerer on a wave of magical energy, and will lead his armies to everlasting bliss. But the Dark Prince is merely using this vessel for convenience - life does not flow through it, nor does Slaanesh's mind inhabit it. The body is pure Chaos energy, harnessed to his will."
+#magicskill 2 1 -- Water
+#magicskill 7 1 -- Blood
+#magicskill 1 1 -- Air
 #hp 30
 #mr 20
 #str 15
 #def 12
 #enc 1
-#mor 50
+#mor 30
 #mapmove 16
 #prec 15
 #att 10
@@ -2196,7 +2262,6 @@
 #enc 1
 #demon
 #coldres 25
-#poisonres 25
 #weapon "fist"
 #heal
 #awe 4
@@ -2209,16 +2274,16 @@
 #newmonster 4194
 #nametype 257
 #startdom 3
-#gcost 10050
+#gcost 10020
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
 #spr2 "./Warhammer-Complete/avatar2.tga"
-#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as one of his Greater Daemons, and will lead his armies to everlasting bliss."
+#descr "Slaanesh is the Chaos god of lust, excess, pleasure, perfection and hedonism. Slaanesh typically appears in a form which is male on the left side and female on the right, with two sets of devilish horns growing from its head. It can however assume any form; male, female, hermaphrodite or asexual. Slaanesh has chosen to appear this time as a Greater Daemon capable of obliterating his foes, and leading his armies to everlasting bliss."
 #magicskill 2 1
 #magicskill 5 1
 #magicskill 7 1
-#hp 166
+#hp 146
 #size 6
 #prot 18
 #ap 18
@@ -2229,20 +2294,18 @@
 #def 16
 #enc 1
 #prec 15
-#mor 50
+#mor 30
 #demon
 #magicpower 2
 #coldres 25
-#poisonres 25
 #heal
 #itemslots 15488
 #startage 40
 #maxage 10000
-#inspirational 1
 #goodleader
 #expertundeadleader
 #fear 10
-#awe 6
+#awe 5
 #weapon 1863 -- Greater Aura
 #weapon 1857 -- Slaaneshi Claws
 #weapon 1857
@@ -2270,39 +2333,39 @@
 #researchlevel 3
 #path 0 7
 #pathlevel 0 2
-#fatiguecost 2100
+#fatiguecost 2000
 #effect 10001
 #damage 4185
-#nreff 4
+#nreff 5
 #end
 
 -- Secondary Daemonette summon and affliction removal
 
-#newspell
-#name "Daemonette summoning"
-#descr "Used in Banquet of Slaanesh"
-#restricted 159
-#school -1
-#path 0 2
-#pathlevel 0 3
-#fatiguecost 2100
-#effect 10001
-#damage 4185
-#nreff 1007
-#end
+--#newspell
+--#name "Daemonette summoning"
+--#descr "Used in Banquet of Slaanesh"
+--#restricted 159
+--#school -1
+--#path 0 2
+--#pathlevel 0 3
+--#fatiguecost 2100
+--#effect 10001
+--#damage 4185
+--#nreff 1007
+--#end
 
-#newspell
-#copyspell 1072 -- Blood Feast
-#name "Banquet of Slaanesh"
-#descr "The caster forms a Slaaneshi cult within an unsuspecting village, which tears at the very humanity of its 'followers'. They take part in every form of vile debauchery including that of cannibalism, starting with kidnappings of the weakest and least cared for. As the horrors continue and the villagers begin to suspect foul play, the caster finally sheds all reason, sacrificing all his 'followers' to Slaanesh; in their place manifest a score of Daemonettes. It is then that the caster assails the village in earnest with the aid of the Daemonettes, killing and feasting upon the flesh of the innocent and guilty alike. Once the village has been brought to the ground, the caster finds himself less human; he craves mortal flesh, his soul corrupted but his body healed of afflictions. The Daemonettes thus manifested then join his cause."
-#restricted 159
-#school 6
-#researchlevel 3
-#path 0 7
-#pathlevel 0 2
-#fatiguecost 4500
-#nextspell "Daemonette summoning"
-#end
+--#newspell
+--#copyspell 1072 -- Blood Feast
+--#name "Banquet of Slaanesh"
+--#descr "The caster forms a Slaaneshi cult within an unsuspecting village, which tears at the very humanity of its 'followers'. They take part in every form of vile debauchery including that of cannibalism, starting with kidnappings of the weakest and least cared for. As the horrors continue and the villagers begin to suspect foul play, the caster finally sheds all reason, sacrificing all his 'followers' to Slaanesh; in their place manifest a score of Daemonettes. It is then that the caster assails the village in earnest with the aid of the Daemonettes, killing and feasting upon the flesh of the innocent and guilty alike. Once the village has been brought to the ground, the caster finds himself less human; he craves mortal flesh, his soul corrupted but his body healed of afflictions. The Daemonettes thus manifested then join his cause."
+--#restricted 159
+--#school 6
+--#researchlevel 3
+--#path 0 7
+--#pathlevel 0 2
+--#fatiguecost 4500
+--#nextspell "Daemonette summoning"
+--#end
 
 #newspell
 #name "Summon Seekers"
@@ -2565,28 +2628,40 @@
 -------- EVENTS --------
 
 #newevent
-#rarity 2
-#req_era 1
-#req_turn 6
-#req_nation 159
+#rarity 0 -- Always, but only one 0 rarity event can happen/turn
+#req_rare 40 -- Will happen 40% of the time when reqs are met
+#nation 159 -- Slaanesh controls the troops
 #req_notnation 159
-#req_capital 0
-#req_maxdef 15
-#req_minunrest 50
-#req_land 1
-#req_maxdominion 0
-#req_chaos 1
-#req_lazy 1
+#req_monster 4160 -- Cultist
+#req_capital 0 -- Must not be a capital
+#req_maxdef 20
+#req_minunrest 40
+#req_chaos 1 -- Must be Chaos 1, 2 or 3
+#req_land 1 -- Must be a land prov
 #req_maxtroops 100
-#req_indepok 0
-#msg "A corrupt cult of hedonism honoring the Prince of Excess has sprung up in the province!"
-#unrest 50
-#incdom 10
-#2com 4160 -- Cultist
-#com 4176 -- Chaos Champion
-#3d6units 31
-#1d6units 4185 -- Daemonette
-#2d6units 4160 -- Cultist
+#msg "A corrupt cult of hedonism honoring the Prince of Excess has sprung up in the province! They have summoned his daemons to their aid, and some particularly brave followers have given themselves completely to Slaanesh!"
+#unrest 30
+#newdom 4
+#incscale2 0 -- Increases turmoil
+#req_indepok 1 -- Can (not must) happen to indies
+#com 4160 -- Cultist
+#1d3units 4183 -- Spawn
+#2d6units 4185 -- Daemonette
+#1d6units 4160 -- Cultist
+#1d6units 4173 -- Chaos Sorcerer
+#end
+
+#newevent
+#nation 159
+#rarity 0
+#req_rare 5
+#req_land 1
+#req_fornation 159
+#req_pop0ok
+#req_targmnr 4184 -- Chosen Chaos Lord
+#killcom 4184
+#com -8888 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Slaanesh, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 #end
 
 -------- NAMES -----------
@@ -2802,6 +2877,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 ---- GODS
 #cleargods
+#homerealm 1
 #addgod 2462 -- Golden Idol
 #addgod 180 -- demilich
 #addgod 158 -- Oracle
@@ -2930,7 +3006,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startcom 4171 -- Marauder Chief
 #startscout 4160
 #startunittype1 4151
-#startunitnbrs1 20
+#startunitnbrs1 15
 #startunittype2 4152
 #startunitnbrs2 10
 #end
@@ -2943,7 +3019,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 -- Version 1.01 - Wand of Whimsy was missing a type and apparently went in the Misc slot. Oops! Warhounds now get a more devastating Venomous Bite. Made Pretender gcosts autocalc, also made the national Pretenders 20 cheaper. Added #natural to Chaos Steed hoof and Scythetalon. Lowered combat spell precision to 5 where applicable.
 
--- Version 1.00 - Version 1.00! How disturbing. --#magicboost 8-7 works now, a lot of clutter removed. Chaos Fury was missing #holy, added. Chosen reclimits made a comeback and the Lord became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcs by 1, the rest lost theirs (autocalc decides Exalted Sorc's price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Added events to turn Chosen Lords into Spawns or Daemon Princes. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Tzaanbulls now have invuln 15. Lowered #xpshape thresholds. Added a cultist event. Human followers use 115 for nametypes.
+-- Version 1.00 - Version 1.00! How disturbing. --#magicboost 8-7 works now, a lot of clutter removed. Chaos Fury was missing #holy, added. Chosen reclimits made a comeback and the Lord became StR (also increased research malus on Champs, Exalteds and Lords). Lowered research bonuses on Sorcs by 1, the rest lost theirs (autocalc decides Exalted Sorc's price now). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers. Added event s to turn Chosen Lords into Spawns or Daemon Princes. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Tzaanbulls now have invuln 15. Lowered #xpshape thresholds. Added a cultist event. Human followers use 115 for nametypes.
 
 -- Version 0.99 - Slight adjustment down on the #prot and #rcost of the Light Chaos Armor. #blunt to Chaos Steed Hoof. Removed Tzeentch Plate Armor for simplicity's sake (and since Warriors etc. wear Chaos Armor in tabletop). Reduced the start numbers of the second Marauder group to 10 to match the other Warhosts. More alterations to Lord of Change's sprite (Sombre made the head!). Apparently copyspelling Blessing caused all kinds of issues with the Blessing item on the Cultist, seems to work now that it's no longer a copyspell (also, the Cultist became Sacred; same as every other Cultist). Removed the Discord of Tzeentch (Banishment) item, as you can only have one restricteditem per Commander and that slot is already taken by another item. Screamers are now #stormimmune. Cyspeth's onebattlespell is no longer wasted on summoning 2 commander cronies, and instead uses #batstartsum2 (since it seems to work properly now on ranged, which means spell slot 180 is now open). Lord of Tzeentch's magical abilities
 -- were changed to stop unboosted teleporting/cloud trapezing. Gave Minotaurs/Tzaanbulls 2 more invuln. Changes to #chaosrecs of many things. Obelisk lost its magic but gained the Cultist's blessing item (still spreads dom) and became capable of using the Greater Blessing item, too.
@@ -2974,7 +3050,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -- Versions 0.01 - 0.12 - The humble beginnings of the Tzeentch Warhost, leading up to MC compatibility and an ever increasing number of units/commanders as well as spells and the like.
 
 -- Nationslot: 120
--- Weaponslots: 724-739
+-- Weaponslots: 1870-1881
 -- Armor slots: 449-450
 -- Unit slots: 4331-4350, 4796-4798, 4800-4835
 -- Site slots: 1952, 1953
@@ -2984,37 +3060,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 -------- WEAPONS --------
 
-#newweapon 725
-#name "Halberd of Tzeentch"
-#dmg 10
-#att -1
-#def -1
-#nratt 3
-#len 3
-#magic
-#rcost 6
-#sound 10
-#slash
-#pierce
-#armorpiercing
-#end
 
-#newweapon 726
-#name "Chaos Battleaxe"
-#dmg 10
-#att 1
-#def 0
-#len 2
-#nratt 2
-#rcost 7
-#twohanded
-#slash
-#sound 10
-#secondaryeffectalways 509
-#ironweapon
-#end
 
-#newweapon 727
+#newweapon 1872
 #name "Chaos Fire"
 #nostr
 #armorpiercing
@@ -3030,7 +3078,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #sound 16
 #end
 
-#newweapon 728
+#newweapon 1873
 #name "Lightning of Tzeentch"
 #att 0
 #ammo 20
@@ -3045,7 +3093,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #hardmrneg
 #end
 
-#newweapon 730
+#newweapon 1874
 #name "Flames of Tzeentch"
 #nostr
 #armorpiercing
@@ -3062,7 +3110,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #hardmrneg
 #end
 
-#newweapon 731
+#newweapon 1875
 #name "Chaotic Fire"
 #nostr
 #armorpiercing
@@ -3077,25 +3125,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #sound 16
 #end
 
-#newweapon 732
-#name "Aura of Tzeentch"
-#dmg 5
-#aoe 4
-#att 0
-#def 0
-#len 0
-#nostr
-#magic
-#armornegating
-#mrnegates--easily
-#unrepel
-#bonus
-#demonimmune
---#dt_raise
-#raiseshape 4150
-#end
-
-#newweapon 733
+#newweapon 1877
 #name "Windblade"
 #dmg 12
 #att 2
@@ -3109,7 +3139,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #sound 8
 #end
 
-#newweapon 734
+#newweapon 1878
 #name "Breath of Change"
 #dmg 999
 #magic
@@ -3126,7 +3156,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #sound 16
 #end
 
-#newweapon 736
+#newweapon 1879
 #name "Melekh's halberd"
 #dmg 11
 #att -1
@@ -3139,19 +3169,20 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #slash
 #end
 
-#newweapon 737
+#newweapon 1880
 #name "Thomin's Sword"
 #dmg 12
 #magic
 #att 1
 #def -1
+#nratt 2
 #len 1
 #slash
 #sound 8
 #armorpiercing
 #end
 
-#newweapon 739
+#newweapon 1881
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -3383,9 +3414,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #maxage 4000
 --#magicboost 8-7
 #rpcost 15
+#montag 6666
 #end
 
--- Marauders of Tzeentch #1
+-- Marauder of Tzeentch #1
 
 #newmonster 4331
 #spr1 "./Warhammer-Complete/marauder_1TZ.tga"
@@ -3407,9 +3439,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 11
 #chaosrec 1
 #rcost 1
+#snow
 #coldres 3
 #weapon "Axe"
-#weapon "Throwing Axe"
 #armor "Iron Cap"
 #armor "Leather Hauberk"
 #armor "Shield"
@@ -3420,7 +3452,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rpcost 6
 #end
 
--- Marauders of Tzeentch #2
+-- Marauder of Tzeentch #2
 
 #newmonster 4332
 #spr1 "./Warhammer-Complete/marauder_club_1.tga"
@@ -3442,6 +3474,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 11
 #chaosrec 1
 #rcost 1
+#snow
 #coldres 3
 #weapon "Club"
 #armor "Iron Cap"
@@ -3454,7 +3487,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rpcost 6
 #end
 
--- Marauders of Tzeentch #1 -- foreignrec
+-- Marauder of Tzeentch #1 -- foreignrec
 
 #newmonster 4819
 #copystats 4331
@@ -3464,7 +3497,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rpcost 6
 #end
 
--- Marauders of Tzeentch #2 -- foreignrec
+-- Marauder of Tzeentch #2 -- foreignrec
 
 #newmonster 4820
 #copystats 4332
@@ -3474,7 +3507,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rpcost 6
 #end
 
--- Chaos Marauder Horsemen
+-- Chaos Marauder Horseman
 
 #newmonster 4333
 #spr1 "./Warhammer-Complete/marauder_horseman_1TZ.tga"
@@ -3497,6 +3530,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 25
 #chaosrec 2
 #rcost 1
+#snow
 #okleader
 #coldres 3
 #itemslots 13446
@@ -3519,7 +3553,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #newmonster 4334
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Tzeentch_2.tga"
-#name "Warrior of Tzeentch"
+#name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
 #ap 11
@@ -3536,6 +3570,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 30
 #chaosrec 2
 #rcost 1
+#snow
 #coldres 3
 #weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
@@ -3554,7 +3589,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #newmonster 4335
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_Axe_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Tzeentch_Axe_2.tga"
-#name "Warrior of Tzeentch"
+#name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
 #ap 11
@@ -3571,8 +3606,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 30
 #chaosrec 2
 #rcost 1
+#snow
 #coldres 3
-#weapon 726 -- Chaos Battleaxe
+#weapon 1871 -- Chaos Battleaxe
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -3645,6 +3681,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 40
 #chaosrec 2
 #rcost 1
+#snow
 #coldres 3
 #weapon 1853 -- Chaos Broadsword
 #armor "Kite Shield"
@@ -3681,6 +3718,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 65
 #chaosrec 3
 #rcost 1
+#snow
 #coldres 5
 #weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
@@ -3719,6 +3757,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 65
 #chaosrec 3
 #rcost 1
+#snow
 #coldres 5
 #weapon "Chaos Battleaxe"
 #armor "Full Helmet"
@@ -3755,9 +3794,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 10
 #mapmove 16
 #ap 12
-#gcost 55
+#gcost 10000
 #chaosrec 3
 #rcost 1
+#snow
 #coldres 3
 #startage 30
 #maxage 150
@@ -3819,7 +3859,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #weapon "Mace"
 #armor 801
 #itemslots 15494
-#startitem 967
 #startage 50
 #maxage 5000
 #forestsurvival
@@ -3973,6 +4012,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 75
 #chaosrec 3
 #rcost 1
+#snow
 #okleader
 #undcommand 5
 #coldres 3
@@ -4035,7 +4075,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #newmonster 4342
 #spr1 "./Warhammer-Complete/chaos_sorcerer_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaos_sorcerer_2TZ.tga"
-#name "Sorcerer"
+#name "Chaos Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. However, only those deemed worthy by the Great Sorcerer Himself are marked by the Changer of Ways, and their power is indeed greater than that of those Chaos Sorcerers who follow the other Dark Gods."
 #ap 12
@@ -4056,6 +4096,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 16768 10 -- FAB
 #gcost 10000
 #rcost 1
+#snow
 #rpcost 2
 #weapon "Fist"
 #armor "Robes"
@@ -4070,7 +4111,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #newmonster 4343
 #spr1 "./Warhammer-Complete/exalted_chaos_sorcerer_1TZ.tga"
 #spr2 "./Warhammer-Complete/exalted_chaos_sorcerer_2TZ.tga"
-#name "Exalted Sorcerer"
+#name "Exalted Chaos Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the gifts given by the Changer of Ways, yet they always seek for more in their never ending quest for power."
 #ap 12
@@ -4091,8 +4132,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 2432 100 -- SFA
 #custommagic 2432 10
 #custommagic 16768 100 -- FAB
-#gcost 10000
+#gcost 9970
 #rcost 1
+#snow
 #weapon 172
 #armor "Robes"
 #poorleader
@@ -4108,7 +4150,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #newmonster 4344
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_1TZ.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2TZ.tga"
-#name "Sorcerer Lord"
+#name "Chaos Sorcerer Lord"
 #nametype 115
 #descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. And as a follower of Tzeentch, he is indeed powerful, well beyond his lesser kin, not to mention those who follow the other Dark Gods. But still, the quest for more is unending; no matter the cost to his sanity, his very being. The Changer of Ways may have gifted a Sorcerer Lord more than any other, it is still never going to quench his thirst for power. Thus is the way of Chaos."
 #ap 10
@@ -4130,9 +4172,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 3456 100 -- SFAE
 #custommagic 3456 10 -- SFAE
 #custommagic 16768 100 -- FAB
-#gcost 425
+#gcost 9900 -- 425
 #slowrec
 #rcost 1
+#snow
 #weapon "Magic Staff"
 #armor 803
 #poorleader
@@ -4151,6 +4194,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers. Their presence on the battlefield can turn the tide of a closely fought combat. The Champions of Tzeentch, like Tzeentch himself, are ever changing and mutating, surrendering completely to the whims of the Changer of Ways."
+#gcost 10030
 #ap 12
 #mapmove 16
 #hp 18
@@ -4162,21 +4206,17 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 12
 #mr 15
 #mor 15
-#gcost 100
 #chaosrec 5
 #rcost 1
+#snow
 #okleader
 #undcommand 5
 #coldres 5
-#magicskill 4 1
-#researchbonus -8
-#custommagic 2176 66
 #weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
 #itemslots 15494
-#startitem 967
 #startage 50
 #maxage 1500
 #mountainsurvival
@@ -4186,7 +4226,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #holy
 #invulnerable 10
 #xpshape 50
-#prophetshape 4346
 #end
 
 -- Exalted Champion
@@ -4197,6 +4236,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Exalted Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
+#gcost 10030
 #ap 25
 #mapmove 24
 #hp 22
@@ -4209,7 +4249,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 12
 #mr 16
 #mor 15
-#gcost 200
 #chaosrec 8
 #rcost 2
 #goodleader
@@ -4225,12 +4264,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Full Helmet"
 #armor 801
 #itemslots 13446
-#startitem 967
 #startage 70
 #maxage 2500
 #float
-#snow
-#swimming
 #mounted
 #fear 5
 #researchbonus -10
@@ -4240,7 +4276,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #invulnerable 10
 #holy
 #xpshape 100
-#prophetshape 4347
 #rpcost 2
 #end
 
@@ -4252,6 +4287,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/lord_of_tzeentch_2.tga"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Lord of Tzeentch rides to war on a mysterious Disc of Tzeentch, a twisted and daemonic creation bound to his will, his powers beyond those of any regular Champion."
+#gcost 10080
 #ap 25
 #mapmove 24
 #hp 27
@@ -4268,17 +4304,14 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 2176 100
 #custommagic 384 66
 #coldres 5
+#weapon 1869 -- Aura
 #weapon "Chaos Fire"
 #weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
 #armor 801
-#startitem 967
 #armor "Shield"
 #itemslots 13446
 #float
-#snow
-#swimming
-#gcost 300
 #chaosrec 12
 #rcost 3
 #startage 140
@@ -4324,6 +4357,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 20
 #gcost 0
 #rcost 1
+#weapon 1869 -- Aura
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
 #weapon 1855
@@ -4372,6 +4406,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 18
 #gcost 0
 #rcost 1
+#weapon 1876 -- Greater Aura
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
 #weapon "Bite"
@@ -4417,8 +4452,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magicskill 1 1
 #coldres 5
 #ambidextrous 3
+#weapon 1869 -- Aura
 #weapon "Thomin's Sword"
-#weapon 347
+#weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
 #armor 801
 #itemslots 14732 -- 4 hands, 2 heads, 1 feet, 2 misc
@@ -4459,6 +4495,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 18
 #gcost 0
 #rcost 1
+#weapon 1876 -- Greater Aura
 #weapon "Dragon Fire"
 #weapon "Breath of Change"
 #weapon "Bite"
@@ -4507,6 +4544,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magicskill 4 2
 #magicskill 0 2
 #coldres 5
+#weapon 1869 -- Aura
 #weapon "Chaos Fire"
 #weapon "Melekh's Halberd"
 #armor "Full Helmet"
@@ -4515,8 +4553,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #itemslots 13446
 #startitem 967
 #float
-#snow
-#swimming
 #gcost 0
 #rcost 1
 #startage 300
@@ -4561,6 +4597,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magicskill 1 2
 #gcost 0
 #rcost 1
+#weapon 1869 -- Aura
 #weapon "Magic Staff"
 #armor 803
 #goodleader
@@ -4613,17 +4650,15 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 384 100
 #coldres 5
 #trample
+#weapon 1869 -- Aura
 #weapon 1851 -- Daemonic Scythetalons
 #weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
 #itemslots 13446
-#startitem 967
 #invulnerable 10
 #float
-#snow
-#swimming
 #gcost 0
 #rcost 1
 #startage 240
@@ -4664,8 +4699,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 16
 #gcost 0
 #rcost 1
+#snow
 #magicskill 4 2
 #magicskill 0 1
+#weapon 1869 -- Aura
 #weapon "Windblade"
 #armor "Full Helmet"
 #armor 801
@@ -4696,7 +4733,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/chaos_spawn_2TZ.tga"
 #name "Spawn of Tzeentch"
 #nametype 257
-#descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#descr "A mortal who is visited by too many of Tzeentch's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 16
 #mapmove 16
 #hp 50
@@ -4713,10 +4750,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rcost 1
 #berserk 3
 #coldres 3
-#invulnerable 20
+#invulnerable 10
 #ambidextrous 5
 #itemslots 28672
-#weapon 331 -- Gore
+#weapon 1869 -- Aura
 #weapon "Claws"
 #weapon "Bile"
 #weapon 30 -- Venomous Bite
@@ -4734,6 +4771,14 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #forestsurvival
 #mountainsurvival
 #holy
+#montag 7777
+#end
+
+#newmonster 4799 -- Spawn #2
+#descr "A mortal who is visited by too many of Tzeentch's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#copystats 4805
+#copyspr 4805
+#montag 7777
 #end
 
 ----------- Daemon Summonables ------------
@@ -4761,6 +4806,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #magicpower 1
+#weapon 1869 -- Aura
 #weapon "Drake Fire"
 #weapon "Chaos Fire"
 #heat 5
@@ -4784,8 +4830,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #ap 25
 #mapmove 24
 #float
-#snow
-#swimming
 #hp 15
 #prot 6
 #size 3
@@ -4800,6 +4844,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #magicpower 1
+#weapon 1869 -- Aura
 #weapon "Drake Fire"
 #weapon "Chaos Fire"
 #weapon "Chaos Fire"
@@ -4822,7 +4867,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Pink Horror"
 #nametype 257
 #descr "Pink Horrors are, in general, identifiable by their luminescent pink skin and their high-pitches squeals of laughter. They whirl about on the battlefield in a frantic and barely controlled ecstasy, all the while giggling insanely. Nothing makes a Pink Horror happier than utilizing their eldritch powers, which cause death and destruction among their enemies."
-#montag 6666
 #ap 12
 #mapmove 18
 #hp 6
@@ -4879,7 +4923,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #weapon "Chaotic Fire"
 #startage 20
 #maxage 10000
-#poisonres 25
 #demon
 #invulnerable 15
 #neednoteat
@@ -4895,7 +4938,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Screamer of Tzeentch"
 #nametype 257
 #descr "From the ether of Chaos come the Screamers, glimmering sky-sharks that ride upon the Winds of Magic as a bird glides upon the breeze. Festooned with fangs, horns, and spurs, they dive. Trailing multi-coloured tendrils in the air, their slashing blades tear through the enemy before they soar skywards once more. Screamers have no real conscious thought, existing merely on instinct and mindlessly hunting along the Winds of Magic for mortal souls. When a Chaos army gathers, they are drawn down from the Realm of Chaos by the pulses of emotion, attracted to battlefields by the carnage and hatred generated. Here they gather in shoals, diving down upon the enemy and feasting on the escaping souls of the slain."
-#montag 6666
 #ap 12
 #mapmove 20
 #hp 10
@@ -4914,15 +4956,16 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #invulnerable 15
 #magicpower 1
 #undisciplined
+#weapon 1869 -- Aura
 #weapon 1851 -- Daemonic Scythetalons
 #startage 20
 #maxage 10000
-#poisonres 25
 #flying
 #stormimmune
 #demon
 #neednoteat
 #holy
+#montag 6666
 #end
 
 -- Chaos Fury
@@ -4933,7 +4976,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Chaos Fury"
 #nametype 257
 #descr "Furies are yowling and vicious Daemons with hooked claws and leathery, bat-like wings. A short mane of rough fur runs from the Fury's vestigial horns to the base of its spine. Furies are commonly black; however, as beings of unrefined chaotic power, they can appear in all manner of hues, depending on which of the Dark Gods is in ascendance."
-#montag 6666
 #ap 15
 #mapmove 20
 #hp 8
@@ -4953,12 +4995,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #weapon "Claws"
 #startage 20
 #maxage 10000
-#poisonres 25
 #flying
 #demon
 #neednoteat
 --#magicboost 8-7
 #holy
+#montag 6666
 #end
 
 -- Herald of Tzeentch
@@ -4989,6 +5031,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magicskill 4 1
 #custommagic 2176 50 -- SF
 #custommagic 2176 10 -- SF
+#weapon 1869 -- Aura
 #weapon "Magic Staff"
 #weapon "Chaotic Fire"
 #weapon "Flames of Tzeentch"
@@ -4998,12 +5041,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #expertundeadleader
 #batstartsum3 4810
 #batstartsum2 4811
-#poisonres 25
 #demon
 #invulnerable 15
 #float
-#snow
-#swimming
 #neednoteat
 #mounted
 --#magicboost 8-7
@@ -5045,9 +5085,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rcost 1
 #invulnerable 20
 #magicpower 1
-#weapon 732 -- Aura of Tzeentch
+#weapon 1876 -- Greater Aura of Tzeentch
 #weapon "Magic Staff"
---#weapon "Chaos Fire"
+#weapon "Chaos Fire"
 #weapon "Lightning of Tzeentch"
 #startage 400
 #maxage 10000
@@ -5060,7 +5100,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #inspirational 1
 #goodleader
 #expertundeadleader
-#poisonres 25
 #fear 5
 #flying
 #demon
@@ -5080,14 +5119,14 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #firstshape 4816
 #end
 
--- Daemon Prince (Summon)
+-- Daemon Prince #1: used for chosen lord transform event
 
 #newmonster 4827
 #spr1 "./Warhammer-Complete/summon_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon_daemon_prince_2.tga"
 #name "Daemon Prince"
 #nametype 140
-#descr "A Daemon Prince is a Champion of Tzeentch who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
+#descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
 #ap 20
 #mapmove 22
 #hp 70
@@ -5102,8 +5141,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #invulnerable 10
-#weapon 3
-#poisonres 25
+#weapon 1869 -- Aura
+#weapon 1866
 #coldres 5
 #armor 803
 #startage 1000
@@ -5123,19 +5162,29 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #demon
 #magicpower 1
 #neednoteat
-#montag 60006
+#montag 7777
 --#magicboost 8-7
 #holy
 #end
 
--- Daemon Prince #2
+-- Daemon Prince #2: Numbers 2 and 3 used for summon
+
+#newmonster 4836
+#copystats 4827
+#spr1 "./Warhammer-Complete/summon_daemon_prince_1.tga"
+#spr2 "./Warhammer-Complete/summon_daemon_prince_2.tga"
+#descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
+#montag 60006
+#end
+
+-- Daemon Prince #3
 
 #newmonster 4828
 #copystats 4827
 #spr1 "./Warhammer-Complete/summon2_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon2_daemon_prince_2.tga"
-#descr "A Daemon Prince is a Champion of Tzeentch who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power.  For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
-#weapon 725
+#descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power.  For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
+#weapon 1870
 #montag 60006
 #end
 
@@ -5156,6 +5205,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #inanimate
 #neednoteat
 #weapon 0
+#weapon 1869 -- Aura
 #noleader
 #unteleportable
 #nohof
@@ -5172,7 +5222,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 25
 #gcost 0
 #magicskill 4 1
-#poisonres 50
 #magicboost 53 -7
 #firstshape 4797
 #popkill 5
@@ -5230,6 +5279,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #enc 0
 #str 0
 #weapon 0
+#weapon 1869 -- Aura
 #noleader
 #gcost 0
 #startitem 971
@@ -5274,10 +5324,11 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #magicskill 4 1
 #magicskill 0 1
 #magicskill 1 1
-#gcost 10000
+#gcost 9990
 #pathcost 10
 #startdom 1
 #rcost 1
+#weapon 1869 -- Aura
 #weapon "Magic Staff"
 #armor 803
 #itemslots 13446
@@ -5286,8 +5337,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #maxage 10000
 #mounted
 #float
-#snow
-#swimming
 #researchbonus 15
 #tmpastralgems 2
 #inspiringres 1
@@ -5303,7 +5352,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Tzeentch, however, it would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
 #ap 22
 #mapmove 22
-#hp 75
+#hp 85
 #size 4
 #str 19
 #enc 1
@@ -5317,8 +5366,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #pathcost 50
 #startdom 3
 #coldres 5
-#poisonres 25
 #invulnerable 10
+#weapon 1876 -- Greater Aura
 #weapon 1855
 #armor 803
 #startage 4000
@@ -5549,7 +5598,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 
 #newspell
 #name "Daemon Ascendant"
-#descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome, which can as easily be wrested from one's hands and be cast into spawndom. With this incantation, the caster brings forth a mighty follower of Tzeentch, a Daemon Prince, who is ready to fight for His cause where ever it may be."
+#descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Tzeentch, a Daemon Prince, who is ready to fight for His cause where ever it may be."
 #restricted 120
 #school 0
 #researchlevel 9
@@ -5748,7 +5797,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Staff of Change"
 #descr "Raw chaos flows about this weapon, running up and down the stave as tongues of crackling rainbow fire. To be struck by this staff is therefore to feel the touch of change itself, rendered into a mewling and mutating mass by the unstoppable energies of Tzeentch. It can only be wielded by Daemons."
 #type 2
-#weapon 739
+#weapon 1881
 #mr 2
 #onlydemon
 #deathfire 5
@@ -5866,55 +5915,42 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 -------- EVENTS ----------
 
 #newevent
-#rarity 2
-#req_era 1
-#req_turn 6
-#req_nation 120
+#rarity 0
+#req_rare 20 -- Will happen 20% of the time when reqs are met
+#req_nation 120 -- Tzeentch
 #req_notnation 120
-#req_capital 0
-#req_maxdef 15
-#req_minunrest 50
+#nation 120 -- Tzeentch controls the troops
+#req_monster 4340 -- Tzeentch cultist
+--#req_capital 0
+#req_maxdef 20
+#req_minunrest 40
 #req_land 1
-#req_maxdominion 0
 #req_chaos 1
-#req_maxtroops 50
-#req_indepok 0
-#msg "A dark cult honoring the Changer of Ways has sprung up in the province!"
+#req_maxtroops 100
+#req_indepok 1 -- Can but not must happen to indies
+#msg "A dark cult honoring the Changer of Ways has sprung up in the province! They have summoned his daemons to their aid, and some particularly brave followers have given themselves completely to Tzeentch!"
 #unrest 30
-#incdom 7
-#com 4340
-#2com 4802
-#3d6units 31
-#1d6units 4810
-#2d6units 4340
+#newdom 3
+#incscale2 0
+#1d6units 4810 -- Pink horror
+#1d3units 4805 -- Spawn
+#1d6units 4811 -- Blue horror
+#1d6units 4340 -- Cultist
+#1d6units 4342 -- Sorcerer
+#com 4340 -- Cultist
 #end
 
 #newevent
 #nation 120
-#rarity 2
-#req_rare 15
+#rarity 0
+#req_rare 5 -- Will occur 5% of the time
+#req_land 1
 #req_fornation 120
-#req_turn 6
-#req_era 1
 #req_pop0ok
-#req_targmnr 4803
+#req_targmnr 4803 -- Chosen Chaos Lord
 #killcom 4803
-#com 4805
-#msg "After years of service to the Changer of Ways, a Chosen Lord of Tzeentch has mutated into a Spawn of Tzeentch!"
-#end
-
-#newevent
-#nation 120
-#rarity 2
-#req_rare 15
-#req_fornation 120
-#req_turn 6
-#req_era 1
-#req_pop0ok
-#req_targmnr 4803
-#killcom 4803
-#com -60006
-#msg "After years of service to the Changer of Ways, a Chosen Lord of Tzeentch has ascended into Daemonhood! Praise be!"
+#com -7777 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Tzeentch, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 #end
 
 
@@ -5960,6 +5996,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #flag "./Warhammer-Complete/flagTZ.tga"
 
 ---- GODS
+#homerealm 1
 #addgod 4818 -- adds Sorcerer Lord of Tzeentch as a Pretender
 #cheapgod20 4818
 #addgod 4823 -- adds Daemon Prince of Tzeentch as a Pretender
@@ -6025,7 +6062,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #forestcom 4830 -- Wargor
 #forestcom 4824 -- Tzaanbull
 #addreccom 4341 -- Marauder Chieftain
-#addreccom 4345 -- Champion of Tzeentch
+#addreccom 4345 -- Champion
 #addreccom 4346 -- Exalted Hero of Tzeentch
 #forestcom 4833 -- Bray-Shaman
 --addreccom 4347 -- Lord of Tzeentch, cap only
@@ -6036,7 +6073,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 --addreccom 4349 -- Baudros the Chaos Dragon, Egrimm's secondtmpshape
 --addreccom 4350 -- Galrauch the First of the Chaos Dragons
 --addreccom 4803 -- Chosen Lord on Chariot of Tzeentch
---addreccom 4804 -- Aekold Helbrass the Champion of Tzeentch
+--addreccom 4804 -- Aekold Helbrass the Champion
 --addreccom 4805 -- Spawn of Chaos
 --addreccom 4801 -- Cyspeth the Champion
 --addreccom 4800 -- Melekh the Changer
@@ -6051,7 +6088,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 
 ----- HEROES
 
-#hero1 4804 -- Aekold Helbrass the Champion of Tzeentch
+#hero1 4804 -- Aekold Helbrass the Champion
 #hero2 4350 -- Galrauch the First of the Chaos Dragons
 #hero3 4348 -- Egrimm van Horstmann
 #hero4 4800 -- Melekh the Changer
@@ -6100,7 +6137,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startcom 4341
 #startscout 4340
 #startunittype1 4331
-#startunitnbrs1 20
+#startunitnbrs1 15
 #startunittype2 4332
 #startunitnbrs2 10
 #end
@@ -6117,9 +6154,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -- Version 0.92 -- Removed Nurgle Plate Armor for simplicity's sake (and apparently Warriors, in tabletop, always have Chaos Armor). Pestigor's chaosrec is now 3, as with the others. blunt and #slash to the flail/sword. #blunt to Chaos steed hoof. Sombre noticed that Nurgle Standard Bearers were lacking a shield. Increased and decreased #mr, #ap, #def etc. according to how they are in Slaanesh Warhost where applicable. Altered the Warhost's flag. Changed Lord of Nurgle's magic to be either 2D or 2N and gave the Lord a shield (which is situated on the mount, because I wanted the Lord to show better on the sprite... I don't know why I've been debating myself over giving the Lord a shield). Returned #heal to Warriors and Standard Bearers (still waiting for #diseaseres). Added Bile Troll, a new unit (thanks Sombre!). More changes to #chaosrecs here and there.
 
 -- Version 0.91 -- Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Lord of Nurgle's AP to 20. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; lowered #researchbonus to make the price hike less steep). Massive reworking of Daemon command structure. Daemon Prince's #coldres upped to 5. Apparently Tzaangor (and Slaangor) *now* has #stealthy, so Pestigor got his #stealthy back. To combat ridiculous morale bonuses, started using #command where applicable and dropped #inspirational here and there. Made everything below Chosen have #coldres 3, as with the other Warhosts. Slightly adjusted Nurgle Plate Armor's #rcost downwards and adjusted Warriors' #chaosrec to be 1. Removed recup and regen from Warriors and the Standard Bearer (Plague Knight only lost regen) since other nations' Warriors
--- don't have their specialties, also lowered poisonres. Had forgotten to add #poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking #armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
+-- don't have their specialties, also lowered poisonres. Had forgotten to add poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking #armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
 
--- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and #poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed #acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (#restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
+-- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed #acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (#restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
 -- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to #summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
 -- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed #undead from all mortal followers of Nurgle and gave them #regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
 
@@ -6137,7 +6174,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 
 -- Version 0.5 - Initial release of the mod! Utilizes a lot of edited Tzeentch warhost assets (which is not to say that there wouldn't be any new ones) as well as the Dom3 Chaos Undivided's .dm as base.
 
--- Weapon IDs: 1750-71
+-- Weapon IDs: 1748-71
 -- Armor IDs: 685
 -- Unit IDs: 5000 - 5049
 -- Nation ID: 136
@@ -6148,6 +6185,18 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 
 -------- WEAPONS --------
 
+#newweapon 1748
+#name "Aura of Nurgle"
+#copystats 286 -- Touch of Leprosy
+#aoe 1
+#mrnegates
+#end
+
+#newweapon 1749
+#name "Greater Aura of Nurgle"
+#copystats 1748
+#aoe 8
+#end
 
 #newweapon 1750
 #name "Plaguesword"
@@ -6185,21 +6234,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #magic
 #bonus
 #secondaryeffect 50
-#natural
-#end
-
-#newweapon 1752
-#name "One-handed Flail"
-#dmg 2
-#att 0
-#def -2
-#len 1
-#rcost 3
-#blunt
-#flail
-#nratt 2
-#sound 11
-#ironweapon
 #end
 
 #newweapon 1753
@@ -6217,8 +6251,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #end
 
 #newweapon 1755
-#name "Daemon-forged Two-Handed Sword"
-#dmg 10
+#name "Daemon-forged Longsword"
+#dmg 9
 #magic
 #nratt 2
 #att 2
@@ -6226,23 +6260,23 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #len 2
 #twohanded
 #sound 8
-#rcost 4
-#blunt
+#rcost 6
 #slash
 #end
 
 #newweapon 1757
-#name "Daemon-forged Scythe"
+#name "Plague Scythe"
 #armorpiercing
 #dmg 8
 #att 2
 #def 2
-#len 3
+#len 2
+#nratt 2
 #magic
 #twohanded
 #sound 8
 #slash
-#rcost 4
+#rcost 8
 #secondaryeffectalways 431
 #end
 
@@ -6305,16 +6339,16 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #end
 
 #newweapon 1762
-#name "Daemon-forged Cleaver"
+#name "Chaos Cleaver"
 #dmg 9
 #slash
 #att 0
 #def 1
 #len 1
-#magic
 #sound 10
 #rcost 3
-#armorpiercing
+#nratt 2
+#ironweapon
 #end
 
 #newweapon 1764
@@ -6446,6 +6480,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #ap 18
 #gcost 7
 #rcost 1
+#snow
 #rpcost 3
 #noitem
 #weapon 1764
@@ -6524,6 +6559,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rcost 5
 #rpcost 18
 #heal
+--#weapon 1748 -- Aura
 #weapon 347
 #weapon 331
 #armor 2
@@ -6567,7 +6603,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #rpcost 12
 #startage 28
 #maxage 200
-#weapon 1752
+#weapon 1859
 #armor "Chain Mail Cuirass"
 #armor "Shield"
 #forestsurvival
@@ -6748,6 +6784,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #chaosrec 1
 #coldres 3
 #rcost 1
+#snow
 #rpcost 6
 #weapon "Club"
 #armor "Iron Cap"
@@ -6781,9 +6818,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 11
 #chaosrec 1
 #rcost 1
+#snow
 #rpcost 6
 #coldres 3
-#weapon 1752
+#weapon 15 -- Morningstar
 #armor "Iron Cap"
 #armor "Leather Hauberk"
 #armor "Shield"
@@ -6835,9 +6873,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 25
 #chaosrec 2
 #rcost 1
+#snow
 #rpcost 18
 #itemslots 13446
-#weapon 1752
+#weapon 15 -- Morningstar
 #weapon 56
 #armor "Iron Cap"
 #armor "Leather Hauberk"
@@ -6855,7 +6894,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5004
 #spr1 "./Warhammer-Complete/Warrior_of_Nurgle_flail_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Nurgle_flail_2.tga"
-#name "Warrior of Nurgle"
+#name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
 #ap 10
@@ -6873,8 +6912,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 30
 #chaosrec 2
 #rcost 1
+#snow
 #rpcost 18
-#weapon 1752
+#weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -6893,7 +6933,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5005
 #spr1 "./Warhammer-Complete/Warrior_of_Nurgle_axe_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Nurgle_axe_2.tga"
-#name "Warrior of Nurgle"
+#name "Chaos Warrior"
 #nametype 115
 #descr "Chaos Warriors are fighters of unmatched prowess. Their strength is infernal and their bodies as tough as the Iron Mountains. Imbued with the power of Chaos and encased in suits of hell-forged armor, a Chaos Warrior is equal to several battle-hardened mortal men. They are no longer truly human, but living weapons, honed perfectly for the bloody task before them."
 #ap 10
@@ -6911,8 +6951,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 30
 #chaosrec 2
 #rcost 1
+#snow
 #rpcost 18
-#weapon 1307 -- Chaos Axe
+#weapon 1865 -- Chaos Axe
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -6947,7 +6988,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 13
 #itemslots 13446
 #weapon "Lance"
-#weapon 1752
+#weapon 1859 -- Chaos Flail
 #weapon 56
 #armor "Full Helmet"
 #armor 801
@@ -6990,6 +7031,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 40
 #chaosrec 2
 #rcost 1
+#snow
 #rpcost 18
 #weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
@@ -7028,6 +7070,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 65
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 36
 #weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
@@ -7069,8 +7112,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 65
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 36
-#weapon 1307 -- Chaos Axe
+#weapon 1865 -- Chaos Axe
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -7109,8 +7153,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mapmove 16
 #ap 12
 #holy
-#gcost 10015
+#gcost 10000
 #rcost 1
+#snow
 #rpcost 1
 #chaosrec 3
 #coldres 3
@@ -7120,6 +7165,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #noleader
 #wastesurvival
 #mountainsurvival
+#spy
 #stealthy 0
 #startage 30
 #maxage 150
@@ -7173,7 +7219,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 1751
 #armor 801
 #itemslots 15494
-#startitem 968
 #startage 50
 #maxage 5000
 #forestsurvival
@@ -7336,6 +7381,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 10015
 #chaosrec 3
 #rcost 1
+#snow
 #rpcost 1
 #okleader
 #undcommand 5
@@ -7400,7 +7446,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5011
 #spr1 "./Warhammer-Complete/nurgle_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/nurgle_sorcerer_2.tga"
-#name "Sorcerer"
+#name "Chaos Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. While the Sorcerers marked by Nurgle are not necessarily as great magic users as those marked by Tzeentch, it does not mean, by any means, that they are defenseless or weak. Their strengths lie elsewhere; in the realms of despair and decay."
 #ap 12
@@ -7420,6 +7466,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #custommagic 28672 10
 #gcost 10000
 #rcost 1
+#snow
 #rpcost 2
 #weapon "Fist"
 #armor "Robes"
@@ -7435,7 +7482,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5012
 #spr1 "./Warhammer-Complete/exalted_sorcerer_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/exalted_sorcerer_nurgle_2.tga"
-#name "Exalted Sorcerer"
+#name "Exalted Chaos Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Great Lord of Decay, yet they always seek for more in their never ending quest for power."
 #ap 12
@@ -7458,6 +7505,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #custommagic 28672 10
 #gcost 10000
 #rcost 1
+#snow
 #rpcost 2
 #weapon "Fist"
 #armor "Robes"
@@ -7473,7 +7521,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5013
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_nurgle_2.tga"
-#name "Sorcerer Lord"
+#name "Chaos Sorcerer Lord"
 #nametype 115
 #descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the ways of Nurgle, of His many diseases and the like, have grown exponentially, but still, the Lord is never satisfied. No matter what glimpses of the darkness beyond he has seen, it has only served to whet his appetite. Indeed, he may have received great many gifts from Grandfather Nurgle, but it is still never going to quench his thirst for more. Thus is the way of Chaos."
 #ap 12
@@ -7497,6 +7545,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 380
 #slowrec
 #rcost 1
+#snow
 #rpcost 4
 #weapon "Magic Staff"
 #armor "Robes"
@@ -7512,7 +7561,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5014
 #spr1 "./Warhammer-Complete/Champion_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Champion_of_Nurgle_2.tga"
-#name "Champion"
+#name "Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers. Their presence on the battlefield can turn the tide of a closely fought combat. Nurgle's Champions, ravaged by disease, are themselves protected from such plagues, for they have become inured to the pain and discomfort. While their bodies may corrupt, the spirit of Nurgle sustains them when lesser mortals would die."
 #ap 11
@@ -7527,32 +7576,29 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #prec 10
 #mr 13
 #mor 15
-#gcost 100
+#gcost 10030
 #chaosrec 5
 #rcost 1
+#snow
 #rpcost 2
 #holy
 #deathdisease 3
-#custommagic 12288 100
 #heal
 #poisonres 25
 #coldres 5
 #okleader
-#researchbonus -6
 #undcommand 5
 #weapon 1762
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
 #itemslots 15494
-#startitem 968
 #startage 54
 #maxage 1500
 #wastesurvival
 #mountainsurvival
 #xpshape 50
 #diseaseres 90
-#prophetshape 5015
 #end
 
 -- Exalted Champion of Nurgle
@@ -7560,7 +7606,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5015
 #spr1 "./Warhammer-Complete/Exalted_Champion_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Exalted_Champion_Nurgle_2.tga"
-#name "Exalted Champion"
+#name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them. They roam across the lands, seeking duels to the death with others of their kind."
 #ap 11
@@ -7575,9 +7621,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mr 15
 #prot 4
 #mor 15
-#gcost 180
+#gcost 10030
 #chaosrec 8
 #rcost 1
+#snow
 #rpcost 2
 #holy
 #researchbonus -8
@@ -7591,7 +7638,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 1755
 #armor 801
 #itemslots 15494
-#startitem 968
 #startage 75
 #maxage 2500
 #coldres 5
@@ -7600,7 +7646,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #diseaseres 100
 #xpshape 100
 #fear 5
-#prophetshape 5016
 #end
 
 -- Lord of Nurgle
@@ -7608,7 +7653,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #newmonster 5016
 #spr1 "./Warhammer-Complete/lord_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_nurgle_2.tga"
-#name "Lord of Nurgle"
+#name "Chaos Lord"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Lord of Nurgle rides upon a rotting Daemonic steed, a great scythe his weapon of choice. His powers are, indeed, beyond those of any regular Champion."
 #ap 20
@@ -7626,14 +7671,13 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 17
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
-#startitem 968
 #weapon 1757
 #weapon 56
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
 #mounted
-#gcost 285
+#gcost 10080
 #rcost 6
 #rpcost 2
 #chaosrec 12
@@ -7647,13 +7691,12 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 6
 #heal
 #poisonres 25
-#poisoncloud 10
+#diseasecloud 6
 #fear 5
 #coldres 5
 #wastesurvival
 #mountainsurvival
 #diseaseres 100
-#slowrec
 #prophetshape 5034
 #end
 
@@ -7667,7 +7710,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/spawn_of_nurgle_2.tga"
 #name "Spawn of Nurgle"
 #nametype 257
-#descr "A Champion who is visited by too many gifts of the Ruinous Powers eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the Champion becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#descr "A mortal who is visited by too many of Nurgle's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 15
 #mapmove 16
 #hp 60
@@ -7686,7 +7729,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #berserk 3
 #coldres 3
 #itemslots 28672
-#invulnerable 20
+#invulnerable 15
 #ambidextrous 5
 #weapon 331 -- Gore
 #weapon 1751 -- Poison Tentacle
@@ -7709,6 +7752,15 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #wastesurvival
 #swampsurvival
 #mountainsurvival
+#magicpower 1
+#montag 5555
+#end
+
+#newmonster 4799 -- Spawn #2
+#descr "A mortal who is visited by too many of Nurgle's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
+#copystats 5017
+#copyspr 5017
+#montag 5555
 #end
 
 -- Chosen Lord of Nurgle
@@ -7718,10 +7770,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_2.tga"
 #name "Chosen Lord of Nurgle"
 #nametype 115
-#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Lord of Nurgle stands upon a palanquin of Nurgle, a great scythe his weapon of choice. His powers are beyond even those of Lords of Nurgle."
-#ap 12
-#mapmove 14
-#hp 34
+#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Lord of Nurgle towers over his companions, gifted with strength and stature beyond the rest of Nurgle's followers, a great scythe his weapon of choice."
+#ap 13
+#mapmove 16
+#hp 40
 #size 3
 #ressize 2
 #str 17
@@ -7739,10 +7791,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Full Helmet"
 #armor 801
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
-#startitem 968
-#mounted
 #gcost 0
 #rcost 1
+#snow
 #holy
 #inspirational 1
 #startage 450
@@ -7755,12 +7806,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #poisonres 25
 #fear 5
 #onebattlespell "Blessing"
-#trample
 #coldres 5
 #wastesurvival
-#mountainsurvival
 #researchbonus -6
-#poisoncloud 10
+#diseasecloud 6
 #end
 
 -- Ku'gath the Plaguefather
@@ -7803,11 +7852,11 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 10
 #domsummon -69402
 #makemonsters3 -69402
-#poisonres 75
+#poisonres 25
 #fear 8
 #demon
 #neednoteat
-#invulnerable 25
+#invulnerable 20
 #magicpower 1
 #itemslots 13446
 #diseaseres 100
@@ -7842,6 +7891,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startitem 968
 #gcost 0
 #rcost 1
+#snow
 #holy
 #inspirational 1
 #startage 300
@@ -7944,9 +7994,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 6
 #demon
 #neednoteat
-#invulnerable 20
+#invulnerable 15
 #magicpower 1
-#poisonres 75
+#poisonres 25
 #onebattlespell "Divine Blessing"
 #batstartsum3 -69402
 #itemslots 13446
@@ -7979,14 +8029,14 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 1750
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #diseasecloud 2
 #deathdisease 1
 #demon
 #neednoteat
 #holy
 #magicpower 1
-#invulnerable 15
+#invulnerable 10
 #heal
 #end
 
@@ -8015,13 +8065,13 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 43
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #demon
 #neednoteat
 #holy
 #deathdisease 1
 #magicpower 1
-#invulnerable 15
+#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8052,13 +8102,13 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 127
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #demon
 #neednoteat
 #holy
 #magicpower 1
 #deathdisease 1
-#invulnerable 15
+#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8089,13 +8139,13 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 207
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #demon
 #neednoteat
 #holy
 #deathdisease 1
 #magicpower 1
-#invulnerable 15
+#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8108,7 +8158,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/Herald_of_Nurgle_2.tga"
 #name "Herald of Nurgle"
 #nametype 257
-#descr "A mortal who resists the ravages of Nurgle's Rot for a significant time endures an unusually long incubation period for the nascent Plaguebearer, resulting in a larger, tougher individual known as a Herald of Nurgle, who leads the lesser Plaguebearers to battle. Regardless of that however, they are a testament to the fact that even the hardiest of souls cannot indefinitely defy disease. The Herald spreads Nurgle's Rot on his own volition which kills a small amount of the populace, but also creates a Plaguebearer, per month."
+#descr "A mortal who resists the ravages of Nurgle's Rot for a significant time endures an unusually long incubation period for the nascent Plaguebearer, resulting in a larger, tougher individual known as a Herald of Nurgle, who leads the lesser Plaguebearers to battle. Regardless of that however, they are a testament to the fact that even the hardiest of souls cannot indefinitely defy disease. The Herald spreads Nurgle's Rot on his own volition which kills a small amount of the populace, but also summons one Plaguebearer per month."
 #ap 10
 #mapmove 14
 #hp 18
@@ -8130,8 +8180,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #magicskill 5 1
 #custommagic 12288 40
 #maxage 10000
-#poisonres 75
-#diseasecloud 3
+#poisonres 25
+#diseasecloud 4
 #deathdisease 2
 #batstartsum4 5018
 #summon1 5018
@@ -8140,7 +8190,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #neednoteat
 #holy
 #magicpower 1
-#invulnerable 20
+#invulnerable 15
 #heal
 #end
 
@@ -8154,7 +8204,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "While Beasts of Nurgle are as though perfect physical examples of Nurgle's damning influence, horrifying creatures which can kill small animals and plants with their mere proximity, they behave in the same over-friendly and easily excitable manner as puppies. Indeed, they crave attention, greeting newcomers by slobbering all over them with their slimy tentacles. While this is not a problem for most of Nurgle's servants, it is, indeed, deadly for most mortals."
 #ap 12
 #mapmove 16
-#hp 30
+#hp 24
 #prot 14
 #size 2
 #str 7
@@ -8173,15 +8223,16 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 1751
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #demon
-#invulnerable 20
+#invulnerable 15
 #neednoteat
 #holy
 #magicpower 1
 #undisciplined
 #itemslots 12288
 #slimer 1
+#diseasecloud 3
 #heal
 #end
 
@@ -8208,11 +8259,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #noitem
-#weapon "Bite"
 #weapon "Claws"
 #startage 20
 #maxage 10000
-#poisonres 75
+#poisonres 25
 #flying
 #demon
 #neednoteat
@@ -8253,13 +8303,14 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 43
 #weapon 43
 #trample
-#poisonres 75
+#poisonres 25
 #startage 55
 #maxage 10000
 #deathdisease 5
+#diseasecloud 3
 #demon
 #neednoteat
-#invulnerable 20
+#invulnerable 15
 #secondshape 5047
 #itemslots 12288
 #holy
@@ -8297,13 +8348,14 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 43
 #weapon 43
 #trample
-#poisonres 75
+#poisonres 25
 #startage 55
 #maxage 10000
 #deathdisease 6
+#diseasecloud 2
 #demon
 #neednoteat
-#invulnerable 20
+#invulnerable 15
 #itemslots 12288
 #undisciplined
 #holy
@@ -8317,10 +8369,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/Great_Unclean_One_2.tga"
 #name "Great Unclean One"
 #nametype 257
-#descr "Wreathed in swarms of giggling Nurglings, the Great Unclean One shambles across the battlefield spreading disease and pestilence wherever it passes. To the mortal eye, the Great Unclean One is the foulest of servants of the Ruinous Powers, appearing as a malformed being of weeping pustules and exposed, diseased organs; few men have the stomach, let alone the ability, to oppose such a being."
+#descr "Wreathed in swarms of giggling Nurglings, the Great Unclean One shambles across the battlefield spreading disease and pestilence wherever it passes. To the mortal eye, the Great Unclean One is the foulest of servants of the Ruinous Powers, appearing as a malformed being of weeping pustules and exposed, diseased organs; few men have the stomach, let alone the ability, to oppose such a being. His Nurgling children will appear when Nurgle's dominion is strong."
 #ap 14
 #mapmove 16
-#hp 105
+#hp 115
 #prot 18
 #size 5
 #str 19
@@ -8346,14 +8398,14 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #expertundeadleader
 #diseasecloud 8
 #deathdisease 6
-#domsummon2 -69402
+#domsummon -69402
 #makemonsters2 -69402
 #fear 8
 #demon
 #neednoteat
-#invulnerable 25
+#invulnerable 20
 #magicpower 1
-#poisonres 75
+#poisonres 25
 #heal
 #end
 
@@ -8366,15 +8418,16 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
 #name "Daemon Prince of Nurgle"
 #nametype 257
-#descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Nurgle, however, it would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
+#descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Nurgle, it functions as a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
 #ap 22
 #mapmove 22
-#hp 85
+#hp 95
 #size 4
 #str 19
 #enc 1
 #att 17
 #def 15
+#prot 15
 #prec 13
 #mr 18
 #mor 30
@@ -8383,13 +8436,12 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #pathcost 50
 #startdom 3
 #coldres 5
-#poisonres 75
+#poisonres 25
 #invulnerable 10
 #weapon 347
-#armor 801
+#armor 803 -- Light chaos armor
 #armor "Full Helmet"
 #itemslots 15494
-#startitem 968
 #startage 4000
 #maxage 10000
 #magicskill 5 2
@@ -8442,7 +8494,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mounted
 #researchbonus 10
 #tmpdeathgems 2
-#inspiringres 1
 #itemslots 62592
 #diseaseres 100
 #end
@@ -8788,28 +8839,41 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -------- EVENTS --------
 
 #newevent
-#rarity 2
-#req_era 1
-#req_turn 6
-#req_nation 136
+#rarity 0
+#req_rare 20 -- SHOULD BE 20
+#req_nation 136 --- Nurgle
 #req_notnation 136
+#nation 136 -- Nurgle controls the troops
+#req_monster 5010 -- Cultist
 #req_capital 0
 #req_maxdef 25
 #req_minunrest 50
 #req_land 1
-#req_maxdominion 0
 #req_chaos 1
 #req_magic 1
-#req_maxtroops 100
-#req_indepok 0
+#req_maxtroops 150
+#req_indepok 1 -- Can happen to indies
 #msg "Nurgle's Carnival has taken place in the province, culminating in a Daemonic incursion!"
-#kill 20
+#kill 20 -- 20% of pop dies
 #unrest 40
-#incdom 7
-#com 5023
-#6d6units 5018
+#newdom 3
+#incscale2 0
+#com 5022 -- Herald
+#6d6units 5018 -- Plaguebearers
 #end
 
+--#newevent
+--#nation 136
+--#rarity 0
+--#req_rare 99 -- Will occur 5% of the time
+--#req_land 1
+--#req_fornation 136
+--#req_pop0ok
+--#req_targmnr 5034 -- Chosen Chaos Lord
+--#killcom 5034
+--#com -5555 -- 1 Daemon, 2 Spawns
+--#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
+--#end
 
 
 -------- SITES -----------
@@ -8853,6 +8917,7 @@ Priests: Weak. Can blood sacrifice."
 
 ---- GODS
 
+#homerealm 1
 #addgod 5025 -- Daemon Prince of Nurgle
 #cheapgod20 5025
 #addgod 5048 -- Sorcerer Lord of Nurgle
@@ -8897,11 +8962,13 @@ Priests: Weak. Can blood sacrifice."
 --addrecunit 3327 --
 #addrecunit 5006 -- Chaos Knight
 #forestrec 5035 -- Minotaur
---addrecunit 5008 -- Chosen of Nurgle #1, cap only
---addrecunit 5009 -- Chosen of Nurgle #2, cap only
---addrecunit 3335 --
---addrecunit 3336 --
---addrecunit 3364 --
+
+--REMOVE THIS
+#addrecunit 5018 -- Plaguebearer
+#addrecunit 5026 -- Beast
+#addrecunit 5046 -- Plague Drone
+#addrecunit 5047 -- Rot Fly
+#addrecunit 5036 -- Pestigor
 --addrecunit 3331
 --addrecunit 3337
 --addrecunit 3356
@@ -8939,10 +9006,10 @@ Priests: Weak. Can blood sacrifice."
 --addreccom 5032 -- Festus the Leechlord
 --addreccom 5031 -- Valnir the Reaper
 --addreccom 5030 -- Ku'Gath
---addreccom 5023 -- Herald of Nurgle
---addreccom 5024 -- Great Unclean One
+--REMOVE THIS
+#addreccom 5022 -- Herald
+#addreccom 5024 -- Great Unclean One
 --addreccom 5017 -- Spawn of Nurgle
---addreccom 5034 --  Chosen Lord
 --addreccom 3367
 --addreccom 3368
 --addreccom 3369
@@ -9001,7 +9068,7 @@ Priests: Weak. Can blood sacrifice."
 #startcom 5027
 #startscout 5010
 #startunittype1 5001
-#startunitnbrs1 20
+#startunitnbrs1 15
 #startunittype2 5002
 #startunitnbrs2 10
 #end
