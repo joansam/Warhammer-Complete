@@ -863,7 +863,7 @@
 #weapon 1853
 #end
 
--- BEGIN FOREIGNREC UNITS
+-- FOREIGNREC UNITS
 
 -- Minotaur of Slaanesh
 
@@ -1079,12 +1079,9 @@
 #maxage 4000
 #end
 
-
-
 ------- COMMANDERS
 
-
--- Cultist of Slaanesh
+-- Slaanesh Cultist
 
 #newmonster 4160
 #spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
@@ -1122,18 +1119,6 @@
 #stealthy 0
 #armor "Robes"
 #end
-
--- Foreignrec Cultist
-
---#newmonster 4195
---#copyspr 6510
---#copystats 6510
---#descr "Slaanesh is worshipped by His cultists through the most perverse and decadent self-indulgence, oft in the form of great orgies involving every vice conceivable. Indeed, while the cults of Slaanesh are not nearly as insidious or secretive as those of Tzeentch, His popularity among mortals makes them spread like wild fire. And so, the cults of Slaanesh are many, and they flourish within the lands of Men."
---#slowrec
---#gcost 90
---#chaosrec 4
---#sailing 4 2
---#end
 
 -- Forsaken Champion
 
@@ -1330,7 +1315,6 @@
 #armor "Shield"
 #mounted
 #wastesurvival
-
 #pillagebonus 1
 #sailing 999 3
 #end
@@ -1564,7 +1548,6 @@
 #magicskill 8 1
 #weapon 1854
 #end
-
 
 -- Lord of Slaanesh
 
