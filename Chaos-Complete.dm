@@ -400,7 +400,7 @@
 
 #newweapon 1870
 #name "Daemonic Halberd"
-#dmg 10
+#dmg 8
 #att -1
 #def -1
 #nratt 3
@@ -415,7 +415,7 @@
 
 #newweapon 1856
 #name "Azazel's Daemonblade"
-#dmg 8
+#dmg 6
 #magic
 #slash
 #armorpiercing
@@ -443,11 +443,11 @@
 
 #newweapon 1858
 #name "Sliverslash"
-#dmg 10
+#dmg 6
 #magic
 #slash
-#att 0
-#def 0
+#att 2
+#def 1
 #len 2
 #sound 8
 #nratt 3
@@ -503,6 +503,7 @@
 #enc 1
 #def -1
 #rcost 20
+#magicarmor
 #end
 
 
@@ -955,7 +956,7 @@
 #att 11
 #def 9
 #prec 10
-#prot 9
+#prot 6
 #mapmove 18
 #ap 14
 #gcost 11
@@ -991,6 +992,7 @@
 #prec 10
 #mapmove 18
 #ap 14
+#prot 4
 #gcost 9
 #chaosrec 1
 #rcost 1
@@ -1003,7 +1005,6 @@
 #coldres 7
 #armor "Shield"
 #stealthy
-#armor 44
 #end
 
 -- Ungor Raider
@@ -1068,9 +1069,8 @@
 #weapon 85
 #weapon 600
 #armor "Leather Hauberk"
-#pillagebonus 1
 #wastesurvival
-#forestsurvival
+#snow
 #regeneration 5
 #neednoteat
 #undisciplined
@@ -1153,7 +1153,7 @@
 #itemslots 15494
 #startage 50
 #maxage 5000
-#forestsurvival
+#snow
 #wastesurvival
 #berserk 3
 #regeneration 5
@@ -1258,7 +1258,7 @@
 #att 12
 #def 12
 #prec 10
-#prot 5
+#prot 6
 #mr 12
 #mor 13
 #chaosrec 3
@@ -1316,7 +1316,7 @@
 #mounted
 #wastesurvival
 #pillagebonus 1
-#sailing 999 3
+#sailing 80 2
 #end
 
 -- Bray-Shaman
@@ -1380,12 +1380,14 @@
 #mor 13
 #researchbonus 2
 #rcost 1
+#coldres 3
 #snow
+#wastesurvival
 #rpcost 2
 #weapon "Fist"
 #armor "Robes"
 #noleader
-#coldres 5
+#startage 30
 #maxage 60
 #magicskill 4 1
 #magicskill 2 1
@@ -1424,8 +1426,10 @@
 #weapon 172
 #armor "Robes"
 #poorleader
+#startage 50
 #maxage 90
 #coldres 5
+#wastesurvival
 #chaosrec 12
 #end
 
@@ -1450,6 +1454,7 @@
 #mr 18
 #mor 14
 #coldres 5
+#wastesurvival
 #magicskill 7 3 -- Blood
 #magicskill 8 3 -- Priest
 #rcost 1
@@ -1635,7 +1640,6 @@
 #wastesurvival
 #coldres 10
 #researchbonus -12
-#heal
 #okundeadleader
 #magicskill 7 2
 #magicskill 8 3
@@ -1659,6 +1663,7 @@
 #att 16
 #def 15
 #prec 13
+#prot 12
 #mr 16
 #mor 18
 #gcost 0
@@ -1678,18 +1683,18 @@
 #goodleader
 #command 40
 #goodundeadleader
-#awe 3
+#awe 4
 #female
 #wastesurvival
+#snow
 #forestsurvival
 #fear 5
 #magicpower 1
 #magicskill 7 2
 #magicskill 8 2
-#prot 12
 #heal
 #coldres 10
-#latehero 18
+#latehero 15
 #end
 
 -- Sigvald the Magnificent
@@ -1707,7 +1712,7 @@
 #size 2
 #str 17
 #enc 1
-#att 16
+#att 14
 #def 13
 #prec 11
 #mr 18
@@ -1721,24 +1726,25 @@
 #armor "Shield"
 #startage 350
 #maxage 10000
-#magicskill 1 3
+#magicskill 1 3 -- Air
+#magicskill 8 3 -- Priest
+#magicskill 7 3 -- Blood
 #holy
 #inspirational 1
 #goodleader
 #goodundeadleader
 #float
-#awe 5
+#awe 7
 #regeneration 10
+#heal
 #wastesurvival
+#snow
 #batstartsum1d6 4193
 #prot 15
 #magicpower 1
 #demon
-#magicskill 8 3
-#magicskill 7 3
-#heal
 #coldres 15
-#latehero 18
+#latehero 21
 #end
 
 -- Styrkaar
@@ -1781,6 +1787,7 @@
 #expertleader
 #poorundeadleader
 #wastesurvival
+#snow
 #coldres 10
 #magicpower 1
 #magicskill 7 2
@@ -1806,6 +1813,7 @@
 #att 17
 #def 15
 #prec 12
+#prot 15
 #mr 16
 #mor 30
 #gcost 0
@@ -1822,14 +1830,14 @@
 #inspirational 1
 #expertleader
 #expertundeadleader
-#awe 4
+#awe 6
 #flying
 #magicpower 2
 #demon
 #seduce 20
 #neednoteat
 #coldres 15
-#prot 15
+#wastesurvival
 #heal
 #fear 5
 #magicskill 7 3
@@ -1923,6 +1931,7 @@
 #startage 20
 #maxage 10000
 #flying
+#wastesurvival
 #demon
 #holy
 #coldres 10
@@ -1933,7 +1942,7 @@
 #newmonster 4185
 #spr1 "./Warhammer-Complete/daemonette1.tga"
 #spr2 "./Warhammer-Complete/daemonette2.tga"
-#name "Daemonette of Slaanesh"
+#name "Daemonette"
 #nametype 257
 #descr "Gifted with disturbing beauty, Daemonettes are the Lesser Daemons of Slaanesh. What unearthly delights they might pleasure your soul with none can say, but upon the reeking field of battle, pain is what they bring. Vicious, spiteful, yet loving in the fatal affections they lavish upon those who dare refuse their chaotic charms, Daemonettes are swift and deadly to all who cross their path. On lithe legs they surge across the battlefield, dancing from foe to foe, gifting each in turn with gaping wounds from their scythe-like talons."
 #ap 16
@@ -1960,6 +1969,8 @@
 #female
 #weapon 1851
 #coldres 10
+#wastesurvival
+#snow
 #end
 
 -- Seeker of Slaanesh
@@ -1996,6 +2007,8 @@
 #female
 #weapon 1851
 #coldres 10
+#wastesurvival
+#snow
 #end
 
 
@@ -2031,6 +2044,8 @@
 #weapon 1851
 #weapon 1851
 #coldres 10
+#wastesurvival
+#snow
 #end
 
 -- Herald of Slaanesh
@@ -2040,7 +2055,7 @@
 #spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
 #name "Herald of Slaanesh"
 #nametype 257
-#descr "Heralds of Slaanesh do not only attend to Slaanesh's whimsical desires. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. They can also summon their sisters from the Void."
+#descr "Heralds of Slaanesh are Daemonettes which have gained his favor. Though not poweful sorcerers, they are his ears in enemy lands, and his voice, whispering insidious rumors and corrupting the desires of the local nobility. With their daemonic powers, they can summon more of their sisters from the Void."
 #ap 16
 #mapmove 18
 #hp 20
@@ -2075,9 +2090,9 @@
 #makemonsters1 4185
 #weapon 1854
 #weapon 1854
-#coldres 15
+#wastesurvival
+#snow
 #okundeadleader
-#batstartsum3 4185
 #end
 
 -- Exalted Daemon
@@ -2106,6 +2121,8 @@
 #pathcost 50
 #startdom 3
 #coldres 10
+#wastesurvival
+#snow
 #itemslots 15494
 #startage 4000
 #maxage 10000
@@ -2113,7 +2130,7 @@
 #inspirational 1
 #okleader
 #okundeadleader
-#awe 2
+#awe 3
 #demon
 #magicpower 1
 #magicskill 7 2
@@ -2150,6 +2167,7 @@
 #rcost 1
 #heal
 #coldres 15
+#wastesurvival
 #weapon 1863 -- Greater Aura of Slaan
 #itemslots 15494
 #startage 4000
@@ -2161,7 +2179,7 @@
 #custommagic 6144 200
 #expertleader
 #expertundeadleader
-#awe 5
+#awe 6
 #flying
 #demon
 #female
@@ -2204,10 +2222,12 @@
 #holy
 #goodleader
 #fear 10
-#awe 6
+#awe 5
 #demon
 #magicpower 2
 #coldres 20
+#wastesurvival
+#snow
 #itemslots 15494
 #spreaddom 1
 #magicskill 8 4
@@ -2258,9 +2278,11 @@
 #enc 1
 #demon
 #coldres 25
+#wastesurvival
+#snow
 #weapon "fist"
 #heal
-#awe 4
+#awe 5
 #mounted
 #float
 #end
@@ -2294,6 +2316,8 @@
 #demon
 #magicpower 2
 #coldres 25
+#wastesurvival
+#snow
 #heal
 #itemslots 15488
 #startage 40
@@ -2852,6 +2876,7 @@
 #homecom 4175 -- Sorcerer Lord
 #homemon 4158 -- Chosen of Slaanesh #1
 #homemon 4159 -- Chosen of Slaanesh #2
+--#spr 17 --Doesn't work
 #end
 
 -------- NATIONS ---------
@@ -2862,12 +2887,12 @@
 #epithet "Seduction of Corruption"
 #era 2
 #idealcold 2
-#brief "Barbarous Northmen, mutated by Slaanesh into fearsome superhuman warriors, and mighty summoned Daemons with magicpower."
-#descr "Slaanesh. The Prince of Excess. The Prince of Pleasure. It was His damning influence that lead to the creation of the Dark Elves, and their subsequent exile. His cults flourish within the lands of Men, even though His mortal followers are generally motivated by self-indulgence rather than furthering their own personal power; His principle of indulging in every whim and vice easily makes Him the most popular of the Dark Gods within the 'civilized' lands. His most feared followers are Daemons from the Void, possessing all manner of his Gifts and immune to many of the dangers of the mortal realm. Daemons depend on the winds of magic to manifest in this world, and their powers will vary accordingly."
-#summary "Race: Brutal Chaos Warriors, Beastmen and Daemons. Ocean Sailing. Prefer cold scale +2.
-Military: Powerful armored infantry and cavalry, limited ranged units, Daemons with magicpower and terrifying Daemonic lords.
-Magic: Primarily Water, with Air and Fire for human sorcerers and Blood, Death and Astral through Daemons. Some Death through Beastmen.
-Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
+#brief "Barbarous Northmen, mutated by Slaanesh into fearsome superhuman warriors, and mighty summoned Daemons with Magic Power."
+#descr "Slaanesh. The Chaos God of Pleasure, Passion, and Decadence. His cults flourish within the lands of Men; his principle of indulging in every vice easily makes him the most popular of the Dark Gods within the civilized lands. His warriors, loyal servants all, yearn to ascend to Daemonhood with his favor. His Daemons possess all manner of Gifts; mortals find themselves unable to harm such splendor, and often fall into a stupor before it. Daemons depend on the winds of magic to manifest physically in this world, and their power will vary accordingly."
+#summary "Race: Brutal Chaos Warriors, Beastmen and Daemons. Limited Ocean Sailing. Prefer cold scale +2.
+Military: Strong armored melee infantry, forest-recruitable Beastmen, summoned Daemons with Awe and fatigue-causing auras. Many units have multiple attacks.
+Magic: Primarily Water, with Air and Fire for human sorcerers and Blood, Death and Astral through Daemons. Some Nature and Death through Beastmen.
+Priests: Strong. Cultists start cults in foreign countries by causing unrest in lands with turmoil. Can blood sacrifice."
 #flag "./Warhammer-Complete/flagSL.tga"
 
 
@@ -2947,10 +2972,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 --addreccom 6532 -- Azazel, hero
 --addreccom 6533 -- Spawn of Slaanesh, multihero
 --addreccom 6534 -- Chosen Lord, multihero
---addreccom 6535 -- Herald of Slaanesh, summon
+--addreccom 4186 -- Herald of Slaanesh, summon
 --addreccom 6540 -- Keeper of Secrets, summon
-
------ HEROES
 
 #hero1 4179 -- Dechala the Denied One
 #hero2 4180 -- Sigvald the Magnificent
@@ -2968,7 +2991,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startsite "Chaos Vortex of Slaanesh"
 #startsite "Halls of Slaanesh"
 
-#templepic 13
+#templepic 11
 
 ----- FORTS
 
@@ -3287,7 +3310,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #att 11
 #def 9
 #prec 10
-#prot 4
+#prot 6
 #mapmove 18
 #ap 14
 #gcost 13
@@ -3322,6 +3345,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #att 10
 #def 11
 #prec 10
+#prot 4
 #mapmove 18
 #ap 14
 #gcost 11
@@ -3398,10 +3422,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #weapon 85
 #weapon 273
 #armor "Leather Hauberk"
-#pillagebonus 1
 #wastesurvival
-#forestsurvival
-#mountainsurvival
+#snow
 #regeneration 5
 #neednoteat
 #undisciplined
@@ -3443,7 +3465,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Shield"
 #pillagebonus 1
 #wastesurvival
-#mountainsurvival
 --#magicboost 8-7
 #rpcost 6
 #end
@@ -3478,7 +3499,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Shield"
 #pillagebonus 1
 #wastesurvival
-#mountainsurvival
 --#magicboost 8-7
 #rpcost 6
 #end
@@ -3538,7 +3558,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Shield"
 #mounted
 #wastesurvival
-#mountainsurvival
 #pillagebonus 1
 --#magicboost 8-7
 #rpcost 18
@@ -3573,7 +3592,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor 801
 #armor "Kite Shield"
 #wastesurvival
-#mountainsurvival
 #startage 26
 #maxage 900
 --#magicboost 8-7
@@ -3609,7 +3627,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor 801
 #armor "Kite Shield"
 #wastesurvival
-#mountainsurvival
 #startage 26
 #maxage 900
 --#magicboost 8-7
@@ -3649,7 +3666,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #rcost 6
 #ressize 2
 #wastesurvival
-#mountainsurvival
+#snow
 #startage 31
 #maxage 900
 --#magicboost 8-7
@@ -3685,7 +3702,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor 801
 #standard 1
 #wastesurvival
-#mountainsurvival
 #startage 28
 #maxage 900
 --#magicboost 8-7
@@ -3721,13 +3737,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor 801
 #armor "Kite Shield"
 #itemslots 14470
-#mountainsurvival
 #wastesurvival
 #startage 34
 #maxage 1200
 --#magicboost 8-7
 #holy
-#invulnerable 10
+#invulnerable 5
 #rpcost 36
 #end
 
@@ -3759,13 +3774,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Full Helmet"
 #armor 801
 #itemslots 14470
-#mountainsurvival
 #wastesurvival
 #startage 34
 #maxage 1200
 --#magicboost 8-7
 #holy
-#invulnerable 10
+#invulnerable 5
 #rpcost 36
 #end
 
@@ -3801,7 +3815,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Robes"
 #noleader
 #wastesurvival
-#mountainsurvival
 #stealthy 30
 #spy
 --#magicboost 8-7
@@ -3857,14 +3870,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #itemslots 15494
 #startage 50
 #maxage 5000
-#forestsurvival
-#mountainsurvival
+#snow
 #wastesurvival
 #berserk 3
 #regeneration 5
 #neednoteat
 #beastmaster 1
-#animalawe 1
 --#magicboost 8-7
 #rpcost 1
 #end
@@ -3923,7 +3934,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 15
 #gcost 90
 #prot 6
-#invulnerable 15
+#invulnerable 10
 #chaosrec 4
 #rcost 6
 #poorleader
@@ -3963,8 +3974,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #att 12
 #def 12
 #prec 10
-#prot 5
-#invulnerable 10
+#prot 6
 #mr 14
 #mor 13
 #gcost 60
@@ -4020,9 +4030,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor "Shield"
 #mounted
 #wastesurvival
-#mountainsurvival
 #pillagebonus 1
-#sailing 999 3
+#sailing 80 2
 --#magicboost 8-7
 #rpcost 1
 #end
@@ -4086,6 +4095,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 16
 #mor 13
 #coldres 3
+#wastesurvival
 #magicskill 4 1
 #magicskill 7 1
 #custommagic 2432 100 -- SFA
@@ -4122,6 +4132,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 18
 #mor 13
 #coldres 3
+#wastesurvival
 #magicskill 4 2
 #magicskill 0 1
 #magicskill 7 1
@@ -4149,6 +4160,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #name "Chaos Sorcerer Lord"
 #nametype 115
 #descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. And as a follower of Tzeentch, he is indeed powerful, well beyond his lesser kin, not to mention those who follow the other Dark Gods. But still, the quest for more is unending; no matter the cost to his sanity, his very being. The Changer of Ways may have gifted a Sorcerer Lord more than any other, it is still never going to quench his thirst for power. Thus is the way of Chaos."
+#gcost 9900 -- 425
+#rcost 1
+#rpcost 4
 #ap 10
 #mapmove 16
 #hp 20
@@ -4161,6 +4175,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 19
 #mor 14
 #coldres 3
+#wastesurvival
 #magicskill 4 3
 #magicskill 0 2
 #magicskill 1 1
@@ -4168,9 +4183,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #custommagic 3456 100 -- SFAE
 #custommagic 3456 10 -- SFAE
 #custommagic 16768 100 -- FAB
-#gcost 9900 -- 425
 #slowrec
-#rcost 1
 #snow
 #weapon "Magic Staff"
 #armor 803
@@ -4178,7 +4191,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startage 250
 #maxage 5000
 --#magicboost 8-7
-#rpcost 4
 #holy
 #end
 
@@ -4215,7 +4227,6 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #itemslots 15494
 #startage 50
 #maxage 1500
-#mountainsurvival
 #wastesurvival
 --#magicboost 8-7
 #rpcost 2
@@ -4266,8 +4277,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mounted
 #fear 5
 #researchbonus -10
-#mountainsurvival
 #wastesurvival
+#snow
 --#magicboost 8-7
 #invulnerable 10
 #holy
@@ -4296,7 +4307,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 12
 #mr 17
 #mor 17
-#magicskill 4 1
+#magicskill 4 1 -- Astral
 #custommagic 2176 100
 #custommagic 384 66
 #coldres 5
@@ -4318,10 +4329,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fear 5
 #inspirational 1
 #researchbonus -12
-#mountainsurvival
 #wastesurvival
+#snow
 --#magicboost 8-7
-#invulnerable 10
+#invulnerable 15
 #holy
 #rpcost 2
 #prophetshape 4803
@@ -4340,7 +4351,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #descr "Egrimm van Horstmann has had a long and varied life. Indeed, in the past, he became the Grand Master of the Order of Light, all the while following the Dark God Tzeentch. He corrupted it from within, unleashed the Chaos Dragon hidden underneath the Pyramid of Light and fled to the Chaos Wastes. Now, he commands the Cabal he formed with the former, corrupt acolytes of the Order of Light, which is the greatest of the cults of Tzeentch."
 #ap 18
 #mapmove 24
-#hp 60
+#hp 45
 #size 6
 #ressize 2
 #prot 0
@@ -4362,10 +4373,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #itemslots 12416 -- 1 head, 2 misc
 #startage 300
 #maxage 5000
-#magicskill 0 3
-#magicskill 4 4
-#magicskill 1 1
-#magicskill 7 2
+#magicskill 0 3 -- Fire
+#magicskill 4 4 -- Astral
+#magicskill 1 1 -- Air
+#magicskill 7 2 -- Blood
 #inspirational 1
 #goodleader
 #command 80
@@ -4373,11 +4384,13 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fear 6
 #flying
 #coldres 5
+#wastesurvival
+#snow
 #mounted
 #secondtmpshape 4349
 --#magicboost 8-7
 #holy
-#latehero 24
+#latehero 20
 #end
 
 -- Baudros the Chaos Dragon
@@ -4415,12 +4428,14 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fear 6
 #flying
 #coldres 5
+#wastesurvival
 #poisonres 5
 #demon
 #magicpower 1
 #neednoteat
 #magicboost 53 -7
 #holy
+#latehero 18
 #end
 
 -- Vilitch the Curseling
@@ -4442,10 +4457,10 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 10
 #mr 18
 #mor 17
-#magicskill 4 4
-#magicskill 0 2
-#magicskill 3 2
-#magicskill 1 1
+#magicskill 4 4 -- Astral
+#magicskill 0 2 -- Fire
+#magicskill 3 2 -- Earth
+#magicskill 1 1 -- Air
 #coldres 5
 #ambidextrous 3
 #weapon 1869 -- Aura
@@ -4460,8 +4475,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #maxage 10000
 #goodleader
 #poorundeadleader
-#mountainsurvival
 #wastesurvival
+#snow
 #onebattlespell 739 -- Power of the Spheres
 --#magicboost 8-7
 #holy
@@ -4508,6 +4523,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fear 6
 #flying
 #coldres 5
+#wastesurvival
 #poisonres 5
 #demon
 #magicpower 1
@@ -4515,6 +4531,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 --#magicboost 8-7
 #holy
 #latehero 18
+#invulnerable 10
 #end
 
 -- Melekh the Changer
@@ -4537,8 +4554,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 12
 #mr 17
 #mor 19
-#magicskill 4 2
-#magicskill 0 2
+#magicskill 4 2 -- Astral
+#magicskill 0 2 -- Fire
 #coldres 5
 #weapon 1869 -- Aura
 #weapon "Chaos Fire"
@@ -4559,13 +4576,14 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mounted
 #fear 5
 #inspirational 1
-#mountainsurvival
 #wastesurvival
+#snow
 #onebattlespell "Blessing"
 --#magicboost 8-7
 #holy
+#heal
 #invulnerable 10
-#latehero 6
+#latehero 9
 #end
 
 -- Cyspeth the Champion
@@ -4588,9 +4606,9 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 17
 #mor 18
 #coldres 5
-#magicskill 4 3
-#magicskill 0 2
-#magicskill 1 2
+#magicskill 4 3 -- Astral
+#magicskill 0 2 -- Fire
+#magicskill 1 2 -- Air
 #gcost 0
 #rcost 1
 #weapon 1869 -- Aura
@@ -4600,8 +4618,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #okundeadleader
 #startage 270
 #maxage 5000
-#mountainsurvival
 #wastesurvival
+#snow
 #onebattlespell "Blessing"
 #batstartsum2 4802
 --#magicboost 8-7
@@ -4642,7 +4660,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #prec 12
 #mr 17
 #mor 18
-#magicskill 4 2
+#magicskill 4 2 -- Astral
 #custommagic 384 100
 #coldres 5
 #trample
@@ -4653,7 +4671,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #armor 801
 #armor "Shield"
 #itemslots 13446
-#invulnerable 10
+#invulnerable 15
 #float
 #gcost 0
 #rcost 1
@@ -4664,14 +4682,13 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mounted
 #fear 6
 #inspirational 1
-#mountainsurvival
 #wastesurvival
+#snow
 #speciallook 1
 #onebattlespell "Blessing"
 --#magicboost 8-7
 #holy
 #researchbonus -12
-#latehero 9
 #end
 
 -- Aekold Helbrass, the Champion of Tzeentch
@@ -4711,7 +4728,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #poisonres 10
 #coldres 5
 #wastesurvival
-#mountainsurvival
+#snow
 #immortal
 #autohealer 4
 #regeneration 15
@@ -4764,8 +4781,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #neednoteat
 #magicboost 53 -7
 #wastesurvival
-#forestsurvival
-#mountainsurvival
+#snow
 #holy
 #montag 7777
 #end
@@ -4811,7 +4827,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #maxage 10000
 #demon
 #neednoteat
-#invulnerable 15
+#invulnerable 10
 #holy
 #end
 
@@ -4850,7 +4866,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #maxage 10000
 #demon
 #neednoteat
-#invulnerable 15
+#invulnerable 10
 --#magicboost 8-7
 #holy
 #end
@@ -4886,7 +4902,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #secondtmpshape 4811
 #secondtmpshape 4811
 #demon
-#invulnerable 15
+#invulnerable 10
 #neednoteat
 #holy
 #end
@@ -4920,7 +4936,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #startage 20
 #maxage 10000
 #demon
-#invulnerable 15
+#invulnerable 10
 #neednoteat
 --#magicboost 8-7
 #holy
@@ -4949,7 +4965,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #gcost 0
 #rcost 1
 #noitem
-#invulnerable 15
+#invulnerable 10
 #magicpower 1
 #undisciplined
 #weapon 1869 -- Aura
@@ -5136,11 +5152,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
-#invulnerable 10
+#invulnerable 15
 #weapon 1869 -- Aura
 #weapon 1866
-#coldres 5
 #armor 803
+#coldres 5
+#wastesurvival
 #startage 1000
 #maxage 10000
 #magicskill 0 1
@@ -5317,6 +5334,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #mr 20
 #mor 30
 #coldres 3
+#wastesurvival
 #magicskill 4 1
 #magicskill 0 1
 #magicskill 1 1
@@ -5362,7 +5380,8 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #pathcost 50
 #startdom 3
 #coldres 5
-#invulnerable 10
+#wastesurvival
+#invulnerable 15
 #weapon 1876 -- Greater Aura
 #weapon 1855
 #armor 803
@@ -5553,7 +5572,7 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #fatiguecost 1500
 #effect 10001
 #damage 4812
-#nreff 9
+#nreff 8
 #end
 
 -- Herald
@@ -5983,12 +6002,12 @@ Priests: Strong, including sorcerer and Daemonic priests. Can blood sacrifice."
 #era 2
 #idealcold 2
 #likesterr 64
-#brief "The ambitious mortal followers and the ever changing Daemonic servants of the Changer of Ways have come together to drench the world of Men in blood; theirs, or their enemies. Whichever is the end result, it will most certainly advance the unknowable schemes of their dark patron."
-#descr "Tzeentch, the Great Sorcerer, the Great Conspirator, the Changer of Ways. The greatest of Chaos Sorcerers bear His Mark, for magic is His plaything. His cults are the most widespread among the lands of Men, and they are the most difficult to weed out of all the Chaos cults. Even so, it is not unknown for great Warhosts of Northmen made in His name to gather and to march upon the southern lands of Men, for His grand schemes may sometimes call upon such horrific shows of power. Whether whatever fevered visions the Dark God has granted their godlike leader leads Chaos to its ultimate victory against Civilization or not, it matters not in the grand scheme of things, for Tzeentch's grandiose plans will be advanced regardless of the outcome. Such is His way."
-#summary "Race: Tzeentch worshipping humans, Beastmen and Daemons, Ocean Sailing. Prefer cold scale +2.
-Military: Powerful infantry and cavalry, weak ranged outside Daemons, powerful magic and summons.
+#brief "Barbarous Northmen, mutated by Tzeentch into fearsome superhuman warriors, and mighty summoned Daemons with Magic Power."
+#descr "Tzeentch, the Changer of Ways. The greatest of Chaos Sorcerers bear his Mark, for magic is his plaything. His cults are the most tenacious and secretive of all the Chaos Gods’. But when raw force is required, great Warhosts of Northmen made in His name gather and march upon the southern lands of Men, aided by his unnatural Daemons, their forms changing and twisting into new shapes as the nature of reality shifts around them, sometimes warping mortals who come too close. The winds of magic strengthen or weaken their physical bodies."
+#summary "Race: Brutal Chaos Warriors, Beastmen and Daemons. Limited Ocean Sailing. Prefer cold scale +2.
+Military: Strong armored melee infantry, forest-recruitable Beastmen, summoned Daemons with magical auras and Invulnerability. Many units have multiple attacks.
 Magic: Astral, Fire, Air, Blood. Some Death and Nature through Beastmen.
-Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
+Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cults in foreign countries by causing unrest in lands with turmoil. Can blood sacrifice."
 #flag "./Warhammer-Complete/flagTZ.tga"
 
 ---- GODS
@@ -6082,8 +6101,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 --addreccom 4827 -- Daemon Prince (summon)
 --addreccom 4828 -- Daemon Prince #2 (summon)
 
------ HEROES
-
 #hero1 4804 -- Aekold Helbrass the Champion
 #hero2 4350 -- Galrauch the First of the Chaos Dragons
 #hero3 4348 -- Egrimm van Horstmann
@@ -6101,7 +6118,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startsite "Chaos Vortex of Tzeentch"
 #startsite "Halls of Tzeentch"
 
-#templepic 13
+#templepic 11
 
 ----- FORTS
 #fortera 2
@@ -6182,29 +6199,18 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 -------- WEAPONS --------
 
 #newweapon 1748
+#copyweapon 143 -- Disease
 #name "Aura of Nurgle"
-#aoe 1
-#att 0
-#dt_aff
-#dmg 1
-#len 0
 #mrnegateseasily
-#magic
+#aoe 1
 #unrepel
 #bonus
 #end
 
 #newweapon 1749
+#copyweapon 1748
 #name "Greater Aura of Nurgle"
 #aoe 8
-#att 0
-#dt_aff
-#dmg 1
-#len 0
-#mrnegateseasily
-#magic
-#unrepel
-#bonus
 #end
 
 #newweapon 1750
@@ -6231,6 +6237,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #secondaryeffect 1769
 #sound 8
 #rcost 5
+#nratt 3
 #end
 
 #newweapon 1751
@@ -6500,7 +6507,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #undisciplined
 #wastesurvival
 #forestsurvival
-#mountainsurvival
 #diseaseres 80
 #end
 
@@ -6539,6 +6545,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 250
 #swampsurvival
 #wastesurvival
+#snow
 #diseaseres 100
 #end
 
@@ -6642,7 +6649,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #att 11
 #def 9
 #prec 10
-#prot 4
+#prot 6
 #mapmove 16
 #ap 12
 #gcost 13
@@ -6677,6 +6684,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #att 10
 #def 11
 #prec 10
+#prot 4
 #mapmove 16
 #ap 12
 #gcost 11
@@ -6754,10 +6762,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #weapon 85
 #weapon 1751
 #armor "Leather Hauberk"
-#pillagebonus 1
 #wastesurvival
-#forestsurvival
-#mountainsurvival
+#snow
 #regeneration 5
 #neednoteat
 #undisciplined
@@ -6800,7 +6806,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Shield"
 #pillagebonus 1
 #wastesurvival
-#mountainsurvival
 #diseaseres 60
 #end
 
@@ -6834,7 +6839,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Leather Hauberk"
 #armor "Shield"
 #wastesurvival
-#mountainsurvival
 #pillagebonus 1
 #diseaseres 60
 #end
@@ -6891,7 +6895,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Shield"
 #mounted
 #wastesurvival
-#mountainsurvival
 #pillagebonus 1
 #coldres 3
 #diseaseres 60
@@ -6928,7 +6931,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
-#mountainsurvival
 #coldres 3
 #startage 28
 #maxage 900
@@ -6967,7 +6969,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
-#mountainsurvival
 #coldres 3
 #startage 26
 #maxage 900
@@ -7011,7 +7012,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #diseaseres 90
 #poisonres 15
 #wastesurvival
-#mountainsurvival
+#snow
 #startage 31
 #maxage 900
 #end
@@ -7049,7 +7050,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #poisonres 15
 #coldres 3
 #wastesurvival
-#mountainsurvival
 #startage 28
 #maxage 900
 #diseaseres 80
@@ -7090,7 +7090,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 1
 #heal
 #wastesurvival
-#mountainsurvival
 #coldres 5
 #startage 34
 #maxage 1200
@@ -7132,7 +7131,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 1
 #heal
 #wastesurvival
-#mountainsurvival
 #coldres 5
 #startage 34
 #maxage 1200
@@ -7172,7 +7170,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Robes"
 #noleader
 #wastesurvival
-#mountainsurvival
 #spy
 #stealthy 0
 #startage 30
@@ -7230,8 +7227,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 50
 #maxage 5000
 #forestsurvival
-#mountainsurvival
 #wastesurvival
+#snow
 #berserk 3
 #regeneration 5
 #neednoteat
@@ -7402,9 +7399,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #armor "Shield"
 #mounted
 #wastesurvival
-#mountainsurvival
 #pillagebonus 1
-#sailing 999 3
+#sailing 80 2
 #diseaseres 60
 #end
 
@@ -7482,6 +7478,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 45
 #maxage 1500
 #coldres 3
+#wastesurvival
 #diseaseres 60
 #end
 
@@ -7506,6 +7503,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 12
 #holy
 #coldres 3
+#wastesurvival
 #magicskill 5 2
 #magicskill 6 1
 #magicskill 7 1
@@ -7520,7 +7518,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #poorleader
 #startage 150
 #maxage 2500
-#coldres 3
 #diseaseres 90
 #end
 
@@ -7561,6 +7558,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 250
 #maxage 5000
 #coldres 3
+#wastesurvival
 #diseaseres 90
 #end
 
@@ -7604,7 +7602,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 54
 #maxage 1500
 #wastesurvival
-#mountainsurvival
 #xpshape 50
 #diseaseres 90
 #end
@@ -7650,7 +7647,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #maxage 2500
 #coldres 5
 #wastesurvival
-#mountainsurvival
 #diseaseres 100
 #xpshape 100
 #fear 5
@@ -7703,7 +7699,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #fear 5
 #coldres 5
 #wastesurvival
-#mountainsurvival
+#snow
 #diseaseres 100
 #prophetshape 5034
 #end
@@ -7721,7 +7717,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "A mortal who is visited by too many of Nurgle's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #ap 15
 #mapmove 16
-#hp 60
+#hp 50
 #size 4
 #str 22
 #prot 15
@@ -7737,7 +7733,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #berserk 3
 #coldres 3
 #itemslots 28672
-#invulnerable 15
 #ambidextrous 5
 #weapon 1748 -- Aura
 #weapon 1751 -- Poison Tentacle
@@ -7757,8 +7752,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 3
 #neednoteat
 #wastesurvival
+#snow
 #swampsurvival
-#mountainsurvival
 #magicpower 1
 #montag 5555
 #end
@@ -7826,11 +7821,11 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #spr2 "./Warhammer-Complete/Kugath_2.tga"
 #name "Plaguefather"
 #fixedname "Ku'gath"
-#descr "Unlike other Great Unclean Ones who aim to spread already extant plagues, Ku'gath is as fascinated by the breeding of new and virulent life as Nurgle himself; it is Ku'gath's ambition to one day breed a plague so potent that it could infect the Gods themselves. While, due to his research, Ku'gath remains relatively unaffected by the shifting balance of power within the Realm of Chaos, but also due to said research he is the most willing of Nurgle's Daemons to enter the mortal realm. It is from mortal beings that he gathers most of his plague reagents. And in his years within the mortal realm, Ku'gath has encountered only one race that has managed to kindle his rage: the Dwarfs. Professionally he hates them due to their inability to succumb to disease. Personally, he is embittered by his defeat at Karaz-a-Karak. Indeed, when Ku'gath manages to prepare his perfect plague, they will be his first test subjects."
+#descr "Unlike other Great Unclean Ones who aim to spread already extant plagues, Ku'gath is as fascinated by the breeding of new and virulent life as Nurgle himself; it is Ku'gath's ambition to one day breed a plague so potent that it could infect the Gods themselves. While, due to his research, Ku'gath remains relatively unaffected by the shifting balance of power within the Realm of Chaos, but also due to said research he is the most willing of Nurgle's Daemons to enter the mortal realm. It is from mortal beings that he gathers most of his plague reagents. And in his years within the mortal realm, Ku'gath has encountered only one race that has managed to kindle his rage: the Dwarfs. Professionally he hates them due to their inability to succumb to disease. Personally, he is embittered by his defeat at Karaz-a-Karak. Indeed, when Ku'gath manages to prepare his perfect plague, they will be his first test subjects. He rides into combat on a palanquin of Nurgle."
 #ap 11
 #mapmove 14
 #hp 130
-#prot 15
+#prot 20
 #size 6
 #ressize 5
 #mounted
@@ -7860,13 +7855,17 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #domsummon -69402
 #makemonsters3 -69402
 #poisonres 25
+#wastesurvival
+#snow
 #fear 8
 #demon
 #neednoteat
-#invulnerable 20
 #magicpower 1
-#itemslots 13446
+#itemslots 12422
 #diseaseres 100
+#regeneration 10
+#heal
+#latehero 21
 #end
 
 -- Valnir the Reaper
@@ -7908,6 +7907,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #goodundeadleader
 #deathdisease 7
 #regeneration 15
+#heal
 #immortal
 #demon
 #poisonres 25
@@ -7917,6 +7917,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #onebattlespell "Blessing"
 #wastesurvival
 #mountainsurvival
+#latehero 18
 #end
 
 -- Festus the Leechlord
@@ -7949,9 +7950,10 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #magicskill 5 2
 #magicskill 6 2
 #holy
+#heal
 #autodishealer 3
 #autodisgrinder 2
-#woundfend 20
+#woundfend 60
 #okleader
 #okundeadleader
 #deathdisease 8
@@ -7961,6 +7963,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #poisonres 25
 #neednoteat
 #coldres 3
+#wastesurvival
+#snow
 #diseaseres 100
 #end
 
@@ -7974,8 +7978,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Epidemius is Nurgle's chosen Tallyman, one of the seven Proctors of Pestilence and the cataloguer of all the Plaguelord's diseases. Epidemius' task is an unending one, and it generates a great deal of paperwork, so he rides a palanquin to share the burden; and to more easily force a path through Nurgle's hordes. Two dozen Nurglings attend to the Tallyman's every need, providing the parchment, operating the death's head abacus, excreting the ink for the quill pens and even defending Epidemius from harm should a foolish enemy venture too close. "
 #ap 11
 #mapmove 14
-#hp 20
-#prot 15
+#hp 32
+#prot 16
 #ressize 3
 #size 5
 #mounted
@@ -7994,6 +7998,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #startage 190
 #maxage 10000
 #holy
+#heal
 #magicskill 5 1
 #inspirational 1
 #goodleader
@@ -8001,7 +8006,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 6
 #demon
 #neednoteat
-#invulnerable 15
 #magicpower 1
 #poisonres 25
 #onebattlespell "Divine Blessing"
@@ -8021,7 +8025,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering every torment imaginable."
 #ap 10
 #mapmove 14
-#hp 18
+#hp 26
 #prot 12
 #size 2
 #str 13
@@ -8033,7 +8037,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1748 -- Aura
 #weapon 1750
 #startage 20
 #maxage 10000
@@ -8043,7 +8046,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #neednoteat
 #holy
 #magicpower 1
-#invulnerable 10
 #heal
 #end
 
@@ -8057,8 +8059,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 16
-#hp 4
-#prot 3
+#hp 5
+#prot 6
 #size 1
 #str 8
 #enc 1
@@ -8078,7 +8080,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #holy
 #deathdisease 1
 #magicpower 1
-#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8094,8 +8095,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 16
-#hp 4
-#prot 3
+#hp 5
+#prot 6
 #size 1
 #str 8
 #enc 1
@@ -8115,7 +8116,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #holy
 #magicpower 1
 #deathdisease 1
-#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8131,8 +8131,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "Nurglings are creations of the Dark God Nurgle. They caper across the battlefield in a putrescent tide, highlighted by a babbling cacophony of shrieks, seeking to drag larger opponents down with their infection-riddled claws and venomous bites."
 #ap 12
 #mapmove 16
-#hp 4
-#prot 3
+#hp 5
+#prot 6
 #size 1
 #str 8
 #enc 1
@@ -8152,7 +8152,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #holy
 #deathdisease 1
 #magicpower 1
-#invulnerable 5
 #montag 69402
 #stealthy 0
 #heal
@@ -8168,7 +8167,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "A mortal who resists the ravages of Nurgle's Rot for a significant time endures an unusually long incubation period for the nascent Plaguebearer, resulting in a larger, tougher individual known as a Herald of Nurgle, who leads the lesser Plaguebearers to battle. Regardless of that however, they are a testament to the fact that even the hardiest of souls cannot indefinitely defy disease. The Herald spreads Nurgle's Rot on his own volition which kills a small amount of the populace, but also summons one Plaguebearer per month."
 #ap 10
 #mapmove 14
-#hp 18
+#hp 32
 #prot 14
 #size 2
 #str 15
@@ -8197,7 +8196,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #neednoteat
 #holy
 #magicpower 1
-#invulnerable 15
 #heal
 #end
 
@@ -8211,8 +8209,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #descr "While Beasts of Nurgle are as though perfect physical examples of Nurgle's damning influence, horrifying creatures which can kill small animals and plants with their mere proximity, they behave in the same over-friendly and easily excitable manner as puppies. Indeed, they crave attention, greeting newcomers by slobbering all over them with their slimy tentacles. While this is not a problem for most of Nurgle's servants, it is, indeed, deadly for most mortals."
 #ap 12
 #mapmove 16
-#hp 24
-#prot 14
+#hp 30
+#prot 18
 #size 2
 #str 7
 #enc 1
@@ -8233,7 +8231,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #maxage 10000
 #poisonres 25
 #demon
-#invulnerable 15
 #neednoteat
 #holy
 #magicpower 1
@@ -8289,7 +8286,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mapmove 18
 #flying
 #float
-#hp 15
+#hp 26
 #prot 12
 #size 5
 #ressize 2
@@ -8317,7 +8314,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 5
 #demon
 #neednoteat
-#invulnerable 15
 #secondshape 5047
 #itemslots 12288
 #holy
@@ -8336,7 +8332,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mapmove 22
 #flying
 #float
-#hp 30
+#hp 40
 #prot 12
 #size 4
 #str 12
@@ -8362,7 +8358,6 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #deathdisease 6
 #demon
 #neednoteat
-#invulnerable 15
 #itemslots 12288
 #undisciplined
 #holy
@@ -8391,6 +8386,7 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mor 30
 #gcost 0
 #rcost 1
+#weapon 1747
 #weapon 1749 -- Greater Aura
 #weapon 1756
 #startage 190
@@ -8410,9 +8406,11 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #fear 8
 #demon
 #neednoteat
-#invulnerable 20
 #magicpower 1
 #poisonres 25
+#wastesurvival
+#snow
+#regeneration 10
 #heal
 #end
 
@@ -8443,8 +8441,9 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #pathcost 50
 #startdom 3
 #coldres 5
+#wastesurvival
 #poisonres 25
-#invulnerable 10
+#regeneration 5
 #weapon 347
 #armor 803 -- Light chaos armor
 #armor "Full Helmet"
@@ -8485,6 +8484,8 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #mr 18
 #mor 30
 #coldres 3
+#wastesurvival
+#snow
 #magicskill 5 1
 #magicskill 6 1
 #magicskill 7 1
@@ -8914,12 +8915,12 @@ Priests: None. Makes use of Astral, not Divinity. Can blood sacrifice."
 #era 2
 #idealcold 2
 #nodeathsupply
-#brief "Disease is what the mortal followers and the Daemonic servants of Nurgle bring, disease, and despair that comes with it. To bring the world down to its knees with disease is what they seek, to bring Nurgle's favor to all; and death to those who do not accept it."
-#descr "It is the ultimate irony of those mortals who worship Nurgle that many of them had been infected by diseases spread by their dark patron, leading them to follow Him out of desperation. Indeed, Nurgle has oft been the root cause of their plight, yet they do not see it. Of course, not all of them are like thus as they seek His attention; not all desperation is the result of Nurgle's meddling. Regardless of the reasons of their affiliation with the Great Lord of Decay, however, it is a known fact that, among other things, these followers of Nurgle raise Warhosts to spread these dubious 'gifts' of their Dark God. Whether it is due to an actual belief in victory over the civilized lands or simply to test another particularly virulent strain of disease, it does not matter. What matters is the danger a Warhost of Nurgle poses to the land and those who inhabit it; for if they are allowed to march unimpeded, disease and death will follow."
-#summary "Race: Nurgle worshipping humans, Beastmen and Daemons. Ocean Sailing. Prefer cold scale +2.
-Military: Powerful infantry and cavalry, no ranged troops beyond Beastmen, strong magic and summons.
+#brief "Barbarous Northmen, mutated by Nurgle into fearsome superhuman warriors, and mighty summoned Daemons with Magic Power."
+#descr "Nurgle: the Chaos God of Disease, Death, Decay, and Destruction. It is the ultimate irony of those mortals who worship Nurgle that many of them had been infected by diseases spread by their dark patron, leading them to follow Him out of desperation. Indeed, Nurgle has oft been the root cause of their plight, yet they do not see it. Of course, not all of them are like thus as they seek His attention; not all desperation is the result of Nurgle's meddling. Regardless of the reasons of their affiliation with the Great Lord of Decay, however, it is a known fact that, among other things, these followers of Nurgle raise Warhosts to spread these dubious 'gifts' of their Dark God. What matters is the danger a Warhost of Nurgle poses to the land and those who inhabit it. His Daemons are the most feared of all, for if they are allowed to march unimpeded, disease and death will follow. They can be strengthened or weakened by the winds of magic."
+#summary "Race: Brutal Chaos Warriors, Beastmen and Daemons. Disease Resistant. Limited Ocean Sailing. Prefer cold scale +2.
+Military: Powerful infantry and cavalry, no ranged troops beyond Beastmen, strong magic and summoned Daemons with disease-causing auras. Many units have multiple attacks.
 Magic: Death, Nature, Blood. Some Astral through Beastmen.
-Priests: Weak. Can blood sacrifice."
+Priests: Weak. Cultists can start cults in foreign countries by causing unrest in lands with turmoil. Can blood sacrifice."
 #flag "./Warhammer-Complete/flagNR.tga"
 
 ---- GODS
@@ -9021,8 +9022,6 @@ Priests: Weak. Can blood sacrifice."
 --addreccom 3369
 --addreccom 3370
 
------ HEROES
-
 #hero1 5030 -- Ku'Gath
 #hero2 5031 -- Valnir the Reaper
 #hero3 5032 -- Festus the Leechlord
@@ -9040,7 +9039,7 @@ Priests: Weak. Can blood sacrifice."
 #startsite "Chaos Vortex of Nurgle"
 #startsite "Halls of Nurgle"
 
-#templepic 13
+#templepic 11
 
 ----- FORTS
 

@@ -28,14 +28,12 @@ Make chaos spear for Slaanesh Lord and Chosen Lord
 Make daemon auras affect friendlies - but then it'll affect THEM too...
 Add plague carrier to Nurgle's Greater Daemons, maybe remove from pestigor
 Add daemonhood event
-Consider adding snowmove, and waste surv. to mages.
 Consider costs of N and Tz's daemons
 Look at consistency btwn warrior lines, esp. in hp, strength, att and def.
 Same for daemons - likely needs rework.
 Also fix gors and ungors to be in line with Slaan's
 Should there be leveled up prophetshapes?
 Event testing - test with dom levels
-Check Tzeentch Daemon Prince #2 for having 2 weapons - can just make him recruitable
 Test aura of Tzeentch, Bliss in Torment
 Test that foreignrecs aren't too good
 Test Tz's spells for OP-ness
@@ -53,15 +51,28 @@ Misc description fixes
 
 AURA WORK:
 Auras are now included in each Chaos faction. Quick summary:
-Tzeentch - does damage on easy MR check
-Nurgle - plague carrier instead - is a disease cloud
+Tzeentch - does damage on easy MR negates check
+Nurgle - causes disease on easy MR negates check
 Slaanesh - fatigue damage on normal MR check
-They will likely require future adjustments for balance, but this version works
+They will likely require future adjustments for balance, but this version works.
 
+--Version 1.25: Description changes, wastesurvival, snowmove and some Daemon work
+--Changed descriptions to be much clearer about nation capabilities
+--Removed mountain survival from most human units - waste survival is enough, and Chaos moves slowly
+--Eliminated most Nurgle invuln, compensated with more health and some regen on greater daemons
+--Lowered Tzeentch invuln values on lesser daemons and chosen by 5; raised by 5 on chaos lord and daemon prince
+--Added wastesurvival and snowmove to most daemons, they won't slow the armies any more
+--Added recuperation to most heroes and all Nurgle daemons
+--Changes to latehero values - some had latehero added, some minor adjustments to keep early expansion balanced
+--Limited sailing - now marauder chieftains are limited to 40 size 2 guys
+--Removed pillage bonus from forsaken - they're too crazy to do much of anything effectively
+--Misc changes to beastmen prot values - gors generally went from 4 to 6
+--Slight nerf to Tzeentch summon screamer spell - 8 instead of 9 units
 
-
-
-
+--Version 1.21: Nurgle Aura Fix
+--Now Nurgle's disease auras are negated by an easy MR check. Keeps armies from always getting diseased after a single battle with Nurgle
+--Also, fixed Tzeentch's Greater Aura - wasn't working
+--Couple misc changes
 
 -- Version 1.2: Bugs and Balancings
 --Fixed events - cult form events require a cultist, 40 unrest and chaos 1. 40% chance for SL, 20% for TZ and NU
