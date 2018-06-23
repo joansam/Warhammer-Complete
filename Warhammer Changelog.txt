@@ -56,6 +56,9 @@ Nurgle - causes disease on easy MR negates check
 Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
+--Version 1.26
+--Increased PD limit to stop cultist events - now about 330 gold worth of PD
+
 --Version 1.25: Description changes, wastesurvival, snowmove and some Daemon work
 --Changed descriptions to be much clearer about nation capabilities
 --Removed mountain survival from most human units - waste survival is enough, and Chaos moves slowly

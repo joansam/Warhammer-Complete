@@ -2292,7 +2292,7 @@
 #newmonster 4194
 #nametype 257
 #startdom 3
-#gcost 10020
+#gcost 10010
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
@@ -2324,7 +2324,7 @@
 #maxage 10000
 #goodleader
 #expertundeadleader
-#fear 10
+#fear 5
 #awe 5
 #weapon 1863 -- Greater Aura
 #weapon 1857 -- Slaaneshi Claws
@@ -2654,7 +2654,7 @@
 #req_notnation 159
 #req_monster 4160 -- Cultist
 #req_capital 0 -- Must not be a capital
-#req_maxdef 20
+#req_maxdef 25
 #req_minunrest 40
 #req_chaos 1 -- Must be Chaos 1, 2 or 3
 #req_land 1 -- Must be a land prov
@@ -5937,7 +5937,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #nation 120 -- Tzeentch controls the troops
 #req_monster 4340 -- Tzeentch cultist
 --#req_capital 0
-#req_maxdef 20
+#req_maxdef 25
 #req_minunrest 40
 #req_land 1
 #req_chaos 1
@@ -8854,7 +8854,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #nation 136 -- Nurgle controls the troops
 #req_monster 5010 -- Cultist
 #req_capital 0
-#req_maxdef 25
+#req_maxdef 30
 #req_minunrest 50
 #req_land 1
 #req_chaos 1
