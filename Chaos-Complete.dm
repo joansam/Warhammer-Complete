@@ -200,7 +200,7 @@
 -- Version 0.85 - Added W based versions of blessings to match the other warhosts. Acquiescence was doing nothing, now it should function properly. Noticed that Slaangor had Tzaangor in its description, as well as the wrong weapon stated in it. Upped Chosen Lord's and Styrkaar's MR to Lord of Slaanesh's level. Foreignrec Cultist can now sail. #undcommand 5 to Chieftain. Added Icon of Slaanesh, which gives Cultists one extra point of holy (#restricteditem was fixed!). Added a new spell, Banquet of Slaanesh, which is basically a Slaaneshi version of the Nurgle spell, Consecration of Nurgle. Lowered Daemonettes to research level 3. Warriors are now 20gp. Lower prices on Sorcerers, removed their magic/undead leadership, lowered regular leaderships, gave a research bonus. Removed lots of autocalced prices to keep them what I want with changes. Removed Forest Survivals from most mortal followers of Slaanesh to accomodate for massive cost changes to Beastmen (also removed StR). Removed secondary paths from the
 -- freshly added Blessings which were stopping people with just W from casting them! Inept researcher to Champs, Exalted Champs and Lords. Changes to Spawn of Slaanesh (became more similar to other Spawns, also changed #fear to more national #awe). Slight edits to #summary. Small typo fixes here and there. Made #foreignrec Marauders #coldrec. Reclimits on Chosen uplifted (Sacred is enough limit). Itemized Chaos Armor given to all commanders that had it. Champs and Exalted Champs now have #xpshape. Changed Sorc Lord Pretender's slots. Added a morale bonus to Chaos Armor. Sigvald received his own elite bodyguards as #batstartsum. Removed magical leadership from everything.
 
--- Version 0.80 - Jumped versions a little, and started adding version numbers to .dm file. Added "MA" to #modname. Fixed a sprite. Added #color and #secondarycolor. Added start/maxages for Cultists (which is now in the other mods; forgot to add). Gave Sigvald the Aura of Slaanesh. Added #slash to Scythetalon and made it #armorpiercing. I had left #rcost 20 on the Lord of Slaanesh (highly unintentional), which bumped the rcost to 42. Increased #rcosts on higher-end Beastmen. Fixed several problems pointed out by Dominions 4 Mod Editor. Lowered Slicing Shards' precision to 1, lowered its damage to 15 and increased its fatigue cost to 40. Lowered Sorcerer Lord Pretender's #maxage to 10000, which is still incredibly high. Changes to Spawn of Slaanesh's attacks, also slight alteration to its desc.
+-- Version 0.80 - Jumped versions a little, and started adding version numbers to .dm file. Added "MA" to #modname. Fixed a sprite. Added #color and #secondarycolor. Added start/maxages for Cultists (which is now in the other mods; forgot to add). Gave Sigvald the Aura of Slaanesh. Added slash to Scythetalon and made it armorpiercing. I had left #rcost 20 on the Lord of Slaanesh (highly unintentional), which bumped the rcost to 42. Increased #rcosts on higher-end Beastmen. Fixed several problems pointed out by Dominions 4 Mod Editor. Lowered Slicing Shards' precision to 1, lowered its damage to 15 and increased its fatigue cost to 40. Lowered Sorcerer Lord Pretender's #maxage to 10000, which is still incredibly high. Changes to Spawn of Slaanesh's attacks, also slight alteration to its desc.
 
 -- Version 0.75 - First release of the mod. Using freshly made assets as well as altered Tzeentch/Nurgle warhost assets and a slightly altered sprite from Chaos Undivided by Sombre (the Keeper of Secrets, shading and nicer differences in the attack sprite) and the usual altered Chaos Undivided .dm. Built Dechala on the Dechala for Chaos Undivided that Noble713 (from the Shrapnel forums) made. Starting at such a high version due to it not being likely that I would release 100 releases... Not that it's likely there will be 25, either, but it sounds nicer, and is more in line with the other mods.
 
@@ -364,7 +364,6 @@
 #name "Daemonic Whip"
 #dmg 3
 #magic
-#armorpiercing
 #slash
 #fire
 #att 2
@@ -394,7 +393,6 @@
 #att 2
 #def 0
 #nratt 3
-#armorpiercing
 #magic
 #end
 
@@ -410,7 +408,6 @@
 #sound 10
 #slash
 #pierce
-#armorpiercing
 #end
 
 #newweapon 1856
@@ -418,7 +415,6 @@
 #dmg 6
 #magic
 #slash
-#armorpiercing
 #att 1
 #def 1
 #len 2
@@ -432,7 +428,6 @@
 #dmg 6
 #magic
 #slash
-#armorpiercing
 #att 2
 #def 1
 #len 2
@@ -450,8 +445,7 @@
 #def 1
 #len 2
 #sound 8
-#nratt 3
-#armorpiercing
+#nratt 4
 #end
 
 #newweapon 1860
@@ -483,7 +477,7 @@
 #prot 21
 #enc 2
 #def -2
-#rcost 25
+#rcost 30
 #ironarmor
 #end
 
@@ -559,13 +553,13 @@
 #mor 10
 #mr 12
 #enc 3
-#str 11
+#str 10
 #att 11
 #def 10
 #prec 10
 #mapmove 16
 #ap 12
-#gcost 10
+#gcost 11
 #chaosrec 1
 #rcost 1
 #rpcost 6
@@ -592,13 +586,13 @@
 #mor 10
 #mr 12
 #enc 3
-#str 11
+#str 10
 #att 11
 #def 10
 #prec 10
 #mapmove 16
 #ap 12
-#gcost 10
+#gcost 11
 #chaosrec 1
 #coldres 5
 #rcost 1
@@ -670,7 +664,7 @@
 #gcost 30
 #chaosrec 2
 #rcost 1
-#rpcost 18
+#rpcost 15
 #coldres 5
 #armor "Full Helmet"
 #armor 801
@@ -705,7 +699,7 @@
 #gcost 30
 #chaosrec 2
 #rcost 1
-#rpcost 18
+#rpcost 15
 #coldres 5
 #weapon 1853
 #armor "Full Helmet"
@@ -745,7 +739,7 @@
 #gcost 60
 #chaosrec 3
 #rcost 20
-#rpcost 42
+#rpcost 32
 #ressize 2
 #wastesurvival
 #startage 31
@@ -815,7 +809,7 @@
 #gcost 60
 #chaosrec 3
 #rcost 1
-#rpcost 36
+#rpcost 26
 #coldres 5
 #weapon 1859
 #armor "Full Helmet"
@@ -851,7 +845,7 @@
 #chaosrec 3
 #rcost 1
 #snow
-#rpcost 36
+#rpcost 26
 #coldres 5
 #armor "Full Helmet"
 #armor "Chaos Armor"
@@ -1299,7 +1293,7 @@
 #prec 10
 #mr 11
 #mor 10
-#gcost 10015
+#gcost 10025 -- 80
 #chaosrec 3
 #rcost 1
 #snow
@@ -1495,11 +1489,11 @@
 #mor 17
 #chaosrec 3
 #rcost 1
-#snow
 #rpcost 1
+#snow
 #holy
 #okleader
-#undcommand 5
+#undcommand 20
 #weapon 1853
 #armor "Full Helmet"
 #armor 801
@@ -1534,10 +1528,10 @@
 #mor 18
 #chaosrec 4
 #rcost 1
-#snow
 #rpcost 1
+#snow
 #holy
-#undcommand 5
+#okundeadleader
 #armor 21
 #armor 801
 #armor "Shield"
@@ -1581,7 +1575,7 @@
 #armor 801
 #armor "Shield"
 #mounted
-#gcost 10010
+#gcost 10050
 #chaosrec 8
 #rcost 7
 #rpcost 2
@@ -1591,11 +1585,11 @@
 #startage 30
 #maxage 3000
 #goodleader
-#undcommand 5
+#goodundeadleader
 #wastesurvival
 #coldres 5
 #prophetshape 4184
-#magicskill 7 1
+#magicskill 7 2
 #magicskill 8 2
 #end
 
@@ -1641,7 +1635,7 @@
 #coldres 10
 #researchbonus -12
 #okundeadleader
-#magicskill 7 2
+#magicskill 7 3
 #magicskill 8 3
 #latehero 6
 #end
@@ -1810,8 +1804,8 @@
 #size 4
 #str 21
 #enc 1
-#att 17
-#def 15
+#att 18
+#def 16
 #prec 12
 #prot 15
 #mr 16
@@ -1821,8 +1815,7 @@
 #magicskill 1 3
 #itemslots 15490
 #weapon 1863 -- Greater Aura
-#weapon 1856
-#weapon 1857
+#weapon 1856 -- Azazel's Daemonblade
 #armor 803
 #startage 2600
 #maxage 10000
@@ -1830,9 +1823,9 @@
 #inspirational 1
 #expertleader
 #expertundeadleader
-#awe 6
+#awe 5
 #flying
-#magicpower 2
+#magicpower 1
 #demon
 #seduce 20
 #neednoteat
@@ -2095,7 +2088,7 @@
 #okundeadleader
 #end
 
--- Exalted Daemon
+-- Exalted Daemon of Slaanesh
 
 #newmonster 4192
 #spr1 "./Warhammer-Complete/exalteddaemon1.tga"
@@ -2136,21 +2129,20 @@
 #magicskill 7 2
 #custommagic 6656 200
 #magicskill 8 2
-#weapon 1852
-#weapon 1855
-#weapon 1851
+#weapon 1852 -- Aura
+#weapon 1855 -- Daemonblade
+#weapon 1851 -- Scythetalons
 #armor 803
-#heal
 #end
 
--- Daemon Princess
+-- Daemon Princess of Slaanesh
 
 #newmonster 4191
 #spr1 "./Warhammer-Complete/daemonprincess1.tga"
 #spr2 "./Warhammer-Complete/daemonprincess2.tga"
 #name "Daemon Princess"
 #nametype 257
-#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this terrible being was once mortal, but has been transformed beyond recognition to please Slaanesh. Inside her newly-incarnated form vast magical forces roil, as the power of the Void emanates from her body. It confounds and terrifies her lesser foes, leaving her free to command Slaanesh's armies, or vanquish enemy lords and spellcasters."
+#descr "A Daemon Princess of immense power, the daemonic fate all Champions desire, this terrible being was once mortal, but has been transformed beyond recognition to please Slaanesh. Inside her newly-incarnated form vast magical forces roil, as the power of the Void emanates from her body. It confounds and mesmerizes her lesser foes, leaving her free to command Slaanesh's armies, or vanquish enemy lords and spellcasters."
 #ap 22
 #mapmove 22
 #hp 48
@@ -2159,7 +2151,7 @@
 #str 18
 #enc 1
 #att 16
-#def 18
+#def 19
 #prec 14
 #mr 18
 #mor 30
@@ -2203,8 +2195,8 @@
 #prot 18
 #size 5
 #str 22
-#att 16
-#def 16
+#att 17
+#def 17
 #prec 12
 #mr 21
 #mor 30
@@ -2214,6 +2206,7 @@
 #ambidextrous 4
 #weapon 1863 -- Greater Aura of Slaan
 #weapon 1857 -- Slaaneshi Claws
+#weapon 1855 -- Daemon blade
 #maxage 10000
 #magicskill 2 3
 #magicskill 7 4
@@ -2228,10 +2221,9 @@
 #coldres 20
 #wastesurvival
 #snow
-#itemslots 15494
+#itemslots 15366 - No head slot, everything else normal
 #spreaddom 1
 #magicskill 8 4
-#weapon 1855
 #goodundeadleader
 #end
 
@@ -2292,7 +2284,7 @@
 #newmonster 4194
 #nametype 257
 #startdom 3
-#gcost 10010
+#gcost 10030
 #pathcost 60
 #name "Avatar of Slaanesh"
 #spr1 "./Warhammer-Complete/avatar1.tga"
@@ -2332,7 +2324,20 @@
 #weapon 1861 -- Daemonic Tentacles
 #end
 
+-- REMOVE THIS
+#newmonster 4197
+#copystats 29 -- Light Infantry
+#copyspr 29
+#descr "dsa"
+#def 20
+#end
 
+#newmonster 4198
+#copystats 29 -- Light Infantry
+#copyspr 29
+#descr "dsa"
+#hp 20
+#end
 
 
 
@@ -2588,7 +2593,7 @@
 #mainpath 7 -- Blood
 #mainlevel 1
 #name "Chaos Armour"
-#descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
 #armor "Chaos Armor"
 #morale 2
@@ -2605,7 +2610,7 @@
 #secondarypath 1
 #secondarylevel 1
 #name "Chaos Armour"
-#descr "The armor worn by the elite Chosen of Slaanesh, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
 #armor "Chaos Armor"
 #end
@@ -2649,14 +2654,15 @@
 
 #newevent
 #rarity 0 -- Always, but only one 0 rarity event can happen/turn
-#req_rare 40 -- Will happen 40% of the time when reqs are met
+#req_rare 25 -- Will happen 40% of the time when reqs are met
 #nation 159 -- Slaanesh controls the troops
 #req_notnation 159
+#req_notnation 120
+#req_notnation 136
 #req_monster 4160 -- Cultist
 #req_capital 0 -- Must not be a capital
-#req_maxdef 25
+#req_maxdef 19
 #req_minunrest 40
-#req_chaos 1 -- Must be Chaos 1, 2 or 3
 #req_land 1 -- Must be a land prov
 #req_maxtroops 100
 #msg "A corrupt cult of hedonism honoring the Prince of Excess has sprung up in the province! They have summoned his daemons to their aid, and some particularly brave followers have given themselves completely to Slaanesh!"
@@ -2665,10 +2671,10 @@
 #incscale2 0 -- Increases turmoil
 #req_indepok 1 -- Can (not must) happen to indies
 #com 4160 -- Cultist
-#1d3units 4183 -- Spawn
+#1unit 4183 -- Spawn
 #2d6units 4185 -- Daemonette
 #1d6units 4160 -- Cultist
-#1d6units 4173 -- Chaos Sorcerer
+#1d6units 4166 -- Forsaken
 #end
 
 #newevent
@@ -2924,12 +2930,14 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 ---- RECRUITS
 #clearrec
 #wasterec 4150 -- Warhound
-#wasterec 4166 -- Forsaken
+--#wasterec 4166 -- Forsaken
 #forestrec 4165 -- Ungor Raider
 #forestrec 4164 -- Ungor
 #forestrec 4163 -- Gor
 --#forestrec 4162 -- Slaangor
 --#forestrec 4161 -- Minotaur
+#addrecunit 4197 -- REMOVE ME 
+#addrecunit 4198
 #addrecunit 4151 -- Marauder #1
 #addrecunit 4152 -- Marauder #2
 #addforeignunit 4151
@@ -2954,7 +2962,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 #addreccom 4160 -- Cultist
 --addforeigncom 4195 -- foreign Cultist
-#wastecom 4167 -- Forsaken Champion
+--#wastecom 4167 -- Forsaken Champion
 #forestcom 4168 -- Ungor Raider Halfhorn
 #forestcom 4170 -- Wargor
 #forestcom 4169 -- Slaanbull
@@ -3044,25 +3052,25 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- were changed to stop unboosted teleporting/cloud trapezing. Gave Minotaurs/Tzaanbulls 2 more invuln. Changes to #chaosrecs of many things. Obelisk lost its magic but gained the Cultist's blessing item (still spreads dom) and became capable of using the Greater Blessing item, too.
 
 -- Version 0.98 - Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Sorcerers became considerably cheaper, while Exalted Sorcerers and Sorcerer Lords (who became poorleaders, too) became more expensive (I forgot about the massive boon Sacred is! Thanks Indract for reminding me! Made the price hike a bit less steep by halving researchbonus on Exalted and Sorc Lord). Screamers became undisciplined (as suggested by Orionja). Massive reworking of Daemon command structure. Slightly upped Lord of Tzeentch's gcost. Upped Daemon Prince #coldres to 5. Tzeentch's Plate Armor had -1 def, while that was supposed to be with Slaanesh's Plate Armor (which was -2 def, like Nurgle's), oops! Tzeentch's higher Beastmen got their gimmick from #invulnerable 10. To combat massive morale bonuses from commanders, started using #command where applicable and dropped #inspirational here and there. Discs of Tzeentch lost their flying ability (leaving them with #float), but things with them received a
--- boost to AP (upped to 25); this also means I gave the gimmick of Invulnerable 10 given to Beastmen to the human followers, too. Cultists lost S, but received an item they can cast Blessing of Tzeentch with (and there is a 5F gem forgeable item for Discord of Tzeentch), also the Icon of Tzeentch is now just 5S gems. Gave the Flamer and the Changebringer Drake Fire as main mode of attack instead of Flames of Tzeentch, making them less of a copy of the Horrors. Adjusted Warrior's #chaosrec to 1. Standard Bearer's #standard reduced to 1, gcost down to 20 and chaosrec to 1. Spawn of Tzeentch had enc 3, changed to 1 (thanks Indract!) and gave it a tentacle attack (since Nurgle one has one too with just as awkward tentacle positioning). Made lance the Chaos Knight's first attack. Forsaken Champ lacked itemized Chaos Armor. Changed Forsaken's Pincer to be the #bonus weapon Pincer. Ungor Raider Halfhorn's price dropped to 35. Lowered Tzeentch Chaos Armor's res cost to 23. #nostr off Staff of Change. Chaos Knights
+-- boost to AP (upped to 25); this also means I gave the gimmick of Invulnerable 10 given to Beastmen to the human followers, too. Cultists lost S, but received an item they can cast Blessing of Tzeentch with (and there is a 5F gem forgeable item for Discord of Tzeentch), also the Icon of Tzeentch is now just 5S gems. Gave the Flamer and the Changebringer Drake Fire as main mode of attack instead of Flames of Tzeentch, making them less of a copy of the Horrors. Adjusted Warrior's chaosrec to 1. Standard Bearer's standard reduced to 1, gcost down to 20 and chaosrec to 1. Spawn of Tzeentch had enc 3, changed to 1 (thanks Indract!) and gave it a tentacle attack (since Nurgle one has one too with just as awkward tentacle positioning). Made lance the Chaos Knight's first attack. Forsaken Champ lacked itemized Chaos Armor. Changed Forsaken's Pincer to be the #bonus weapon Pincer. Ungor Raider Halfhorn's price dropped to 35. Lowered Tzeentch Chaos Armor's res cost to 23. #nostr off Staff of Change. Chaos Knights
 -- and Marauder Horsemen had 5 enc, dropped to 4. Sounds to attack spells.
 
 -- Version 0.97 - Increased #rcost for some higher-end Beastmen and Exalted Champ + Lord of Tzeentch. Aekold Helbrass was supposed to have #inspirational, I had written it wrongly. Also fixed other issues presented by Dominions 4 Mod Editor. Lowered Sorcerer Lord Pretender's #maxage to 10000. Chaos Furies's .tgas were upper case in the files, but lower case in .dm, changed them to match. Foreignrec Cultist can now sail. #undcommand 5 for Chieftain. Added the Icon of Tzeentch, which allows Cultists to battle-cast the highest level bless. Changed Aegis of Orange Fire to not be MR resists easily and lowered research level. Added Sacreds (Chosen became 5gp costlier) and astral Blessings for them, renamed the other blessings to Sorcerous Blessings and removed the highest version of them. Mages are now slightly lower cost, don't have undead/magic leadership, but have a research bonus. Brought back the Banishment copy, since the warhost has potentially too much early-on trouble with undead.
 -- Warriors are now 20gp. Pink Horrors down to research level 3. Massive changes to Beastman pricing etc., removal of Forest Survival on human followers of Tzeentch to accomodate for this change. Got rid of lots of autocalced costs to keep them sameish. Removed Galrauch's leadership and changed his E to A. Removed E and W from random magic lists (except E from Sorc Lord), as the nation isn't supposed to have full access to all magic paths (as the nation gets D and N through Bray-Shamans), left E on Vilitch however (as he has been described as lacklustre; E can be his thing). Added an Unstable Chaos Vortex summon which, in turn, summons ten Pink Horrors and then goes away and "turns" into a Herald of Tzeentch (the Vortex causes unrest and kills population). Gave negative #researchbonus to the Champs, Exalted Champs and Lord to denote their status as fighters. Changes to Spawn of Tzeentch (now it's similar to the other Spawns). Slight edits to #summary. Made #foreignrec Marauders #coldrec.
 -- Reclimits on Chosen uplifted (Sacred is enough of a reclimit). All commanders with Chaos Armor now start with an itemized Chaos Armor in Chest slot. Added #xpshape to Champs and Exalted Champs. People on discs lost their feet slots again. Dropped magical leadership from everything.
 
--- Version 0.96 - Cultist received start/maxage. Added #secondarycolor to nation color. Fixed #summary formatting. Spawn of Tzeentch became longer lived. Upgraded the Champion to Chosen stat levels, also slight ups to Exalted Champ and Lord. Made all the magical items nofind. Added "MA" to the #modname. Fixed the positioning of the tails of the Daemon Princes. Fixed some other sprites that didn't have two pixels below them (unnoticiable in play, but it bugged the hell out of me!). Halberd of Tzeentch lacked things it probably should've had (#armorpiercing, #pierce and #slash). Made Scythetalon #slash instead of #pierce and made it #armorpiercing.
+-- Version 0.96 - Cultist received start/maxage. Added #secondarycolor to nation color. Fixed #summary formatting. Spawn of Tzeentch became longer lived. Upgraded the Champion to Chosen stat levels, also slight ups to Exalted Champ and Lord. Made all the magical items nofind. Added "MA" to the #modname. Fixed the positioning of the tails of the Daemon Princes. Fixed some other sprites that didn't have two pixels below them (unnoticiable in play, but it bugged the hell out of me!). Halberd of Tzeentch lacked things it probably should've had (armorpiercing, pierce and slash). Made Scythetalon slash instead of pierce and made it armorpiercing.
 
--- Version 0.95 - Removed chest slots from units/commanders with Chaos Armor, because you aren't supposed to replace Chaos Armor (going through #itemslots also means units mounted on Discs of Tzeentch will get leg slots, as there's no reason why you couldn't sit on it while putting boots on); not adding to commanders with Light Chaos Armor. Added a onebattlespell self-bless for some commanders/heroes with Chaos Armor. Altered Vilitch's itemslots a lot. Added #armorpiercing to a lot of magical weapons. Lowered Spawn of Tzeentch's (renamed it) #prot a little but increased its #invulnerable. Switched the Daemon-forged Battleaxe to use Ulm's Bane of Heresy instead of Halt Sacred, making it even more potent. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Changed the long and short nation descriptions (the long un was basically an edited CU one, so, it was boring).
+-- Version 0.95 - Removed chest slots from units/commanders with Chaos Armor, because you aren't supposed to replace Chaos Armor (going through #itemslots also means units mounted on Discs of Tzeentch will get leg slots, as there's no reason why you couldn't sit on it while putting boots on); not adding to commanders with Light Chaos Armor. Added a onebattlespell self-bless for some commanders/heroes with Chaos Armor. Altered Vilitch's itemslots a lot. Added armorpiercing to a lot of magical weapons. Lowered Spawn of Tzeentch's (renamed it) prot a little but increased its #invulnerable. Switched the Daemon-forged Battleaxe to use Ulm's Bane of Heresy instead of Halt Sacred, making it even more potent. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Changed the long and short nation descriptions (the long un was basically an edited CU one, so, it was boring).
 
--- Version 0.94 - Changed the Chaos Vortex to Chaos Vortex of Tzeentch. Made the Daemon-forged Battleaxe a bit more potent (Halt Sacred), and as such made the Chosen wielding it a bit more potent. Brought up MRs pretty much across the board (because my "high" was apparently "mediocre"). Max ages to Chosen and Warriors. Added Tzeentch Plate Armor, gave it to several units below Chosen to make Chaos Armor a bit less common. Altered the itemized Chaos Armor to bless its user. 2S for the Daemon Prince. Removed #unique tags from Heroes. More morale for Warriors. Made Warhounds #undisciplined (since Forsaken are). Fixed the Greater Blessing of Tzeentch (it had no MR check and wasn't usable underwater). Gave Pretenders a version of the Greater Blessing as onebattlespell. Increased LoC's prot and #invulnerable (also fixed a typo in #invulnerable). Added an extra, middling Blessing type (AOE10 with MR negates). Lowered gem costs of Blessings. Added Obelisk of Tzeentch, which is immobile, has some magic and
+-- Version 0.94 - Changed the Chaos Vortex to Chaos Vortex of Tzeentch. Made the Daemon-forged Battleaxe a bit more potent (Halt Sacred), and as such made the Chosen wielding it a bit more potent. Brought up MRs pretty much across the board (because my "high" was apparently "mediocre"). Max ages to Chosen and Warriors. Added Tzeentch Plate Armor, gave it to several units below Chosen to make Chaos Armor a bit less common. Altered the itemized Chaos Armor to bless its user. 2S for the Daemon Prince. Removed unique tags from Heroes. More morale for Warriors. Made Warhounds #undisciplined (since Forsaken are). Fixed the Greater Blessing of Tzeentch (it had no MR check and wasn't usable underwater). Gave Pretenders a version of the Greater Blessing as onebattlespell. Increased LoC's prot and #invulnerable (also fixed a typo in #invulnerable). Added an extra, middling Blessing type (AOE10 with MR negates). Lowered gem costs of Blessings. Added Obelisk of Tzeentch, which is immobile, has some magic and
 -- Version 0.94 - spreads Dominion.
 
--- Version 0.93 - Changed the armors to have the name "Tzeentch" on them to match the Nurgle warhost. Made the startsites match Nurgle warhost. Slight upgrade to Warhound. Removed Warhound from PD and extra PD adjustments. Raised the MR of the Pretenders to 19, as 18 is apparently the "basic" amount and that won't do! Added a national color. Added #armorpiercing to the Daemon-forged Battleaxe, since the Daemon-forged Broad Sword already had it. Altered the costs of the items and fixed Wand of Whimsy's main path.
+-- Version 0.93 - Changed the armors to have the name "Tzeentch" on them to match the Nurgle warhost. Made the startsites match Nurgle warhost. Slight upgrade to Warhound. Removed Warhound from PD and extra PD adjustments. Raised the MR of the Pretenders to 19, as 18 is apparently the "basic" amount and that won't do! Added a national color. Added armorpiercing to the Daemon-forged Battleaxe, since the Daemon-forged Broad Sword already had it. Altered the costs of the items and fixed Wand of Whimsy's main path.
 
 -- Version 0.92 - Red lining to the icons of the items so it's easier to tell which are mod items. From now on, adding the version number to the .dm file. Added a new Beastman commander, the Ungor Raider Halfhorn, which leads to the Wargor becoming slow to recruit. Added Ungor Raiders, too. Changed Sorcerer Lord's 110 custommagic part to 100 and 10. Apparently 110 is counted as Level +2.
 
--- Version 0.91 - Added the mod's very first items, starting with a const level 6 Staff of Change which is... A staff meant for fighting. Added a Chaos Armour item, which is basically much like the Chaos Armor all the Warriors and such wear (edited by Neruz from dom4goons!) and slightly upped Chaos Armor's stats. Added a Rune Stone of Sorcery item, which gives 2 temp astral gems in battle. Added Wand of Whimsy, which is a wand that grants the user magical powers. Changes to #chaosrecs of Beastmen, so now they cost closer to what the rest cost in high turmoil (reclimits and slowrecs stay the same). Also added #stealthy to many of the Beastmen (all except Tzaanbull and the Minotaurs). Changed the mod's icon a bit.  Added sounds and types to some mod weapons.
+-- Version 0.91 - Added the mod's very first items, starting with a const level 6 Staff of Change which is... A staff meant for fighting. Added a Chaos Armour item, which is basically much like the Chaos Armor all the Warriors and such wear (edited by Neruz from dom4goons!) and slightly upped Chaos Armor's stats. Added a Rune Stone of Sorcery item, which gives 2 temp astral gems in battle. Added Wand of Whimsy, which is a wand that grants the user magical powers. Changes to chaosrecs of Beastmen, so now they cost closer to what the rest cost in high turmoil (reclimits and slowrecs stay the same). Also added #stealthy to many of the Beastmen (all except Tzaanbull and the Minotaurs). Changed the mod's icon a bit.  Added sounds and types to some mod weapons.
 
 -- Version 0.90 - As the mod is pretty much feature complete, I decided to make a massive jump in versions. Less risk of looking like an early alpha this way. One pixel change to the Minotaur's (and Tzaanbull's) first sprite. Changed the Gor's weapon to a Club, as it should've been. There was a typo in the Gor's description. Added Bray Shaman, a mage of the Beastmen, so now they sort of have a full set of recruitables. Adjusted the prices of the mages upwards. Now the Daemon Prince summoning allows for summoning both the Trident type and the Halberd type Daemon Princes! Altered the names and descriptions of the old Chaos Undivided spells; also added a new evocation.
 
@@ -3147,12 +3155,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newweapon 1877
 #name "Windblade"
 #dmg 12
+#nratt 3
 #att 2
 #def 3
 #len 2
 #magic
 #slash
-#armorpiercing
 #twohanded
 #charge
 #sound 8
@@ -3184,7 +3192,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magic
 #fire
 #sound 16
-#armorpiercing
+#nratt 3
 #slash
 #end
 
@@ -3193,12 +3201,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #dmg 12
 #magic
 #att 1
-#def -1
+#def 0
 #nratt 2
 #len 1
 #slash
 #sound 8
-#armorpiercing
 #end
 
 #newweapon 1881
@@ -3563,7 +3570,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rpcost 18
 #end
 
--- Warriors of Tzeentch #1
+-- Warrior of Tzeentch #1
 
 #newmonster 4334
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_1.tga"
@@ -3595,10 +3602,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #startage 26
 #maxage 900
 --#magicboost 8-7
-#rpcost 18
+#rpcost 15
 #end
 
--- Warriors of Tzeentch #2
+-- Warrior of Tzeentch #2
 
 #newmonster 4335
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_Axe_1.tga"
@@ -3622,7 +3629,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #coldres 3
-#weapon 1871 -- Chaos Battleaxe
+#weapon 1865 -- Chaos Axe
 #armor "Full Helmet"
 #armor 801
 #armor "Kite Shield"
@@ -3630,10 +3637,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #startage 26
 #maxage 900
 --#magicboost 8-7
-#rpcost 18
+#rpcost 15
 #end
 
--- Knights of Tzeentch
+-- Knight of Tzeentch
 
 #newmonster 4336
 #spr1 "./Warhammer-Complete/chaosknight_1TZ.tga"
@@ -3670,7 +3677,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #startage 31
 #maxage 900
 --#magicboost 8-7
-#rpcost 42
+#rpcost 32
 #end
 
 -- Standard Bearer
@@ -3743,7 +3750,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 --#magicboost 8-7
 #holy
 #invulnerable 5
-#rpcost 36
+#rpcost 26
 #end
 
 -- Chosen of Tzeentch #2
@@ -3780,7 +3787,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 --#magicboost 8-7
 #holy
 #invulnerable 5
-#rpcost 36
+#rpcost 26
 #end
 
 ------- COMMANDERS
@@ -3817,25 +3824,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #wastesurvival
 #stealthy 30
 #spy
---#magicboost 8-7
+#magicskill 8 1
 #userestricteditem 6567
 #startitem 971
 #itemslots 31878
 #holy
-#rpcost 1
-#end
-
--- Tzeentch Cultist - foreign rec
-
-#newmonster 4826
-#copyspr 4340
-#copystats 4340
-#descr "While there are cults of all the Dark Gods within the lands of men, the cults of Tzeentch are truly the most insidious, the most powerful and the most spread out, and the most difficult to weed out of them all. Not only may they tempt with power, but they may even seem entirely harmless until one has fallen to Chaos. As for the Warhost, it utilizes the cults to find weaknesses within hostile lands. Otherwise, they are generally autonomous."
-#slowrec
-#gcost 90
-#chaosrec 4
-#sailing 4 2
-#userestricteditem 6567
 #rpcost 1
 #end
 
@@ -4015,7 +4008,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #prec 10
 #mr 12
 #mor 10
-#gcost 75
+#gcost 10025 -- 80
 #chaosrec 3
 #rcost 1
 #snow
@@ -4199,7 +4192,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newmonster 4345
 #spr1 "./Warhammer-Complete/Champion_1TZ.tga"
 #spr2 "./Warhammer-Complete/Champion_2TZ.tga"
-#name "Champion"
+#name "Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers. Their presence on the battlefield can turn the tide of a closely fought combat. The Champions of Tzeentch, like Tzeentch himself, are ever changing and mutating, surrendering completely to the whims of the Changer of Ways."
 #gcost 10030
@@ -4218,7 +4211,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #okleader
-#undcommand 5
+#undcommand 20
 #coldres 5
 #weapon 1853 -- Chaos Broadsword
 #armor "Full Helmet"
@@ -4229,7 +4222,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #maxage 1500
 #wastesurvival
 --#magicboost 8-7
-#rpcost 2
+#rpcost 1
 #holy
 #invulnerable 10
 #xpshape 50
@@ -4240,10 +4233,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newmonster 4346
 #spr1 "./Warhammer-Complete/Exalted_Hero_1.tga"
 #spr2 "./Warhammer-Complete/Exalted_Hero_2.tga"
-#name "Exalted Champion"
+#name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
-#gcost 10030
+#gcost 9080
 #ap 25
 #mapmove 24
 #hp 22
@@ -4260,9 +4253,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 2
 #goodleader
 #command -20
-#undcommand 5
+#okundeadleader
 #coldres 5
 #magicskill 4 1
+#magicskill 8 1
 #custommagic 2176 100
 #weapon "Axe"
 #weapon "Axe"
@@ -4289,12 +4283,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Lord of Tzeentch
 
 #newmonster 4347
-#name "Lord of Tzeentch"
+#name "Chaos Lord"
 #spr1 "./Warhammer-Complete/lord_of_tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_tzeentch_2.tga"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Lord of Tzeentch rides to war on a mysterious Disc of Tzeentch, a twisted and daemonic creation bound to his will, his powers beyond those of any regular Champion."
-#gcost 10080
+#gcost 10050
 #ap 25
 #mapmove 24
 #hp 27
@@ -4308,6 +4302,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mr 17
 #mor 17
 #magicskill 4 1 -- Astral
+#magicskill 8 2 -- Priest
 #custommagic 2176 100
 #custommagic 384 66
 #coldres 5
@@ -4324,7 +4319,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #startage 140
 #maxage 3000
 #goodleader
-#undcommand 5
+#goodundeadleader
 #mounted
 #fear 5
 #inspirational 1
@@ -4965,7 +4960,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #gcost 0
 #rcost 1
 #noitem
-#invulnerable 10
+#invulnerable 15
 #magicpower 1
 #undisciplined
 #weapon 1869 -- Aura
@@ -5084,19 +5079,21 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #ap 18
 #mapmove 22
 #enc 1
-#hp 80
-#prot 15
+#hp 98
+#prot 14
 #size 4
 #str 19
 #att 15
 #def 15
-#prec 10
-#mr 18
+#prec 12
+#mr 23
 #mor 30
 #gcost 0
 #rcost 1
-#invulnerable 20
-#magicpower 1
+#invulnerable 25
+#magicpower 2
+#chaospower 2
+#horrormark
 #weapon 1876 -- Greater Aura of Tzeentch
 #weapon "Magic Staff"
 #weapon "Chaos Fire"
@@ -5112,13 +5109,16 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #inspirational 1
 #goodleader
 #expertundeadleader
-#fear 5
+#fear 10
 #flying
 #demon
 #neednoteat
 #researchbonus 5
 --#magicboost 8-7
 #holy
+#heal
+#spreaddom 1
+#makemonsters2 4808 -- Flamers
 #end
 
 -- Lord of Change (Extra Dom first summon dealie)
@@ -5148,24 +5148,24 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #att 17
 #def 15
 #prec 12
-#mr 18
+#mr 20
 #mor 30
 #gcost 0
 #rcost 1
+#prot 8
 #invulnerable 15
 #weapon 1869 -- Aura
 #weapon 1866
 #armor 803
-#coldres 5
+#fireres 15
 #wastesurvival
-#startage 1000
+#startage 3000
 #maxage 10000
-#magicskill 0 1
-#magicskill 4 1
-#custommagic 2432 100
-#custommagic 2432 50
-#custommagic 2432 30
-#custommagic 2432 15
+#custommagic 2432 300 -- FAS
+#custommagic 2944 200 -- FAWS
+#custommagic 2944 100
+#custommagic 2944 100
+#custommagic 2944 50
 #inspirational 1
 #goodleader
 #command 40
@@ -5584,7 +5584,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #school 0
 #researchlevel 5
 #path 0 4
-#pathlevel 0 4
+#pathlevel 0 3
 #fatiguecost 2000
 #effect 10021
 #damage 4815
@@ -5598,12 +5598,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #descr "With this summoning, the caster brings forth a Lord of Change, a Greater Daemon of Tzeentch. They are avian, winged humanoids in form. They are the foremost agents of the Changer of Ways, and no other being which is aligned to Tzeentch embodies the nature of their Dark God as the Supreme Manipulator as they do."
 #restricted 120
 #school 0
-#researchlevel 8
+#researchlevel 9
 #path 0 4
 #path 1 1
-#pathlevel 0 5
+#pathlevel 0 6
 #pathlevel 1 2
-#fatiguecost 4000
+#fatiguecost 4500
 #effect 10021
 #damage 4817
 #nreff 1
@@ -5612,16 +5612,14 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Daemon Prince
 
 #newspell
-#name "Daemon Ascendant"
+#name "Call Daemon Prince"
 #descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Tzeentch, a Daemon Prince, who is ready to fight for His cause where ever it may be."
 #restricted 120
 #school 0
-#researchlevel 9
+#researchlevel 8
 #path 0 4
-#path 1 0
-#pathlevel 0 6
-#pathlevel 1 2
-#fatiguecost 5000
+#pathlevel 0 5
+#fatiguecost 4000
 #effect 10021
 #damage -60006
 #nreff 1
@@ -5899,7 +5897,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #secondarypath 0
 #secondarylevel 1
 #name "Tzeentch Chaos Armour"
-#descr "The armor worn by the elite Chosen of Tzeentch, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
 #cursed
@@ -5919,7 +5917,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #secondarypath 0
 #secondarylevel 1
 #name "Tzeentch Chaos Armour"
-#descr "The armor worn by the elite Chosen of Tzeentch, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
 #cursed
@@ -5931,27 +5929,28 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 #newevent
 #rarity 0
-#req_rare 20 -- Will happen 20% of the time when reqs are met
+#req_rare 15 -- Will happen x% of the time when reqs are met
 #req_nation 120 -- Tzeentch
+#req_notnation 159
 #req_notnation 120
+#req_notnation 136
 #nation 120 -- Tzeentch controls the troops
 #req_monster 4340 -- Tzeentch cultist
 --#req_capital 0
-#req_maxdef 25
-#req_minunrest 40
+#req_maxdef 19
+#req_minunrest 60
 #req_land 1
-#req_chaos 1
 #req_maxtroops 100
 #req_indepok 1 -- Can but not must happen to indies
 #msg "A dark cult honoring the Changer of Ways has sprung up in the province! They have summoned his daemons to their aid, and some particularly brave followers have given themselves completely to Tzeentch!"
 #unrest 30
 #newdom 3
-#incscale2 0
+#incscale2 0 -- Turmoil
 #1d6units 4810 -- Pink horror
-#1d3units 4805 -- Spawn
+#1unit 4805 -- Spawn
 #1d6units 4811 -- Blue horror
 #1d6units 4340 -- Cultist
-#1d6units 4342 -- Sorcerer
+#1d6units 4821 -- Forsaken
 #com 4340 -- Cultist
 #end
 
@@ -6040,7 +6039,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 ---- RECRUITS
 #clearrec
 #wasterec 4150 -- Warhound
-#wasterec 4821 -- Forsaken
+--#wasterec 4821 -- Forsaken
 #forestrec 4832 -- Ungor of Tzeentch
 #forestrec 4834 -- Ungor Raider
 #forestrec 4831 -- Gor of Tzeentch
@@ -6071,8 +6070,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 ---- LEADERS
 
 #addreccom 4340 -- Tzeentch Cultist
-#addforeigncom 4826 -- T C
-#wastecom 4822 - Forsaken Champion
+--#wastecom 4822 - Forsaken Champion
 #forestcom 4807 -- Ungor Raider Halfhorn
 #forestcom 4830 -- Wargor
 #forestcom 4824 -- Tzaanbull
@@ -6164,26 +6162,26 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Version 0.93 -- With the coming of #diseaseres, the human followers lose their ability to regenerate, also added lower diseaseres to Marauders, Sorcerers, regular commanders etc. reclimits on Chosen made a comeback, Lord became StR (also increased the Champs', Exalteds' and Lords' research malus). Lowered research bonuses on Sorcerers by 1, higher ups lost theirs entirely (Exalted Sorc's price now decided by autocalc). Lowest Sorcerer lost his leading ability. Exalted Champs and Lords lost their ability to instabless their followers (also removed the minibless entirely). Sorcerers are no longer resistant to poison. Champions become Exalted, Exalteds become Lords and Lords become Chosen Lords when Propheted. Lowered #xpshape thresholds. Added a Daemonic incursion event. Human followers use 115 for nametypes.
 
--- Version 0.92 -- Removed Nurgle Plate Armor for simplicity's sake (and apparently Warriors, in tabletop, always have Chaos Armor). Pestigor's chaosrec is now 3, as with the others. blunt and #slash to the flail/sword. #blunt to Chaos steed hoof. Sombre noticed that Nurgle Standard Bearers were lacking a shield. Increased and decreased #mr, #ap, #def etc. according to how they are in Slaanesh Warhost where applicable. Altered the Warhost's flag. Changed Lord of Nurgle's magic to be either 2D or 2N and gave the Lord a shield (which is situated on the mount, because I wanted the Lord to show better on the sprite... I don't know why I've been debating myself over giving the Lord a shield). Returned #heal to Warriors and Standard Bearers (still waiting for #diseaseres). Added Bile Troll, a new unit (thanks Sombre!). More changes to #chaosrecs here and there.
+-- Version 0.92 -- Removed Nurgle Plate Armor for simplicity's sake (and apparently Warriors, in tabletop, always have Chaos Armor). Pestigor's chaosrec is now 3, as with the others. blunt and #slash to the flail/sword. #blunt to Chaos steed hoof. Sombre noticed that Nurgle Standard Bearers were lacking a shield. Increased and decreased #mr, #ap, #def etc. according to how they are in Slaanesh Warhost where applicable. Altered the Warhost's flag. Changed Lord of Nurgle's magic to be either 2D or 2N and gave the Lord a shield (which is situated on the mount, because I wanted the Lord to show better on the sprite... I don't know why I've been debating myself over giving the Lord a shield). Returned #heal to Warriors and Standard Bearers (still waiting for #diseaseres). Added Bile Troll, a new unit (thanks Sombre!). More changes to chaosrecs here and there.
 
--- Version 0.91 -- Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Lord of Nurgle's AP to 20. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; lowered #researchbonus to make the price hike less steep). Massive reworking of Daemon command structure. Daemon Prince's #coldres upped to 5. Apparently Tzaangor (and Slaangor) *now* has #stealthy, so Pestigor got his #stealthy back. To combat ridiculous morale bonuses, started using #command where applicable and dropped #inspirational here and there. Made everything below Chosen have #coldres 3, as with the other Warhosts. Slightly adjusted Nurgle Plate Armor's #rcost downwards and adjusted Warriors' #chaosrec to be 1. Removed recup and regen from Warriors and the Standard Bearer (Plague Knight only lost regen) since other nations' Warriors
--- don't have their specialties, also lowered poisonres. Had forgotten to add poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking #armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
+-- Version 0.91 -- Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Lord of Nurgle's AP to 20. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; lowered #researchbonus to make the price hike less steep). Massive reworking of Daemon command structure. Daemon Prince's #coldres upped to 5. Apparently Tzaangor (and Slaangor) *now* has #stealthy, so Pestigor got his #stealthy back. To combat ridiculous morale bonuses, started using #command where applicable and dropped #inspirational here and there. Made everything below Chosen have #coldres 3, as with the other Warhosts. Slightly adjusted Nurgle Plate Armor's rcost downwards and adjusted Warriors' chaosrec to be 1. Removed recup and regen from Warriors and the Standard Bearer (Plague Knight only lost regen) since other nations' Warriors
+-- don't have their specialties, also lowered poisonres. Had forgotten to add poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
 
--- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed #acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (#restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
--- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to #summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
--- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed #undead from all mortal followers of Nurgle and gave them #regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
+-- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
+-- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
+-- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed undead from all mortal followers of Nurgle and gave them regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
 
 -- Version 0.78 - Made everything with #enc 0 except GUOs have #enc 1 or 2 (brings enc to Tzeentch warhost's levels). Protection of Nurgle now requires a gem and 2 levels of Ench research. Standard Bearer now has MM1 like its Tzeentch counterpart. Cultist received start/maxage. Added secondary color to nation colors. Fixed #summary formatting. Tinkered with the long description some more. Added a new spell to Ench, "Consecration of Nurgle", which both removes afflictions (also kills pop and gives your mage a craving for human flesh) and summons Plaguebearers. Slight change to the #summary. Added 'Warhammer' to modname (since Tzeentch warhost has it). Brought the Champion up to Chosen levels and upped the Exalted Champ a little. Lowered the price of the Sorcerer Lord Pretender - it was the same price as the Tzeentch one, which can fly, gets a bit more research and such. Added nofind to items. Fixed the Daemon Prince's tail's positioning. Fixed the positioning of a bunch of sprites
 -- (didn't really show in-game, but it bothered me!).
 
--- Version 0.77 - Removed chest slots from units with Chaos Armor, because you aren't supposed to replace Chaos Armor. Lowered #poisonres to "normal" undead levels on all except Daemons. Herald received a buff to its leading ability and a #batstartsum. #ambidextrous to Plague Drone and Rot Fly. Lowered the Spawn of Nurgle's #prot a little but increased its #invulnerable. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Gave the nation a new main and brief description (the old ones were... Rather generic).
+-- Version 0.77 - Removed chest slots from units with Chaos Armor, because you aren't supposed to replace Chaos Armor. Lowered #poisonres to "normal" undead levels on all except Daemons. Herald received a buff to its leading ability and a #batstartsum. #ambidextrous to Plague Drone and Rot Fly. Lowered the Spawn of Nurgle's #prot a little but increased its #invulnerable. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received animalawe (due to being the commander in the wastelands with the Warhounds). Gave the nation a new main and brief description (the old ones were... Rather generic).
 
 -- Version 0.76 - Fixed Ku'gath's shadow (it was way too small). Fixed Plaguebearer and Herald of Nurgle sprites (they were 1 pixel too low and had too small shadows). Renamed the Chaos Vortex again, to Chaos Vortex of Nurgle. Added survivals to the Champ, Exalted Champ and Lord (since they were supposed to have matching survivals with the Chosen). Added ages to Chosen and Warriors. Added Nurgle Plate Armor, gave it to several units below Chosen. Altered the itemized Chaos Armor to bless its user (and removed the resistances). Brought up the MRs of the Sorcerers. Made Warhounds #undisciplined (since Forsaken are #undisciplined). Increased morale for units from Warriors to Chosen. More MR to Plague Drones/Rot Flies. Changed some #prots and a lot of #invulnerables. #chaosrec was missing from Lord of Nurgle. Chaos Furies had the wrong path to summon.
 
--- Version 0.75 - Jump in versions due to "why not?" Ever so slight changes to the Minotaur! Added undisciplined to Rot Fly. Changes to the Warhound (incl. Rabid Bite and reclimit). Foreignrec Cultist added. Changed PD, it was the same way it had been in Dom3 and in Dom4 it looked INCREDIBLY HIGH, also removed Warhound from PD due to weapon change. Removed Pestigor's #stealthy because the Tzaangor isn't stealthy. Gave the nation a national color. Added an item, the Nurgle Chaos Armour. Added Filth Mace and Balesword, which are weapons. Lowered the negative Def and amount of Enc on the Chaos Armor to match the Tzeentch armor, still gives less prot (enc was mostly useless due to everyone using it being undead with no enc anyway, and units generally have less def than their Tzeentch counterparts to begin with). Added #holy to Plague Drone/Rot Fly. Added #armorpiercing to the Daemonforged Axe and made flails take out 2 def. Put a - between all "Daemon" and "forged" to match Tzeentch warhost.
+-- Version 0.75 - Jump in versions due to "why not?" Ever so slight changes to the Minotaur! Added undisciplined to Rot Fly. Changes to the Warhound (incl. Rabid Bite and reclimit). Foreignrec Cultist added. Changed PD, it was the same way it had been in Dom3 and in Dom4 it looked INCREDIBLY HIGH, also removed Warhound from PD due to weapon change. Removed Pestigor's #stealthy because the Tzaangor isn't stealthy. Gave the nation a national color. Added an item, the Nurgle Chaos Armour. Added Filth Mace and Balesword, which are weapons. Lowered the negative Def and amount of Enc on the Chaos Armor to match the Tzeentch armor, still gives less prot (enc was mostly useless due to everyone using it being undead with no enc anyway, and units generally have less def than their Tzeentch counterparts to begin with). Added holy to Plague Drone/Rot Fly. Added armorpiercing to the Daemonforged Axe and made flails take out 2 def. Put a - between all "Daemon" and "forged" to match Tzeentch warhost.
 -- Was supposed to have #dmg in weapon commands, and the mistake lead to pretty much no damage in a lot of custom weapons.
 
--- Version 0.51 - After some feedback, fixing some silly oversights! Giving 18 MR to the Pretenders due to that being the norm. 2D to the Daemon Prince Pretender. Giving the humans (and Beastmen) who had 10AP 12AP, because that's the norm and Nurgle's effects don't really slow people down. Giving the Chosen with the axe a Daemonforged Axe (it's not supposed to be as good as the Flail one, but not that much worse!). Checking if I can get rid of the range on Protection of Nurgle (also giving it an #explspr). Checking att levels on humans in general (same reason as AP; there's no Rigor Mortis), def levels will stay (or become worse) due to "no pain". Other stuff: Adjusted the prices of the Chosen slightly upwards. Adjusted resource costs of weapons. Gave some spells #sounds and #explsprs.
+-- Version 0.51 - After some feedback, fixing some silly oversights! Giving 18 MR to the Pretenders due to that being the norm. 2D to the Daemon Prince Pretender. Giving the humans (and Beastmen) who had 10AP 12AP, because that's the norm and Nurgle's effects don't really slow people down. Giving the Chosen with the axe a Daemonforged Axe (it's not supposed to be as good as the Flail one, but not that much worse!). Checking if I can get rid of the range on Protection of Nurgle (also giving it an #explspr). Checking att levels on humans in general (same reason as AP; there's no Rigor Mortis), def levels will stay (or become worse) due to "no pain". Other stuff: Adjusted the prices of the Chosen slightly upwards. Adjusted resource costs of weapons. Gave some spells #sounds and explsprs.
 
 -- Version 0.5 - Initial release of the mod! Utilizes a lot of edited Tzeentch warhost assets (which is not to say that there wouldn't be any new ones) as well as the Dom3 Chaos Undivided's .dm as base.
 
@@ -6282,12 +6280,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 #newweapon 1757
 #name "Plague Scythe"
-#armorpiercing
 #dmg 8
 #att 2
 #def 2
 #len 2
-#nratt 2
+#nratt 3
 #magic
 #twohanded
 #sound 8
@@ -6519,23 +6516,22 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #descr "Bile Trolls are perhaps the most vile of all Troll-kind; they are cursed, tortured creatures, with an appalling hunger that can never be satiated. It is said that they are the descendents of Trolls who feasted upon the dead who had followed Grandfather Nurgle which lead to their malediction, and those among the Troll-kind who have since shared their terrible fate. Never are they given respite of their agony. Their bodies are wracked with disease which their regenerative powers constantly attempt to overcome but never cannot, only to forever continue the cycle of suffering as what ails them will never outright slay them. They are shunned and feared by all, even their kin, as none wish to share their terrible fate."
 #mapmove 16
 #ap 13
-#hp 50
+#hp 42
 #str 22
 #att 10
 #size 3
 #enc 3
 #def 8
 #prec 4
-#prot 14
+#prot 13
 #mor 12
 #mr 14
-#weapon "Rusted Cleaver"
-#weapon "Rabid Bite"
+#weapon 1853 -- Chaos Broadsword
 #weapon 1771
-#regeneration 5
+#regeneration 15
 #heal
 #rcost 2
-#rpcost 48
+#rpcost 24
 #darkvision 50
 #poisonres 25
 #neednoteat
@@ -6788,8 +6784,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 10
 #mr 10
 #enc 3
-#str 11
-#att 10
+#str 10
+#att 11
 #def 10
 #prec 10
 #mapmove 16
@@ -6822,8 +6818,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 10
 #mr 10
 #enc 3
-#str 11
-#att 10
+#str 10
+#att 11
 #def 10
 #prec 10
 #mapmove 16
@@ -6924,7 +6920,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #chaosrec 2
 #rcost 1
 #snow
-#rpcost 18
+#rpcost 15
 #weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
 #armor 801
@@ -6962,7 +6958,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #chaosrec 2
 #rcost 1
 #snow
-#rpcost 18
+#rpcost 15
 #weapon 1865 -- Chaos Axe
 #armor "Full Helmet"
 #armor 801
@@ -7007,7 +7003,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #coldres 3
 #chaosrec 3
 #rcost 6
-#rpcost 45
+#rpcost 32
 #ressize 2
 #diseaseres 90
 #poisonres 15
@@ -7079,7 +7075,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #chaosrec 3
 #rcost 1
 #snow
-#rpcost 36
+#rpcost 26
 #weapon 1859 -- Chaos Flail
 #armor "Full Helmet"
 #armor 801
@@ -7087,7 +7083,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #itemslots 14470
 #holy
 #poisonres 25
-#deathdisease 1
 #heal
 #wastesurvival
 #coldres 5
@@ -7120,7 +7115,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #chaosrec 3
 #rcost 1
 #snow
-#rpcost 36
+#rpcost 26
 #weapon 1865 -- Chaos Axe
 #armor "Full Helmet"
 #armor 801
@@ -7128,7 +7123,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #itemslots 14470
 #holy
 #poisonres 25
-#deathdisease 1
 #heal
 #wastesurvival
 #coldres 5
@@ -7178,18 +7172,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #diseaseres 80
 #end
 
--- Cultist (foreignrec)
-
-#newmonster 5049
-#copyspr 5010
-#copystats 5010
-#descr "While the cults of Nurgle are not the most spread out nor the strongest of all the cults of the various Dark Gods, it does not mean they are nonextant. Indeed, they are ever present in the lands of men, rotting away the very foundations of civilization."
-#slowrec
-#gcost 10045
-#chaosrec 4
-#sailing 4 2
-#userestricteditem 6565
-#end
 
 -- Forsaken Champion
 
@@ -7383,7 +7365,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #prec 10
 #mr 10
 #mor 10
-#gcost 10015
+#gcost 10025 -- 80
 #chaosrec 3
 #rcost 1
 #snow
@@ -7585,15 +7567,15 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gcost 10030
 #chaosrec 5
 #rcost 1
+#rpcost 1
 #snow
-#rpcost 2
 #holy
 #deathdisease 3
 #heal
 #poisonres 25
 #coldres 5
 #okleader
-#undcommand 5
+#undcommand 20
 #weapon 1762
 #armor "Full Helmet"
 #armor 801
@@ -7626,20 +7608,21 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mr 15
 #prot 4
 #mor 15
-#gcost 10030
+#gcost 10000
 #chaosrec 8
 #rcost 1
 #snow
 #rpcost 2
 #holy
 #researchbonus -8
+#magicskill 8 1
 #custommagic 12288 100
 #deathdisease 4
 #heal
 #poisonres 25
 #goodleader
 #command -20
-#undcommand 5
+#okundeadleader
 #weapon 1755
 #armor 801
 #itemslots 15494
@@ -7660,6 +7643,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #name "Chaos Lord"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Lord of Nurgle rides upon a rotting Daemonic steed, a great scythe his weapon of choice. His powers are, indeed, beyond those of any regular Champion."
+#gcost 10050
 #ap 20
 #mapmove 20
 #hp 34
@@ -7673,6 +7657,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mr 17
 #prot 4
 #mor 17
+#magicskill 8 2
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
 #weapon 1748 -- Aura
@@ -7682,7 +7667,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #armor 801
 #armor "Shield"
 #mounted
-#gcost 10080
 #rcost 6
 #rpcost 2
 #chaosrec 12
@@ -7692,11 +7676,10 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #startage 300
 #maxage 3000
 #goodleader
-#undcommand 5
+#goodundeadleader
 #deathdisease 6
 #heal
 #poisonres 25
-#fear 5
 #coldres 5
 #wastesurvival
 #snow
@@ -7839,7 +7822,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gcost 0
 #rcost 1
 #weapon 1749 -- Greater Aura
-#weapon 1756
+#weapon 1756 -- Large Plaguesword
 #weapon 1760
 #trample
 #startage 190
@@ -7993,7 +7976,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gcost 0
 #rcost 1
 #weapon 1749 -- Greater Aura
-#weapon 1756
+#weapon 1756 -- Large Plaguesword
 #trample
 #startage 190
 #maxage 10000
@@ -8041,7 +8024,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #startage 20
 #maxage 10000
 #poisonres 25
-#deathdisease 1
+#deathdisease 2
 #demon
 #neednoteat
 #holy
@@ -8078,7 +8061,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #demon
 #neednoteat
 #holy
-#deathdisease 1
 #magicpower 1
 #montag 69402
 #stealthy 0
@@ -8115,7 +8097,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #neednoteat
 #holy
 #magicpower 1
-#deathdisease 1
 #montag 69402
 #stealthy 0
 #heal
@@ -8150,7 +8131,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #demon
 #neednoteat
 #holy
-#deathdisease 1
 #magicpower 1
 #montag 69402
 #stealthy 0
@@ -8386,15 +8366,15 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1747
+--#weapon 1747
 #weapon 1749 -- Greater Aura
-#weapon 1756
+#weapon 1756 -- Large Plaguesword
 #startage 190
 #maxage 10000
 #magicskill 5 2
-#custommagic 12288 100
-#custommagic 12288 66
-#custommagic 28672 10
+#custommagic 13312 100
+#custommagic 13312 100
+#custommagic 23312 100
 #holy
 #inspirational 1
 #goodleader
@@ -8406,12 +8386,58 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #fear 8
 #demon
 #neednoteat
-#magicpower 1
+#magicpower 2
 #poisonres 25
 #wastesurvival
 #snow
 #regeneration 10
 #heal
+#end
+
+--Daemon Prince of Nurgle (Summon)
+
+#newmonster 5049
+#spr1 "./Warhammer-Complete/Nurgle_Daemon_Prince_1.tga"
+#spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
+#name "Daemon Prince"
+#nametype 257
+#descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Lord of Pestilence on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
+#ap 20
+#mapmove 22
+#hp 80
+#size 4
+#str 18
+#enc 1
+#att 17
+#def 15
+#prot 14
+#prec 12
+#mr 18
+#mor 30
+#rcost 1
+#wastesurvival
+#poisonres 25
+#regeneration 5
+#weapon 1749 -- Greater Aura
+#weapon 1753 -- Daemon Flail
+#armor 803 -- Light chaos armor
+#armor "Full Helmet"
+#itemslots 15494
+#startage 6000
+#maxage 10000
+#magicskill 5 2 -- Death
+#magicskill 6 1 -- Nature
+#custommagic 15360 200 -- Death, Nature, Earth, Astral
+#custommagic 15360 200
+#inspirational 1
+#goodleader
+#expertundeadleader
+#fear 5
+#flying
+#demon
+#deathdisease 6
+#magicpower 1
+#neednoteat
 #end
 
 ----------- PRETENDERS, Daemon Prince of Nurgle and Sorcerer Lord of Nurgle
@@ -8436,7 +8462,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #prec 13
 #mr 18
 #mor 30
-#gcost 10000
+#gcost 9980
 #rcost 1
 #pathcost 50
 #startdom 3
@@ -8444,7 +8470,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
-#weapon 347
+#weapon 1749 -- Greater Aura
+#weapon 1753 -- Daemon Flail
 #armor 803 -- Light chaos armor
 #armor "Full Helmet"
 #itemslots 15494
@@ -8606,6 +8633,22 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #nreff 1
 #end
 
+--Daemon Prince Summon
+
+#newspell
+#name "Call Daemon Prince"
+#descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Nurgle, a Daemon Prince, who is ready to fight for His cause where ever it may be."
+#restricted 136
+#school 0
+#researchlevel 8
+#path 0 5
+#pathlevel 0 5
+#fatiguecost 4000
+#effect 10021
+#damage 5049
+#nreff 1
+#end
+
 -- Great Unclean One summon
 
 #newspell
@@ -8613,12 +8656,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #descr "With this grand ritual, the caster brings from the Realm of Chaos to the world a Great Unclean One, a Greater Daemon of Nurgle. The Great Unclean One is gigantic in figure, bloated with decay, disease and all imaginable kinds of physical corruption."
 #restricted 136
 #school 0
-#researchlevel 8
+#researchlevel 9
 #path 0 5
 #path 1 6
-#pathlevel 0 5
+#pathlevel 0 6
 #pathlevel 1 2
-#fatiguecost 4000
+#fatiguecost 4500
 #effect 10021
 #damage 5024
 #nreff 1
@@ -8707,14 +8750,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #researchlevel 4
 #path 0 5 -- The magic path for casting, IE: fire, water, etc.
 #path 1 6
-#pathlevel 0 3
-#pathlevel 1 2
+#pathlevel 0 2
+#pathlevel 1 1
 #fatiguecost 20
 #effect 10 -- Regeneration?
 #damage 32
 #aoe 3
 #precision 5
-#range 40
+#range 30
 #flightspr 404
 #explspr 10004
 #spec 12587008
@@ -8768,7 +8811,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #secondarypath 6
 #secondarylevel 1
 #name "Nurgle Chaos Armour"
-#descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
 #cursed
@@ -8788,7 +8831,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #secondarypath 6
 #secondarylevel 1
 #name "Nurgle Chaos Armour"
-#descr "The armor worn by the elite Chosen of Nurgle, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
+#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
 #cursed
@@ -8848,16 +8891,17 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 #newevent
 #rarity 0
-#req_rare 20 -- SHOULD BE 20
+#req_rare 15 -- Happens x% of the time
 #req_nation 136 --- Nurgle
+#req_notnation 159
+#req_notnation 120
 #req_notnation 136
 #nation 136 -- Nurgle controls the troops
 #req_monster 5010 -- Cultist
 #req_capital 0
-#req_maxdef 30
-#req_minunrest 50
+#req_maxdef 24
+#req_minunrest 80
 #req_land 1
-#req_chaos 1
 #req_magic 1
 #req_maxtroops 150
 #req_indepok 1 -- Can happen to indies
@@ -8867,7 +8911,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newdom 3
 #incscale2 0
 #com 5022 -- Herald
-#6d6units 5018 -- Plaguebearers
+#5d6units 5018 -- Plaguebearers
 #end
 
 --#newevent
@@ -8952,7 +8996,7 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 
 #clearrec
 #wasterec 5000 -- Warhound
-#wasterec 5040 -- Forsaken
+--#wasterec 5040 -- Forsaken
 #forestrec 5038 -- Ungor
 #forestrec 5039 -- Ungor Raider
 #forestrec 5037 -- Gor
@@ -8994,8 +9038,7 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 ---- LEADERS
 
 #addreccom 5010 -- Nurgle Cultist
-#addforeigncom 5049 -- N C
-#wastecom 5041 -- Forsaken Champion
+--#wastecom 5041 -- Forsaken Champion
 #forestcom 5042 -- Ungor Raider Halfhorn
 #forestcom 5044 -- Wargor
 #forestcom 5043 -- Doombull

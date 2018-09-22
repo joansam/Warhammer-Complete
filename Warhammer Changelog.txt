@@ -1,5 +1,5 @@
 -- TO-DO
--- NEW CHANGES
+-- THOUGHTS
 -- Different kinds of spawn for ascension. Will need lots if you want different types normally
 -- Really, ideally you'd have lesser champions with greater chances of spawndom than lords
 -- Could use montags for daemonic gifts on princes/greater daemons
@@ -56,8 +56,34 @@ Nurgle - causes disease on easy MR negates check
 Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
---Version 1.26
---Increased PD limit to stop cultist events - now about 330 gold worth of PD
+Version 1.26 To-Do
+
+-- Increased att/def skill a bit for some Daemons
+-- Removed priest levels from Slaanesh sorc line
+-- Switched paths on Keeper of Secrets and Daemon Princess - Princess now has more magic
+
+
+
+
+--Version 1.26: 
+-- Nurgle Daemon Prince sprite fixes - head looks better, less janky
+-- Added Nurgle Daemon Prince summon, Great Unclean One now Conj 9
+-- Overhauled Great Unclean One - new magic paths
+-- Increased magic on Tzeentch Daemon Prince summon
+-- Changed some research levels and magic path reqs for greater Tzeentch and Nurgle summons
+-- Tzeentch+Nurgle priest rework - exalted champ and lord now have holy levels.
+-- Event Rework - sorc unit spawns are now forsaken, no culting other Chaos factions, 1 spawn/event, worse spawns
+--   No chaos req, but lowered event chances and higher unrest req
+--   Increased PD limit to stop cultist events - now 20 PD for SL and TZ and 25 for NU
+-- Forsaken are now non-recruitable
+-- Increased disease-on-death aura from 1 to 2 on Plaguebearers, removed it from Chosen+Nurglings.
+-- Removed AP attacks on Daemonic weapons, added slight stat boosts
+-- Removed Azazel's claws, Keeper of Secrets' head slot
+-- Fleshy Abundance pathcost lowered to D2N1
+-- Removed Tz/Nu out-of-cap cultists
+-- Gave champs, exalted champs and lords some undead/demon leadership
+-- Added recup to Lord of Change, removed it from Exalted Daemon
+-- Bile trolls have 15% regen instead of 5, use normal chaos sword, 24 recpoints from 48
 
 --Version 1.25: Description changes, wastesurvival, snowmove and some Daemon work
 --Changed descriptions to be much clearer about nation capabilities
