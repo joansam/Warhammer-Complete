@@ -56,14 +56,22 @@ Nurgle - causes disease on easy MR negates check
 Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
-Version 1.26 To-Do
-
--- Increased att/def skill a bit for some Daemons
--- Removed priest levels from Slaanesh sorc line
--- Switched paths on Keeper of Secrets and Daemon Princess - Princess now has more magic
-
+To-Do
+-- Give Skaven and Lizards proper godtypes
+-- Balance Skaven - start by improving the summons, decreasing lab costs to 300?
+-- Increase cost of lizard summons? Then again, their infrastructure is quite bad.
 
 
+-- Increase att/def skill a bit for some Daemons
+-- Remove priest levels from Slaanesh sorc line
+-- Switch paths on Keeper of Secrets and Daemon Princess - Princess now has more magic
+
+Version 1.3:
+-- Added Skaven!
+--   Small bugfixes on their pretenders (minor cost changes mostly, fixed slots on the Pillar)
+--   Decreased chances of warpstone seam events - they were too damaging
+-- Added Lizardmen!
+--    Changed their in-game name to 'Lizardmen' (was Itza) and fixed a crash caused by a typo
 
 --Version 1.26: 
 -- Nurgle Daemon Prince sprite fixes - head looks better, less janky

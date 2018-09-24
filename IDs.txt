@@ -2,79 +2,90 @@ ID Numbers :
 Nations are sorted as in the code
 
 Montags: Chaos: 7777, 8888, 6666, 5555, 60006
+Nametypes: Daemon: 257, Beastmen: 109, Chaos Human: 115, Skaven: 187, Lizards: 123
+
+Nations:
+Skaven: 116
+Tzeentch: 120
+Nurgle: 136
+Lizards: 145
+Slaanesh: 159
 
 Weapons : 
-Skaven : 1900-35
-Bretonnia : 1022-33 / 1040
-Naggarond : 1170-88
-Khazad : 842-60 / 916-26
-Empire : 776-802
-HE : 1001-24 (except 1012)
-Khorne : 1301-10
-Nurgle : 1748-71 (except 1754)
-Ogre : 927-50
-Orc : 1041-60
-Slaanesh : 1851-66
-Tomb Kings : 1700-6
-Tzeentch : 1869-81
-VC : 741-7
-WE : 1350-63
-Itza : 810-40 
+Bretonnia: 1022-33 / 1040
+Dark Elves: 1170-88
+Khazad: 842-60 / 916-26
+Empire: 776-802
+High Elves: 1001-24 (except 1012)
+Khorne: 1301-10
+Ogres: 927-50
+Orcs: 1041-60
+Tomb Kings: 1700-6
+Vampire Counts: 741-7
+Wood Elves: 1350-63
+--INCLUDED:
+Lizardmen: 810-41
+Skaven: 861-91
+Nurgle: 1748-71 (except 1754)
+Slaanesh: 1851-66
+Tzeentch: 1869-8
 
 Armors : 
-Skaven : 900-902
 Bretonnia : 336-339
 Naggarond : 259 / 261-264
 Khazad : 340-351
 Empire : 281-284
 HE : 356 / 357 / 359-366
 Khorne : 700 / (701?) / 702 
-Nurgle : 685
 Ogre : 270-273
 Orc : 380 / 381
-Slaanesh : 801 / 803 / 804
 Tomb Kings : 552-562
-Tzeentch : 449 / 450
 VC : None
 WE : 710 / 714 / 715
-Itza : 370-376
+--INCLUDED:
+Skaven : 318-21
+Lizardmen : 370-376
+Tzeentch : 449 / 450
+Nurgle : 685
+Slaanesh : 801 / 803 / 804
 
 Monsters :
-Skaven : 6111-6121 / 6124 / 6130-6152 / 6156-6158 / 6159-6164 / 6165-6167
 Bretonnia : 3162-3225 / 3227
 Naggarond : 5100-5131 / 5133-5151
 Khazad : 3100-3131 / 3133-3141 / 3143-3145
 Empire :  3396-3431 / 3433-3477 / 3483 / 3484-3501
 HE : 6001-6021 / 6023 / 6024-6042 / 6044-6046
 Khorne : 4600-4607 / 4610-4613 / 4615-4618 / 4620-4623 / 4625-4627 / 4629-4638 / 4640-4643 / 4645-4651 / 4655-4657 / 4660-4662
-Nurgle : 5000-5050
 Ogre : 5497-5539
 Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
-Slaanesh : 4150-96
 Tomb Kings : 3241-75
-Tzeentch : 4330-4350 / 4796-4836
 VC : 3000-69
 WE : 4400-4408 / 4415-4421 / 4425-4431 / 4440-4442 / 6041
-Itza : 3288-3365
+INCLUDED:
+Slaanesh : 4150-96
+Tzeentch : 4330-4350 / 4796-4836
+Nurgle : 5000-5050
+Skaven : 5540-86
+Lizardmen : 7310-65
 
 Sites : 
-Skaven : 1777-1779
 Bretonnia : 1551 and 1552
 Naggarond : 1900 and 1901
 Khazad : 1550
 Empire : 1512-1516
 HE : 1601-1604
 Khorne : 1701-1703
-Nurgle : 1925 and 1926
 Ogre : 1988 and 1989
 Orc : 1910-1912
-Slaanesh : 1950 and 1951
-Tomb Kings : 1930 and 31
-Tzeentch : 1952 / 1953
 VC : 1520-2
 WE : 1705 and 1706
+Tomb Kings : 1930 and 31
+INCLUDED:
 Itza : 1510 and 1511
-
+Nurgle : 1925 and 1926
+Slaanesh : 1950 and 1951
+Tzeentch : 1952 / 1953
+Skaven : 1991-5
 
 HUMAKTY CHANGELOG
 DONE : 
