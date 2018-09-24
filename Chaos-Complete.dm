@@ -5137,7 +5137,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr1 "./Warhammer-Complete/summon_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon_daemon_prince_2.tga"
 #name "Daemon Prince"
-#nametype 140
+#nametype 257
 #descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
 #ap 20
 #mapmove 22
@@ -5362,7 +5362,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr1 "./Warhammer-Complete/daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/daemon_prince_2.tga"
 #name "Daemon Prince of Tzeentch"
-#nametype 140
+#nametype 257
 #descr "A Daemon Prince of immense power, the daemonic fate all Champions desire, this ancient being has decided that it is now time to destroy all of civilization and for it to become a true God within this realm. Still true to Tzeentch, however, it would still only function as though a regent in this realm for the Dark God, who cannot manifest outside the Realm of Chaos."
 #ap 22
 #mapmove 22
