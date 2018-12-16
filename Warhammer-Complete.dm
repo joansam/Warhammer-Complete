@@ -10668,6 +10668,7 @@ still to do
 #spr2 "./Warhammer-Complete/Mawpit3.tga"
 #name "Facet of the Maw"
 #startdom 3
+#gcost 10060
 #pathcost 80
 #descr "This looks at first glance like a common Mawpit dug by Ogres to stage pitfights and sacrifices. But a closer look reveals that it is surrounded not by the typical ceremonial fragments of jagged stone, but massive, sharpened fangs lining the edges of its Maw. It is no mere pit, but a portal through which the blood and life forces of mortal creatures may be sacrificed to the Great Maw, flowing through to the Warp. This manifestation of the Maw has grown with regular sacrifice, and has attained Daemonic powers of its own. The moment fresh meat or living flesh comes near, it gurgles into activity, its fangs reaching out and grabbing its victim in moments. If destroyed, it will explode with Warp energies of incredible force, as the Great Maw itself shrieks in rage at the diminishing of its power in the mortal realm."
 #hp 300
@@ -11517,6 +11518,7 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 --Sets what forts they will use.
 
 #fortera 1 -- early era forts
+#fortcost 50 -- double the cost of forts
 
 
 ------- Add soldiers
