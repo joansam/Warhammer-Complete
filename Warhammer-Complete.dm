@@ -2934,8 +2934,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #forestrec 4163 -- Gor
 --#forestrec 4162 -- Slaangor
 --#forestrec 4161 -- Minotaur
-#addrecunit 4197 -- REMOVE ME 
-#addrecunit 4198
 #addrecunit 4151 -- Marauder #1
 #addrecunit 4152 -- Marauder #2
 #addforeignunit 4151
@@ -9119,7 +9117,2503 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 #startunitnbrs2 10
 #end
 
---END OF NURGLE, BEGINNING OF SKAVEN
+--END OF NURGLE, BEGINNING OF OGRE KINGDOMS
+
+--Sombre changes below, JoanSam changes in Warhammer Changelog
+
+----- 0.1 -----
+
+-- Ported from Dom4 to Dom5
+
+-- monster ids moved -- not needed -- done
+-- nation ids moved -- done
+-- weapon ids no change needed -- done
+-- armor ids no change needed -- done
+-- site ids no change needed --  done
+-- standardise nation description -- done
+-- recruitment points added to all units -- done
+-- commander points added to all commanders -- done
+-- check on iron weapons, wooden weapons etc -- done
+-- sensible fortera selected -- done
+-- mapmove conversion -- done
+
+
+still to do
+
+-- maybe check hp etc against conversion? Especially for characters, strength values etc
+
+
+---- CONTENT -----
+
+-- Added the Firebelly mage
+
+
+---- TWEAKS -----
+
+-- Heroes made unique
+
+-- Weapons generally cleaned up, lengths made to fit dom5 standards
+
+-- Wall defenders are gnoblars now
+
+-- Flag resized and detailed to dom5 standards
+
+-- Skrag now autoblesses army, berserks himself, summons 1d6+1 gorgers
+
+-- Removed retinues from Tyrant, Bruiser
+
+-- Removed multiforms of gnoblars
+
+-- Forts cost 100% extra
+
+-- Remmoved Facet of the Maw spell/unit entirely
+
+-- Scraplaunchers more expensive
+
+-- Slaughtermasters not equivalent of slow to recruit
+
+
+-------- ITEMS
+
+#selectitem 901
+--#copyitem 51
+#restricted 121
+#name "Maw Cleaver"
+#descr "Every Slaughtermaster or Butcher has sacrificed countless slaves to the Great Maw. Over time their implements of butchery have become uniquely suited to the task and as such they are able to ritually sacrifice two more slaves than normal each month."
+#spr "./Warhammer-Complete/Item_Cleaver.tga"
+#constlevel 0
+#type 1
+#weapon 933 -- Ogre choppa
+#mainpath 7
+#mainlevel 1
+#douse 1
+#sacrificebonus 4
+#nofind
+#cursed
+#end
+
+
+#selectitem 902
+#name "Skrag's Meatpot"
+#descr "Skrag's meatpot has been fed with all manner of ogres, greenskins, men, beasts, and reputedly even daemons. Over time it has become a channel to the maw itself and hungers constantly, driving the already unhinged and violent Skrag into an endless frenzy that he might constantly offer it more flesh."
+#spr "./Warhammer-Complete/Item_Meatpot.tga"
+#constlevel 12
+#type 8 -- misc item
+#bers
+#nofind
+#cursed
+#end
+
+
+
+
+-------- New Weapons
+
+
+#newweapon 927
+#name "Hunter Harpoon"
+#dmg -8
+#att 1
+#def 0
+#range -1
+#ammo 3
+#secondaryeffect 263
+#flyspr 110 1
+#dt_large
+#flail
+#sound 19
+#pierce
+#ironweapon
+#end
+
+#newweapon 928
+#name "Dark Chains"
+#dmg 0
+#dt_stun
+#att 0
+#def -1
+#flail
+#len 3
+#secondaryeffect 274 -- enslave mind
+#end
+
+#newweapon 929
+#name "Fleshflayer"
+#slash
+#dmg 13
+#nostr
+#att 1
+#def 1
+#flail
+#len 4
+#sound 9
+#nratt 2
+#dt_raise
+#magic
+#secondaryeffect 285 -- additional weakness
+#end
+
+#newweapon 930
+#name "Ogre Smash"
+#dmg -1
+#att -1
+#def -1
+#len 0
+#rcost 0
+#bonus
+#charge
+#blunt
+#bonus
+#end
+
+#newweapon 931
+#name "Ogre Club"
+#dmg 7
+#att -1
+#def -1
+#len 2
+#rcost 1
+#blunt
+#woodenweapon
+#end
+
+#newweapon 932
+#name "Ironfist"
+#dmg 1
+#att -2
+#def 2
+#len 0
+#rcost 2
+#blunt
+#pierce
+#ironweapon
+#bonus
+#end
+
+#newweapon 933
+#name "Ogre Choppa"
+#dmg 7
+#att 0
+#def -1
+#len 2
+#rcost 3
+#slash
+#end
+
+#newweapon 934
+#name "Big Ogre Choppa"
+#dmg 9
+#att 0
+#def 0
+#len 3
+#rcost 5
+#slash
+#ironweapon
+#twohanded
+#end
+
+#newweapon 935
+#name "Deathbelcher"
+#ammo 4
+#att 1
+#armorpiercing
+#dmg 11
+#flyspr 109 1
+#nostr
+#nratt 6
+#range 12
+#rcost 6
+#sound 25
+#flyspr 111 1
+#pierce
+#end
+
+--- flung scrap also used in chaos dwarf mod
+
+#newweapon 939
+#name "Flung Scrap"
+#dmg -3
+#att -2
+#ammo 30
+#range -1
+#nratt 1
+#flyspr 111 1
+#rcost 0
+#pierce
+#slash
+#ironweapon
+#end
+
+#newweapon 940
+#name "Skrag's Stumpblade"
+#dmg 5
+#att 0
+#def 0
+#len 2
+#rcost 3
+#secondaryeffect 125 -- leg chop
+#slash
+#bonus
+#end
+
+#newweapon 941
+#name "Skrag's Meathook"
+#dmg 7
+#att 0
+#def -1
+#len 2
+#rcost 3
+#secondaryeffect 335 -- armloss
+#slash
+#pierce
+#end
+
+#newweapon 942
+#name "Sky Giant Bone"
+#dmg 4
+#att 1
+#def 1
+#magic
+#secondaryeffect "Curse"
+#len 2
+#blunt
+#end
+
+#newweapon 943
+#name "Crude Taper"
+#blunt
+#dmg -2
+#att -1
+#def 0
+#len 1
+#rcost 2
+#secondaryeffect 216
+#sound 10
+#end
+
+
+#newweapon 944
+#name "Stumpblade"
+#dmg 5
+#att 0
+#def 0
+#len 1
+#rcost 3
+#slash
+#ironweapon
+#bonus
+#end
+
+
+#newweapon 945
+#name "Heavy Chains"
+#dmg 0
+#att 0
+#def 0
+#flail
+#aoe 2
+#sound 11
+#nratt 2
+#len 5
+#blunt
+#ironweapon
+#end
+
+
+#newweapon 946
+#name "Giant Stomp"
+#dmg 0
+#att 0
+#def -1
+#len 0
+#rcost 0
+#bonus
+#aoe 1
+#len 0
+#blunt
+#end
+
+
+#newweapon 947
+#name "Scrap Barrage"
+#dmg 10
+#nostr
+#att -2
+#def 0
+#ammo 10
+#range 40
+#nratt 20
+#flyspr 304 4
+#sound 9
+#rcost 6
+#slash
+#pierce
+#end
+
+
+#newweapon 948
+#name "Cathayan Longsword"
+#dmg 8
+#att 2
+#def 2
+#len 2
+#rcost 5
+#sound 8
+#slash
+#ironweapon
+#end
+
+
+#newweapon 949
+#name "Maneater Blade"
+#dmg 7
+#att 1
+#def 1
+#len 2
+#rcost 2
+#sound 8
+#slash
+#pierce
+#ironweapon
+#end
+
+
+#newweapon 950
+#name "Yhetee Ice Club"
+#dmg 6
+#att 0
+#def 0
+#len 2
+#rcost 1
+#magic
+#blunt
+#iceweapon
+#end
+
+
+
+-------- New Armour
+
+--- gutplate also used in chaos dwarf mod
+
+#newarmor 270
+#name "Gutplate"
+#type 5
+#prot 9
+#def 0
+#enc 0
+#rcost 7
+#ironarmor
+#end
+
+
+#newarmor 271
+#name "Gutplate n Bits"
+#type 5
+#prot 11
+#def 0
+#enc 1
+#rcost 9
+#ironarmor
+#end
+
+
+#newarmor 272
+#name "Irongut Plate"
+#type 5
+#prot 14
+#def -1
+#enc 2
+#rcost 12
+#ironarmor
+#end
+
+
+#newarmor 273
+#name "Tyrant Plate"
+#type 5
+#prot 16
+#def -2
+#enc 3
+#rcost 14
+#ironarmor
+#end
+
+
+----------------- MONSTERS
+
+
+-------- Recruits
+
+
+----Ogre Bull (Club)
+
+#newmonster 5500
+#spr1 "./Warhammer-Complete/Ogre Bull Club.tga"
+#spr2 "./Warhammer-Complete/Ogre Bull Club2.tga"
+#name "Ogre Bull"
+#descr "The term Bull is used for any adult male Ogre. Bulls make up the majority of any Ogre Kingdom, an unwashed mass of muscle and fat that can flatten almost any enemy when they gather in sufficient numbers. Big, brutish and extremely violent, Ogre Bulls are far taller than humans and are extraordinarily thick, boasting a unique muscular gut that allows them to digest virtually anything. Furthermore the gut houses the majority of their vital organs and is itself a great status symbol; thus an Ogre will protect their paunch with a metal gutplate. All ogres are highly dangerous on the charge, whether armed with a traditional hunting club or a combination of a crude 'choppa' and the more defensive ironfist."
+#hp 34
+#size 3
+#prot 5
+#mor 11
+#mr 10
+#enc 3
+#str 14
+#att 10
+#def 9
+#prec 7
+#mapmove 16
+#ap 16
+#gcost 20
+#rpcost 9
+#chaosrec 2
+#rcost 1
+#armor "Gutplate"
+#weapon "Ogre Club"
+#weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -2
+#pillagebonus 2
+#darkvision 25
+#nametype 193
+#end
+
+
+----Ogre Bull (Ironfist)
+
+#newmonster 5501
+#spr1 "./Warhammer-Complete/Ogre Bull Ironfist.tga"
+#spr2 "./Warhammer-Complete/Ogre Bull Ironfist2.tga"
+#name "Ogre Bull"
+#descr "The term Bull is used for any adult male Ogre. Bulls make up the majority of any Ogre Kingdom, an unwashed mass of muscle and fat that can flatten almost any enemy when they gather in sufficient numbers. Big, brutish and extremely violent, Ogre Bulls are far taller than humans and are extraordinarily thick, boasting a unique muscular gut that allows them to digest virtually anything. Furthermore the gut houses the majority of their vital organs and is itself a great status symbol; thus an Ogre will protect their paunch with a metal gutplate. All ogres are highly dangerous on the charge, whether armed with a traditional hunting club or a combination of a large 'choppa' and the more defensive ironfist."
+#hp 34
+#size 3
+#prot 5
+#mor 11
+#mr 10
+#enc 3
+#str 14
+#att 10
+#def 9
+#prec 7
+#mapmove 16
+#ap 16
+#gcost 20
+#rpcost 9
+#chaosrec 2
+#rcost 1
+#armor "Gutplate n Bits"
+#weapon "Ogre Choppa"
+#weapon "Ironfist"
+--weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -2
+#pillagebonus 2
+#darkvision 25
+#nametype 193
+#end
+
+----Ogre Irongut
+
+#newmonster 5502
+#spr1 "./Warhammer-Complete/Ogre Irongut.tga"
+#spr2 "./Warhammer-Complete/Ogre Irongut2.tga"
+#name "Ogre Irongut"
+#descr "Ogre Ironguts are the Ogres of any given tribe that have the most status and the best weaponry. Although not markedly superior in strength to their fellows, Ironguts are afforded great respect, as they are usually hand picked by the Tyrant himself. For this reason, a unit of Ironguts may well include the Tyrant's immediate family, or his drinking cronies. Ironguts go into battle armed with massive two handed 'choppas' and protected by an assortment of armour cobbled together over the years. Ironguts are champions of countless eating competitions and this has granted them a powerful sense of superiority."
+#hp 36
+#size 3
+#prot 5
+#mor 12
+#mr 10
+#enc 3
+#str 15
+#att 10
+#def 9
+#prec 7
+#mapmove 16
+#ap 16
+#gcost 28
+#rpcost 18
+#chaosrec 2
+#rcost 1
+#armor "Irongut Plate"
+#armor "half helmet"
+#weapon "Big Ogre Choppa"
+#weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -3
+#pillagebonus 3
+#darkvision 25
+#nametype 193
+#bodyguard 1
+#end
+
+
+----Gnoblar Fighter
+
+#newmonster 5503
+#spr1 "./Warhammer-Complete/Gnoblar Fighter.tga"
+#spr2 "./Warhammer-Complete/Gnoblar Fighter2.tga"
+#name "Gnoblar Fighter"
+#descr "The larger members of Gnoblar society have a tendency towards independence. These Gnoblars forsake their baggage-carrying brethren and band together into mobs that swarm across the battlefield, stabbing at downed foes and stealing choice shiny things before the Ogres feast on the dead. Gnoblar fighters are armed with an assortment of sharp bits of scrap metal, sticks, stones and rusty weapons - anything they can lay their grasping hands on. They are not expecting to do anything other than die horribly or run away in battle, but can help their masters by acting as a distraction or tiring out and overwhelming troublesome enemies. Nothing seems to satisfy a Gnoblar more than hurling a jagged piece of rock or metal into an unprotected face."
+#hp 7
+#size 1
+#prot 0
+#mor 6
+#mr 9
+#enc 3
+#str 7
+#att 8
+#def 9
+#prec 9
+#mapmove 12
+#ap 12
+#gcost 3
+#rpcost 3
+#rcost 1
+#armor "leather cuirass"
+#weapon "dagger"
+#weapon 939 -- flung scrap x1
+#maxage 20
+#darkvision 50
+#mountainsurvival
+#undisciplined
+#end
+
+
+----Gnoblar Trapper
+
+#newmonster 5511
+#spr1 "./Warhammer-Complete/Gnoblar Trapper.tga"
+#spr2 "./Warhammer-Complete/Gnoblar Trapper2.tga"
+#name "Gnoblar Trapper"
+#descr "These outgoing but vindictive Gnoblars are the most intrepid of their kind, and delight in catching and torturing the small ferocious mammals that populate the foothills of the Ogre Kingdoms. Once they have finished 'playing' with their prey and eaten a few of the tastiest bits, they take what's left back to their Ogre masters. Trappers garb themselves in the furs of the animals they have killed and like the Fighters will join the Ogres on the battlefield in the hope of finding new things to 'play' with, jabbing at their foes with sharp objects and hurling jagged stones."
+#hp 7
+#size 1
+#prot 0
+#mor 6
+#mr 9
+#enc 3
+#str 7
+#att 8
+#def 9
+#prec 9
+#mapmove 14
+#ap 12
+#gcost 5
+#rpcost 4
+#rcost 1
+#armor "furs"
+#weapon "dagger"
+#weapon 939 -- flung scrap x1
+#supplybonus 1
+#forestsurvival
+#stealthy 0
+#maxage 20
+#darkvision 50
+#mountainsurvival
+#assassin
+#undisciplined
+#end
+
+
+---- Ogre Deathbelcher
+
+#newmonster 5507
+#spr1 "./Warhammer-Complete/Ogre Deathbelcher.tga"
+#spr2 "./Warhammer-Complete/Ogre Deathbelcher2.tga"
+#name "Ogre Deathbelcher"
+#descr "The filthy and scorched Deathbelchers are a relatively recent addition to the Ogre forces, armed with powerful but crude magical weapons from the forges of the Chaos Dwarfs. The Deathbelcher weapon itself is effectively a large iron barrel packed with highly explosive and flammable material invented by the Sorcerors of Hashut, then loaded with scrap metal and pieces of jagged rock. In the hands of the Ogres they are inaccurate but devastating close range missile weapons which are so destructive that they are considered worth the risk of a few missing fingers or a lost eye."
+#hp 34
+#size 3
+#prot 5
+#mor 11
+#mr 10
+#enc 3
+#str 14
+#att 10
+#def 9
+#prec 7
+#mapmove 16
+#ap 15
+#gcost 35
+#rpcost 14
+#chaosrec 2
+#rcost 1
+#armor "Gutplate n Bits"
+#weapon "Crude Taper"
+#weapon "Ogre Smash"
+#weapon "Deathbelcher"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -2
+#pillagebonus 2
+#darkvision 25
+#nametype 193
+#end
+
+
+--- Gorger
+
+#newmonster 5508
+#copystats 1010
+#clearmagic#clearmagic#clearmagic
+#spr1 "./Warhammer-Complete/Gorger.tga"
+#spr2 "./Warhammer-Complete/Gorger2.tga"
+#name "Gorger"
+#descr "Gorgers are stinking, pale and degenerate Ogre-kin that have been condemned to the warpstone-laced labyrinths below each tribe's territory. More gorgers are constantly created as the tribe casts their weak or deformed young into their Maw-Pit, trusting the Great Maw to bless only the strongest with survival. In a sense, this happens, as in the darkness below a constant struggle for survival and food rages with the end result being the hulked monstrosities known as Gorgers. Gorgers are summoned by the bloodfeasts of the Butchers and set upon the enemy; in battle they are few creatures that can match them for ferocity, hunger or sheer violence."
+#hp 60
+#size 4
+#prot 8
+#mor 20
+#mr 10
+#enc 4
+#str 18
+#att 10
+#def 9
+#prec 3
+#mapmove 20
+#ap 18
+#gcost 0
+#rpcost 9
+#rcost 1
+#berserk 3
+#weapon "Bite"
+#weapon "Claws"
+#maxage 30
+#supplybonus -3
+#darkvision 75
+#coldres 5
+#nametype 193
+#undisciplined
+#end
+
+
+--- Sabretusk
+
+#newmonster 5509
+#spr1 "./Warhammer-Complete/Sabretusk.tga"
+#spr2 "./Warhammer-Complete/Sabretusk2.tga"
+#name "Sabretusk"
+#descr "Sabretusks are mountainous cats the size of a warhorse who track Rhinox herds across ice capped peaks and dark snow forests. These giant, agile felines often have tusks jutting from their lower jaws, for ripping out the guts of beasts far larger than they. Ogre Hunters have a special connection with these creatures and they are usually found together, whether cooperating or fighting."
+#hp 24
+#size 3
+#prot 4
+#mor 11
+#mr 5
+#enc 3
+#str 15
+#att 11
+#def 12
+#prec 6
+#mapmove 20
+#ap 22
+#gcost 0
+#rpcost 1
+#rcost 1
+#weapon "Bite"
+#weapon "Claw"
+#maxage 20
+#mountainsurvival
+#forestsurvival
+#coldres 15
+#snow
+#supplybonus 4
+#animal
+#stealthy 0
+#darkvision 50
+#undisciplined
+#end
+
+
+--- Yhetee
+
+#newmonster 5510
+#clearmagic#clearmagic#clearmagic
+#spr1 "./Warhammer-Complete/Yhetee.tga"
+#spr2 "./Warhammer-Complete/Yhetee2.tga"
+#name "Yhetee"
+#descr "Yhetee packs can generally be found ekeing out a sub-tribal existence at the peaks of mountains, but following some ancestral call, will join the Ogres in their wars and migrations. None know for sure, but it is speculated that Yhetees are a remote offshoot of the Ogre race dating back to the time of the first Great Migration. These ferocious creatures arm themselves with lethal ice clubs formed by turning the natural magic of their freezing breath on simple tree branches. The speed and agility of the Yhetee is almost without rival; they may easily outflank foes, scale sheer surfaces and hurtle through and over rough terrain. Yhetees are constantly surrounded by a chilling aura which tires and weakens their prey, ready for the kill. Yhetees are strongest in cold provinces and do not do well in hot environments."
+#hp 35
+#size 4
+#prot 5
+#mor 11
+#mr 9
+#enc 3
+#str 16
+#att 10
+#def 11
+#prec 4
+#mapmove 18
+#forestsurvival
+#mountainsurvival
+#coldres 25
+#snow
+#fireres -10
+#ap 20
+#gcost 0
+#rpcost 1
+#rcost 1
+#weapon 950
+#weapon 950
+#ambidextrous 4
+#cold 5
+#iceprot 2
+#coldpower 1
+#siegebonus 3
+#maxage 30
+#darkvision 25
+#nametype 193
+#end
+
+
+--- Ogre Maneater (Western)
+
+
+#newmonster 5515
+#spr1 "./Warhammer-Complete/Ogre Maneater West.tga"
+#spr2 "./Warhammer-Complete/Ogre Maneater West2.tga"
+#name "Ogre Western Maneater"
+#descr "Maneaters are Ogres who have travelled much of the known world as freebooters either individually or in small units. Collectively they have seen almost everything there is to see and survived to tell the tale of how they ate it. When they return to the Ogre Kingdoms, Maneaters have been exposed to all manner of diseases, dangers, cultures and experiences and as such are profoundly different from their rather backward kin. Despite this Maneaters are still Ogres at heart and with their newfound skill, equipment and and experience backing their natural physical prowess and taste for violence, the tribes have little choice but to accept them. Tyrants of wealth and power have learned to covet and treasure these 'eccentric' fighters as an utterly fearless elite. This Maneater has primarily been active West of the Ogre Kingdoms, participating in conflicts across Tilea, the Empire, Araby and beyond."
+#hp 36
+#size 3
+#prot 5
+#mor 16
+#mr 11
+#enc 3
+#str 16
+#att 13
+#def 12
+#prec 9
+#mapmove 18
+#ap 16
+#gcost 40
+#rpcost 30
+#chaosrec 5
+#rcost 1
+#armor "Reinforced leather cap"
+#armor "Gutplate n Bits"
+#weapon "Maneater Blade"
+#weapon "Maneater Blade"
+--weapon "Ogre Smash"
+#maxage 85
+#mountainsurvival
+#wastesurvival
+#forestsurvival
+#swampsurvival
+#coldres 5
+#snow
+#supplybonus -3
+#ambidextrous 5
+#ressize 2
+#pillagebonus 3
+#darkvision 25
+#nametype 193
+#inspirational 1
+#sailing 999 3
+#end
+
+
+
+--- Ogre Maneater (Eastern)
+
+
+#newmonster 5516
+#spr1 "./Warhammer-Complete/Ogre Maneater East.tga"
+#spr2 "./Warhammer-Complete/Ogre Maneater East2.tga"
+#name "Ogre Eastern Maneater"
+#descr "Maneaters are Ogres who have travelled much of the known world as freebooters either individually or in small units. Collectively they have seen almost everything there is to see and survived to tell the tale of how they ate it. When they return to the Ogre Kingdoms, Maneaters have been exposed to all manner of diseases, dangers, cultures and experiences and as such are profoundly different from their rather backward kin. Despite this Maneaters are still Ogres at heart and with their newfound skill, equipment and and experience backing their natural physical prowess and taste for violence, the tribes have little choice but to accept them. Tyrants of wealth and power have learned to covet and treasure these 'eccentric' fighters as an utterly fearless elite. This Maneater travelled East of the Ogre Kingdoms, slaughtering his way across Grand Cathay, the dense jungles of Ind and the hinterlands of Khuresh before reaching fabled Ippon and adopting some of their superior equipment."
+#hp 36
+#size 3
+#prot 6
+#mor 16
+#mr 11
+#enc 3
+#str 16
+#att 13
+#def 12
+#prec 9
+#mapmove 18
+#ap 16
+#gcost 40
+#rpcost 30
+#chaosrec 5
+#rcost 1
+#armor "Kabuto"
+#armor "Samurai Armor"
+#weapon "Cathayan Longsword"
+#weapon "Ogre Smash"
+#maxage 85
+#mountainsurvival
+#wastesurvival
+#forestsurvival
+#swampsurvival
+#coldres 5
+#snow
+#supplybonus -3
+#ressize 2
+#pillagebonus 4
+#darkvision 25
+#nametype 193
+#end
+
+
+
+--- Mawtribe Ogre
+
+#newmonster 5517
+#spr1 "./Warhammer-Complete/Ogre Mawtribe.tga"
+#spr2 "./Warhammer-Complete/Ogre Mawtribe2.tga"
+#name "Mawtribe Ogre"
+#descr "Anointed with 'warpaint' made from a foul mixture of blood and bile, this Ogre Bull is part of a Mawtribe, a group of ferocious fighters that are sacred to their kind. Mawtribe Ogres shun the trappings of civilisation, favouring the traditional club and gutplate. Driven by the hunger of the Great Maw they are undisciplined and savage even by Ogre standards, crashing wildly into battle, stuffing their cavernous maws with the fallen even in the midst of pitched combat. Mawtribe Ogres require no payment beyond the opportunity to fight and feed and are regarded as a sacred representation of The Great Maw by the tribes of the Ogre Kingdoms."
+#hp 34
+#size 3
+#prot 5
+#mor 14
+#mr 10
+#enc 3
+#str 15
+#att 10
+#def 9
+#prec 7
+#mapmove 16
+#ap 16
+#gcost 0
+#rpcost 9
+#rcost 1
+#armor "Gutplate"
+#weapon "Ogre Club"
+#weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#berserk 3
+#supplybonus -4
+#pillagebonus 2
+#holy
+#darkvision 25
+#nametype 193
+#end
+
+
+
+--- Scraplauncher
+
+#newmonster 5518
+#spr1 "./Warhammer-Complete/Scrap Launcher.tga"
+#spr2 "./Warhammer-Complete/Scrap Launcher2.tga"
+#name "Gnoblar Scraplauncer"
+#descr "Ogres don't have much use for the weapons of smaller humanoids like Orcs, Elves, Dwarfs and Men, so they allow scrounging Gnoblars to squabble over their possessions. A particularly crafty Gnoblar proclaiming himself King of Scrap recently pioneered a crude war machine based on the Stone Throwers of Dwarf clans which gives all these weapons back, pointy end first. The Scraplauncher does what the name implies: it launches bundles of weapons and other scrap metal across the battlefield to rain down on the heads of the enemy. It is crewed by bickering Gnoblars and hauled by a foul tempered but somewhat oblivious Rhinox. Should the Rhinox be badly hurt, it will undoubtedly shake off the ramshackle Scraplauncher and stampede over friend and foe."
+#size 6
+#hp 20
+#prot 11
+#mor 10
+#mr 8
+#enc 3
+#str 20
+#att 9
+#def 8
+#prec 7
+#mapmove 10
+#ap 10
+#gcost 120
+#rpcost 60
+#chaosrec 10
+#rcost 30
+#weapon "Scrap Barrage"
+#weapon "Gore"
+#maxage 40
+#siegebonus 4
+#mountainsurvival
+#coldres 8
+#snow
+#secondtmpshape 5519
+#darkvision 50
+#undisciplined
+#end
+
+
+
+---- Pissed Off Rhinox
+
+#newmonster 5519
+#spr1 "./Warhammer-Complete/Rhinox.tga"
+#spr2 "./Warhammer-Complete/Rhinox2.tga"
+#name "Rhinox"
+#descr "This extremely foul-tempered Rhinox has just smashed the Scraplauncher to pieces and either eaten, chased off or squashed the crew. It is now looking for some other way to vent its not inconsiderable fury."
+#size 4
+#hp 55
+#prot 11
+#mor 10
+#mr 8
+#enc 3
+#str 20
+#att 9
+#def 8
+#prec 7
+#mapmove 16
+#ap 18
+#gcost 40
+#rcost 20
+#berserk 1
+#trample
+#weapon "Gore"
+#maxage 40
+#mountainsurvival
+#coldres 15
+#snow
+#animal
+#end
+
+
+
+---- Ogre Pitfighter
+
+#newmonster 5526
+#spr1 "./Warhammer-Complete/Ogre Pitfighter.tga"
+#spr2 "./Warhammer-Complete/Ogre Pitfighter2.tga"
+#name "Ogre Pitfighter"
+#descr "Even the smallest Ogre tribe will organise itself around a Maw Pit. Sometimes little more than a hole in the ground surrounded by jagged rocks and stakes, to the Ogres the Pit is an embodiment of the Great Maw itself and must be regularly fed raw flesh. It is in the Maw Pits of the Mountains of Mourn that the Ogres' bloodiest ritual, the Pitfight, occurs. The tribe's most aggressive, barbaric Bulls enter the Pit and fight to the death, starting with choppas and eventually resorting to their bare hands. The victors are handed over to the Butchers, who replace their arms with brutal Stumpblades and hammer a crude carapace of armour directly into their flesh. Pitfighters are sacred among the Ogres, as their short lives are dedicated to feeding the Maw."
+#hp 38
+#size 3
+#prot 7
+#mor 13
+#mr 10
+#enc 3
+#str 16
+#att 11
+#def 10
+#prec 7
+#mapmove 16
+#ap 16
+#gcost 75
+#rpcost 27
+#chaosrec 5
+#rcost 1
+#armor "Full Helmet"
+#armor "Tyrant Plate"
+#weapon "Stumpblade"
+#weapon "Stumpblade"
+--weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#berserk 4
+#supplybonus -4
+#holy
+#darkvision 25
+#nametype 193
+#end
+
+
+
+---- Slave giant
+
+#newmonster 5525
+#spr1 "./Warhammer-Complete/Slavegiant.tga"
+#spr2 "./Warhammer-Complete/Slavegiant2.tga"
+#name "Slave Giant"
+#descr "Unlike the Giants that accompany other races into battle, who pick fights as and when they choose, the Slave Giants of the Ogre Kingdoms live a life of forced servitude. Ownership of a Slave Giant is a great status symbol for a Tyrant and there is little that motivates them more than a report of an unclaimed Giant in their territory. Many are the Tyrants who have perished trying to subdue one of these behemoths, but occasioanlly a particularly powerful Ogre may manage to capture one and brand it with his mark. Slavegiants are goaded into battle with pointed stakes, but usually it doesn't take much goading, as the Giant is all too willing to take out the humiliation of being enslaved on any creature smaller than himself. In battle Slave Giants attack by stomping, whipping their heavy chains about and generally causing utter chaos and carnage."
+#hp 95
+#size 6
+#prot 10
+#mor 14
+#mr 9
+#enc 4
+#str 25
+#att 10
+#def 9
+#prec 4
+#mapmove 16
+#ap 16
+#gcost 200
+#rpcost 80
+#chaosrec 15
+#rcost 10
+#weapon "Heavy Chains"
+#weapon "Giant Stomp"
+#armor 21 -- Full helmet
+#maxage 140
+#mountainsurvival
+#coldres 10
+#snow
+#supplybonus -1
+#fear 10
+#nametype 193
+#noleader
+#siegebonus 25
+#undisciplined
+#slave
+#end
+
+
+
+
+-------- Commanders
+
+
+----Gnoblar Scout
+
+
+#newmonster 5527
+#spr1 "./Warhammer-Complete/Gnoblar Trapper.tga"
+#spr2 "./Warhammer-Complete/Gnoblar Trapper2.tga"
+#name "Gnoblar Scout"
+#descr "Gnoblar Trappers with an independent streak and enough cunning are, in times of war, considered more useful as a scout than as a snack. Hence this position, though dangerous, is coveted by the cowardly Gnoblars."
+#hp 7
+#size 1
+#prot 0
+#mor 6
+#mr 9
+#enc 3
+#str 7
+#att 8
+#def 9
+#prec 9
+#mapmove 14
+#ap 12
+#gcost 15
+#rpcost 1
+#rcost 1
+#armor "furs"
+#weapon "dagger"
+#weapon 939 -- flung scrap x1
+#supplybonus 1
+#forestsurvival
+#mountainsurvival
+#stealthy 0
+#maxage 20
+#noleader
+#darkvision 50
+#end
+
+
+
+----Ogre Bruiser
+
+#newmonster 5520
+#spr1 "./Warhammer-Complete/Ogre Bruiser.tga"
+#spr2 "./Warhammer-Complete/Ogre Bruiser2.tga"
+#name "Ogre Bruiser"
+#descr "A Bruiser is second only to the Tyrant in terms of strength and aggression and they are often related to the kingdom's ruler. Bruisers are chieftains of a sort, but generally act as enforcers who keep order rather than actual leaders. Bruisers are without exception physically more powerful than the common Bulls of the tribe and are often champions of the Ogre games that help define their social organisation. Unlike champions and leaders of other races, Bruisers are not hard to replace; if a Bruiser within the tribe is slain he will be replaced almost instantly by the next strongest Ogre, who will get first dibs on his stuff. As Ogres of some status, Bruisers wear heavy fur cloaks and a patchwork of stolen armour, however they favour crude clubs over choppas or ironfists, as they are better for keeping the Bulls in line."
+#hp 60
+#size 3
+#prot 8
+#mor 13
+#mr 10
+#enc 3
+#str 17
+#att 12
+#def 11
+#prec 8
+#mapmove 16
+#ap 16
+#gcost 50
+#rpcost 1
+#rcost 1
+#armor "Chain Mail Hauberk"
+#armor "Iron Cap"
+#weapon "Ogre Club"
+#weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -4
+#okleader
+#pillagebonus 5
+#darkvision 25
+#nametype 193
+#taxcollector
+#end
+
+
+----Ogre Butcher
+
+#newmonster 5521
+#spr1 "./Warhammer-Complete/Ogre Butcher.tga"
+#spr2 "./Warhammer-Complete/Ogre Butcher2.tga"
+#name "Ogre Butcher"
+#descr "Butchers are immense, corpulent hulks covered in offal and dried blood. Hideous and mean, Butchers are essentially the Ogre equivalent of a tribal shaman. They have a direct link to the Great Maw and can channel a small portion of the Ogre deity's insatiable thirst for gluttony and violence through a process known as Gut Magic. Smaller tribes will only have one Butcher, but larger ones may have several practicing under the supervision of a powerful Slaughtermaster. Occasionally a Butcher will show inclination towards magic other than that of the Great Maw, though it will never be their focus."
+#hp 38
+#size 3
+#prot 7
+#mor 11
+#mr 13
+#enc 3
+#str 14
+#att 10
+#def 9
+#prec 8
+#mapmove 16
+#ap 16
+#gcost 140
+#rpcost 2
+#chaosrec 10
+#rcost 1
+#holy
+#magicskill 8 1
+#magicskill 7 2
+#custommagic 13696 20 -- NAEFD
+#researchbonus -2
+#startitem 901
+#weapon "Ogre Choppa"
+#weapon "Ogre Smash"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -4
+#poisonres 15
+#poorleader
+#darkvision 25
+#nametype 193
+#end
+
+
+----Ogre Slaughtermaster
+
+#newmonster 5522
+#spr1 "./Warhammer-Complete/Ogre Slaughtermaster.tga"
+#spr2 "./Warhammer-Complete/Ogre Slaughtermaster2.tga"
+#name "Ogre Slaughtermaster"
+#descr "Slaughtermasters are the fattest, filthiest and oldest of the Butchers, recognisable by their ceremonial masks fashioned from the skin of men, dwarfs and elves. Slaughtermasters perform the bloody rituals that summon Gorgers to battle. Upon devouring another butcher and thus becoming a Slaughtermaster, a powerful instinct overtakes the ogre's simple mind, setting him wandering for a few years. Those Slaughtermasters who travel the burned wastes surround the Great Maw return tinged by the influence of Chaos, while those who roam through caves and mountain ranges develop a powerful connection to the hunger of the peaks and the subterranean depths of the Great Maw. As with Butchers, some Slaughtermasters also have an affinity to other forms of magic."
+#hp 44
+#size 3
+#prot 8
+#mor 13
+#mr 14
+#enc 3
+#str 15
+#att 11
+#def 10
+#prec 8
+#mapmove 16
+#ap 14
+#gcost 280
+#rpcost 2
+#chaosrec 10
+#rcost 1
+#holy
+#magicskill 8 2
+#magicskill 7 3
+#custommagic 1152 100
+#custommagic 13696 20 -- NAEFD
+#researchbonus -2
+#startitem 901
+#weapon "Ogre Choppa"
+#weapon "Ogre Smash"
+#armor "Leather Cap"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -6
+#poisonres 20
+#okleader
+#darkvision 25
+#nametype 193
+#end
+
+
+----Ogre Firebelly
+
+#newmonster 5504
+#spr1 "./Warhammer-Complete/Ogre Firebelly.tga"
+#spr2 "./Warhammer-Complete/Ogre Firebelly2.tga"
+#name "Ogre Firebelly"
+#descr "Firebellies are the roaring, blazing priests of the Ogre deity known as the Fire Mouth, a massive active volcano which draws thousands of pilgrims each year. Fire Bellies are the product of the Flame Trial, a gruelling challenge which ends in the swallowing of molten lava, an act that only an ogre blessed by the Fire Mouth can survive. Covered in complex glowing tattoos and garbed in a ceremonial brass mask and gutplate, the Fire Belly is a charismatic figure and popular in any tribe for their theatrical appearance and ability to unleash devastation on the battlefield. In addition to being highly resistant to fire all Fire Bellies are capable of belching forth torrents of flame at will. Though the Fire Mouth is often worshipped alongside the Great Maw, Fire Bellies are not considered sacred."
+#hp 38
+#size 3
+#prot 7
+#mor 11
+#mr 13
+#enc 3
+#str 14
+#att 10
+#def 9
+#prec 8
+#mapmove 16
+#ap 16
+#gcost 160
+#rpcost 2
+#chaosrec 10
+#rcost 1
+#magicskill 0 2
+#researchbonus -2
+#weapon 229 -- flame strike
+#weapon "Ogre Smash"
+#weapon 61 -- str based fire breath
+#armor 118 -- half helmet
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#fireres 10
+#supplybonus -4
+#poorleader
+#darkvision 25
+#nametype 193
+#end
+
+
+
+---- Ogre Tyrant
+
+#newmonster 5523
+#spr1 "./Warhammer-Complete/Ogre Tyrant.tga"
+#spr2 "./Warhammer-Complete/Ogre Tyrant2.tga"
+#name "Ogre Tyrant"
+#descr "Tyrants are the dominant males of each Ogre tribe. As with many of the less civilised races, the Tyrant is the biggest, strongest, fiercest and most commanding of the Ogres in a given area. The largest Tyrants often boast of their ability to wrestle giants to the ground or smash through fortified gates with their bare fists. The only way to become a Tyrant is to defeat the previous Tyrant in a brutal rule free pit fight and devour his entire body. Tyrants are almost always Ogres who have travelled as mercenaries, as this experience and the wargear they accumulate give them a considerable advantage over even the largest and meanest tribal rulers. Whether because of their freebooting past, numerous successful pit fights or simply evolutionary process, Tyrants are surprisingly skilled fighters and this, coupled with their sheer strength and cunning, makes them some of the most dangerous creatures in the known world."
+#hp 75
+#size 4
+#prot 8
+#mor 15
+#mr 10
+#enc 3
+#str 18
+#att 14
+#def 13
+#prec 10
+#mapmove 16
+#ap 16
+#gcost 90
+#rpcost 1
+#rcost 1
+#armor "Tyrant Plate"
+--#armor "Half Helmet"
+#weapon "Ogre Choppa"
+#weapon "Ogre Choppa"
+#weapon "Ogre Smash"
+#maxage 100
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -6
+#ambidextrous 5
+#goodleader
+#pillagebonus 10
+#darkvision 25
+#nametype 193
+#taxcollector
+#taskmaster 2
+#end
+
+
+
+---- Ogre Hunter
+
+#newmonster 5524
+#spr1 "./Warhammer-Complete/Ogre Hunter.tga"
+#spr2 "./Warhammer-Complete/Ogre Hunter2.tga"
+#name "Ogre Hunter"
+#descr "Hunters are Ogre outcasts, either exiled from their tribe or simply seeking to sate an ancestral wanderlust. Despite their independant nature, Hunters retain some ties to their kin and will provide a constant supply of large kills, furs and the like, especially in times of migration or war when they become truly invaluable to the locust like Ogre hordes. Hunters clothe themselves in a pathwork of fur and other material and typically replace their gutplates with the skull from some great beast. They arm themselves not only with the traditional club but with a deadly harpoon, suitable for hunting their massive prey. Such is the Hunter's connection with the wilds of the mountain that they are effectively shamans of sorts and may summon large mountainous felines, Sabretusks, to do their bidding."
+#hp 60
+#size 3
+#prot 7
+#mor 14
+#mr 10
+#enc 3
+#str 17
+#att 12
+#def 12
+#prec 12
+#mapmove 18
+#ap 16
+#gcost 120
+#rpcost 2
+#chaosrec 10
+#rcost 1
+#armor "Furs"
+#weapon "Ogre Club"
+#weapon "Ogre Smash"
+#weapon "Hunter Harpoon"
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#forestsurvival
+#coldres 5
+#snow
+#supplybonus 10
+#ambidextrous 2
+#poorleader
+#stealthy 0
+#custommagic 8192 60
+#custommagic 8192 30
+#custommagic 8192 10
+#researchbonus -2
+#stealthy 0
+#darkvision 25
+#nametype 193
+#beastmaster 2
+#end
+
+
+---- Henchfiend
+
+#newmonster 5532
+#spr1 "./Warhammer-Complete/Henchfiend.tga"
+#spr2 "./Warhammer-Complete/Henchfiend2.tga"
+#name "Henchfiend"
+#descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. Increasingly, Slaughtermasters are tapping into this energy to augment the gutmagic gifted to their kind, thanks in no small part to the influence of their Henchfiends. These malign lesser daemons have latched on to the Ogres as a source of power that might be put to use in the service of Chaos, taking on the traits of their servants, the gnoblars. Unlike gnoblars, Henchfiends are extremely intelligent, magically gifted and, most importantly, completely inedible. They provide the Slaughtermasters with access to dark lore and unknown magic, all the time subtly influencing the path of their race."
+#hp 9
+#size 2
+#prot 8
+#mor 9
+#mr 15
+#enc 1
+#str 10
+#att 11
+#def 14
+#prec 11
+#mapmove 20
+#flying
+#ap 8
+#gcost 0
+#rpcost 1
+#rcost 1
+#weapon "Glaive"
+#maxage 666
+#wastelandsurvival
+#fireres 15
+#nametype 140
+#noleader
+#neednoteat
+#demon
+#poisonres 15
+#stealthy 10
+#poisonarmor
+#custommagic 4224 100
+#custommagic 4224 100
+#end
+
+
+--- Yhetee Shaman
+
+#newmonster 5534
+#spr1 "./Warhammer-Complete/Yhetee Shaman.tga"
+#spr2 "./Warhammer-Complete/Yhetee Shaman2.tga"
+#name "Yhetee Shaman"
+#descr "Shamans are at the heart of largest Yhetee packs, connecting the feral creatures to their past, predicting the weather and sending the pack on hunts. Possessing intelligence and patience beyond that of their kin, Shamans communicate with ogre hunters who have earned their respect and can be highly useful allies. Shamans commune with the spirits of the mountains and wilds daily and speak with the wisdom of the ogre's new home. All Shamans wield magic of the peaks, wild and ice and some the darker magic of bone, though their ability varies greatly. They carry at all times the bones of Sky Giants slain ages ago, inscribed with the history of their race. Though quite apart from the Great Maw, the Yhetee Shamans are treated with great respect and even savage Tyrants will give heed when they speak. All Yhetee are stronger in cold provinces."
+#hp 36
+#size 4
+#prot 5
+#mor 13
+#mr 13
+#enc 3
+#str 16
+#att 10
+#def 11
+#prec 4
+#mapmove 18
+#forestsurvival
+#mountainsurvival
+#coldres 25
+#snow
+#fireres -10
+#ap 20
+#gcost 0
+#rpcost 1
+#rcost 1
+#weapon "Sky Giant Bone"
+#weapon "Sky Giant Bone"
+#ambidextrous 4
+#cold 8
+#iceprot 2
+#coldpower 1
+#siegebonus 3
+#maxage 30
+#darkvision 25
+#nametype 193
+#magicskill 6 1
+#magicskill 3 1
+#magicskill 2 1
+#researchbonus 2
+#custommagic 13824 20
+#custommagic 13824 20
+#custommagic 13824 20
+#custommagic 13824 20
+#end
+
+
+---- Mawgut Summon
+
+#newmonster 5535
+#spr1 "./Warhammer-Complete/Mawgut.tga"
+#spr2 "./Warhammer-Complete/Mawgut2.tga"
+#name "Mawgut"
+#descr "Mawguts are corpulent hulks, former Slaughtermasters who took in the flesh of the Great Maw and became host to one of its infinite mouths. The guts of these bloated creatures have split asunder, revealing a ravenous maw full of jagged teeth. The maw will violently consume anything within reach, be it a fully armoured soldier, a warhorse, a bull ogre or even the hands of its host body. Beyond the ring of teeth and crushing muscle lies a hellish portal that leads to the impossible depths of the Great Maw itself. Smaller enemies are thus easily devoured one after another, while larger foes, despite any protection they might have, face being eaten a chunk at a time. These terrifying, mindless eating machines will devour men and Ogres alike and cause widespread panic until slain; no easy task given the abilities they have gained from the mawflesh. Near tireless in battle and invigorated by the powers of the Great Maw, Mawguts' injuries are healed at great speed while they feast on their victims."
+#hp 80
+#size 4
+#prot 14
+#mor 50
+#mr 18
+#enc 5
+#str 20
+#att 13
+#def 8
+#prec 8
+#mapmove 8
+#ap 10
+#gcost 0
+#rpcost 1
+#rcost 1
+#holy
+#researchbonus -7
+#weapon "Devour"
+#weapon "Stump"
+#weapon "Stump"
+#maxage 60
+#startage 35
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -50
+#fireres 0
+#poisonres 15
+#noleader
+#fear 8
+#blind
+#nametype 193
+#reinvigoration 7
+#regeneration 10
+#heal
+#itemslots 14464
+#incunrest 50
+#pillagebonus 20
+#popkill 10
+#hpoverflow
+#incorporate 5
+#end
+
+
+---- Mawfiend
+
+#newmonster 5539
+#spr1 "./Warhammer-Complete/Mawfiend.tga"
+#spr2 "./Warhammer-Complete/Mawfiend2.tga"
+#name "Mawfiend"
+#descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. The Mawfiends, as they are known, are the undisputed rulers of these lands, surveying them with cruel detachment through four compound eyes. Their claws and hooves, at all times covered in gore, are strong enough to tear through armour, bone and muscle with ease. In addition to their physical prowess Mawfiends are also gifted in the dark arts, particularly magic of fire and blood. Bound to Slaughtermasters with complex bloodpacts, Mawfiends are nonetheless agents of Chaos and true Daemons. Despite their calculating minds, Mawfiends are deeply connected to the Great Maw and if injured are unable to contain their rage and hunger, which overflows in a torrent of raw energy and blasts at their foes."
+#hp 70
+#size 3
+#prot 14
+#mor 18
+#mr 17
+#enc 1
+#str 22
+#att 15
+#def 15
+#prec 13
+#mapmove 16
+#ap 15
+#gcost 0
+#rpcost 1
+#rcost 1
+#weapon "Claws"
+#weapon "Hoof"
+#weapon "Barbed Tail"
+#maxage 666
+#wastesurvival
+#fear 7
+#fireres 15
+#nametype 140
+#goodleader
+#goodundeadleader
+#neednoteat
+#demon
+#poisonres 15
+#magicskill 0 1
+#magicskill 5 1
+#magicskill 7 2
+#custommagic 4224 100
+#custommagic 4224 100
+#eyes 4
+#berserk 2
+#bloodvengeance 3
+#end
+
+
+-------- PRETENDERS
+
+---- Facet of the Maw
+
+#newmonster 5538
+#spr1 "./Warhammer-Complete/Mawpit2.tga"
+#spr2 "./Warhammer-Complete/Mawpit3.tga"
+#name "Facet of the Maw"
+#startdom 3
+#pathcost 80
+#descr "This looks at first glance like a common Mawpit dug by Ogres to stage pitfights and sacrifices. But a closer look reveals that it is surrounded not by the typical ceremonial fragments of jagged stone, but massive, sharpened fangs lining the edges of its Maw. It is no mere pit, but a portal through which the blood and life forces of mortal creatures may be sacrificed to the Great Maw, flowing through to the Warp. This manifestation of the Maw has grown with regular sacrifice, and has attained Daemonic powers of its own. The moment fresh meat or living flesh comes near, it gurgles into activity, its fangs reaching out and grabbing its victim in moments. If destroyed, it will explode with Warp energies of incredible force, as the Great Maw itself shrieks in rage at the diminishing of its power in the mortal realm."
+#hp 300
+#size 6
+#prot 10
+#mor 30
+#mr 22
+#enc 1
+#str 24
+#att 10
+#def 0
+#prec 15
+#mapmove 20
+#ap 0
+#bonusspells 1 -- Innate spellcaster
+#weapon 505 -- Devour
+#maxage 9999
+#startage 1000
+#coldres 25
+#supplybonus -60
+#popkill 4 -- Kills 40/turn
+#noleader
+#immobile
+#fear 15
+#blind
+#demon
+#unteleportable
+#heal
+#hpoverflow
+#deathfire 20
+#deathparalyze 20
+#nametype 257 -- Daemon nametype
+#itemslots 12288 -- 2 misc
+#magicskill 7 2 -- Blood 2
+#magicskill 6 1 -- Nature 1
+#end
+
+
+
+-------- NATIONAL HEROES
+
+
+---- Skrag the Slaughterer
+
+#newmonster 5533
+#spr1 "./Warhammer-Complete/Hero Skrag.tga"
+#spr2 "./Warhammer-Complete/Hero Skrag2.tga"
+#name "Prophet of the Great Maw"
+#descr "Skrag the Slaughterer was formerly a promising Butcher who made the mistake of cooking his Tyrant's favourite pet gnoblar. For this mistake he was hurled into the Gorger caverns with his hands severed and meatpot chained to his flesh. Incredibly, Skrag emerged two years later at the head of a pack of Gorgers, devoured the Tyrant and slaughtered the entire tribe as an offering to the Maw. Now the Prophet of the Maw, Skrag is an embodiment of hunger and destruction; the meat-pot he drags behind him has become a mobile mawpit into which he tosses severed chunks of butchered foes. Skrag is unable to restrain himself in battle, dismembering enemy after enemy, constantly feeding the meatpot and growing ever more gorged on the Maw's favour. Ever since leaving the caverns, Skrag's mere presence in battle has attracted Gorgers who charge forward to attack their terrified prey. As the Prophet of the Great Maw, Skrag spreads the ravenous dominion of his god and calls the blessings of the maw on the entire army by his mere presence."
+#hp 90
+#size 6
+#prot 13
+#mor 30
+#mr 17
+#enc 3
+#str 18
+#att 13
+#def 13
+#prec 8
+#mapmove 12
+#ap 12
+#gcost 0
+#rpcost 1
+#rcost 1
+#holy
+#magicskill 8 3
+#magicskill 7 4
+#magicskill 3 1
+#researchbonus -8
+#weapon "Skrag's Meathook"
+#weapon "Skrag's Stumpblade"
+#weapon 63 - life drain
+#maxage 140
+#startage 34
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -6
+#ambidextrous 3
+#poisonres 20
+#okleader
+#fear 8
+#darkvision 75
+#nametype 193
+#regeneration 10
+#heal
+#berserk 5
+#spreaddom 1
+#itemslots 15488 -- head, 2 misc (one taken), feet, body
+#fixedname "Skrag the Slaughterer"
+#batstartsum1d6 5508 -- Gorger
+#batstartsum1 5508 -- Gorger
+#startitem 902 -- skrag's meatpot
+#onebattlespell "Divine Blessing" -- automatically blesses everyone
+#end
+
+
+--- Golgfag Maneater
+
+#newmonster 5497
+#spr1 "./Warhammer-Complete/Hero Golgfag.tga"
+#spr2 "./Warhammer-Complete/Hero Golgfag2.tga"
+#name "Mercenary Captain"
+#descr "Possibly the most successful mercenary of all time and a legend in his profession, Golgfag forged a reputation for Ogres as fearsome killers long before they became a common sight in mercenary armies across the Old World. Though he could be mistaken for a mere Bruiser, Golgfag has been in service for nearly sixty years and has killed for coin on every continent. Over the years Golgfag has amassed a personal fortune and a small armory of magic items, but the canny mercenary keeps them well hidden, preferring to carry only his substantial reputation. The term 'Maneater' was first coined when after a drunken argument a young Golgfag ate his paymaster whole and made off with his coffers."
+#hp 60
+#size 3
+#prot 8
+#mor 30
+#mr 14
+#enc 3
+#str 18
+#att 14
+#def 13
+#prec 12
+#mapmove 18
+#ap 16
+#gcost 0
+#rpcost 1
+#rcost 1
+#armor "Half Helmet"
+#armor "Chain Mail Hauberk"
+#weapon "Maneater Blade"
+#weapon "Ogre Club"
+#weapon "Ogre Smash"
+#maxage 130
+#startage 80
+#mountainsurvival
+#wastesurvival
+#forestsurvival
+#swampsurvival
+#coldres 5
+#snow
+#supplybonus -3
+#ambidextrous 5
+#inspirational 1
+#pillagebonus 3
+#darkvision 25
+#nametype 193
+#onebattlespell "Personal Luck"
+#itemslots 64646 -- all+ 4 misc (bugged, only gives 3)
+#goodleader
+#taxcollector
+#fixedname "Golgfag Maneater"
+#end
+
+
+
+
+---- Groth Onefinger, First Prophet of the Wastes
+
+#newmonster 5531
+#spr1 "./Warhammer-Complete/Hero Onefinger.tga"
+#spr2 "./Warhammer-Complete/Hero Onefinger2.tga"
+#name "First Prophet of the Wastes"
+#descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Prophet of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him. Groth's presence will slowly attract more ogres from the roaming Mawtribes and spread the dominion of the Maw."
+#hp 65
+#size 3
+#prot 8
+#mor 20
+#mr 16
+#enc 4
+#str 14
+#att 11
+#def 11
+#prec 11
+#mapmove 16
+#ap 14
+#gcost 0
+#rpcost 1
+#rcost 1
+#holy
+#magicskill 8 3
+#magicskill 7 3
+#magicskill 0 3
+#weapon "Stump"
+#weapon "Ogre Smash"
+#maxage 300
+#older -110
+#mountainsurvival
+#wastesurvival
+#fireres 15
+#coldres 5
+#snow
+#supplybonus -6
+#ambidextrous 3
+#poisonres 15
+#expertleader
+#fear 6
+#darkvision 25
+#nametype 193
+#itemslots 15488
+#spreaddom 1
+#summon1 5517 -- mawtribe bull
+#fixedname "Groth Onefinger"
+#end
+
+---- Slavelord Braugh
+
+#newmonster 5528
+#spr1 "./Warhammer-Complete/Hero Slavelord.tga"
+#spr2 "./Warhammer-Complete/Hero Slavelord2.tga"
+#name "Slavelord"
+#descr "Known to the Chaos Dwarfs as Ghrask Dragh, literally 'corpse-slaver', Slavelord Braugh is a legend even amongst his merciless peers. Ogre Slavers aren't uncommon in the Old World, but only one can claim to enslave the dead as well as the living. Some years ago Braugh was imprisoned by a necromancer, but being an Ogre of impressive size and strength he managed to rip the enchanted chains that bound him from the walls. He then proceeded to beat the necromancer to death with them and drag the other prisoners away with him as slaves. Somehow the power of the necromancer was trapped in the chains and when one of the slaves died from exhaustion Braugh was amused to find the corpse still bound by dark magic. Years of close contact with the dark chains has altered Braugh into something not quite living and armed with his terrible Fleshflayer he is a terrifying sight."
+#hp 80
+#size 4
+#prot 9
+#mor 13
+#mr 12
+#enc 3
+#str 18
+#att 14
+#def 13
+#prec 10
+#mapmove 16
+#ap 16
+#gcost 0
+#rpcost 1
+#rcost 1
+#armor "Tyrant Plate"
+#armor "Half Helmet"
+#weapon "Fleshflayer"
+#weapon "Dark Chains"
+#weapon "Ogre Smash"
+#maxage 100
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#snow
+#supplybonus -5
+#ambidextrous 8
+#magicskill 5 3
+#goodleader
+#goodundeadleader
+#fear 6
+#pillagebonus 10
+#nametype 193
+#makemonsters5 5529
+#makemonsters4 5530
+#summon5 5529
+#undead
+#itemslots 15488
+#taxcollector
+#taskmaster 4
+#fixedname "Braugh"
+#end
+
+
+--- Living slave
+
+#newmonster 5529
+#copystats 720
+#spr1 "./Warhammer-Complete/Enslaved.tga"
+#spr2 "./Warhammer-Complete/Enslaved2.tga"
+#name "Enslaved"
+#descr "An unfortunate captive of the infamous Corpse Slaver Braugh this human's mind has been destroyed and upon his death his corpse will continue to serve the Slavelord."
+#mor 50
+#gcost 1
+#secondshape 5530
+#weapon "claw"
+#att 8
+#def 8
+#str 10
+#hp 13
+#slave
+#end
+
+--- Soulless Slave
+
+#newmonster 5530
+#copyspr 197
+#copystats 197
+#name "Enslaved Corpse"
+#descr "When Braugh's slaves die, usually sooner rather than later, their corpses continue to serve the Slavelord, bound by the dark power of his necromantic chains."
+#weapon "Claw"
+#slave
+#end
+
+
+-------- SPELLS
+
+
+---- Become as Mawflesh
+
+#newspell
+#name "Become as Mawflesh"
+#descr "Swallowing a hunk of rancid, squirming flesh harvested from the edge of the Great Maw itself, the Slaughtermaster surrenders his body to become a Mawgut. Within hours the Slaughtermaster collapses to the ground, clutching his gut in agonising pain. With a final convulsion his abdomen splits and his entrails spill out as a maw full of jagged teeth emerges. The Slaughtermaster's mind and all vestiges of his former life are devoured and he becomes a vessel of the Great Maw's endless hunger, a terrifying and near unstoppable eating machine." 
+#school 6
+#restricted 121
+#researchlevel 4
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10021
+#damage 5535
+#nreff 1
+#fatiguecost 1000
+#nextspell 91 -- kill caster
+#end
+
+
+
+---- Contact Mawfiend
+
+#newspell
+#name "Contact Mawfiend"
+#descr "Burning the bodies of many slaves and spilling the blood of more in a complex ritual taught by the Henchfiends, the Slaughtermaster contacts a powerful Mawfiend. Entering into a blood oath with this creature, the Slaughtermaster brings an extremely powerful ally to his tribe, but potentially also their doom. Mawfiends are true daemons capable of besting even Tyrants physically and with a cruel intellect to match. They have been known to take over entire tribes, leading them against the forces of order and good, furthering the cause of Chaos. They can only be called from the Wastes." 
+#school 6
+#restricted 121
+#researchlevel 6
+#path 0 7
+#path 1 0
+#pathlevel 0 5
+#pathlevel 1 1
+#effect 10021
+#fatiguecost 6000
+#damage 5539
+#nreff 1
+#onlygeosrc 64
+#end
+
+
+---- Bind Henchfiend
+
+#newspell
+#name "Bind Henchfiend"
+#descr "Burning the bodies of several slaves, the Slaughtermaster calls a Henchfiend from the wastes surrounding the Great Maw. The Henchfiend will make a blood oath to the Slaughtermaster, offering magic of death and fire as well as access to dark lore. Seeming to serve, these cunning lesser daemons are actually drawing the ogres closer and closer to Chaos." 
+#school 6
+#restricted 121
+#researchlevel 3
+#path 0 7
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#fatiguecost 1600
+#damage 5532
+#nreff 1
+#end
+
+
+
+---- Gorger Summon
+
+
+#newspell
+#name "Bind Gorgers"
+#descr "By ritually slaughtering a handful of captured slaves and scattering their dismembered body parts around the entrance to the warpstone tainted labyrinths, the Slaughtermaster attracts a pair of Gorgers. He then binds them to his service through powerful gut magic, though when not in combat they are still chained and caged." 
+#school 6
+#restricted 121
+#researchlevel 2
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#fatiguecost 1200
+#damage 5508
+#nreff 2
+#end
+
+
+
+---- Big Gorger Summon
+
+
+#newspell
+#name "Bind Gorger Pack"
+#descr "By ritually slaughtering a handful of captured slaves and scattering their dismembered body parts around the entrance to one of the deepest caverns beneath the Mawpit, the Slaughtermaster can lure a large pack of Gorgers. He then binds them to his service through powerful gut magic, though when not in combat they are still chained and caged." 
+#school 6
+#restricted 121
+#researchlevel 5
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#fatiguecost 2800
+#damage 5508
+#nreff 6
+#end
+
+
+
+---- Anoint Mawtribe
+
+
+#newspell
+#name "Anoint Mawtribe"
+#descr "Having filled a cauldron with the mangled remains of captive slaves, the Slaughtermaster crushes and grinds them with a sacred boulder known as a Mawtooth, mixing them with his own bile and vomit. The resulting mixture is then applied as crude 'warpaint' to a number of young Bull Ogres. These Bulls are filled with the hunger of the Great Maw and bonded together as a Mawtribe; a band of sacred warriors on a spiritual journey of sheer carnage." 
+#school 6
+#restricted 121
+#researchlevel 3
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#fatiguecost 2400
+#damage 5517
+#nreff 8
+#end
+
+
+
+---- Contact Yhetee Shaman
+
+#newspell
+#name "Contact Yhetee Shaman"
+#descr "By making an offering to the wilds and the peaks which gave the ogres refuge after the great migration, a Yhetee Shaman of great wisdom can be contacted to aid the ogres in finding their new path. These sacred figures represent a possible alternative to the hunger of the Maw or the taint of chaos, bringing magic of stone, ice and the wilds, with some rare Shaman holding considerable elemental power.  This ritual will only work in a mountain province." 
+#school 0
+#restricted 121
+#researchlevel 3
+#path 0 6
+#pathlevel 0 2
+#effect 10021
+#fatiguecost 1300
+#damage 5534
+#nreff 1
+#onlygeosrc 16 -- mountain
+#end
+
+
+---- Yhetee Summon
+
+
+#newspell
+#name "Call Yhetee Pair"
+#descr "Hefting a great hollowed tusk from the largest snow mammoth killed by the tribe, the Hunter uses his incredible lung capacity to send a blast of sound echoing across Yhetee territory. Soon after, a pair of Yhetees enter the Ogre Kingdoms, crashing down from the wilds on a wave of snow. This ritual will only work in a mountain province." 
+#school 0
+#restricted 121
+#researchlevel 2
+#path 0 6
+#pathlevel 0 1
+#effect 10001
+#fatiguecost 500
+#damage 5510
+#nreff 2
+#onlygeosrc 16 -- mountain
+#end
+
+
+
+---- Call Sabretusks
+
+#newspell
+#name "Call Sabretusks"
+#descr "Rubbing himself with foul smelling Rhinox dung, the Hunter attempts to commune with the mountainous wilds, drawing a small pack of Sabretusks to his location. Having soundly beaten and possibly eaten the leader of the pack, he assumes control of these dangerous beasts. This ritual will only work in a mountain province."
+#school 0
+#restricted 121
+#researchlevel 0
+#path 0 6
+#pathlevel 0 1
+#effect 10001
+#fatiguecost 500
+#damage 5509
+#nreff 7
+#onlygeosrc 16 -- mountain
+#onlygeosrc 32
+#end
+
+
+---- Braingobbler
+
+
+#newspell
+#copyspell "Panic"
+#name "Braingobbler"
+#descr "Selecting a choice severed head from his 'collection', the Slaughtermaster scoops out and gobbles down a helping of fresh brains. As grey matter drips from his flabby jowls the Slaughtermaster projects the darkest thoughts and worst nightmares from his victim's cranium into the minds of his foes." 
+#restricted 121
+#researchlevel 1
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#school 6
+#prec 15
+#fatiguecost 40
+#end
+
+
+---- Bloodgruel
+
+
+#newspell
+#copyspell "Elemental Fortitude"
+#name "Bloodgruel"
+#descr "The Butcher lifts a freshly severed limb to his mouth and sucks out all of the blood, fluid and marrow in one titanic intake before casting the husk aside. Gulping down this vile cocktail of juices, his gut gurgles violently and he is able to grant his allies protection against the elements." 
+#restricted 121
+#researchlevel 0
+#aoe 12
+#range 15
+#prec 100
+#spec 4194304
+#path 0 7
+#path 1 8
+#pathlevel 0 2
+#pathlevel 1 1
+#school 6
+#range 5
+#explspr 10003
+#fatiguecost 35
+#end
+
+
+---- Bullgorger
+
+
+#newspell
+#copyspell "Strength of Giants"
+#name "Bullgorger"
+#descr "The Butcher greedily devours the heart of a Bull Rhinox, no doubt enjoying the feast of healthy blood and muscle whilst he imbues his fellows with the strength of a charging Rhinox." 
+#restricted 121
+#researchlevel 0
+#path 0 7
+#path 1 8
+#pathlevel 0 2
+#pathlevel 1 1
+#school 6
+#explspr 10003
+#range 5
+#fatiguecost 60
+#aoe 12
+#end
+
+
+---- Trollguts
+
+#newspell
+#copyspell "Regeneration"
+#name "Trollguts"
+#descr "The Slaughtermaster forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much-abused gut as he transfers the supernatural regenerative abilities of the Troll onto his companions. This gut magic is highly draining for the Slaughtermaster." 
+#restricted 121
+#researchlevel 1
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#aoe 8
+#school 6
+#range 5
+#fatiguecost 90
+#explspr 10004
+#end
+
+
+
+
+---- Toothcracker
+
+#newspell
+#copyspell "Marble Warriors"
+#name "Toothcracker"
+#descr "The Slaughtermaster grinds his way through a lump of earth-encrusted bedrock taken from the peak of a mountain, imbuing a small number of his fellows with stony resilience, and chilling them severely with the freezing mountain winds, removing their natural resilience to cold.  This gut magic is highly draining for the Slaughtermaster." 
+#restricted 121
+#researchlevel 1
+#path 0 7
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#aoe 8
+#school 6
+#range 5
+#fatiguecost 90
+#explspr 10002
+#end
+
+
+-------- NEW NAMETYPE
+
+#selectnametype 193
+#clear
+#addname "Thrash Kineater"
+#addname "Dog Longstrider"
+#addname "Grut Giantbreaker"
+#addname "Pab Beastkiller"
+#addname "Crash Wallsmasher"
+#addname "Mawseeker"
+#addname "Gutrot"
+#addname "Furgh"
+#addname "Lurb"
+#addname "Flatulent Scugg"
+#addname "Worgrot"
+#addname "Stinkbreath"
+#addname "Sog Bullsmash"
+#addname "Thog"
+#addname "Veg"
+#addname "Necksnapper"
+#addname "Scrott"
+#addname "Torgug"
+#addname "Gristlespike"
+#addname "Tug"
+#addname "Gorghall"
+#addname "Maneater"
+#addname "Bombfist"
+#addname "Druk Mountainbiter"
+#addname "Gerret"
+#addname "Slug"
+#addname "Rogg"
+#addname "Fats"
+#addname "Tripeslicer"
+#addname "Fangbuster"
+#addname "Tuzargl"
+#addname "Zugg"
+#addname "Trud"
+#addname "Gog"
+#addname "Magog"
+#addname "Bonechewer"
+#addname "Bonesmasher"
+#addname "Wallbreaker"
+#addname "Grak"
+#addname "Negreg Headcracker"
+#addname "Pallug Bonegrinder"
+#addname "Ropug Slamfeaster"
+#addname "Alg Gutpuncher"
+#addname "Solid Trog"
+#addname "Bigtooth"
+#addname "Fatmouth"
+#addname "Grutty Slog"
+#addname "Smashmouth"
+#addname "Clubjaw"
+#addname "Flatulent Ogg"
+#addname "Stump Bonebelly"
+#addname "Rog Gutpunch"
+#addname "Lohg"
+#addname "Stumpsmash"
+#addname "Runteater"
+#addname "Nerg"
+#addname "Gep the Dull"
+#addname "Solek the Violent"
+#addname "Angry Moff"
+#addname "Goldmaw"
+#addname "Stomp Greasepit"
+#addname "Smash"
+#addname "Crush"
+#addname "Stomper Hoff"
+#addname "Roggot"
+#addname "Gizzardeater"
+#addname "Entrailripper"
+#addname "Belchfighter"
+#addname "Clubby Bang"
+#addname "Ruzgrat Skullcrusher"
+#addname "Brainbashing Zarg"
+#addname "Old Torg"
+#addname "Halfhand"
+#addname "Varrug Chewtooth"
+#addname "Drog"
+#addname "Bog"
+#addname "Grotcrusher"
+#addname "Dogg"
+#addname "Lomp"
+#addname "Ripper"
+#addname "Whort"
+#addname "Rug Manblight"
+#addname "Blacktooth"
+#addname "Kag"
+#addname "Gak"
+#addname "Manchomper"
+#addname "Scog Bigtooth"
+#addname "Cank"
+#addname "Brosk Facemangler"
+#addname "Peg the Rash"
+#addname "Lek the Tall"
+#addname "Zurret the Scabrous"
+#addname "Magrohf the Cunning"
+#addname "Nog the Reaver"
+#addname "Zeg the Confused"
+#addname "Tergh Stormkiller"
+#addname "Murgh Friendkiller"
+#addname "Choppy Gog"
+#addname "Howling Mad Murgh"
+#addname "Riptooth"
+#addname "Squigface"
+#addname "Thog"
+#addname "Brot"
+#addname "Brom"
+#addname "Slom"
+#addname "Wugg"
+#addname "Vhot"
+#addname "Fartbiter"
+#addname "Chugg the Drunk"
+#addname "Gushnik Redeyes"
+#addname "Bogus the Fake"
+#addname "Kwontum"
+#addname "Mao the Pained"
+#addname "Roaring Zutt"
+#addname "Buttface"
+#addname "Ug the Loud"
+#addname "Smashtooth"
+#addname "Rock Eater"
+#addname "Hesk Treestomper"
+#addname "Gom Gutsplinter"
+#addname "Robog Bloodmaker"
+#addname "Choppa Balfug"
+#addname "Skog the Brutal"
+#addname "Thudd Stormbiter"
+#addname "Bog Thugsmasher"
+#addname "Skrut Mountainjaw"
+#addname "Golg Bloodclub"
+#addname "Larma Beastfang"
+#addname "Axe Cutta Krug"
+#addname "Bloodchunk"
+#addname "Grizzlebiter"
+#end
+
+
+
+
+
+
+-------- EVENTS
+
+-- Discover Maw Pit
+
+#newevent
+#msg "With this stronghold fully established, the tribe has been digging a central Maw Pit for its fiercest, most devoted Ogres to prove themselves. They have finally finished, and the opening of the Pit was celebrated by many of its warriors in a huge, brutal orgy of slaughter and gore. By its end, only the most bloodthirsty Ogres remained, and the limbs of the rest lay as fodder for the Great Maw, a grand offering to slake its lust. From now on, regular fights will be held to feed it, while those still standing will be forged into the horrors known as Pitfighters! [Maw Pit]"
+#rarity 0
+#req_rare 10
+#req_fornation 121 -- Ogres
+#req_fort 1
+#req_freesites 1
+#nation -2 -- Ogres control the site
+#hiddensite 1990 -- Maw Pit
+#req_capital 0 -- never in capital
+#req_site 0 -- the Pit can't already be here
+#req_nositenbr 1987 -- the Abandoned Pit can't be here
+#4d6vis 7 -- Gives 1d6 blood slaves?
+#end
+
+#newevent
+#msg "With our recent conquest of this Ogre stronghold, the old Maw Pit has been abandoned, with nothing but dried blood and a foul odor remaining to suggest its former use. [Maw Pit]"
+#rarity 5
+#req_site 1
+#removesite 1990 -- Maw Pit
+#hiddensite 1987 -- Abandoned Pit
+#req_notnation 121 -- Ogres
+#req_pop0ok
+#end
+
+#newevent
+#msg "With the stronghold under our control once more, we have been working to reopen the local Maw Pit. The customary opening brawl took place yesterday, and we can once more look forward to a steady flow of flesh to the Great Maw, and a supply of mad brutes willing to be branded Pitfighters!  [Abandoned Pit]"
+#rarity 0
+#req_rare 25
+#req_fort 1
+#req_fornation 121 -- Ogres
+#req_site 1 -- the abandoned Maw Pit must be here
+#nation -2
+#removesite 1987 -- Abandoned Pit
+#hiddensite 1990 -- Maw Pit
+#end
+
+
+
+-------- SITES
+
+#newsite 1987
+#name "Abandoned Pit"
+#path 7
+#level 0
+#rarity 5
+#end
+
+#newsite 1988
+#name "Big Maw Pit"
+#path 7
+#level 0
+#rarity 5
+#gems 7 6
+#homemon 5526 -- Pitfighter
+--#homecom 5522 -- Slaughtermaster
+#end
+
+#newsite 1989
+#name "The Wilds"
+#path 6
+#level 0
+#rarity 5
+#gems 6 1
+#gems 3 1
+--#homemon 5525 -- Slavegiant
+#end
+
+#newsite 1990
+#name "Maw Pit"
+#path 7
+#level 0
+#rarity 5
+#gems 7 3 -- 3 blood slaves
+#mon 5526 -- Pitfighter
+#end
+
+
+
+
+
+-------- NATION
+
+
+
+#selectnation 121
+#clearnation
+#clearsites
+#name "Ogre Kingdoms"
+#epithet "Gathering of Might"
+#era 2
+#brief "The Ogre Kingdoms are a loose coalition of Ogre tribes which, if they set their rather simple minds to it, might devour the entire world."
+#descr "Long ago the Ogres dwelled far to the East of the Old World, seldom roaming beyond their lands bordering Great Cathay. The impact of the Great Maw, a massive entity fallen from the heavens, wiped out half of their kind and forced the rest into a great migration East. Instilled with the endless hunger of the Great Maw, the Ogres swarmed the mountain homes of the Skygiants and overcame them with sheer weight of numbers. Quickly adapting to the environment, the Ogres made the mountains their home, dominated the cowardly Gnoblars and spread out, splintering into dozens of smaller Tyrant ruled Kingdoms. For a time the Ogres warred amongst themselves, only leaving their homes to raid or seek employment as mercenaries. In recent years the hunger of the Maw has once again grown overpowering and the tribes, grown to unheard of size, are slowly uniting under the banner of Overtyrant Greasus Goldtooth."
+#summary "Race: Hungry Ogres, Ogre-Kin, Gnoblars. Prefer Cold Scale 2.
+Military: Powerful Ogre infantry, numerous Gnoblars and specialised creatures.
+Magic: Blood, Fire, and Nature with diversity through summons.
+Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice."
+#flag "./Warhammer-Complete/flag.tga"
+#templepic 11
+#templecost 200 -- ogre temples are pits in the ground, extremely low cost
+#startsite "Big Maw Pit"
+#startsite "The Wilds"
+#sacrificedom
+#nopreach
+#dyingdom
+#bloodnation
+#homerealm 1
+#addgod 157 -- mother of monsters
+#addgod 216 -- fire dragon
+#addgod 265 -- frost dragon
+#addgod 266 -- nature dragon
+#addgod 269 -- wyrm
+#addgod 606 -- great mother
+#addgod 657 -- monolith
+#addgod 656 -- fountain of blood
+#addgod 958 -- colossal head
+#addgod 1229 -- son of fenrer
+#addgod 1346 -- colossal fetish
+#addgod 1561 -- father of winters
+#addgod 2082 -- son of the fallen
+#addgod 2448 -- idol of beasts
+#addgod 2461 -- statue of the bloody mother
+#addgod 2608 -- azi
+#addgod 2783 -- drakon
+#addgod 2788 -- man eater
+#addgod 3121 -- eldest cyclops
+#addgod 246 -- Freak Lord
+#cheapgod20 5538 -- Facet of the Maw
+#addgod 5538
+
+
+--Sets what forts they will use.
+
+#fortera 1 -- early era forts
+
+
+------- Add soldiers
+
+#addrecunit 5503 -- Gnoblar Fighter
+#addforeignunit 5503 -- Gnoblar Fighter
+#addrecunit 5511 -- Gnoblar Trapper
+#forestrec 5511 -- Gnoblar Trapper
+#mountainrec 5511 -- Gnoblar Trapper
+#addrecunit 5500 -- Ogre Bull Club
+#addforeignunit 5500 -- Ogre Bull Club
+#addrecunit 5501 -- Ogre Bull Ironfist
+#addforeignunit 5501 -- Ogre Bull Ironfist
+#addrecunit 5507 -- Ogre Deathbelcher
+#addrecunit 5502 -- Ogre Irongut
+--addrecunit 5508 -- Gorger
+--addrecunit 5509 -- Sabretusk
+--addrecunit 5510 -- Yhetee
+#addrecunit 5515 -- Ogre Maneater (west)
+#addforeignunit 5515 -- Ogre Maneater (west)
+#addrecunit 5516 -- Ogre Maneater (east)
+#addforeignunit 5516 -- Ogre Maneater (east)
+--addrecunit 5517 -- Mawtribe Ogre
+#addrecunit 5518 -- scraplauncher
+#mountainrec 5518 -- Scraplauncher
+#addrecunit 5525 -- Slave Giant
+
+
+
+------- Add leaders
+
+#addreccom 5527 -- Gnoblar Scout
+#addforeigncom 5527 -- Gnoblar Scout
+#addreccom 5520 -- Ogre Bruiser
+#addforeigncom 5520 -- Ogre Bruiser
+#addreccom 5523 -- Ogre Tyrant
+#addreccom 5524 -- Ogre Hunter
+#mountaincom 5524 -- Ogre Hunter
+#addreccom 5504 -- Ogre Firebelly
+#addreccom 5521 -- Ogre Butcher
+#addforeigncom 5521 -- Ogre Butcher
+#addreccom 5522 -- Ogre Slaughtermaster
+--addreccom 5528 -- Slavelord Braugh
+--addreccom 5531 -- Groth Onefinger
+--addreccom 5532 -- Henchfiend
+--addreccom 5533 -- Skrag the slaughterer
+--addreccom 5539 -- Mawfiend
+--addreccom 5497 -- Golgfag Maneater
+
+
+------- Wall Defenders
+
+#wallcom 5503 -- gnoblar fighter
+#wallunit 5503 -- gnoblar fighter
+#wallmult 20 -- twice the standard amount of defenders, but they are gnoblars after all
+
+
+
+------- Province Defence
+
+--Sets the units to be used in province defense.
+
+#defcom1 5520 -- ogre bruiser
+#defcom2 5521 -- ogre butcher
+#defunit1 5500 -- ogre bull with club
+#defunit1b 5503 -- gnoblar fighter
+#defunit2 5501 -- ogre bull with ironfist
+
+
+--Sets how many of the units to appear per ten points
+
+#defmult1 8
+#defmult1b 20
+#defmult2 8
+
+
+------- Hero Settings
+
+#hero1 5528 -- Slavelord Braugh
+#hero2 5531 -- Groth Onefinger
+#hero3 5533 -- Skrag the Slaughterer
+#hero4 5497 -- Golfag Maneater
+
+#idealcold 2
+#color 0.9 0.9 0.5
+
+
+#startcom 5520
+#startunittype1 5500 -- ogre bull club
+#startunitnbrs1 10
+#startunittype2 5501 -- ogre bull ironfist
+#startunitnbrs2 10
+#startscout 5527 -- Gnoblar Scout
+#end
+
+
+--END OF OGRE KINGDOMS, BEGINNGIN OF SKAVEN
 
 --(Sombre's changelog below)
 
@@ -12371,6 +14865,12 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #addgod 2796 -- Hound of hades
 #addgod 1097 -- lord of the summer plague
 #addgod 5555 -- Pillar of Commandments
+
+#addgod 2791 -- Earth serpent
+#addgod 249 -- Crone
+#addgod 2431 -- Titan of the Underworld
+#addgod 1230 -- Titan of the Forge
+#addgod 1581 -- Risen Oracle
 
 
 --Sets what forts they will use.

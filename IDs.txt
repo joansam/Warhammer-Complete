@@ -7,9 +7,30 @@ Nametypes: Daemon: 257, Beastmen: 109, Chaos Human: 115, Skaven: 187, Lizards: 1
 Nations:
 Skaven: 116
 Tzeentch: 120
+Ogre Kingdoms: 121
 Nurgle: 136
 Lizards: 145
 Slaanesh: 159
+
+Monsters :
+Bretonnia : 3162-3225 / 3227
+Naggarond : 5100-5131 / 5133-5151
+Khazad : 3100-3131 / 3133-3141 / 3143-3145
+Empire :  3396-3431 / 3433-3477 / 3483 / 3484-3501
+HE : 6001-6021 / 6023 / 6024-6042 / 6044-6046
+Khorne : 4600-4607 / 4610-4613 / 4615-4618 / 4620-4623 / 4625-4627 / 4629-4638 / 4640-4643 / 4645-4651 / 4655-4657 / 4660-4662
+Ogre : 5497-5539
+Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
+Tomb Kings : 3241-75
+VC : 3000-69
+WE : 4400-4408 / 4415-4421 / 4425-4431 / 4440-4442 / 6041
+--INCLUDED:
+Slaanesh : 4150-96
+Tzeentch : 4330-4350 / 4796-4836
+Nurgle : 5000-5050
+Ogre Kingdoms: 5500-5540 (5506,7,12,13,14,19,28-31,33,36-8 unused)
+Skaven : 5540-86
+Lizardmen : 7310-65
 
 Weapons : 
 Bretonnia: 1022-33 / 1040
@@ -26,7 +47,8 @@ Wood Elves: 1350-63
 --INCLUDED:
 Lizardmen: 810-41
 Skaven: 861-91
-Nurgle: 1748-71 (except 1754)
+Ogre Kingdoms: 927-50 (36-8 free)
+Nurgle: 1748-71 (1754 free)
 Slaanesh: 1851-66
 Tzeentch: 1869-8
 
@@ -43,30 +65,12 @@ Tomb Kings : 552-562
 VC : None
 WE : 710 / 714 / 715
 --INCLUDED:
+Ogre Kingdoms: 270-3
 Skaven : 318-21
 Lizardmen : 370-376
 Tzeentch : 449 / 450
 Nurgle : 685
 Slaanesh : 801 / 803 / 804
-
-Monsters :
-Bretonnia : 3162-3225 / 3227
-Naggarond : 5100-5131 / 5133-5151
-Khazad : 3100-3131 / 3133-3141 / 3143-3145
-Empire :  3396-3431 / 3433-3477 / 3483 / 3484-3501
-HE : 6001-6021 / 6023 / 6024-6042 / 6044-6046
-Khorne : 4600-4607 / 4610-4613 / 4615-4618 / 4620-4623 / 4625-4627 / 4629-4638 / 4640-4643 / 4645-4651 / 4655-4657 / 4660-4662
-Ogre : 5497-5539
-Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
-Tomb Kings : 3241-75
-VC : 3000-69
-WE : 4400-4408 / 4415-4421 / 4425-4431 / 4440-4442 / 6041
-INCLUDED:
-Slaanesh : 4150-96
-Tzeentch : 4330-4350 / 4796-4836
-Nurgle : 5000-5050
-Skaven : 5540-86
-Lizardmen : 7310-65
 
 Sites : 
 Bretonnia : 1551 and 1552
@@ -80,8 +84,8 @@ Orc : 1910-1912
 VC : 1520-2
 WE : 1705 and 1706
 Tomb Kings : 1930 and 31
-INCLUDED:
-Itza : 1510 and 1511
+--INCLUDED:
+Lizardmen : 1510 and 1511
 Nurgle : 1925 and 1926
 Slaanesh : 1950 and 1951
 Tzeentch : 1952 / 1953

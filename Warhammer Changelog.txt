@@ -57,14 +57,37 @@ Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
 To-Do
+-- Give Ogres a Maw god? Maybe a Slaughtermaster too, or a Daemon?
 -- Give Skaven and Lizards proper godtypes
 -- Balance Skaven - start by improving the summons, decreasing lab costs to 300?
 -- Increase cost of lizard summons? Then again, their infrastructure is quite bad.
-
+-- Special feature file? Would describe events/weird mechanics
 
 -- Increase att/def skill a bit for some Daemons
 -- Remove priest levels from Slaanesh sorc line
--- Switch paths on Keeper of Secrets and Daemon Princess - Princess now has more magic
+-- Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
+
+Version 1.4:
+-- Added Ogre Kingdoms!
+--	Changed in-game name from "Goldtooth Tribe" to "Ogre Kingdoms"
+-- Added a god: Facet of the Maw. Based on Dom3+4 Facet of the Maw summon - B2N1 immobile
+--  Added some events revolving around a new site - a smaller version of the Maw Pit
+--	  10% chance of spawning the Pit in a fort, it allows recruitment of Pitfighters and gives 3 slaves/turn
+--    Other events for destroying it when an enemy takes the fort, and a 25% chance of reopening/turn if retaken
+--  Forts 50% more expensive, not 100
+--  Pitfighters otherwise cap-only and description updated
+--	Reduced unit costs across the board - basic ogre is now 25 gold, not 30
+--	Added snowmove and increased coldres to 5 on most units
+--	Removed ambidextrous from most units to reduce clutter, compensated stat-wise
+--  Increased gem income to standard for MA (2 blood slaves = 1 gem)
+--	Increased starting army size from 12 to 20
+--  Reworked research levels to be more spread out, correspond more to power level
+--  Reduced AoE of minor gut magics, slightly increased that of the stoneskin buff
+--	Buffed slave giant (300->200 gold, 5->10 fear, removed cap-only limit, increased siege bonus)
+--  Buffed Mawgut and Mawfiend - less popkill and recuperation on the first, blood vengeance and another claw on the second
+--	Minor fixes:
+--	 No Ogre Tyrant helmet, less ammo on Harpoon, mawtribe +morale, fixed slave giant helmet, fixed costs
+-- Added more pretenders to Ogre Kingdoms and Skaven selection
 
 Version 1.3:
 -- Added Skaven!
