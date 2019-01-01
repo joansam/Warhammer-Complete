@@ -2,13 +2,15 @@ ID Numbers :
 Nations are sorted as in the code
 
 Montags: Chaos: 7777, 8888, 6666, 5555, 60006
-Nametypes: Daemon: 257, Beastmen: 109, Chaos Human: 115, Skaven: 187, Lizards: 123
+Nametypes: Daemon: 257, Beastmen: 109, Chaos Human: 115, Skaven: 187,
+Lizards: 123, Chaos Dwarfs: 192, Hobgoblins: 191, Ogres: 193
 
 Nations:
-Skaven: 116
 Tzeentch: 120
-Ogre Kingdoms: 121
 Nurgle: 136
+Ogre Kingdoms: 121
+Skaven: 116
+Chaos Dwarfs: 141
 Lizards: 145
 Slaanesh: 159
 
@@ -19,7 +21,6 @@ Khazad : 3100-3131 / 3133-3141 / 3143-3145
 Empire :  3396-3431 / 3433-3477 / 3483 / 3484-3501
 HE : 6001-6021 / 6023 / 6024-6042 / 6044-6046
 Khorne : 4600-4607 / 4610-4613 / 4615-4618 / 4620-4623 / 4625-4627 / 4629-4638 / 4640-4643 / 4645-4651 / 4655-4657 / 4660-4662
-Ogre : 5497-5539
 Orc : 3800-3823 / 3826-3841 / 3844-3856 / 3860-3866 / 3868-3874 / 3876-3884 / 3886 / 3891, 3892
 Tomb Kings : 3241-75
 VC : 3000-69
@@ -31,6 +32,7 @@ Nurgle : 5000-5050
 Ogre Kingdoms: 5500-5540 (5506,7,12,13,14,19,28-31,33,36-8 unused)
 Skaven : 5540-86
 Lizardmen : 7310-65
+Chaos Dwarfs: 81(00-10,18,22-37)
 
 Weapons : 
 Bretonnia: 1022-33 / 1040
@@ -39,7 +41,6 @@ Khazad: 842-60 / 916-26
 Empire: 776-802
 High Elves: 1001-24 (except 1012)
 Khorne: 1301-10
-Ogres: 927-50
 Orcs: 1041-60
 Tomb Kings: 1700-6
 Vampire Counts: 741-7
@@ -47,6 +48,7 @@ Wood Elves: 1350-63
 --INCLUDED:
 Lizardmen: 810-41
 Skaven: 861-91
+Chaos Dwarfs: 903-16
 Ogre Kingdoms: 927-50 (36-8 free)
 Nurgle: 1748-71 (1754 free)
 Slaanesh: 1851-66
@@ -59,13 +61,13 @@ Khazad : 340-351
 Empire : 281-284
 HE : 356 / 357 / 359-366
 Khorne : 700 / (701?) / 702 
-Ogre : 270-273
 Orc : 380 / 381
 Tomb Kings : 552-562
 VC : None
 WE : 710 / 714 / 715
 --INCLUDED:
 Ogre Kingdoms: 270-3
+Chaos Dwarfs: 290-3
 Skaven : 318-21
 Lizardmen : 370-376
 Tzeentch : 449 / 450
@@ -79,16 +81,17 @@ Khazad : 1550
 Empire : 1512-1516
 HE : 1601-1604
 Khorne : 1701-1703
-Ogre : 1988 and 1989
 Orc : 1910-1912
 VC : 1520-2
 WE : 1705 and 1706
 Tomb Kings : 1930 and 31
 --INCLUDED:
 Lizardmen : 1510 and 1511
+Chaos Dwarfs: 1523-6
 Nurgle : 1925 and 1926
 Slaanesh : 1950 and 1951
 Tzeentch : 1952 / 1953
+Ogre Kingdoms: 1987-90
 Skaven : 1991-5
 
 HUMAKTY CHANGELOG

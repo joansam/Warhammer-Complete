@@ -10144,7 +10144,7 @@ still to do
 #att 10
 #def 9
 #prec 4
-#mapmove 16
+#mapmove 18
 #ap 16
 #gcost 200
 #rpcost 80
@@ -11615,7 +11615,7 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 #end
 
 
---END OF OGRE KINGDOMS, BEGINNGIN OF SKAVEN
+--END OF OGRE KINGDOMS, BEGINNING OF SKAVEN
 
 --(Sombre's changelog below)
 
@@ -14982,7 +14982,2151 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #startscout 5580
 #end
 
---END OF SKAVEN, BEGINNING OF LIZARDMEN
+--END OF SKAVEN, BEGINNING OF CHAOS DWARFS
+
+--Sombre's changes below, see Warhammer-Changelog for JoanSam's changes
+
+----- 0.22 -----
+
+-- FIX -- Sorcerer Lord got B1 path
+
+-- FIX -- Wolf Riders got light lance, not rake
+
+-- FIX -- no slaves are old now
+
+-- FIX -- one name in nametype was broken
+
+
+----- 0.21 -----
+
+-- FIX -- Acolytes sacred now
+
+
+----- 0.2 -----
+
+-- FIX -- Immortal has his axe, not a wolf bite, crossbowman gets crossbow
+
+-- FIX -- bull centaur ancient gets fire res 5
+
+-- FIX -- hobgoblin gutstabber given assassin, patience 1
+
+-- FIX -- sorcerers and sorcerer lords got improved MR
+
+-- TWEAK -- added national fort defenders
+
+-- TWEAK -- blunderbuss made a tiny bit less powerful
+
+-- TWEAK -- map move added for all units
+
+-- TWEAK -- chosen infernal gcost 80->70
+
+-- TWEAK -- chaos dwarfs now don't need to eat, but do so for pleasure
+
+
+----- 0.1 -----
+
+-- work begins
+
+----------------- EQUIPMENT
+
+
+-------- New Weapons
+
+--- Forge Hammer
+
+#newweapon 903
+#copyweapon 648 -- Enchanted hammer
+#name "Forge Hammer"
+#rcost 9
+#secondaryeffect 221 -- magic fire like flambeau
+#end
+
+-- Slaver whip
+
+#newweapon 904
+#name "Slaver Whip"
+#dmg -1
+#att 1
+#def 0
+#len 4
+#rcost 1
+#sound 9 -- whip
+#nratt 1
+#end
+
+--- Flames of Hashut
+
+#newweapon 905
+#copyweapon 383 -- throw flames
+#name "Flames of Hashut"
+#dmg -1
+#nratt 2
+#range 30
+#ammo 10
+#end
+
+--- Chaos Dwarf Axe
+
+#newweapon 906
+#copyweapon 17 -- Axe
+#name "Chaos Dwarf Axe"
+#rcost 3 -- triple normal
+#att 1 -- +1
+#def 0 -- +1
+#end
+
+--- Mastercrafted Axe
+
+#newweapon 907
+#copyweapon 17 -- Axe
+#name "Mastercrafted Axe"
+#rcost 5 -- 5x normal normal
+#dmg 9 -- +1
+#att 1 -- +2
+#def 0 -- +1
+#end
+
+--- Wolf Bite
+
+#newweapon 908
+#copyweapon 19 -- bite
+#name "Wolf Bite"
+#dmg 12
+#end
+
+--- Orc choppa
+
+#newweapon 909
+#copyweapon 10 -- falchion
+#name "Choppa"
+#def -1
+#charge
+#end
+
+--- Blunderbuss
+
+#newweapon 910
+#name "Blunderbuss"
+#ammo 5
+#att 0
+#armorpiercing
+#dmg 8
+#flyspr 109 1
+#nostr
+#nratt 8
+#range 12
+#rcost 8
+#sound 25
+#flyspr 111 1
+#pierce
+#ironweapon
+#end
+
+--- Chaos Dwarf Steel Crossbow
+
+#newweapon 911
+#name "Chaos Dwarf Crossbow"
+#ammo 12
+#att 0
+#armorpiercing
+#dmg 10
+#flyspr 109 1
+#bowstr
+#nratt -2
+#range 40
+#rcost 5
+#sound 13 -- crossbow
+#flyspr 109 1 -- arrow
+#pierce
+#ironweapon
+#end
+
+--- Fireglaive
+
+#newweapon 912
+#copyweapon 308 -- Glaive
+#name "Fireglaive"
+#rcost 7
+#secondaryeffectalways 913 -- Fireglaive Gout
+#def 0 -- usually 1
+#end
+
+--- Fireglaive Gout
+
+#newweapon 913
+#copyweapon 171 -- small area fire
+#name "Fireglaive Gout"
+#aoe 2 -- usually 1
+#dmg 8 -- otherwise it's 14
+#end
+
+--- Forge Axe
+
+#newweapon 914
+#copyweapon 17 -- Axe
+#name "Forge Axe"
+#rcost 9
+#magic -- clearly
+#secondaryeffect 221 -- magic fire like flambeau
+#end
+
+--- Hobgoblin gitknife
+
+#newweapon 915
+#copyweapon 126 -- poison dagger
+#name "Gitknife"
+#secondaryeffect 50 -- weak poison
+#end
+
+#newweapon 916
+#name "Varies"
+#len 0
+#att 0
+#def 0
+#dmg 0
+#rcost 0
+#end
+
+
+
+-------- New Armour
+
+
+--- Infernal Full Plate
+
+#newarmor 290
+#copyarmor 215 -- Full Plate of Ulm
+#name "Infernal Full Plate"
+#rcost 30
+#end
+
+--- Ogre slaves iron muzzle
+
+#newarmor 291
+#copyarmor 20 -- Iron cap
+#name "Iron Muzzle"
+#prot 10
+#end
+
+--- Golden Immortal Plate
+
+#newarmor 292
+#copyarmor 19 -- Full Plate Mail
+#name "Golden Immortal Plate"
+#enc 4
+#rcost 34 -- it's very overwrought
+#end
+
+--- Daemonsmith Scale Mail
+
+#newarmor 293
+#copyarmor 215 -- Full Plate of Ulm
+#name "Daemonsmith Scale Mail"
+#rcost 26
+#def -2
+#enc 3
+#prot 19
+#end
+
+
+----------------- MONSTERS
+
+
+-------- Recruits
+
+
+---- Chaos Dwarf Warrior
+
+#newmonster 8100
+#spr1 "./Warhammer-Complete/Warrior.tga"
+#spr2 "./Warhammer-Complete/Warrior2.tga"
+#name "Chaos Dwarf Warrior"
+#descr "Chaos Dwarf society is strictly heirarchical with many tiers of ascending power and diminishing size, mirroring the mighty ziggurats that dominate their homeland. Amongst Chaos Dwarfs the Warrior caste is a position of middling importance, holding status above craftsmen and civilians, but well below smiths or inductees into cult of Hashut. Still, Warriors are invaluable as it is they who venture forth to conquer and enslave, feeding the endless hunger of their society for disposable labour. Like all Dwarfs they are hardy and resolute fighters unlikely to suffer the dishonour of fleeing, and and well armed and armoured. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#hp 13 --- toughness 4
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 10 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 16
+#rpcost 21 --- They need to have order scales
+#rcost 1
+#armor 2 -- basic shield
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 906 -- chaos dwarf axe
+#maxage 500
+#startage 150
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Chaos Dwarf Blunderbuss
+
+#newmonster 8101
+#spr1 "./Warhammer-Complete/Blunderbuss.tga"
+#spr2 "./Warhammer-Complete/Blunderbuss2.tga"
+#name "Chaos Dwarf Blunderbuss"
+#descr "The Chaos Dwarfs have created a great many weapons of war, with most being as cruel and dangerous as their makers. The best known of these and most widely used amongst their kind is the blunderbuss, a vicious device capable of belching forth a hail of stone or metal shards. The exact alchemical formula used to create the explosive black tar used to propel this flesh-shredding shrapnel is a closely guarded secret, though the Chaos Dwarfs have been known to sell barrels of it to ogre warbands in exchange for slaves. The blunderbuss is best used against packed formations of lesser enemies, particularly those that lack shields or decent armour, as it is neither accurate nor long ranged. Unlike the archers of weaker nations, the Chaos Dwarfs entrusted with these weapons are well armoured and capable melee fighters. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#hp 13 --- toughness 4
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 9 --- set to get combat speed to 6
+#mapmove 12 -- standard dwarf move
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 22
+#rpcost 28 --- They need to have order scales
+#rcost 1
+#armor 17 -- full scale mail
+#armor "Half Helmet"
+#weapon 253 -- hatchet
+#weapon 910 -- blunderbuss
+#maxage 500
+#startage 150
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Chaos Dwarf Crossbow
+
+#newmonster 8102
+#spr1 "./Warhammer-Complete/Crossbow.tga"
+#spr2 "./Warhammer-Complete/Crossbow2.tga"
+#name "Chaos Dwarf Crossbowman"
+#descr "The crossbow is a traditional weapon of war for all dwarfs, and the Chaos Dwarfs are no exception in this regard. No matter what hideously destructive devices the Daemonsmiths, metalworkers, or alchemists create in the hellish forges of Zharr Naggrund, none will ever truly replace the crossbow. Much like their cousins to the west the children of Hashut regard the crossbows made by lesser races with contempt, for theirs are of considerably better craftsmanship and can propel heavier bolts just as far. Chaos Dwarf crossbowmen wear slightly lighter armour than their comrades and favour traditional hats with more fabric and less iron, as they are more likely to have to stand watch over slaves for prolonged periods and as such do make certain concessions to comfort. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#hp 13 --- toughness 4
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 8 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 18
+#rpcost 21 --- They need to have order scales
+#rcost 1
+#armor 12 -- scale mail hauberk
+#armor "Iron Cap"
+#weapon 253 -- hatchet
+#weapon 911 -- chaos dwarf crossbow
+#maxage 500
+#startage 150
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Infernal Guard
+
+#newmonster 8103
+#spr1 "./Warhammer-Complete/Infernal_Guard.tga"
+#spr2 "./Warhammer-Complete/Infernal_Guard2.tga"
+#name "Infernal Guard"
+#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear armour forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#hp 14 --- toughness 4, description makes them sound even tougher
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 18 --- leadership 10 and immune to psychology
+#mr 12 --- better mr than most chaos dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 12 --- str 4
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 11 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 30
+#rpcost 21 --- They need to have order scales
+#rcost 1
+#armor "Shield"
+#armor 290 -- infernal full plate
+#armor "Full Helmet"
+#weapon 906 -- chaos dwarf axe
+#maxage 500
+#startage 150
+#mountainsurvival
+#wastesurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#fireres 5
+#monpresentrec 8133 -- Daemonsmith
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Infernal Fireglaive
+
+#newmonster 8104
+#spr1 "./Warhammer-Complete/Infernal_Fireglaive.tga"
+#spr2 "./Warhammer-Complete/Infernal_Fireglaive2.tga"
+#name "Infernal Fireglaive"
+#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear armour forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. The Fireglaive is a hellish weapon used exclusively by the Infernal Guard; a hollow-tubed polearm which issues forth gouts of flame at the twist of a handle. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#hp 14 --- toughness 4, description makes them sound even tougher
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 18 --- leadership 10 and immune to psychology
+#mr 12 --- better mr than most chaos dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 12 --- str 4
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 10 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 40
+#rpcost 21 --- They need to have order scales
+#rcost 1
+#armor 290 -- infernal full plate
+#armor "Full Helmet"
+#weapon 912 -- fireglaive
+#maxage 500
+#startage 150
+#mountainsurvival
+#wastesurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#fireres 5
+#monpresentrec 8133 -- Daemonsmith
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Infernal Guard Chosen
+
+#newmonster 8105
+#spr1 "./Warhammer-Complete/Infernal_Chosen.tga"
+#spr2 "./Warhammer-Complete/Infernal_Chosen2.tga"
+#name "Infernal Chosen"
+#descr "While the vast majority of the Infernal Guard were condemned to service by their peers for public dishonour or a dramatic fall in the fortunes of their master, there are a rare few who join of their own volition. These are Dwarfs who cannot stand some secret shame, some stain to their honour which they can neither repair nor abide, even if it is known only to them. For these Dwarfs it is their sacred duty to join, for in Chaos Dwarf society even death is no escape from true dishonour, unless of course that death is found in the anonymous ranks of the Infernal Guard. The Chosen are stripped of their identity and sealed in their armour just like the condemned, but unlike their fellows their sacrifice is honoured by the Horns of Hashut on their helms, and they are armed with a pair of glowing forge axes fashioned by the Daemonsmiths to sear the foe with every slash. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#hp 14 --- toughness 4, description makes them sound even tougher
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 18 --- leadership 10 and immune to psychology
+#mr 12 --- better mr than most chaos dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 12 --- str 4
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 10 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 50
+#rpcost 21 --- They need to have order scales
+#rcost 1
+#armor 290 -- infernal full plate
+#armor "Full Helmet"
+#weapon 914 -- forge axe
+#weapon 914 -- forge axe
+#ambidextrous 2
+#maxage 500
+#startage 150
+#mountainsurvival
+#wastesurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#fireres 5
+#reclimit 2 -- they are very rare
+#monpresentrec 8133 -- Daemonsmith
+#neednoteat
+#supplybonus -1
+#holy
+#end
+
+
+---- Bull Centaur
+
+#newmonster 8106
+#spr1 "./Warhammer-Complete/Bull_Centaur.tga"
+#spr2 "./Warhammer-Complete/Bull_Centaur2.tga"
+#name "Bull Centaur"
+#descr "Bull Centaurs are creatures with the upper torso of a Chaos Dwarf but the body of a ferocious bull. Many centuries ago, when their kind was first twisted by Chaos, some Chaos Dwarfs were transformed into Bull Centaurs, creating a revered subrace of fast moving warriors. Since those days the Bull Centaurs have guarded the great temples of Hashut and the central Tower of Zharr-Naggrund. They are as keen witted as any of their cousins and completely devoted to service of Hashut, Father of Darkness. The Bull Centaurs are trusted by the Sorcerer caste to remain loyal at all times to Zharr-Naggrund and above the schemes of the many ambitious rivals vying for power. Although they are clearly touched by Hashut none of their number have any magical aptitude and they are thus barred from membership in the Cult and as such are not considered sacred."
+#hp 27 --- toughness 4, wounds 2, size 3
+#size 3 --- cavalry sized
+#prot 4 --- toughness 4, size 3
+#mor 14 --- leadership 9, mention of how loyal they are
+#mr 12 --- slightly better magic res than normal CD
+#enc 2 --- Dwarfs are known for their stamina
+#str 13 --- stronger than ordinary CD, str 4
+#att 11 --- weaponskill 4, initiative 3
+#def 11 --- weaponskill 4, initiative 3
+#prec 10 --- ballistic skill 3
+#mapmove 20 -- standard horse move
+#ap 26 --- move 8, but stubby legs
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 40
+#rpcost 35 --- pretty rare dudes
+#rcost 1
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 18 -- two handed battleaxe
+#weapon 55 -- hoof ala centaurs
+#maxage 1000 -- double the age of chaos dwarfs
+#startage 350
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#reqtemple -- requires temple to recruit, though not sacred
+#neednoteat
+#supplybonus -2
+#end
+
+
+---- Hobgoblin Archer
+
+#newmonster 8107
+#spr1 "./Warhammer-Complete/Hobgoblin_Archer.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Archer2.tga"
+#name "Hobgoblin Archer"
+#descr "Hobgoblins are a subrace of greenskins closely related to the more widespread orcs and goblins. Though not nearly so strong, tough, or aggressive as orcs, they are larger and stronger than goblins and make better fighters. In terms of mindset they are far closer to goblins than orcs, though arguably even sneakier and less trustworthy. Centuries ago the Chaos Dwarfs faced the largest slave uprising in their history and stood on the brink of defeat at the hands of a massive greenskin force which had taken most of Zharr-Naggrund, but at the last moment the hobgoblins, fearing the cruelty of the Chaos Dwarfs more than the brutality of the orcs, switched sides. Since that time the Hobgoblins have been cast out of greenskin society and, while they have risen from the position of slaves to menial servants, they are almost entirely reliant on the protection of their masters. Hobgoblins favour a cautious fighting style, using spears or bows to keep their foe at bay, or launching sneak attacks when their target isn't looking."
+#hp 8 --- toughness 3, but smaller than human
+#size 2 --- they aren't goblins
+#prot 0 --- toughness 3, size 2
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 3 --- normal
+#str 8 --- smaller than humans, str 3
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 9
+#rpcost 9 --- normal
+#rcost 1
+#weapon 23 -- normal short bow
+#weapon 9 -- dagger
+#armor 120 -- leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#undisciplined
+#stealthy 10
+#darkvision 50
+#end
+
+
+---- Hobgoblin Spearman
+
+#newmonster 8108
+#spr1 "./Warhammer-Complete/Hobgoblin_Spear.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Spear2.tga"
+#name "Hobgoblin Spearman"
+#descr "Hobgoblins are a subrace of greenskins closely related to the more widespread orcs and goblins. Though not nearly so strong, tough, or aggressive as orcs, they are larger and stronger than goblins and make better fighters. In terms of mindset they are far closer to goblins than orcs, though arguably even sneakier and less trustworthy. Centuries ago the Chaos Dwarfs faced the largest slave uprising in their history and stood on the brink of defeat at the hands of a massive greenskin force which had taken most of Zharr-Naggrund, but at the last moment the hobgoblins, fearing the cruelty of the Chaos Dwarfs more than the brutality of the orcs, switched sides. Since that time the Hobgoblins have been cast out of greenskin society and, while they have risen from the position of slaves to menial servants, they are almost entirely reliant on the protection of their masters. Hobgoblins favour a cautious fighting style, using spears or bows to keep their foe at bay, or launching sneak attacks when their target isn't looking."
+#hp 8 --- toughness 3, but smaller than human
+#size 2 --- they aren't goblins
+#prot 0 --- toughness 3, size 2
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 3 --- normal
+#str 8 --- smaller than humans, str 3
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 8
+#rpcost 9 --- normal
+#rcost 1
+#weapon 1 -- spear
+#armor 2 -- basic shield
+#armor 119 -- reinforced leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#undisciplined
+#stealthy 10
+#darkvision 50
+#end
+
+
+---- Hobgoblin Sneaks
+
+#newmonster 8109
+#spr1 "./Warhammer-Complete/Hobgoblin_Sneak.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Sneak2.tga"
+#name "Hobgoblin Sneak"
+#descr "Hobgoblins are such an utterly evil and treacherous race that it is hard to imagine a tribe of hobgoblins whose double dealing and backstabbing is renowned even amongst their own fickle kind, yet it exists. This tribe, known as the Sneaky Gits, lives to the east of Zharr-Naggrund. The warriors of this tribe fight in battle with two long curving knives treated with all manner of poisons and ideally suited to their back stabbing methods."
+#hp 8 --- toughness 3, but smaller than human
+#size 2 --- they aren't goblins
+#prot 0 --- toughness 3, size 2
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 3 --- normal
+#str 8 --- smaller than humans, str 3
+#att 10 --- weaponskill 3, initiative 3
+#def 10 --- weaponskill 3, initiative 3
+#prec 10 --- ballistic skill 3
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 12
+#rpcost 18 --- normal
+#rcost 1
+#weapon 915 -- gitknife
+#weapon 915 -- gitknife
+#ambidextrous 2
+#armor 119 -- reinforced leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#stealthy 20
+#darkvision 50
+#end
+
+
+---- Hobgoblin Wolf rider
+
+#newmonster 8110
+#spr1 "./Warhammer-Complete/Hobgoblin_Wolfrider.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Wolfrider2.tga"
+#name "Hobgoblin Wolf Rider"
+#descr "Not all hobgoblins live within the territory of the Chaos Dwarfs. To the East there are large tribes who are typically allied to the masters of Zharr-Naggrund, but live a nomadic life, raiding other greenskins and sometimes ranging into the lands of menfolk. These hobgoblins travel and fight on wolfback, having long ago formed a beneficial relationship with the large and intelligent wolves of the region. They favour hit and run tactics with both bow and spear and are experienced raiders."
+#hp 9 --- little tougher than normal
+#size 3 --- they aren't goblins, mounted on wolf
+#prot 0 --- toughness 3
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 4 --- low for mounted
+#str 8 --- smaller than humans, str 3
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 11 --- ballistic skill 3 -- but good archers
+#mapmove 24 -- fast cavalry
+#ap 28 --- faster than horses, move 9
+#gcost 20
+#rpcost 21 --- not that high for cav because they're foreignrecs
+#rcost 1
+#weapon 357 -- light lance
+#weapon 23 -- normal short bow
+#weapon 908 -- Wolf Bite
+#armor 2 -- basic shield
+#armor 119 -- reinforced leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#stealthy 10
+#pillagebonus 1
+#darkvision 50
+#mounted
+#end
+
+
+---- Goblin Slave - spiked club
+
+#newmonster 8111
+#spr1 "./Warhammer-Complete/Slave_Goblin.tga"
+#spr2 "./Warhammer-Complete/Slave_Goblin2.tga"
+#name "Goblin Slave"
+#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. This slave is armed with a simple club, though such is the nature of goblins that he will inevitably have managed to scrounge up some bits of metal to enhance its effectiveness."
+#hp 7 --- toughness 3, but smaller than human
+#size 1 --- goblins are size 1
+#prot 0 --- toughness 3, size 2
+#mor 6 --- leadership 5, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 7 --- smaller than humans, str 3, slaves
+#att 8 --- weaponskill 2, initiative 2
+#def 8 --- weaponskill 2, initiative 2
+#prec 9 --- ballistic skill 3, slave
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 3
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 593 -- spiked club
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#montag 1023
+#patrolbonus -1
+#end
+
+
+---- Goblin Slave - spear
+
+#newmonster 8112
+#spr1 "./Warhammer-Complete/Slave_Goblin_Spear.tga"
+#spr2 "./Warhammer-Complete/Slave_Goblin_Spear2.tga"
+#name "Goblin Slave"
+#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. This slave is armed with an improvised spear made from some discarded tool of length of scrap."
+#hp 7 --- toughness 3, but smaller than human
+#size 1 --- goblins are size 1
+#prot 0 --- toughness 3, size 2
+#mor 6 --- leadership 5, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 7 --- smaller than humans, str 3, slaves
+#att 8 --- weaponskill 2, initiative 2
+#def 8 --- weaponskill 2, initiative 2
+#prec 9 --- ballistic skill 3, slave
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 3
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 1 -- spear
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#montag 1023
+#patrolbonus -1
+#end
+
+
+---- Goblin War Slave
+
+#newmonster 8113
+#spr1 "./Warhammer-Complete/Slave_Goblin_War.tga"
+#spr2 "./Warhammer-Complete/Slave_Goblin_War2.tga"
+#name "Goblin Warslave"
+#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and armour, though nothing that would present much danger to the Chaos Dwarf legions."
+#hp 7 --- toughness 3, but smaller than human
+#size 1 --- goblins are size 1
+#prot 0 --- toughness 3, size 2
+#mor 6 --- leadership 5, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 7 --- smaller than humans, str 3, slaves
+#att 8 --- weaponskill 2, initiative 2
+#def 8 --- weaponskill 2, initiative 2
+#prec 9 --- ballistic skill 3, slave
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 4
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 6 -- short sword
+#armor 120 -- leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#montag 1023
+#patrolbonus -1
+#end
+
+
+---- Orc Slave - club
+
+#newmonster 8114
+#spr1 "./Warhammer-Complete/Slave_Orc.tga"
+#spr2 "./Warhammer-Complete/Slave_Orc2.tga"
+#name "Orc Slave"
+#descr "Orcs bought or enslaved from tribes across the Darklands and surrounding mountains are used as slaves throughout the Chaos Dwarf empire. Their brute strength, toughness, and recuperative abilities make them equally excellent labour in the pits and slave warriors on the battlefield. Orcs are heavily muscled creatures with thick bones and small brains who respect nothing more than power and like little more than to fight, even with each other. Even having been enslaved, orcs are still willing combatants, much preferring to meet their end in combat rather than in some mining accident. Orc physiology is unusual in that over time they can recover from almost any wound, even growing back missing limbs. This orc slave has recently been taken from the mines and is equipped with nothing more than a simple club, with which he will enthusiastically attack his foes."
+#hp 14 --- toughness 4
+#size 2 --- normal
+#prot 4 --- toughness 4
+#mor 9 --- leadership 7, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 12 --- str 3, slightly bigger than human
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 8 --- ballistic skill 2
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 5
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 252 -- club
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#heal -- recuperation ability
+#montag 1023
+#patrolbonus -1
+#end
+
+
+---- Orc War Slave
+
+#newmonster 8115
+#spr1 "./Warhammer-Complete/Slave_Orc_War.tga"
+#spr2 "./Warhammer-Complete/Slave_Orc_War2.tga"
+#name "Orc Warslave"
+#descr "Orcs bought or enslaved from tribes across the Darklands and surrounding mountains are used as slaves throughout the Chaos Dwarf empire. Their brute strength, toughness, and recuperative abilities make them equally excellent labour in the pits and slave warriors on the battlefield. Orcs are heavily muscled creatures with thick bones and small brains who respect nothing more than power and like little more than to fight, even with each other. Even having been enslaved, orcs are still willing combatants, much preferring to meet their end in combat rather than in some mining accident. Orc physiology is unusual in that over time they can recover from almost any wound, even growing back missing limbs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and armour, though nothing that would present much danger to the Chaos Dwarf legions."
+#hp 14 --- toughness 4
+#size 2 --- normal
+#prot 4 --- toughness 4
+#mor 9 --- leadership 7, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 12 --- str 3, slightly bigger than human
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 8 --- ballistic skill 2
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 6
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 909 -- choppa
+#armor 119 -- reinforced leather cap
+#armor 11 -- ring mail hauberk
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#heal -- recuperation ability
+#montag 1023
+#patrolbonus -1
+#end
+
+
+---- Human Slave
+
+#newmonster 8116
+#spr1 "./Warhammer-Complete/Slave_Human.tga"
+#spr2 "./Warhammer-Complete/Slave_Human2.tga"
+#name "Human Slave"
+#descr "Human slaves are considerably more valued by the Chaos Dwarfs than their common greenskins property. Although they are nowhere near so durable and don't last long at all in the mines, they are much more useful for menial work requiring some degree of intelligence, especially in roles where a goblin simply could not be trusted. Because humans can be manipulated by threatening their comrades and respond more readily to the looming spectre of being tortured or sent to the mines they are particular favoured by traders, scribes, and other civilians who lack the strength or resources to keep greenskins in line. They are also regarded by the Cult of Hashut as making for superior sacrifices in certain rituals. As such it is only truly miserable humans that are sent to die in battle; those that are lame, incapable, or too troublesome to manage. These wretches are given crude spears and simply shoved forward amongst the greenskin rabble to die."
+#hp 8 --- toughness 3, bad condition slave
+#size 2 --- normal
+#prot 0 --- normal
+#mor 7 --- leadership 7, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 9 --- str 3, slaves in bad condition
+#att 9 --- weaponskill 3, initiative 3, bad condition
+#def 9 --- weaponskill 3, initiative 3, bad condition
+#prec 9 --- ballistic skill 3, bad condition
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 3
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 1 -- spear
+#slave
+#patrolbonus -1
+#montag 1023
+#startaff 80 -- they are in terrible condition
+#end
+
+---- Ogre Forgeslave - hammer, some armour
+
+#newmonster 8117
+#spr1 "./Warhammer-Complete/Slave_Ogre.tga"
+#spr2 "./Warhammer-Complete/Slave_Ogre2.tga"
+#name "Ogre Forgeslave"
+#descr "Ogres make for valuable slaves to the Chaos Dwarfs because of their great size and strength. Their sheer muscle makes them extremely useful when moving heavy equipment and the Daemonsmiths in particular prize them above all other slaves. If they could only be broken in or controlled in the same way as greenskins or humans, they would be truly invaluable in the forges of Zharr-Naggrund, but the sad truth is that most ogres are simply too proud, aggressive, and hungry to be properly controlled. The few ogres that the Daemonsmiths manage to keep need to be muzzled at all times to avoid them eating the other slaves and almost all eventually become too violent and uncooperative to be useful in the smiths' careful work. At this point they are perfect to hand over to the legions, however, where their fury can be unleashed upon the enemy until they are felled."
+#hp 34 --- toughness 3, bad condition slave
+#size 3 --- normal
+#prot 4 --- normal
+#mor 9 --- leadership 7, slaves, fear
+#mr 10 --- normal
+#enc 3 --- normal
+#str 15 --- str 4, size 3
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 7 --- ballistic skill 2, bad condition
+#mapmove 16 -- quick ogres
+#ap 14 --- slower than normal ogre
+#gcost 10
+#rpcost 1 --- doesn't matter
+#rcost 1
+#slave
+#patrolbonus -1
+#montag 1023
+#armor 291 -- Muzzle
+#armor 270 -- Gutplate
+#weapon 13 -- one handed hammer
+#weapon 930 -- ogre smash
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#coldres 3
+#fireres 2
+#supplybonus -2
+#darkvision 25
+#end
+
+
+----- Slave contract
+
+#newmonster 8118
+#spr1 "./Warhammer-Complete/Slave_Icon.tga"
+#name "Purchase Slave"
+#descr "The Chaos Dwarf empire is built almost entirely on slaves both economically and socially. It is slaves who toil in the deadly mines and inhospitable pits of the Darklands, it is slaves who do much of the menial work, and often it is slaves who are fated to die on distant battlefields for the benefit of Zharr-Naggrund. The military can requisition slaves at any time, purchasing them from civilian owners or even Sorcerer Lords for a relatively low price, though the quality will be quite mixed. Humans, Gnoblars, Goblins, Orcs, and even the occasional Ogre can be purchased in this way, and some of them may even be slaves equipped specifically for war rather than plucked directly from a stripmine. The biggest cost associated with doing so is simply that it removes part of the workforce, though inevitably they are replaced, for Zharr-Naggrund always seeks more slaves. Purchasing slaves within a province with a fort does not require the presence of a Slaver."
+#hp 1
+#size 2 --- normal
+#mor 1
+#mr 1
+#enc 1
+#str 1
+#att 1
+#def 1
+#prec 1
+#mapmove 14 -- standard human move
+#ap 12
+#gcost 6
+#rpcost 6 --- doesn't matter
+#rcost 9
+#slave
+#firstshape -1023
+#deathrec 1
+#startage 15
+#weapon 916 -- Varies
+#end
+
+----- Slave contract -- not at fort
+
+#newmonster 8137
+#spr1 "./Warhammer-Complete/Slave_Icon.tga"
+#name "Purchase Slave"
+#descr "The Chaos Dwarf empire is built almost entirely on slaves both economically and socially. It is slaves who toil in the deadly mines and inhospitable pits of the Darklands, it is slaves who do much of the menial work, and often it is slaves who are fated to die on distant battlefields for the benefit of Zharr-Naggrund. The military can requisition slaves at any time, purchasing them from civilian owners or even Sorcerer Lords for a relatively low price, though the quality will be quite mixed. Humans, Gnoblars, Goblins, Orcs, and even the occasional Ogre can be purchased in this way, and some of them may even be slaves equipped specifically for war rather than plucked directly from a stripmine. The biggest cost associated with doing so is simply that it removes part of the workforce, though inevitably they are replaced, for Zharr-Naggrund always seeks more slaves. Purchasing slaves in provinces without a fort requires the presence of a Slaver."
+#hp 1
+#size 2 --- normal
+#mor 1
+#mr 1
+#enc 1
+#str 1
+#att 1
+#def 1
+#prec 1
+#mapmove 14 -- standard human move
+#ap 12
+#gcost 6
+#rpcost 6 --- doesn't matter
+#rcost 9
+#slave
+#firstshape -1023
+#monpresentrec 8128 -- chaos dwarf slaver
+#deathrec 1
+#startage 15
+#weapon 916 -- Varies
+#end
+
+
+
+----- Gnoblar Slave
+
+#newmonster 8119
+#spr1 "./Warhammer-Complete/Slave_Gnoblar.tga"
+#spr2 "./Warhammer-Complete/Slave_Gnoblar2.tga"
+#name "Gnoblar Slave"
+#descr "Gnoblars are a subrace of greenskins that infest the Mountains of Mourn and are kept by ogres as pets, servants, and occasionally snacks. They are closely related to goblins, though quite a bit less sneaky and arguably even more malicious. Even compared with goblins they are physically weak, though they do boast better reactions and are even more capable of somehow smuggling sharp objects on their person; indeed their owners rarely even bother taking these away, as Gnoblars will always find or make another shank. They also have a nasty habit of collecting and hurling small pieces of sharp scrap and rocks with a reasonable degree of accuracy. Gnoblars don't make particularly good labourers, but a slave is a slave, and ogre tribes will usually trade them over in exchange for relatively little of value to the Chaos Dwarfs."
+#hp 7
+#size 1
+#prot 0
+#mor 5
+#mr 9
+#enc 3
+#str 7
+#att 8
+#def 9
+#prec 9
+#mapmove 14 -- standard human move
+#ap 12
+#gcost 2
+#rpcost 1
+#rcost 1
+#weapon 9 -- dagger
+#weapon 939 -- flung scrap
+#maxage 20
+#darkvision 50
+#mountainsurvival
+#undisciplined
+#slave
+#montag 1023
+#patrolbonus -1
+#end
+
+
+----- Goblin slave -- pick axe
+
+#newmonster 8120
+#spr1 "./Warhammer-Complete/Slave_Goblin_Pick.tga"
+#spr2 "./Warhammer-Complete/Slave_Goblin_Pick2.tga"
+#name "Goblin Slave"
+#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. This slave has come fresh from the mines and is armed with a pick axe."
+#hp 7 --- toughness 3, but smaller than human
+#size 1 --- goblins are size 1
+#prot 0 --- toughness 3, size 2
+#mor 6 --- leadership 5, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 7 --- smaller than humans, str 3, slaves
+#att 8 --- weaponskill 2, initiative 2
+#def 8 --- weaponskill 2, initiative 2
+#prec 9 --- ballistic skill 3, slave
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 3
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 267 -- pick axe
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#montag 1023
+#patrolbonus -1
+#siegebonus 1
+#end
+
+
+----- Orc slave -- pick axe
+
+#newmonster 8121
+#spr1 "./Warhammer-Complete/Slave_Orc_Pick.tga"
+#spr2 "./Warhammer-Complete/Slave_Orc_Pick2.tga"
+#name "Orc Slave"
+#descr "Orcs bought or enslaved from tribes across the Darklands and surrounding mountains are used as slaves throughout the Chaos Dwarf empire. Their brute strength, toughness, and recuperative abilities make them equally excellent labour in the pits and slave warriors on the battlefield. Orcs are heavily muscled creatures with thick bones and small brains who respect nothing more than power and like little more than to fight, even with each other. Even having been enslaved, orcs are still willing combatants, much preferring to meet their end in combat rather than in some mining accident. Orc physiology is unusual in that over time they can recover from almost any wound, even growing back missing limbs. This orc slave is fresh from the mines and still carries a pickaxe which makes a reasonable improvised weapon."
+#hp 14 --- toughness 4
+#size 2 --- normal
+#prot 3 --- toughness 4
+#mor 9 --- leadership 7, slaves
+#mr 10 --- normal
+#enc 3 --- normal
+#str 11 --- str 3, slightly bigger than human
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 8 --- ballistic skill 2
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 5
+#rpcost 1 --- doesn't matter
+#rcost 1
+#weapon 267 -- pick axe
+#mountainsurvival
+#slave
+#undisciplined
+#darkvision 50
+#heal -- recuperation ability
+#montag 1023
+#patrolbonus -1
+#siegebonus 1
+#end
+
+
+---- Immortal
+
+#newmonster 8122
+#spr1 "./Warhammer-Complete/Immortal.tga"
+#spr2 "./Warhammer-Complete/Immortal2.tga"
+#name "Immortal"
+#descr "The Immortals are an elite military formation amongst the Chaos Dwarfs. They are drawn from the warrior caste but not serve any particular Sorcerer Lord. Instead especially skilled warriors are sent by their Overlords to serve in the Immortals for a period of seven years, usually in exchange for political favour. The Immortals receive extensive additional training and are outfitted with incredibly ornate gold and black steel plate armour, thick shields, and superbly smithed weaponry. So prepared, they act as an elite guard to the Sorcerer Lords, assigned according to a vote by the conclave of the Great Temple of Hashut, typically to Sorcerer Lords who have recently done great service to the Cult, or hold particular power at the time. The Immortals are forbidden to show fear to the enemy and the faces of their helms are handcrafted as placid golden visages of the Dwarf beneath, calmly regarding the carnage of the battlefield at all times."
+#hp 14 --- toughness 4, description makes them sound even tougher
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 14 --- leadership 9 + stubborn
+#mr 12 --- better mr than most chaos dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 12 --- str 4
+#att 12 --- weaponskill 5, but initiative 2
+#def 11 --- weaponskill 5, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 12 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 40
+#rpcost 35 --- They need to have order scales
+#rcost 1
+#armor 292 -- immortal gold plate
+#armor 213 -- golden helmet
+#armor 3 -- kite shield
+#weapon 907 -- mastercrafted axe
+#maxage 500
+#startage 250
+#mountainsurvival
+#wastesurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#bodyguard 2
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Acolyte of Hashut
+
+#newmonster 8123
+#spr1 "./Warhammer-Complete/Acolyte.tga"
+#spr2 "./Warhammer-Complete/Acolyte2.tga"
+#name "Acolyte of Hashut"
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those who never develop in sorcerous skill beyond the lowest levels are trained as Acolytes and serve as holy warriors of cult, hurling rudimentary and unfocused fire evocations at the foe. The Acolytes are skilled enough with their glaives but lack the heavy armour typical amongst the legions and are best protected from prolonged melee. Being holy warriors of the god of Darkness, Acolytes are expected to be able to fight in near pitch black conditions, for they are tasked with protecting summoning circles during the most dire of the rituals performed by the Cult. The mild sorcerous talent of the Acolytes grants them additional resistance to enemy magics."
+#hp 13 --- toughness 4
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 12 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 40
+#rpcost 28 --- They need to have order scales
+#rcost 1
+#armor "Half Helmet"
+#armor 12 -- scale mail hauberk
+#weapon 308 -- glaive
+#weapon 905 -- flames of hashut
+#maxage 600
+#startage 150
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 75
+#fireres 3
+#nametype 123
+#holy
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Slave giant - like ogre one, more armour and weapons
+
+#newmonster 8124
+#spr1 "./Warhammer-Complete/Slavegiant.tga"
+#spr2 "./Warhammer-Complete/Slavegiant2.tga"
+#name "Slave Giant"
+#descr "Giants are common in the Dark Lands as they wander down from their ancestral home in the Mountains of Mourn. Frequently these hapless, ungaingly creatures are fleeing the attentions of tribes of ogres, but unfortunately for them the Dark Lands represent an even more dangerous threat, for the Chaos Dwarfs have many uses for their kind. Though slow and stupid, giants are immensely strong and make invaluable slaves whether toiling in the pits, tearing up trees, or on the field of battle. Slavegiants are goaded into battle, but usually it doesn't take much goading, as the Giant is all too willing to take out the humiliation of being enslaved on any creature smaller than himself. In battle Slave Giants attack by stomping, whipping heavy chains about and generally causing utter chaos and carnage."
+#hp 95
+#size 6
+#prot 10
+#mor 14
+#mr 9
+#enc 4
+#str 25
+#att 10
+#def 9
+#prec 4
+#mapmove 18
+#ap 16
+#gcost 200
+#rpcost 80
+#chaosrec 15
+#rcost 10
+#weapon "Heavy Chains"
+#weapon "Giant Stomp"
+#armor 21 -- Full helmet
+#maxage 140
+#mountainsurvival
+#coldres 10
+#snow
+#supplybonus -1
+#fear 10
+#nametype 193
+#noleader
+#siegebonus 25
+#undisciplined
+#slave
+#end
+
+
+
+-------- Commanders
+
+
+---- Hobgoblin scout
+
+#newmonster 8125
+#spr1 "./Warhammer-Complete/Hobgoblin_Archer.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Archer2.tga"
+#name "Hobgoblin Scout"
+#descr "Hobgoblins are a subrace of greenskins closely related to the more widespread orcs and goblins. Though not nearly so strong, tough, or aggressive as orcs, they are larger and stronger than goblins and make better fighters. In terms of mindset they are far closer to goblins than orcs, though arguably even sneakier and less trustworthy. Centuries ago the Chaos Dwarfs faced the largest slave uprising in their history and stood on the brink of defeat at the hands of a massive greenskin force which had taken most of Zharr-Naggrund, but at the last moment the hobgoblins, fearing the cruelty of the Chaos Dwarfs more than the brutality of the orcs, switched sides. Since that time the Hobgoblins have been cast out of greenskin society and, while they have risen from the position of slaves to menial servants, they are almost entirely reliant on the protection of their masters. A naturally sneaky race, Hobgoblins make fine scouts."
+#hp 8 --- toughness 3, but smaller than human
+#size 2 --- they aren't goblins
+#prot 0 --- toughness 3, size 2
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 3 --- normal
+#str 8 --- smaller than humans, str 3
+#att 10 --- weaponskill 3, initiative 2
+#def 9 --- weaponskill 3, initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 25 -- normal for scout
+#rpcost 1 --- normal
+#rcost 1
+#weapon 23 -- normal short bow
+#weapon 9 -- dagger
+#armor 120 -- leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#undisciplined
+#stealthy 10
+#darkvision 50
+#end
+
+---- Hobgoblin Khan
+
+#newmonster 8126
+#spr1 "./Warhammer-Complete/Hobgoblin_Khan.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Khan2.tga"
+#name "Hobgoblin Khan"
+#descr "Not all hobgoblins live within the territory of the Chaos Dwarfs. To the East there are large tribes who are typically allied to the masters of Zharr-Naggrund, but live a nomadic life, raiding other greenskins and sometimes ranging into the lands of menfolk. These hobgoblins travel and fight on wolfback, having long ago formed a beneficial relationship with the large and intelligent wolves of the region. They are ruled over by Khans, Hobgoblins sufficiently paranoid and treacherous to rise to the top of a tribe and survive enough betrayals to solidify power, at least for now. All Khans wear crowns of iron and in theory serve the Great Hobgobla Khan, ruler of all their kind and the only chieftain permitted to wear a crown of gold. In reality each Khan is of course only loyal to their own interests and many choose to serve under the Chaos Dwarfs for protection and to gain influence."
+#hp 17 --- 2 wounds, toughness 4, but a hobgoblin
+#size 3 --- they aren't goblins, mounted on wolf
+#prot 2 --- toughness 4, but still a hobgob
+#mor 10 --- leadership 7
+#mr 10 --- normal
+#enc 4 --- low for mounted
+#str 11 --- smaller than humans, str 4
+#att 12 --- weaponskill 5, initiative 3
+#def 12 --- weaponskill 5, initiative 3
+#prec 11 --- ballistic skill 3 -- but good archers
+#mapmove 24 -- fast cav
+#ap 28 --- faster than horses, move 9
+#gcost 70 --- stealthy leader, pillager, good stats, ok leader
+#rpcost 1 --- basic military commander
+#rcost 1
+#weapon 10 -- falchion
+#weapon 23 -- normal short bow
+#weapon 908 -- Wolf Bite
+#armor 2 -- basic shield
+#armor 20 -- iron cap
+#armor 11 -- ring mail hauberk
+#mountainsurvival
+#stealthy 10
+#pillagebonus 1
+#darkvision 50
+#mounted
+#okleader
+#end
+
+
+---- Hobgoblin assassin
+
+#newmonster 8127
+#spr1 "./Warhammer-Complete/Hobgoblin_Sneak.tga"
+#spr2 "./Warhammer-Complete/Hobgoblin_Sneak2.tga"
+#name "Hobgoblin Gutstabber"
+#descr "Hobgoblins are such an utterly evil and treacherous race that it is hard to imagine a tribe of hobgoblins whose double dealing and backstabbing is renowned even amongst their own fickle kind, yet it exists. This tribe, known as the Sneaky Gits, lives to the east of Zharr-Naggrund. The warriors of this tribe fight in battle with two long curving knives treated with all manner of poisons and ideally suited to their back stabbing methods. The gutstabbers, as the very sneakiest assassins of this tribe are known, are duplicitous and cruel even by the standards of their fellows. Any Sneaky Git will happily place a dagger in the back of a foe or rival, but the gutstabbers are so sly that they're prone to stab a perceived enemy in the front, right in the gut! The Chaos Dwarfs use these murderous greenskins as assassins, sending them out against tribal leaders, or letting them pick their targets and kill seemingly at random just to put fear into their own slaves. They aren't nearly so skilled as the assassins of other races and far less dedicated to any cause, but are still exceptionally sneaky."
+#hp 10 --- slightly improved over basic sneak
+#size 2 --- they aren't goblins
+#prot 0 --- toughness 3, size 2
+#mor 8 --- leadership 6, mention of how cowardly they are
+#mr 10 --- normal
+#enc 3 --- normal
+#str 9 --- slightly improved over basic sneak
+#att 11 --- slightly improved over basic sneak
+#def 11 --- slightly improved over basic sneak
+#prec 10 --- ballistic skill 3
+#mapmove 14 -- standard human move
+#ap 12 --- normal, move 4
+#gcost 40 --- normal assassin price -20 for being terrible
+#rpcost 1 --- normal
+#rcost 1
+#weapon 915 -- gitknife
+#weapon 915 -- gitknife
+#ambidextrous 2
+#armor 119 -- reinforced leather cap
+#armor 10 -- leather hauberk
+#mountainsurvival
+#stealthy 20
+#darkvision 50
+#assassin
+#patience 1 -- standard value
+#end
+
+---- Slaver
+
+#newmonster 8128
+#spr1 "./Warhammer-Complete/Slaver.tga"
+#spr2 "./Warhammer-Complete/Slaver2.tga"
+#name "Slaver"
+#descr "Without slaves the empire of the Chaos Dwarfs could not function; they are used extensively in every strata of society for every purpose imaginable, from ritual sacrifice, to administration, to labour, to military fodder. Yet despite this reliance on slaves, those who perform the role of buying, selling, and breaking slaves are considered to be uncivilised and are exempt from many of the social circles and rites so important to the clans. Though there is no slaver caste, slavers tend to live rather alienated lives and their offspring are unlikely to become more than slavers themselves. Typically they are not true citizens of Zharr-Naggrund, but were born and raised in one of the many lesser outposts maintained by the empire. Wearing masked helms made from the skulls of ogres and with bone fetishes in their beards, they are a greatly feared sight to any slave, for their eyes and ears are as sharp as the spines on their whips and they are always seeking to punish the slightest sign of dissent. Slavers contribute to the productivity of any fort in the province and allow the purchase of slave contracts outside forts."
+#hp 13 --- toughness 4
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 12 --- leadership 9, but not warriors
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 10 --- regular
+#att 10 --- weaponskill 3, but initiative 2
+#def 9 --- weaponskill 3, but initiative 2
+#prec 12 --- ballistic skill 4
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 90 -- has to be somewhat high because of the resource boost
+#rpcost 1 --- normal for non-mage
+#rcost 1
+#armor 150 -- bone helmet
+#armor 7 -- scale mail cuirass
+#weapon 904 -- slaver whip
+#maxage 500
+#startage 200
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#resources 10
+#patrolbonus 5
+#nametype 123
+#taskmaster 3
+#inspirational -1
+#okleader
+#command 20 -- 60 leadership total
+#douse 1
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Castellan
+
+#newmonster 8129
+#spr1 "./Warhammer-Complete/Castellan.tga"
+#spr2 "./Warhammer-Complete/Castellan2.tga"
+#name "Castellan"
+#descr "Chaos Dwarf society is strictly heirarchical with many tiers of ascending power and diminishing size, mirroring the mighty ziggurats that dominate their homeland. Amongst Chaos Dwarfs the Warrior caste is a position of middling importance, holding status above craftsmen and civilians, but well below smiths or inductees into cult of Hashut. Castellans are members of the Warrior caste who have distinguished themselves over and over again in battle under the watchful eye of an Overlord, who in turn serves a Sorcerer Lord. The day to day running of the Sorcerer Lord's legion is left to the Castellans, who are adept in leading small forces, raiding for slaves, commanding garrisons or drilling the troops. Each Castellan will have served a significant time in the legion and many have even completed at least one seven year term in the Immortals."
+#hp 22 --- toughness 5, wounds 2
+#size 2 --- yep, they aren't that small
+#prot 6 --- toughness 5
+#mor 14 --- leadership 10
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 13 --- strength 4, dwarfs
+#att 14 --- weaponskill 6, initiative 3
+#def 12 --- weaponskill 6, initiative 3
+#prec 12 --- ballistic skill 4
+#mapmove 12 -- standard dwarf move
+#ap 10 --- set to get combat speed to 6
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 70
+#rpcost 1 --- They need to have order scales
+#rcost 1
+#armor 2 -- basic shield
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 10 -- falchion
+#maxage 500
+#startage 300
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#okleader
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Overlord
+
+#newmonster 8130
+#spr1 "./Warhammer-Complete/Overlord.tga"
+#spr2 "./Warhammer-Complete/Overlord2.tga"
+#name "Overlord"
+#descr "While Chaos Dwarf society is ultimately ruled over by the Sorcerer Lords, it is the Overlords which command the legions of warriors. Each Sorcerer Lord may appoint exactly one Overlord, picked from the most ruthless and talented of the Castellan ranks. This is the apex to which all in the Warrior caste aspite, the zenith of all they can acheieve in life, and Overlords are utterly dedicated to their work. Without the distraction of social climbing and intrigue they are focused entirely on the art of war and the elevation of their own Sorcerer Lord to even greater power, for their fortunes are truly tied to those of their master. Each Overlord will have served many decades, perhaps even centuries as a Warrior and Castellan, almost inevitably also having spent time in the ranks of the Immortals to prove his worth. They are superb tacticians and individual combatants and are armed with some of the best available equipment, including a forge axe and magical golden scale mail. Overlords are expected to be able to command throngs of worthless slaves or elite Immortals with equal confidence and authority."
+#hp 28 --- toughness 5, wounds 3
+#size 2 --- yep, they aren't that small
+#prot 6 --- toughness 5
+#mor 15 --- leadership 10
+#mr 11 --- they have very slightly better magic res than normal, but they aren't like regular dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 13 --- strength 4, dwarfs
+#att 15 --- weaponskill 7, initiative 4
+#def 14 --- weaponskill 7, initiative 4
+#prec 12 --- ballistic skill 4
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+--gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
+#gcost 140
+#rpcost 2 --- Extradordinarly good leader, 2 cp makes sense
+#rcost 12 -- golden scale mail doesn't have an rcost
+#armor "Full Helmet"
+#armor 196 -- golden scale mail
+#weapon 914 -- forge axe
+#maxage 500
+#startage 400
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#taskmaster 1
+#expertleader
+#neednoteat
+#supplybonus -1
+#end
+
+---- Infernal guard deathmask
+
+#newmonster 8131
+#spr1 "./Warhammer-Complete/Infernal_Deathmask.tga"
+#spr2 "./Warhammer-Complete/Infernal_Deathmask2.tga"
+#name "Infernal Deathmask"
+#descr "Deathmasks are members of the Infernal Guard who have, through suicidal bravery in combat, earned the right to have their helm removed. The process of removing the helm is nearly as painful as the process of sealing the dishonoured dwarf in his armour, for his flesh is usually fused with the metal. Many do not survive, but for the Infernal Guard this is their only hope. Upon being unsealed they are given a new identity and while they can never leave the Infernal Guard or undo their dishonour entirely, they are recognised once more as having a status equivalent to that of a member of the lowest caste of Chaos Dwarf. Deathmasks lead their fellows into battle, seeking to inspire them with the hope of going through the unsealing process and becoming dwarfs once more. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#hp 23 --- toughness 5, 2 wounds
+#size 2 --- yep, they aren't that small
+#prot 7 --- toughness 5, description makes them sound even tougher
+#mor 18 --- leadership 10 and immune to psychology
+#mr 12 --- better mr than most chaos dwarfs
+#enc 2 --- Dwarfs are known for their stamina
+#str 13 --- str 4, dwarfs
+#att 14 --- weaponskill 6, but initiative 2
+#def 12 --- weaponskill 6, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 11 --- set to get combat speed to 6
+#gcost 70
+#rpcost 1 --- normal for military commander
+#rcost 1
+#armor "Shield"
+#armor 290 -- infernal full plate
+#weapon 906 -- chaos dwarf axe
+#maxage 500
+#startage 300
+#mountainsurvival
+#wastesurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#fireres 5
+#itemslots 14342 -- normal but no head, no body
+#poorleader
+#inspirational 1
+#command 10
+#monpresentrec 8133 -- Daemonsmith
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Bull Centaur Ancient
+
+#newmonster 8132
+#spr1 "./Warhammer-Complete/Bull_Centaur_Ancient.tga"
+#spr2 "./Warhammer-Complete/Bull_Centaur_Ancient2.tga"
+#name "Bull Centaur Ancient"
+#descr "Bull Centaurs are creatures with the upper torso of a Chaos Dwarf but the body of a ferocious bull. Many centuries ago, when their kind was first twisted by Chaos, some Chaos Dwarfs were transformed into Bull Centaurs, creating a revered subrace of fast moving warriors. Since those days the Bull Centaurs have guarded the great temples of Hashut and the central Tower of Zharr-Naggrund. The eldest of the Bull Centaurs, known as Ancients, have been blessed with a lifespan beyond those of their fellows and are marked as the chosen of Hashut, his will made manifest. They consider themselves executioners of sorts and proudly display trophy skulls of slave revolt leaders, dangerous ogres, or disloyal Chaos Dwarfs. Even beneath their finely crafted armour their hide is extremely tough, and they have been gifted considerable resistance to fire through their zealous worship of Hashut. Though they could easily trample smaller foes underhoof they instead prefer to strike with their huge crescent axes and have even been known to grab foes and impale them on their prodigious tusks or horns."
+#hp 70 --- toughness 5, wounds 4, size 5
+#size 5 --- as much mass as a melqart
+#prot 8 --- toughness 5, size 5, scaly skin 6+
+#mor 16 --- leadership 9, mention of how loyal they are, immune to psych
+#mr 13 --- bull centaur+1
+#enc 3 --- big monster
+#str 25 --- str 6 size 5
+#att 14 --- weaponskill 6, initiative 4
+#def 13 --- weaponskill 6, initiative 4
+#prec 10 --- ballistic skill 3
+#mapmove 20 -- standard horse move
+#ap 26 --- move 8
+#gcost 200
+#rpcost 4 --- very rare thug commanders
+#rcost 1
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 259 -- two handed executioners axe
+#weapon 55 -- hoof ala centaurs
+#weapon 399 -- gore
+#maxage 1500 -- double the age of chaos dwarfs
+#startage 1200
+#mountainsurvival
+#castledef 2
+#darkvision 50
+#nametype 123
+#holy
+#itemslots 13446 -- normal, no feet
+#fireres 5
+#neednoteat
+#supplybonus -4
+#end
+
+
+---- Daemonsmith
+
+#newmonster 8133
+#spr1 "./Warhammer-Complete/Daemonsmith.tga"
+#spr2 "./Warhammer-Complete/Daemonsmith2.tga"
+#name "Daemonsmith"
+#descr "Daemonsmiths are members of the Cult of Hashut who showed talent for binding and controlling demonic essence at an early age. These young dwarfs are taken out of the training which results in Acolytes, Pyrophants, and members of the Sorcerous caste, and instead sent to learn in the secret forges deep below Zharr-Naggrund. The order of Daemonsmiths guard their techniques jealously even from the Sorcerers, and their talents are integral to the advancement of the Chaos Dwarf race. It is the Daemonsmiths who create and maintain the great daemonic machinery which delivers steam power across the capital, it is they who oversee the forging of arms and armour, and it is they alone who can create, apply, and enchant Infernal armour. Indeed, without them there would be no Infernal Guard at all. Daemonsmiths are excellent at forging magical items but are inefficient researchers or battle mages and while members of the Cult of Hashut they have received no priestly training. Each Daemonsmith increases the resources available when present at a fort and allows the recruitment of Infernal Guard."
+#hp 13 --- toughness 4, mage so wounds don't add
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 15 --- not a great mage, but has special armour and is basically an infernal
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+#gcost 280
+#rpcost 2 --- They are mages
+#rcost 1
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 903 -- forge hammer
+#maxage 500
+#startage 300
+#mountainsurvival
+#siegebonus 20
+#castledef 2
+#darkvision 50
+#nametype 123
+#poorleader
+#holy
+#forgebonus 10
+#mastersmith 2
+#resources 30
+#magicskill 3 1 -- earth 1
+#magicskill 0 1 -- fire 1
+#magicskill 7 1 -- blood 1
+#custommagic 21632 10 -- 10% DBEF
+#neednoteat
+#supplybonus -1
+#end
+
+---- Pyrophant
+
+#newmonster 8134
+#spr1 "./Warhammer-Complete/Pyrophant.tga"
+#spr2 "./Warhammer-Complete/Pyrophant2.tga"
+#name "Pyrophant"
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. The lowest level of ordained priest within the Cult is the Pyrophant, and these dwarfs make up the majority of the priesthood. They are tasked with making the routine observances to Hashut, delivering his blessings to the warrior acolytes, performing various tasks considered beneath sorcerers, and most importantly conducting research into the arts of fire and darkness. Sorcerers and Sorcerer Lords, though far more skilled in magic, rarely wish to devote their time to research, for their primary focus at all times must be manoeuvring to maintain or extend their grasp of power. The Pyrophants are also sometimes deployed to support the legions with minor evocations, though they cannot be expected to match the destructive arcane power of true Sorcerers. They carry bull headed scepters which signify their position as chosen children of Hashut."
+#hp 12 --- toughness 4, mage so wounds don't add
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 13 --- basic mage, but a dwarf
+#enc 2 --- Dwarfs are known for their stamina
+#str 10 --- mage
+#att 10 --- weaponskill 3, but initiative 2
+#def 9 --- weaponskill 3, but initiative 2
+#prec 11 --- ballistic skill 3, but specialist in fire evocations
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+#gcost 100
+#rpcost 2 --- They are mages
+#rcost 1
+#armor "Iron Cap"
+#armor 7 -- scale mail cuirass
+#weapon 172 -- magic sceptre
+#maxage 500
+#startage 300
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#poorleader
+#holy
+#magicskill 8 1 -- holy 1
+#magicskill 0 1 -- fire 1
+#magicskill 5 1 -- death 1
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Sorcerer
+
+#newmonster 8135
+#spr1 "./Warhammer-Complete/Sorcerer.tga"
+#spr2 "./Warhammer-Complete/Sorcerer2.tga"
+#name "Sorcerer"
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. Unique amongst Chaos Dwarfs, the Sorcerer Caste is one of absolute mobility, where each individual is expected and encouraged to vie for his own personal power and expanded influence. Tragically it is the fate of all Sorcerers to one day succumb to the Sorcerer's Curse, an affliction caused by their use of magic which slowly saps their vitality and, eventually, turns them to stone. Such is the price they must pay, for it is the will of Hashut."
+#hp 12 --- toughness 4, mage so wounds don't add
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 15 --- middle mage dwarf
+#enc 2 --- Dwarfs are known for their stamina
+#str 10 --- mage
+#att 10 --- weaponskill 3, but initiative 2
+#def 9 --- weaponskill 3, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+#gcost 260
+#rpcost 2 --- They are mages
+#rcost 1
+#armor "Half Helmet"
+#armor 7 -- scale mail cuirass
+#weapon 172 -- magic sceptre
+#maxage 500
+#startage 300
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#poorleader
+#holy
+#magicskill 8 2 -- holy 2
+#magicskill 0 2 -- fire 2
+#magicskill 5 1 -- death 1
+#magicskill 3 1 -- earth 1
+#custommagic 21632 100 -- 100% EFDB
+#custommagic 21632 10 -- 10% EFDB
+#neednoteat
+#supplybonus -1
+#end
+
+
+---- Sorcerer Lord
+
+#newmonster 8136
+#spr1 "./Warhammer-Complete/Sorcerer_Lord.tga"
+#spr2 "./Warhammer-Complete/Sorcerer_Lord2.tga"
+#name "Sorcerer Lord"
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. Their greed and ambition is virtually limitless, though they have begun to feel the effects of the Sorcerer's Curse and have lost much of the passion and energy of their earlier life. Each Sorcerer Lord is served by his own personal Overlord to whom he delegates all military matters."
+#hp 12 --- toughness 4, mage so wounds don't add
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 13 --- leadership 9
+#mr 16 --- top mage dwarf
+#enc 3 --- Dwarfs are known for their stamina, but sorcerers curse is hurting them
+#str 10 --- mage
+#att 10 --- weaponskill 3, but initiative 2
+#def 9 --- weaponskill 3, but initiative 2
+#prec 10 --- ballistic skill 3
+#mapmove 10 -- sorcerers curse slowing them
+#ap 8 --- move 3
+#gcost 320
+#rpcost 4 --- They are mages
+#rcost 1
+#armor "Half Helmet"
+#armor 7 -- scale mail cuirass
+#weapon 172 -- magic sceptre
+#maxage 600
+#startage 500
+#mountainsurvival
+#siegebonus 1
+#castledef 2
+#darkvision 50
+#nametype 123
+#poorleader
+#holy
+#magicskill 8 3 -- holy 3
+#magicskill 0 2 -- fire 2
+#magicskill 5 1 -- death 1
+#magicskill 3 2 -- earth 2
+#magicskill 7 1 -- blood 1
+#custommagic 21632 100 -- 100% EFDB
+#custommagic 21632 10 -- 10% EFDB
+#neednoteat
+#supplybonus -1
+#end
+
+
+-------- PRETENDERS
+
+
+-------- NATIONAL HEROES
+
+
+---- Astragoth
+
+---- Gorduz Backstabber
+
+---- Zhatan the Black
+
+
+
+-------- SPELLS
+
+
+-------- SITES
+
+--- Temple of Hashut
+
+#newsite 1523
+#name "Temple of Hashut"
+#path 8
+#level 0
+#rarity 5
+#gems 8 2 -- 2 blood
+#gems 5 1 -- 1 death
+#homemon 8123 -- Acolyte
+#homemon 8106 -- Bull Centaur
+#homecom 8132 -- Bull Centaur Ancient
+#end
+
+--- Tower of Zharr
+
+#newsite 1524
+#name "Tower of Zharr"
+#path 8
+#level 0
+#rarity 5
+#homemon 8122 -- Immortal
+#homecom 8130 -- Overlord
+#homecom 8135 -- Sorcerer
+#homecom 8136 -- Sorcerer Lord
+#end
+
+--- Forges in the Deep
+
+#newsite 1525
+#name "Forges in the Deep"
+#path 0
+#level 0
+#rarity 5
+#gems 0 2 -- 2 fire
+#homecom 8133 -- Daemonsmith
+#homemon 8124 -- Slavegiant
+#end
+
+--- The Black Armoury
+
+#newsite 1526
+#name "The Black Armoury"
+#path 0
+#level 0
+#rarity 5
+#gems 3 1 -- 1 earth
+#homemon 8101 -- Chaos Dwarf Blunderbuss
+#end
+
+
+-------- ITEMS
+
+
+-------- NAMETYPES
+
+--- Chaos Dwarf -- from here: http://chaosdwarfng.weebly.com/
+
+#selectnametype 192
+#clear
+#addname "Hashgoth Orechain"
+#addname "Undalkhar Goldeye"
+#addname "Bharkur Sternwalker"
+#addname "Ishgrakka Irongrinder"
+#addname "Zyhutti Siegecleaver"
+#addname "Yashkhar Stonecurse"
+#addname "Idinzhakh Fellkeeper"
+#addname "Uhutti Harshscribe"
+#addname "Tagoth Hardnail"
+#addname "Darnezharr Greymouth"
+#addname "Dagoth Hellbull"
+#addname "Barimbul Hellwalker"
+#addname "Helkad Siegestep"
+#addname "Thavrock Banehelm"
+#addname "Tharth Goldforge"
+#addname "Fhardhak Brassfist"
+#addname "Marzherak Flamechain"
+#addname "Sindelund Ashsmith"
+#addname "Yashgir Demonscourge"
+#addname "Bzaabaknul Coalarm"
+#addname "Bhaharr Bloodnail"
+#addname "Gothnakar Doomspeaker"
+#addname "Zakkh Firecleaver"
+#addname "Taanuk Fellbrow"
+#addname "Bhazhinsar Sternforge"
+#addname "Tharzhakh Chaosbinder"
+#addname "Karram Blackbarrel"
+#addname "Lamakhorth Flinthat"
+#addname "Zhazhakh Slavebinder"
+#addname "Lamaroth Sootshaper"
+#addname "Bharharr Shadowtooth"
+#addname "Magoth Redfinger"
+#addname "Gorlund Spitehat"
+#addname "Hazhhoth Fellmaker"
+#addname "Htharahki Chaoswatcher"
+#addname "Haorth Skullarm"
+#addname "Uhoth Cinderhelm"
+#addname "Kororh Helllasher"
+#addname "Gorkh Bullkiln"
+#addname "Bharekar Goreseer"
+#addname "Halzharr Skullstep"
+#addname "Thadohz Blooddeed"
+#addname "Bhalbaknul Chaosfurnace"
+#addname "Azhgon Bloodnail"
+#addname "Hothkhorth Felltusk"
+#addname "Hashrh Dreadbrow"
+#addname "Fharzharr Bloodwalker"
+#addname "Ashdrakk Sternseer"
+#addname "Ashzhikul Hellhelm"
+#addname "Asurudohz Forgekiln"
+#addname "Pazhanuk Firewatcher"
+#addname "Glazlhad Banearm"
+#addname "Wargrakka Flintfist"
+#addname "Marroth Siegechanter"
+#addname "Uharr Skullbinder"
+#addname "Tharhak Goldback"
+#addname "Idinkezhar Banebinder"
+#addname "Thagrund Brasscutter"
+#addname "Pazhlhad Heavykeeper"
+#addname "Gothetar Scarglair"
+#addname "Bhalrahki Chaosglair"
+#addname "Thargrakh Goreshackler"
+#addname "Nabhak Bronzetooth"
+#addname "Helram Flintwhip"
+#addname "Thaekar Sootaxe"
+#addname "Yashtan Forgeshaper"
+#addname "Undalrh Hellgrinder"
+#addname "Morrahki Thunderspeaker"
+#addname "Gharetar Fellside"
+#addname "Thargoth Hellfuse"
+#addname "Undalkezhar Brassflayer"
+#addname "Lamazhinsar Spitecutter"
+#addname "Rartor Goldsmelter"
+#addname "Ghauram Redshackler"
+#addname "Korolund Steeldeed"
+#addname "Zhirgrakh Sternwalker"
+#addname "Wargrakka Ashcaller"
+#addname "Idinlhad Greychest"
+#addname "Zoltan Ashcloud"
+#addname "Baal Smeltflayer"
+#addname "Tagahrn Ashtusk"
+#end
+
+
+--- Hobgoblin Names
+
+#selectnametype 191
+#clear
+#addname "Zuvtik Backstabber"
+#addname "Zorgram Guthooker"
+#addname "Bulban Darkstab"
+#addname "Duvtuk Spitehook"
+#addname "Noltot Killtoof"
+#addname "Raldrud Hamstringer"
+#addname "Heghong the Crippler"
+#addname "Muthag Ribpoker"
+#addname "Drelding Spleenbiter"
+#addname "Settag Cravenfang"
+#addname "Uvlang Fastfoot"
+#addname "Halger Longknife"
+#addname "Nildit Spinestabber"
+#addname "Kigtom Backblade"
+#addname "Sarkug Throatstabber"
+#addname "Mattut Throatblade"
+#addname "Pratrug Slitmouth"
+#addname "Drardrur Goldtoof"
+#addname "Reldrid Goldnabber"
+#addname "Pravlut Toofstealer"
+#addname "Takruk Sly Git"
+#addname "Ullok Gutstikka"
+#addname "Urtar Bowelhack"
+#addname "Elgir Earbiter"
+#addname "Nalug Neckstabber"
+#addname "Sulbrak Lootsnatcha"
+#addname "Orlem Toofsnatcha"
+#addname "Zuldrag Bigrunt"
+#addname "Nulot Orcslicer"
+#addname "Sorlod Traitorknife"
+#addname "Takruk Gutstealer"
+#addname "Ullok Toofstealer"
+#addname "Urtar Goldstealer"
+#addname "Elgir Cheatgrin"
+#addname "Nalug Toofblade"
+#addname "Sulbrak Sharpknife"
+#addname "Orlem Knifestab"
+#addname "Zuldrag Darkgrin"
+#addname "Nulot Shiftyslicer"
+#addname "Sorlod Creepstabba"
+#addname "Sirdeg Toofnicka"
+#addname "Prutrat Smilesnatcha"
+#addname "Erdig Grubnicka"
+#addname "Prekhet Grubstabber"
+#addname "Iktum Cardcheat"
+#addname "Hethuk Backstabber"
+#addname "Kuru Guthooker"
+#addname "Fevrok Darkstab"
+#addname "Fergrot Spitehook"
+#addname "Gavluk Killtoof"
+#addname "Prokte Hamstringer"
+#addname "Nultid the Crippler"
+#addname "Delud Ribpoker"
+#addname "Atrok Spleenbiter"
+#addname "Terlod Cravenfang"
+#addname "Orgek Fastfoot"
+#addname "Prigtong Longknife"
+#addname "Zokrung Spinestabber"
+#addname "Meldu Backblade"
+#addname "Krerlan Throatstabber"
+#addname "Pavror Throatblade"
+#addname "Highok Slitmouth"
+#addname "Ugtek Goldtoof"
+#addname "Sithing Goldnabber"
+#addname "Tidrang Toofstealer"
+#addname "Zettik Sly Git"
+#addname "Gorgrag Gutstikka"
+#addname "Urgon Bowelhack"
+#addname "Nigtak Earbiter"
+#addname "Rekted Neckstabber"
+#addname "Follat Lootsnatcha"
+#addname "Kilbrud Toofsnatcha"
+#addname "Ilgek Bigrunt"
+#addname "Hitrak Orcslicer"
+#addname "Krovlar Traitorknife"
+#addname "Gektum Gutstealer"
+#addname "Huglak Toofstealer"
+#addname "Okled Goldstealer"
+#addname "Ortim Cheatgrin"
+#addname "Gogtut Toofblade"
+#addname "Grirgruk Sharpknife"
+#addname "Zaklok Knifestab"
+#addname "Erdug Darkgrin"
+#addname "Helbot Shiftyslicer"
+#addname "Sette Creepstabba"
+#addname "Grirdeg Toofnicka"
+#addname "Faglur Smilesnatcha"
+#addname "Rudro Grubnicka"
+#addname "Bakhok Grubstabber"
+#addname "Markung Cardcheat"
+#addname "Hallud Guttickler"
+#addname "Eghim Spleentickler"
+#addname "Grogra Smee"
+#addname "Huldrag Bowelslicer"
+#addname "Kurdung Bloodstabber"
+#addname "Fulding Bloodknife"
+#addname "Elbom Bloodfangs"
+#addname "Pirgod Longlegs"
+#addname "Gevrir Longlegs"
+#addname "Grirdeg Arrowbiter"
+#end
+
+
+
+-------- EVENTS
+
+--- Begin fort building chain
+
+#newevent
+#msg "With a temple and laboratory in place and the Cult of Hashut satisfied that this province is an acceptable site for an outpost, rapid construction has begun. In two months you will have a new outpost."
+#rarity 0 -- always
+#req_code 0 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
+#req_fornation 141 -- must be chaos dwarfs
+#req_fort 0 -- there mustn't be a fort here already
+#code -444 -- sets a code in the province
+#delay 1 -- wait 1 turn before triggering the next event
+#req_lab 1 -- there must be a lab present
+#req_temple 1 -- there must be a temple present
+--req_fullowner -- need to have dominion here
+#req_mydominion 1 -- need to have dominion here
+#end
+
+#newevent
+#msg "The construction of the outpost fortress continues. Ensure the temple and laboratory are safe and the populace is under the dominion of your god, and you will finish construction in one month."
+#rarity 0 -- always
+#req_code -444 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
+#req_fornation 141 -- must be chaos dwarfs
+#req_fort 0 -- there mustn't be a fort here already
+#code -445 -- sets a code in the province
+#delay 1 -- wait 1 turn before triggering the next event
+#req_lab 1 -- there must be a lab present
+#req_temple 1 -- there must be a temple present
+#req_mydominion 1 -- need to have dominion here
+#end
+
+
+#newevent
+#msg "The new outpost has been constructed."
+#rarity 0 -- always
+#req_code -445 -- will only happen in the province with the code from the previous event
+#req_fornation 141 -- must be chaos dwarfs
+#req_fort 0 -- there mustn't be a fort here already
+#code 0 -- resets code in the province
+#req_lab 1 -- there must be a lab present
+#req_temple 1 -- there must be a temple present
+#req_mydominion 1 -- need to have dominion here
+#fort 2 -- fortress
+#end
+
+
+
+-------- NATION
+
+
+#selectnation 141
+#clearnation
+#clearsites
+#name "Chaos Dwarfs"
+#epithet "Children of Hashut"
+#era 2
+#brief "Long ago before the Time of Chaos the golden empire of the Dwarfs spread far to the East. As the tides of Chaos swallowed the world the Dwarfs assumed their Eastern brothers slain, but they were not. Abandoned by their brothers and their gods, they survived, but changed. Greed was amplified, pride became arrogance, tradition was replaced with dogma, loyalty turned to zealotry, and stoicism changed to cruelty. So were the Chaos Dwarfs birthed, a harsh people in a harsh land."
+#descr "Long ago before the Time of Chaos the golden empire of the Dwarfs spread far to the East. As the tides of Chaos swallowed the world the Dwarfs assumed their Eastern brothers slain, but they were not. Abandoned by their brothers and their gods, they survived, but changed. Greed was amplified, pride became arrogance, tradition was replaced with dogma, loyalty turned to zealotry, and stoicism changed to cruelty. So were the Chaos Dwarfs birthed, a harsh people in a harsh land. Now with the coming of the Awakening God the forges of war have been stoked to unceasing fire, the legions of Zharr-Naggrund march forth in lockstep, and the world trembles."
+#summary "Race: Chaos tainted dwarfs ruling over countless slaves from lesser races. Dwarfs no longer need to eat, but still do so. Death scales do not reduce supply.
+Military: Heavy dwarf infantry with powerful weapons against massed enemies, devastating bull centaur cavalry, sneaky hobgoblin servants, and throngs of expendable slaves.
+Magic: Strong Fire, Earth, and Astral with Blood and Death.
+Priests: Powerful.
+Mechanics: Get free outpost fortresses where they have a temple, lab, and positive dominion."
+#flag "./Warhammer-Complete/ChaosDwarfsflag.tga"
+#templepic 14 -- mayan aka ziggurat
+#startsite "The Black Armoury"
+#startsite "Temple of Hashut"
+#startsite "Forges in the Deep"
+#startsite "Tower of Zharr"
+
+#sacrificedom -- they can perform blood sacrifice
+
+#nodeathsupply -- death doesn't mess up supplies
+
+#fortcost 900 -- forts cost 10x as much, in other words you can't build them really
+
+#templecost 700 -- because building it with a lab gives a free fort
+#labcost 800 -- because building it with a temple gives a free fort
+
+----- Pretender settings
+
+#addgod 120 -- Moloch
+#addgod 159 -- monument
+#addgod 216 -- red dragon
+#addgod 486 -- great warlock (abysian)
+#addgod 550 -- master alchemist
+#addgod 607 -- baphomet
+#addgod 655 -- scorpion king
+#addgod 656 -- fountain of blood
+#addgod 661 -- Shedu
+#addgod 978 -- great black bull
+#addgod 1025 -- divine glyph
+#addgod 1230 -- forge lord
+#addgod 1384 -- solar disc
+#addgod 2137 -- urmahlullu
+#addgod 2462 -- golden idol
+#addgod 2463 -- statue of war
+#addgod 2608 -- azi
+#addgod 2610 -- angra mainyu
+#addgod 2611 -- Gannag Menog
+#addgod 2627 -- daeva of wrath
+#addgod 2788 -- man eater
+#addgod 2797 -- hieracosphinx
+#addgod 3121 -- eldest cyclops
+
+
+--Sets what forts they will use.
+
+#fortera 4 -- amazing fort, but they won't get more of these
+
+#killcappop -20 -- they get 20% more population in their capital, in exchange for being ridiculously capital centric
+
+------- Add soldiers
+
+#addrecunit 8118 -- slave contract
+#addrecunit 8107 -- Hobgoblin Archer
+#addrecunit 8108 -- Hobgoblin Spearman
+#addrecunit 8109 -- Hobgoblin Sneak
+#addrecunit 8100 -- Chaos Dwarf Warrior
+#addrecunit 8102 -- Chaos Dwarf Crossbowman
+#addrecunit 8103 -- Infernal Guard
+#addrecunit 8104 -- Infernal Fireglaive
+#addrecunit 8105 -- Infernal Guard Chosen
+
+#addforeignunit 8137 -- slave contract -- outside fort
+#addforeignunit 8107 -- Hobgoblin Archer
+#addforeignunit 8108 -- Hobgoblin Spearman
+#addforeignunit 8109 -- Hobgoblin Sneak
+#addforeignunit 8110 -- Hobgoblin Wolfrider
+
+
+
+------- Add leaders
+
+#addreccom 8125 -- Hobgoblin Scout
+#addreccom 8127 -- Hobgoblin gutstabber
+#addreccom 8128 -- Slaver
+#addreccom 8129 -- Castellan
+#addreccom 8131 -- Infernal Deathmask
+#addreccom 8134 -- Pyrophant
+
+#addforeigncom 8125 -- Hobgoblin Scout
+#addforeigncom 8126 -- Hobgoblin Khan
+#addforeigncom 8134 -- Pyrophant
+
+------- Wall Defenders
+
+#wallcom 8129 -- Castellan
+#wallunit 8102 -- Chaos Dwarf Crossbow
+#wallmult 10
+
+------- Province Defence
+
+--Sets the units to be used in province defense.
+
+#defcom1 8129 -- Castellan
+--defcom2 --
+#defunit1 8100 -- Chaos Dwarf Warrior
+#defunit1b 8102 -- Chaos Dwarf Crossbow
+#defunit2 8108 -- Hobgob spearman
+#defunit2b 8107 -- Hobgoblin Archer
+
+
+--Sets how many of the units to appear per ten points.
+
+#defmult1 8
+#defmult1b 8
+#defmult2 20
+#defmult2b 20
+
+
+------- Hero Settings
+
+#multihero1 8136 -- sorcerer lord -- placeholder
+--hero1 --
+--hero2 --
+
+
+
+#idealcold 0
+#color 0.6 0.0 0.0
+
+#startcom 8129 -- Castellan
+#startunittype1 8100 -- Chaos Dwarf Warrior
+#startunitnbrs1 8
+#startunittype2 8101 -- Chaos Dwarf Blunderbuss
+#startunitnbrs2 8
+#startscout 8125 -- Hobgoblin Scout
+#end
+
+
+--END OF CHAOS DWARFS, BEGINNING OF LIZARDMEN
 
 --(Sombre's changelog below)
 

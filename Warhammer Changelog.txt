@@ -57,8 +57,7 @@ Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
 To-Do
--- Give Ogres a Maw god? Maybe a Slaughtermaster too, or a Daemon?
--- Give Skaven and Lizards proper godtypes
+-- Add Chaos Dwarfs god
 -- Balance Skaven - start by improving the summons, decreasing lab costs to 300?
 -- Increase cost of lizard summons? Then again, their infrastructure is quite bad.
 -- Special feature file? Would describe events/weird mechanics
@@ -68,6 +67,17 @@ To-Do
 -- Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
 
 Version 1.4:
+-- Added Chaos Dwarfs!
+--  Changed in-game name to "Chaos Dwarfs"
+--  Buffed infernal guard: made sacred, reclimit 1->2
+--  Buffed slave giant (same changes as to Ogre Kingdoms' slave giant)
+--  Changed cap income to 2 fire, 1 earth, 1 death, and 3 blood
+--  Slave cost increased from 5 to 6, slave upkeep added at roughly half value, rpcost 9->6
+--  Added a slave contract weapon, "Varies", for cosmetic reasons
+--  Daemonsmiths provide 30 resources, up from 20
+--  Blunderbuss range 8->12 and damage 6->8, cost 20->22 and rescost 23->25
+
+Version 1.35:
 -- Added Ogre Kingdoms!
 --	Changed in-game name from "Goldtooth Tribe" to "Ogre Kingdoms"
 -- Added a god: Facet of the Maw. Based on Dom3+4 Facet of the Maw summon - B2N1 immobile
