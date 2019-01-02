@@ -16666,6 +16666,46 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 -------- PRETENDERS
 
+#newmonster 8138
+#spr1 "./Warhammer-Complete/Daemonsmith.tga"
+#spr2 "./Warhammer-Complete/Daemonsmith2.tga"
+#name "Master Daemonsmith"
+#descr "The Master Daemonsmith is one of the oldest, cruellest Daemonsmiths, and has been accruing power for years in the secret forges deep below Zharr-Naggrund. Arrogant and proud, he claims to serve as prophet in the name of Hashut, but some of the Sorcerer Lords suspect he plans to ascend to the full power of a Dark God, and challenge Hashut for mastery of their race. He is protected from hostile spells by the runes forged in his younger days, and excels in the dark arts of forge-crafting and Chaos magic."
+#gcost 10000
+#startdom 1
+#pathcost 20
+#hp 15 --- toughness 4, mage so wounds don't add
+#size 2 --- yep, they aren't that small
+#prot 3 --- toughness 4
+#mor 30
+#mr 20
+#enc 2 --- Dwarfs are known for their stamina
+#str 11 --- slightly stronger than human
+#att 11 --- weaponskill 4, but initiative 2
+#def 10 --- weaponskill 4, but initiative 2
+#prec 11 --- ballistic skill 3
+#mapmove 12 -- standard dwarf move
+#ap 8 --- move 3
+#armor "Half Helmet"
+#armor 17 -- full scale mail
+#weapon 903 -- forge hammer
+#maxage 500
+#startage 300
+#mountainsurvival
+#siegebonus 20
+#darkvision 50
+#nametype 123
+#goodleader
+#forgebonus 20
+#mastersmith 2
+#resources 40
+#magicskill 3 1 -- earth 1
+#magicskill 0 1 -- fire 1
+#magicskill 7 1 -- blood 1
+#neednoteat
+#supplybonus -1
+#end
+
 
 -------- NATIONAL HEROES
 
@@ -17039,6 +17079,8 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 #addgod 2788 -- man eater
 #addgod 2797 -- hieracosphinx
 #addgod 3121 -- eldest cyclops
+#cheapgod20 8138
+#addgod 8138 -- Master Daemonsmith
 
 
 --Sets what forts they will use.

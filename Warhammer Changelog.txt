@@ -58,6 +58,7 @@ They will likely require future adjustments for balance, but this version works.
 
 To-Do
 -- Add Chaos Dwarfs god
+-- Add a 'Mechanics' line to most nations, a la Chaos Dwarfs
 -- Balance Skaven - start by improving the summons, decreasing lab costs to 300?
 -- Increase cost of lizard summons? Then again, their infrastructure is quite bad.
 -- Special feature file? Would describe events/weird mechanics
@@ -69,6 +70,7 @@ To-Do
 Version 1.4:
 -- Added Chaos Dwarfs!
 --  Changed in-game name to "Chaos Dwarfs"
+--  Added Master Daemonsmith pretender - solid rainbow chassis
 --  Buffed infernal guard: made sacred, reclimit 1->2
 --  Buffed slave giant (same changes as to Ogre Kingdoms' slave giant)
 --  Changed cap income to 2 fire, 1 earth, 1 death, and 3 blood

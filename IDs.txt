@@ -32,7 +32,7 @@ Nurgle : 5000-5050
 Ogre Kingdoms: 5500-5540 (5506,7,12,13,14,19,28-31,33,36-8 unused)
 Skaven : 5540-86
 Lizardmen : 7310-65
-Chaos Dwarfs: 81(00-10,18,22-37)
+Chaos Dwarfs: 81(00-10,18,22-38)
 
 Weapons : 
 Bretonnia: 1022-33 / 1040
