@@ -11128,7 +11128,6 @@ still to do
 #damage 5509
 #nreff 7
 #onlygeosrc 16 -- mountain
-#onlygeosrc 32
 #end
 
 
