@@ -4232,7 +4232,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
-#gcost 9080
+#gcost 9980
 #ap 25
 #mapmove 24
 #hp 22
@@ -4304,7 +4304,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #coldres 5
 #weapon 1869 -- Aura
 #weapon "Chaos Fire"
-#weapon "Halberd of Tzeentch"
+#weapon "Daemonic Halberd"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
