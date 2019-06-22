@@ -1,4 +1,4 @@
-#modname "Warhammer Complete"
+s#modname "Warhammer Complete"
 #description "5 Warhammer nations - Skaven, Lizardmen, and 3 Chaos nations."
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
@@ -17591,7 +17591,7 @@ Still to do
 #rcost 1
 #magic
 #armornegating
-#secondaryeffect "Soulslay"
+#secondaryeffect 194 --"Soulslay"
 #slash
 #end
 
