@@ -1,4 +1,4 @@
-s#modname "Warhammer Complete"
+#modname "Warhammer Complete"
 #description "5 Warhammer nations - Skaven, Lizardmen, and 3 Chaos nations."
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
@@ -17220,7 +17220,7 @@ Still to do
 -------- New Weapons
 
 
-#newweapon 834
+#newweapon 
 #name "Contemplate"
 #dmg 1
 #dt_cap
@@ -17240,7 +17240,7 @@ Still to do
 #end
 
 
-#newweapon 811
+#newweapon
 #name "Obsinite Halberd"
 #dmg 9
 #att -1
@@ -17253,7 +17253,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 813
+#newweapon 
 #name "Skink Blowpipe"
 #dmg 5
 #nostr
@@ -17269,7 +17269,7 @@ Still to do
 #woodenweapon
 #end
 
-#newweapon 814
+#newweapon 
 #name "Horned One Bite"
 #nostr
 #dmg 13
@@ -17282,7 +17282,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 815
+#newweapon 
 #name "Obsinite Axe"
 #dmg 8
 #att 1
@@ -17293,7 +17293,7 @@ Still to do
 #slash
 #end
 
-#newweapon 816
+#newweapon
 #name "Cold One Bite"
 #nostr
 #dmg 16
@@ -17306,7 +17306,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 817
+#newweapon 
 #name "Cold One Claw"
 #nostr
 #dmg 15
@@ -17320,7 +17320,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 819
+#newweapon 
 #name "Chameleon Blowpipe"
 #dmg 5
 #nostr
@@ -17337,7 +17337,7 @@ Still to do
 #woodenweapon
 #end
 
-#newweapon 839
+#newweapon 
 #name "Golden Blowpipe"
 #dmg 10
 #nostr
@@ -17354,7 +17354,7 @@ Still to do
 #secondaryeffect 52 -- death poison
 #end
 
-#newweapon 821
+#newweapon 
 #name "Salamander Bite"
 #dmg 2
 #att 0
@@ -17366,7 +17366,7 @@ Still to do
 #end
 
 
-#newweapon 822
+#newweapon 
 #name "Terradon Bite"
 #nostr
 #dmg 12
@@ -17380,7 +17380,7 @@ Still to do
 #end
 
 
-#newweapon 823
+#newweapon 
 #name "Terradon Talon"
 #nostr
 #dmg 11
@@ -17392,7 +17392,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 837
+#newweapon 
 #name "Ripperdactyl Bite"
 #nostr
 #dmg 11
@@ -17407,7 +17407,7 @@ Still to do
 #end
 
 
-#newweapon 836
+#newweapon 
 #name "Ripperdactyl Talon"
 #nostr
 #dmg 16
@@ -17421,7 +17421,7 @@ Still to do
 #end
 
 
-#newweapon 824
+#newweapon 
 #name "Skink Javelin"
 #dmg 5
 #ammo 3
@@ -17432,7 +17432,7 @@ Still to do
 #woodenweapon
 #end
 
-#newweapon 825
+#newweapon 
 #name "Riptide Trident"
 #dmg 9
 #magic
@@ -17442,7 +17442,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 826
+#newweapon 
 #name "Howdah Bows" --- (longrange)
 #dmg 8
 #nostr
@@ -17457,7 +17457,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 827
+#newweapon 
 #name "Howdah Bows" --- (midrange)
 #dmg 8
 #nostr
@@ -17472,7 +17472,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 828
+#newweapon 
 #name "Howdah Javelins" --- (shortrange)
 #dmg 16
 #nostr
@@ -17487,7 +17487,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 829
+#newweapon 
 #name "Scouring Gaze"
 #dmg 6
 #dt_holy
@@ -17501,7 +17501,7 @@ Still to do
 #explspr 10117
 #end
 
-#newweapon 830
+#newweapon 
 #name "Ancient Halberd"
 #dmg 10
 #att 0
@@ -17515,7 +17515,7 @@ Still to do
 #slash
 #end
 
-#newweapon 831
+#newweapon 
 #name "Spiked Tail"
 #dmg 4
 #att 0
@@ -17527,7 +17527,7 @@ Still to do
 #blunt
 #end
 
-#newweapon 832
+#newweapon 
 #name "Tail Spines"
 #dmg 0
 #armorpiercing
@@ -17541,7 +17541,7 @@ Still to do
 #uwok
 #end
 
-#newweapon 833
+#newweapon 
 #name "End of Daemons"
 #dmg 15
 #att 2
@@ -17555,7 +17555,7 @@ Still to do
 #blunt
 #end
 
-#newweapon 818
+#newweapon 
 #name "Blade of Ancient Skies"
 #dmg 9
 #att 1
@@ -17568,7 +17568,7 @@ Still to do
 #pierce
 #end
 
-#newweapon 838
+#newweapon 
 #name "Piranha Blade"
 #dmg 10
 #att 2
@@ -17582,7 +17582,7 @@ Still to do
 #nratt 2
 #end
 
-#newweapon 840
+#newweapon 
 #name "Blade of Realities"
 #dmg 12
 #att 1
@@ -17596,7 +17596,7 @@ Still to do
 #end
 
 
-#newweapon 820
+#newweapon
 #name "Star Stone Mace"
 #dmg 12
 #att 2
@@ -17611,7 +17611,7 @@ Still to do
 #blunt
 #end
 
-#newweapon 835
+#newweapon 
 #name "Mace of Ulumak"
 #dmg 9
 #att 4
@@ -17625,7 +17625,7 @@ Still to do
 #end
 
 
-#newweapon 812
+#newweapon 
 #name "Sword of Rhuin"
 #dmg 10
 #att 1
@@ -17638,7 +17638,7 @@ Still to do
 #slash
 #end
 
-#newweapon 810
+#newweapon 
 #name "Rampage"
 #dmg 0
 #att 0
@@ -17652,7 +17652,7 @@ Still to do
 #bonus
 #end
 
-#newweapon 841
+#newweapon 
 #name "Obsinite Sword"
 #dmg 6
 #att 1
