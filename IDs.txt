@@ -44,20 +44,20 @@ Orcs: 1041-60
 Tomb Kings: 1700-6
 Vampire Counts: 741-7
 Wood Elves: 1350-63
+Dwarfs: 842-60 / 916-26
 --INCLUDED:
-Lizardmen: 810-41
-Skaven: 861-91
-Chaos Dwarfs: 903-16
-Ogre Kingdoms: 927-50 (36-8 free)
-Nurgle: 1748-71 (1754 free)
-Slaanesh: 1851-66
-Tzeentch: 1869-8
-Khazad: 842-60 / 916-26
+Lizardmen:
+Skaven: 883,4,5
+Chaos Dwarfs: 913
+Ogre Kingdoms: 
+Nurgle: 1765,66,68,69, 
+Slaanesh:
+Tzeentch:
 
 Armors : 
 Bretonnia : 336-339
 Naggarond : 259 / 261-264
-Khazad : 340-351
+Dwarfs : 340-351
 Empire : 281-284
 HE : 356 / 357 / 359-366
 Khorne : 700 / (701?) / 702 
@@ -66,13 +66,13 @@ Tomb Kings : 552-562
 VC : None
 WE : 710 / 714 / 715
 --INCLUDED:
-Ogre Kingdoms: 270-3
-Chaos Dwarfs: 290-3
-Skaven : 318-21
-Lizardmen : 370-376
-Tzeentch : 449 / 450
-Nurgle : 685
-Slaanesh : 801 / 803 / 804
+Ogre Kingdoms: 
+Chaos Dwarfs: 
+Skaven : 
+Lizardmen :
+Tzeentch :
+Nurgle : 
+Slaanesh :
 
 Sites : 
 Bretonnia : 1551 and 1552

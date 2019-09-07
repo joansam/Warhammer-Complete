@@ -214,7 +214,7 @@
 -------- WEAPONS --------
 
 
-#newweapon 1862
+#newweapon 
 #copyweapon 13
 #name "Chaos Warhammer"
 #nratt 2
@@ -224,7 +224,7 @@
 #ironweapon -- normal hammer isn't iron, but it should be
 #end
 
-#newweapon 1853
+#newweapon 
 #copyweapon 8
 #name "Chaos Broadsword"
 #nratt 2
@@ -233,7 +233,7 @@
 #rcost 7
 #end
 
-#newweapon 1859
+#newweapon 
 #copyweapon 15 -- Morningstar (the flail has weird stats)
 #name "Chaos Flail"
 #nratt 2
@@ -243,7 +243,7 @@
 #rcost 5
 #end
 
-#newweapon 1864
+#newweapon 
 #copyweapon 1 -- Spear
 #name "Chaos Spear"
 #rcost 7
@@ -251,7 +251,14 @@
 #nratt 3
 #end
 
-#newweapon 1871
+#newweapon 
+#copyweapon 5 -- Halberd
+#name "Chaos Halberd"
+#nratt 2
+#rcost 7
+#end
+
+#newweapon 
 #copyweapon 18
 #name "Chaos Battleaxe"
 #att 1
@@ -261,7 +268,7 @@
 #rcost 8
 #end
 
-#newweapon 1865
+#newweapon 
 #copyweapon 17
 #name "Chaos Axe"
 #nratt 2
@@ -269,7 +276,7 @@
 #rcost 3
 #end
 
-#newweapon 1852
+#newweapon 
 #name "Aura of Slaanesh"
 #dmg 33
 #aoe 1
@@ -287,7 +294,7 @@
 #dt_stun
 #end
 
-#newweapon 1863
+#newweapon 
 #name "Greater Aura of Slaanesh"
 #dmg 33
 #aoe 8
@@ -305,7 +312,7 @@
 #dt_stun
 #end
 
-#newweapon 1869
+#newweapon 
 #name "Aura of Tzeentch"
 #dmg 3
 #aoe 1
@@ -323,7 +330,7 @@
 --#raiseshape -6666
 #end
 
-#newweapon 1876
+#newweapon 
 #name "Greater Aura of Tzeentch"
 #dmg 3
 #aoe 8
@@ -344,7 +351,7 @@
 
 
 
-#newweapon 1851
+#newweapon 
 #name "Daemonic Scythetalons"
 #nratt 2
 #dmg 5
@@ -358,7 +365,7 @@
 #bonus
 #end
 
-#newweapon 1854
+#newweapon 
 #name "Daemonic Whip"
 #dmg 3
 #magic
@@ -372,7 +379,7 @@
 #nratt 2
 #end
 
-#newweapon 1855
+#newweapon 
 #name "Daemon-Forged Blade"
 #dmg 8
 #magic
@@ -385,7 +392,7 @@
 #nratt 3
 #end
 
-#newweapon 1866
+#newweapon 
 #copyweapon 3 -- Trident
 #name "Daemonic Trident"
 #att 2
@@ -394,7 +401,7 @@
 #magic
 #end
 
-#newweapon 1870
+#newweapon 
 #name "Daemonic Halberd"
 #dmg 8
 #att -1
@@ -408,7 +415,35 @@
 #pierce
 #end
 
-#newweapon 1856
+#newweapon 
+#name "Daemon-forged Flail"
+#dmg 2
+#att 0
+#def -2
+#len 1
+#rcost 4
+#blunt
+#flail
+#magic
+#nratt 3
+#sound 11
+#end
+
+#newweapon 
+#name "Daemon-forged Longsword"
+#dmg 9
+#magic
+#nratt 2
+#att 2
+#def 1
+#len 2
+#twohanded
+#sound 8
+#rcost 6
+#slash
+#end
+
+#newweapon 
 #name "Azazel's Daemonblade"
 #dmg 6
 #magic
@@ -421,7 +456,7 @@
 #nratt 3
 #end
 
-#newweapon 1857
+#newweapon 
 #name "Daemonic Claws"
 #dmg 6
 #magic
@@ -434,7 +469,7 @@
 #nratt 2
 #end
 
-#newweapon 1858
+#newweapon
 #name "Sliverslash"
 #dmg 6
 #magic
@@ -446,7 +481,7 @@
 #nratt 4
 #end
 
-#newweapon 1860
+#newweapon 
 #name "Witstealer Sword"
 #magic
 #nratt 4
@@ -461,7 +496,7 @@
 #secondaryeffect 156 -- Feeble Mind
 #end
 
-#newweapon 1861
+#newweapon 
 #copyweapon 85
 #name "Daemonic Tentacles"
 #dmg 0
@@ -469,7 +504,110 @@
 #magic
 #end
 
-#newarmor 801
+#newweapon 
+#name "Plaguesword"
+#dmg 12
+#nostr
+#bonus
+#att 1
+#def 0
+#len 1
+#magic
+#rcost 0
+#slash
+#secondaryeffect 1769
+#sound 8
+#end
+
+#newweapon 
+#name "Chaos Cleaver"
+#dmg 9
+#slash
+#att 0
+#def 1
+#len 1
+#sound 10
+#rcost 3
+#nratt 2
+#ironweapon
+#end
+
+#newweapon 
+#copyweapon 1766 -- "Aura of Nurgle"
+#name "Greater Aura of Nurgle"
+#aoe 8
+#end
+
+#newweapon 
+#name "Plaguesword"
+#dmg 8
+#att 1
+#def 0
+#len 1
+#magic
+#slash
+#secondaryeffect 1769
+#sound 8
+#rcost 3
+#end
+
+#newweapon 
+#name "Large Plaguesword"
+#dmg 10
+#att 1
+#def 0
+#len 2
+#magic
+#slash
+#secondaryeffect 1769
+#sound 8
+#rcost 5
+#nratt 3
+#end
+
+#newweapon 
+#name "Poison Tentacle"
+#dmg -5
+#armorpiercing
+#att 0
+#def 0
+#len 0
+#magic
+#bonus
+#secondaryeffect 50
+#end
+
+#newweapon 
+#name "Plague Scythe"
+#dmg 8
+#att 2
+#def 2
+#len 2
+#nratt 3
+#magic
+#twohanded
+#sound 8
+#slash
+#rcost 8
+#secondaryeffectalways 431
+#end
+
+#newweapon 
+#name "Valnir's Flail"
+#dmg 3
+#att 0
+#def 1
+#len 2
+#rcost 4
+#blunt
+#flail
+#magic
+#nratt 3
+#sound 11
+#twohanded
+#end
+
+#newarmor 
 #name "Chaos Armor"
 #type 5
 #prot 21
@@ -479,7 +617,7 @@
 #ironarmor
 #end
 
-#newarmor 803
+#newarmor 
 #name "Light Chaos Armor"
 #type 5
 #prot 12
@@ -488,7 +626,7 @@
 #rcost 10
 #end
 
-#newarmor 804
+#newarmor 
 #name "Auric Armor"
 #type 5
 #prot 18
@@ -496,6 +634,146 @@
 #def -1
 #rcost 20
 #magicarmor
+#end
+
+#newweapon 1766 -- KEEP ID #
+#copyweapon 143 -- Disease
+#name "Aura of Nurgle"
+#mrnegateseasily
+#aoe 1
+#unrepel
+#bonus
+#end
+
+#newweapon
+#name "Pestilent Potion"
+#nostr
+#bonus
+#magic
+#dmg 4
+#ammo 4
+#armornegating
+#secondaryeffect 1768
+#hardmrneg
+#acid
+#end
+
+#newweapon
+#name "Necrotic Missiles"
+#bonus
+#magic
+#dmg 1
+#nostr
+#ammo 20
+#range -1
+#aoe 1
+#armornegating
+#secondaryeffect 1769
+#hardmrneg
+#nratt -2
+#end
+
+#newweapon 
+#name "Rabid Bite"
+#dmg 2
+#slash
+#att 0
+#def -1
+#len 0
+#bonus
+#secondaryeffect 1765
+#natural
+#end
+
+#newweapon 1765 -- KEEP ID #
+#name "Infection"
+#mrnegates
+#dmg 2
+#bonus
+#nostr
+#dt_weakness
+#sizeresist
+#secondaryeffect 143
+#end
+
+#newweapon 
+#name "Filth Mace"
+#dmg 5
+#att 0
+#def 0
+#len 1
+#magic
+#secondaryeffect 51
+#rcost 4
+#blunt
+#sound 10
+#end
+
+#newweapon 
+#name "Balesword"
+#dmg 8
+#att 1
+#def 0
+#len 1
+#magic
+#rcost 3
+#sound 8
+#secondaryeffect 1768
+#slash
+#end
+
+#newweapon 1768 -- KEEP ID #
+#name "Poison and Disease"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#magic
+#armornegating
+#secondaryeffect 414
+#end
+
+#newweapon 1769 -- KEEP ID #
+#name "Poison and Corrosion"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#magic
+#armornegating
+#secondaryeffectalways 515
+#end
+
+#newweapon 
+#name "Rusted Cleaver"
+#dmg 5
+#slash
+#len 2
+#rcost 5
+#att 1
+#nratt 2
+#def -1
+#sound 10
+#ironweapon
+#end
+
+#newweapon 
+#name "Infected Vomit"
+#bonus
+#dmg 15
+#poison
+#dt_poison
+#nostr
+#range 7
+#ammo 1
+#flyspr 313
+#explspr 10004
+#aoe 1
+#magic
+#armornegating
+#secondaryeffectalways 414
 #end
 
 
@@ -665,12 +943,12 @@
 #rpcost 15
 #coldres 5
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #wastesurvival
 #startage 26
 #maxage 900
-#weapon 1862
+#weapon "Chaos Warhammer"
 #end
 
 
@@ -699,9 +977,9 @@
 #rcost 1
 #rpcost 15
 #coldres 5
-#weapon 1853
+#weapon "Chaos Broadsword"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #wastesurvival
 #startage 26
@@ -742,9 +1020,9 @@
 #wastesurvival
 #startage 31
 #maxage 900
-#armor 801
+#armor "Chaos Armor"
 #weapon "Lance"
-#weapon 1853
+#weapon "Chaos Broadsword"
 #weapon 56
 #end
 
@@ -774,12 +1052,12 @@
 #rcost 1
 #rpcost 18
 #coldres 5
-#armor 801
+#armor "Chaos Armor"
 #standard 1
 #wastesurvival
 #startage 28
 #maxage 900
-#weapon 1853
+#weapon "Chaos Broadsword"
 #armor "Full Helmet"
 #armor "Kite Shield"
 #end
@@ -809,7 +1087,7 @@
 #rcost 1
 #rpcost 26
 #coldres 5
-#weapon 1859
+#weapon "Chaos Flail"
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #armor "Kite Shield"
@@ -853,7 +1131,7 @@
 #wastesurvival
 #startage 34
 #maxage 1200
-#weapon 1853
+#weapon "Chaos Broadsword"
 #end
 
 -- FOREIGNREC UNITS
@@ -1140,8 +1418,8 @@
 #undcommand 5
 #coldres 10
 #weapon "Mace"
-#weapon 1857
-#armor 801
+#weapon "Daemonic Claws"
+#armor "Chaos Armor"
 #itemslots 15494
 #startage 50
 #maxage 5000
@@ -1453,7 +1731,7 @@
 #snow
 #rpcost 4
 #weapon "Magic Staff"
-#armor 803
+#armor "Light Chaos Armor"
 #armor "Full Helmet"
 #poorleader
 #startage 80
@@ -1492,9 +1770,9 @@
 #holy
 #okleader
 #undcommand 20
-#weapon 1853
+#weapon "Chaos Broadsword"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #startage 30
 #maxage 80
@@ -1531,7 +1809,7 @@
 #holy
 #okundeadleader
 #armor 21
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #itemslots 15494
 #startage 70
@@ -1543,7 +1821,7 @@
 #okleader
 #command 20
 #magicskill 8 1
-#weapon 1854
+#weapon "Daemonic Whip"
 #end
 
 -- Lord of Slaanesh
@@ -1554,8 +1832,8 @@
 #name "Chaos Lord"
 #nametype 115
 #descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. This Chaos Lord rides to war on a Steed of Slaanesh, a daemonic creature gifted to the greatest of Slaanesh's mortal followers, his powers beyond those of any regular Champion. Although Chaos Lords are not adept at performing the magic rituals necessary to gain Slaanesh's favor, they hold his authority nonetheless."
-#ap 20
-#mapmove 24
+#ap 26
+#mapmove 26
 #hp 30
 #size 3
 #ressize 2
@@ -1568,9 +1846,9 @@
 #mor 18
 #itemslots 13446
 #weapon "Aura of Slaanesh"
-#weapon 1864 -- Chaos Spear
+#weapon "Chaos Spear"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #mounted
 #gcost 10050
@@ -1601,8 +1879,8 @@
 #name "Chosen Chaos Lord"
 #nametype 115
 #descr "This Chaos Lord has advanced even further on the path to Daemonhood than his less-favored fellows, gaining even more gifts from his dark patron in reward. Mounted upon a Steed of Slaanesh, his powers are indeed unmatched by nigh any other mortal follower of the Prince of Excess."
-#ap 24
-#mapmove 24
+#ap 26
+#mapmove 26
 #hp 36
 #size 3
 #ressize 2
@@ -1615,9 +1893,9 @@
 #mor 18
 #itemslots 13446
 #weapon "Aura of Slaanesh"
-#weapon 1864 -- Chaos Spear
+#weapon "Chaos Spear"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #mounted
 #gcost 0
@@ -1661,11 +1939,11 @@
 #gcost 0
 #rcost 1
 #ambidextrous 5
-#weapon 1852
-#weapon 1855
-#weapon 1855
-#weapon 1855
-#armor 801
+#weapon "Aura of Slaanesh"
+#weapon "Daemon-Forged Blade"
+#weapon "Daemon-Forged Blade"
+#weapon "Daemon-Forged Blade"
+#armor "Chaos Armor"
 #startage 4500
 #maxage 20000
 #magicskill 5 3
@@ -1713,8 +1991,8 @@
 #rcost 1
 #itemslots 14470
 #weapon "Greater Aura of Slaanesh"
-#weapon 1858
-#armor 804
+#weapon "Sliverslash"
+#armor "Auric Armor"
 #armor "Shield"
 #startage 350
 #maxage 10000
@@ -1762,10 +2040,10 @@
 #magicskill 2 1
 #magicskill 1 1
 #itemslots 13446
-#weapon 1864 -- Chaos spear
+#weapon "Chaos Spear"
 #weapon "Aura of Slaanesh"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #mounted
 #gcost 0
@@ -1812,9 +2090,9 @@
 #magicskill 2 3
 #magicskill 1 3
 #itemslots 15490
-#weapon 1863 -- Greater Aura
-#weapon 1856 -- Azazel's Daemonblade
-#armor 803
+#weapon "Greater Aura of Slaanesh" -- Greater Aura
+#weapon "Azazel's Daemonblade" -- Azazel's Daemonblade
+#armor "Light Chaos Armor"
 #startage 2600
 #maxage 10000
 #holy
@@ -1862,12 +2140,12 @@
 #holy
 #berserk 3
 #ambidextrous 5
-#weapon 1852
+#weapon "Aura of Slaanesh"
 #weapon 62 -- Bile
 --#weapon 30 -- Venomous Bite
 #weapon 203 -- Barbed Tail
-#weapon 1861 -- Daemonic Tentacle
-#weapon 1857 -- Daemonic claws
+#weapon "Daemonic Tentacles" -- Daemonic Tentacle
+#weapon "Daemonic Claws" -- Daemonic claws
 #startage 150
 #maxage 5000
 #noleader
@@ -1894,7 +2172,7 @@
 
 ----------- Daemon Summonables ------------
 
--- Chaos Fury
+-- Chaos Fury (Slaanesh)
 
 #newmonster 4189
 #spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
@@ -1907,7 +2185,7 @@
 #hp 8
 #prot 4
 #size 2
-#str 10
+#str 9
 #enc 1
 #att 9
 #def 10
@@ -1958,7 +2236,7 @@
 #holy
 #magicpower 1
 #female
-#weapon 1851
+#weapon "Daemonic Scythetalons"
 #coldres 10
 #wastesurvival
 #snow
@@ -1978,10 +2256,10 @@
 #prot 8
 #size 3
 #ressize 2
-#str 12
+#str 10
 #enc 1
 #att 12
-#def 13
+#def 12
 #prec 11
 #mr 14
 #mor 30
@@ -1996,7 +2274,7 @@
 #holy
 #magicpower 1
 #female
-#weapon 1851
+#weapon "Daemonic Scythetalons"
 #coldres 10
 #wastesurvival
 #snow
@@ -2012,14 +2290,14 @@
 #nametype 257
 #descr "Fiends are incredibly swift, able to skitter and scuttle across all manner of terrain at frightening speed. There is something unnameably disturbing about a Fiend's gait, for its twitching dance rocks it from side to side. In this way, a Fiend will take at least three or four steps for every pace it advances, splayed legs beating out an arrhythmic toccata that praises the glory of the Dark Prince of Chaos. The Fiends sing to one another as they run, emanating a high-pitched and pervasive chitter that few mortals consciously hear. Though a Fiend is perhaps frailer than other Daemons of their size, their razor-sharp talons eviscerate mortal foes before they have the chance to react."
 #ap 26
-#mapmove 28
+#mapmove 26
 #hp 20
 #prot 11
 #size 3
 #str 14
 #enc 1
 #att 13
-#def 13
+#def 14
 #prec 7
 #mr 15
 #mor 30
@@ -2032,8 +2310,8 @@
 #holy
 #awe 1
 #magicpower 1
-#weapon 1851
-#weapon 1851
+#weapon "Daemonic Scythetalons"
+#weapon "Daemonic Scythetalons"
 #coldres 10
 #wastesurvival
 #snow
@@ -2063,7 +2341,7 @@
 #rcost 1
 #ambidextrous 5
 #itemslots 15488
-#weapon 1852
+#weapon "Aura of Slaanesh"
 #startage 20
 #maxage 10000
 #coldres 10
@@ -2079,8 +2357,8 @@
 #magicskill 8 2
 #custommagic 6656 100
 #makemonsters1 4185
-#weapon 1854
-#weapon 1854
+#weapon "Daemonic Whip"
+#weapon "Daemonic Whip"
 #wastesurvival
 #snow
 #okundeadleader
@@ -2127,10 +2405,10 @@
 #magicskill 7 2
 #custommagic 6656 200
 #magicskill 8 2
-#weapon 1852 -- Aura
-#weapon 1855 -- Daemonblade
-#weapon 1851 -- Scythetalons
-#armor 803
+#weapon "Aura of Slaanesh" -- Aura
+#weapon "Daemon-Forged Blade" -- Daemonblade
+#weapon "Daemonic Scythetalons" -- Scythetalons
+#armor "Light Chaos Armor"
 #end
 
 -- Daemon Princess of Slaanesh
@@ -2158,7 +2436,7 @@
 #heal
 #coldres 15
 #wastesurvival
-#weapon 1863 -- Greater Aura of Slaan
+#weapon "Greater Aura of Slaanesh" -- Greater Aura of Slaan
 #itemslots 15494
 #startage 4000
 #maxage 10000
@@ -2174,7 +2452,7 @@
 #demon
 #female
 #magicpower 1
-#weapon 1855
+#weapon "Daemon-Forged Blade"
 #montag 8888
 #end
 
@@ -2202,9 +2480,9 @@
 #rcost 1
 #heal
 #ambidextrous 4
-#weapon 1863 -- Greater Aura of Slaan
-#weapon 1857 -- Slaaneshi Claws
-#weapon 1855 -- Daemon blade
+#weapon "Greater Aura of Slaanesh" -- Greater Aura of Slaan
+#weapon "Daemonic Claws" -- Slaaneshi Claws
+#weapon "Daemon-Forged Blade" -- Daemon blade
 #maxage 10000
 #magicskill 2 3
 #magicskill 7 4
@@ -2316,10 +2594,10 @@
 #expertundeadleader
 #fear 5
 #awe 5
-#weapon 1863 -- Greater Aura
-#weapon 1857 -- Slaaneshi Claws
-#weapon 1857
-#weapon 1861 -- Daemonic Tentacles
+#weapon "Greater Aura of Slaanesh" -- Greater Aura
+#weapon "Daemonic Claws" -- Slaaneshi Claws
+#weapon "Daemonic Claws"
+#weapon "Daemonic Tentacles"
 #end
 
 -- REMOVE THIS
@@ -2355,7 +2633,7 @@
 #school 6
 #researchlevel 3
 #path 0 7
-#pathlevel 0 2
+#pathlevel 0 1
 #fatiguecost 2000
 #effect 10001
 #damage 4185
@@ -2397,11 +2675,11 @@
 #school 6
 #researchlevel 4
 #path 0 7
-#pathlevel 0 3
-#fatiguecost 2800
+#pathlevel 0 2
+#fatiguecost 1800
 #effect 10001
 #damage 4187
-#nreff 4
+#nreff 3
 #end
 
 #newspell
@@ -2488,7 +2766,7 @@
 #fatiguecost 1200
 #effect 10001
 #damage 4189
-#nreff 7
+#nreff 5
 #end
 
 -- Combat spells --
@@ -2626,7 +2904,7 @@
 #secondarylevel 4
 #constlevel 8
 #descr "The Witstealer Sword was forged in the molten heat of desire and cooled in a vat of Slaanesh's blood. Long ago, Slaanesh armed his champion N'kari with this sword for single combat. His blood courses into the veins of wounded enemies, rendering them stupefied before His pleasure." 
-#weapon 1860
+#weapon "Witstealer Sword"
 #end
 
 -- Icon of Slaanesh
@@ -3590,9 +3868,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #coldres 3
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #wastesurvival
 #startage 26
@@ -3625,9 +3903,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #coldres 3
-#weapon 1865 -- Chaos Axe
+#weapon "Chaos Axe" -- Chaos Axe
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #wastesurvival
 #startage 26
@@ -3658,10 +3936,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #coldres 3
 #itemslots 13446
 #weapon "Lance"
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #weapon 56
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #mounted
 #gcost 60
@@ -3699,10 +3977,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #coldres 3
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #armor "Kite Shield"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #standard 1
 #wastesurvival
 #startage 28
@@ -3735,9 +4013,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #snow
 #coldres 5
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #itemslots 14470
 #wastesurvival
@@ -3775,7 +4053,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #coldres 5
 #weapon "Chaos Battleaxe"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 14470
 #wastesurvival
 #startage 34
@@ -3855,7 +4133,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #undcommand 5
 #coldres 5
 #weapon "Mace"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 15494
 #startage 50
 #maxage 5000
@@ -4175,7 +4453,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #slowrec
 #snow
 #weapon "Magic Staff"
-#armor 803
+#armor "Light Chaos Armor"
 #poorleader
 #startage 250
 #maxage 5000
@@ -4209,9 +4487,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #okleader
 #undcommand 20
 #coldres 5
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #itemslots 15494
 #startage 50
@@ -4259,7 +4537,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #ambidextrous 3
 #weapon "Chaotic Fire"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 13446
 #startage 70
 #maxage 2500
@@ -4302,11 +4580,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #custommagic 2176 100
 #custommagic 384 66
 #coldres 5
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Chaos Fire"
-#weapon "Daemonic Halberd"
+#weapon "Chaos Halberd"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #itemslots 13446
 #float
@@ -4355,11 +4633,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mor 20
 #gcost 0
 #rcost 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
-#weapon 1855
-#armor 801
+#weapon "Daemon-Forged Blade"
+#armor "Chaos Armor"
 #armor "Full Helmet"
 #itemslots 12416 -- 1 head, 2 misc
 #startage 300
@@ -4406,7 +4684,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mor 18
 #gcost 0
 #rcost 1
-#weapon 1876 -- Greater Aura
+#weapon "Greater Aura of Tzeentch" -- Greater Aura
 #weapon "Dragon Fire"
 #weapon "Dragon Gas"
 #weapon "Bite"
@@ -4454,11 +4732,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 1 1 -- Air
 #coldres 5
 #ambidextrous 3
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Thomin's Sword"
-#weapon 1859 -- Chaos Flail
+#weapon "Chaos Flail" -- Chaos Flail
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 14732 -- 4 hands, 2 heads, 1 feet, 2 misc
 #gcost 0
 #rcost 1
@@ -4497,7 +4775,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mor 18
 #gcost 0
 #rcost 1
-#weapon 1876 -- Greater Aura
+#weapon "Greater Aura of Tzeentch" -- Greater Aura
 #weapon "Dragon Fire"
 #weapon "Breath of Change"
 #weapon "Bite"
@@ -4548,11 +4826,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 4 2 -- Astral
 #magicskill 0 2 -- Fire
 #coldres 5
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Chaos Fire"
 #weapon "Melekh's Halberd"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #itemslots 13446
 #startitem 967
@@ -4602,9 +4880,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 1 2 -- Air
 #gcost 0
 #rcost 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Magic Staff"
-#armor 803
+#armor "Light Chaos Armor"
 #goodleader
 #okundeadleader
 #startage 270
@@ -4655,11 +4933,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #custommagic 384 100
 #coldres 5
 #trample
-#weapon 1869 -- Aura
-#weapon 1851 -- Daemonic Scythetalons
+#weapon "Aura of Tzeentch" -- Aura
+#weapon "Daemonic Scythetalons" -- Daemonic Scythetalons
 #weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #itemslots 13446
 #invulnerable 15
@@ -4706,10 +4984,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #snow
 #magicskill 4 2
 #magicskill 0 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Windblade"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 15494
 #startitem 967
 #startage 600
@@ -4757,7 +5035,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #invulnerable 10
 #ambidextrous 5
 #itemslots 28672
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Claws"
 #weapon "Bile"
 #weapon 30 -- Venomous Bite
@@ -4809,7 +5087,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #gcost 0
 #rcost 1
 #magicpower 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Drake Fire"
 #weapon "Chaos Fire"
 #heat 5
@@ -4847,7 +5125,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #gcost 0
 #rcost 1
 #magicpower 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Drake Fire"
 #weapon "Chaos Fire"
 #weapon "Chaos Fire"
@@ -4959,8 +5237,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #invulnerable 15
 #magicpower 1
 #undisciplined
-#weapon 1869 -- Aura
-#weapon 1851 -- Daemonic Scythetalons
+#weapon "Aura of Tzeentch" -- Aura
+#weapon "Daemonic Scythetalons" -- Daemonic Scythetalons
 #startage 20
 #maxage 10000
 #flying
@@ -5034,7 +5312,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 4 1
 #custommagic 2176 50 -- SF
 #custommagic 2176 10 -- SF
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Magic Staff"
 #weapon "Chaotic Fire"
 #weapon "Flames of Tzeentch"
@@ -5090,7 +5368,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicpower 2
 #chaospower 2
 #horrormark
-#weapon 1876 -- Greater Aura of Tzeentch
+#weapon "Greater Aura of Tzeentch" -- Greater Aura of Tzeentch
 #weapon "Magic Staff"
 #weapon "Chaos Fire"
 #weapon "Lightning of Tzeentch"
@@ -5150,9 +5428,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #prot 8
 #invulnerable 15
-#weapon 1869 -- Aura
-#weapon 1866
-#armor 803
+#weapon "Aura of Tzeentch" -- Aura
+#weapon "Daemonic Trident"
+#armor "Light Chaos Armor"
 #fireres 15
 #wastesurvival
 #startage 3000
@@ -5193,7 +5471,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr1 "./Warhammer-Complete/summon2_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon2_daemon_prince_2.tga"
 #descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power.  For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
-#weapon 1870
+#weapon "Daemonic Halberd"
 #montag 60006
 #end
 
@@ -5214,7 +5492,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #inanimate
 #neednoteat
 #weapon 0
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #noleader
 #unteleportable
 #nohof
@@ -5288,7 +5566,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #enc 0
 #str 0
 #weapon 0
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #noleader
 #gcost 0
 #startitem 971
@@ -5338,9 +5616,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathcost 10
 #startdom 1
 #rcost 1
-#weapon 1869 -- Aura
+#weapon "Aura of Tzeentch" -- Aura
 #weapon "Magic Staff"
-#armor 803
+#armor "Light Chaos Armor"
 #itemslots 13446
 #okleader
 #startage 900
@@ -5378,9 +5656,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #coldres 5
 #wastesurvival
 #invulnerable 15
-#weapon 1876 -- Greater Aura
-#weapon 1855
-#armor 803
+#weapon "Greater Aura of Tzeentch" -- Greater Aura
+#weapon "Daemon-Forged Blade"
+#armor "Light Chaos Armor"
 #startage 4000
 #maxage 10000
 #magicskill 0 1
@@ -6181,289 +6459,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Version 0.5 - Initial release of the mod! Utilizes a lot of edited Tzeentch warhost assets (which is not to say that there wouldn't be any new ones) as well as the Dom3 Chaos Undivided's .dm as base.
 
--- Weapon IDs: 1748-71
--- Armor IDs: 685
+-- Weapon IDs: 1765, 68, 69
+-- Armor IDs: 
 -- Unit IDs: 5000 - 5049
 -- Nation ID: 136
 -- Site IDs: 1925 - 1926
 -- Montag IDs: 69402
 -- Restricted items: 6565
 -- Magic item IDs: 968
-
--------- WEAPONS --------
-
-#newweapon 1748
-#copyweapon 143 -- Disease
-#name "Aura of Nurgle"
-#mrnegateseasily
-#aoe 1
-#unrepel
-#bonus
-#end
-
-#newweapon 1749
-#copyweapon 1748
-#name "Greater Aura of Nurgle"
-#aoe 8
-#end
-
-#newweapon 1750
-#name "Plaguesword"
-#dmg 8
-#att 1
-#def 0
-#len 1
-#magic
-#slash
-#secondaryeffect 1769
-#sound 8
-#rcost 3
-#end
-
-#newweapon 1756
-#name "Large Plaguesword"
-#dmg 10
-#att 1
-#def 0
-#len 2
-#magic
-#slash
-#secondaryeffect 1769
-#sound 8
-#rcost 5
-#nratt 3
-#end
-
-#newweapon 1751
-#name "Poison Tentacle"
-#dmg -5
-#armorpiercing
-#att 0
-#def 0
-#len 0
-#magic
-#bonus
-#secondaryeffect 50
-#end
-
-#newweapon 1753
-#name "Daemon-forged Flail"
-#dmg 2
-#att 0
-#def -2
-#len 1
-#rcost 4
-#blunt
-#flail
-#magic
-#nratt 3
-#sound 11
-#end
-
-#newweapon 1755
-#name "Daemon-forged Longsword"
-#dmg 9
-#magic
-#nratt 2
-#att 2
-#def 1
-#len 2
-#twohanded
-#sound 8
-#rcost 6
-#slash
-#end
-
-#newweapon 1757
-#name "Plague Scythe"
-#dmg 8
-#att 2
-#def 2
-#len 2
-#nratt 3
-#magic
-#twohanded
-#sound 8
-#slash
-#rcost 8
-#secondaryeffectalways 431
-#end
-
-#newweapon 1758
-#name "Valnir's Flail"
-#dmg 3
-#att 0
-#def 1
-#len 2
-#rcost 4
-#blunt
-#flail
-#magic
-#nratt 3
-#sound 11
-#twohanded
-#end
-
-#newweapon 1759
-#name "Pestilent Potion"
-#nostr
-#bonus
-#magic
-#dmg 4
-#ammo 4
-#armornegating
-#secondaryeffect 1768
-#hardmrneg
-#acid
-#end
-
-#newweapon 1760
-#name "Necrotic Missiles"
-#bonus
-#magic
-#dmg 1
-#nostr
-#ammo 20
-#range -1
-#aoe 1
-#armornegating
-#secondaryeffect 1769
-#hardmrneg
-#nratt -2
-#end
-
-#newweapon 1761
-#name "Plaguesword"
-#dmg 12
-#nostr
-#bonus
-#att 1
-#def 0
-#len 1
-#magic
-#rcost 0
-#slash
-#secondaryeffect 1769
-#sound 8
-#end
-
-#newweapon 1762
-#name "Chaos Cleaver"
-#dmg 9
-#slash
-#att 0
-#def 1
-#len 1
-#sound 10
-#rcost 3
-#nratt 2
-#ironweapon
-#end
-
-#newweapon 1764
-#name "Rabid Bite"
-#dmg 2
-#slash
-#att 0
-#def -1
-#len 0
-#bonus
-#secondaryeffect 1765
-#natural
-#end
-
-#newweapon 1765
-#name "Infection"
-#mrnegates
-#dmg 2
-#bonus
-#nostr
-#dt_weakness
-#sizeresist
-#secondaryeffect 143
-#end
-
-#newweapon 1766
-#name "Filth Mace"
-#dmg 5
-#att 0
-#def 0
-#len 1
-#magic
-#secondaryeffect 51
-#rcost 4
-#blunt
-#sound 10
-#end
-
-#newweapon 1767
-#name "Balesword"
-#dmg 8
-#att 1
-#def 0
-#len 1
-#magic
-#rcost 3
-#sound 8
-#secondaryeffect 1768
-#slash
-#end
-
-#newweapon 1768
-#name "Poison and Disease"
-#bonus
-#dmg 15
-#poison
-#dt_poison
-#nostr
-#magic
-#armornegating
-#secondaryeffect 414
-#end
-
-#newweapon 1769
-#name "Poison and Corrosion"
-#bonus
-#dmg 15
-#poison
-#dt_poison
-#nostr
-#magic
-#armornegating
-#secondaryeffectalways 515
-#end
-
-#newweapon 1770
-#name "Rusted Cleaver"
-#dmg 6
-#slash
-#len 2
-#rcost 5
-#att 1
-#def 0
-#sound 10
-#ironweapon
-#end
-
-#newweapon 1771
-#name "Infected Vomit"
-#bonus
-#dmg 15
-#poison
-#dt_poison
-#nostr
-#range 7
-#ammo 1
-#flyspr 313
-#explspr 10004
-#aoe 1
-#magic
-#armornegating
-#secondaryeffectalways 414
-#end
-
------Armour-----
-
 
 -------- UNITS ----------
 
@@ -6492,7 +6495,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #snow
 #rpcost 3
 #noitem
-#weapon 1764
+#weapon "Rabid Bite"
 #stealthy 10
 #animal
 #coldres 5
@@ -6522,8 +6525,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #prot 13
 #mor 12
 #mr 14
-#weapon 1853 -- Chaos Broadsword
-#weapon 1771
+#weapon "Rusted Cleaver"
+#weapon "Infected Vomit"
 #regeneration 15
 #heal
 #rcost 2
@@ -6567,7 +6570,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 5
 #rpcost 18
 #heal
-#weapon 1748 -- Aura
 #weapon 347
 #weapon 331
 #armor 2
@@ -6610,8 +6612,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rpcost 12
 #startage 28
 #maxage 200
-#weapon 1748 -- Aura
-#weapon 1859
+#weapon "Chaos Flail"
 #armor "Chain Mail Cuirass"
 #armor "Shield"
 #forestsurvival
@@ -6752,7 +6753,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #coldres 3
 #itemslots 15488
 #weapon 85
-#weapon 1751
+#weapon "Poison Tentacle"
 #armor "Leather Hauberk"
 #wastesurvival
 #snow
@@ -6917,9 +6918,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #snow
 #rpcost 15
-#weapon 1859 -- Chaos Flail
+#weapon "Chaos Flail" -- Chaos Flail
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
@@ -6955,9 +6956,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #snow
 #rpcost 15
-#weapon 1865 -- Chaos Axe
+#weapon "Chaos Axe" -- Chaos Axe
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #poisonres 15
 #wastesurvival
@@ -6989,10 +6990,10 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 13
 #itemslots 13446
 #weapon "Lance"
-#weapon 1859 -- Chaos Flail
+#weapon "Chaos Flail" -- Chaos Flail
 #weapon 56
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #mounted
 #gcost 60
@@ -7034,9 +7035,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #snow
 #rpcost 18
-#weapon 1853 -- Chaos Broadsword
+#weapon "Chaos Broadsword" -- Chaos Broadsword
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #standard 1
 #poisonres 15
@@ -7072,9 +7073,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #snow
 #rpcost 26
-#weapon 1859 -- Chaos Flail
+#weapon "Chaos Flail" -- Chaos Flail
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #itemslots 14470
 #holy
@@ -7112,9 +7113,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #snow
 #rpcost 26
-#weapon 1865 -- Chaos Axe
+#weapon "Chaos Axe" -- Chaos Axe
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #itemslots 14470
 #holy
@@ -7199,8 +7200,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #coldres 5
 #poisonres 25
 #weapon "Mace"
-#weapon 1751
-#armor 801
+#weapon "Poison Tentacle"
+#armor "Chaos Armor"
 #itemslots 15494
 #startage 50
 #maxage 5000
@@ -7278,7 +7279,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #poorleader
 #heal
 #ambidextrous 3
-#weapon 1748 -- Aura
+#weapon "Aura of Nurgle" -- Aura
 #weapon 331
 #weapon 347
 #weapon "Axe"
@@ -7572,9 +7573,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #coldres 5
 #okleader
 #undcommand 20
-#weapon 1762
+#weapon "Chaos Cleaver"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Kite Shield"
 #itemslots 15494
 #startage 54
@@ -7619,8 +7620,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #goodleader
 #command -20
 #okundeadleader
-#weapon 1755
-#armor 801
+#weapon "Daemon-forged Longsword"
+#armor "Chaos Armor"
 #itemslots 15494
 #startage 75
 #maxage 2500
@@ -7656,11 +7657,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #magicskill 8 2
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
-#weapon 1748 -- Aura
-#weapon 1757
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Plague Scythe"
 #weapon 56
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #armor "Shield"
 #mounted
 #rcost 6
@@ -7713,8 +7714,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #coldres 3
 #itemslots 28672
 #ambidextrous 5
-#weapon 1748 -- Aura
-#weapon 1751 -- Poison Tentacle
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Poison Tentacle" -- Poison Tentacle
 #weapon 62 -- Bile
 #weapon 30 -- Venomous Bite
 #weapon 203 -- Barbed Tail
@@ -7768,10 +7769,10 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #magicskill 5 1
 #custommagic 12288 100
 #custommagic 12288 66
-#weapon 1748 -- Aura
-#weapon 1757
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Plague Scythe"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
 #gcost 0
 #rcost 1
@@ -7817,9 +7818,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1749 -- Greater Aura
-#weapon 1756 -- Large Plaguesword
-#weapon 1760
+#weapon "Greater Aura of Nurgle" -- Greater Aura
+#weapon "Large Plaguesword" -- Large Plaguesword
+#weapon "Necrotic Missiles"
 #trample
 #startage 190
 #maxage 10000
@@ -7869,10 +7870,10 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 17
 #magicskill 5 2
 #magicskill 6 1
-#weapon 1748 -- Aura
-#weapon 1758
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Valnir's Flail"
 #armor "Full Helmet"
-#armor 801
+#armor "Chaos Armor"
 #itemslots 15494
 #startitem 968
 #gcost 0
@@ -7921,9 +7922,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1748 -- Aura
+#weapon "Aura of Nurgle" -- Aura
 #weapon "Magic Staff"
-#weapon 1759
+#weapon "Pestilent Potion"
 #startage 190
 #maxage 10000
 #magicskill 5 2
@@ -7971,8 +7972,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1749 -- Greater Aura
-#weapon 1756 -- Large Plaguesword
+#weapon "Greater Aura of Nurgle" -- Greater Aura
+#weapon "Large Plaguesword" -- Large Plaguesword
 #trample
 #startage 190
 #maxage 10000
@@ -8016,7 +8017,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1750
+#weapon "Plaguesword"
 #startage 20
 #maxage 10000
 #poisonres 25
@@ -8155,8 +8156,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1748 -- Aura
-#weapon 1750
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Plaguesword"
 #goodleader
 #expertundeadleader
 #startage 20
@@ -8198,11 +8199,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gcost 0
 #rcost 1
 #noitem
-#weapon 1748 -- Aura
-#weapon 1751
-#weapon 1751
-#weapon 1751
-#weapon 1751
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Poison Tentacle"
+#weapon "Poison Tentacle"
+#weapon "Poison Tentacle"
+#weapon "Poison Tentacle"
 #startage 20
 #maxage 10000
 #poisonres 25
@@ -8277,8 +8278,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #magicpower 1
 #ambidextrous 3
-#weapon 1748 -- Aura
-#weapon 1761
+#weapon "Aura of Nurgle" -- Aura
+#weapon "Plaguesword"
 #weapon 271
 #weapon 557
 #weapon 43
@@ -8322,7 +8323,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #magicpower 1
 #ambidextrous 5
-#weapon 1748 -- Aura
+#weapon "Aura of Nurgle" -- Aura
 #weapon 271
 #weapon 557
 #weapon 43
@@ -8363,8 +8364,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gcost 0
 #rcost 1
 --#weapon 1747
-#weapon 1749 -- Greater Aura
-#weapon 1756 -- Large Plaguesword
+#weapon "Greater Aura of Nurgle" -- Greater Aura
+#weapon "Large Plaguesword" -- Large Plaguesword
 #startage 190
 #maxage 10000
 #magicskill 5 2
@@ -8414,9 +8415,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
-#weapon 1749 -- Greater Aura
-#weapon 1753 -- Daemon Flail
-#armor 803 -- Light chaos armor
+#weapon "Greater Aura of Nurgle" -- Greater Aura
+#weapon "Daemon-forged Flail" -- Daemon Flail
+#armor "Light Chaos Armor" -- Light chaos armor
 #armor "Full Helmet"
 #itemslots 15494
 #startage 6000
@@ -8466,9 +8467,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
-#weapon 1749 -- Greater Aura
-#weapon 1753 -- Daemon Flail
-#armor 803 -- Light chaos armor
+#weapon "Greater Aura of Nurgle" -- Greater Aura
+#weapon "Daemon-forged Flail" -- Daemon Flail
+#armor "Light Chaos Armor" -- Light chaos armor
 #armor "Full Helmet"
 #itemslots 15494
 #startage 4000
@@ -8847,7 +8848,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #name "Filth Mace"
 #type 1
 #fear 5
-#weapon 1766
+#weapon "Filth Mace"
 #end
 
 -- Balesword
@@ -8861,7 +8862,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #descr "Legend tells that there is one Balesword for each of Nurgle's favored plagues. Moreover, each blade is thought to have been congealed from the infected waste matter that each plague draws forth."
 #name "Balesword"
 #type 1
-#weapon 1767
+#weapon "Balesword"
 #end
 
 -- Icon of Nurgle
@@ -8928,7 +8929,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 #newsite 1925
 #name "Chaos Vortex of Nurgle"
-#path 3
+#path 5
 #level 0
 #rarity 5
 #gems 5 3
@@ -8937,7 +8938,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 #newsite 1926
 #name "Halls of Nurgle"
-#path 3
+#path 8
 #level 0
 #rarity 5
 #homemon 5008 -- Chosen of Nurgle #1
@@ -9183,7 +9184,7 @@ still to do
 #spr "./Warhammer-Complete/Item_Cleaver.tga"
 #constlevel 0
 #type 1
-#weapon 933 -- Ogre choppa
+#weapon "Ogre Choppa"
 #mainpath 7
 #mainlevel 1
 #douse 1
@@ -9210,7 +9211,7 @@ still to do
 -------- New Weapons
 
 
-#newweapon 927
+#newweapon 
 #name "Hunter Harpoon"
 #dmg -8
 #att 1
@@ -9226,7 +9227,7 @@ still to do
 #ironweapon
 #end
 
-#newweapon 928
+#newweapon 
 #name "Dark Chains"
 #dmg 0
 #dt_stun
@@ -9237,7 +9238,7 @@ still to do
 #secondaryeffect 274 -- enslave mind
 #end
 
-#newweapon 929
+#newweapon 
 #name "Fleshflayer"
 #slash
 #dmg 13
@@ -9253,7 +9254,7 @@ still to do
 #secondaryeffect 285 -- additional weakness
 #end
 
-#newweapon 930
+#newweapon 
 #name "Ogre Smash"
 #dmg -1
 #att -1
@@ -9266,7 +9267,7 @@ still to do
 #bonus
 #end
 
-#newweapon 931
+#newweapon 
 #name "Ogre Club"
 #dmg 7
 #att -1
@@ -9277,7 +9278,7 @@ still to do
 #woodenweapon
 #end
 
-#newweapon 932
+#newweapon 
 #name "Ironfist"
 #dmg 1
 #att -2
@@ -9290,7 +9291,7 @@ still to do
 #bonus
 #end
 
-#newweapon 933
+#newweapon 
 #name "Ogre Choppa"
 #dmg 7
 #att 0
@@ -9300,7 +9301,8 @@ still to do
 #slash
 #end
 
-#newweapon 934
+#newweapon 
+
 #name "Big Ogre Choppa"
 #dmg 9
 #att 0
@@ -9312,7 +9314,7 @@ still to do
 #twohanded
 #end
 
-#newweapon 935
+#newweapon 
 #name "Deathbelcher"
 #ammo 4
 #att 1
@@ -9330,7 +9332,7 @@ still to do
 
 --- flung scrap also used in chaos dwarf mod
 
-#newweapon 939
+#newweapon 
 #name "Flung Scrap"
 #dmg -3
 #att -2
@@ -9344,7 +9346,7 @@ still to do
 #ironweapon
 #end
 
-#newweapon 940
+#newweapon
 #name "Skrag's Stumpblade"
 #dmg 5
 #att 0
@@ -9356,7 +9358,7 @@ still to do
 #bonus
 #end
 
-#newweapon 941
+#newweapon 
 #name "Skrag's Meathook"
 #dmg 7
 #att 0
@@ -9368,7 +9370,7 @@ still to do
 #pierce
 #end
 
-#newweapon 942
+#newweapon 
 #name "Sky Giant Bone"
 #dmg 4
 #att 1
@@ -9379,7 +9381,7 @@ still to do
 #blunt
 #end
 
-#newweapon 943
+#newweapon 
 #name "Crude Taper"
 #blunt
 #dmg -2
@@ -9392,7 +9394,7 @@ still to do
 #end
 
 
-#newweapon 944
+#newweapon 
 #name "Stumpblade"
 #dmg 5
 #att 0
@@ -9405,7 +9407,7 @@ still to do
 #end
 
 
-#newweapon 945
+#newweapon 
 #name "Heavy Chains"
 #dmg 0
 #att 0
@@ -9420,7 +9422,7 @@ still to do
 #end
 
 
-#newweapon 946
+#newweapon 
 #name "Giant Stomp"
 #dmg 0
 #att 0
@@ -9434,7 +9436,7 @@ still to do
 #end
 
 
-#newweapon 947
+#newweapon 
 #name "Scrap Barrage"
 #dmg 10
 #nostr
@@ -9451,7 +9453,7 @@ still to do
 #end
 
 
-#newweapon 948
+#newweapon 
 #name "Cathayan Longsword"
 #dmg 8
 #att 2
@@ -9464,7 +9466,7 @@ still to do
 #end
 
 
-#newweapon 949
+#newweapon 
 #name "Maneater Blade"
 #dmg 7
 #att 1
@@ -9478,7 +9480,7 @@ still to do
 #end
 
 
-#newweapon 950
+#newweapon 
 #name "Yhetee Ice Club"
 #dmg 6
 #att 0
@@ -9496,7 +9498,7 @@ still to do
 
 --- gutplate also used in chaos dwarf mod
 
-#newarmor 270
+#newarmor 
 #name "Gutplate"
 #type 5
 #prot 9
@@ -9507,7 +9509,7 @@ still to do
 #end
 
 
-#newarmor 271
+#newarmor 
 #name "Gutplate n Bits"
 #type 5
 #prot 11
@@ -9518,7 +9520,7 @@ still to do
 #end
 
 
-#newarmor 272
+#newarmor 
 #name "Irongut Plate"
 #type 5
 #prot 14
@@ -9529,7 +9531,7 @@ still to do
 #end
 
 
-#newarmor 273
+#newarmor 
 #name "Tyrant Plate"
 #type 5
 #prot 16
@@ -9686,7 +9688,7 @@ still to do
 #rcost 1
 #armor "leather cuirass"
 #weapon "dagger"
-#weapon 939 -- flung scrap x1
+#weapon "Flung Scrap" -- flung scrap x1
 #maxage 20
 #darkvision 50
 #mountainsurvival
@@ -9718,7 +9720,7 @@ still to do
 #rcost 1
 #armor "furs"
 #weapon "dagger"
-#weapon 939 -- flung scrap x1
+#weapon "Flung Scrap" -- flung scrap x1
 #supplybonus 1
 #forestsurvival
 #stealthy 0
@@ -9870,8 +9872,8 @@ still to do
 #gcost 0
 #rpcost 1
 #rcost 1
-#weapon 950
-#weapon 950
+#weapon "Yhetee Ice Club"
+#weapon "Yhetee Ice Club"
 #ambidextrous 4
 #cold 5
 #iceprot 2
@@ -10197,7 +10199,7 @@ still to do
 #rcost 1
 #armor "furs"
 #weapon "dagger"
-#weapon 939 -- flung scrap x1
+#weapon "Flung Scrap" -- flung scrap x1
 #supplybonus 1
 #forestsurvival
 #mountainsurvival
@@ -11669,7 +11671,7 @@ Still to do
 
 -- Whirling Blades of Doomflayer
 
-#newarmor 318
+#newarmor 
 #name "Whirling Blades"
 #type 4
 #prot 24
@@ -11681,7 +11683,7 @@ Still to do
 
 -- Queek's Warpstone Armour
 
-#newarmor 320
+#newarmor 
 #name "Warpstone Armour"
 #type 5
 #prot 22
@@ -11692,7 +11694,7 @@ Still to do
 
 -- Snikch's Cloak of Shadows
 
-#newarmor 319
+#newarmor 
 #name "Cloak of Shadows"
 #type 5
 #prot 10
@@ -11704,7 +11706,7 @@ Still to do
 
 -- Ikit's Mechanical Frame
 
-#newarmor 321
+#newarmor 
 #name "Mechanical Frame"
 #type 5
 #prot 20
@@ -11719,7 +11721,7 @@ Still to do
 
 -- Warpfire Thrower
 
-#newweapon 891
+#newweapon 
 #name "Warpfire Thrower"
 #dmg 15
 #att -2
@@ -11744,7 +11746,7 @@ Still to do
 
 -- Bubonic Sceptre
 
-#newweapon 867
+#newweapon 
 #name "Bubonic Sceptre"
 #dmg 5
 #att 0
@@ -11762,7 +11764,7 @@ Still to do
 
 -- Moulder Packmaster whip
 
-#newweapon 861
+#newweapon 
 #name "Moulder Whip"
 #dmg -1
 #att 1
@@ -11775,7 +11777,7 @@ Still to do
 
 -- Throt's whip
 
-#newweapon 862
+#newweapon 
 #name "Dominator Whip"
 #dmg 3
 #att 1
@@ -11789,7 +11791,7 @@ Still to do
 
 -- Ikit's warp halberd
 
-#newweapon 863
+#newweapon 
 #name "Storm Daemon"
 #dmg 10
 #att 2
@@ -11804,7 +11806,7 @@ Still to do
 
 -- Ikit's Claw
 
-#newweapon 868
+#newweapon 
 #name "Mechanical Claw"
 #dmg 4
 #att 0
@@ -11815,7 +11817,7 @@ Still to do
 
 -- Thanquol's Staff
 
-#newweapon 864
+#newweapon 
 #name "Staff of the Horned One"
 #dmg 4
 #att 1
@@ -11826,7 +11828,7 @@ Still to do
 
 -- Skrolk's Rod
 
-#newweapon 865
+#newweapon 
 #name "Rod of Corruption"
 #dmg 9
 #att 2
@@ -11842,7 +11844,7 @@ Still to do
 
 -- Queek's two weapons
 
-#newweapon 866
+#newweapon 
 #name "Dwarf Slayer"
 #dmg 13
 #magic
@@ -11853,7 +11855,7 @@ Still to do
 #end
 
 
-#newweapon 887
+#newweapon 
 #name "The Gouger"
 #dmg 8
 #att 2
@@ -11866,7 +11868,7 @@ Still to do
 #end
 
 
-#newweapon 869
+#newweapon 869 -- KEEP ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -11878,8 +11880,8 @@ Still to do
 #end
 
 
-#newweapon 870
-#name "Plague Bite"
+#newweapon 
+#name "Plague Bite" -- Doesn't seem to be used by anything, ID was 870
 #dmg 0
 #att 0
 #def -1
@@ -11890,7 +11892,7 @@ Still to do
 #end
 
 
-#newweapon 871
+#newweapon 
 #name "Creature Killer"
 #dmg 12
 #armorpiercing
@@ -11902,7 +11904,7 @@ Still to do
 #end
 
 
-#newweapon 872
+#newweapon 
 #name "Whirling Blades"
 #armorpiercing
 #nostr
@@ -11917,7 +11919,7 @@ Still to do
 #end
 
 
-#newweapon 873
+#newweapon 
 #name "Warplash"
 #dmg 5
 #nratt 2
@@ -11930,7 +11932,7 @@ Still to do
 #end
 
 
-#newweapon 874
+#newweapon 
 #name "Weeping Blade"
 #dmg 6
 #att 1
@@ -11943,7 +11945,7 @@ Still to do
 #end
 
 
-#newweapon 875
+#newweapon 
 #name "Plague Censer"
 #dmg 7
 #att 1
@@ -11956,7 +11958,7 @@ Still to do
 #end
 
 
-#newweapon 876
+#newweapon 
 #name "Plague Scepter"
 #dmg 7
 #att 1
@@ -11967,7 +11969,7 @@ Still to do
 #end
 
 
-#newweapon 877
+#newweapon 
 #name "Eshin Shuriken"
 #dmg -1
 #att 1
@@ -11983,7 +11985,7 @@ Still to do
 #ironweapon
 #end
 
-#newweapon 878
+#newweapon 
 #name "Gutter Blade"
 #dmg 5
 #att 1
@@ -11996,7 +11998,7 @@ Still to do
 #ironweapon
 #end
 
-#newweapon 879
+#newweapon 
 #name "Pestilent Bite"
 #dmg 0
 #att -1
@@ -12007,7 +12009,7 @@ Still to do
 #bonus
 #end
 
-#newweapon 880
+#newweapon 
 #name "Warp Blade"
 #dmg 5
 #att 1
@@ -12020,7 +12022,7 @@ Still to do
 #magic
 #end
 
-#newweapon 881
+#newweapon 
 #name "Warp Halberd"
 #dmg 7
 #att 0
@@ -12034,7 +12036,7 @@ Still to do
 #end
 
 
-#newweapon 882
+#newweapon 
 #name "Warplightning Thrower"
 #shock
 #armornegating
@@ -12052,7 +12054,7 @@ Still to do
 
 
 
-#newweapon 883
+#newweapon 883 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12069,7 +12071,7 @@ Still to do
 #end
 
 
-#newweapon 884
+#newweapon 884 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12085,7 +12087,7 @@ Still to do
 #att -3
 #end
 
-#newweapon 885
+#newweapon 885 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12102,7 +12104,7 @@ Still to do
 #end
 
 
-#newweapon 886
+#newweapon 
 #name "Fly Swarm"
 #dmg 2
 #att 0
@@ -12117,7 +12119,7 @@ Still to do
 #end
 
 
-#newweapon 890
+#newweapon 890 -- KEEP ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12132,7 +12134,7 @@ Still to do
 #end
 
 
-#newweapon 888
+#newweapon 
 #name "Poison Wind Globe"
 #dmg -2
 #att -3
@@ -12144,7 +12146,7 @@ Still to do
 #end
 
 
-#newweapon 889
+#newweapon 889 -- KEEP ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -12406,7 +12408,7 @@ Still to do
 #rpcost 5
 #rcost 1
 #weapon "Short Sword"
-#weapon 879
+#weapon "Pestilent Bite"
 #armor "Robes"
 #armor "Leather cap"
 #poisonres 3
@@ -12445,7 +12447,7 @@ Still to do
 #rpcost 9
 #rcost 1
 #weapon "plague censer"
-#weapon 879
+#weapon "Pestilent Bite"
 #armor "Robes"
 #armor "Leather cap"
 #poisonres 3
@@ -12559,7 +12561,7 @@ Still to do
 #armor "Ring Mail Cuirass"
 #armor "Full Helmet"
 #weapon "Short Sword"
-#weapon 888
+#weapon "Poison Wind Globe"
 #poisonres 3
 #stealthy 0
 #maxage 30
@@ -12670,7 +12672,7 @@ Still to do
 #armor "Half Helmet"
 #weapon "Short Sword"
 #weapon 225 -- fire breath 15ap aoe1 nostr
---weapon 891 -- warpfire thrower
+--weapon "Warpfire Thrower"
 #fireres 5
 #poisonres 1
 #stealthy 0
@@ -12781,7 +12783,7 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 883
+#weapon "Doomwheel Warplightning"
 #weapon 884
 #weapon 885
 #shockres 25
@@ -13093,7 +13095,7 @@ Still to do
 #rpcost 2
 #rcost 1
 #weapon "falchion"
-#weapon 879
+#weapon "Pestilent Bite"
 #armor "Robes"
 #armor "Leather cap"
 #poisonres 3
@@ -13141,7 +13143,7 @@ Still to do
 #armor "Robes"
 #armor "Leather cap"
 #ambidextrous 4
-#weapon 879
+#weapon "Pestilent Bite"
 #poisonres 3
 #stealthy 0
 #berserk 3
@@ -13581,7 +13583,7 @@ Still to do
 #ap 12
 #gcost 1
 #rcost 1
-#weapon 865 -- Rod of Corruption
+#weapon "Rod of Corruption"
 #weapon "Fly Swarm"
 #weapon "Life Drain"
 #armor "Nothing"
@@ -13635,7 +13637,7 @@ Still to do
 #weapon 29 -- basic claw
 #weapon "Warp Blade"
 #weapon 225 -- fire breath 15ap aoe1 nostr
---weapon 891 -- warpfire thrower
+--weapon "Warpfire Thrower"
 #ambidextrous 8
 #stealthy 0
 #poisonres 2
@@ -15033,7 +15035,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Forge Hammer
 
-#newweapon 903
+#newweapon
 #copyweapon 648 -- Enchanted hammer
 #name "Forge Hammer"
 #rcost 9
@@ -15042,8 +15044,8 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 -- Slaver whip
 
-#newweapon 904
-#name "Slaver Whip"
+#newweapon 
+#name "Slaver's Whip"
 #dmg -1
 #att 1
 #def 0
@@ -15055,7 +15057,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Flames of Hashut
 
-#newweapon 905
+#newweapon 
 #copyweapon 383 -- throw flames
 #name "Flames of Hashut"
 #dmg -1
@@ -15066,7 +15068,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Chaos Dwarf Axe
 
-#newweapon 906
+#newweapon 
 #copyweapon 17 -- Axe
 #name "Chaos Dwarf Axe"
 #rcost 3 -- triple normal
@@ -15076,7 +15078,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Mastercrafted Axe
 
-#newweapon 907
+#newweapon 
 #copyweapon 17 -- Axe
 #name "Mastercrafted Axe"
 #rcost 5 -- 5x normal normal
@@ -15087,7 +15089,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Wolf Bite
 
-#newweapon 908
+#newweapon 
 #copyweapon 19 -- bite
 #name "Wolf Bite"
 #dmg 12
@@ -15095,7 +15097,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Orc choppa
 
-#newweapon 909
+#newweapon 
 #copyweapon 10 -- falchion
 #name "Choppa"
 #def -1
@@ -15104,7 +15106,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Blunderbuss
 
-#newweapon 910
+#newweapon 
 #name "Blunderbuss"
 #ammo 5
 #att 0
@@ -15123,7 +15125,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Chaos Dwarf Steel Crossbow
 
-#newweapon 911
+#newweapon 
 #name "Chaos Dwarf Crossbow"
 #ammo 12
 #att 0
@@ -15142,7 +15144,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Fireglaive
 
-#newweapon 912
+#newweapon "Fireglaive"
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
@@ -15152,7 +15154,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Fireglaive Gout
 
-#newweapon 913
+#newweapon 913 -- KEEP ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -15161,7 +15163,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Forge Axe
 
-#newweapon 914
+#newweapon 
 #copyweapon 17 -- Axe
 #name "Forge Axe"
 #rcost 9
@@ -15171,13 +15173,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Hobgoblin gitknife
 
-#newweapon 915
+#newweapon 
 #copyweapon 126 -- poison dagger
 #name "Gitknife"
 #secondaryeffect 50 -- weak poison
 #end
 
-#newweapon 916
+#newweapon
 #name "Varies"
 #len 0
 #att 0
@@ -15193,7 +15195,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Infernal Full Plate
 
-#newarmor 290
+#newarmor 
 #copyarmor 215 -- Full Plate of Ulm
 #name "Infernal Full Plate"
 #rcost 30
@@ -15201,7 +15203,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Ogre slaves iron muzzle
 
-#newarmor 291
+#newarmor 
 #copyarmor 20 -- Iron cap
 #name "Iron Muzzle"
 #prot 10
@@ -15209,7 +15211,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Golden Immortal Plate
 
-#newarmor 292
+#newarmor 
 #copyarmor 19 -- Full Plate Mail
 #name "Golden Immortal Plate"
 #enc 4
@@ -15218,7 +15220,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Daemonsmith Scale Mail
 
-#newarmor 293
+#newarmor 
 #copyarmor 215 -- Full Plate of Ulm
 #name "Daemonsmith Scale Mail"
 #rcost 26
@@ -15260,7 +15262,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #armor 2 -- basic shield
 #armor "Half Helmet"
 #armor 17 -- full scale mail
-#weapon 906 -- chaos dwarf axe
+#weapon "Chaos Dwarf Axe" -- chaos dwarf axe
 #maxage 500
 #startage 150
 #mountainsurvival
@@ -15300,7 +15302,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #armor 17 -- full scale mail
 #armor "Half Helmet"
 #weapon 253 -- hatchet
-#weapon 910 -- blunderbuss
+#weapon "Blunderbuss" -- blunderbuss
 #maxage 500
 #startage 150
 #mountainsurvival
@@ -15339,7 +15341,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #armor 12 -- scale mail hauberk
 #armor "Iron Cap"
 #weapon 253 -- hatchet
-#weapon 911 -- chaos dwarf crossbow
+#weapon "Chaos Dwarf Crossbow" -- chaos dwarf crossbow
 #maxage 500
 #startage 150
 #mountainsurvival
@@ -15376,9 +15378,9 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rpcost 21 --- They need to have order scales
 #rcost 1
 #armor "Shield"
-#armor 290 -- infernal full plate
+#armor "Infernal Full Plate" -- infernal full plate
 #armor "Full Helmet"
-#weapon 906 -- chaos dwarf axe
+#weapon "Chaos Dwarf Axe" -- chaos dwarf axe
 #maxage 500
 #startage 150
 #mountainsurvival
@@ -15417,9 +15419,9 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 40
 #rpcost 21 --- They need to have order scales
 #rcost 1
-#armor 290 -- infernal full plate
+#armor "Infernal Full Plate" -- infernal full plate
 #armor "Full Helmet"
-#weapon 912 -- fireglaive
+#weapon "Fireglaive" -- fireglaive
 #maxage 500
 #startage 150
 #mountainsurvival
@@ -15458,10 +15460,10 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 50
 #rpcost 21 --- They need to have order scales
 #rcost 1
-#armor 290 -- infernal full plate
+#armor "Infernal Full Plate" -- infernal full plate
 #armor "Full Helmet"
-#weapon 914 -- forge axe
-#weapon 914 -- forge axe
+#weapon "Forge Axe" -- forge axe
+#weapon "Forge Axe" -- forge axe
 #ambidextrous 2
 #maxage 500
 #startage 150
@@ -15608,8 +15610,8 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 12
 #rpcost 18 --- normal
 #rcost 1
-#weapon 915 -- gitknife
-#weapon 915 -- gitknife
+#weapon "Gitknife" -- gitknife
+#weapon "Gitknife" -- gitknife
 #ambidextrous 2
 #armor 119 -- reinforced leather cap
 #armor 10 -- leather hauberk
@@ -15643,7 +15645,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 1
 #weapon 357 -- light lance
 #weapon 23 -- normal short bow
-#weapon 908 -- Wolf Bite
+#weapon "Wolf Bite" -- Wolf Bite
 #armor 2 -- basic shield
 #armor 119 -- reinforced leather cap
 #armor 10 -- leather hauberk
@@ -15808,7 +15810,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 6
 #rpcost 1 --- doesn't matter
 #rcost 1
-#weapon 909 -- choppa
+#weapon "Choppa" -- choppa
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #mountainsurvival
@@ -15875,10 +15877,10 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #slave
 #patrolbonus -1
 #montag 1023
-#armor 291 -- Muzzle
-#armor 270 -- Gutplate
+#armor "Iron Muzzle" -- Muzzle
+#armor "Gutplate"
 #weapon 13 -- one handed hammer
-#weapon 930 -- ogre smash
+#weapon "Ogre Smash"
 #maxage 60
 #mountainsurvival
 #wastesurvival
@@ -15913,7 +15915,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #firstshape -1023
 #deathrec 1
 #startage 15
-#weapon 916 -- Varies
+#weapon "Varies" -- Varies
 #end
 
 ----- Slave contract -- not at fort
@@ -15941,7 +15943,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #monpresentrec 8128 -- chaos dwarf slaver
 #deathrec 1
 #startage 15
-#weapon 916 -- Varies
+#weapon "Varies" -- Varies
 #end
 
 
@@ -15969,7 +15971,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rpcost 1
 #rcost 1
 #weapon 9 -- dagger
-#weapon 939 -- flung scrap
+#weapon "Flung Scrap" -- flung scrap
 #maxage 20
 #darkvision 50
 #mountainsurvival
@@ -16070,10 +16072,10 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 40
 #rpcost 35 --- They need to have order scales
 #rcost 1
-#armor 292 -- immortal gold plate
+#armor "Golden Immortal Plate" -- immortal gold plate
 #armor 213 -- golden helmet
 #armor 3 -- kite shield
-#weapon 907 -- mastercrafted axe
+#weapon "Mastercrafted Axe" -- mastercrafted axe
 #maxage 500
 #startage 250
 #mountainsurvival
@@ -16114,7 +16116,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #armor "Half Helmet"
 #armor 12 -- scale mail hauberk
 #weapon 308 -- glaive
-#weapon 905 -- flames of hashut
+#weapon "Flames of Hashut" -- flames of hashut
 #maxage 600
 #startage 150
 #mountainsurvival
@@ -16229,7 +16231,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 1
 #weapon 10 -- falchion
 #weapon 23 -- normal short bow
-#weapon 908 -- Wolf Bite
+#weapon "Wolf Bite" -- Wolf Bite
 #armor 2 -- basic shield
 #armor 20 -- iron cap
 #armor 11 -- ring mail hauberk
@@ -16264,8 +16266,8 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #gcost 40 --- normal assassin price -20 for being terrible
 #rpcost 1 --- normal
 #rcost 1
-#weapon 915 -- gitknife
-#weapon 915 -- gitknife
+#weapon "Gitknife" -- gitknife
+#weapon "Gitknife" -- gitknife
 #ambidextrous 2
 #armor 119 -- reinforced leather cap
 #armor 10 -- leather hauberk
@@ -16301,7 +16303,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 1
 #armor 150 -- bone helmet
 #armor 7 -- scale mail cuirass
-#weapon 904 -- slaver whip
+#weapon "Slaver's Whip" -- slaver whip
 #maxage 500
 #startage 200
 #mountainsurvival
@@ -16386,7 +16388,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 12 -- golden scale mail doesn't have an rcost
 #armor "Full Helmet"
 #armor 196 -- golden scale mail
-#weapon 914 -- forge axe
+#weapon "Forge Axe" -- forge axe
 #maxage 500
 #startage 400
 #mountainsurvival
@@ -16423,8 +16425,8 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rpcost 1 --- normal for military commander
 #rcost 1
 #armor "Shield"
-#armor 290 -- infernal full plate
-#weapon 906 -- chaos dwarf axe
+#armor "Infernal Full Plate" -- infernal full plate
+#weapon "Chaos Dwarf Axe" -- chaos dwarf axe
 #maxage 500
 #startage 300
 #mountainsurvival
@@ -16509,7 +16511,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 1
 #armor "Half Helmet"
 #armor 17 -- full scale mail
-#weapon 903 -- forge hammer
+#weapon "Forge Hammer" -- forge hammer
 #maxage 500
 #startage 300
 #mountainsurvival
@@ -16687,7 +16689,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #ap 8 --- move 3
 #armor "Half Helmet"
 #armor 17 -- full scale mail
-#weapon 903 -- forge hammer
+#weapon "Forge Hammer" -- forge hammer
 #maxage 500
 #startage 300
 #mountainsurvival

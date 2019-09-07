@@ -67,6 +67,16 @@ To-Do
 -- Remove priest levels from Slaanesh sorc line
 -- Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
 
+Version 1.5:
+-- Removed numbers from all weapons + armor unless necessary to improve compatibility
+-- Added Chaos Spear for the Tzeentch chaos lord, seemed OP with a daemonic weapon
+-- Removed Auro of Nurgle from their more powerful Beastmen
+-- Fixed Bile Troll's Rusted Cleaver
+-- Nerfs to Furies - strength 10 -> 9
+-- Seeker def decreased by 1, spell summmons 3 for 18 slaves instead of 4 for 28, B2
+-- Fiend def increased by from 17 to 18, speed decreased from 30 to 26
+-- Minor buffs to mapmove on Slaaneshi steeds, generally 24 -> 26
+
 Version 1.4:
 -- Added Chaos Dwarfs!
 --  Changed in-game name to "Chaos Dwarfs"
