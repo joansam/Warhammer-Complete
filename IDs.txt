@@ -37,7 +37,6 @@ Chaos Dwarfs: 81(00-10,18,22-38)
 Weapons : 
 Bretonnia: 1022-33 / 1040
 Dark Elves: 1170-88
-Khazad: 842-60 / 916-26
 Empire: 776-802
 High Elves: 1001-24 (except 1012)
 Khorne: 1301-10
@@ -53,6 +52,7 @@ Ogre Kingdoms: 927-50 (36-8 free)
 Nurgle: 1748-71 (1754 free)
 Slaanesh: 1851-66
 Tzeentch: 1869-8
+Khazad: 842-60 / 916-26
 
 Armors : 
 Bretonnia : 336-339
