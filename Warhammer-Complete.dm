@@ -17591,7 +17591,7 @@ Still to do
 #rcost 1
 #magic
 #armornegating
-#secondaryeffect 194 --"Soulslay"
+#secondaryeffect "Soulslay"
 #slash
 #end
 
