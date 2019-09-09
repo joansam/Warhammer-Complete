@@ -5055,7 +5055,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #montag 7777
 #end
 
-#newmonster 4799 -- Spawn #2
+#newmonster 8139 -- Spawn #2
 #descr "A mortal who is visited by too many of Tzeentch's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
 #copystats 4805
 #copyspr 4805
