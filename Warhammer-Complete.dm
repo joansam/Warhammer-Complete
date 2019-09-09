@@ -1,4 +1,4 @@
-s#modname "Warhammer Complete"
+#modname "Warhammer Complete"
 #description "5 Warhammer nations - Skaven, Lizardmen, and 3 Chaos nations."
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
@@ -4232,7 +4232,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
-#gcost 9980
+#gcost 9080
 #ap 25
 #mapmove 24
 #hp 22
@@ -4304,7 +4304,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #coldres 5
 #weapon 1869 -- Aura
 #weapon "Chaos Fire"
-#weapon "Daemonic Halberd"
+#weapon "Halberd of Tzeentch"
 #armor "Full Helmet"
 #armor 801
 #armor "Shield"
@@ -11128,6 +11128,7 @@ still to do
 #damage 5509
 #nreff 7
 #onlygeosrc 16 -- mountain
+#onlygeosrc 32
 #end
 
 
@@ -12181,7 +12182,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 14
 #ap 15
 #gcost 8
 #rpcost 5
@@ -12190,7 +12191,7 @@ Still to do
 #armor "Iron cap"
 #weapon "Falchion"
 #armor "Shield"
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -12217,7 +12218,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 14
 #ap 15
 #gcost 7
 #rpcost 5
@@ -12226,7 +12227,7 @@ Still to do
 #armor "Iron cap"
 #weapon "Spear"
 #armor "Shield"
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -12252,14 +12253,14 @@ Still to do
 #att 8
 #def 9
 #prec 8
-#mapmove 1
+#mapmove 10
 #ap 15
 #gcost 3
 #rpcost 5
 #rcost 1
 #armor "Leather Cuirass"
 #weapon "Club"
-#poisonres 1
+#poisonres 3
 #stealthy 0
 #maxage 30
 #nametype 187
@@ -12287,7 +12288,7 @@ Still to do
 #att 11
 #def 12
 #prec 9
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 11
 #rpcost 9
@@ -12295,7 +12296,7 @@ Still to do
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
 #weapon "Glaive"
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -12323,7 +12324,7 @@ Still to do
 #att 10
 #def 12
 #prec 10
-#mapmove 2
+#mapmove 18
 #ap 16
 #gcost 9
 #rpcost 9
@@ -12332,7 +12333,7 @@ Still to do
 #armor "Leather Cap"
 #weapon "Short Sword"
 #weapon "Net"
-#poisonres 1
+#poisonres 8
 #stealthy 10
 #maxage 30
 #siegebonus 1
@@ -12361,7 +12362,7 @@ Still to do
 #att 12
 #def 13
 #prec 11
-#mapmove 2
+#mapmove 18
 #ap 16
 #gcost 20
 #rpcost 18
@@ -12372,7 +12373,7 @@ Still to do
 #weapon "Gutter Blade"
 #weapon "Eshin Shuriken"
 #ambidextrous 2
-#poisonres 2
+#poisonres 8
 #stealthy 20
 #maxage 30
 #siegebonus 3
@@ -12400,7 +12401,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 8
 #rpcost 5
@@ -12409,7 +12410,7 @@ Still to do
 #weapon 879
 #armor "Robes"
 #armor "Leather cap"
-#poisonres 3
+#poisonres 13
 #stealthy 0
 #maxage 30
 #berserk 1
@@ -12439,7 +12440,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 30
 #rpcost 9
@@ -12448,7 +12449,7 @@ Still to do
 #weapon 879
 #armor "Robes"
 #armor "Leather cap"
-#poisonres 3
+#poisonres 26
 #stealthy 0
 #maxage 30
 #berserk 3
@@ -12478,7 +12479,7 @@ Still to do
 #att 12
 #def 13
 #prec 10
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 20
 #rpcost 18
@@ -12487,7 +12488,7 @@ Still to do
 #armor "Half Helmet"
 #weapon "glaive"
 #holy
-#poisonres 1
+#poisonres 13
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -12516,13 +12517,13 @@ Still to do
 #att 10
 #def 12
 #prec 4
-#mapmove 2
+#mapmove 16
 #ap 17
 #gcost 1
 #rpcost 1
 #rcost 1
 #weapon 20 -- basic bite
-#poisonres 2
+#poisonres 3
 #stealthy 0
 #maxage 16
 #animal
@@ -12551,7 +12552,7 @@ Still to do
 #att 10
 #def 11
 #prec 7
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 22
 #rpcost 9
@@ -12560,7 +12561,7 @@ Still to do
 #armor "Full Helmet"
 #weapon "Short Sword"
 #weapon 888
-#poisonres 3
+#poisonres 13
 #stealthy 0
 #maxage 30
 #siegebonus 2
@@ -12586,7 +12587,7 @@ Still to do
 #att 11
 #def 11
 #prec 6
-#mapmove 2
+#mapmove 12
 #ap 25
 #gcost 0
 #rpcost 5
@@ -12625,7 +12626,7 @@ Still to do
 #att 11
 #def 11
 #prec 4
-#mapmove 2
+#mapmove 12
 #ap 17
 #gcost 5
 #rpcost 5
@@ -12633,7 +12634,7 @@ Still to do
 #weapon 20 -- basic bite
 #weapon 29 -- basic claw
 #ambidextrous 2
-#poisonres 2
+#poisonres 5
 #stealthy 0
 #maxage 20
 #nametype 187
@@ -12661,7 +12662,7 @@ Still to do
 #att 10
 #def 11
 #prec 5
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 35
 #rpcost 5
@@ -12671,8 +12672,8 @@ Still to do
 #weapon "Short Sword"
 #weapon 225 -- fire breath 15ap aoe1 nostr
 --weapon 891 -- warpfire thrower
-#fireres 5
-#poisonres 1
+#fireres 10
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 5
@@ -12700,13 +12701,13 @@ Still to do
 #att 9
 #def 11
 #prec 4
-#mapmove 2
+#mapmove 16
 #ap 17
 #gcost 4
 #rpcost 5
 #rcost 1
 #weapon "Plague Bite"
-#poisonres 3
+#poisonres 13
 #stealthy 0
 #maxage 16
 #animal
@@ -12735,7 +12736,7 @@ Still to do
 #att 10
 #def 11
 #prec 6
-#mapmove 2
+#mapmove 20
 #ap 15
 #gcost 40
 #rpcost 5
@@ -12745,7 +12746,7 @@ Still to do
 #weapon "Warp Blade"
 #weapon "Warplightning Thrower"
 #shockres 10
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #nametype 187
@@ -12771,7 +12772,7 @@ Still to do
 #att 10
 #def 12
 #prec 7
-#mapmove 3
+#mapmove 20
 #ap 25
 #gcost 55
 #rpcost 5
@@ -12784,6 +12785,7 @@ Still to do
 #weapon 883
 #weapon 884
 #weapon 885
+#fireres 5
 #shockres 25
 #poisonres 1
 #maxage 30
@@ -12810,13 +12812,13 @@ Still to do
 #att 10
 #def 11
 #prec 4
-#mapmove 2
+#mapmove 14
 #ap 23
 #gcost 1
 #rpcost 5
 #rcost 1
 #weapon 20 -- basic bite
-#poisonres 2
+#poisonres 3
 #stealthy 0
 #maxage 16
 #animal
@@ -12844,7 +12846,7 @@ Still to do
 #att 10
 #def 11
 #prec 6
-#mapmove 1
+#mapmove 12
 #ap 12
 #gcost 40
 #rpcost 5
@@ -12854,7 +12856,8 @@ Still to do
 #armor "Whirling Blades"
 #weapon "Whirling Blades"
 #shockres 5
-#poisonres 1
+#fireres 5
+#poisonres 5
 #stealthy 0
 #maxage 30
 #nametype 187
@@ -12886,7 +12889,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 20
 #ap 15
 #gcost 15
 #rpcost 1
@@ -12895,7 +12898,7 @@ Still to do
 #armor "Iron cap"
 #weapon "Spear"
 #armor "Shield"
-#poisonres 1
+#poisonres 5
 #stealthy 10
 #maxage 30
 #noleader
@@ -12922,7 +12925,7 @@ Still to do
 #att 12
 #def 13
 #prec 10
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 30
 #rpcost 1
@@ -12930,7 +12933,7 @@ Still to do
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
 #weapon "Glaive"
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -12961,7 +12964,7 @@ Still to do
 #att 13
 #def 14
 #prec 9
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 60
 #rpcost 2
@@ -12971,7 +12974,7 @@ Still to do
 #weapon "falchion"
 #weapon "falchion"
 #ambidextrous 3
-#poisonres 1
+#poisonres 5
 #stealthy 0
 #maxage 30
 #siegebonus 3
@@ -13001,7 +13004,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 50
 #rpcost 1
@@ -13010,7 +13013,7 @@ Still to do
 #weapon "Moulder Whip"
 #armor "Ring Mail Cuirass"
 #armor "Leather Cap"
-#poisonres 1
+#poisonres 8
 #stealthy 0
 #maxage 30
 #siegebonus 1
@@ -13045,7 +13048,7 @@ Still to do
 #att 14
 #def 16
 #prec 13
-#mapmove 2
+#mapmove 22
 #ap 17
 #gcost 90
 #rcost 1
@@ -13056,7 +13059,7 @@ Still to do
 #weapon "Weeping Blade"
 #weapon "Weeping Blade"
 #ambidextrous 6
-#poisonres 3
+#poisonres 13
 #stealthy 30
 #assassin
 #patience 3
@@ -13087,7 +13090,7 @@ Still to do
 #att 10
 #def 11
 #prec 8
-#mapmove 2
+#mapmove 14
 #ap 15
 #gcost 65
 #rpcost 2
@@ -13096,7 +13099,7 @@ Still to do
 #weapon 879
 #armor "Robes"
 #armor "Leather cap"
-#poisonres 3
+#poisonres 13
 #stealthy 0
 #maxage 50
 #older -10
@@ -13131,7 +13134,7 @@ Still to do
 #att 12
 #def 12
 #prec 8
-#mapmove 2
+#mapmove 16
 #ap 13
 #gcost 160
 #rpcost 2
@@ -13142,7 +13145,7 @@ Still to do
 #armor "Leather cap"
 #ambidextrous 4
 #weapon 879
-#poisonres 3
+#poisonres 26
 #stealthy 0
 #berserk 3
 #magicskill 8 2
@@ -13179,7 +13182,7 @@ Still to do
 #att 9
 #def 10
 #prec 8
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 110
 #rpcost 2
@@ -13187,7 +13190,7 @@ Still to do
 #armor "Leather Hauberk"
 #armor "Iron cap"
 #weapon "Warp Blade"
-#poisonres 1
+#poisonres 5
 #shockres 5
 #stealthy 0
 #maxage 35
@@ -13220,7 +13223,7 @@ Still to do
 #att 10
 #def 11
 #prec 9
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 220
 #rpcost 2
@@ -13228,7 +13231,7 @@ Still to do
 #armor "Ring mail Cuirass"
 #armor "Full helmet"
 #weapon "Warp Halberd"
-#poisonres 1
+#poisonres 5
 #shockres 10
 #stealthy 0
 #maxage 45
@@ -13267,13 +13270,13 @@ Still to do
 #att 11
 #def 12
 #prec 10
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 313
 #rcost 1
 #rpcost 4
 #weapon "quarterstaff"
-#poisonres 1
+#poisonres 8
 #stealthy 15
 #maxage 95
 #older -25
@@ -13311,14 +13314,14 @@ Still to do
 #att 13
 #def 13
 #prec 8
-#mapmove 2
+#mapmove 16
 #ap 15
 #gcost 150
 #rpcost 2
 #rcost 1
 #armor "Scale mail cuirass"
 #weapon "Creature Killer"
-#poisonres 2
+#poisonres 8
 #stealthy 0
 #maxage 45
 #siegebonus 1
@@ -13352,14 +13355,14 @@ Still to do
 #att 11
 #def 12
 #prec 12
-#mapmove 1
+#mapmove 10
 #ap 5
 #gcost 1
 #rpcost 1
 #rcost 1
 #mounted
 #weapon "falchion"
-#poisonres 1
+#poisonres 13
 #maxage 125
 #older -70
 #magicskill 5 3
@@ -13399,7 +13402,7 @@ Still to do
 #att 16
 #def 18
 #prec 13
-#mapmove 3
+#mapmove 22
 #ap 20
 #gcost 1
 #rpcost 1
@@ -13407,7 +13410,7 @@ Still to do
 #weapon "Doom Glaive"
 #weapon "Hoof"
 #neednoteat
-#poisonres 3
+#poisonres 26
 #demon
 #stealthy 10
 #magicskill 5 3
@@ -13443,14 +13446,14 @@ Still to do
 #att 11
 #def 11
 #prec 11
-#mapmove 1
+#mapmove 13
 #ap 6
 #gcost 1
 #rpcost 1
 #rcost 1
 #mounted
 #weapon "Plague Scepter"
-#poisonres 3
+#poisonres 39
 #poisoncloud 13
 #maxage 125
 #older -90
@@ -13490,7 +13493,7 @@ Still to do
 #att 15
 #def 15
 #prec 11
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 1
 #rcost 1
@@ -13499,7 +13502,7 @@ Still to do
 #weapon "The Gouger"
 #weapon "Dwarf Slayer"
 #ambidextrous 8
-#poisonres 1
+#poisonres 13
 #stealthy 0
 #maxage 50
 #older -26
@@ -13530,7 +13533,7 @@ Still to do
 #att 17
 #def 19
 #prec 16
-#mapmove 2
+#mapmove 24
 #ap 19
 #gcost 1
 #rcost 1
@@ -13541,7 +13544,7 @@ Still to do
 #weapon "Weeping Blade"
 #weapon "Eshin Shuriken"
 #ambidextrous 10
-#poisonres 3
+#poisonres 26
 #stealthy 40
 #assassin
 #patience 8
@@ -13577,7 +13580,7 @@ Still to do
 #att 14
 #def 14
 #prec 9
-#mapmove 2
+#mapmove 18
 #ap 12
 #gcost 1
 #rcost 1
@@ -13627,7 +13630,7 @@ Still to do
 #att 12
 #def 10
 #prec 8
-#mapmove 2
+#mapmove 17
 #ap 16
 #gcost 1
 #rcost 1
@@ -13638,7 +13641,7 @@ Still to do
 --weapon 891 -- warpfire thrower
 #ambidextrous 8
 #stealthy 0
-#poisonres 2
+#poisonres 13
 #fireres 5
 #shockres 5
 #nametype 187
@@ -13667,14 +13670,14 @@ Still to do
 #att 10
 #def 16
 #prec 12
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 1
 #rcost 1
 #weapon "Staff of the Horned One"
 #weapon "Falchion"
 #ambidextrous 8
-#poisonres 3
+#poisonres 13
 #stealthy 20
 #maxage 140
 #older -120
@@ -13712,7 +13715,7 @@ Still to do
 #att 11
 #def 12
 #prec 11
-#mapmove 2
+#mapmove 20
 #ap 12
 #gcost 1
 #rcost 1
@@ -13720,7 +13723,8 @@ Still to do
 #armor "Full helmet"
 #weapon "Storm Daemon"
 #weapon "Mechanical Claw"
-#poisonres 1
+#poisonres 26
+#fireres 5
 #shockres 10
 #stealthy 0
 #maxage 120
@@ -13762,7 +13766,7 @@ Still to do
 #att 14
 #def 13
 #prec 9
-#mapmove 2
+#mapmove 16
 #ap 16
 #gcost 1
 #rcost 1
@@ -13772,7 +13776,7 @@ Still to do
 #weapon "Dominator Whip"
 #weapon "Creature Killer"
 #summon1 5553
-#poisonres 3
+#poisonres 26
 #stealthy 0
 #maxage 300
 #older -60
@@ -13813,7 +13817,7 @@ Still to do
 #att 13
 #def 15
 #prec 9
-#mapmove 2
+#mapmove 20
 #ap 16
 #gcost 1
 #rcost 1
@@ -13823,7 +13827,7 @@ Still to do
 #makemonsters4 5549 -- giant rat
 #makemonsters3 5549 -- giant rat
 #makemonsters1 5549 -- giant rat
-#poisonres 3
+#poisonres 13
 #stealthy 0
 #maxage 70
 #siegebonus 15
@@ -13862,7 +13866,7 @@ Still to do
 #att 13
 #def 18
 #prec 10
-#mapmove 2
+#mapmove 15
 #ap 15
 #gcost 1
 #rcost 1
@@ -13871,7 +13875,7 @@ Still to do
 #weapon "Falchion"
 #weapon "Falchion"
 #weapon "Shortsword"
-#poisonres 1
+#poisonres 8
 #stealthy 35
 #maxage 66
 #older -10
@@ -13915,11 +13919,11 @@ Still to do
 #amphibian
 #fireres 15
 #coldres 15
-#poisonres 25
+#poisonres 52
 #shockres 15
 #slashres
 #pierceres
-#slashres
+#bluntres
 #inanimate
 #expertleader
 #neednoteat
@@ -13964,12 +13968,12 @@ Still to do
 #att 12
 #def 13
 #prec 10
-#mapmove 2
+#mapmove 18
 #ap 15
 #gcost 9990
 #rcost 1
 #weapon "falchion"
-#poisonres 1
+#poisonres 13
 #stealthy 0
 #magicskill 5 1
 #magicskill 4 1
@@ -14003,7 +14007,7 @@ Still to do
 #att 16
 #def 16
 #prec 13
-#mapmove 3
+#mapmove 22
 #ap 20
 #gcost 9990
 #rcost 1
@@ -14011,7 +14015,7 @@ Still to do
 #weapon 42
 #weapon "Hoof"
 #neednoteat
-#poisonres 15
+#poisonres 26
 #demon
 #stealthy 10
 #magicskill 5 1
@@ -14047,7 +14051,7 @@ Still to do
 #att 14
 #def 14
 #prec 11
-#mapmove 3
+#mapmove 26
 #ap 20
 #gcost 9990
 #rcost 1
@@ -14243,7 +14247,7 @@ Still to do
 #effect 10001
 #fatiguecost 200
 #damage 5554
-#nreff 1
+#nreff 501
 #end
 
 
@@ -14262,7 +14266,7 @@ Still to do
 #effect 10001
 #fatiguecost 300
 #damage 5557
-#nreff 1
+#nreff 501
 #end
 
 
@@ -14282,7 +14286,7 @@ Still to do
 #effect 10001
 #fatiguecost 300
 #damage 5583
-#nreff 1
+#nreff 501
 #end
 
 
@@ -17591,7 +17595,7 @@ Still to do
 #rcost 1
 #magic
 #armornegating
-#secondaryeffect 194 --"Soulslay"
+#secondaryeffect 194 —- “Soulslay"
 #slash
 #end
 
