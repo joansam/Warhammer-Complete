@@ -3363,7 +3363,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 
 
-#newweapon 1872
+#newweapon 
 #name "Chaos Fire"
 #nostr
 #armorpiercing
@@ -3379,7 +3379,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 1873
+#newweapon 
 #name "Lightning of Tzeentch"
 #att 0
 #ammo 20
@@ -3394,7 +3394,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 1874
+#newweapon 
 #name "Flames of Tzeentch"
 #nostr
 #armorpiercing
@@ -3411,7 +3411,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 1875
+#newweapon 
 #name "Chaotic Fire"
 #nostr
 #armorpiercing
@@ -3426,7 +3426,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 1877
+#newweapon 
 #name "Windblade"
 #dmg 12
 #nratt 3
@@ -3440,7 +3440,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1878
+#newweapon 
 #name "Breath of Change"
 #dmg 999
 #magic
@@ -3457,7 +3457,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 1879
+#newweapon 
 #name "Melekh's halberd"
 #dmg 11
 #att -1
@@ -3470,7 +3470,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #slash
 #end
 
-#newweapon 1880
+#newweapon 
 #name "Thomin's Sword"
 #dmg 12
 #magic
@@ -3482,7 +3482,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1881
+#newweapon 1881 -- KEEP THIS ID #
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -11869,18 +11869,6 @@ Still to do
 #end
 
 
-#newweapon 869 -- KEEP ID #
-#name "Warplightning strike"
-#dmg 8
-#armornegating
-#att 0
-#def 0
-#nostr
-#shock
-#explspr 10247 -- lightning
-#end
-
-
 #newweapon
 #name "Plague Bite" -- Doesn't seem to be used by anything, ID was 870
 #dmg 0
@@ -12036,6 +12024,16 @@ Still to do
 #magic
 #end
 
+#newweapon 869 -- KEEP ID #
+#name "Warplightning strike"
+#dmg 8
+#armornegating
+#att 0
+#def 0
+#nostr
+#shock
+#explspr 10247 -- lightning
+#end
 
 #newweapon
 #name "Warplightning Thrower"
@@ -12784,9 +12782,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon "Doomwheel Warplightning"
-#weapon 884
-#weapon 885
+#weapon 883 -- Doomwheel Warplightning # 1 
+#weapon 884 -- Doomwheel Warplightning # 2
+#weapon 885 -- Doomwheel Warplightning # 3 
 #fireres 5
 #shockres 25
 #poisonres 1
