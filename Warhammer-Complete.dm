@@ -1,4 +1,4 @@
-#modname "Warhammer Complete"
+#modname "Warhammer Complete Domingled"
 #description "5 Warhammer nations - Skaven, Lizardmen, and 3 Chaos nations."
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
@@ -198,7 +198,6 @@
 -- Version 0.85 - Added W based versions of blessings to match the other warhosts. Acquiescence was doing nothing, now it should function properly. Noticed that Slaangor had Tzaangor in its description, as well as the wrong weapon stated in it. Upped Chosen Lord's and Styrkaar's MR to Lord of Slaanesh's level. Foreignrec Cultist can now sail. #undcommand 5 to Chieftain. Added Icon of Slaanesh, which gives Cultists one extra point of holy (#restricteditem was fixed!). Added a new spell, Banquet of Slaanesh, which is basically a Slaaneshi version of the Nurgle spell, Consecration of Nurgle. Lowered Daemonettes to research level 3. Warriors are now 20gp. Lower prices on Sorcerers, removed their magic/undead leadership, lowered regular leaderships, gave a research bonus. Removed lots of autocalced prices to keep them what I want with changes. Removed Forest Survivals from most mortal followers of Slaanesh to accomodate for massive cost changes to Beastmen (also removed StR). Removed secondary paths from the
 -- freshly added Blessings which were stopping people with just W from casting them! Inept researcher to Champs, Exalted Champs and Lords. Changes to Spawn of Slaanesh (became more similar to other Spawns, also changed #fear to more national #awe). Slight edits to #summary. Small typo fixes here and there. Made #foreignrec Marauders #coldrec. Reclimits on Chosen uplifted (Sacred is enough limit). Itemized Chaos Armor given to all commanders that had it. Champs and Exalted Champs now have #xpshape. Changed Sorc Lord Pretender's slots. Added a morale bonus to Chaos Armor. Sigvald received his own elite bodyguards as #batstartsum. Removed magical leadership from everything.
 
--- Version 0.80 - Jumped versions a little, and started adding version numbers to .dm file. Added "MA" to #modname. Fixed a sprite. Added #color and #secondarycolor. Added start/maxages for Cultists (which is now in the other mods; forgot to add). Gave Sigvald the Aura of Slaanesh. Added slash to Scythetalon and made it armorpiercing. I had left #rcost 20 on the Lord of Slaanesh (highly unintentional), which bumped the rcost to 42. Increased #rcosts on higher-end Beastmen. Fixed several problems pointed out by Dominions 4 Mod Editor. Lowered Slicing Shards' precision to 1, lowered its damage to 15 and increased its fatigue cost to 40. Lowered Sorcerer Lord Pretender's #maxage to 10000, which is still incredibly high. Changes to Spawn of Slaanesh's attacks, also slight alteration to its desc.
 
 -- Version 0.75 - First release of the mod. Using freshly made assets as well as altered Tzeentch/Nurgle warhost assets and a slightly altered sprite from Chaos Undivided by Sombre (the Keeper of Secrets, shading and nicer differences in the attack sprite) and the usual altered Chaos Undivided .dm. Built Dechala on the Dechala for Chaos Undivided that Noble713 (from the Shrapnel forums) made. Starting at such a high version due to it not being likely that I would release 100 releases... Not that it's likely there will be 25, either, but it sounds nicer, and is more in line with the other mods.
 
@@ -515,7 +514,7 @@
 #magic
 #rcost 0
 #slash
-#secondaryeffect 1769
+#secondaryeffect 1910
 #sound 8
 #end
 
@@ -533,7 +532,7 @@
 #end
 
 #newweapon
-#copyweapon 1766 -- "Aura of Nurgle"
+#copyweapon 1908 -- "Aura of Nurgle"
 #name "Greater Aura of Nurgle"
 #aoe 8
 #end
@@ -546,7 +545,7 @@
 #len 1
 #magic
 #slash
-#secondaryeffect 1769
+#secondaryeffect 1910
 #sound 8
 #rcost 3
 #end
@@ -559,7 +558,7 @@
 #len 2
 #magic
 #slash
-#secondaryeffect 1769
+#secondaryeffect 1910
 #sound 8
 #rcost 5
 #nratt 3
@@ -636,7 +635,7 @@
 #magicarmor
 #end
 
-#newweapon 1766 -- KEEP ID #
+#newweapon 1908 -- KEEP ID #
 #copyweapon 143 -- Disease
 #name "Aura of Nurgle"
 #mrnegateseasily
@@ -653,7 +652,7 @@
 #dmg 4
 #ammo 4
 #armornegating
-#secondaryeffect 1768
+#secondaryeffect 1909
 #hardmrneg
 #acid
 #end
@@ -668,7 +667,7 @@
 #range -1
 #aoe 1
 #armornegating
-#secondaryeffect 1769
+#secondaryeffect 1910
 #hardmrneg
 #nratt -2
 #end
@@ -681,11 +680,11 @@
 #def -1
 #len 0
 #bonus
-#secondaryeffect 1765
+#secondaryeffect 1907
 #natural
 #end
 
-#newweapon 1765 -- KEEP ID #
+#newweapon 1907 -- KEEP ID #
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -718,11 +717,11 @@
 #magic
 #rcost 3
 #sound 8
-#secondaryeffect 1768
+#secondaryeffect 1909
 #slash
 #end
 
-#newweapon 1768 -- KEEP ID #
+#newweapon 1909 -- KEEP ID #
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -734,7 +733,7 @@
 #secondaryeffect 414
 #end
 
-#newweapon 1769 -- KEEP ID #
+#newweapon 1910 -- KEEP ID #
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -781,7 +780,7 @@
 
 -- Warhound (all)
 
-#newmonster 4150
+#newmonster 7605
 #snow
 #spr1 "./Warhammer-Complete/warhound1KR.tga"
 #spr2 "./Warhammer-Complete/warhound2KR.tga"
@@ -817,7 +816,7 @@
 
 -- Marauder of Slaanesh #1
 
-#newmonster 4151
+#newmonster 7606
 #snow
 #spr1 "./Warhammer-Complete/marauder_axe_1.tga"
 #spr2 "./Warhammer-Complete/marauder_axe_2.tga"
@@ -850,7 +849,7 @@
 
 -- Marauder of Slaanesh #2
 
-#newmonster 4152
+#newmonster 7607
 #snow
 #spr1 "./Warhammer-Complete/marauder_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_2SL.tga"
@@ -883,7 +882,7 @@
 
 -- Chaos Marauder Horseman
 
-#newmonster 4153
+#newmonster 7608
 #snow
 #spr1 "./Warhammer-Complete/marauder_horseman_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_horseman_2SL.tga"
@@ -919,7 +918,7 @@
 
 -- Warrior of Slaanesh #1
 
-#newmonster 4154
+#newmonster 7609
 #snow
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_hammer_2.tga"
@@ -954,7 +953,7 @@
 
 -- Warrior of Slaanesh #2
 
-#newmonster 4155
+#newmonster 7610
 #snow
 #spr1 "./Warhammer-Complete/Warrior_of_Slaanesh_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Slaanesh_2.tga"
@@ -989,7 +988,7 @@
 
 -- Knight of Slaanesh
 
-#newmonster 4156
+#newmonster 7611
 #snow
 #spr1 "./Warhammer-Complete/chaosknight_1SL.tga"
 #spr2 "./Warhammer-Complete/chaosknight_2SL.tga"
@@ -1029,7 +1028,7 @@
 
 -- Standard Bearer
 
-#newmonster 4157
+#newmonster 7612
 #snow
 #spr1 "./Warhammer-Complete/standard_bearer_1SL.tga"
 #spr2 "./Warhammer-Complete/standard_bearer_2SL.tga"
@@ -1064,7 +1063,7 @@
 
 -- Chosen of Slaanesh #1
 
-#newmonster 4158
+#newmonster 7613
 #snow
 #spr1 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Slaanesh_morningstar_2.tga"
@@ -1100,7 +1099,7 @@
 
 -- Chosen of Slaanesh #2
 
-#newmonster 4159
+#newmonster 7614
 #spr1 "./Warhammer-Complete/Chosen_Slaanesh_sword_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Slaanesh_sword_2.tga"
 #name "Chosen"
@@ -1138,7 +1137,7 @@
 
 -- Minotaur of Slaanesh
 
-#newmonster 4161
+#newmonster 7616
 #spr1 "./Warhammer-Complete/slaan_minotaur_1.tga"
 #spr2 "./Warhammer-Complete/slaan_minotaur_2.tga"
 #name "Minotaur of Slaanesh"
@@ -1176,7 +1175,7 @@
 
 -- Slaangor
 
-#newmonster 4162
+#newmonster 7617
 #spr1 "./Warhammer-Complete/slaangor_1.tga"
 #spr2 "./Warhammer-Complete/slaangor_2.tga"
 #name "Slaangor"
@@ -1211,7 +1210,7 @@
 
 -- Gor of Slaanesh
 
-#newmonster 4163
+#newmonster 7618
 #spr1 "./Warhammer-Complete/gor_1SL.tga"
 #spr2 "./Warhammer-Complete/gor_2SL.tga"
 #name "Gor"
@@ -1245,7 +1244,7 @@
 
 -- Ungor of Slaanesh
 
-#newmonster 4164
+#newmonster 7619
 #spr1 "./Warhammer-Complete/ungor_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_2SL.tga"
 #name "Ungor"
@@ -1279,7 +1278,7 @@
 
 -- Ungor Raider
 
-#newmonster 4165
+#newmonster 7620
 #spr1 "./Warhammer-Complete/ungor_raider_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_2SL.tga"
 #name "Ungor Raider"
@@ -1313,7 +1312,7 @@
 
 -- Forsaken
 
-#newmonster 4166
+#newmonster 7621
 #spr1 "./Warhammer-Complete/forsaken_1SL.tga"
 #spr2 "./Warhammer-Complete/forsaken_2SL.tga"
 #name "Forsaken"
@@ -1353,7 +1352,7 @@
 
 -- Slaanesh Cultist
 
-#newmonster 4160
+#newmonster 7615
 #spr1 "./Warhammer-Complete/slaanesh_cultist_1.tga"
 #spr2 "./Warhammer-Complete/slaanesh_cultist_2.tga"
 #name "Cultist"
@@ -1392,7 +1391,7 @@
 
 -- Forsaken Champion
 
-#newmonster 4167
+#newmonster 7622
 #spr1 "./Warhammer-Complete/forsaken_slaanesh_champion_1.tga"
 #spr2 "./Warhammer-Complete/forsaken_slaanesh_champion_2.tga"
 #name "Forsaken Champion"
@@ -1436,7 +1435,7 @@
 
 -- Ungor Raider Halfhorn
 
-#newmonster 4168
+#newmonster 7623
 #spr1 "./Warhammer-Complete/ungor_raider_halfhorn_1SL.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_halfhorn_2SL.tga"
 #name "Ungor Raider Halfhorn"
@@ -1471,7 +1470,7 @@
 
 -- Doombull of Slaanesh (Slaanbull)
 
-#newmonster 4169
+#newmonster 7624
 #spr1 "./Warhammer-Complete/slaanbull_1.tga"
 #spr2 "./Warhammer-Complete/slaanbull_2.tga"
 #name "Slaanbull"
@@ -1513,7 +1512,7 @@
 
 -- Wargor
 
-#newmonster 4170
+#newmonster 7625
 #spr1 "./Warhammer-Complete/wargor_1SL.tga"
 #spr2 "./Warhammer-Complete/wargor_2SL.tga"
 #nametype 109
@@ -1551,7 +1550,7 @@
 
 -- Marauder Chieftain
 
-#newmonster 4171
+#newmonster 7626
 #spr1 "./Warhammer-Complete/marauder_chieftain_1SL.tga"
 #spr2 "./Warhammer-Complete/marauder_chieftain_2SL.tga"
 #name "Marauder Chieftain"
@@ -1591,7 +1590,7 @@
 
 -- Bray-Shaman
 
-#newmonster 4172
+#newmonster 7627
 #spr1 "./Warhammer-Complete/bray-shaman_1SL.tga"
 #spr2 "./Warhammer-Complete/bray-shaman_2SL.tga"
 #name "Bray-Shaman"
@@ -1630,7 +1629,7 @@
 
 -- Sorcerer of Slaanesh
 
-#newmonster 4173
+#newmonster 7628
 #spr1 "./Warhammer-Complete/Slaanesh_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/Slaanesh_sorcerer_2.tga"
 #name "Chaos Sorcerer"
@@ -1666,7 +1665,7 @@
 
 -- Exalted Sorcerer of Slaanesh
 
-#newmonster 4174
+#newmonster 7629
 #spr1 "./Warhammer-Complete/exalted_slaanesh_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/exalted_slaanesh_sorcerer_2.tga"
 #name "Exalted Chaos Sorcerer"
@@ -1705,7 +1704,7 @@
 
 -- Sorcerer Lord
 
-#newmonster 4175
+#newmonster 7630
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_1SL.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2SL.tga"
 #name "Chaos Sorcerer Lord"
@@ -1745,7 +1744,7 @@
 
 -- Chaos Champion (Champion of Slaanesh)
 
-#newmonster 4176
+#newmonster 7631
 #spr1 "./Warhammer-Complete/champion_1SL.tga"
 #spr2 "./Warhammer-Complete/champion_2SL.tga"
 #name "Chaos Champion"
@@ -1784,7 +1783,7 @@
 
 -- Exalted Champion of Slaanesh
 
-#newmonster 4177
+#newmonster 7632
 #spr1 "./Warhammer-Complete/exalted_champion_1.tga"
 #spr2 "./Warhammer-Complete/exalted_champion_2.tga"
 #name "Exalted Chaos Champion"
@@ -1826,7 +1825,7 @@
 
 -- Lord of Slaanesh
 
-#newmonster 4178
+#newmonster 7633
 #spr1 "./Warhammer-Complete/chosen_lord_1.tga" -- Sprite intentional
 #spr2 "./Warhammer-Complete/chosen_lord_2.tga"
 #name "Chaos Lord"
@@ -1864,7 +1863,7 @@
 #goodundeadleader
 #wastesurvival
 #coldres 5
-#prophetshape 4184
+#prophetshape 7639
 #magicskill 7 2
 #magicskill 8 2
 #end
@@ -1873,7 +1872,7 @@
 
 -- Chosen Chaos Lord (of Slaanesh)
 
-#newmonster 4184
+#newmonster 7639
 #spr1 "./Warhammer-Complete/lord_of_slaanesh_1.tga" -- Sprite intentional
 #spr2 "./Warhammer-Complete/lord_of_slaanesh_2.tga"
 #name "Chosen Chaos Lord"
@@ -1918,7 +1917,7 @@
 
 -- Dechala the Denied One
 
-#newmonster 4179
+#newmonster 7634
 #spr1 "./Warhammer-Complete/dechala_1.tga"
 #spr2 "./Warhammer-Complete/dechala_2.tga"
 #name "Denied One"
@@ -1969,7 +1968,7 @@
 
 -- Sigvald the Magnificent
 
-#newmonster 4180
+#newmonster 7635
 #spr1 "./Warhammer-Complete/sigvald_1.tga"
 #spr2 "./Warhammer-Complete/sigvald_2.tga"
 #name "Magnificent"
@@ -2009,7 +2008,7 @@
 #heal
 #wastesurvival
 #snow
-#batstartsum1d6 4193
+#batstartsum1d6 7648
 #prot 15
 #magicpower 1
 #demon
@@ -2019,7 +2018,7 @@
 
 -- Styrkaar
 
-#newmonster 4181
+#newmonster 7636
 #spr1 "./Warhammer-Complete/Styrkaar_1.tga"
 #spr2 "./Warhammer-Complete/Styrkaar_2.tga"
 #name "Chosen Servant of Slaanesh"
@@ -2068,7 +2067,7 @@
 
 -- Azazel the Prince of Damnation
 
-#newmonster 4182
+#newmonster 7637
 #spr1 "./Warhammer-Complete/Azazel_1.tga"
 #spr2 "./Warhammer-Complete/Azazel_2.tga"
 #name "Prince of Damnation"
@@ -2118,7 +2117,7 @@
 
 -- Spawn of Slaanesh
 
-#newmonster 4183
+#newmonster 7638
 #spr1 "./Warhammer-Complete/chaos_spawn_1SL.tga"
 #spr2 "./Warhammer-Complete/chaos_spawn_2SL.tga"
 #name "Spawn of Slaanesh"
@@ -2159,14 +2158,14 @@
 #itemslots 28672
 #magicpower 1
 #demon
-#montag 8888
+#montag 6002
 #end
 
-#newmonster 4196 -- Spawn #2, for Lord ascension with montags, 80% chance of becoming Spawn
-#copystats 4183
+#newmonster 7651 -- Spawn #2, for Lord ascension with montags, 80% chance of becoming Spawn
+#copystats 7638
 #descr "A mortal who is visited by too many of Slaanesh's gifts eventually succumbs to madness and mutation and becomes a Spawn of Slaanesh. To many Northmen this is seen as a great favor, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
-#copyspr 4183
-#montag 8888
+#copyspr 7638
+#montag 6002
 #end
 
 
@@ -2174,7 +2173,7 @@
 
 -- Chaos Fury (Slaanesh)
 
-#newmonster 4189
+#newmonster 7644
 #spr1 "./Warhammer-Complete/Chaosfury_1SL.tga"
 #spr2 "./Warhammer-Complete/Chaosfury_2SL.tga"
 #name "Chaos Fury"
@@ -2208,7 +2207,7 @@
 
 -- Daemonette
 
-#newmonster 4185
+#newmonster 7640
 #spr1 "./Warhammer-Complete/daemonette1.tga"
 #spr2 "./Warhammer-Complete/daemonette2.tga"
 #name "Daemonette"
@@ -2244,7 +2243,7 @@
 
 -- Seeker of Slaanesh
 
-#newmonster 4187
+#newmonster 7642
 #spr1 "./Warhammer-Complete/daemonetteonsteed1.tga"
 #spr2 "./Warhammer-Complete/daemonetteonsteed2.tga"
 #name "Seeker of Slaanesh"
@@ -2283,7 +2282,7 @@
 
 -- Fiend of Slaanesh
 
-#newmonster 4188
+#newmonster 7643
 #spr1 "./Warhammer-Complete/fiend_1.tga"
 #spr2 "./Warhammer-Complete/fiend_2.tga"
 #name "Fiend of Slaanesh"
@@ -2319,7 +2318,7 @@
 
 -- Herald of Slaanesh
 
-#newmonster 4186
+#newmonster 7641
 #spr1 "./Warhammer-Complete/forestamazonianchosen1.tga"
 #spr2 "./Warhammer-Complete/forestamazonianchosen2.tga"
 #name "Herald of Slaanesh"
@@ -2356,7 +2355,7 @@
 #magicskill 7 2
 #magicskill 8 2
 #custommagic 6656 100
-#makemonsters1 4185
+#makemonsters1 7640
 #weapon "Daemonic Whip"
 #weapon "Daemonic Whip"
 #wastesurvival
@@ -2366,7 +2365,7 @@
 
 -- Exalted Daemon of Slaanesh
 
-#newmonster 4192
+#newmonster 7647
 #spr1 "./Warhammer-Complete/exalteddaemon1.tga"
 #spr2 "./Warhammer-Complete/exalteddaemon2.tga"
 #name "Exalted Daemon of Slaanesh"
@@ -2413,7 +2412,7 @@
 
 -- Daemon Princess of Slaanesh
 
-#newmonster 4191
+#newmonster 7646
 #spr1 "./Warhammer-Complete/daemonprincess1.tga"
 #spr2 "./Warhammer-Complete/daemonprincess2.tga"
 #name "Daemon Princess"
@@ -2453,12 +2452,12 @@
 #female
 #magicpower 1
 #weapon "Daemon-Forged Blade"
-#montag 8888
+#montag 6002
 #end
 
 -- Keeper of Secrets
 
-#newmonster 4190
+#newmonster 7645
 #spr1 "./Warhammer-Complete/keeper_of_secrets_1.tga"
 #spr2 "./Warhammer-Complete/keeper_of_secrets_2.tga"
 #name "Keeper of Secrets"
@@ -2505,8 +2504,8 @@
 
 -- Sigvald's bodyguards
 
-#newmonster 4193
-#copystats 4159
+#newmonster 7648
+#copystats 7614
 #spr1 "./Warhammer-Complete/Chosen_Sigvald_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Sigvald_2.tga"
 #name "Sigvald's Chosen"
@@ -2520,7 +2519,7 @@
 -- Sorcerer Lord of Slaanesh
 
 -- Avatar Sorcerer Shape
-#newmonster 4195
+#newmonster 7650
 #nametype 115
 #startdom 1
 #gcost 9980
@@ -2557,7 +2556,7 @@
 
 
 -- Avatar Daemonic shape
-#newmonster 4194
+#newmonster 7649
 #nametype 257
 #startdom 3
 #gcost 10030
@@ -2601,14 +2600,14 @@
 #end
 
 -- REMOVE THIS
-#newmonster 4197
+#newmonster 7652
 #copystats 29 -- Light Infantry
 #copyspr 29
 #descr "dsa"
 #def 20
 #end
 
-#newmonster 4198
+#newmonster 7653
 #copystats 29 -- Light Infantry
 #copyspr 29
 #descr "dsa"
@@ -2636,7 +2635,7 @@
 #pathlevel 0 1
 #fatiguecost 2000
 #effect 10001
-#damage 4185
+#damage 7640
 #nreff 5
 #end
 
@@ -2678,7 +2677,7 @@
 #pathlevel 0 2
 #fatiguecost 1800
 #effect 10001
-#damage 4187
+#damage 7642
 #nreff 3
 #end
 
@@ -2692,7 +2691,7 @@
 #pathlevel 0 3
 #fatiguecost 3000
 #effect 10001
-#damage 4188
+#damage 7643
 #nreff 3
 #end
 
@@ -2706,7 +2705,7 @@
 #pathlevel 0 3
 #fatiguecost 4000
 #effect 10021
-#damage 4186
+#damage 7641
 #nreff 1
 #end
 
@@ -2720,7 +2719,7 @@
 #pathlevel 0 4
 #fatiguecost 6000
 #effect 10021
-#damage 4192
+#damage 7647
 #nreff 1
 #end
 
@@ -2734,7 +2733,7 @@
 #pathlevel 0 4
 #fatiguecost 8000
 #effect 10021
-#damage 4191
+#damage 7646
 #nreff 1
 #end
 
@@ -2750,7 +2749,7 @@
 #pathlevel 1 2
 #fatiguecost 12000
 #effect 10021
-#damage 4190
+#damage 7645
 #nreff 1
 #end
 
@@ -2765,7 +2764,7 @@
 #pathlevel 0 1
 #fatiguecost 1200
 #effect 10001
-#damage 4189
+#damage 7644
 #nreff 5
 #end
 
@@ -2877,7 +2876,7 @@
 
 -- Chaos Armour copy
 
-#selectitem 969
+#selectitem 519
 #restricted 159
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 12
@@ -2935,7 +2934,7 @@
 #req_notnation 159
 #req_notnation 120
 #req_notnation 136
-#req_monster 4160 -- Cultist
+#req_monster 7615 -- Cultist
 #req_capital 0 -- Must not be a capital
 #req_maxdef 19
 #req_minunrest 40
@@ -2946,11 +2945,11 @@
 #newdom 4
 #incscale2 0 -- Increases turmoil
 #req_indepok 1 -- Can (not must) happen to indies
-#com 4160 -- Cultist
-#1unit 4183 -- Spawn
-#2d6units 4185 -- Daemonette
-#1d6units 4160 -- Cultist
-#1d6units 4166 -- Forsaken
+#com 7615 -- Cultist
+#1unit 7638 -- Spawn
+#2d6units 7640 -- Daemonette
+#1d6units 7615 -- Cultist
+#1d6units 7621 -- Forsaken
 #end
 
 #newevent
@@ -2960,16 +2959,16 @@
 #req_land 1
 #req_fornation 159
 #req_pop0ok
-#req_targmnr 4184 -- Chosen Chaos Lord
-#killcom 4184
-#com -8888 -- 1 Daemon, 2 Spawns
+#req_targmnr 7639 -- Chosen Chaos Lord
+#killcom 7639
+#com -6002 -- 1 Daemon, 2 Spawns
 #msg "After long years of service to Slaanesh, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 #end
 
 -------- NAMES -----------
 
 
--- Slaanesh Names
+-- Daemon Names
 
 #selectnametype 257
 #clear
@@ -3138,7 +3137,7 @@
 
 -------- SITES -----------
 
-#newsite 1950
+#newsite 1908
 #name "Chaos Vortex of Slaanesh"
 #path 3
 #level 0
@@ -3149,15 +3148,15 @@
 #gems 7 2
 #end
 
-#newsite 1951
+#newsite 1909
 #name "Halls of Slaanesh"
 #path 3
 #level 0
 #rarity 5
-#homecom 4178 -- Lord of Slaan
-#homecom 4175 -- Sorcerer Lord
-#homemon 4158 -- Chosen of Slaanesh #1
-#homemon 4159 -- Chosen of Slaanesh #2
+#homecom 7633 -- Lord of Slaan
+#homecom 7630 -- Sorcerer Lord
+#homemon 7613 -- Chosen of Slaanesh #1
+#homemon 7614 -- Chosen of Slaanesh #2
 --#spr 17 --Doesn't work
 #end
 
@@ -3199,28 +3198,28 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #addgod 1231 -- Drakaina
 #addgod 1229 -- Son of Fenrer
 #addgod 1561 -- Father of Winters
-#cheapgod20 4194 -- Daemonic Avatar of Slaanesh
-#cheapgod20 4195 -- Human Avatar of Slaanesh
-#addgod 4194
-#addgod 4195
+#cheapgod20 7649 -- Daemonic Avatar of Slaanesh
+#cheapgod20 7650 -- Human Avatar of Slaanesh
+#addgod 7649
+#addgod 7650
 ---- RECRUITS
 #clearrec
-#wasterec 4150 -- Warhound
+#wasterec 7605 -- Warhound
 --#wasterec 4166 -- Forsaken
-#forestrec 4165 -- Ungor Raider
-#forestrec 4164 -- Ungor
-#forestrec 4163 -- Gor
+#forestrec 7620 -- Ungor Raider
+#forestrec 7619 -- Ungor
+#forestrec 7618 -- Gor
 --#forestrec 4162 -- Slaangor
 --#forestrec 4161 -- Minotaur
-#addrecunit 4151 -- Marauder #1
-#addrecunit 4152 -- Marauder #2
-#addforeignunit 4151
-#addforeignunit 4152
-#addrecunit 4153 -- Marauder Horsemen
-#addrecunit 4154 -- Warrior of Slaanesh #1
-#addrecunit 4155 -- Warrior of Slaanesh #2
-#addrecunit 4157 -- Standard Bearer
-#addrecunit 4156 -- Knight of Slaanesh
+#addrecunit 7606 -- Marauder #1
+#addrecunit 7607 -- Marauder #2
+#addforeignunit 7606
+#addforeignunit 7607
+#addrecunit 7608 -- Marauder Horsemen
+#addrecunit 7609 -- Warrior of Slaanesh #1
+#addrecunit 7610 -- Warrior of Slaanesh #2
+#addrecunit 7612 -- Standard Bearer
+#addrecunit 7611 -- Knight of Slaanesh
 --addrecunit 6508 -- Chosen of Slaanesh #1, cap only
 --addrecunit 6509 -- Chosen of Slaanesh #2, cap only
 --addrecunit 6539 -- Chaos Fury, summon
@@ -3234,18 +3233,18 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 ---- LEADERS
 
-#addreccom 4160 -- Cultist
+#addreccom 7615 -- Cultist
 --addforeigncom 4195 -- foreign Cultist
 --#wastecom 4167 -- Forsaken Champion
-#forestcom 4168 -- Ungor Raider Halfhorn
-#forestcom 4170 -- Wargor
-#forestcom 4169 -- Slaanbull
-#forestcom 4172 -- Bray-Shaman
-#addreccom 4171 -- Marauder Chief
-#addreccom 4176 -- Champion of Slaanesh
-#addreccom 4177 -- Exalted Champion
-#addreccom 4173 -- Sorcerer of Slaanesh
-#addreccom 4174 -- Exalted Sorcerer of Slaanesh
+#forestcom 7623 -- Ungor Raider Halfhorn
+#forestcom 7625 -- Wargor
+#forestcom 7624 -- Slaanbull
+#forestcom 7627 -- Bray-Shaman
+#addreccom 7626 -- Marauder Chief
+#addreccom 7631 -- Champion of Slaanesh
+#addreccom 7632 -- Exalted Champion
+#addreccom 7628 -- Sorcerer of Slaanesh
+#addreccom 7629 -- Exalted Sorcerer of Slaanesh
 --addreccom 6525 -- Sorcerer Lord, cap only (NOTE - these are all old ID values).
 --addreccom 6528 -- Lord of Slaanesh, cap only
 --addreccom 6529 -- Dechala the Denied One, hero
@@ -3257,12 +3256,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 --addreccom 4186 -- Herald of Slaanesh, summon
 --addreccom 6540 -- Keeper of Secrets, summon
 
-#hero1 4179 -- Dechala the Denied One
-#hero2 4180 -- Sigvald the Magnificent
-#hero3 4181 -- Styrkaar
-#hero4 4182 -- Azazel the Prince of Damnation
+#hero1 7634 -- Dechala the Denied One
+#hero2 7635 -- Sigvald the Magnificent
+#hero3 7636 -- Styrkaar
+#hero4 7637 -- Azazel the Prince of Damnation
 --#multihero1 6533 -- Spawn of Slaanesh
-#multihero2 4184 -- Chosen Lord of Slaanesh
+#multihero2 7639 -- Chosen Lord of Slaanesh
 
 
 ----- STARTSITES
@@ -3289,12 +3288,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 ------- PROVINCE DEFENCE
 
 --Sets the units to be used in province defense.
-#defcom1 4171 -- Marauder Chief
-#defcom2 4173 -- Sorcerer of Slaanesh
-#defunit1 4151 -- Marauder #1 (axe)
-#defunit1b 4152 -- Marauder #2 (morningstar)
-#defunit2 4154 -- Warrior #1
-#defunit2b 4153 -- Marauder Horseman
+#defcom1 7626 -- Marauder Chief
+#defcom2 7628 -- Sorcerer of Slaanesh
+#defunit1 7606 -- Marauder #1 (axe)
+#defunit1b 7607 -- Marauder #2 (morningstar)
+#defunit2 7609 -- Warrior #1
+#defunit2b 7608 -- Marauder Horseman
 
 --Sets how many of the units to appear per 10 points.
 #defmult1 10
@@ -3304,11 +3303,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 ------- STARTING UNITS
 
-#startcom 4171 -- Marauder Chief
-#startscout 4160
-#startunittype1 4151
+#startcom 7626 -- Marauder Chief
+#startscout 7615
+#startunittype1 7606
 #startunitnbrs1 15
-#startunittype2 4152
+#startunittype2 7607
 #startunitnbrs2 10
 #end
 
@@ -3333,7 +3332,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Warriors are now 20gp. Pink Horrors down to research level 3. Massive changes to Beastman pricing etc., removal of Forest Survival on human followers of Tzeentch to accomodate for this change. Got rid of lots of autocalced costs to keep them sameish. Removed Galrauch's leadership and changed his E to A. Removed E and W from random magic lists (except E from Sorc Lord), as the nation isn't supposed to have full access to all magic paths (as the nation gets D and N through Bray-Shamans), left E on Vilitch however (as he has been described as lacklustre; E can be his thing). Added an Unstable Chaos Vortex summon which, in turn, summons ten Pink Horrors and then goes away and "turns" into a Herald of Tzeentch (the Vortex causes unrest and kills population). Gave negative #researchbonus to the Champs, Exalted Champs and Lord to denote their status as fighters. Changes to Spawn of Tzeentch (now it's similar to the other Spawns). Slight edits to #summary. Made #foreignrec Marauders #coldrec.
 -- Reclimits on Chosen uplifted (Sacred is enough of a reclimit). All commanders with Chaos Armor now start with an itemized Chaos Armor in Chest slot. Added #xpshape to Champs and Exalted Champs. People on discs lost their feet slots again. Dropped magical leadership from everything.
 
--- Version 0.96 - Cultist received start/maxage. Added #secondarycolor to nation color. Fixed #summary formatting. Spawn of Tzeentch became longer lived. Upgraded the Champion to Chosen stat levels, also slight ups to Exalted Champ and Lord. Made all the magical items nofind. Added "MA" to the #modname. Fixed the positioning of the tails of the Daemon Princes. Fixed some other sprites that didn't have two pixels below them (unnoticiable in play, but it bugged the hell out of me!). Halberd of Tzeentch lacked things it probably should've had (armorpiercing, pierce and slash). Made Scythetalon slash instead of pierce and made it armorpiercing.
 
 -- Version 0.95 - Removed chest slots from units/commanders with Chaos Armor, because you aren't supposed to replace Chaos Armor (going through #itemslots also means units mounted on Discs of Tzeentch will get leg slots, as there's no reason why you couldn't sit on it while putting boots on); not adding to commanders with Light Chaos Armor. Added a onebattlespell self-bless for some commanders/heroes with Chaos Armor. Altered Vilitch's itemslots a lot. Added armorpiercing to a lot of magical weapons. Lowered Spawn of Tzeentch's (renamed it) prot a little but increased its #invulnerable. Switched the Daemon-forged Battleaxe to use Ulm's Bane of Heresy instead of Halt Sacred, making it even more potent. Warhound received the ability to berserk. Forsaken Champion became a Beastmaster and received #animalawe (due to being the commander in the wastelands with the Warhounds). Changed the long and short nation descriptions (the long un was basically an edited CU one, so, it was boring).
 
@@ -3482,7 +3480,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1881 -- KEEP THIS ID #
+#newweapon 1911 -- -- KEEP THIS ID #
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -3501,7 +3499,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Minotaur of Tzeentch
 
-#newmonster 4825
+#newmonster 7703
 #spr1 "./Warhammer-Complete/minotaur_1TZ.tga"
 #spr2 "./Warhammer-Complete/minotaur_2TZ.tga"
 #name "Minotaur of Tzeentch"
@@ -3540,7 +3538,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Tzaangor
 
-#newmonster 4829
+#newmonster 7706
 #spr1 "./Warhammer-Complete/tzaangor_1.tga"
 #spr2 "./Warhammer-Complete/tzaangor_2.tga"
 #name "Tzaangor"
@@ -3576,7 +3574,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Gor of Tzeentch
 
-#newmonster 4831
+#newmonster 7708
 #spr1 "./Warhammer-Complete/gor_1TZ.tga"
 #spr2 "./Warhammer-Complete/gor_2TZ.tga"
 #name "Gor"
@@ -3611,7 +3609,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Ungor of Tzeentch
 
-#newmonster 4832
+#newmonster 7709
 #spr1 "./Warhammer-Complete/ungor_1TZ.tga"
 #spr2 "./Warhammer-Complete/ungor_2TZ.tga"
 #name "Ungor"
@@ -3645,7 +3643,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Ungor Raider
 
-#newmonster 4834
+#newmonster 7711
 #spr1 "./Warhammer-Complete/ungor_raider_1TZ.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_2TZ.tga"
 #name "Ungor Raider"
@@ -3678,7 +3676,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Forsaken
 
-#newmonster 4821
+#newmonster 7699
 #spr1 "./Warhammer-Complete/forsaken_1TZ.tga"
 #spr2 "./Warhammer-Complete/forsaken_2TZ.tga"
 #name "Forsaken"
@@ -3713,12 +3711,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #maxage 4000
 --#magicboost 8-7
 #rpcost 15
-#montag 6666
+#montag 6000
 #end
 
 -- Marauder of Tzeentch #1
 
-#newmonster 4331
+#newmonster 7654
 #spr1 "./Warhammer-Complete/marauder_1TZ.tga"
 #spr2 "./Warhammer-Complete/marauder_2TZ.tga"
 #name "Marauder"
@@ -3752,7 +3750,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Marauder of Tzeentch #2
 
-#newmonster 4332
+#newmonster 7655
 #spr1 "./Warhammer-Complete/marauder_club_1.tga"
 #spr2 "./Warhammer-Complete/marauder_club_2.tga"
 #name "Marauder"
@@ -3786,9 +3784,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Marauder of Tzeentch #1 -- foreignrec
 
-#newmonster 4819
-#copystats 4331
-#copyspr 4331
+#newmonster 7697
+#copystats 7654
+#copyspr 7654
 #descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
 #coldrec 2
 #rpcost 6
@@ -3796,9 +3794,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Marauder of Tzeentch #2 -- foreignrec
 
-#newmonster 4820
-#copystats 4332
-#copyspr 4332
+#newmonster 7698
+#copystats 7655
+#copyspr 7655
 #descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
 #coldrec 2
 #rpcost 6
@@ -3806,7 +3804,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Chaos Marauder Horseman
 
-#newmonster 4333
+#newmonster 7656
 #spr1 "./Warhammer-Complete/marauder_horseman_1TZ.tga"
 #spr2 "./Warhammer-Complete/marauder_horseman_2TZ.tga"
 #name "Marauder Horseman"
@@ -3846,7 +3844,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Warrior of Tzeentch #1
 
-#newmonster 4334
+#newmonster 7657
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Tzeentch_2.tga"
 #name "Chaos Warrior"
@@ -3881,7 +3879,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Warrior of Tzeentch #2
 
-#newmonster 4335
+#newmonster 7658
 #spr1 "./Warhammer-Complete/Warrior_of_Tzeentch_Axe_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Tzeentch_Axe_2.tga"
 #name "Chaos Warrior"
@@ -3916,7 +3914,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Knight of Tzeentch
 
-#newmonster 4336
+#newmonster 7659
 #spr1 "./Warhammer-Complete/chaosknight_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaosknight_2TZ.tga"
 #name "Chaos Knight"
@@ -3956,7 +3954,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Standard Bearer
 
-#newmonster 4337
+#newmonster 7660
 #spr1 "./Warhammer-Complete/banner_bearer_1TZ.tga"
 #spr2 "./Warhammer-Complete/banner_bearer_2TZ.tga"
 #name "Standard Bearer"
@@ -3991,7 +3989,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Chosen of Tzeentch #1
 
-#newmonster 4338
+#newmonster 7661
 #spr1 "./Warhammer-Complete/Chosen_sword_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_sword_2.tga"
 #name "Chosen"
@@ -4029,7 +4027,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Chosen of Tzeentch #2
 
-#newmonster 4339
+#newmonster 7662
 #spr1 "./Warhammer-Complete/Chosen_Axe_1TZ.tga"
 #spr2 "./Warhammer-Complete/Chosen_Axe_2TZ.tga"
 #name "Chosen"
@@ -4069,7 +4067,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Tzeentch Cultist
 
-#newmonster 4340
+#newmonster 7663
 #spr1 "./Warhammer-Complete/chaos_cultist_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaos_cultist_2TZ.tga"
 #name "Cultist"
@@ -4099,8 +4097,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #stealthy 30
 #spy
 #magicskill 8 1
-#userestricteditem 6567
-#startitem 971
+#userestricteditem 2
+#startitem 514
 #itemslots 31878
 #holy
 #rpcost 1
@@ -4108,7 +4106,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Forsaken Champion
 
-#newmonster 4822
+#newmonster 7700
 #spr1 "./Warhammer-Complete/forsaken_champion_1.tga"
 #spr2 "./Warhammer-Complete/forsaken_champion_2.tga"
 #name "Forsaken Champion"
@@ -4149,7 +4147,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Ungor Raider Halfhorn
 
-#newmonster 4807
+#newmonster 7685
 #spr1 "./Warhammer-Complete/ungor_raider_halfhorn_1TZ.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_halfhorn_2TZ.tga"
 #name "Ungor Raider Halfhorn"
@@ -4182,7 +4180,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Doombull of Tzeentch
 
-#newmonster 4824
+#newmonster 7702
 #spr1 "./Warhammer-Complete/doombull_1TZ.tga"
 #spr2 "./Warhammer-Complete/doombull_2TZ.tga"
 #name "Tzaanbull"
@@ -4226,7 +4224,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Wargor
 
-#newmonster 4830
+#newmonster 7707
 #spr1 "./Warhammer-Complete/wargor_1TZ.tga"
 #spr2 "./Warhammer-Complete/wargor_2TZ.tga"
 #nametype 109
@@ -4264,7 +4262,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Marauder Chieftain
 
-#newmonster 4341
+#newmonster 7664
 #spr1 "./Warhammer-Complete/marauder_chieftain_1TZ.tga"
 #spr2 "./Warhammer-Complete/marauder_chieftain_2TZ.tga"
 #name "Marauder Chieftain"
@@ -4305,7 +4303,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Bray-Shaman
 
-#newmonster 4833
+#newmonster 7710
 #spr1 "./Warhammer-Complete/bray-shaman_1TZ.tga"
 #spr2 "./Warhammer-Complete/bray-shaman_2TZ.tga"
 #name "Bray-Shaman"
@@ -4344,7 +4342,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Sorcerer of Tzeentch
 
-#newmonster 4342
+#newmonster 7665
 #spr1 "./Warhammer-Complete/chaos_sorcerer_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaos_sorcerer_2TZ.tga"
 #name "Chaos Sorcerer"
@@ -4381,7 +4379,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Exalted Sorcerer of Tzeentch
 
-#newmonster 4343
+#newmonster 7666
 #spr1 "./Warhammer-Complete/exalted_chaos_sorcerer_1TZ.tga"
 #spr2 "./Warhammer-Complete/exalted_chaos_sorcerer_2TZ.tga"
 #name "Exalted Chaos Sorcerer"
@@ -4421,7 +4419,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Sorcerer Lord
 
-#newmonster 4344
+#newmonster 7667
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_1TZ.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2TZ.tga"
 #name "Chaos Sorcerer Lord"
@@ -4463,7 +4461,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Champion of Tzeentch
 
-#newmonster 4345
+#newmonster 7668
 #spr1 "./Warhammer-Complete/Champion_1TZ.tga"
 #spr2 "./Warhammer-Complete/Champion_2TZ.tga"
 #name "Chaos Champion"
@@ -4504,7 +4502,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Exalted Champion
 
-#newmonster 4346
+#newmonster 7669
 #spr1 "./Warhammer-Complete/Exalted_Hero_1.tga"
 #spr2 "./Warhammer-Complete/Exalted_Hero_2.tga"
 #name "Exalted Chaos Champion"
@@ -4556,7 +4554,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Lord of Tzeentch
 
-#newmonster 4347
+#newmonster 7670
 #name "Chaos Lord"
 #spr1 "./Warhammer-Complete/lord_of_tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_tzeentch_2.tga"
@@ -4604,7 +4602,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #invulnerable 15
 #holy
 #rpcost 2
-#prophetshape 4803
+#prophetshape 7681
 #end
 
 
@@ -4612,7 +4610,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Egrimm van Horstmann
 
-#newmonster 4348
+#newmonster 7671
 #spr1 "./Warhammer-Complete/Egrimm_1.tga"
 #spr2 "./Warhammer-Complete/Egrimm_2.tga"
 #name "Sorcerer of Tzeentch"
@@ -4656,7 +4654,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #wastesurvival
 #snow
 #mounted
-#secondtmpshape 4349
+#secondtmpshape 7672
 --#magicboost 8-7
 #holy
 #latehero 20
@@ -4664,7 +4662,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Baudros the Chaos Dragon
 
-#newmonster 4349
+#newmonster 7672
 #spr1 "./Warhammer-Complete/Baudros_1.tga"
 #spr2 "./Warhammer-Complete/Baudros_2.tga"
 #name "Chaos Dragon"
@@ -4709,7 +4707,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Vilitch the Curseling
 
-#newmonster 4806
+#newmonster 7684
 #name "Curseling"
 #spr1 "./Warhammer-Complete/vilitch_1.tga"
 #spr2 "./Warhammer-Complete/vilitch_2.tga"
@@ -4755,7 +4753,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Galrauch the First of the Chaos Dragons
 
-#newmonster 4350
+#newmonster 7673
 #spr1 "./Warhammer-Complete/galrauch_1.tga"
 #spr2 "./Warhammer-Complete/galrauch_2.tga"
 #name "First of the Chaos Dragons"
@@ -4805,7 +4803,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Melekh the Changer
 
-#newmonster 4800
+#newmonster 7678
 #name "Changer"
 #spr1 "./Warhammer-Complete/Melekh_1.tga"
 #spr2 "./Warhammer-Complete/Melekh_2.tga"
@@ -4833,7 +4831,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #armor "Chaos Armor"
 #armor "Shield"
 #itemslots 13446
-#startitem 967
+#startitem 517
 #float
 #gcost 0
 #rcost 1
@@ -4857,7 +4855,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Cyspeth the Champion
 
-#newmonster 4801
+#newmonster 7679
 #spr1 "./Warhammer-Complete/Cyspeth_1.tga"
 #spr2 "./Warhammer-Complete/Cyspeth_2.tga"
 #name "Champion"
@@ -4890,7 +4888,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #wastesurvival
 #snow
 #onebattlespell "Blessing"
-#batstartsum2 4802
+#batstartsum2 7680
 --#magicboost 8-7
 #holy
 #invulnerable 10
@@ -4898,9 +4896,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Cyspeth's cronies
 
-#newmonster 4802
-#copystats 4342
-#copyspr 4342
+#newmonster 7680
+#copystats 7665
+#copyspr 7665
 #clearmagic
 #weapon "Lightning of Tzeentch"
 #weapon "Fist"
@@ -4911,7 +4909,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Chosen Lord of Tzeentch
 
-#newmonster 4803
+#newmonster 7681
 #name "Chosen Lord of Tzeentch"
 #spr1 "./Warhammer-Complete/chosen_lord_of_tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/chosen_lord_of_tzeentch_2.tga"
@@ -4962,7 +4960,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Aekold Helbrass, the Champion of Tzeentch
 
-#newmonster 4804
+#newmonster 7682
 #spr1 "./Warhammer-Complete/aekold_1.tga"
 #spr2 "./Warhammer-Complete/aekold_2.tga"
 #name "Champion"
@@ -4989,7 +4987,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 15494
-#startitem 967
+#startitem 517
 #startage 600
 #maxage 10000
 #goodleader
@@ -5010,7 +5008,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Spawn of Tzeentch
 
-#newmonster 4805
+#newmonster 7683
 #spr1 "./Warhammer-Complete/chaos_spawn_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaos_spawn_2TZ.tga"
 #name "Spawn of Tzeentch"
@@ -5052,21 +5050,21 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #wastesurvival
 #snow
 #holy
-#montag 7777
+#montag 6001
 #end
 
-#newmonster 8139 -- Spawn #2
+#newmonster 7953 -- Spawn #2
 #descr "A mortal who is visited by too many of Tzeentch's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
-#copystats 4805
-#copyspr 4805
-#montag 7777
+#copystats 7683
+#copyspr 7683
+#montag 6001
 #end
 
 ----------- Daemon Summonables ------------
 
 -- Flamer of Tzeentch
 
-#newmonster 4808
+#newmonster 7686
 #spr1 "./Warhammer-Complete/Flamer1.tga"
 #spr2 "./Warhammer-Complete/Flamer2.tga"
 #name "Flamer of Tzeentch"
@@ -5102,7 +5100,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Changebringer
 
-#newmonster 4809
+#newmonster 7687
 #spr1 "./Warhammer-Complete/Changebringer_1.tga"
 #spr2 "./Warhammer-Complete/Changebringer_2.tga"
 #name "Changebringer"
@@ -5142,7 +5140,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Pink Horror
 
-#newmonster 4810
+#newmonster 7688
 #spr1 "./Warhammer-Complete/Pink_Horror_1.tga"
 #spr2 "./Warhammer-Complete/Pink_Horror_2.tga"
 #name "Pink Horror"
@@ -5168,8 +5166,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #startage 20
 #maxage 10000
 #poisonres 25
-#secondtmpshape 4811
-#secondtmpshape 4811
+#secondtmpshape 7689
+#secondtmpshape 7689
 #demon
 #invulnerable 10
 #neednoteat
@@ -5178,13 +5176,13 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Blue Horror
 
-#newmonster 4811
+#newmonster 7689
 #spr1 "./Warhammer-Complete/Blue_Horror_1.tga"
 #spr2 "./Warhammer-Complete/Blue_Horror_2.tga"
 #name "Blue Horror"
 #nametype 257
 #descr "A Blue Horror is very similar to a Pink Horror in stature, but their temperaments are entirely different. Where Pink Horrors are merry, the Blue Horror is sullen and malicious, much like bad-tempered children, on their faces a perpetual scowl as they sneer and grumble their way through battle. They are, in a way, the depressive phase of their manic 'parents'."
-#montag 6666
+#montag 6000
 #ap 12
 #mapmove 16
 #hp 6
@@ -5213,7 +5211,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Screamer of Tzeentch
 
-#newmonster 4812
+#newmonster 7690
 #spr1 "./Warhammer-Complete/screamer1.tga"
 #spr2 "./Warhammer-Complete/screamer2.tga"
 #name "Screamer of Tzeentch"
@@ -5246,12 +5244,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #demon
 #neednoteat
 #holy
-#montag 6666
+#montag 6000
 #end
 
 -- Chaos Fury
 
-#newmonster 4813
+#newmonster 7691
 #spr1 "./Warhammer-Complete/chaosfury_1TZ.tga"
 #spr2 "./Warhammer-Complete/chaosfury_2TZ.tga"
 #name "Chaos Fury"
@@ -5281,12 +5279,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #neednoteat
 --#magicboost 8-7
 #holy
-#montag 6666
+#montag 6000
 #end
 
 -- Herald of Tzeentch
 
-#newmonster 4814
+#newmonster 7692
 #spr1 "./Warhammer-Complete/herald_1.tga"
 #spr2 "./Warhammer-Complete/herald_2.tga"
 #name "Herald of Tzeentch"
@@ -5320,8 +5318,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #maxage 10000
 #okleader
 #expertundeadleader
-#batstartsum3 4810
-#batstartsum2 4811
+#batstartsum3 7688
+#batstartsum2 7689
 #demon
 #invulnerable 15
 #float
@@ -5333,18 +5331,18 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Herald 2nd form for dom spread
 
-#newmonster 4815
+#newmonster 7693
 #nametype 257
-#copystats 4814
-#copyspr 4814
+#copystats 7692
+#copyspr 7692
 #spreaddom 2
-#firstshape 4814
+#firstshape 7692
 #holy
 #end
 
 -- Lord of Change
 
-#newmonster 4816
+#newmonster 7694
 #spr1 "./Warhammer-Complete/lord_of_change_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_change_2.tga"
 #name "Lord of Change"
@@ -5392,22 +5390,22 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #holy
 #heal
 #spreaddom 1
-#makemonsters2 4808 -- Flamers
+#makemonsters2 7686 -- Flamers
 #end
 
 -- Lord of Change (Extra Dom first summon dealie)
 
-#newmonster 4817
+#newmonster 7695
 #nametype 257
-#copystats 4816
-#copyspr 4816
+#copystats 7694
+#copyspr 7694
 #spreaddom 5
-#firstshape 4816
+#firstshape 7694
 #end
 
 -- Daemon Prince #1: used for chosen lord transform event
 
-#newmonster 4827
+#newmonster 7704
 #spr1 "./Warhammer-Complete/summon_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon_daemon_prince_2.tga"
 #name "Daemon Prince"
@@ -5449,37 +5447,37 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #demon
 #magicpower 1
 #neednoteat
-#montag 7777
+#montag 6001
 --#magicboost 8-7
 #holy
 #end
 
 -- Daemon Prince #2: Numbers 2 and 3 used for summon
 
-#newmonster 4836
-#copystats 4827
+#newmonster 7713
+#copystats 7704
 #spr1 "./Warhammer-Complete/summon_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon_daemon_prince_2.tga"
 #descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power. For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
-#montag 60006
+#montag 6003
 #end
 
 -- Daemon Prince #3
 
-#newmonster 4828
-#copystats 4827
+#newmonster 7705
+#copystats 7704
 #spr1 "./Warhammer-Complete/summon2_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon2_daemon_prince_2.tga"
 #descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power.  For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
 #weapon "Daemonic Halberd"
-#montag 60006
+#montag 6003
 #end
 
 -- Non-Daemonic summons --
 
 -- Unstable Chaos Vortex, 1st
 
-#newmonster 4796
+#newmonster 7674
 #spr1 "./Warhammer-Complete/vortex.tga"
 #name "Unstable Chaos Vortex"
 #nametype 257
@@ -5510,38 +5508,38 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #gcost 0
 #magicskill 4 1
 #magicboost 53 -7
-#firstshape 4797
+#firstshape 7675
 #popkill 5
 #incunrest 10
 #end
 
 -- Unstable Vortex, form 2
 
-#newmonster 4797
-#copyspr 4796
-#copystats 4796
+#newmonster 7675
+#copyspr 7674
+#copystats 7674
 #descr "An unstable vortex, created most likely by a vile Sorcerer of Tzeentch. It will allow the passage of several Horrors from the Realm of Chaos into the real world. It will function for two more months before collapsing."
-#firstshape 4798
-#summon5 4810
+#firstshape 7676
+#summon5 7688
 #popkill 30
 #incunrest 160
 #end
 
 -- Unstable Vortex, form 3
 
-#newmonster 4798
-#copyspr 4796
-#copystats 4796
+#newmonster 7676
+#copyspr 7674
+#copystats 7674
 #descr "An unstable vortex, created most likely by a vile Sorcerer of Tzeentch. It will allow the passage of several Horrors from the Realm of Chaos into the real world. It will function for one more month before collapsing."
-#firstshape 4814
-#summon5 4810
+#firstshape 7692
+#summon5 7688
 #popkill 50
 #incunrest 300
 #end
 
 -- Obelisk of Tzeentch
 
-#newmonster 4835
+#newmonster 7712
 #spr1 "./Warhammer-Complete/obelisk_1.tga"
 #spr2 "./Warhammer-Complete/obelisk_2.tga"
 #name "Obelisk of Tzeentch"
@@ -5569,8 +5567,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #weapon "Aura of Tzeentch" -- Aura
 #noleader
 #gcost 0
-#startitem 971
-#userestricteditem 6567
+#startitem 514
+#userestricteditem 2
 #spreaddom 1
 #startage 152
 #nohof
@@ -5589,7 +5587,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Pretender Sorcerer Lord of Tzeentch
 
-#newmonster 4818
+#newmonster 7696
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_Pretender_1TZ.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_Pretender_2TZ.tga"
 #name "Sorcerer Lord of Tzeentch"
@@ -5632,7 +5630,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Pretender Daemon Prince
 
-#newmonster 4823
+#newmonster 7701
 #spr1 "./Warhammer-Complete/daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/daemon_prince_2.tga"
 #name "Daemon Prince of Tzeentch"
@@ -5791,7 +5789,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 1
 #fatiguecost 700
 #effect 10001
-#damage 4810
+#damage 7688
 #nreff 4
 #end
 
@@ -5809,7 +5807,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 2
 #fatiguecost 500
 #effect 10001
-#damage 4808
+#damage 7686
 #nreff 2
 #end
 
@@ -5827,7 +5825,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 2
 #fatiguecost 400
 #effect 10001
-#damage 4809
+#damage 7687
 #nreff 1
 #end
 
@@ -5845,7 +5843,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 1
 #fatiguecost 1500
 #effect 10001
-#damage 4812
+#damage 7690
 #nreff 8
 #end
 
@@ -5861,7 +5859,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 0 3
 #fatiguecost 2000
 #effect 10021
-#damage 4815
+#damage 7693
 #nreff 1
 #end
 
@@ -5879,7 +5877,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 2
 #fatiguecost 4500
 #effect 10021
-#damage 4817
+#damage 7695
 #nreff 1
 #end
 
@@ -5895,7 +5893,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 0 5
 #fatiguecost 4000
 #effect 10021
-#damage -60006
+#damage -6003
 #nreff 1
 #end
 
@@ -5913,7 +5911,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 1
 #fatiguecost 400
 #effect 10001
-#damage 4813
+#damage 7691
 #nreff 10
 #end
 
@@ -5933,7 +5931,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 1 1
 #fatiguecost 1000
 #effect 10021
-#damage 4835
+#damage 7712
 #nreff 1
 #end
 
@@ -5949,7 +5947,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 0 3
 #fatiguecost 1500
 #effect 10021
-#damage 4796
+#damage 7674
 #nreff 1
 #end
 
@@ -6084,7 +6082,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Staff of Change"
 #descr "Raw chaos flows about this weapon, running up and down the stave as tongues of crackling rainbow fire. To be struck by this staff is therefore to feel the touch of change itself, rendered into a mewling and mutating mass by the unstoppable energies of Tzeentch. It can only be wielded by Daemons."
 #type 2
-#weapon 1881
+#weapon 1911
 #mr 2
 #onlydemon
 #deathfire 5
@@ -6140,13 +6138,13 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #type 8
 #nofind
 #cursed
-#restricteditem 6567
+#restricteditem 2
 #spell "Greater Blessing of Tzeentch"
 #end
 
 -- Crude Icon of Tzeentch
 
-#selectitem 971
+#selectitem 514
 #restricted 120
 #spr "./Warhammer-Complete/crude_Icon_of_Tzeentch.tga"
 #constlevel 12
@@ -6182,7 +6180,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Chaos Armour copy
 
-#selectitem 967
+#selectitem 517
 #restricted 120
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 12
@@ -6209,7 +6207,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #req_notnation 120
 #req_notnation 136
 #nation 120 -- Tzeentch controls the troops
-#req_monster 4340 -- Tzeentch cultist
+#req_monster 7663 -- Tzeentch cultist
 --#req_capital 0
 #req_maxdef 19
 #req_minunrest 60
@@ -6220,12 +6218,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #unrest 30
 #newdom 3
 #incscale2 0 -- Turmoil
-#1d6units 4810 -- Pink horror
-#1unit 4805 -- Spawn
-#1d6units 4811 -- Blue horror
-#1d6units 4340 -- Cultist
-#1d6units 4821 -- Forsaken
-#com 4340 -- Cultist
+#1d6units 7688 -- Pink horror
+#1unit 7683 -- Spawn
+#1d6units 7689 -- Blue horror
+#1d6units 7663 -- Cultist
+#1d6units 7699 -- Forsaken
+#com 7663 -- Cultist
 #end
 
 #newevent
@@ -6235,9 +6233,9 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #req_land 1
 #req_fornation 120
 #req_pop0ok
-#req_targmnr 4803 -- Chosen Chaos Lord
-#killcom 4803
-#com -7777 -- 1 Daemon, 2 Spawns
+#req_targmnr 7681 -- Chosen Chaos Lord
+#killcom 7681
+#com -6001 -- 1 Daemon, 2 Spawns
 #msg "After long years of service to Tzeentch, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 #end
 
@@ -6245,7 +6243,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -------- SITES -----------
 
-#newsite 1952
+#newsite 1910
 #name "Chaos Vortex of Tzeentch"
 #path 3
 #level 0
@@ -6255,15 +6253,15 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #gems 1 1
 #end
 
-#newsite 1953
+#newsite 1911
 #name "Halls of Tzeentch"
 #path 3
 #level 0
 #rarity 5
-#homecom 4347 -- Chaos Lord
-#homemon 4338 -- Chosen of Tzeentch #1
-#homemon 4339 -- Chosen of Tzeentch #2
-#homecom 4344 -- Sorcerer Lord
+#homecom 7670 -- Chaos Lord
+#homemon 7661 -- Chosen of Tzeentch #1
+#homemon 7662 -- Chosen of Tzeentch #2
+#homecom 7667 -- Sorcerer Lord
 #end
 
 -------- NATIONS ---------
@@ -6285,10 +6283,10 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 ---- GODS
 #homerealm 1
-#addgod 4818 -- adds Sorcerer Lord of Tzeentch as a Pretender
-#cheapgod20 4818
-#addgod 4823 -- adds Daemon Prince of Tzeentch as a Pretender
-#cheapgod20 4823
+#addgod 7696 -- adds Sorcerer Lord of Tzeentch as a Pretender
+#cheapgod20 7696
+#addgod 7701 -- adds Daemon Prince of Tzeentch as a Pretender
+#cheapgod20 7701
 
 
 #addgod 158 -- oracle
@@ -6312,22 +6310,22 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 ---- RECRUITS
 #clearrec
-#wasterec 4150 -- Warhound
+#wasterec 7605 -- Warhound
 --#wasterec 4821 -- Forsaken
-#forestrec 4832 -- Ungor of Tzeentch
-#forestrec 4834 -- Ungor Raider
-#forestrec 4831 -- Gor of Tzeentch
-#forestrec 4829 -- Tzaangor, or Bestigor of Tzeentch
-#forestrec 4825 -- Minotaur
-#addrecunit 4331 -- Marauder w. Axe
-#addforeignunit 4819 -- M w. Axe
-#addrecunit 4332 -- Marauder w. Club
-#addforeignunit 4820 -- M w. Club
-#addrecunit 4333 -- Marauder Horseman
-#addrecunit 4334 -- Warrior of Tzeentch #1
-#addrecunit 4335 -- Warrior of Tzeentch #2
-#addrecunit 4336 -- Chaos Knight
-#addrecunit 4337 -- Standard Bearer
+#forestrec 7709 -- Ungor of Tzeentch
+#forestrec 7711 -- Ungor Raider
+#forestrec 7708 -- Gor of Tzeentch
+#forestrec 7706 -- Tzaangor, or Bestigor of Tzeentch
+#forestrec 7703 -- Minotaur
+#addrecunit 7654 -- Marauder w. Axe
+#addforeignunit 7697 -- M w. Axe
+#addrecunit 7655 -- Marauder w. Club
+#addforeignunit 7698 -- M w. Club
+#addrecunit 7656 -- Marauder Horseman
+#addrecunit 7657 -- Warrior of Tzeentch #1
+#addrecunit 7658 -- Warrior of Tzeentch #2
+#addrecunit 7659 -- Chaos Knight
+#addrecunit 7660 -- Standard Bearer
 --addrecunit 4338 -- Chosen of Tzeentch #1, cap only
 --addrecunit 4339 -- Chosen of Tzeentch #2, cap only
 --addrecunit 4808 -- Flamer of Tzeentch
@@ -6343,18 +6341,18 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 ---- LEADERS
 
-#addreccom 4340 -- Tzeentch Cultist
+#addreccom 7663 -- Tzeentch Cultist
 --#wastecom 4822 - Forsaken Champion
-#forestcom 4807 -- Ungor Raider Halfhorn
-#forestcom 4830 -- Wargor
-#forestcom 4824 -- Tzaanbull
-#addreccom 4341 -- Marauder Chieftain
-#addreccom 4345 -- Champion
-#addreccom 4346 -- Exalted Hero of Tzeentch
-#forestcom 4833 -- Bray-Shaman
+#forestcom 7685 -- Ungor Raider Halfhorn
+#forestcom 7707 -- Wargor
+#forestcom 7702 -- Tzaanbull
+#addreccom 7664 -- Marauder Chieftain
+#addreccom 7668 -- Champion
+#addreccom 7669 -- Exalted Hero of Tzeentch
+#forestcom 7710 -- Bray-Shaman
 --addreccom 4347 -- Lord of Tzeentch, cap only
-#addreccom 4342 -- Sorcerer
-#addreccom 4343 -- Exalted Sorcerer
+#addreccom 7665 -- Sorcerer
+#addreccom 7666 -- Exalted Sorcerer
 --addreccom 4344 -- Sorcerer Lord, cap only
 --addreccom 4348 -- Egrimm van Horstmann the Sorcerer of Tzeentch
 --addreccom 4349 -- Baudros the Chaos Dragon, Egrimm's secondtmpshape
@@ -6373,14 +6371,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 --addreccom 4827 -- Daemon Prince (summon)
 --addreccom 4828 -- Daemon Prince #2 (summon)
 
-#hero1 4804 -- Aekold Helbrass the Champion
-#hero2 4350 -- Galrauch the First of the Chaos Dragons
-#hero3 4348 -- Egrimm van Horstmann
-#hero4 4800 -- Melekh the Changer
-#hero5 4801 -- Cyspeth the Champion
-#hero6 4806 -- Vilitch the Curseling
-#multihero1 4805 -- Spawn of Chaos
-#multihero2 4803 -- Chosen Lord on a Chariot of Tzeentch
+#hero1 7682 -- Aekold Helbrass the Champion
+#hero2 7673 -- Galrauch the First of the Chaos Dragons
+#hero3 7671 -- Egrimm van Horstmann
+#hero4 7678 -- Melekh the Changer
+#hero5 7679 -- Cyspeth the Champion
+#hero6 7684 -- Vilitch the Curseling
+#multihero1 7683 -- Spawn of Chaos
+#multihero2 7681 -- Chosen Lord on a Chariot of Tzeentch
 
 ----- STARTSITES
 
@@ -6404,12 +6402,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 ------- PROVINCE DEFENCE
 
 --Sets the units to be used in province defense.
-#defcom1 4341 -- Marauder Chief
-#defcom2 4342 -- Sorcerer
-#defunit1 4332 -- Marauder w. Club
-#defunit1b 4331 -- Marauder w. Axe
-#defunit2 4334 -- Warrior #1
-#defunit2b 4333 -- Marauder Horseman
+#defcom1 7664 -- Marauder Chief
+#defcom2 7665 -- Sorcerer
+#defunit1 7655 -- Marauder w. Club
+#defunit1b 7654 -- Marauder w. Axe
+#defunit2 7657 -- Warrior #1
+#defunit2b 7656 -- Marauder Horseman
 
 --Sets how many of the units to appear per 10 points.
 #defmult1 10
@@ -6419,11 +6417,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 ------- STARTING UNITS
 
-#startcom 4341
-#startscout 4340
-#startunittype1 4331
+#startcom 7664
+#startscout 7663
+#startunittype1 7654
 #startunitnbrs1 15
-#startunittype2 4332
+#startunittype2 7655
 #startunitnbrs2 10
 #end
 
@@ -6441,7 +6439,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Version 0.91 -- Chaos steed hoof to 15 dmg and 1 att. Marauder Horsemen and Chieftains to 24 AP. Lord of Nurgle's AP to 20. Sorcerer became considerably cheaper while Exalted Sorc and Sorc Lord (who became a poorleader) became more expensive (went overboard with the price reduction! Indract's autocalc stuff made me realize the pricing wasn't even close to right; lowered #researchbonus to make the price hike less steep). Massive reworking of Daemon command structure. Daemon Prince's #coldres upped to 5. Apparently Tzaangor (and Slaangor) *now* has #stealthy, so Pestigor got his #stealthy back. To combat ridiculous morale bonuses, started using #command where applicable and dropped #inspirational here and there. Made everything below Chosen have #coldres 3, as with the other Warhosts. Slightly adjusted Nurgle Plate Armor's rcost downwards and adjusted Warriors' chaosrec to be 1. Removed recup and regen from Warriors and the Standard Bearer (Plague Knight only lost regen) since other nations' Warriors
 -- don't have their specialties, also lowered poisonres. Had forgotten to add poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
 
--- Version 0.90 -- Jumped versions a lot. Added "MA" to #modname. Increased some higher-end Beastmen rcosts, and Lord of Nurgle's rcost (also made the Lord of Nurgle cost a little bit more gold), also added a secondary effect to the Lord of Nurgle's Scythe and poisoncloud to offset this slight nerf. Fixed minor issues presented by Dominions 4 Mod Editor. Lowered the Sorcerer Lord Pretender's #maxage to 10000. Removed acid from all weapons with #slash as well, since there's no mention in the manual that they *wouldn't* force the coin toss for which is used; put in a secondary corrosion effect in instead. Gave recuperation to the Nurgle Daemons and higher level humans for thematic reasons. Gave the Chieftain #undcommand 5. Foreignrec Cultist can now sail. Added an item called Icon of Nurgle, which grants one extra holy level to Cultists (restricteditem works!). Human followers of Nurgle lost forest survival, while Beastmen became actually usable (gave the higher Beastmen #poisonres 25, as they were
 -- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
 -- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed undead from all mortal followers of Nurgle and gave them regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
 
@@ -6472,7 +6469,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Warhounds of Nurgle
 
-#newmonster 5000
+#newmonster 7714
 #spr1 "./Warhammer-Complete/warhound_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/warhound_nurgle_2.tga"
 #name "Warhound"
@@ -6508,7 +6505,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Bile Troll
 
-#newmonster 5050
+#newmonster 7764
 #spr1 "./Warhammer-Complete/Bile_Troll_1.tga"
 #spr2 "./Warhammer-Complete/Bile_Troll_2.tga"
 #name "Bile Troll"
@@ -6547,7 +6544,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Minotaur of Nurgle
 
-#newmonster 5035
+#newmonster 7749
 #spr1 "./Warhammer-Complete/minotaur_1.tga"
 #spr2 "./Warhammer-Complete/minotaur_2.tga"
 #name "Minotaur of Nurgle"
@@ -6588,7 +6585,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Pestigor
 
-#newmonster 5036
+#newmonster 7750
 #spr1 "./Warhammer-Complete/pestigor_1.tga"
 #spr2 "./Warhammer-Complete/pestigor_2.tga"
 #name "Pestigor"
@@ -6627,7 +6624,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Gor of Nurgle
 
-#newmonster 5037
+#newmonster 7751
 #spr1 "./Warhammer-Complete/gor_1NR.tga"
 #spr2 "./Warhammer-Complete/gor_2NR.tga"
 #name "Gor"
@@ -6662,7 +6659,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Ungor of Nurgle
 
-#newmonster 5038
+#newmonster 7752
 #spr1 "./Warhammer-Complete/ungor_1NR.tga"
 #spr2 "./Warhammer-Complete/ungor_2NR.tga"
 #name "Ungor"
@@ -6696,7 +6693,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Ungor Raider
 
-#newmonster 5039
+#newmonster 7753
 #spr1 "./Warhammer-Complete/ungor_raider_1NR.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_2NR.tga"
 #name "Ungor Raider"
@@ -6729,7 +6726,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Forsaken
 
-#newmonster 5040
+#newmonster 7754
 #spr1 "./Warhammer-Complete/forsaken_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/forsaken_nurgle_2.tga"
 #name "Forsaken"
@@ -6770,7 +6767,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Marauder of Nurgle #1
 
-#newmonster 5001
+#newmonster 7715
 #spr1 "./Warhammer-Complete/marauder_nurgle_club_1.tga"
 #spr2 "./Warhammer-Complete/marauder_nurgle_club_2.tga"
 #name "Marauder"
@@ -6804,7 +6801,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Marauder of Nurgle #2
 
-#newmonster 5002
+#newmonster 7716
 #spr1 "./Warhammer-Complete/marauder_flail_1.tga"
 #spr2 "./Warhammer-Complete/marauder_flail_2.tga"
 #name "Marauder"
@@ -6838,9 +6835,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Marauder #1 - foreignrec
 
-#newmonster 5028
-#copystats 5001
-#copyspr 5001
+#newmonster 7742
+#copystats 7715
+#copyspr 7715
 #descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
 #reclimit 10
 #coldrec 2
@@ -6848,9 +6845,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Marauder #2 - foreignrec
 
-#newmonster 5029
-#copystats 5002
-#copyspr 5002
+#newmonster 7743
+#copystats 7716
+#copyspr 7716
 #descr "Marauders are natural fighters, born into hardship and brought up in a world where surviving each day is no small victory. Only the strong and the capable prosper, for the weak are weeded out and killed. They have no time for plough or sickle, for their tools are the axe, the sword and the shield. What their own lands cannot provide, they take from the lands of lesser men."
 #reclimit 10
 #coldrec 2
@@ -6858,7 +6855,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Nurgle Marauder Horsemen
 
-#newmonster 5003
+#newmonster 7717
 #spr1 "./Warhammer-Complete/marauder_horseman_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/marauder_horseman_nurgle_2.tga"
 #name "Marauder Horseman"
@@ -6895,7 +6892,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Warrior of Nurgle #1
 
-#newmonster 5004
+#newmonster 7718
 #spr1 "./Warhammer-Complete/Warrior_of_Nurgle_flail_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Nurgle_flail_2.tga"
 #name "Chaos Warrior"
@@ -6933,7 +6930,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Warrior of Nurgle #2
 
-#newmonster 5005
+#newmonster 7719
 #spr1 "./Warhammer-Complete/Warrior_of_Nurgle_axe_1.tga"
 #spr2 "./Warhammer-Complete/Warrior_of_Nurgle_axe_2.tga"
 #name "Chaos Warrior"
@@ -6970,7 +6967,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Plague knights
 
-#newmonster 5006
+#newmonster 7720
 #spr1 "./Warhammer-Complete/plagueknight_1.tga"
 #spr2 "./Warhammer-Complete/plagueknight_2.tga"
 #name "Plague Knight"
@@ -7012,7 +7009,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Standard Bearer
 
-#newmonster 5007
+#newmonster 7721
 #spr1 "./Warhammer-Complete/standard_bearer_1NR.tga"
 #spr2 "./Warhammer-Complete/standard_bearer_2NR.tga"
 #name "Standard Bearer"
@@ -7050,7 +7047,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Chosen of Nurgle #1
 
-#newmonster 5008
+#newmonster 7722
 #spr1 "./Warhammer-Complete/Chosen_flail_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_flail_2.tga"
 #name "Chosen"
@@ -7090,7 +7087,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Chosen of Nurgle #2
 
-#newmonster 5009
+#newmonster 7723
 #spr1 "./Warhammer-Complete/Chosen_axe_1NR.tga"
 #spr2 "./Warhammer-Complete/Chosen_axe_2NR.tga"
 #name "Chosen"
@@ -7133,7 +7130,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Nurgle Cultist
 
-#newmonster 5010
+#newmonster 7724
 #spr1 "./Warhammer-Complete/nurgle_cultist_1.tga"
 #spr2 "./Warhammer-Complete/nurgle_cultist_2.tga"
 #name "Cultist"
@@ -7165,14 +7162,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #stealthy 0
 #startage 30
 #maxage 150
-#userestricteditem 6565
+#userestricteditem 1
 #diseaseres 80
 #end
 
 
 -- Forsaken Champion
 
-#newmonster 5041
+#newmonster 7755
 #spr1 "./Warhammer-Complete/forsaken_nurgle_champion_1.tga"
 #spr2 "./Warhammer-Complete/forsaken_nurgle_champion_2.tga"
 #name "Forsaken Champion"
@@ -7219,7 +7216,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Ungor Raider Halfhorn
 
-#newmonster 5042
+#newmonster 7756
 #spr1 "./Warhammer-Complete/ungor_raider_halfhorn_1NR.tga"
 #spr2 "./Warhammer-Complete/ungor_raider_halfhorn_2NR.tga"
 #name "Ungor Raider Halfhorn"
@@ -7254,7 +7251,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Doombull of Nurgle
 
-#newmonster 5043
+#newmonster 7757
 #spr1 "./Warhammer-Complete/doombull_1NR.tga"
 #spr2 "./Warhammer-Complete/doombull_2NR.tga"
 #name "Pestibull"
@@ -7302,7 +7299,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Wargor
 
-#newmonster 5044
+#newmonster 7758
 #spr1 "./Warhammer-Complete/wargor_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/wargor_nurgle_2.tga"
 #nametype 109
@@ -7344,7 +7341,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Marauder Chieftain
 
-#newmonster 5027
+#newmonster 7741
 #spr1 "./Warhammer-Complete/marauder_chieftain_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/marauder_chieftain_nurgle_2.tga"
 #name "Marauder Chieftain"
@@ -7385,7 +7382,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Bray-Shaman
 
-#newmonster 5045
+#newmonster 7759
 #spr1 "./Warhammer-Complete/bray-shaman_1NR.tga"
 #spr2 "./Warhammer-Complete/bray-shaman_2NR.tga"
 #name "Bray-Shaman"
@@ -7426,7 +7423,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Sorcerer of Nurgle
 
-#newmonster 5011
+#newmonster 7725
 #spr1 "./Warhammer-Complete/nurgle_sorcerer_1.tga"
 #spr2 "./Warhammer-Complete/nurgle_sorcerer_2.tga"
 #name "Chaos Sorcerer"
@@ -7463,7 +7460,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Exalted Sorcerer of Nurgle
 
-#newmonster 5012
+#newmonster 7726
 #spr1 "./Warhammer-Complete/exalted_sorcerer_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/exalted_sorcerer_nurgle_2.tga"
 #name "Exalted Chaos Sorcerer"
@@ -7502,7 +7499,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Sorcerer Lord
 
-#newmonster 5013
+#newmonster 7727
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_nurgle_2.tga"
 #name "Chaos Sorcerer Lord"
@@ -7543,7 +7540,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Champion of Nurgle
 
-#newmonster 5014
+#newmonster 7728
 #spr1 "./Warhammer-Complete/Champion_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Champion_of_Nurgle_2.tga"
 #name "Chaos Champion"
@@ -7587,7 +7584,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Exalted Champion of Nurgle
 
-#newmonster 5015
+#newmonster 7729
 #spr1 "./Warhammer-Complete/Exalted_Champion_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Exalted_Champion_Nurgle_2.tga"
 #name "Exalted Chaos Champion"
@@ -7634,7 +7631,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Lord of Nurgle
 
-#newmonster 5016
+#newmonster 7730
 #spr1 "./Warhammer-Complete/lord_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/lord_of_nurgle_2.tga"
 #name "Chaos Lord"
@@ -7681,7 +7678,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #snow
 #diseaseres 100
-#prophetshape 5034
+#prophetshape 7748
 #end
 
 ---- HEROES
@@ -7689,7 +7686,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Spawn of Nurgle
 
-#newmonster 5017
+#newmonster 7731
 #spr1 "./Warhammer-Complete/spawn_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/spawn_of_nurgle_2.tga"
 #name "Spawn of Nurgle"
@@ -7738,16 +7735,16 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #montag 5555
 #end
 
-#newmonster 4799 -- Spawn #2
+#newmonster 7677 -- Spawn #2
 #descr "A mortal who is visited by too many of Nurgle's gifts eventually succumbs to madness and mutation and becomes a Spawn of Chaos. To many Northmen this is seen as a great favour, for the mortal becomes a true creature of Chaos, warped beyond recognition, no longer fettered by mortal concerns of self-preservation, loyalty, or even anything more than instinct."
-#copystats 5017
-#copyspr 5017
+#copystats 7731
+#copyspr 7731
 #montag 5555
 #end
 
 -- Chosen Lord of Nurgle
 
-#newmonster 5034
+#newmonster 7748
 #spr1 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_2.tga"
 #name "Chosen Lord of Nurgle"
@@ -7796,7 +7793,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Ku'gath the Plaguefather
 
-#newmonster 5030
+#newmonster 7744
 #spr1 "./Warhammer-Complete/Kugath_1.tga"
 #spr2 "./Warhammer-Complete/Kugath_2.tga"
 #name "Plaguefather"
@@ -7832,8 +7829,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #command 20
 #expertundeadleader
 #deathdisease 10
-#domsummon -69402
-#makemonsters3 -69402
+#domsummon -6004
+#makemonsters3 -6004
 #poisonres 25
 #wastesurvival
 #snow
@@ -7850,7 +7847,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Valnir the Reaper
 
-#newmonster 5031
+#newmonster 7745
 #spr1 "./Warhammer-Complete/valnir_1.tga"
 #spr2 "./Warhammer-Complete/valnir_2.tga"
 #name "Reaper"
@@ -7875,7 +7872,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 15494
-#startitem 968
+#startitem 518
 #gcost 0
 #rcost 1
 #snow
@@ -7902,7 +7899,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Festus the Leechlord
 
-#newmonster 5032
+#newmonster 7746
 #spr1 "./Warhammer-Complete/festus_1.tga"
 #spr2 "./Warhammer-Complete/festus_2.tga"
 #name "Leechlord"
@@ -7950,7 +7947,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Epidemius the Nurgle's chosen tallyman
 
-#newmonster 5033
+#newmonster 7747
 #spr1 "./Warhammer-Complete/Epidemius_1.tga"
 #spr2 "./Warhammer-Complete/Epidemius_2.tga"
 #name "Chosen Tallyman"
@@ -7989,7 +7986,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #magicpower 1
 #poisonres 25
 #onebattlespell "Divine Blessing"
-#batstartsum3 -69402
+#batstartsum3 -6004
 #itemslots 13446
 #end
 
@@ -7997,7 +7994,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Nurgle Plaguebearer
 
-#newmonster 5018
+#newmonster 7732
 #spr1 "./Warhammer-Complete/Plaguebearer_1.tga"
 #spr2 "./Warhammer-Complete/Plaguebearer_2.tga"
 #name "Plaguebearer"
@@ -8031,7 +8028,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Nurgling #1
 
-#newmonster 5019
+#newmonster 7733
 #spr1 "./Warhammer-Complete/Nurgling_1_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_1_2.tga"
 #name "Nurgling"
@@ -8059,14 +8056,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #neednoteat
 #holy
 #magicpower 1
-#montag 69402
+#montag 6004
 #stealthy 0
 #heal
 #end
 
 -- Nurgling #2
 
-#newmonster 5020
+#newmonster 7734
 #spr1 "./Warhammer-Complete/Nurgling_2_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_2_2.tga"
 #name "Nurgling"
@@ -8094,14 +8091,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #neednoteat
 #holy
 #magicpower 1
-#montag 69402
+#montag 6004
 #stealthy 0
 #heal
 #end
 
 -- Nurgling #3
 
-#newmonster 5021
+#newmonster 7735
 #spr1 "./Warhammer-Complete/Nurgling_3_1.tga"
 #spr2 "./Warhammer-Complete/Nurgling_3_2.tga"
 #name "Nurgling"
@@ -8129,14 +8126,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #neednoteat
 #holy
 #magicpower 1
-#montag 69402
+#montag 6004
 #stealthy 0
 #heal
 #end
 
 -- Herald of Nurgle
 
-#newmonster 5022
+#newmonster 7736
 #spr1 "./Warhammer-Complete/Herald_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Herald_of_Nurgle_2.tga"
 #name "Herald of Nurgle"
@@ -8166,8 +8163,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #maxage 10000
 #poisonres 25
 #deathdisease 2
-#batstartsum4 5018
-#summon1 5018
+#batstartsum4 7732
+#summon1 7732
 #popkill 1
 #demon
 #neednoteat
@@ -8178,7 +8175,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Beast of Nurgle
 
-#newmonster 5026
+#newmonster 7740
 #spr1 "./Warhammer-Complete/beast_of_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/beast_of_nurgle_2.tga"
 #name "Beast of Nurgle"
@@ -8219,7 +8216,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Chaos Fury
 
-#newmonster 5023
+#newmonster 7737
 #spr1 "./Warhammer-Complete/chaosfury_nurgle_1.tga"
 #spr2 "./Warhammer-Complete/chaosfury_nurgle_2.tga"
 #name "Chaos Fury"
@@ -8253,7 +8250,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Plague Drone
 
-#newmonster 5046
+#newmonster 7760
 #spr1 "./Warhammer-Complete/plague_drone_1.tga"
 #spr2 "./Warhammer-Complete/plague_drone_2.tga"
 #name "Plague Drone"
@@ -8291,7 +8288,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #deathdisease 5
 #demon
 #neednoteat
-#secondshape 5047
+#secondshape 7761
 #itemslots 12288
 #holy
 #heal
@@ -8299,7 +8296,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Rot Fly (Plague Drone second form)
 
-#newmonster 5047
+#newmonster 7761
 #spr1 "./Warhammer-Complete/rot_fly_1.tga"
 #spr2 "./Warhammer-Complete/rot_fly_2.tga"
 #name "Rot Fly"
@@ -8343,7 +8340,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Great Unclean One
 
-#newmonster 5024
+#newmonster 7738
 #spr1 "./Warhammer-Complete/Great_Unclean_One_1.tga"
 #spr2 "./Warhammer-Complete/Great_Unclean_One_2.tga"
 #name "Great Unclean One"
@@ -8378,8 +8375,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #command 40
 #expertundeadleader
 #deathdisease 6
-#domsummon -69402
-#makemonsters2 -69402
+#domsummon -6004
+#makemonsters2 -6004
 #fear 8
 #demon
 #neednoteat
@@ -8393,7 +8390,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 --Daemon Prince of Nurgle (Summon)
 
-#newmonster 5049
+#newmonster 7763
 #spr1 "./Warhammer-Complete/Nurgle_Daemon_Prince_1.tga"
 #spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
 #name "Daemon Prince"
@@ -8441,7 +8438,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Daemon Prince of Nurgle Pretender
 
-#newmonster 5025
+#newmonster 7739
 #spr1 "./Warhammer-Complete/Nurgle_Daemon_Prince_1.tga"
 #spr2 "./Warhammer-Complete/Nurgle_Daemon_Prince_2.tga"
 #name "Daemon Prince of Nurgle"
@@ -8489,7 +8486,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Sorcerer Lord of Nurgle Pretender
 
-#newmonster 5048
+#newmonster 7762
 #spr1 "./Warhammer-Complete/Sorcerer_Lord_Pretender_1NR.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_Pretender_2NR.tga"
 #name "Sorcerer Lord of Nurgle"
@@ -8548,7 +8545,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 3
 #fatiguecost 800
 #effect 10001
-#damage 5026
+#damage 7740
 #nreff 5
 #end
 
@@ -8564,7 +8561,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 2
 #fatiguecost 500
 #effect 10001
-#damage 5018
+#damage 7732
 #nreff 4
 #end
 
@@ -8579,7 +8576,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 3
 #fatiguecost 0
 #effect 10001
-#damage 5018
+#damage 7732
 #nreff 1007
 #end
 
@@ -8608,7 +8605,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 3
 #fatiguecost 1500
 #effect 10021
-#damage 5022
+#damage 7736
 #nreff 1
 #end
 
@@ -8626,7 +8623,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 1 2
 #fatiguecost 400
 #effect 10001
-#damage 5046
+#damage 7760
 #nreff 1
 #end
 
@@ -8642,7 +8639,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 5
 #fatiguecost 4000
 #effect 10021
-#damage 5049
+#damage 7763
 #nreff 1
 #end
 
@@ -8660,7 +8657,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 1 2
 #fatiguecost 4500
 #effect 10021
-#damage 5024
+#damage 7738
 #nreff 1
 #end
 
@@ -8676,7 +8673,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 0 1
 #fatiguecost 400
 #effect 10001
-#damage 5023
+#damage 7737
 #nreff 10
 #end
 
@@ -8696,7 +8693,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #pathlevel 1 1
 #fatiguecost 2000
 #effect 10001
-#damage 5050
+#damage 7764
 #nreff 1002
 #end
 
@@ -8819,7 +8816,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Chaos Armour copy
 
-#selectitem 968
+#selectitem 518
 #restricted 136
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 12
@@ -8881,7 +8878,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #nofind
 #cursed
 #magicboost 8 1
-#restricteditem 6565
+#restricteditem 1
 #end
 
 -------- EVENTS --------
@@ -8894,7 +8891,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #req_notnation 120
 #req_notnation 136
 #nation 136 -- Nurgle controls the troops
-#req_monster 5010 -- Cultist
+#req_monster 7724 -- Cultist
 #req_capital 0
 #req_maxdef 24
 #req_minunrest 80
@@ -8907,8 +8904,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #unrest 40
 #newdom 3
 #incscale2 0
-#com 5022 -- Herald
-#5d6units 5018 -- Plaguebearers
+#com 7736 -- Herald
+#5d6units 7732 -- Plaguebearers
 #end
 
 --#newevent
@@ -8927,7 +8924,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -------- SITES -----------
 
-#newsite 1925
+#newsite 1906
 #name "Chaos Vortex of Nurgle"
 #path 5
 #level 0
@@ -8936,15 +8933,15 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #gems 6 2
 #end
 
-#newsite 1926
+#newsite 1907
 #name "Halls of Nurgle"
 #path 8
 #level 0
 #rarity 5
-#homemon 5008 -- Chosen of Nurgle #1
-#homemon 5009 -- Chosen of Nurgle #2
-#homecom 5016 -- Chaos Lord of Nurgle
-#homecom 5013 -- Sorcerer Lord of Nurgle
+#homemon 7722 -- Chosen of Nurgle #1
+#homemon 7723 -- Chosen of Nurgle #2
+#homecom 7730 -- Chaos Lord of Nurgle
+#homecom 7727 -- Sorcerer Lord of Nurgle
 #end
 
 -------- NATIONS ---------
@@ -8967,10 +8964,10 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 ---- GODS
 
 #homerealm 1
-#addgod 5025 -- Daemon Prince of Nurgle
-#cheapgod20 5025
-#addgod 5048 -- Sorcerer Lord of Nurgle
-#cheapgod20 5048
+#addgod 7739 -- Daemon Prince of Nurgle
+#cheapgod20 7739
+#addgod 7762 -- Sorcerer Lord of Nurgle
+#cheapgod20 7762
 #addgod 656 -- Fountain of Blood
 #addgod 1348 -- Titan of Serpents and Medicine
 #addgod 2431 -- Titan of the Underworld
@@ -8992,25 +8989,25 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 ---- RECRUITS
 
 #clearrec
-#wasterec 5000 -- Warhound
+#wasterec 7714 -- Warhound
 --#wasterec 5040 -- Forsaken
-#forestrec 5038 -- Ungor
-#forestrec 5039 -- Ungor Raider
-#forestrec 5037 -- Gor
-#forestrec 5036 -- Pestigor
-#swamprec 5050 -- Bile Troll
-#addrecunit 5001 -- Marauder w. Club
-#addforeignunit 5028 -- Foreignrec Marauder #1
-#addrecunit 5002 -- Marauder w. Flail
-#addforeignunit 5029 -- Foreignrec Marauder #2
-#addrecunit 5003 -- Marauder Horsemen
-#addrecunit 5004 -- Nurgle Chaos Warrior #1
-#addrecunit 5005 -- Nurgle Chaos Warrior #2
-#addrecunit 5007 -- Standard Bearer
+#forestrec 7752 -- Ungor
+#forestrec 7753 -- Ungor Raider
+#forestrec 7751 -- Gor
+#forestrec 7750 -- Pestigor
+#swamprec 7764 -- Bile Troll
+#addrecunit 7715 -- Marauder w. Club
+#addforeignunit 7742 -- Foreignrec Marauder #1
+#addrecunit 7716 -- Marauder w. Flail
+#addforeignunit 7743 -- Foreignrec Marauder #2
+#addrecunit 7717 -- Marauder Horsemen
+#addrecunit 7718 -- Nurgle Chaos Warrior #1
+#addrecunit 7719 -- Nurgle Chaos Warrior #2
+#addrecunit 7721 -- Standard Bearer
 --addrecunit 3326 --
 --addrecunit 3327 --
-#addrecunit 5006 -- Chaos Knight
-#forestrec 5035 -- Minotaur
+#addrecunit 7720 -- Chaos Knight
+#forestrec 7749 -- Minotaur
 
 --addrecunit 5018 -- Plaguebearer
 --addrecunit 5026 -- Beast
@@ -9034,18 +9031,18 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 
 ---- LEADERS
 
-#addreccom 5010 -- Nurgle Cultist
+#addreccom 7724 -- Nurgle Cultist
 --#wastecom 5041 -- Forsaken Champion
-#forestcom 5042 -- Ungor Raider Halfhorn
-#forestcom 5044 -- Wargor
-#forestcom 5043 -- Doombull
-#addreccom 5027 -- Marauder Chieftain
-#addreccom 5014 -- Champion of Nurgle
-#addreccom 5015 -- Exalted Champion of Nurgle
-#forestcom 5045 -- Bray-Shaman
+#forestcom 7756 -- Ungor Raider Halfhorn
+#forestcom 7758 -- Wargor
+#forestcom 7757 -- Doombull
+#addreccom 7741 -- Marauder Chieftain
+#addreccom 7728 -- Champion of Nurgle
+#addreccom 7729 -- Exalted Champion of Nurgle
+#forestcom 7759 -- Bray-Shaman
 --addreccom 5016 -- Lord of Nurgle, cap only
-#addreccom 5011 -- Sorcerer of Nurgle
-#addreccom 5012 -- Exalted Sorcerer of Nurgle
+#addreccom 7725 -- Sorcerer of Nurgle
+#addreccom 7726 -- Exalted Sorcerer of Nurgle
 --addreccom 5013 -- Sorcerer Lord of Nurgle, cap only
 --addreccom  --
 --addreccom 5017 -- Spawn of Nurgle
@@ -9062,13 +9059,13 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 --addreccom 3369
 --addreccom 3370
 
-#hero1 5030 -- Ku'Gath
-#hero2 5031 -- Valnir the Reaper
-#hero3 5032 -- Festus the Leechlord
-#hero4 5033 -- Epidemius
+#hero1 7744 -- Ku'Gath
+#hero2 7745 -- Valnir the Reaper
+#hero3 7746 -- Festus the Leechlord
+#hero4 7747 -- Epidemius
 --#hero5 3349 -- somethingsomething
-#multihero1 5017 -- Spawn of Nurgle
-#multihero2 5034 -- Chosen Lord of Nurgle
+#multihero1 7731 -- Spawn of Nurgle
+#multihero2 7748 -- Chosen Lord of Nurgle
 
 
 ----- STARTSITES
@@ -9095,12 +9092,12 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 ------- PROVINCE DEFENCE
 
 --Sets the units to be used in province defense.
-#defcom1 5027
-#defcom2 5011
-#defunit1 5001
-#defunit1b 5002
-#defunit2 5005
-#defunit2b 5003
+#defcom1 7741
+#defcom2 7725
+#defunit1 7715
+#defunit1b 7716
+#defunit2 7719
+#defunit2b 7717
 
 --Sets how many of the units to appear per 10 points.
 #defmult1 10
@@ -9110,11 +9107,11 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 
 ------- STARTING UNITS
 
-#startcom 5027
-#startscout 5010
-#startunittype1 5001
+#startcom 7741
+#startscout 7724
+#startunittype1 7715
 #startunitnbrs1 15
-#startunittype2 5002
+#startunittype2 7716
 #startunitnbrs2 10
 #end
 
@@ -9176,7 +9173,7 @@ still to do
 
 -------- ITEMS
 
-#selectitem 901
+#selectitem 515
 --#copyitem 51
 #restricted 121
 #name "Maw Cleaver"
@@ -9194,7 +9191,7 @@ still to do
 #end
 
 
-#selectitem 902
+#selectitem 516
 #name "Skrag's Meatpot"
 #descr "Skrag's meatpot has been fed with all manner of ogres, greenskins, men, beasts, and reputedly even daemons. Over time it has become a channel to the maw itself and hungers constantly, driving the already unhinged and violent Skrag into an endless frenzy that he might constantly offer it more flesh."
 #spr "./Warhammer-Complete/Item_Meatpot.tga"
@@ -9550,7 +9547,7 @@ still to do
 
 ----Ogre Bull (Club)
 
-#newmonster 5500
+#newmonster 7766
 #spr1 "./Warhammer-Complete/Ogre Bull Club.tga"
 #spr2 "./Warhammer-Complete/Ogre Bull Club2.tga"
 #name "Ogre Bull"
@@ -9588,7 +9585,7 @@ still to do
 
 ----Ogre Bull (Ironfist)
 
-#newmonster 5501
+#newmonster 7767
 #spr1 "./Warhammer-Complete/Ogre Bull Ironfist.tga"
 #spr2 "./Warhammer-Complete/Ogre Bull Ironfist2.tga"
 #name "Ogre Bull"
@@ -9626,7 +9623,7 @@ still to do
 
 ----Ogre Irongut
 
-#newmonster 5502
+#newmonster 7768
 #spr1 "./Warhammer-Complete/Ogre Irongut.tga"
 #spr2 "./Warhammer-Complete/Ogre Irongut2.tga"
 #name "Ogre Irongut"
@@ -9666,7 +9663,7 @@ still to do
 
 ----Gnoblar Fighter
 
-#newmonster 5503
+#newmonster 7769
 #spr1 "./Warhammer-Complete/Gnoblar Fighter.tga"
 #spr2 "./Warhammer-Complete/Gnoblar Fighter2.tga"
 #name "Gnoblar Fighter"
@@ -9698,7 +9695,7 @@ still to do
 
 ----Gnoblar Trapper
 
-#newmonster 5511
+#newmonster 7775
 #spr1 "./Warhammer-Complete/Gnoblar Trapper.tga"
 #spr2 "./Warhammer-Complete/Gnoblar Trapper2.tga"
 #name "Gnoblar Trapper"
@@ -9734,7 +9731,7 @@ still to do
 
 ---- Ogre Deathbelcher
 
-#newmonster 5507
+#newmonster 7771
 #spr1 "./Warhammer-Complete/Ogre Deathbelcher.tga"
 #spr2 "./Warhammer-Complete/Ogre Deathbelcher2.tga"
 #name "Ogre Deathbelcher"
@@ -9773,7 +9770,7 @@ still to do
 
 --- Gorger
 
-#newmonster 5508
+#newmonster 7772
 #copystats 1010
 #clearmagic#clearmagic#clearmagic
 #spr1 "./Warhammer-Complete/Gorger.tga"
@@ -9809,7 +9806,7 @@ still to do
 
 --- Sabretusk
 
-#newmonster 5509
+#newmonster 7773
 #spr1 "./Warhammer-Complete/Sabretusk.tga"
 #spr2 "./Warhammer-Complete/Sabretusk2.tga"
 #name "Sabretusk"
@@ -9846,7 +9843,7 @@ still to do
 
 --- Yhetee
 
-#newmonster 5510
+#newmonster 7774
 #clearmagic#clearmagic#clearmagic
 #spr1 "./Warhammer-Complete/Yhetee.tga"
 #spr2 "./Warhammer-Complete/Yhetee2.tga"
@@ -9888,7 +9885,7 @@ still to do
 --- Ogre Maneater (Western)
 
 
-#newmonster 5515
+#newmonster 7776
 #spr1 "./Warhammer-Complete/Ogre Maneater West.tga"
 #spr2 "./Warhammer-Complete/Ogre Maneater West2.tga"
 #name "Ogre Western Maneater"
@@ -9936,7 +9933,7 @@ still to do
 --- Ogre Maneater (Eastern)
 
 
-#newmonster 5516
+#newmonster 7777
 #spr1 "./Warhammer-Complete/Ogre Maneater East.tga"
 #spr2 "./Warhammer-Complete/Ogre Maneater East2.tga"
 #name "Ogre Eastern Maneater"
@@ -9979,7 +9976,7 @@ still to do
 
 --- Mawtribe Ogre
 
-#newmonster 5517
+#newmonster 7778
 #spr1 "./Warhammer-Complete/Ogre Mawtribe.tga"
 #spr2 "./Warhammer-Complete/Ogre Mawtribe2.tga"
 #name "Mawtribe Ogre"
@@ -10019,7 +10016,7 @@ still to do
 
 --- Scraplauncher
 
-#newmonster 5518
+#newmonster 7779
 #spr1 "./Warhammer-Complete/Scrap Launcher.tga"
 #spr2 "./Warhammer-Complete/Scrap Launcher2.tga"
 #name "Gnoblar Scraplauncer"
@@ -10047,7 +10044,7 @@ still to do
 #mountainsurvival
 #coldres 8
 #snow
-#secondtmpshape 5519
+#secondtmpshape 7780
 #darkvision 50
 #undisciplined
 #end
@@ -10056,7 +10053,7 @@ still to do
 
 ---- Pissed Off Rhinox
 
-#newmonster 5519
+#newmonster 7780
 #spr1 "./Warhammer-Complete/Rhinox.tga"
 #spr2 "./Warhammer-Complete/Rhinox2.tga"
 #name "Rhinox"
@@ -10089,7 +10086,7 @@ still to do
 
 ---- Ogre Pitfighter
 
-#newmonster 5526
+#newmonster 7787
 #spr1 "./Warhammer-Complete/Ogre Pitfighter.tga"
 #spr2 "./Warhammer-Complete/Ogre Pitfighter2.tga"
 #name "Ogre Pitfighter"
@@ -10131,7 +10128,7 @@ still to do
 
 ---- Slave giant
 
-#newmonster 5525
+#newmonster 7786
 #spr1 "./Warhammer-Complete/Slavegiant.tga"
 #spr2 "./Warhammer-Complete/Slavegiant2.tga"
 #name "Slave Giant"
@@ -10177,7 +10174,7 @@ still to do
 ----Gnoblar Scout
 
 
-#newmonster 5527
+#newmonster 7788
 #spr1 "./Warhammer-Complete/Gnoblar Trapper.tga"
 #spr2 "./Warhammer-Complete/Gnoblar Trapper2.tga"
 #name "Gnoblar Scout"
@@ -10213,7 +10210,7 @@ still to do
 
 ----Ogre Bruiser
 
-#newmonster 5520
+#newmonster 7781
 #spr1 "./Warhammer-Complete/Ogre Bruiser.tga"
 #spr2 "./Warhammer-Complete/Ogre Bruiser2.tga"
 #name "Ogre Bruiser"
@@ -10253,7 +10250,7 @@ still to do
 
 ----Ogre Butcher
 
-#newmonster 5521
+#newmonster 7782
 #spr1 "./Warhammer-Complete/Ogre Butcher.tga"
 #spr2 "./Warhammer-Complete/Ogre Butcher2.tga"
 #name "Ogre Butcher"
@@ -10279,7 +10276,7 @@ still to do
 #magicskill 7 2
 #custommagic 13696 20 -- NAEFD
 #researchbonus -2
-#startitem 901
+#startitem 515
 #weapon "Ogre Choppa"
 #weapon "Ogre Smash"
 #maxage 60
@@ -10297,7 +10294,7 @@ still to do
 
 ----Ogre Slaughtermaster
 
-#newmonster 5522
+#newmonster 7783
 #spr1 "./Warhammer-Complete/Ogre Slaughtermaster.tga"
 #spr2 "./Warhammer-Complete/Ogre Slaughtermaster2.tga"
 #name "Ogre Slaughtermaster"
@@ -10324,7 +10321,7 @@ still to do
 #custommagic 1152 100
 #custommagic 13696 20 -- NAEFD
 #researchbonus -2
-#startitem 901
+#startitem 515
 #weapon "Ogre Choppa"
 #weapon "Ogre Smash"
 #armor "Leather Cap"
@@ -10343,7 +10340,7 @@ still to do
 
 ----Ogre Firebelly
 
-#newmonster 5504
+#newmonster 7770
 #spr1 "./Warhammer-Complete/Ogre Firebelly.tga"
 #spr2 "./Warhammer-Complete/Ogre Firebelly2.tga"
 #name "Ogre Firebelly"
@@ -10386,7 +10383,7 @@ still to do
 
 ---- Ogre Tyrant
 
-#newmonster 5523
+#newmonster 7784
 #spr1 "./Warhammer-Complete/Ogre Tyrant.tga"
 #spr2 "./Warhammer-Complete/Ogre Tyrant2.tga"
 #name "Ogre Tyrant"
@@ -10430,7 +10427,7 @@ still to do
 
 ---- Ogre Hunter
 
-#newmonster 5524
+#newmonster 7785
 #spr1 "./Warhammer-Complete/Ogre Hunter.tga"
 #spr2 "./Warhammer-Complete/Ogre Hunter2.tga"
 #name "Ogre Hunter"
@@ -10478,7 +10475,7 @@ still to do
 
 ---- Henchfiend
 
-#newmonster 5532
+#newmonster 7793
 #spr1 "./Warhammer-Complete/Henchfiend.tga"
 #spr2 "./Warhammer-Complete/Henchfiend2.tga"
 #name "Henchfiend"
@@ -10517,7 +10514,7 @@ still to do
 
 --- Yhetee Shaman
 
-#newmonster 5534
+#newmonster 7795
 #spr1 "./Warhammer-Complete/Yhetee Shaman.tga"
 #spr2 "./Warhammer-Complete/Yhetee Shaman2.tga"
 #name "Yhetee Shaman"
@@ -10565,7 +10562,7 @@ still to do
 
 ---- Mawgut Summon
 
-#newmonster 5535
+#newmonster 7796
 #spr1 "./Warhammer-Complete/Mawgut.tga"
 #spr2 "./Warhammer-Complete/Mawgut2.tga"
 #name "Mawgut"
@@ -10617,7 +10614,7 @@ still to do
 
 ---- Mawfiend
 
-#newmonster 5539
+#newmonster 7798
 #spr1 "./Warhammer-Complete/Mawfiend.tga"
 #spr2 "./Warhammer-Complete/Mawfiend2.tga"
 #name "Mawfiend"
@@ -10665,7 +10662,7 @@ still to do
 
 ---- Facet of the Maw
 
-#newmonster 5538
+#newmonster 7797
 #spr1 "./Warhammer-Complete/Mawpit2.tga"
 #spr2 "./Warhammer-Complete/Mawpit3.tga"
 #name "Facet of the Maw"
@@ -10715,7 +10712,7 @@ still to do
 
 ---- Skrag the Slaughterer
 
-#newmonster 5533
+#newmonster 7794
 #spr1 "./Warhammer-Complete/Hero Skrag.tga"
 #spr2 "./Warhammer-Complete/Hero Skrag2.tga"
 #name "Prophet of the Great Maw"
@@ -10762,16 +10759,16 @@ still to do
 #spreaddom 1
 #itemslots 15488 -- head, 2 misc (one taken), feet, body
 #fixedname "Skrag the Slaughterer"
-#batstartsum1d6 5508 -- Gorger
-#batstartsum1 5508 -- Gorger
-#startitem 902 -- skrag's meatpot
+#batstartsum1d6 7772 -- Gorger
+#batstartsum1 7772 -- Gorger
+#startitem 516 -- skrag's meatpot
 #onebattlespell "Divine Blessing" -- automatically blesses everyone
 #end
 
 
 --- Golgfag Maneater
 
-#newmonster 5497
+#newmonster 7765
 #spr1 "./Warhammer-Complete/Hero Golgfag.tga"
 #spr2 "./Warhammer-Complete/Hero Golgfag2.tga"
 #name "Mercenary Captain"
@@ -10822,7 +10819,7 @@ still to do
 
 ---- Groth Onefinger, First Prophet of the Wastes
 
-#newmonster 5531
+#newmonster 7792
 #spr1 "./Warhammer-Complete/Hero Onefinger.tga"
 #spr2 "./Warhammer-Complete/Hero Onefinger2.tga"
 #name "First Prophet of the Wastes"
@@ -10864,13 +10861,13 @@ still to do
 #nametype 193
 #itemslots 15488
 #spreaddom 1
-#summon1 5517 -- mawtribe bull
+#summon1 7778 -- mawtribe bull
 #fixedname "Groth Onefinger"
 #end
 
 ---- Slavelord Braugh
 
-#newmonster 5528
+#newmonster 7789
 #spr1 "./Warhammer-Complete/Hero Slavelord.tga"
 #spr2 "./Warhammer-Complete/Hero Slavelord2.tga"
 #name "Slavelord"
@@ -10908,9 +10905,9 @@ still to do
 #fear 6
 #pillagebonus 10
 #nametype 193
-#makemonsters5 5529
-#makemonsters4 5530
-#summon5 5529
+#makemonsters5 7790
+#makemonsters4 7791
+#summon5 7790
 #undead
 #itemslots 15488
 #taxcollector
@@ -10921,7 +10918,7 @@ still to do
 
 --- Living slave
 
-#newmonster 5529
+#newmonster 7790
 #copystats 720
 #spr1 "./Warhammer-Complete/Enslaved.tga"
 #spr2 "./Warhammer-Complete/Enslaved2.tga"
@@ -10929,7 +10926,7 @@ still to do
 #descr "An unfortunate captive of the infamous Corpse Slaver Braugh this human's mind has been destroyed and upon his death his corpse will continue to serve the Slavelord."
 #mor 50
 #gcost 1
-#secondshape 5530
+#secondshape 7791
 #weapon "claw"
 #att 8
 #def 8
@@ -10940,7 +10937,7 @@ still to do
 
 --- Soulless Slave
 
-#newmonster 5530
+#newmonster 7791
 #copyspr 197
 #copystats 197
 #name "Enslaved Corpse"
@@ -10966,7 +10963,7 @@ still to do
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10021
-#damage 5535
+#damage 7796
 #nreff 1
 #fatiguecost 1000
 #nextspell 91 -- kill caster
@@ -10988,7 +10985,7 @@ still to do
 #pathlevel 1 1
 #effect 10021
 #fatiguecost 6000
-#damage 5539
+#damage 7798
 #nreff 1
 #onlygeosrc 64
 #end
@@ -11008,7 +11005,7 @@ still to do
 #pathlevel 1 1
 #effect 10021
 #fatiguecost 1600
-#damage 5532
+#damage 7793
 #nreff 1
 #end
 
@@ -11029,7 +11026,7 @@ still to do
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 1200
-#damage 5508
+#damage 7772
 #nreff 2
 #end
 
@@ -11050,7 +11047,7 @@ still to do
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 2800
-#damage 5508
+#damage 7772
 #nreff 6
 #end
 
@@ -11071,7 +11068,7 @@ still to do
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 2400
-#damage 5517
+#damage 7778
 #nreff 8
 #end
 
@@ -11089,7 +11086,7 @@ still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1300
-#damage 5534
+#damage 7795
 #nreff 1
 #onlygeosrc 16 -- mountain
 #end
@@ -11108,7 +11105,7 @@ still to do
 #pathlevel 0 1
 #effect 10001
 #fatiguecost 500
-#damage 5510
+#damage 7774
 #nreff 2
 #onlygeosrc 16 -- mountain
 #end
@@ -11127,7 +11124,7 @@ still to do
 #pathlevel 0 1
 #effect 10001
 #fatiguecost 500
-#damage 5509
+#damage 7773
 #nreff 7
 #onlygeosrc 16 -- mountain
 #onlygeosrc 32
@@ -11240,7 +11237,7 @@ still to do
 #end
 
 
--------- NEW NAMETYPE
+-------- OGRE NAMETYPE
 
 #selectnametype 193
 #clear
@@ -11394,10 +11391,10 @@ still to do
 #req_fort 1
 #req_freesites 1
 #nation -2 -- Ogres control the site
-#hiddensite 1990 -- Maw Pit
+#hiddensite 1915 -- Maw Pit
 #req_capital 0 -- never in capital
 #req_site 0 -- the Pit can't already be here
-#req_nositenbr 1987 -- the Abandoned Pit can't be here
+#req_nositenbr 1912 -- the Abandoned Pit can't be here
 #4d6vis 7 -- Gives 1d6 blood slaves?
 #end
 
@@ -11405,8 +11402,8 @@ still to do
 #msg "With our recent conquest of this Ogre stronghold, the old Maw Pit has been abandoned, with nothing but dried blood and a foul odor remaining to suggest its former use. [Maw Pit]"
 #rarity 5
 #req_site 1
-#removesite 1990 -- Maw Pit
-#hiddensite 1987 -- Abandoned Pit
+#removesite 1915 -- Maw Pit
+#hiddensite 1912 -- Abandoned Pit
 #req_notnation 121 -- Ogres
 #req_pop0ok
 #end
@@ -11419,32 +11416,32 @@ still to do
 #req_fornation 121 -- Ogres
 #req_site 1 -- the abandoned Maw Pit must be here
 #nation -2
-#removesite 1987 -- Abandoned Pit
-#hiddensite 1990 -- Maw Pit
+#removesite 1912 -- Abandoned Pit
+#hiddensite 1915 -- Maw Pit
 #end
 
 
 
 -------- SITES
 
-#newsite 1987
+#newsite 1912
 #name "Abandoned Pit"
 #path 7
 #level 0
 #rarity 5
 #end
 
-#newsite 1988
+#newsite 1913
 #name "Big Maw Pit"
 #path 7
 #level 0
 #rarity 5
 #gems 7 6
-#homemon 5526 -- Pitfighter
+#homemon 7787 -- Pitfighter
 --#homecom 5522 -- Slaughtermaster
 #end
 
-#newsite 1989
+#newsite 1914
 #name "The Wilds"
 #path 6
 #level 0
@@ -11454,13 +11451,13 @@ still to do
 --#homemon 5525 -- Slavegiant
 #end
 
-#newsite 1990
+#newsite 1915
 #name "Maw Pit"
 #path 7
 #level 0
 #rarity 5
 #gems 7 3 -- 3 blood slaves
-#mon 5526 -- Pitfighter
+#mon 7787 -- Pitfighter
 #end
 
 
@@ -11513,8 +11510,8 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 #addgod 2788 -- man eater
 #addgod 3121 -- eldest cyclops
 #addgod 246 -- Freak Lord
-#cheapgod20 5538 -- Facet of the Maw
-#addgod 5538
+#cheapgod20 7797 -- Facet of the Maw
+#addgod 7797
 
 
 --Sets what forts they will use.
@@ -11525,44 +11522,44 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 
 ------- Add soldiers
 
-#addrecunit 5503 -- Gnoblar Fighter
-#addforeignunit 5503 -- Gnoblar Fighter
-#addrecunit 5511 -- Gnoblar Trapper
-#forestrec 5511 -- Gnoblar Trapper
-#mountainrec 5511 -- Gnoblar Trapper
-#addrecunit 5500 -- Ogre Bull Club
-#addforeignunit 5500 -- Ogre Bull Club
-#addrecunit 5501 -- Ogre Bull Ironfist
-#addforeignunit 5501 -- Ogre Bull Ironfist
-#addrecunit 5507 -- Ogre Deathbelcher
-#addrecunit 5502 -- Ogre Irongut
+#addrecunit 7769 -- Gnoblar Fighter
+#addforeignunit 7769 -- Gnoblar Fighter
+#addrecunit 7775 -- Gnoblar Trapper
+#forestrec 7775 -- Gnoblar Trapper
+#mountainrec 7775 -- Gnoblar Trapper
+#addrecunit 7766 -- Ogre Bull Club
+#addforeignunit 7766 -- Ogre Bull Club
+#addrecunit 7767 -- Ogre Bull Ironfist
+#addforeignunit 7767 -- Ogre Bull Ironfist
+#addrecunit 7771 -- Ogre Deathbelcher
+#addrecunit 7768 -- Ogre Irongut
 --addrecunit 5508 -- Gorger
 --addrecunit 5509 -- Sabretusk
 --addrecunit 5510 -- Yhetee
-#addrecunit 5515 -- Ogre Maneater (west)
-#addforeignunit 5515 -- Ogre Maneater (west)
-#addrecunit 5516 -- Ogre Maneater (east)
-#addforeignunit 5516 -- Ogre Maneater (east)
+#addrecunit 7776 -- Ogre Maneater (west)
+#addforeignunit 7776 -- Ogre Maneater (west)
+#addrecunit 7777 -- Ogre Maneater (east)
+#addforeignunit 7777 -- Ogre Maneater (east)
 --addrecunit 5517 -- Mawtribe Ogre
-#addrecunit 5518 -- scraplauncher
-#mountainrec 5518 -- Scraplauncher
-#addrecunit 5525 -- Slave Giant
+#addrecunit 7779 -- scraplauncher
+#mountainrec 7779 -- Scraplauncher
+#addrecunit 7786 -- Slave Giant
 
 
 
 ------- Add leaders
 
-#addreccom 5527 -- Gnoblar Scout
-#addforeigncom 5527 -- Gnoblar Scout
-#addreccom 5520 -- Ogre Bruiser
-#addforeigncom 5520 -- Ogre Bruiser
-#addreccom 5523 -- Ogre Tyrant
-#addreccom 5524 -- Ogre Hunter
-#mountaincom 5524 -- Ogre Hunter
-#addreccom 5504 -- Ogre Firebelly
-#addreccom 5521 -- Ogre Butcher
-#addforeigncom 5521 -- Ogre Butcher
-#addreccom 5522 -- Ogre Slaughtermaster
+#addreccom 7788 -- Gnoblar Scout
+#addforeigncom 7788 -- Gnoblar Scout
+#addreccom 7781 -- Ogre Bruiser
+#addforeigncom 7781 -- Ogre Bruiser
+#addreccom 7784 -- Ogre Tyrant
+#addreccom 7785 -- Ogre Hunter
+#mountaincom 7785 -- Ogre Hunter
+#addreccom 7770 -- Ogre Firebelly
+#addreccom 7782 -- Ogre Butcher
+#addforeigncom 7782 -- Ogre Butcher
+#addreccom 7783 -- Ogre Slaughtermaster
 --addreccom 5528 -- Slavelord Braugh
 --addreccom 5531 -- Groth Onefinger
 --addreccom 5532 -- Henchfiend
@@ -11573,8 +11570,8 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 
 ------- Wall Defenders
 
-#wallcom 5503 -- gnoblar fighter
-#wallunit 5503 -- gnoblar fighter
+#wallcom 7769 -- gnoblar fighter
+#wallunit 7769 -- gnoblar fighter
 #wallmult 20 -- twice the standard amount of defenders, but they are gnoblars after all
 
 
@@ -11583,11 +11580,11 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 
 --Sets the units to be used in province defense.
 
-#defcom1 5520 -- ogre bruiser
-#defcom2 5521 -- ogre butcher
-#defunit1 5500 -- ogre bull with club
-#defunit1b 5503 -- gnoblar fighter
-#defunit2 5501 -- ogre bull with ironfist
+#defcom1 7781 -- ogre bruiser
+#defcom2 7782 -- ogre butcher
+#defunit1 7766 -- ogre bull with club
+#defunit1b 7769 -- gnoblar fighter
+#defunit2 7767 -- ogre bull with ironfist
 
 
 --Sets how many of the units to appear per ten points
@@ -11599,21 +11596,21 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 
 ------- Hero Settings
 
-#hero1 5528 -- Slavelord Braugh
-#hero2 5531 -- Groth Onefinger
-#hero3 5533 -- Skrag the Slaughterer
-#hero4 5497 -- Golfag Maneater
+#hero1 7789 -- Slavelord Braugh
+#hero2 7792 -- Groth Onefinger
+#hero3 7794 -- Skrag the Slaughterer
+#hero4 7765 -- Golfag Maneater
 
 #idealcold 2
 #color 0.9 0.9 0.5
 
 
-#startcom 5520
-#startunittype1 5500 -- ogre bull club
+#startcom 7781
+#startunittype1 7766 -- ogre bull club
 #startunitnbrs1 10
-#startunittype2 5501 -- ogre bull ironfist
+#startunittype2 7767 -- ogre bull ironfist
 #startunitnbrs2 10
-#startscout 5527 -- Gnoblar Scout
+#startscout 7788 -- Gnoblar Scout
 #end
 
 
@@ -11840,7 +11837,7 @@ Still to do
 #rcost 1
 #magic
 #flail
-#secondaryeffectalways 890
+#secondaryeffectalways 1905
 #end
 
 -- Queek's two weapons
@@ -11867,6 +11864,9 @@ Still to do
 #rcost 0
 #magic
 #end
+
+
+
 
 
 #newweapon
@@ -11943,7 +11943,7 @@ Still to do
 #len 4
 #rcost 5
 #flail
-#secondaryeffectalways 890
+#secondaryeffectalways 1905
 #end
 
 
@@ -11954,7 +11954,7 @@ Still to do
 #def 0
 #len 3
 #rcost 4
-#secondaryeffectalways 890
+#secondaryeffectalways 1905
 #end
 
 
@@ -12024,7 +12024,7 @@ Still to do
 #magic
 #end
 
-#newweapon 869 -- KEEP ID #
+#newweapon 1900 -- KEEP ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -12048,12 +12048,12 @@ Still to do
 #magic
 #flyspr 210 4
 #att -3
-#secondaryeffectalways 869
+#secondaryeffectalways 1900
 #end
 
 
 
-#newweapon 883 -- KEEP ID #
+#newweapon 1901 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12065,12 +12065,12 @@ Still to do
 #nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 869
+#secondaryeffectalways 1900
 #att -3
 #end
 
 
-#newweapon 884 -- KEEP ID #
+#newweapon 1902 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12082,11 +12082,11 @@ Still to do
 #nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 869
+#secondaryeffectalways 1900
 #att -3
 #end
 
-#newweapon 885 -- KEEP ID #
+#newweapon 1903 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12098,7 +12098,7 @@ Still to do
 #nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 869
+#secondaryeffectalways 1900
 #att -3
 #end
 
@@ -12118,7 +12118,7 @@ Still to do
 #end
 
 
-#newweapon 890 -- KEEP ID #
+#newweapon 1905 -- KEEP ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12140,12 +12140,12 @@ Still to do
 #def 0
 #ammo 5
 #range 14
-#secondaryeffectalways 889
+#secondaryeffectalways 1904
 #flyspr 111 1
 #end
 
 
-#newweapon 889 -- KEEP ID #
+#newweapon 1904 -- KEEP ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -12167,7 +12167,7 @@ Still to do
 
 ----Clanrat (sword)
 
-#newmonster 5540
+#newmonster 7799
 #spr1 "./Warhammer-Complete/Clanrat Sword.tga"
 #spr2 "./Warhammer-Complete/Clanrat Sword2.tga"
 #name "Clanrat"
@@ -12203,7 +12203,7 @@ Still to do
 
 ----Clanrat (spear)
 
-#newmonster 5541
+#newmonster 7800
 #spr1 "./Warhammer-Complete/Clanrat Spear.tga"
 #spr2 "./Warhammer-Complete/Clanrat Spear2.tga"
 #name "Clanrat"
@@ -12238,7 +12238,7 @@ Still to do
 
 ----Skavenslave
 
-#newmonster 5542
+#newmonster 7801
 #spr1 "./Warhammer-Complete/Skavenslave.tga"
 #spr2 "./Warhammer-Complete/Skavenslave2.tga"
 #name "Skavenslave"
@@ -12273,7 +12273,7 @@ Still to do
 
 ----Stormvermin
 
-#newmonster 5543
+#newmonster 7802
 #spr1 "./Warhammer-Complete/Stormvermin.tga"
 #spr2 "./Warhammer-Complete/Stormvermin2.tga"
 #name "Stormvermin"
@@ -12309,7 +12309,7 @@ Still to do
 
 ----Night Runner
 
-#newmonster 5544
+#newmonster 7803
 #spr1 "./Warhammer-Complete/Night Runner.tga"
 #spr2 "./Warhammer-Complete/Night Runner2.tga"
 #name "Eshin Night Runner"
@@ -12347,7 +12347,7 @@ Still to do
 
 ----Gutter Runner
 
-#newmonster 5545
+#newmonster 7804
 #spr1 "./Warhammer-Complete/Gutter Runner.tga"
 #spr2 "./Warhammer-Complete/Gutter Runner2.tga"
 #name "Eshin Gutter Runner"
@@ -12386,7 +12386,7 @@ Still to do
 
 ----Plague Monk
 
-#newmonster 5546
+#newmonster 7805
 #spr1 "./Warhammer-Complete/Plague Monk.tga"
 #spr2 "./Warhammer-Complete/Plague Monk2.tga"
 #name "Pestilens Plague Monk"
@@ -12425,7 +12425,7 @@ Still to do
 
 ----Plague Censer Bearer
 
-#newmonster 5547
+#newmonster 7806
 #spr1 "./Warhammer-Complete/Plague Censer.tga"
 #spr2 "./Warhammer-Complete/Plague Censer2.tga"
 #name "Pestilens Censer Bearer"
@@ -12464,7 +12464,7 @@ Still to do
 
 ----Council Guard
 
-#newmonster 5548
+#newmonster 7807
 #spr1 "./Warhammer-Complete/Council Guard.tga"
 #spr2 "./Warhammer-Complete/Council Guard2.tga"
 #name "Council Guard"
@@ -12502,7 +12502,7 @@ Still to do
 
 ----Giant Rat
 
-#newmonster 5549
+#newmonster 7808
 #spr1 "./Warhammer-Complete/Giant Rat.tga"
 #spr2 "./Warhammer-Complete/Giant Rat2.tga"
 #name "Moulder Giant Rat"
@@ -12537,7 +12537,7 @@ Still to do
 
 ----Poison Wind Globadier
 
-#newmonster 5550
+#newmonster 7809
 #spr1 "./Warhammer-Complete/Globadier.tga"
 #spr2 "./Warhammer-Complete/Globadier2.tga"
 #name "Skryre Poison Wind Globadier"
@@ -12572,7 +12572,7 @@ Still to do
 
 ---- Hell Pit Abomination
 
-#newmonster 5552
+#newmonster 7810
 #spr1 "./Warhammer-Complete/Hell Pit.tga"
 #spr2 "./Warhammer-Complete/Hell Pit2.tga"
 #name "Hell Pit Abomination"
@@ -12611,7 +12611,7 @@ Still to do
 
 ---- Moulder Rat Ogre
 
-#newmonster 5553
+#newmonster 7811
 #spr1 "./Warhammer-Complete/Rat Ogre.tga"
 #spr2 "./Warhammer-Complete/Rat Ogre2.tga"
 #name "Moulder Rat Ogre"
@@ -12647,7 +12647,7 @@ Still to do
 
 ---- Skryre Warpfire Thrower
 
-#newmonster 5554
+#newmonster 7812
 #spr1 "./Warhammer-Complete/Warpfire Thrower.tga"
 #spr2 "./Warhammer-Complete/Warpfire Thrower2.tga"
 #name "Skryre Warpfire Thrower"
@@ -12686,7 +12686,7 @@ Still to do
 
 ----Pestilens Plague Rat
 
-#newmonster 5556
+#newmonster 7814
 #spr1 "./Warhammer-Complete/Giant Rat.tga"
 #spr2 "./Warhammer-Complete/Giant Rat2.tga"
 #name "Giant Rat"
@@ -12721,7 +12721,7 @@ Still to do
 
 ---- Skryre Warplightning Thrower
 
-#newmonster 5557
+#newmonster 7815
 #spr1 "./Warhammer-Complete/Warplightning Thrower.tga"
 #spr2 "./Warhammer-Complete/Warplightning Thrower2.tga"
 #name "Skryre Warplightning Thrower"
@@ -12757,7 +12757,7 @@ Still to do
 
 ---- Skryre Doomwheel
 
-#newmonster 5558
+#newmonster 7816
 #spr1 "./Warhammer-Complete/Doomwheel.tga"
 #spr2 "./Warhammer-Complete/Doomwheel.tga"
 #name "Skryre Doomwheel"
@@ -12782,9 +12782,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 883 -- Doomwheel Warplightning # 1 
-#weapon 884 -- Doomwheel Warplightning # 2
-#weapon 885 -- Doomwheel Warplightning # 3 
+#weapon 1901 -- Doomwheel Warplightning # 1 
+#weapon 1902 -- Doomwheel Warplightning # 2
+#weapon 1903 -- Doomwheel Warplightning # 3 
 #fireres 5
 #shockres 25
 #poisonres 1
@@ -12797,7 +12797,7 @@ Still to do
 
 ---- Crazed Vermin
 
-#newmonster 5559
+#newmonster 7817
 #spr1 "./Warhammer-Complete/Crazed Rat.tga"
 #spr2 "./Warhammer-Complete/Crazed Rat2.tga"
 #name "Crazed Vermin"
@@ -12831,7 +12831,7 @@ Still to do
 
 ---- Skryre Doomflayer
 
-#newmonster 5583
+#newmonster 7841
 #spr1 "./Warhammer-Complete/Doomflayer.tga"
 #spr2 "./Warhammer-Complete/Doomflayer2.tga"
 #name "Skryre Doomflayer"
@@ -12874,7 +12874,7 @@ Still to do
 
 ---- Scout
 
-#newmonster 5580
+#newmonster 7838
 #spr1 "./Warhammer-Complete/Clanrat Spear.tga"
 #spr2 "./Warhammer-Complete/Clanrat Spear2.tga"
 #name "Scout"
@@ -12910,7 +12910,7 @@ Still to do
 
 ----Chieftain
 
-#newmonster 5560
+#newmonster 7818
 #spr1 "./Warhammer-Complete/Chieftain.tga"
 #spr2 "./Warhammer-Complete/Chieftain2.tga"
 #name "Chieftain"
@@ -12949,7 +12949,7 @@ Still to do
 
 ----Warlord
 
-#newmonster 5561
+#newmonster 7819
 #spr1 "./Warhammer-Complete/Warlord.tga"
 #spr2 "./Warhammer-Complete/Warlord2.tga"
 #name "Warlord"
@@ -12989,7 +12989,7 @@ Still to do
 
 ----Moulder Packmaster
 
-#newmonster 5562
+#newmonster 7820
 #spr1 "./Warhammer-Complete/Packmaster.tga"
 #spr2 "./Warhammer-Complete/Packmaster2.tga"
 #name "Moulder Packmaster"
@@ -13009,7 +13009,7 @@ Still to do
 #gcost 50
 #rpcost 1
 #rcost 1
-#makemonsters3 5549
+#makemonsters3 7808
 #weapon "Moulder Whip"
 #armor "Ring Mail Cuirass"
 #armor "Leather Cap"
@@ -13022,8 +13022,8 @@ Still to do
 #animalawe 1
 #mountainsurvival
 #darkvision 75
-#batstartsum2d6 5549 -- giant rat
-#batstartsum2 5549 -- giant rat
+#batstartsum2d6 7808 -- giant rat
+#batstartsum2 7808 -- giant rat
 #beastmaster 3
 #inspirational -1
 #command 20
@@ -13033,7 +13033,7 @@ Still to do
 ----Eshin Assassin
 
 
-#newmonster 5563
+#newmonster 7821
 #spr1 "./Warhammer-Complete/Assassin.tga"
 #spr2 "./Warhammer-Complete/Assassin2.tga"
 #name "Eshin Assassin"
@@ -13075,7 +13075,7 @@ Still to do
 
 ----Plague Chantor
 
-#newmonster 5564
+#newmonster 7822
 #spr1 "./Warhammer-Complete/Plague Chantor.tga"
 #spr2 "./Warhammer-Complete/Plague Chantor2.tga"
 #name "Pestilens Plague Chantor"
@@ -13119,7 +13119,7 @@ Still to do
 
 ----Plague Priest
 
-#newmonster 5565
+#newmonster 7823
 #spr1 "./Warhammer-Complete/Plague Priest.tga"
 #spr2 "./Warhammer-Complete/Plague Priest2.tga"
 #name "Pestilens Plague Priest"
@@ -13167,7 +13167,7 @@ Still to do
 
 ---- Skryre Warlock
 
-#newmonster 5566
+#newmonster 7824
 #spr1 "./Warhammer-Complete/Warlock.tga"
 #spr2 "./Warhammer-Complete/Warlock2.tga"
 #name "Skryre Warlock"
@@ -13208,7 +13208,7 @@ Still to do
 
 ---- Skryre Warlock Engineer
 
-#newmonster 5567
+#newmonster 7825
 #spr1 "./Warhammer-Complete/Warlock Engineer.tga"
 #spr2 "./Warhammer-Complete/Warlock Engineer2.tga"
 #name "Skryre Warlock Engineer"
@@ -13255,7 +13255,7 @@ Still to do
 
 ---- Grey Seer
 
-#newmonster 5568
+#newmonster 7826
 #spr1 "./Warhammer-Complete/Grey Seer.tga"
 #spr2 "./Warhammer-Complete/Grey Seer2.tga"
 #name "Grey Seer"
@@ -13299,7 +13299,7 @@ Still to do
 
 ----Moulder Mutator
 
-#newmonster 5569
+#newmonster 7827
 #spr1 "./Warhammer-Complete/Moulder Mutator.tga"
 #spr2 "./Warhammer-Complete/Moulder Mutator2.tga"
 #name "Moulder Mutator"
@@ -13340,7 +13340,7 @@ Still to do
 
 ---- Screaming Bell
 
-#newmonster 5571
+#newmonster 7829
 #spr1 "./Warhammer-Complete/Screaming Bell.tga"
 #spr2 "./Warhammer-Complete/Screaming Bell2.tga"
 #name "Screaming Bell"
@@ -13387,7 +13387,7 @@ Still to do
 
 -- Vermin Lord
 
-#newmonster 5579
+#newmonster 7837
 #spr1 "./Warhammer-Complete/Verminlord.tga"
 #spr2 "./Warhammer-Complete/Verminlord2.tga"
 #name "Vermin Lord"
@@ -13431,7 +13431,7 @@ Still to do
 
 ---- Cauldron of a thousand Poxes
 
-#newmonster 5581
+#newmonster 7839
 #spr1 "./Warhammer-Complete/Pox Cauldron.tga"
 #spr2 "./Warhammer-Complete/Pox Cauldron2.tga"
 #name "Cauldron of a Thousand Poxes"
@@ -13478,7 +13478,7 @@ Still to do
 
 -- Warlord Queek
 
-#newmonster 5572
+#newmonster 7830
 #spr1 "./Warhammer-Complete/Hero Queek.tga"
 #spr2 "./Warhammer-Complete/Hero Queek2.tga"
 #name "Warlord of Mors"
@@ -13506,7 +13506,7 @@ Still to do
 #stealthy 0
 #maxage 50
 #older -26
-#summon1 5543
+#summon1 7802
 #superiorleader
 #nametype 187
 #fixedname "Queek Head-Taker"
@@ -13518,7 +13518,7 @@ Still to do
 
 -- Deathmaster Snikch
 
-#newmonster 5574
+#newmonster 7832
 #spr1 "./Warhammer-Complete/Hero Deathmaster.tga"
 #spr2 "./Warhammer-Complete/Hero Deathmaster2.tga"
 #name "Deathmaster"
@@ -13565,7 +13565,7 @@ Still to do
 
 -- Plaguelord Skrolk
 
-#newmonster 5575
+#newmonster 7833
 #clearmagic
 #spr1 "./Warhammer-Complete/Hero Plaguelord.tga"
 #spr2 "./Warhammer-Complete/Hero Plaguelord2.tga"
@@ -13615,7 +13615,7 @@ Still to do
 
 ---- Boneripper
 
-#newmonster 5577
+#newmonster 7835
 #spr1 "./Warhammer-Complete/Hero Boneripper.tga"
 #spr2 "./Warhammer-Complete/Hero Boneripper2.tga"
 #name "Rat Ogre Bodyguard"
@@ -13655,7 +13655,7 @@ Still to do
 
 ---- Chosen Grey Seer Thanquol
 
-#newmonster 5576
+#newmonster 7834
 #spr1 "./Warhammer-Complete/Hero Thanquol.tga"
 #spr2 "./Warhammer-Complete/Hero Thanquol2.tga"
 #name "Chosen Grey Seer"
@@ -13700,7 +13700,7 @@ Still to do
 
 ---- Chief Warlock Ikit Claw
 
-#newmonster 5578
+#newmonster 7836
 #spr1 "./Warhammer-Complete/Hero Ikit.tga"
 #spr2 "./Warhammer-Complete/Hero Ikit2.tga"
 #name "Chief Warlock"
@@ -13751,7 +13751,7 @@ Still to do
 
 ---- Throt the Unclean
 
-#newmonster 5570
+#newmonster 7828
 #spr1 "./Warhammer-Complete/Hero Throt.tga"
 #spr2 "./Warhammer-Complete/Hero Throt2.tga"
 #name "Master Mutator"
@@ -13775,7 +13775,7 @@ Still to do
 #weapon "Falchion"
 #weapon "Dominator Whip"
 #weapon "Creature Killer"
-#summon1 5553
+#summon1 7811
 #poisonres 26
 #stealthy 0
 #maxage 300
@@ -13802,7 +13802,7 @@ Still to do
 
 ---- Skweel Gnawtooth
 
-#newmonster 5584
+#newmonster 7842
 #spr1 "./Warhammer-Complete/Hero Skweel.tga"
 #spr2 "./Warhammer-Complete/Hero Skweel2.tga"
 #name "Greater Packmaster"
@@ -13823,10 +13823,10 @@ Still to do
 #rcost 1
 #armor "Scale mail hauberk"
 #weapon "Warplash"
-#makemonsters5 5549 -- giant rat
-#makemonsters4 5549 -- giant rat
-#makemonsters3 5549 -- giant rat
-#makemonsters1 5549 -- giant rat
+#makemonsters5 7808 -- giant rat
+#makemonsters4 7808 -- giant rat
+#makemonsters3 7808 -- giant rat
+#makemonsters1 7808 -- giant rat
 #poisonres 13
 #stealthy 0
 #maxage 70
@@ -13842,8 +13842,8 @@ Still to do
 #darkvision 75
 #swampsurvival
 #unique
-#batstartsum5d6 5549 -- giant rat
-#batstartsum5 5549-- giant rat
+#batstartsum5d6 7808 -- giant rat
+#batstartsum5 7808-- giant rat
 #beastmaster 4
 #inspirational -2
 #end
@@ -13851,7 +13851,7 @@ Still to do
 
 ----Tretch Craventail
 
-#newmonster 5586
+#newmonster 7844
 #spr1 "./Warhammer-Complete/Hero Tretch.tga"
 #spr2 "./Warhammer-Complete/Hero Tretch2.tga"
 #name "Grand Chieftain"
@@ -13881,7 +13881,7 @@ Still to do
 #older -10
 #siegebonus 1
 #standard 8
-#batstartsum5 5540 -- Clanrat Sword
+#batstartsum5 7799 -- Clanrat Sword
 #mountainsurvival
 #expertleader
 #nametype 187
@@ -13904,7 +13904,7 @@ Still to do
 
 ---- Pillar of Commandments
 
-#newmonster 5555
+#newmonster 7813
 #spr1 "./Warhammer-Complete/Pretender Pillar.tga"
 #spr2 "./Warhammer-Complete/Pretender Pillar.tga"
 #name "Pillar of Commandments"
@@ -13953,7 +13953,7 @@ Still to do
 ---- Seerlord
 
 
-#newmonster 5573
+#newmonster 7831
 #spr1 "./Warhammer-Complete/Pretender Seerlord.tga"
 #spr2 "./Warhammer-Complete/Pretender Seerlord2.tga"
 #name "Skaven Seerlord"
@@ -13991,7 +13991,7 @@ Still to do
 
 ---- Keeper of the Pillar
 
-#newmonster 5582
+#newmonster 7840
 #spr1 "./Warhammer-Complete/Pretender Keeper of the Pillar.tga"
 #spr2 "./Warhammer-Complete/Pretender Keeper of the Pillar2.tga"
 #name "Keeper of the Pillar"
@@ -14035,7 +14035,7 @@ Still to do
 
 ---- Arch Plaguelord
 
-#newmonster 5585
+#newmonster 7843
 #spr1 "./Warhammer-Complete/Pretender Arch Plaguelord.tga"
 #spr2 "./Warhammer-Complete/Pretender Arch Plaguelord2.tga"
 #name "Arch Plaguelord"
@@ -14170,7 +14170,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 500
-#damage 5549
+#damage 7808
 #nreff 16
 #end
 
@@ -14189,7 +14189,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 700
-#damage 5556
+#damage 7814
 #nreff 5
 #end
 
@@ -14208,7 +14208,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 800
-#damage 5553
+#damage 7811
 #nreff 2
 #end
 
@@ -14227,7 +14227,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 300
-#damage 5550
+#damage 7809
 #nreff 4
 #end
 
@@ -14246,7 +14246,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 200
-#damage 5554
+#damage 7812
 #nreff 501
 #end
 
@@ -14265,7 +14265,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 300
-#damage 5557
+#damage 7815
 #nreff 501
 #end
 
@@ -14285,7 +14285,7 @@ Still to do
 #pathlevel 1 1
 #effect 10001
 #fatiguecost 300
-#damage 5583
+#damage 7841
 #nreff 501
 #end
 
@@ -14305,7 +14305,7 @@ Still to do
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 1000
-#damage 5558
+#damage 7816
 #nreff 1
 #end
 
@@ -14324,7 +14324,7 @@ Still to do
 #pathlevel 1 2
 #effect 10021
 #fatiguecost 3300
-#damage 5571
+#damage 7829
 #nreff 1
 #end
 
@@ -14344,7 +14344,7 @@ Still to do
 #pathlevel 1 3
 #effect 10021
 #fatiguecost 7700
-#damage 5581
+#damage 7839
 #nreff 1
 #end
 
@@ -14363,7 +14363,7 @@ Still to do
 #pathlevel 1 4
 #effect 10021
 #fatiguecost 4000
-#damage 5579
+#damage 7837
 #nreff 1
 #end
 
@@ -14448,7 +14448,7 @@ Still to do
 #nreff 1003
 #explspr 10060
 #flightspr 10100
-#damage 5559
+#damage 7817
 #aoe 0
 #spec 0
 #sound 0
@@ -14523,10 +14523,10 @@ Still to do
 #req_land 1
 #req_freesites 1
 #nation -2
-#hiddensite 1992 -- warpstone seam
+#hiddensite 1917 -- warpstone seam
 #req_capital 0 -- never in capital
 #req_site 0 -- the warpstone seam can't already be here
-#req_nositenbr 1991 -- the exhausted warpstone seam can't be here
+#req_nositenbr 1916 -- the exhausted warpstone seam can't be here
 #req_pop0ok
 #end
 
@@ -14541,8 +14541,8 @@ Still to do
 #req_land 1
 #req_site 1 -- the exhausted warpstone seam must be here
 #nation -2
-#removesite 1991 -- Exhausted warpstone seam
-#hiddensite 1992 -- Warpstone Seam
+#removesite 1916 -- Exhausted warpstone seam
+#hiddensite 1917 -- Warpstone Seam
 #req_lab 1 -- this requires a lab
 #lab 0 -- if there's a lab here, it gets blown up
 #req_capital 0 -- never in capital
@@ -14579,8 +14579,8 @@ Still to do
 #req_land 1
 #req_site 1 -- the exhausted warpstone seam must be here
 #nation -2
-#removesite 1991 -- Exhausted warpstone seam
-#hiddensite 1992 -- Warpstone Seam
+#removesite 1916 -- Exhausted warpstone seam
+#hiddensite 1917 -- Warpstone Seam
 #req_lab 1 -- this requires a lab
 #req_capital 0 -- never in capital
 #req_pop0ok
@@ -14593,8 +14593,8 @@ Still to do
 #rarity 0
 #req_rare 20
 #req_site 1
-#removesite 1992 -- warpstone seam
-#hiddensite 1991 -- exhausted warpstone seam
+#removesite 1917 -- warpstone seam
+#hiddensite 1916 -- exhausted warpstone seam
 #req_notnation 116 -- skaven
 #unrest -30
 #req_pop0ok
@@ -14607,8 +14607,8 @@ Still to do
 #rarity 0 -- always
 #req_rare 12 -- percent chance of happening in each prov
 #req_site 1 -- requires the bracketed site to be present
-#removesite 1992 -- warpstone seam
-#hiddensite 1991 -- exhausted warpstone seam
+#removesite 1917 -- warpstone seam
+#hiddensite 1916 -- exhausted warpstone seam
 #req_fornation 116 -- must be a skaven province
 #req_lab 1 -- must be a lab here
 #req_pop0ok
@@ -14622,8 +14622,8 @@ Still to do
 #rarity 0 -- always
 #req_rare 15 -- percent chance of happening in each prov
 #req_site 1 -- requires the bracketed site to be present
-#removesite 1992 -- warpstone seam
-#hiddensite 1991 -- exhausted warpstone seam
+#removesite 1917 -- warpstone seam
+#hiddensite 1916 -- exhausted warpstone seam
 #req_fornation 116 -- must be a skaven province
 #req_lab 0 -- must not be a lab here
 #req_pop0ok
@@ -14638,14 +14638,14 @@ Still to do
 
 -------- New sites
 
-#newsite 1991
+#newsite 1916
 #name "Exhausted Warpstone Seam"
 #path 5
 #level 0
 #rarity 5
 #end
 
-#newsite 1992
+#newsite 1917
 #name "Warpstone Seam"
 #path 5
 #level 0
@@ -14656,25 +14656,25 @@ Still to do
 #decunrest -2
 #end
 
-#newsite 1993
+#newsite 1918
 #name "Pillars of Skavenblight"
 #path 8
 #level 0
 #rarity 5
 #gems 5 1
 #gems 4 1
-#homecom 5568
+#homecom 7826
 #end
 
-#newsite 1994
+#newsite 1919
 #name "Council Chambers"
 #path 8
 #level 0
 #rarity 5
-#homemon 5548
+#homemon 7807
 #end
 
-#newsite 1995
+#newsite 1920
 #name "The Undercity"
 #path 5
 #level 0
@@ -14684,7 +14684,7 @@ Still to do
 #end
 
 
--------- NEW NAMETYPE
+-------- SKAVEN NAMETYPE
 
 #selectnametype 187
 #clear
@@ -14850,12 +14850,12 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #addgod 383 -- prince of death
 #addgod 179 -- master lich
 #addgod 872 -- ghost king
-#cheapgod20 5573 -- seerlord
-#addgod 5573
-#cheapgod20 5582 -- keeper of the pillar
-#addgod 5582
-#cheapgod20 5585 -- Arch Plaguelord
-#addgod 5585
+#cheapgod20 7831 -- seerlord
+#addgod 7831
+#cheapgod20 7840 -- keeper of the pillar
+#addgod 7840
+#cheapgod20 7843 -- Arch Plaguelord
+#addgod 7843
 #addgod 657 -- monolith
 #addgod 259 -- wyrm
 #addgod 2502 -- earth made flesh
@@ -14869,7 +14869,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #addgod 2788 -- Manticore aka man eater
 #addgod 2796 -- Hound of hades
 #addgod 1097 -- lord of the summer plague
-#addgod 5555 -- Pillar of Commandments
+#addgod 7813 -- Pillar of Commandments
 
 #addgod 2791 -- Earth serpent
 #addgod 249 -- Crone
@@ -14886,14 +14886,14 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ------- Add soldiers
 
-#addrecunit 5542 -- Skavenslave Singular
-#addrecunit 5541 -- Clanrat Spear
-#addrecunit 5540 -- Clanrat Sword
-#addrecunit 5543 -- Stormvermin
-#addrecunit 5546 -- Pestilens Plague Monk
-#addrecunit 5547 -- Pestilens Censer Bearer
-#addrecunit 5544 -- Eshin Night Runner
-#addrecunit 5545 -- Eshin Gutter Runner
+#addrecunit 7801 -- Skavenslave Singular
+#addrecunit 7800 -- Clanrat Spear
+#addrecunit 7799 -- Clanrat Sword
+#addrecunit 7802 -- Stormvermin
+#addrecunit 7805 -- Pestilens Plague Monk
+#addrecunit 7806 -- Pestilens Censer Bearer
+#addrecunit 7803 -- Eshin Night Runner
+#addrecunit 7804 -- Eshin Gutter Runner
 --addrecunit 5550 -- Skryre Globadier
 --addrecunit 5554 -- Skryre Warpfire Thrower
 --addrecunit 5549 -- Giant Rat
@@ -14905,23 +14905,23 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 --addrecunit 5552 -- Hell Pit Abomination
 
 
-#addforeignunit 5542 -- Skavenslave
-#addforeignunit 5541 -- Clanrat Spear
-#caverec 5540 -- Clanrat Sword
+#addforeignunit 7801 -- Skavenslave
+#addforeignunit 7800 -- Clanrat Spear
+#caverec 7799 -- Clanrat Sword
 
 
 ------- Add leaders
 
-#addreccom 5580 -- Scout
-#addreccom 5560 -- Chieftain
-#addreccom 5561 -- Warlord
-#addreccom 5562 -- Moulder Packmaster
-#addreccom 5569 -- Master Moulder
-#addreccom 5564 -- Pestilens Plague Chantor
-#addreccom 5565 -- Pestilens Plague Priest
-#addreccom 5563 -- Eshin Assassin
-#addreccom 5566 -- Skryre Warlock
-#addreccom 5567 -- Skryre Warlock Engineer
+#addreccom 7838 -- Scout
+#addreccom 7818 -- Chieftain
+#addreccom 7819 -- Warlord
+#addreccom 7820 -- Moulder Packmaster
+#addreccom 7827 -- Master Moulder
+#addreccom 7822 -- Pestilens Plague Chantor
+#addreccom 7823 -- Pestilens Plague Priest
+#addreccom 7821 -- Eshin Assassin
+#addreccom 7824 -- Skryre Warlock
+#addreccom 7825 -- Skryre Warlock Engineer
 --addreccom 5568 -- Grey Seer
 --addreccom 5571 -- Screaming Bell
 --addreccom 5572 -- Warlord Queek
@@ -14935,9 +14935,9 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 --addreccom 5584 -- Skweel Gnawtooth
 --addreccom 5586 -- Tretch Craventail
 
-#addforeigncom 5580 -- Scout
-#addforeigncom 5560 -- Chieftain
-#cavecom 5562 -- Moulder Packmaster
+#addforeigncom 7838 -- Scout
+#addforeigncom 7818 -- Chieftain
+#cavecom 7820 -- Moulder Packmaster
 
 
 
@@ -14945,12 +14945,12 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --Sets the units to be used in province defense.
 
-#defcom1 5560
-#defcom2 5561
-#defunit1 5540 -- sword clanrat
-#defunit1b 5541 -- spear clanrat
-#defunit2 5543 -- stormvermin
-#defunit2b 5541 -- more spear clanrats
+#defcom1 7818
+#defcom2 7819
+#defunit1 7799 -- sword clanrat
+#defunit1b 7800 -- spear clanrat
+#defunit2 7802 -- stormvermin
+#defunit2b 7800 -- more spear clanrats
 
 
 --Sets how many of the units to appear per 10 points
@@ -14964,25 +14964,25 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ------- Hero Settings
 
-#hero1 5572 -- Queek
-#hero2 5574 -- Snikch
-#hero3 5570 -- Throt
-#hero4 5576 -- Thanquol
-#hero5 5578 -- Ikit
-#hero6 5575 -- Skrolk
-#multihero1 5584 -- Skweel Gnawtooth
-#multihero2 5586 -- Tretch Craventail
+#hero1 7830 -- Queek
+#hero2 7832 -- Snikch
+#hero3 7828 -- Throt
+#hero4 7834 -- Thanquol
+#hero5 7836 -- Ikit
+#hero6 7833 -- Skrolk
+#multihero1 7842 -- Skweel Gnawtooth
+#multihero2 7844 -- Tretch Craventail
 
 #idealcold 0
 #color 0.5 0.4 0.2
 
 
-#startcom 5560
-#startunittype1 5541
+#startcom 7818
+#startunittype1 7800
 #startunitnbrs1 13
-#startunittype2 5540
+#startunittype2 7799
 #startunitnbrs2 13
-#startscout 5580
+#startscout 7838
 #end
 
 --END OF SKAVEN, BEGINNING OF CHAOS DWARFS
@@ -15150,13 +15150,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
-#secondaryeffectalways 913 -- Fireglaive Gout
+#secondaryeffectalways 1906 -- Fireglaive Gout
 #def 0 -- usually 1
 #end
 
 --- Fireglaive Gout
 
-#newweapon 913 -- KEEP ID #
+#newweapon 1906 -- KEEP ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -15240,7 +15240,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Chaos Dwarf Warrior
 
-#newmonster 8100
+#newmonster 7914
 #spr1 "./Warhammer-Complete/Warrior.tga"
 #spr2 "./Warhammer-Complete/Warrior2.tga"
 #name "Chaos Dwarf Warrior"
@@ -15279,7 +15279,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Chaos Dwarf Blunderbuss
 
-#newmonster 8101
+#newmonster 7915
 #spr1 "./Warhammer-Complete/Blunderbuss.tga"
 #spr2 "./Warhammer-Complete/Blunderbuss2.tga"
 #name "Chaos Dwarf Blunderbuss"
@@ -15319,7 +15319,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Chaos Dwarf Crossbow
 
-#newmonster 8102
+#newmonster 7916
 #spr1 "./Warhammer-Complete/Crossbow.tga"
 #spr2 "./Warhammer-Complete/Crossbow2.tga"
 #name "Chaos Dwarf Crossbowman"
@@ -15358,7 +15358,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Infernal Guard
 
-#newmonster 8103
+#newmonster 7917
 #spr1 "./Warhammer-Complete/Infernal_Guard.tga"
 #spr2 "./Warhammer-Complete/Infernal_Guard2.tga"
 #name "Infernal Guard"
@@ -15392,7 +15392,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #darkvision 50
 #nametype 123
 #fireres 5
-#monpresentrec 8133 -- Daemonsmith
+#monpresentrec 7947 -- Daemonsmith
 #neednoteat
 #supplybonus -1
 #end
@@ -15400,7 +15400,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Infernal Fireglaive
 
-#newmonster 8104
+#newmonster 7918
 #spr1 "./Warhammer-Complete/Infernal_Fireglaive.tga"
 #spr2 "./Warhammer-Complete/Infernal_Fireglaive2.tga"
 #name "Infernal Fireglaive"
@@ -15433,7 +15433,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #darkvision 50
 #nametype 123
 #fireres 5
-#monpresentrec 8133 -- Daemonsmith
+#monpresentrec 7947 -- Daemonsmith
 #neednoteat
 #supplybonus -1
 #end
@@ -15441,7 +15441,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Infernal Guard Chosen
 
-#newmonster 8105
+#newmonster 7919
 #spr1 "./Warhammer-Complete/Infernal_Chosen.tga"
 #spr2 "./Warhammer-Complete/Infernal_Chosen2.tga"
 #name "Infernal Chosen"
@@ -15477,7 +15477,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #nametype 123
 #fireres 5
 #reclimit 2 -- they are very rare
-#monpresentrec 8133 -- Daemonsmith
+#monpresentrec 7947 -- Daemonsmith
 #neednoteat
 #supplybonus -1
 #holy
@@ -15486,7 +15486,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Bull Centaur
 
-#newmonster 8106
+#newmonster 7920
 #spr1 "./Warhammer-Complete/Bull_Centaur.tga"
 #spr2 "./Warhammer-Complete/Bull_Centaur2.tga"
 #name "Bull Centaur"
@@ -15526,7 +15526,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin Archer
 
-#newmonster 8107
+#newmonster 7921
 #spr1 "./Warhammer-Complete/Hobgoblin_Archer.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Archer2.tga"
 #name "Hobgoblin Archer"
@@ -15559,7 +15559,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin Spearman
 
-#newmonster 8108
+#newmonster 7922
 #spr1 "./Warhammer-Complete/Hobgoblin_Spear.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Spear2.tga"
 #name "Hobgoblin Spearman"
@@ -15592,7 +15592,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin Sneaks
 
-#newmonster 8109
+#newmonster 7923
 #spr1 "./Warhammer-Complete/Hobgoblin_Sneak.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Sneak2.tga"
 #name "Hobgoblin Sneak"
@@ -15625,7 +15625,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin Wolf rider
 
-#newmonster 8110
+#newmonster 7924
 #spr1 "./Warhammer-Complete/Hobgoblin_Wolfrider.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Wolfrider2.tga"
 #name "Hobgoblin Wolf Rider"
@@ -15661,7 +15661,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Goblin Slave - spiked club
 
-#newmonster 8111
+#newmonster 7925
 #spr1 "./Warhammer-Complete/Slave_Goblin.tga"
 #spr2 "./Warhammer-Complete/Slave_Goblin2.tga"
 #name "Goblin Slave"
@@ -15693,7 +15693,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Goblin Slave - spear
 
-#newmonster 8112
+#newmonster 7926
 #spr1 "./Warhammer-Complete/Slave_Goblin_Spear.tga"
 #spr2 "./Warhammer-Complete/Slave_Goblin_Spear2.tga"
 #name "Goblin Slave"
@@ -15725,7 +15725,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Goblin War Slave
 
-#newmonster 8113
+#newmonster 7927
 #spr1 "./Warhammer-Complete/Slave_Goblin_War.tga"
 #spr2 "./Warhammer-Complete/Slave_Goblin_War2.tga"
 #name "Goblin Warslave"
@@ -15759,7 +15759,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Orc Slave - club
 
-#newmonster 8114
+#newmonster 7928
 #spr1 "./Warhammer-Complete/Slave_Orc.tga"
 #spr2 "./Warhammer-Complete/Slave_Orc2.tga"
 #name "Orc Slave"
@@ -15792,7 +15792,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Orc War Slave
 
-#newmonster 8115
+#newmonster 7929
 #spr1 "./Warhammer-Complete/Slave_Orc_War.tga"
 #spr2 "./Warhammer-Complete/Slave_Orc_War2.tga"
 #name "Orc Warslave"
@@ -15827,7 +15827,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Human Slave
 
-#newmonster 8116
+#newmonster 7930
 #spr1 "./Warhammer-Complete/Slave_Human.tga"
 #spr2 "./Warhammer-Complete/Slave_Human2.tga"
 #name "Human Slave"
@@ -15856,7 +15856,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Ogre Forgeslave - hammer, some armour
 
-#newmonster 8117
+#newmonster 7931
 #spr1 "./Warhammer-Complete/Slave_Ogre.tga"
 #spr2 "./Warhammer-Complete/Slave_Ogre2.tga"
 #name "Ogre Forgeslave"
@@ -15895,7 +15895,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ----- Slave contract
 
-#newmonster 8118
+#newmonster 7932
 #spr1 "./Warhammer-Complete/Slave_Icon.tga"
 #name "Purchase Slave"
 #descr "The Chaos Dwarf empire is built almost entirely on slaves both economically and socially. It is slaves who toil in the deadly mines and inhospitable pits of the Darklands, it is slaves who do much of the menial work, and often it is slaves who are fated to die on distant battlefields for the benefit of Zharr-Naggrund. The military can requisition slaves at any time, purchasing them from civilian owners or even Sorcerer Lords for a relatively low price, though the quality will be quite mixed. Humans, Gnoblars, Goblins, Orcs, and even the occasional Ogre can be purchased in this way, and some of them may even be slaves equipped specifically for war rather than plucked directly from a stripmine. The biggest cost associated with doing so is simply that it removes part of the workforce, though inevitably they are replaced, for Zharr-Naggrund always seeks more slaves. Purchasing slaves within a province with a fort does not require the presence of a Slaver."
@@ -15922,7 +15922,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ----- Slave contract -- not at fort
 
-#newmonster 8137
+#newmonster 7951
 #spr1 "./Warhammer-Complete/Slave_Icon.tga"
 #name "Purchase Slave"
 #descr "The Chaos Dwarf empire is built almost entirely on slaves both economically and socially. It is slaves who toil in the deadly mines and inhospitable pits of the Darklands, it is slaves who do much of the menial work, and often it is slaves who are fated to die on distant battlefields for the benefit of Zharr-Naggrund. The military can requisition slaves at any time, purchasing them from civilian owners or even Sorcerer Lords for a relatively low price, though the quality will be quite mixed. Humans, Gnoblars, Goblins, Orcs, and even the occasional Ogre can be purchased in this way, and some of them may even be slaves equipped specifically for war rather than plucked directly from a stripmine. The biggest cost associated with doing so is simply that it removes part of the workforce, though inevitably they are replaced, for Zharr-Naggrund always seeks more slaves. Purchasing slaves in provinces without a fort requires the presence of a Slaver."
@@ -15942,7 +15942,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #rcost 9
 #slave
 #firstshape -1023
-#monpresentrec 8128 -- chaos dwarf slaver
+#monpresentrec 7942 -- chaos dwarf slaver
 #deathrec 1
 #startage 15
 #weapon "Varies" -- Varies
@@ -15952,7 +15952,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ----- Gnoblar Slave
 
-#newmonster 8119
+#newmonster 7933
 #spr1 "./Warhammer-Complete/Slave_Gnoblar.tga"
 #spr2 "./Warhammer-Complete/Slave_Gnoblar2.tga"
 #name "Gnoblar Slave"
@@ -15986,7 +15986,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ----- Goblin slave -- pick axe
 
-#newmonster 8120
+#newmonster 7934
 #spr1 "./Warhammer-Complete/Slave_Goblin_Pick.tga"
 #spr2 "./Warhammer-Complete/Slave_Goblin_Pick2.tga"
 #name "Goblin Slave"
@@ -16019,7 +16019,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ----- Orc slave -- pick axe
 
-#newmonster 8121
+#newmonster 7935
 #spr1 "./Warhammer-Complete/Slave_Orc_Pick.tga"
 #spr2 "./Warhammer-Complete/Slave_Orc_Pick2.tga"
 #name "Orc Slave"
@@ -16053,7 +16053,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Immortal
 
-#newmonster 8122
+#newmonster 7936
 #spr1 "./Warhammer-Complete/Immortal.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
 #name "Immortal"
@@ -16094,7 +16094,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Acolyte of Hashut
 
-#newmonster 8123
+#newmonster 7937
 #spr1 "./Warhammer-Complete/Acolyte.tga"
 #spr2 "./Warhammer-Complete/Acolyte2.tga"
 #name "Acolyte of Hashut"
@@ -16135,7 +16135,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Slave giant - like ogre one, more armour and weapons
 
-#newmonster 8124
+#newmonster 7938
 #spr1 "./Warhammer-Complete/Slavegiant.tga"
 #spr2 "./Warhammer-Complete/Slavegiant2.tga"
 #name "Slave Giant"
@@ -16179,7 +16179,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin scout
 
-#newmonster 8125
+#newmonster 7939
 #spr1 "./Warhammer-Complete/Hobgoblin_Archer.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Archer2.tga"
 #name "Hobgoblin Scout"
@@ -16211,7 +16211,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin Khan
 
-#newmonster 8126
+#newmonster 7940
 #spr1 "./Warhammer-Complete/Hobgoblin_Khan.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Khan2.tga"
 #name "Hobgoblin Khan"
@@ -16248,7 +16248,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Hobgoblin assassin
 
-#newmonster 8127
+#newmonster 7941
 #spr1 "./Warhammer-Complete/Hobgoblin_Sneak.tga"
 #spr2 "./Warhammer-Complete/Hobgoblin_Sneak2.tga"
 #name "Hobgoblin Gutstabber"
@@ -16282,7 +16282,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Slaver
 
-#newmonster 8128
+#newmonster 7942
 #spr1 "./Warhammer-Complete/Slaver.tga"
 #spr2 "./Warhammer-Complete/Slaver2.tga"
 #name "Slaver"
@@ -16327,7 +16327,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Castellan
 
-#newmonster 8129
+#newmonster 7943
 #spr1 "./Warhammer-Complete/Castellan.tga"
 #spr2 "./Warhammer-Complete/Castellan2.tga"
 #name "Castellan"
@@ -16367,7 +16367,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Overlord
 
-#newmonster 8130
+#newmonster 7944
 #spr1 "./Warhammer-Complete/Overlord.tga"
 #spr2 "./Warhammer-Complete/Overlord2.tga"
 #name "Overlord"
@@ -16406,7 +16406,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Infernal guard deathmask
 
-#newmonster 8131
+#newmonster 7945
 #spr1 "./Warhammer-Complete/Infernal_Deathmask.tga"
 #spr2 "./Warhammer-Complete/Infernal_Deathmask2.tga"
 #name "Infernal Deathmask"
@@ -16442,7 +16442,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #poorleader
 #inspirational 1
 #command 10
-#monpresentrec 8133 -- Daemonsmith
+#monpresentrec 7947 -- Daemonsmith
 #neednoteat
 #supplybonus -1
 #end
@@ -16450,7 +16450,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Bull Centaur Ancient
 
-#newmonster 8132
+#newmonster 7946
 #spr1 "./Warhammer-Complete/Bull_Centaur_Ancient.tga"
 #spr2 "./Warhammer-Complete/Bull_Centaur_Ancient2.tga"
 #name "Bull Centaur Ancient"
@@ -16491,7 +16491,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Daemonsmith
 
-#newmonster 8133
+#newmonster 7947
 #spr1 "./Warhammer-Complete/Daemonsmith.tga"
 #spr2 "./Warhammer-Complete/Daemonsmith2.tga"
 #name "Daemonsmith"
@@ -16536,7 +16536,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Pyrophant
 
-#newmonster 8134
+#newmonster 7948
 #spr1 "./Warhammer-Complete/Pyrophant.tga"
 #spr2 "./Warhammer-Complete/Pyrophant2.tga"
 #name "Pyrophant"
@@ -16578,7 +16578,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Sorcerer
 
-#newmonster 8135
+#newmonster 7949
 #spr1 "./Warhammer-Complete/Sorcerer.tga"
 #spr2 "./Warhammer-Complete/Sorcerer2.tga"
 #name "Sorcerer"
@@ -16623,7 +16623,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ---- Sorcerer Lord
 
-#newmonster 8136
+#newmonster 7950
 #spr1 "./Warhammer-Complete/Sorcerer_Lord.tga"
 #spr2 "./Warhammer-Complete/Sorcerer_Lord2.tga"
 #name "Sorcerer Lord"
@@ -16669,7 +16669,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 -------- PRETENDERS
 
-#newmonster 8138
+#newmonster 7952
 #spr1 "./Warhammer-Complete/Daemonsmith.tga"
 #spr2 "./Warhammer-Complete/Daemonsmith2.tga"
 #name "Master Daemonsmith"
@@ -16728,52 +16728,52 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Temple of Hashut
 
-#newsite 1523
+#newsite 1902
 #name "Temple of Hashut"
 #path 8
 #level 0
 #rarity 5
 #gems 8 2 -- 2 blood
 #gems 5 1 -- 1 death
-#homemon 8123 -- Acolyte
-#homemon 8106 -- Bull Centaur
-#homecom 8132 -- Bull Centaur Ancient
+#homemon 7937 -- Acolyte
+#homemon 7920 -- Bull Centaur
+#homecom 7946 -- Bull Centaur Ancient
 #end
 
 --- Tower of Zharr
 
-#newsite 1524
+#newsite 1903
 #name "Tower of Zharr"
 #path 8
 #level 0
 #rarity 5
-#homemon 8122 -- Immortal
-#homecom 8130 -- Overlord
-#homecom 8135 -- Sorcerer
-#homecom 8136 -- Sorcerer Lord
+#homemon 7936 -- Immortal
+#homecom 7944 -- Overlord
+#homecom 7949 -- Sorcerer
+#homecom 7950 -- Sorcerer Lord
 #end
 
 --- Forges in the Deep
 
-#newsite 1525
+#newsite 1904
 #name "Forges in the Deep"
 #path 0
 #level 0
 #rarity 5
 #gems 0 2 -- 2 fire
-#homecom 8133 -- Daemonsmith
-#homemon 8124 -- Slavegiant
+#homecom 7947 -- Daemonsmith
+#homemon 7938 -- Slavegiant
 #end
 
 --- The Black Armoury
 
-#newsite 1526
+#newsite 1905
 #name "The Black Armoury"
 #path 0
 #level 0
 #rarity 5
 #gems 3 1 -- 1 earth
-#homemon 8101 -- Chaos Dwarf Blunderbuss
+#homemon 7915 -- Chaos Dwarf Blunderbuss
 #end
 
 
@@ -16988,7 +16988,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #req_code 0 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
 #req_fornation 141 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
-#code -444 -- sets a code in the province
+#code -301 -- sets a code in the province
 #delay 1 -- wait 1 turn before triggering the next event
 #req_lab 1 -- there must be a lab present
 #req_temple 1 -- there must be a temple present
@@ -16999,10 +16999,10 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #newevent
 #msg "The construction of the outpost fortress continues. Ensure the temple and laboratory are safe and the populace is under the dominion of your god, and you will finish construction in one month."
 #rarity 0 -- always
-#req_code -444 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
+#req_code -301 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
 #req_fornation 141 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
-#code -445 -- sets a code in the province
+#code -302 -- sets a code in the province
 #delay 1 -- wait 1 turn before triggering the next event
 #req_lab 1 -- there must be a lab present
 #req_temple 1 -- there must be a temple present
@@ -17013,7 +17013,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #newevent
 #msg "The new outpost has been constructed."
 #rarity 0 -- always
-#req_code -445 -- will only happen in the province with the code from the previous event
+#req_code -302 -- will only happen in the province with the code from the previous event
 #req_fornation 141 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
 #code 0 -- resets code in the province
@@ -17082,8 +17082,8 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 #addgod 2788 -- man eater
 #addgod 2797 -- hieracosphinx
 #addgod 3121 -- eldest cyclops
-#cheapgod20 8138
-#addgod 8138 -- Master Daemonsmith
+#cheapgod20 7952
+#addgod 7952 -- Master Daemonsmith
 
 
 --Sets what forts they will use.
@@ -17094,53 +17094,53 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 
 ------- Add soldiers
 
-#addrecunit 8118 -- slave contract
-#addrecunit 8107 -- Hobgoblin Archer
-#addrecunit 8108 -- Hobgoblin Spearman
-#addrecunit 8109 -- Hobgoblin Sneak
-#addrecunit 8100 -- Chaos Dwarf Warrior
-#addrecunit 8102 -- Chaos Dwarf Crossbowman
-#addrecunit 8103 -- Infernal Guard
-#addrecunit 8104 -- Infernal Fireglaive
-#addrecunit 8105 -- Infernal Guard Chosen
+#addrecunit 7932 -- slave contract
+#addrecunit 7921 -- Hobgoblin Archer
+#addrecunit 7922 -- Hobgoblin Spearman
+#addrecunit 7923 -- Hobgoblin Sneak
+#addrecunit 7914 -- Chaos Dwarf Warrior
+#addrecunit 7916 -- Chaos Dwarf Crossbowman
+#addrecunit 7917 -- Infernal Guard
+#addrecunit 7918 -- Infernal Fireglaive
+#addrecunit 7919 -- Infernal Guard Chosen
 
-#addforeignunit 8137 -- slave contract -- outside fort
-#addforeignunit 8107 -- Hobgoblin Archer
-#addforeignunit 8108 -- Hobgoblin Spearman
-#addforeignunit 8109 -- Hobgoblin Sneak
-#addforeignunit 8110 -- Hobgoblin Wolfrider
+#addforeignunit 7951 -- slave contract -- outside fort
+#addforeignunit 7921 -- Hobgoblin Archer
+#addforeignunit 7922 -- Hobgoblin Spearman
+#addforeignunit 7923 -- Hobgoblin Sneak
+#addforeignunit 7924 -- Hobgoblin Wolfrider
 
 
 
 ------- Add leaders
 
-#addreccom 8125 -- Hobgoblin Scout
-#addreccom 8127 -- Hobgoblin gutstabber
-#addreccom 8128 -- Slaver
-#addreccom 8129 -- Castellan
-#addreccom 8131 -- Infernal Deathmask
-#addreccom 8134 -- Pyrophant
+#addreccom 7939 -- Hobgoblin Scout
+#addreccom 7941 -- Hobgoblin gutstabber
+#addreccom 7942 -- Slaver
+#addreccom 7943 -- Castellan
+#addreccom 7945 -- Infernal Deathmask
+#addreccom 7948 -- Pyrophant
 
-#addforeigncom 8125 -- Hobgoblin Scout
-#addforeigncom 8126 -- Hobgoblin Khan
-#addforeigncom 8134 -- Pyrophant
+#addforeigncom 7939 -- Hobgoblin Scout
+#addforeigncom 7940 -- Hobgoblin Khan
+#addforeigncom 7948 -- Pyrophant
 
 ------- Wall Defenders
 
-#wallcom 8129 -- Castellan
-#wallunit 8102 -- Chaos Dwarf Crossbow
+#wallcom 7943 -- Castellan
+#wallunit 7916 -- Chaos Dwarf Crossbow
 #wallmult 10
 
 ------- Province Defence
 
 --Sets the units to be used in province defense.
 
-#defcom1 8129 -- Castellan
+#defcom1 7943 -- Castellan
 --defcom2 --
-#defunit1 8100 -- Chaos Dwarf Warrior
-#defunit1b 8102 -- Chaos Dwarf Crossbow
-#defunit2 8108 -- Hobgob spearman
-#defunit2b 8107 -- Hobgoblin Archer
+#defunit1 7914 -- Chaos Dwarf Warrior
+#defunit1b 7916 -- Chaos Dwarf Crossbow
+#defunit2 7922 -- Hobgob spearman
+#defunit2b 7921 -- Hobgoblin Archer
 
 
 --Sets how many of the units to appear per ten points.
@@ -17153,7 +17153,7 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 
 ------- Hero Settings
 
-#multihero1 8136 -- sorcerer lord -- placeholder
+#multihero1 7950 -- sorcerer lord -- placeholder
 --hero1 --
 --hero2 --
 
@@ -17162,12 +17162,12 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 #idealcold 0
 #color 0.6 0.0 0.0
 
-#startcom 8129 -- Castellan
-#startunittype1 8100 -- Chaos Dwarf Warrior
+#startcom 7943 -- Castellan
+#startunittype1 7914 -- Chaos Dwarf Warrior
 #startunitnbrs1 8
-#startunittype2 8101 -- Chaos Dwarf Blunderbuss
+#startunittype2 7915 -- Chaos Dwarf Blunderbuss
 #startunitnbrs2 8
-#startscout 8125 -- Hobgoblin Scout
+#startscout 7939 -- Hobgoblin Scout
 #end
 
 
@@ -17729,7 +17729,7 @@ Still to do
 
 ---- Saurus Warrior (Sword)
 
-#newmonster 7310
+#newmonster 7864
 #spr1 "./Warhammer-Complete/Saurus Warrior.tga"
 #spr2 "./Warhammer-Complete/Saurus Warrior2.tga"
 #name "Saurus Warrior"
@@ -17763,7 +17763,7 @@ Still to do
 
 ---- Saurus Warrior (Spear)
 
-#newmonster 7311
+#newmonster 7865
 #spr1 "./Warhammer-Complete/Saurus Spear.tga"
 #spr2 "./Warhammer-Complete/Saurus Spear2.tga"
 #name "Saurus Warrior"
@@ -17797,7 +17797,7 @@ Still to do
 
 ---- Skink Hunter (Blowpipe)
 
-#newmonster 7312
+#newmonster 7866
 #spr1 "./Warhammer-Complete/Skink Blowpipe.tga"
 #spr2 "./Warhammer-Complete/Skink Blowpipe2.tga"
 #name "Skink Hunter"
@@ -17833,7 +17833,7 @@ Still to do
 
 ---- Skink (Javelin)
 
-#newmonster 7313
+#newmonster 7867
 #spr1 "./Warhammer-Complete/Skink Skirmisher.tga"
 #spr2 "./Warhammer-Complete/Skink Skirmisher2.tga"
 #name "Skink Skirmisher"
@@ -17869,7 +17869,7 @@ Still to do
 
 ---- Skink Archer
 
-#newmonster 7314
+#newmonster 7868
 #spr1 "./Warhammer-Complete/Skink Bow.tga"
 #spr2 "./Warhammer-Complete/Skink Bow2.tga"
 #name "Skink Archer"
@@ -17904,7 +17904,7 @@ Still to do
 
 ---- Red Crested Skink
 
-#newmonster 7315
+#newmonster 7869
 #spr1 "./Warhammer-Complete/Skink Redcrest.tga"
 #spr2 "./Warhammer-Complete/Skink Redcrest2.tga"
 #name "Red Crested Skink"
@@ -17940,7 +17940,7 @@ Still to do
 
 ---- Kroxigor
 
-#newmonster 7316
+#newmonster 7870
 #spr1 "./Warhammer-Complete/Kroxigor.tga"
 #spr2 "./Warhammer-Complete/Kroxigor2.tga"
 #name "Kroxigor"
@@ -17974,7 +17974,7 @@ Still to do
 
 ---- Salamander
 
-#newmonster 7317
+#newmonster 7871
 #spr1 "./Warhammer-Complete/Salamander.tga"
 #spr2 "./Warhammer-Complete/Salamander2.tga"
 #name "Salamander"
@@ -18010,7 +18010,7 @@ Still to do
 
 ---- Salamander waterform
 
-#newmonster 7355
+#newmonster 7903
 #spr1 "./Warhammer-Complete/Salamander Waterform.tga"
 #spr2 "./Warhammer-Complete/Salamander Waterform2.tga"
 #name "Salamander"
@@ -18037,7 +18037,7 @@ Still to do
 #forestsurvival
 #amphibian
 #animal
-#landshape 7317
+#landshape 7871
 #nametype 123
 #coldblood
 #end
@@ -18045,7 +18045,7 @@ Still to do
 
 ---- Razordon
 
-#newmonster 7320
+#newmonster 7874
 #spr1 "./Warhammer-Complete/Razordon.tga"
 #spr2 "./Warhammer-Complete/Razordon2.tga"
 #name "Razordon"
@@ -18082,7 +18082,7 @@ Still to do
 
 ---- Temple Guard
 
-#newmonster 7318
+#newmonster 7872
 #spr1 "./Warhammer-Complete/Temple Guard.tga"
 #spr2 "./Warhammer-Complete/Temple Guard2.tga"
 #name "Temple Guard"
@@ -18123,7 +18123,7 @@ Still to do
 
 ---- Skink Cavalry
 
-#newmonster 7319
+#newmonster 7873
 #spr1 "./Warhammer-Complete/Skink Cavalry.tga"
 #spr2 "./Warhammer-Complete/Skink Cavalry2.tga"
 #name "Skink Cavalry"
@@ -18159,7 +18159,7 @@ Still to do
 
 ---- Chameleon Skink
 
-#newmonster 7321
+#newmonster 7875
 #spr1 "./Warhammer-Complete/Skink Chameleon.tga"
 #spr2 "./Warhammer-Complete/Skink Chameleon2.tga"
 #name "Chameleon Skink"
@@ -18195,7 +18195,7 @@ Still to do
 
 ---- Saurus Cavalry
 
-#newmonster 7327
+#newmonster 7876
 #spr1 "./Warhammer-Complete/Saurus Cavalry.tga"
 #spr2 "./Warhammer-Complete/Saurus Cavalry2.tga"
 #name "Saurus Cavalry"
@@ -18232,7 +18232,7 @@ Still to do
 
 ---- Terradon Rider
 
-#newmonster 7336
+#newmonster 7884
 #spr1 "./Warhammer-Complete/Terradon Rider.tga"
 #spr2 "./Warhammer-Complete/Terradon Rider2.tga"
 #name "Terradon Rider"
@@ -18262,7 +18262,7 @@ Still to do
 #coldblooded
 #poisonres 7
 #mounted
-#secondtmpshape 7337 -- Terradon
+#secondtmpshape 7885 -- Terradon
 #nametype 123
 #stealthy 0
 #end
@@ -18270,7 +18270,7 @@ Still to do
 
 ---- Terradon
 
-#newmonster 7337
+#newmonster 7885
 #spr1 "./Warhammer-Complete/Terradon.tga"
 #spr2 "./Warhammer-Complete/Terradon2.tga"
 #name "Terradon"
@@ -18306,7 +18306,7 @@ Still to do
 
 ---- Ripperdactyl Rider
 
-#newmonster 7359
+#newmonster 7907
 #spr1 "./Warhammer-Complete/Ripperdactyl Rider.tga"
 #spr2 "./Warhammer-Complete/Ripperdactyl Rider2.tga"
 #name "Ripperdactyl Rider"
@@ -18340,7 +18340,7 @@ Still to do
 #coldblooded
 #poisonres 5
 #mounted
-#secondtmpshape 7360 -- Ripperdactyl
+#secondtmpshape 7908 -- Ripperdactyl
 #nametype 123
 #stealthy 0
 #berserk 1
@@ -18350,7 +18350,7 @@ Still to do
 
 ---- Ripperdactyl
 
-#newmonster 7360
+#newmonster 7908
 #spr1 "./Warhammer-Complete/Ripperdactyl.tga"
 #spr2 "./Warhammer-Complete/Ripperdactyl2.tga"
 #name "Ripperdactyl"
@@ -18391,7 +18391,7 @@ Still to do
 
 ---- Stegadon
 
-#newmonster 7345
+#newmonster 7893
 #spr1 "./Warhammer-Complete/Stegadon.tga"
 #spr2 "./Warhammer-Complete/Stegadon2.tga"
 #name "Stegadon"
@@ -18431,7 +18431,7 @@ Still to do
 
 ---- Saurus of Sotek
 
-#newmonster 7329
+#newmonster 7877
 #spr1 "./Warhammer-Complete/Saurus Sotek.tga"
 #spr2 "./Warhammer-Complete/Saurus Sotek2.tga"
 #name "Saurus of Sotek"
@@ -18465,7 +18465,7 @@ Still to do
 
 ---- Bloodscale of Sotek
 
-#newmonster 7342
+#newmonster 7890
 #spr1 "./Warhammer-Complete/Bloodscale Sotek.tga"
 #spr2 "./Warhammer-Complete/Bloodscale Sotek2.tga"
 #name "Bloodscale of Sotek"
@@ -18503,7 +18503,7 @@ Still to do
 
 ---- Saurus of Tzunki
 
-#newmonster 7330
+#newmonster 7878
 #spr1 "./Warhammer-Complete/Saurus Tzunki.tga"
 #spr2 "./Warhammer-Complete/Saurus Tzunki2.tga"
 #name "Saurus of Tzunki"
@@ -18535,13 +18535,13 @@ Still to do
 #coldres 5
 #holy
 #nametype 123
-#watershape 7338
+#watershape 7886
 #end
 
 
 ---- Saurus of Tzunki (Waterform)
 
-#newmonster 7338
+#newmonster 7886
 #spr1 "./Warhammer-Complete/Saurus Tzunki Water.tga"
 #spr2 "./Warhammer-Complete/Saurus Tzunki Water2.tga"
 #name "Saurus of Tzunki"
@@ -18572,13 +18572,13 @@ Still to do
 #coldres 5
 #holy
 #nametype 123
-#landshape 7330
+#landshape 7878
 #end
 
 
 ---- Deepscale of Tzunki
 
-#newmonster 7339
+#newmonster 7887
 #spr1 "./Warhammer-Complete/Deepscale Tzunki.tga"
 #spr2 "./Warhammer-Complete/Deepscale Tzunki2.tga"
 #name "Deepscale of Tzunki"
@@ -18612,13 +18612,13 @@ Still to do
 #holy
 #nametype 123
 #magicskill 8 1
-#watershape 7340
+#watershape 7888
 #end
 
 
 ---- Deepscale of Tzunki (Waterform)
 
-#newmonster 7340
+#newmonster 7888
 #spr1 "./Warhammer-Complete/Deepscale Tzunki Waterform.tga"
 #spr2 "./Warhammer-Complete/Deepscale Tzunki Waterform2.tga"
 #name "Deepscale of Tzunki"
@@ -18652,13 +18652,13 @@ Still to do
 #holy
 #magicskill 8 1
 #nametype 123
-#landshape 7339
+#landshape 7887
 #end
 
 
 ---- Saurus of Huanchi
 
-#newmonster 7331
+#newmonster 7879
 #spr1 "./Warhammer-Complete/Saurus Huanchi.tga"
 #spr2 "./Warhammer-Complete/Saurus Huanchi2.tga"
 #name "Saurus of Huanchi"
@@ -18699,7 +18699,7 @@ Still to do
 
 ---- Nightscale of Huanchi
 
-#newmonster 7341
+#newmonster 7889
 #spr1 "./Warhammer-Complete/Nightscale Huanchi.tga"
 #spr2 "./Warhammer-Complete/Nightscale Huanchi2.tga"
 #name "Nightscale of Huanchi"
@@ -18743,7 +18743,7 @@ Still to do
 
 ---- Saurus of Tlazcotl
 
-#newmonster 7332
+#newmonster 7880
 #spr1 "./Warhammer-Complete/Saurus Tlazcotl.tga"
 #spr2 "./Warhammer-Complete/Saurus Tlazcotl2.tga"
 #name "Saurus of Tlazcotl"
@@ -18780,7 +18780,7 @@ Still to do
 
 ---- Nullscale of Tlazcotl
 
-#newmonster 7351
+#newmonster 7899
 #spr1 "./Warhammer-Complete/Nullscale Tlazcotl.tga"
 #spr2 "./Warhammer-Complete/Nullscale Tlazcotl2.tga"
 #name "Nullscale of Tlazcotl"
@@ -18820,7 +18820,7 @@ Still to do
 
 ---- Saurus of Tepok
 
-#newmonster 7333
+#newmonster 7881
 #spr1 "./Warhammer-Complete/Saurus Tepok.tga"
 #spr2 "./Warhammer-Complete/Saurus Tepok2.tga"
 #name "Saurus of Tepok"
@@ -18856,7 +18856,7 @@ Still to do
 
 ---- Lorescale of Tepok
 
-#newmonster 7354
+#newmonster 7902
 #spr1 "./Warhammer-Complete/Lorescale Tepok.tga"
 #spr2 "./Warhammer-Complete/Lorescale Tepok2.tga"
 #name "Lorescale of Tepok"
@@ -18895,7 +18895,7 @@ Still to do
 
 ---- Saurus of Xhotl (shield)
 
-#newmonster 7347
+#newmonster 7895
 #spr1 "./Warhammer-Complete/Saurus Xhotl Shield.tga"
 #spr2 "./Warhammer-Complete/Saurus Xhotl Shield2.tga"
 #name "Saurus of Xhotl"
@@ -18927,14 +18927,14 @@ Still to do
 #coldblooded
 #holy
 #nametype 123
-#secondshape 7348
+#secondshape 7896
 #fireshield 10
 #end
 
 
 ---- Saurus of Xhotl
 
-#newmonster 7348
+#newmonster 7896
 #spr1 "./Warhammer-Complete/Saurus Xhotl.tga"
 #spr2 "./Warhammer-Complete/Saurus Xhotl2.tga"
 #name "Saurus of Xhotl"
@@ -18964,13 +18964,13 @@ Still to do
 #coldblooded
 #holy
 #nametype 123
-#firstshape 7347
+#firstshape 7895
 #end
 
 
 ---- Wardscale of Xhotl (shield)
 
-#newmonster 7349
+#newmonster 7897
 #spr1 "./Warhammer-Complete/Wardscale Xhotl Shield.tga"
 #spr2 "./Warhammer-Complete/Wardscale Xhotl Shield2.tga"
 #name "Wardscale of Xhotl"
@@ -19002,7 +19002,7 @@ Still to do
 #coldblooded
 #holy
 #nametype 123
-#secondshape 7350
+#secondshape 7898
 #fireshield 16
 #inspirational 1
 #onebattlespell "Charge Body"
@@ -19012,7 +19012,7 @@ Still to do
 
 ---- Wardscale of Xhotl
 
-#newmonster 7350
+#newmonster 7898
 #spr1 "./Warhammer-Complete/Wardscale Xhotl.tga"
 #spr2 "./Warhammer-Complete/Wardscale Xhotl2.tga"
 #name "Wardscale of Xhotl"
@@ -19043,7 +19043,7 @@ Still to do
 #coldblooded
 #holy
 #nametype 123
-#firstshape 7349
+#firstshape 7897
 #magicskill 8 1
 #inspirational 1
 #end
@@ -19051,7 +19051,7 @@ Still to do
 
 ---- Saurus of Chotec
 
-#newmonster 7334
+#newmonster 7882
 #spr1 "./Warhammer-Complete/Saurus Chotec.tga"
 #spr2 "./Warhammer-Complete/Saurus Chotec2.tga"
 #name "Saurus of Chotec"
@@ -19087,7 +19087,7 @@ Still to do
 
 ---- Sunscale of Chotec
 
-#newmonster 7346
+#newmonster 7894
 #spr1 "./Warhammer-Complete/Sunscale Chotec.tga"
 #spr2 "./Warhammer-Complete/Sunscale Chotec2.tga"
 #name "Sunscale of Chotec"
@@ -19129,7 +19129,7 @@ Still to do
 
 ---- Saurus of Quetzl
 
-#newmonster 7335
+#newmonster 7883
 #spr1 "./Warhammer-Complete/Saurus Quetzl.tga"
 #spr2 "./Warhammer-Complete/Saurus Quetzl2.tga"
 #name "Saurus of Quetzl"
@@ -19162,7 +19162,7 @@ Still to do
 
 ---- Spinescale of Quetzl
 
-#newmonster 7353
+#newmonster 7901
 #spr1 "./Warhammer-Complete/Spinescale Quetzl.tga"
 #spr2 "./Warhammer-Complete/Spinescale Quetzl2.tga"
 #name "Spinescale of Quetzl"
@@ -19202,7 +19202,7 @@ Still to do
 
 ---- Serpent of Sotek
 
-#newmonster 7343
+#newmonster 7891
 #spr1 "./Warhammer-Complete/Serpent Sotek.tga"
 #spr2 "./Warhammer-Complete/Serpent Sotek2.tga"
 #name "Serpent of Sotek"
@@ -19233,7 +19233,7 @@ Still to do
 
 ---- Jungle Serpent
 
-#newmonster 7344
+#newmonster 7892
 #spr1 "./Warhammer-Complete/Jungle Serpent.tga"
 #spr2 "./Warhammer-Complete/Jungle Serpent2.tga"
 #name "Jungle Serpent"
@@ -19270,7 +19270,7 @@ Still to do
 
 ---- Saurus Scar Veteran
 
-#newmonster 7290
+#newmonster 7847
 #spr1 "./Warhammer-Complete/Saurus Scar Veteran.tga"
 #spr2 "./Warhammer-Complete/Saurus Scar Veteran2.tga"
 #name "Saurus Scar Veteran"
@@ -19308,7 +19308,7 @@ Still to do
 
 ---- Skink Priest
 
-#newmonster 7291
+#newmonster 7848
 #spr1 "./Warhammer-Complete/Skink Priest.tga"
 #spr2 "./Warhammer-Complete/Skink Priest2.tga"
 #name "Skink Priest"
@@ -19349,7 +19349,7 @@ Still to do
 
 ---- Priest of Sotek
 
-#newmonster 7292
+#newmonster 7849
 #clearmagic#clearmagic#clearmagic
 #spr1 "./Warhammer-Complete/Skink Priest Sotek.tga"
 #spr2 "./Warhammer-Complete/Skink Priest Sotek2.tga"
@@ -19390,7 +19390,7 @@ Still to do
 
 ---- Saurus Oldblood
 
-#newmonster 7293
+#newmonster 7850
 #spr1 "./Warhammer-Complete/Saurus Oldblood.tga"
 #spr2 "./Warhammer-Complete/Saurus Oldblood2.tga"
 #name "Saurus Oldblood"
@@ -19430,7 +19430,7 @@ Still to do
 
 ---- Chameleon Skink Scout
 
-#newmonster 7294
+#newmonster 7851
 #spr1 "./Warhammer-Complete/Skink Chameleon.tga"
 #spr2 "./Warhammer-Complete/Skink Chameleon2.tga"
 #name "Chameleon Skink Scout"
@@ -19467,7 +19467,7 @@ Still to do
 
 ---- Skink Warchief
 
-#newmonster 7295
+#newmonster 7852
 #spr1 "./Warhammer-Complete/Skink Warchief.tga"
 #spr2 "./Warhammer-Complete/Skink Warchief2.tga"
 #name "Skink Warchief"
@@ -19505,7 +19505,7 @@ Still to do
 
 ---- Slann (5th Generation)
 
-#newmonster 7296
+#newmonster 7853
 #clear
 #spr1 "./Warhammer-Complete/Slann Fifth.tga"
 #spr2 "./Warhammer-Complete/Slann Fifth2.tga"
@@ -19542,7 +19542,7 @@ Still to do
 #holy
 #itemslots 12288
 #poorleader
-#shapechange 7297
+#shapechange 7854
 #onebattlespell "Communion Master"
 #nametype 123
 #magicboost 7 -3
@@ -19556,7 +19556,7 @@ Still to do
 
 ---- Slann (5th Generation - DORMANT)
 
-#newmonster 7297
+#newmonster 7854
 #spr1 "./Warhammer-Complete/Slann Fifth Dormant.tga"
 #spr2 "./Warhammer-Complete/Slann Fifth Dormant.tga"
 #name "Dormant Fifth Generation Slann"
@@ -19604,14 +19604,14 @@ Still to do
 #magicboost 3 -5
 #holy
 #itemslots 12288
-#shapechange 7296
+#shapechange 7853
 #heal
 #end
 
 
 ---- Slann (4th Generation)
 
-#newmonster 7298
+#newmonster 7855
 #spr1 "./Warhammer-Complete/Slann Fourth.tga"
 #spr2 "./Warhammer-Complete/Slann Fourth2.tga"
 #name "Fourth Generation Slann"
@@ -19649,7 +19649,7 @@ Still to do
 #holy
 #itemslots 12288
 #poorleader
-#shapechange 7299
+#shapechange 7856
 #onebattlespell "Communion Master"
 #nametype 123
 #magicboost 7 -3
@@ -19661,7 +19661,7 @@ Still to do
 
 ---- Slann (4th Generation - Dormant)
 
-#newmonster 7299
+#newmonster 7856
 #spr1 "./Warhammer-Complete/Slann Fourth Dormant.tga"
 #spr2 "./Warhammer-Complete/Slann Fourth Dormant.tga"
 #name "Fourth Generation Slann"
@@ -19701,7 +19701,7 @@ Still to do
 #noleader
 #nomagicleader
 #noundeadleader
-#shapechange 7298
+#shapechange 7855
 #immobile
 #magicboost 53 -9
 #magicboost 4 -5
@@ -19718,7 +19718,7 @@ Still to do
 
 ---- Skink Shaman
 
-#newmonster 7300
+#newmonster 7857
 #spr1 "./Warhammer-Complete/Skink Shaman.tga"
 #spr2 "./Warhammer-Complete/Skink Shaman2.tga"
 #name "Skink Shaman"
@@ -19758,7 +19758,7 @@ Still to do
 
 ---- Slann (3rd Generation)
 
-#newmonster 7301
+#newmonster 7858
 #spr1 "./Warhammer-Complete/Slann Third.tga"
 #spr2 "./Warhammer-Complete/Slann Third2.tga"
 #name "Third Generation Slann"
@@ -19799,7 +19799,7 @@ Still to do
 #holy
 #itemslots 28672
 #poorleader
-#shapechange 7302
+#shapechange 7859
 #onebattlespell "Communion Master"
 #nametype 123
 #magicboost 7 -3
@@ -19811,7 +19811,7 @@ Still to do
 
 ---- Slann (3rd Generation - Dormant)
 
-#newmonster 7302
+#newmonster 7859
 #spr1 "./Warhammer-Complete/Slann Third Dormant.tga"
 #spr2 "./Warhammer-Complete/Slann Third Dormant.tga"
 #name "Third Generation Slann"
@@ -19855,7 +19855,7 @@ Still to do
 #noleader
 #nomagicleader
 #noundeadleader
-#shapechange 7301
+#shapechange 7858
 #immobile
 #magicboost 53 -9
 #magicboost 4 -5
@@ -19872,7 +19872,7 @@ Still to do
 
 ---- Slann (2rd Generation - Seas - awake with bubble)
 
-#newmonster 7303
+#newmonster 7860
 #spr1 "./Warhammer-Complete/Slann Second Zlatlan Shield.tga"
 #spr2 "./Warhammer-Complete/Slann Second Zlatlan Shield2.tga"
 #name "One Who Fathomed The Depths"
@@ -19914,7 +19914,7 @@ Still to do
 #poorleader
 #onebattlespell "Communion Master"
 #nametype 123
-#secondshape 7304
+#secondshape 7861
 #amphibian
 #unique
 #magicboost 7 -3
@@ -19927,7 +19927,7 @@ Still to do
 
 ---- Slann (2rd Generation - Seas - awakening with bubble)
 
-#newmonster 7308
+#newmonster 7862
 #spr1 "./Warhammer-Complete/Slann Second Zlatlan Shield.tga"
 #spr2 "./Warhammer-Complete/Slann Second Zlatlan Shield2.tga"
 #name "One Who Fathomed The Depths"
@@ -19969,13 +19969,13 @@ Still to do
 #poorleader
 #onebattlespell "Communion Master"
 #nametype 123
-#secondshape 7304
+#secondshape 7861
 #amphibian
 #unique
 #magicboost 7 -3
-#firstshape 7303 -- normal zlatlan
-#domsummon 7347 -- Saurus of Xhotl
-#summon5 7330 -- saurus of Tzunki
+#firstshape 7860 -- normal zlatlan
+#domsummon 7895 -- Saurus of Xhotl
+#summon5 7878 -- saurus of Tzunki
 #bonusspells 3
 #fixedname "Zlatlan"
 #float
@@ -19984,7 +19984,7 @@ Still to do
 
 ---- Slann (2rd Generation - Seas - awake with no bubble)
 
-#newmonster 7304
+#newmonster 7861
 #spr1 "./Warhammer-Complete/Slann Second Zlatlan.tga"
 #spr2 "./Warhammer-Complete/Slann Second Zlatlan2.tga"
 #name "One Who Fathomed The Depths"
@@ -20024,8 +20024,8 @@ Still to do
 #poorleader
 #onebattlespell "Communion Master"
 #nametype 123
-#firstshape 7303
-#shapechange 7303
+#firstshape 7860
+#shapechange 7860
 #amphibian
 #unique
 #magicboost 7 -3
@@ -20039,7 +20039,7 @@ Still to do
 
 ---- Slann (2nd generation - fire - awakening form)
 
-#newmonster 7288
+#newmonster 7845
 #spr1 "./Warhammer-Complete/Slann Second Adohi.tga"
 #spr2 "./Warhammer-Complete/Slann Second Adohi2.tga"
 #name "One Who Fired The Earth"
@@ -20083,9 +20083,9 @@ Still to do
 #berserk 0
 #firepower 2
 #unique
-#firstshape 7289 -- normal adohi
-#domsummon 7334 -- Saurus of Chotec
-#summon5 7334 -- saurus of Chotec
+#firstshape 7846 -- normal adohi
+#domsummon 7882 -- Saurus of Chotec
+#summon5 7882 -- saurus of Chotec
 #bonusspells 3
 #fixedname "Adohi Tehga"
 #end
@@ -20094,7 +20094,7 @@ Still to do
 
 ---- Slann (2nd generation - fire - normal form)
 
-#newmonster 7289
+#newmonster 7846
 #spr1 "./Warhammer-Complete/Slann Second Adohi.tga"
 #spr2 "./Warhammer-Complete/Slann Second Adohi2.tga"
 #name "One Who Fired The Earth"
@@ -20148,7 +20148,7 @@ Still to do
 
 ---- Slann (2nd generation - earth - awakening form)
 
-#newmonster 7362
+#newmonster 7910
 #spr1 "./Warhammer-Complete/Slann Second Mazdamundi.tga"
 #spr2 "./Warhammer-Complete/Slann Second Mazdamundi2.tga"
 #name "One Who Shaped The Mountains"
@@ -20191,9 +20191,9 @@ Still to do
 #nametype 123
 #awe 4
 #unique
-#firstshape 7363 -- normal Mazdamundi
-#domsummon 7335 -- Saurus of Quetzl
-#summon5 7335 -- saurus of Quetzl
+#firstshape 7911 -- normal Mazdamundi
+#domsummon 7883 -- Saurus of Quetzl
+#summon5 7883 -- saurus of Quetzl
 #bonusspells 3
 #fixedname "Lord Mazdamundi"
 #trample
@@ -20208,7 +20208,7 @@ Still to do
 
 ---- Slann (2nd generation - earth - normal form)
 
-#newmonster 7363
+#newmonster 7911
 #spr1 "./Warhammer-Complete/Slann Second Mazdamundi.tga"
 #spr2 "./Warhammer-Complete/Slann Second Mazdamundi2.tga"
 #name "One Who Shaped The Mountains"
@@ -20265,7 +20265,7 @@ Still to do
 
 ---- Slann (2rd Generation - Spheres - awakening)
 
-#newmonster 7364
+#newmonster 7912
 #spr1 "./Warhammer-Complete/Slann Second Yucatetl.tga"
 #spr2 "./Warhammer-Complete/Slann Second Yucatetl2.tga"
 #name "One Who Guided The Spheres"
@@ -20306,22 +20306,22 @@ Still to do
 #poorleader
 #onebattlespell "Communion Master"
 #nametype 123
-#firstshape 7365 -- Yucatetl normal
+#firstshape 7913 -- Yucatetl normal
 #unique
 #magicboost 7 -4
 #bonusspells 3
 #fixedname "Yucatetl"
 #float
 #allrange 10
-#domsummon 7332 -- Saurus of Tzlazcotl
-#summon5 7333 -- saurus of Tepok
+#domsummon 7880 -- Saurus of Tzlazcotl
+#summon5 7881 -- saurus of Tepok
 #end
 
 
 
 ---- Slann (2rd Generation - Spheres - awake)
 
-#newmonster 7365
+#newmonster 7913
 #spr1 "./Warhammer-Complete/Slann Second Yucatetl.tga"
 #spr2 "./Warhammer-Complete/Slann Second Yucatetl2.tga"
 #name "One Who Guided The Spheres"
@@ -20382,7 +20382,7 @@ Still to do
 
 ---- Nakai the Wanderer
 
-#newmonster 7356
+#newmonster 7904
 #spr1 "./Warhammer-Complete/Hero Nakai.tga"
 #spr2 "./Warhammer-Complete/Hero Nakai2.tga"
 #name "Kroxigor of the First Spawning"
@@ -20423,7 +20423,7 @@ Still to do
 
 ---- Tiktaqto, Master of Skies
 
-#newmonster 7309
+#newmonster 7863
 #spr1 "./Warhammer-Complete/Hero Tiktaqto.tga"
 #spr2 "./Warhammer-Complete/Hero Tiktaqto2.tga"
 #name "Master of Skies"
@@ -20468,7 +20468,7 @@ Still to do
 
 ---- Chakax, Eternity Warden
 
-#newmonster 7352
+#newmonster 7900
 #spr1 "./Warhammer-Complete/Hero Chakax.tga"
 #spr2 "./Warhammer-Complete/Hero Chakax2.tga"
 #name "Eternity Warden"
@@ -20508,7 +20508,7 @@ Still to do
 
 ---- Gor Rok, Great White Lizard
 
-#newmonster 7357
+#newmonster 7905
 #spr1 "./Warhammer-Complete/Hero Gor Rok.tga"
 #spr2 "./Warhammer-Complete/Hero Gor Rok2.tga"
 #name "Great White Lizard"
@@ -20553,7 +20553,7 @@ Still to do
 
 ---- Tehenhauin, Prophet of Sotek
 
-#newmonster 7358
+#newmonster 7906
 #spr1 "./Warhammer-Complete/Hero Tehenhauin.tga"
 #spr2 "./Warhammer-Complete/Hero Tehenhauin2.tga"
 #name "Prophet of Sotek"
@@ -20588,8 +20588,8 @@ Still to do
 #magicskill 7 3
 #magicskill 0 1
 #magicskill 6 2
-#battlesum5 7343 -- red snakes
-#batstartsum2d6 7343 -- red snakes
+#battlesum5 7891 -- red snakes
+#batstartsum2d6 7891 -- red snakes
 #bloodvengeance 2
 #beastmaster 1
 #goodleader
@@ -20602,7 +20602,7 @@ Still to do
 
 ---- Oxyotl the unseen
 
-#newmonster 7361
+#newmonster 7909
 #spr1 "./Warhammer-Complete/Hero Oxyotl.tga"
 #spr2 "./Warhammer-Complete/Hero Oxyotl2.tga"
 #name "He That Hunts Unseen"
@@ -20661,7 +20661,7 @@ Still to do
 #pathlevel 1 2
 #effect 10001
 #fatiguecost 600
-#damage 7337
+#damage 7885
 #nreff 2003
 #end
 
@@ -20678,7 +20678,7 @@ Still to do
 #pathlevel 0 1
 #fatiguecost 1500
 #nreff 40
-#damage 7343
+#damage 7891
 #effect 10038
 #end
 
@@ -20697,7 +20697,7 @@ Still to do
 #fatiguecost 100
 #effect 1
 #nreff 1
-#damage 7344
+#damage 7892
 #explspr 10044 -- rising green mist
 #sound 50
 #end
@@ -20743,7 +20743,7 @@ Still to do
 #fatiguecost 100
 #effect 1
 #nreff 12
-#damage 7343
+#damage 7891
 #explspr 10144 -- some blood
 #sound 50
 #end
@@ -20761,7 +20761,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7342
+#damage 7890
 #nreff 1
 #end
 
@@ -20777,7 +20777,7 @@ Still to do
 #pathlevel 0 1
 #effect 10001
 #fatiguecost 2400
-#damage 7329
+#damage 7877
 #nreff 12
 #nextspell "Bloodscale of Sotek"
 #end
@@ -20794,7 +20794,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7339
+#damage 7887
 #nreff 1
 #end
 
@@ -20810,7 +20810,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7330
+#damage 7878
 #nreff 12
 #nextspell "Deepscale of Tzunki"
 #end
@@ -20828,7 +20828,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7341
+#damage 7889
 #nreff 1
 #end
 
@@ -20844,7 +20844,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7331
+#damage 7879
 #nreff 12
 #nextspell "Nightscale of Huanchi"
 #end
@@ -20862,7 +20862,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 2000
-#damage 7351
+#damage 7899
 #nreff 1
 #end
 
@@ -20879,7 +20879,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7332
+#damage 7880
 #nreff 12
 #nextspell "Nullscale of Tlazcotl"
 #end
@@ -20897,7 +20897,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7354
+#damage 7902
 #nreff 1
 #end
 
@@ -20913,7 +20913,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7333
+#damage 7881
 #nreff 12
 #nextspell "Lorescale of Tepok"
 #end
@@ -20931,7 +20931,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7346
+#damage 7894
 #nreff 1
 #end
 
@@ -20948,7 +20948,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1400
-#damage 7334
+#damage 7882
 #nreff 14
 #nextspell "Sunscale of Chotec"
 #end
@@ -20966,7 +20966,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 2000
-#damage 7353
+#damage 7901
 #nreff 1
 #end
 
@@ -20983,7 +20983,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7335
+#damage 7883
 #nreff 12
 #nextspell "Spinescale of Quetzl"
 #end
@@ -21002,7 +21002,7 @@ Still to do
 #pathlevel 0 2
 #effect 10021
 #fatiguecost 1400
-#damage 7349
+#damage 7897
 #nreff 1
 #end
 
@@ -21019,7 +21019,7 @@ Still to do
 #pathlevel 0 2
 #effect 10001
 #fatiguecost 1600
-#damage 7347
+#damage 7895
 #nreff 12
 #nextspell "Wardscale of Xhotl"
 #end
@@ -21037,7 +21037,7 @@ Still to do
 #pathlevel 0 5
 #effect 10021
 #fatiguecost 5000
-#damage 7301
+#damage 7858
 #nreff 1
 #end
 
@@ -21053,7 +21053,7 @@ Still to do
 #pathlevel 0 5
 #effect 10021
 #fatiguecost 7000
-#damage 7308
+#damage 7862
 #nreff 1
 #end
 
@@ -21070,7 +21070,7 @@ Still to do
 #pathlevel 0 5
 #effect 10021
 #fatiguecost 7500
-#damage 7288
+#damage 7845
 #nreff 1
 #end
 
@@ -21087,7 +21087,7 @@ Still to do
 #pathlevel 0 5
 #effect 10021
 #fatiguecost 8000
-#damage 7362
+#damage 7910
 #nreff 1
 #end
 
@@ -21103,7 +21103,7 @@ Still to do
 #pathlevel 0 5
 #effect 10021
 #fatiguecost 8000
-#damage 7364
+#damage 7912
 #nreff 1
 #end
 
@@ -21111,7 +21111,7 @@ Still to do
 -------- SITES
 
 
-#newsite 1510
+#newsite 1900
 #name "Spawning Pools"
 #path 6
 #level 0
@@ -21121,13 +21121,13 @@ Still to do
 #end
 
 
-#newsite 1511
+#newsite 1901
 #name "The Great Pyramid"
 #path 8
 #level 0
 #rarity 5
 #gems 4 3
-#homecom 7298 -- Fourth Generation Slann
+#homecom 7855 -- Fourth Generation Slann
 #end
 
 
@@ -21252,114 +21252,26 @@ Priests: Very Powerful."
 
 ------- Add soldiers
 
-#addrecunit 7312 -- Skink (blowpipe)
-#forestrec 7312 -- Skink (blowpipe)
-#swamprec 7312 -- Skink (blowpipe)
-#forestrec 7313 -- Skink Skirmisher (jav and shield)
-#addrecunit 7313 -- Skink Skirmisher (jav and shield)
-#addrecunit 7314 -- Skink Archer
-#forestrec 7314 -- Skink Archer
-#swamprec 7314 -- Skink Archer
-#addrecunit 7315 -- Red Crested Skink
-#forestrec 7315 -- Red Crested Skink
-#swamprec 7315 -- Red Crested Skink
-#addrecunit 7321 -- Chameleon Skink
-#addrecunit 7319 -- Skink Cavalry
-#addrecunit 7336 -- Terradon Rider
-#forestrec 7336 -- Terradon Rider
-#addrecunit 7359 -- Ripperdactyl Rider
-#mountainrec 7359 -- Ripperdactyl Rider
-#addrecunit 7311 -- Saurus Warrior (spear)
-#addrecunit 7310 -- Saurus Warrior (sword)
-#addrecunit 7318 -- Temple Guard
-#addrecunit 7327 -- Saurus Cavalry
-#addrecunit 7316 -- Kroxigor
-#swamprec 7316 -- Kroxigor
-#addrecunit 7317 -- Salamander
-#swamprec 7317 -- Salamander
-#addrecunit 7320 -- Razordon
-#swamprec 7320 -- Razordon
-#addrecunit 7345 -- Stegadon
-
-
-------- Add leaders
-
-
-#addreccom 7294 -- Chameleon Scout
-#forestcom 7294 -- Chameleon Scout
-#addreccom 7295 -- Skink Warchief
-#forestcom 7295 -- Skink Warchief
-#addreccom 7290 -- Saurus Scar Veteran
-#addreccom 7293 -- Saurus Oldblood on Cold One
-#forestcom 7300 -- Skink Shaman
-#swampcom 7300 -- Skink Shaman
-#addreccom 7291 -- Skink Priest
-#addreccom 7292 -- Priest of Sotek
-#forestcom 7292 -- Priest of Sotek
-#swampcom 7292 -- Priest of Sotek
-#addreccom 7296 -- Fifth Generation Slann
---addreccom 7298 -- Fourth Generation Slann (cap only)
---addreccom 7301 -- third gen slann
---addreccom 7341 -- nightscale of huanchi
---addreccom 7339 -- deepscale of tzunki
---addreccom 7342 -- Bloodscale of Sotek
---addreccom 7346 -- sunscale chotec
---addreccom 7354 -- lorescale tepok
---addreccom 7353 -- spinescale quetzl
---addreccom 7349 -- wardscale xhotl
---addreccom 7351 -- nullscale of tlazcotl
---addreccom 7303 -- Zlatlan
---addreccom 7356 -- Nakai
---addreccom 7309 -- Tiktaqto
---addreccom 7352 -- Chakax
---addreccom 7288 -- Adohi-Tehga
---addreccom 7358 -- Tehenhauin
---addreccom 7357 -- Gor Rok
---addreccom 7361 -- Oxyotl
---addreccom 7362 -- Mazdamundi
-
-
-
-
-------- Province Defence
-
---Sets the units to be used in province defense.
-
-#defcom1 7295 -- Skink Warchief
-#defcom2 7291 -- Skink Priest
-#defunit1 7313 -- Skink Skirmisher
-#defunit1b 7312 -- Skink blowpipes
-#defunit2 7314 -- Skink Archer
-#defunit2b 7316 -- Kroxigor
-
-
---Sets how many of the units to appear per point.
-
-#defmult1 20
-#defmult1b 20
-#defmult2 20
-#defmult2b 5
-
-
-------- Hero Settings
-
-#multihero1 7301 -- 3rd gen slann
-#hero1 7356 -- Nakai
-#hero2 7309 -- Tiktaqto
-#hero3 7352 -- Chakax
-#hero4 7357 -- Gor Rok
-#hero5 7361 -- Oxyotl
-
-
-#idealcold -2
-#color 0.3 0.3 0.8
-#templecost 600
-
-
-#startcom 7290 -- Saurus Scar Veteran
-#startunittype1 7310 -- saurus warrior sword
-#startunitnbrs1 10
-#startunittype2 7311 -- saurus warrior spear
-#startunitnbrs2 10
-#startscout 7294 -- Chameleon Scout
-#end
+#addrecunit 7866 -- Skink (blowpipe)
+#forestrec 7866 -- Skink (blowpipe)
+#swamprec 7866 -- Skink (blowpipe)
+#forestrec 7867 -- Skink Skirmisher (jav and shield)
+#addrecunit 7867 -- Skink Skirmisher (jav and shield)
+#addrecunit 7868 -- Skink Archer
+#forestrec 7868 -- Skink Archer
+#swamprec 7868 -- Skink Archer
+#addrecunit 7869 -- Red Crested Skink
+#forestrec 7869 -- Red Crested Skink
+#swamprec 7869 -- Red Crested Skink
+#addrecunit 7875 -- Chameleon Skink
+#addrecunit 7873 -- Skink Cavalry
+#addrecunit 7884 -- Terradon Rider
+#forestrec 7884 -- Terradon Rider
+#addrecunit 7907 -- Ripperdactyl Rider
+#mountainrec 7907 -- Ripperdactyl Rider
+#addrecunit 7865 -- Saurus Warrior (spear)
+#addrecunit 7864 -- Saurus Warrior (sword)
+#addrecunit 7872 -- Temple Guard
+#addrecunit 7876 -- Saurus Cavalry
+#addrecunit 7870 -- Kroxigor
+#swamprec 7870 -- Kroxigor
