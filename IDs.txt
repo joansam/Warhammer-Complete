@@ -2,8 +2,9 @@ ID Numbers :
 Nations are sorted as in the code
 
 Montags: Chaos: 7777, 8888, 6666, 5555, 60006
-Nametypes: Daemon: 257, Beastmen: 109, Chaos Human: 115, Skaven: 187,
-Lizards: 123, Chaos Dwarfs: 192, Hobgoblins: 191, Ogres: 193
+
+Nametypes: 109 (Pan m), 115 (Jotun m), 123 (Mictlan m), 187, 191, 192, 193, 257
+
 
 Nations:
 Tzeentch: 120
