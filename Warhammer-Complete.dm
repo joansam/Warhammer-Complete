@@ -2929,7 +2929,7 @@
 
 #newevent
 #rarity 0 -- Always, but only one 0 rarity event can happen/turn
-#req_rare 25 -- Will happen 40% of the time when reqs are met
+#req_rare 25 -- Will happen X% of the time when reqs are met
 #nation 159 -- Slaanesh controls the troops
 #req_notnation 159
 #req_notnation 120
@@ -3361,7 +3361,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 
 
-#newweapon 
+#newweapon
 #name "Chaos Fire"
 #nostr
 #armorpiercing
@@ -3377,7 +3377,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Lightning of Tzeentch"
 #att 0
 #ammo 20
@@ -3392,7 +3392,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 
+#newweapon
 #name "Flames of Tzeentch"
 #nostr
 #armorpiercing
@@ -3409,7 +3409,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 
+#newweapon
 #name "Chaotic Fire"
 #nostr
 #armorpiercing
@@ -3424,7 +3424,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Windblade"
 #dmg 12
 #nratt 3
@@ -3438,7 +3438,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 
+#newweapon
 #name "Breath of Change"
 #dmg 999
 #magic
@@ -3455,7 +3455,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Melekh's halberd"
 #dmg 11
 #att -1
@@ -3468,7 +3468,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #slash
 #end
 
-#newweapon 
+#newweapon
 #name "Thomin's Sword"
 #dmg 12
 #magic
@@ -6208,7 +6208,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #req_notnation 136
 #nation 120 -- Tzeentch controls the troops
 #req_monster 7663 -- Tzeentch cultist
---#req_capital 0
+#req_capital 0
 #req_maxdef 19
 #req_minunrest 60
 #req_land 1
@@ -6218,12 +6218,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #unrest 30
 #newdom 3
 #incscale2 0 -- Turmoil
+#com 7663 -- Cultist
 #1d6units 7688 -- Pink horror
 #1unit 7683 -- Spawn
 #1d6units 7689 -- Blue horror
 #1d6units 7663 -- Cultist
 #1d6units 7699 -- Forsaken
-#com 7663 -- Cultist
 #end
 
 #newevent
@@ -7742,7 +7742,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #montag 5555
 #end
 
--- Chosen Lord of Nurgle
+-- Chosen Chaos Lord of Nurgle
 
 #newmonster 7748
 #spr1 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_1.tga"
@@ -8432,6 +8432,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #deathdisease 6
 #magicpower 1
 #neednoteat
+#montag 5555
 #end
 
 ----------- PRETENDERS, Daemon Prince of Nurgle and Sorcerer Lord of Nurgle
@@ -8911,12 +8912,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 --#newevent
 --#nation 136
 --#rarity 0
---#req_rare 99 -- Will occur 5% of the time
+--#req_rare 5 -- Will occur 5% of the time
 --#req_land 1
 --#req_fornation 136
 --#req_pop0ok
---#req_targmnr 5034 -- Chosen Chaos Lord
---#killcom 5034
+--#req_targmnr 7748 -- Chosen Chaos Lord
+--#killcom 7748
 --#com -5555 -- 1 Daemon, 2 Spawns
 --#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 --#end
@@ -11395,29 +11396,31 @@ still to do
 #req_capital 0 -- never in capital
 #req_site 0 -- the Pit can't already be here
 #req_nositenbr 1912 -- the Abandoned Pit can't be here
-#4d6vis 7 -- Gives 1d6 blood slaves?
+#5d6vis 7 -- Gives 1d6 blood slaves?
+#killpop 50 -- 500 population
 #end
 
 #newevent
-#msg "With our recent conquest of this Ogre stronghold, the old Maw Pit has been abandoned, with nothing but dried blood and a foul odor remaining to suggest its former use. [Maw Pit]"
+#msg "With our recent conquest of this Ogre stronghold, the old Maw Pit has been abandoned, with nothing but splashes of dried blood and the foul stench of Ogre carcasses left to suggest its former purpose. [Maw Pit]"
 #rarity 5
 #req_site 1
 #removesite 1915 -- Maw Pit
 #hiddensite 1912 -- Abandoned Pit
 #req_notnation 121 -- Ogres
-#req_pop0ok
+#req_pop0ok -- Don't want to keep this up if the fort's empty now
 #end
 
 #newevent
-#msg "With the stronghold under our control once more, we have been working to reopen the local Maw Pit. The customary opening brawl took place yesterday, and we can once more look forward to a steady flow of flesh to the Great Maw, and a supply of mad brutes willing to be branded Pitfighters!  [Abandoned Pit]"
+#msg "With the stronghold under our control once more, your Ogres have been clamoring to reopen the local Maw Pit. The customary opening brawl took place yesterday, and we can once more look forward to a steady flow of flesh to the Great Maw, and a supply of mad brutes willing to be branded Pitfighters!  [Abandoned Pit]"
 #rarity 0
-#req_rare 25
+#req_rare 30
 #req_fort 1
 #req_fornation 121 -- Ogres
 #req_site 1 -- the abandoned Maw Pit must be here
 #nation -2
 #removesite 1912 -- Abandoned Pit
 #hiddensite 1915 -- Maw Pit
+#2d6vis 7
 #end
 
 
@@ -12782,9 +12785,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 1901 -- Doomwheel Warplightning # 1 
+#weapon 1901 -- Doomwheel Warplightning # 1
 #weapon 1902 -- Doomwheel Warplightning # 2
-#weapon 1903 -- Doomwheel Warplightning # 3 
+#weapon 1903 -- Doomwheel Warplightning # 3
 #fireres 5
 #shockres 25
 #poisonres 1
