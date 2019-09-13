@@ -6208,7 +6208,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #req_notnation 136
 #nation 120 -- Tzeentch controls the troops
 #req_monster 7663 -- Tzeentch cultist
---#req_capital 0
+#req_capital 0
 #req_maxdef 19
 #req_minunrest 60
 #req_land 1
@@ -8432,6 +8432,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #deathdisease 6
 #magicpower 1
 #neednoteat
+#montag 5555
 #end
 
 ----------- PRETENDERS, Daemon Prince of Nurgle and Sorcerer Lord of Nurgle
@@ -8911,12 +8912,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 --#newevent
 --#nation 136
 --#rarity 0
---#req_rare 99 -- Will occur 5% of the time
+--#req_rare 5 -- Will occur 5% of the time
 --#req_land 1
 --#req_fornation 136
 --#req_pop0ok
---#req_targmnr 5034 -- Chosen Chaos Lord
---#killcom 5034
+--#req_targmnr 7748 -- Chosen Chaos Lord
+--#killcom 7748
 --#com -5555 -- 1 Daemon, 2 Spawns
 --#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
 --#end
@@ -11395,11 +11396,12 @@ still to do
 #req_capital 0 -- never in capital
 #req_site 0 -- the Pit can't already be here
 #req_nositenbr 1912 -- the Abandoned Pit can't be here
-#4d6vis 7 -- Gives 1d6 blood slaves?
+#5d6vis 7 -- Gives 1d6 blood slaves?
+#killpop 50 -- 500 people
 #end
 
 #newevent
-#msg "With our recent conquest of this Ogre stronghold, the old Maw Pit has been abandoned, with nothing but dried blood and a foul odor remaining to suggest its former use. [Maw Pit]"
+#msg "With our recent conquest of this Ogre stronghold, their old Maw Pit has been abandoned, with nothing but dried blood and the foul odor of Ogre carcasses left to suggest its former use. [Maw Pit]"
 #rarity 5
 #req_site 1
 #removesite 1915 -- Maw Pit
@@ -11409,15 +11411,16 @@ still to do
 #end
 
 #newevent
-#msg "With the stronghold under our control once more, we have been working to reopen the local Maw Pit. The customary opening brawl took place yesterday, and we can once more look forward to a steady flow of flesh to the Great Maw, and a supply of mad brutes willing to be branded Pitfighters!  [Abandoned Pit]"
+#msg "With the stronghold under our control once more, our Ogres have been clamoring to reopen the local Maw Pit. The customary opening brawl took place yesterday, so we can once more look forward to a steady flow of flesh to the Great Maw, and a supply of mad brutes willing to be branded Pitfighters!  [Abandoned Pit]"
 #rarity 0
-#req_rare 25
+#req_rare 30
 #req_fort 1
 #req_fornation 121 -- Ogres
 #req_site 1 -- the abandoned Maw Pit must be here
 #nation -2
 #removesite 1912 -- Abandoned Pit
 #hiddensite 1915 -- Maw Pit
+#2d6vis 7
 #end
 
 
