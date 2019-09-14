@@ -5,6 +5,8 @@ Montags: Chaos: 7777, 8888, 6666, 5555, 60006
 
 Nametypes: 109 (Pan m), 115 (Jotun m), 123 (Mictlan m), 187, 191, 192, 193, 257
 
+Enchantments: 50, 51 (find with #damage 50)
+Restricted item tags: 80, 81 (find with item 80)
 
 Nations:
 Tzeentch: 120
