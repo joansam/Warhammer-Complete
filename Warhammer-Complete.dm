@@ -21278,3 +21278,2286 @@ Priests: Very Powerful."
 #addrecunit 7876 -- Saurus Cavalry
 #addrecunit 7870 -- Kroxigor
 #swamprec 7870 -- Kroxigor
+
+
+-- END OF LIZARDMEN, BEGINNING OF HIGH ELVES
+
+NEW UNITS
+--- HERO: Korhil, Captain of the White Lions
+
+NEW SPELLS
+--- Flames of the Phoenix
+	- lvl 5 evocation, F4S3, binds enemies in place while burning them
+--- Shield of Saphery
+	- lvl 2 thaum, S1F1, grants twist fate to the mage and those in the same square and scales with mage power (aoe +1 per mage level)
+--- Arcane Unmaking
+	- lvl 6 enchantment, S3F1, "opposition" spell with aoe, kills magical creatures
+--- Apotheosis
+	- lvl 2 enchantment, S2F1, heals and blesses a number of friendly soldiers
+--- Soul Quench
+	- lvl 4 evo, S2F2, fires a large number of armor negating, MR-resistable projectiles
+--- Drain Magic
+	- lvl 7 alteration, S5F2, hits magical beings for armor negating 3 dmg, but MR, battlefield wide, costs an astral gem.
+--- Fury of Khaine
+	- lvl 6 evocation, F3S3, costs multiple "flares", destructive but exhausting to cast
+--- Sigil of Asuryan
+	- lvl 0 dispel spell
+
+TWEAKS
+--- Mage of Isha -> "Priestess of Isha" 
+	- #female
+--- Smith of Vaul -> "Smith Priest of Vaul"
+	- blind (and precision decreased)
+--- White Lions & Guardians
+	- #mountainsurvival
+--- Protective Presence spell
+	- change: can now only target friendly provinces
+	
+SPRITES
+--- updated sprites:
+	-Priestess of Isha
+	-Smith Priest of Vaul
+
+0,563
+
+- innate spellcaster removed from loremaster
+
+
+0,562
+- starting units tweaked - 10+10 spearmen/archers
+- shadow walkers, guardians, harbinger and drakemaster randoms changed to 99% in order to be recruitable without lab
+- nation description corrections
+
+Tiranoc Chariot
+(nerfed to be in line with chariots in vanilla and gcost adjusted)
+HP 13->11
+enc 4->5
+ap 22->20
+
+White Lions
+- lion cloak changed to def 2, prot 15, enc 1
+
+Swordmasters
+- deflection changed to prot 10
+
+Ellyrian Reavers
+- Removed shield (they never should've had one!)
+
+Silver helms
+- enc 4->5
+
+Mages
+- slightly lowered MR
+
+Loremaster 
+(does not cast rituals or smiths at all - strictly a combat/research/site search mage)
+ - removed onebattlespell of power of the spheres
+ - all paths increased by 1 except astral
+ - #mastersmith -3
+ - #masterrit -3
+ - researchbonus -4
+
+Eagle Claw Bolt Thrower
+- Precision decreased by 1 (the weapons)
+- Damage decreased 16->14
+
+Price revision troops:
+- Spearman 14->16
+- archers 14->15
+- sea guard 20->23
+- white lions 29->33 (but has "sacred upkeep")
+- reavers 30->34 (but has "sacred upkeep")
+- swordmasters 40->45, reclimit 5
+- phoenix guard 55->70, reclimit 5
+- tiranoc chariot 52->60
+- shadow warriors 30->35
+- Eagle claw bolt thrower 100->200, base rcost +20
+- dragon princes 65->75
+
+- Keeper of the Flames 120->150
+- harathoi mage 100->110
+- mage of isha 350->375
+- high mage slowrec
+- Archmage 460->500
+- smith of vaul 250->300
+
+
+
+Version 0,55
+- Mod converted to Dominions 4:
+	- nametypes fixed, fixednames added where appropriate
+	- standard -> inspirational
+	- gods set
+	- damage types set
+	- resistances changed to new system
+	- researchbonus upped
+	- healer -> autohealer
+	- nation id
+	- monster id
+	- sites id
+	- weapons id
+	- (armor and nametypes ok)
+	- forts set
+
+- removed most of the special "high elf" weapons (no longer extra length)
+
+- All High Elves given #formationfighter 1 to account for their martial prowess
+
+- High elves given #merccost 25	(mercs 25% more expensive)
+
+- Many High Elves require less upkeep (indicated in description), but are pricey to recruit. This applies to most elite troops and commanders that are not sacred, as those already have low upkeep.
+
+- Start site "Chracian Highlands" removed
+
+- Gem income decreased to 5 gems. Now S2F1A1E1 (was S2F2A1E1)
+	
+	----MAJOR MAGE REVAMP!----
+		Essentially, magic paths are similar as before, but they lose a bit of earth. The mages are less random though, and worth their price to a larger degree. There is also a lower tier mage now, which will probably mainly be used for research and at times for communions. Also, most mages are now sacred, and the mages of hoeth now have holy levels.
+		
+- NEW mage: Harathoi Mage (young mage)
+
+- NEW mage: Smith of Vaul (master smith)
+
+- NEW mage: Loremaster of Hoeth (battlemage and scholar)
+
+- NEW mage: Mage of Isha
+
+
+- archmages:
+		- paths changed
+		- sacred
+		-autodishealer 2 - heals disease
+		-slowrec
+		-allrange 2
+		-holy magic 2
+		
+- mages: 
+		- paths changed
+		- sacred
+		- autodishealer 1 - heals disease
+		- holy magic 1
+		
+		
+- stormweavers:
+		- sailing 2 2 - effectively limits their sailing to themselves
+		- price tweak
+		
+- Sea Guard Captain:
+		-sailing 999 3
+		-lost his magic skills
+		- price lowered
+		
+- White Lions
+		- morale 16->15
+		- bodyguard 2
+		- reclimit 3
+		- recruitable anywhere:
+		- forestrec (and fort)
+		- gcost 32->29
+		
+- Eagle Claw Bolt Thrower 
+		- now a recruitable unit in coast forts
+		- also fires a ballista bolt every third round, elsewise 6xArbalest bolts
+
+- Swordmasters:
+		- sacred!
+		- gained a deflection "shield" parry of def 3 prot 20 that makes them able to deflect missiles with their swords
+		- defence lowered 14->13
+		- gcost 32->40
+		
+- Shadow warriors
+		- now recruitable, gcost 30
+		- reclimit 5
+		- nagarythe hatred weapon set to #skip + #ammo1 and has attack skill +3, effectively giving the shadow warriors +3 att on their first strike each combat
+
+- Dragon princes
+		-gcost 70->65
+		
+- Keepers of the Flame
+		-gcost 150->120 
+
+	
+
+
+
+///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
+
+
+#newweapon 1001
+#name "Woodman's Axe"
+#dmg 11
+#att 0
+#def 0
+#len 3
+#rcost 3
+#sound 10
+#twohanded
+#slash
+#end
+
+#newweapon 1002
+#name "Great Sword of Hoeth"
+#dmg 9
+#att 1
+#def 2
+#len 4
+#rcost 5
+#nratt 2	- only usable by Swordmasters
+#sound 8
+#twohanded
+#slash
+#pierce
+#end
+
+
+#newweapon 1003
+#name "Ceremonial Halberd"
+#dmg 10
+#att 0
+#def 0
+#len 4
+#rcost 10
+#sound 10
+#twohanded
+#slash
+#pierce
+#end
+
+#newweapon 1004
+#name "Nagarythe Hatred"
+#dmg 6
+#att 4
+#def 0
+#len 2
+#rcost 0
+#ammo 1
+#bonus
+#sound 8
+#slash
+#norepel
+#end
+
+#newweapon 1005
+#name "Dragon Lance"
+#dmg 6
+#att 1
+#def 0
+#len 4
+#rcost 2
+#nratt 2
+#bonus
+#charge
+#sound 12
+#pierce
+#end
+
+#newweapon 1006
+#name "Lion Claws"
+#dmg 16
+#nostr
+#att -1
+#def 0
+#len 0
+#rcost 0
+#nratt 2
+#bonus
+#sound 25
+#slash
+#end
+
+#newweapon 1007
+#name "Chariot Impact"
+#dmg 10
+#nostr
+#att 0
+#def 0
+#len 0
+#rcost 0
+#aoe 1
+#bonus
+#ammo 0
+#charge
+#sound 12
+#blunt
+#end
+
+#newweapon 1008
+#name "Ceremonial Flame"
+#dmg 10
+#att 0
+#def 0
+#len 4
+#rcost 10
+#sound 10
+#secondaryeffectalways 229 - flame burst
+#twohanded
+#blunt
+#end
+
+#newweapon 1009			-----------
+#name "Moonbow"
+#dmg 25
+#nostr
+#armornegating
+#att 1
+#def 0
+#range 50
+#aoe 1
+#ammo 20
+#nratt 1
+#flyspr 426 1 - arrow shaped fiery missile
+#secondaryeffectalways 255 - fear
+#sound 13
+#pierce
+#end
+
+#newweapon 1010				
+#name "Repeater Bolts"
+#dmg 14
+#nostr
+#armorpiercing
+#att 2
+#def 0
+#range 50
+#ammo 20
+#nratt 6
+#flyspr 109 1
+#sound 13
+#pierce
+#end
+
+#newweapon 1011				
+#name "Ballista Bolt"
+#dmg 30
+#nostr
+#armorpiercing
+#att 2
+#def 0
+#range 50
+#ammo 10
+#nratt -3
+#flyspr 308 1 - large arrow
+#sound 13
+#pierce
+#end
+
+#newweapon 1013
+#name "Long Sword of Hoeth"
+#dmg 9
+#att 1
+#def 2
+#len 4
+#rcost 5
+#nratt 2	- only usable by Loremasters
+#sound 8
+#slash
+#pierce
+#end
+
+#newweapon 1014
+#name "Chayal"
+#dmg 20
+#att 6
+#def 3
+#len 3
+#rcost 0
+#sound 10
+#slash
+#magic
+#end
+
+#newweapon 1015
+#name "Swooping Strike"
+#ammo 1 -- Single-use only
+#dmg 15
+#len 0
+#dt_normal
+#armorpiercing
+#secondaryeffect 404
+#end
+
+#newweapon 1016
+#name "Shredding Talons"
+#bonus
+#dmg 0
+#att 0
+#def 0
+#len 0
+#rcost 0
+#slash
+#armorpiercing
+#sound 10
+#end
+
+
+
+
+///////////////// New armor \\\\\\\\\\\\\\\\\\\\
+
+--newarmor 356
+--name "White Lion Cloak"
+--rcost 0
+--type 4	Shield
+--enc 1
+--prot 15
+--def 2
+--end
+
+#newarmor 357
+#name "Phoenix Ward"
+#rcost 0
+#type 4	-Shield
+#enc 0
+#prot 100
+#def 4
+#end
+
+#newarmor 358
+#name "Dodge"
+#rcost 0
+#type 4	-Shield
+#enc 0
+#prot 100
+#def 2
+#end
+
+#newarmor 359
+#name "Dragon Armour"
+#rcost 30
+#type 5	-Armor
+#enc 2
+#prot 18
+#def -2
+#end
+
+#newarmor 360
+#name "Dragon Helmet"
+#rcost 7
+#type 6	-Helmet
+#enc 0
+#prot 20
+#def 0
+#end
+
+#newarmor 361
+#name "Phoenix Armor"
+#rcost 20
+#type 5	-Armor
+#enc 1
+#prot 14
+#def -2
+#end
+
+#newarmor 362
+#name "The Shadow Crown"
+#rcost 0
+#type 6	-Helmet
+#enc -1
+#prot 12
+#def 2
+#end
+
+--newarmor 363
+--name "Stone of Midnight"
+--rcost 0
+--type 4	Shield
+--enc 0
+--prot 0
+--def 2
+--end
+
+#newarmor 364
+#name "Deflection"
+#rcost 0
+#type 4	-Shield
+#enc 0
+#prot 10
+#def 3
+#end
+
+#newarmor 356
+#name "Pelt of Charandis"
+#rcost 0
+#type 5	-Armor
+#enc 0
+#prot 3
+#def 0
+#end
+
+
+
+
+///////////////// New Troops \\\\\\\\\\\\\\\\\\\\
+
+-- High Elf Archer wo/ armor
+
+#newmonster 6001
+#spr1 "./Warhammer-Complete/Archer1HE.tga"
+#spr2 "./Warhammer-Complete/Archer2HE.tga"
+#name "Archer"
+#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#ap 14
+#hp 8
+#prot 0
+#size 2
+#str 10
+#enc 3
+#att 12
+#def 12
+#prec 12
+#mr 12
+#mor 12
+#weapon "Short Sword"
+#weapon "Long Bow"
+#armor "Leather Cuirass"
+#gcost 15
+#rcost 1
+#mapmove 2
+#startage 101
+#maxage 2000
+#formationfighter 1
+#diseaseres 75
+#end
+
+
+-- High Elf Spearman
+
+#newmonster 6002
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Spearman1.tga"
+#spr2 "./Warhammer-Complete/Spearman2.tga"
+#name "Spearman"
+#descr "Once a High Elf has mastered the bow, training and fighting for decades, he is trained to fight as part of Spear regiment. After only a short time a regiment of High Elf Spears become a finely honed fighting machine, each member instinctively knowing the mind of his comrades, the whole regiment fighting as one body. Their training improves upon the national prowess of the Elves, and make them bastions of resistance, a wall of deadly spear tips."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#weapon "Spear"
+#armor "Scale Mail Cuirass"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 16
+#mapmove 2
+#maxage 2000
+#end
+
+
+-- High Elf Archer w/ armor
+
+#newmonster 6016
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Archerarmor1.tga"
+#spr2 "./Warhammer-Complete/Archerarmor2.tga"
+#name "Archer"
+#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#weapon "Short Sword"
+#weapon "Long Bow"
+#armor "Scale Mail Cuirass"
+#armor "Iron Cap"
+#gcost 15
+#mapmove 2
+#maxage 2000
+#end
+
+-- Lothern Sea Guard
+
+#newmonster 6003
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Seaguard1.tga"
+#spr2 "./Warhammer-Complete/Seaguard2.tga"
+#name "Lothern Sea Guard"
+#descr "The Sea Guards from Lothern are always in full force, and man the glorious warships of the High Elves. In war, they join the armies to secure beachheads and spearhead attacks on foreign shores. To be able to effectively fight at sea and be versatile enough, they are full trained with bows as well as with spears, combining the best aspects of Elf Spearmen and Archers. There is no doubt that the Sea Guard are the finest marines in the Old World and beyond."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#weapon "Spear"
+#weapon "Short Bow"
+#armor "Scale Mail Cuirass"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 23
+#mapmove 2
+#maxage 2000
+#end
+
+-- White Lions of Chrace	CAP ONLY , and forests
+
+#newmonster 6004
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Whitelion1.tga"
+#spr2 "./Warhammer-Complete/Whitelion2.tga"
+#name "White Lion of Chrace"
+#descr "The White Lions are the personal guard of the King's Palace. They are traditionally recruited from the rugged land of Chrace, a perilous realm whose inhabitants are great woodsmen and fierce warriors. Those woodsmen who are proven worthy, form an elite bodyguard, armed with terrible long handled Woodman's Axes. The White Lions are often despatched to join armies, protecting generals and mages, or bolstering the strength of the army. They are renowned for their unflinching courage in the face of overwhelming odds and horrors. Their White Lion cloaks protects them from projectiles and their axes are swung with terrible force. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 9
+#att 14
+#def 13
+#str 12
+#mr 13
+#mor 15
+#weapon "Woodman's Axe"
+#armor "Scale Mail Hauberk"
+#armor "Crested Helmet"
+#gcost 29
+#mapmove 2
+#maxage 2000
+#patrolbonus 1
+#forestsurvival
+#mountainsurvival
+#bodyguard 2
+#reclimit 3
+#airshield 20
+#gold 1
+#end
+
+-- Swordmasters of Hoeth	CAP ONLY
+
+#newmonster 6005
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Swordmaster1.tga"
+#spr2 "./Warhammer-Complete/Swordmaster2.tga"
+#name "Sword Master of Hoeth"
+#descr "The Sword Masters are exemplars of the martial arts, capable of incredible feats of arms. At the White Tower of Hoeth, these ascetic warrior monks train ardously, honing their exceptional agility, mastering every nuance and facet of sword fighting. Each Sword Master has studied warfare and personal combat for decades, often centuries - developing an expertise so incredibly complete that there is no group of warriors that can match them. These devotees of the sword devote themselves to the worship of Hoeth in no lesser manner than those who study High Magic, learning to control their bodies and their minds through meditation and exercise. They wield the Greatswords of Hoeth, elegantly shaped swords, often six or seven feet from the pommel to the grip. Swordmasters are skilled and quick enough to cut and deflect missiles with their blades."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 9						--  -5
+#att 15						--  +3
+#def 13						--  +1 +3 deflection
+#mr 13						--  +1	
+#mor 14						--  0
+#str 10						--  -3
+#weapon "Great Sword of Hoeth"
+#armor "Scale Mail Hauberk"
+#armor "Full Helmet"
+#armor "Deflection"
+#gcost 45
+#reclimit 5
+#rcost 1
+#mapmove 2
+#maxage 2000
+#holy
+#end
+
+-- Phoenix Guard	CAP ONLY
+
+#newmonster 6006
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Phoenixguard1.tga"
+#spr2 "./Warhammer-Complete/Phoenixguard2.tga"
+#name "Phoenix Guard"
+#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. Any who look upon them will know the past and the future, and will forever be cursed with knowledge of their own death. The Phoenix Guards do not utter a word, having taken a magical wov to not speak of the secrets of time. Until one has witnessed the Phoenix Guard upon the field of battle, one can not comprehend the power they posses, utterly silent, the air around them shimmering. They are the chosen warriors of their god and sacred. Knowing their fate, they do not flinch from any horror and fight with utter resolve."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 9
+#att 14
+#def 13
+#mr 16
+#mor 30
+#weapon "Ceremonial Halberd"
+#armor 361
+#armor "Crested Helmet"
+#armor 357 - Phoenix Guard Ward Save
+#gcost 70
+#reclimit 5
+#rcost 1
+#mapmove 2
+#awe 1
+#coldres 4
+#fireres 4
+#poisonres 4
+#shockres 4
+#maxage 2000
+#holy
+#castledef 2
+#end
+
+-- Ellyrian Reavers
+
+#newmonster 6007
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Ellyrianreaver1.tga"
+#spr2 "./Warhammer-Complete/Ellyrianreaver2.tga"
+#name "Ellyrian Reaver"
+#descr "The Ellyrian Reavers were formed ages ago, during a bitter war, valiantly riding deep into enemy territory to defend Ulthuan. They are brave horsemen, able to live of the land and away from supply routes. They strike fast and hard, vanishing into the wilderness. They form an important part of High Elf armies, being able to patrol ahead of the main force, intercepting enemy scouts an hunting down lone enemies or warmachines. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 3
+#enc 4
+#weapon 56 --hoof
+#weapon "Spear"
+#weapon "Short Bow"
+#armor "Scale Mail Cuirass"
+#armor "Crested Helmet"
+#gcost 34
+#rcost 5
+#ressize 2
+#mapmove 4
+#ap 30
+#mounted
+#maxage 2000
+#supplybonus 1
+#patrolbonus 2
+#gold 1
+#end
+
+-- Silver Helms
+
+#newmonster 6008
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Silverhelm1.tga"
+#spr2 "./Warhammer-Complete/Silverhelm2.tga"
+#name "Silver Helm"
+#descr "While the common citizens of Ulthuan fill the ranks of Spearmen and Archers, the Elven nobles form regiments of Knights. These Elven knights form a powerful part of the armies, mounted upon swift Elven steeds, armoured in hardened steel, and bearing tall lances. They are unparallelled cavalrymen, forming a bond with their horses which borders on a shared mind. They are considered reckless warriors, eager to gain glory through victory, utterly convinced of their own superiority."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 3
+#enc 5
+#hp 9
+#mor 13
+#weapon "Lance"
+#weapon "Broad Sword"
+#weapon 56 --hoof
+#armor "Plate hauberk"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 50
+#rcost 15
+#mapmove 3
+#ap 25
+#ressize 2
+#mounted
+#maxage 2000
+#end
+
+-- Dragon Princes	CAP ONLY
+
+#newmonster 6009
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Dragonprince1.tga"
+#spr2 "./Warhammer-Complete/Dragonprince2.tga"
+#name "Dragon Prince"
+#descr "In the distant past, when the fabled dragons of Caledor were many, the princes of Caledor rode dragons to war. Today, even though their skill and pride are much the same, they ride Elven steeds as knights. They still wear armor forged in a volcano's heart, enchanted in ancient ways. This dragon armor is entirely resistant to flames. In battle the Princes seek glory and worthy opponents, often seeking out the most dangerous assignments."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 3
+#enc 4
+#hp 12
+#att 14
+#def 13
+#mr 13
+#mor 14
+#weapon 56 --hoof
+#weapon "Dragon Lance"
+#armor 359	-Dragon Armour
+#armor 360	-Dragon Helmet
+#armor "Shield"
+#gcost 75
+#rcost 20
+#mapmove 3
+#ap 25
+#ressize 2
+#mounted
+#fireres 15
+#maxage 2000
+#end
+
+-- Tiranoc Chariot
+#newmonster 6019
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Tiranoc1.tga"
+#spr2 "./Warhammer-Complete/Tiranoc2.tga"
+#name "Tiranoc Chariot"
+#descr "The High Elves of Tiranoc are a proud and adventurous people, although embittered by many wars. They are always among the first to answer a call to war and foremost are their nobles, fighting from swift war chariots. They fight with skill and bravery, the speed of the Elven steeds complementing their sleek yet powerful chariots. When they charge, they crash fearlessly into their foes, thrusting with sharp spears and running foes over. The charioteers are sometimes called Riders of the Wind, when amassed in larger forces."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 4
+#enc 5
+#hp 11
+#mor 13
+#def 13
+#prot 5
+#weapon "Spear"
+#weapon "Spear"
+#weapon "Short Bow"
+#ambidextrous 5
+#armor "Full Scale Mail"
+#armor "Crested Helmet"
+#armor "Buckler"
+#gcost 60
+#rcost 15
+#ressize 2
+#mapmove 3
+#ap 20
+#mounted
+#maxage 2000
+#trample
+#ambidextrous 10
+#end
+
+
+
+- Shadow Warriors
+
+#newmonster 6020
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Shadowwarrior1.tga"
+#spr2 "./Warhammer-Complete/Shadowwarrior2.tga"
+#name "Shadow Warrior"
+#descr "The grim Shadow Warriors hail from a terrible time, when the land of Nagaryth was riven with civil war. Most of the populace sided with the Witch King and became Dark Elves. Those who did not became the Shadow Warriors. They fought from hiding against the Dark Elves in a blood soaked land. They eventually became masters of guerilla warfare, striking with deadly accuracy from the shadows. Today they are the most sinister and brutal of all the High Elves, and bound to their bitter duty with ancient oaths. Their hatred knows no bounds when it comes to the Dark Elves, but their wrath for any foe is terrible. They go before the armies of Ulthuan wherever they go, killing and clearing way for the main force. They have learned to predict enemy missile fire and avoid it. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 9
+#att 14
+#def 13
+#str 10
+#prec 13
+#ap 15
+#mr 14
+#mor 14
+#weapon "Long Bow"
+#weapon "Nagarythe Hatred"	-bonus strike first round with good attack skill
+#weapon "Broad Sword"
+#armor "Scale Mail Cuirass"
+#armor "Iron Cap"
+#armor 358 - Dodge
+#gcost 35
+#rcost 1
+#ambidextrous 3
+#mapmove 3
+#maxage 2000
+#stealthy 35
+#patrolbonus 2
+#reclimit 5
+#gold 1
+#end
+
+-- Eagle Claw Bolt Thrower
+
+#newmonster 6028			
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Eagleclaw1.tga"
+#spr2 "./Warhammer-Complete/Eagleclaw2.tga"
+#name "Eagle Claw Bolt Thrower"
+#descr "Eagle Claw Bolt Throwers are a staple of the Lothern Sea Guard, but they appear not only in Lothern, but throughout the elven kingdoms. The Eagle Claw is a cunning design, able to quickly switch between firing a single ballista shot and firing multiple arbalest like bolts. The crew are very skilled, both at mowing down enemy ranks through aimed volleys, and at reloading fast enough to keep up a sustained rate of fire."				
+#clearweapons
+#cleararmor
+#clearspec
+#hp 20
+#size 3
+#prot 5
+#mor 15
+#weapon "Ballista Bolt"
+#weapon "Repeater Bolts"
+#weapon "Broad Sword"
+#weapon "Broad Sword"
+#armor "Full Scale Mail"
+#armor "Crested Helmet"
+#gcost 200				
+#rcost 50
+#mapmove 1
+#ap 7
+#ambidextrous 10
+#maxage 2000
+#reclimit 1
+#slowrec
+#end
+
+///////////////// New commanders \\\\\\\\\\\\\\\\\\\\ 
+
+-- Noble
+
+#newmonster 6010
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Noble1HE.tga"
+#spr2 "./Warhammer-Complete/Noble2HE.tga"
+#name "Noble"
+#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them the finest generals in the world, able to read the ebb and flow of battle before it unfolds. They ride Elven Steeds into battle. Their weapons and armor are nigh magical heirlooms of old and their demesne provides much of their sustenance."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 10
+#size 3
+#att 14
+#def 13
+#prec 13
+#mr 12
+#mor 13
+#enc 4
+#weapon 56 --hoof
+#weapon "Broad Sword"
+#weapon "Lance"
+#armor "Scale Mail Hauberk"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 60
+#rcost 15
+#mapmove 3
+#ap 25
+#ressize 2
+#mounted
+#goodleader
+#maxage 2000
+#gold 2
+#end
+
+
+-- Prince
+
+#newmonster 6011
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Prince1HE.tga"
+#spr2 "./Warhammer-Complete/Prince2HE.tga"
+#name "Prince"
+#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them the finest generals in the world, able to read the ebb and flow of battle before it unfolds. The princes are exceptional warriors, able to move and attack faster than most mortal men. They can choose to ride Elven Steeds into battle. Their weapons and armor are nigh magical heirlooms of old and their demesne provides much of their sustenance."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 13
+#size 3
+#att 15
+#def 14
+#str 12
+#prec 13
+#mr 13
+#mor 15
+#enc 4
+#weapon 56 --hoof
+#weapon "Lance"
+#weapon "Broad Sword"
+#armor "Full Scale Mail"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 100	- price?
+#rcost 15
+#mapmove 3
+#ap 25
+#ressize 2
+#reinvigoration 2
+#inspirational 1
+#mounted
+#expertleader
+#inspirational 1
+#maxage 2000
+#onebattlespell "Quicken self"
+#gold 3
+#end
+
+-- Prince of Tiranoc
+
+#newmonster 6026
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Tiranocprince1.tga"
+#spr2 "./Warhammer-Complete/Tiranocprince2.tga"
+#name "Prince of Tiranoc"
+#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them the finest generals in the world, able to read the ebb and flow of battle before it unfolds. The princes of Tiranoc make battle from a swift and deadly chariot. Their weapons and armor are nigh magical heirlooms of old and their demesne provides much of their sustenance."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 13
+#size 4
+#enc 4
+#prot 5
+#att 15
+#def 14
+#str 12
+#prec 13
+#mr 13
+#mor 15
+#weapon "Broad Sword"
+#armor "Full Scale Mail"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 130	- price?
+#rcost 15
+#mapmove 3
+#ap 22
+#ressize 3
+#inspirational 2
+#reinvigoration 2
+#mounted
+#expertleader
+#trample
+#ambidextrous 10
+#maxage 2000
+#gold 4
+#end
+
+
+-- Harathoi Mage
+
+#newmonster 6029
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Harathoi1.tga"
+#spr2 "./Warhammer-Complete/Harathoi2.tga"
+#name "Harathoi Mage"
+#descr "The High Elves have always been magical race, and it is common amongst the High Elves to exhibit magical talent. The Elves that devote their lives to magic are treated with the same respect and honour as their lords. High Elf mages are able to control nearly all paths of magic, and their knowledge in countering their many enemies is very well needed to protect their ancient home. Those who are the most magically gifted and dedicated are given the privilege to be taught in the White Tower of Hoeth and eventually become Archmages. The Harathoi mages are the by elven standards young mages of their trade, who have yet to study at the Tower of Hoeth."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#mr 15
+#mor 12
+#weapon "Dagger"
+#gcost 110
+#rcost 1
+#magicskill 4 1	-astral
+#magicskill 0 1	-fire
+#custommagic 2432 25	-FAS
+#startage 77
+#maxage 2000
+#holy
+#poorleader
+#end
+
+
+-- High Mage
+
+#newmonster 6012
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Mage1HE.tga"
+#spr2 "./Warhammer-Complete/Mage2HE.tga"
+#name "High Mage of Hoeth"
+#descr "The High Elves have always been magical race, and it is common amongst the High Elves to exhibit magical talent. The Elves that devote their lives to magic are treated with the same respect and honour as their lords. High Elf mages are able to control nearly all paths of magic, and their knowledge in countering their many enemies is very well needed to protect their ancient home. Those who are the most magically gifted and dedicated, are given the privilege to be taught in the White Tower of Hoeth and learn to master High Magic."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 10
+#mor 14
+#mr 18
+#weapon "Sceptre"
+#gcost 350
+#rcost 1
+#magicskill 4 2	-astral
+#magicskill 0 2	-fire
+#magicskill 1 1	-air
+#magicskill 8 1 -holy
+#custommagic 3328 100	-AES
+#custommagic 1024 10	-FAE
+#researchbonus 1
+#startage 187
+#maxage 2000
+#holy
+#okleader
+#slowrec
+#end
+
+-- Priestess of Isha
+
+#newmonster 6031
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Isha1.tga"
+#spr2 "./Warhammer-Complete/Isha2.tga"
+#name "Priestess of Isha"
+#descr "The High Elves have always been magical race, and it is common amongst the High Elves to exhibit magical talent. The Elves that devote their lives to magic are treated with the same respect and honour as their lords. High Elf mages are able to control nearly all paths of magic, and their knowledge in countering their many enemies is very well needed to protect their ancient home. The mage priestesses who master Ghyran, the wind of magic most associated with life, are closely associated with the elven god Isha, Goddess of Harvest and life. They often hail from Avelorn, but can be found throughout the kingdoms. Their High Priestess is the Everqueen. They have a kinship with animals and the Asrai."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 9
+#mor 14
+#mr 17
+#weapon "Sceptre"
+#gcost 375
+#rcost 1
+#magicskill 4 2	-astral
+#magicskill 6 3	-nature
+#magicskill 8 2 -holy
+#custommagic 3968 100	-FAWES
+#startage 278
+#maxage 2000
+#autohealer 2
+#autodishealer 3
+#holy
+#okleader
+#slowrec
+#end
+
+-- Archmage CAP ONLY
+
+#newmonster 6013
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Archmage1.tga"
+#spr2 "./Warhammer-Complete/Archmage2.tga"
+#name "Archmage of Hoeth"
+#descr "The White Tower of Hoeth is the seat of High Elf magical learning. Hoeth, the Lord of Wisdom and Knowledge, is the Elven god of learning and sorcery. Although one of the Elvish pantheon and held in esteem by all of the Asur, Hoeth does not have much of a priesthood nor an organized system of churches in Ulthuan, save at the White Tower of Hoeth. There the greatest loremasters and mages in the world strive to perfect their mastery of the sorcerous arts. It is a place of wonders unbounded, where mages strive to harness every aspect of magic. Their knowledge is vast and their breadth of knowledge unsurpassed. In times of strife, the mages of Hoeth join the armies, sometimes commanding entire armies themselves. With skill derived from through centuries of ardous study they deflect the spells of the enemy, while directing the destructive fires of Asuryan against the foe. They can reach farther than most mages when conducting rituals."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 11
+#mr 19
+#mor 16
+#prec 13
+#weapon "Magic staff"
+#gcost 500
+#rcost 1
+#magicskill 4 3	-astral
+#magicskill 0 3	-fire
+#magicskill 1 1	-air
+#magicskill 8 2 -holy
+#custommagic 3328 100	-AES
+#custommagic 3456 30 -FAES
+#startage 298
+#maxage 2000
+#goodleader
+#researchbonus 2
+#slowrec
+#allrange 2
+#holy
+#end
+
+-- Smith Priest of Vaul CAP ONLY
+
+#newmonster 6030
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Priestvaul1.tga"
+#spr2 "./Warhammer-Complete/Priestvaul2.tga"
+#name "Smith Priest of Vaul"
+#descr "Vaul's Anvil is a shrine of Vaul, the Elven god of smithing, which is situated in the heart of a volcano on the last island of the Dragon Spine. During the Great Chaos Invasion, Aenarion the Defender and Caledor Dragontamer travelled to the Anvil to construct the Great Weapons that would be used to fight the forces of Chaos. The knowledge of making these Great Weapons was lost along with the Hammer of Vaul, but the sites is still used by the Smith Priests of Vaul to make magic items of no small power. The god Vaul was chained and blinded in a eon long war with Khaine, and his priests blind themselves to prove their devotion. The Smith Priests are dedicated to their craft and their training is devoted to crafting alone. Despite their blindness, they can make items far beyond their magic skill in other areas, but their preference for elaborate forging do not make them particularly efficient."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 12
+#mr 18
+#mor 16
+#str 11
+#prec 5
+#startingaff 2^12
+#weapon "Hammer"
+#gcost 300
+#rcost 1
+#magicskill 0 1	-fire
+#magicskill 3 1	-earth
+#magicskill 8 1 -holy
+#custommagic 3968 100	FAWES
+#mastersmith 2
+#startage 267
+#maxage 2000
+#poorleader
+#holy
+#slowrec
+#end
+
+-- Loremaster of Hoeth	CAP ONLY
+
+#newmonster 6032
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Loremaster1.tga"
+#spr2 "./Warhammer-Complete/Loremaster2.tga"
+#name "Loremaster of Hoeth"
+#descr "The Tower of Hoeth is home to many disciplines of art, war, magic and learning. Most students and masters confine themselves to one path, and seek to master that path. A select few accomplish several and even fewer master all arts. Those who do are called Loremasters. Even the martial disciplines seem easy to them and their magical knowledge is broad. Their brilliant intellects make them sublime strategists and warriors, able to thread together many nuances and ideas to insights beyond most mortals. Invariably, in times of strife, they seek battle, to better understand, and they excel at this intuitive use of magic. Meanwhile, rituals and forging, while easy to them, is seen as toiling work to be avoided."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 12
+#att 15
+#def 13
+#prec 14
+#mr 18
+#mor 16
+#weapon 1013 --Long Sword of Hoeth
+#armor "Scale Mail Hauberk"
+#armor "Half Helmet"
+#armor "Deflection"
+#magicskill 4 2	-astral
+#magicskill 2 2	-water
+#magicskill 1 2	-air
+#magicskill 0 2	-fire
+#magicskill 3 2	-earth
+#magicskill 6 2	-nature
+#gcost 460
+#mastersmith -3
+#masterrit -3
+#researchbonus -4
+#rcost 1
+#mapmove 2
+#maxage 2000
+#holy
+#slowrec
+#goodleader
+#end
+
+- Storm Weaver
+#newmonster 6024
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Stormweaver1.tga"
+#spr2 "./Warhammer-Complete/Stormweaver2.tga"
+#name "Storm Weaver"
+#descr "The Storm Weavers are high elf mages who have chosen not to perfect their harmony with the winds of magic through High Magic, but instead to perfect their control over the sea. They join the Lothern fleet, bringing their control of storms and water to bear against enemy ships and in aid of their own. Storm Weavers hold a rank near the Archmages of Hoeth in the Elven society."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#att 11
+#def 11
+#hp 11
+#mr 19
+#mor 16
+#weapon "Dagger"
+#gcost 285
+#rcost 1
+#magicskill 4 2	-astral
+#magicskill 2 2	-water
+#magicskill 1 2	-air
+#custommagic 10624 100 -FASN
+#custommagic 9088 25 -FAWN
+#startage 201
+#maxage 2000
+#sailing 2 2
+#okleader
+#slowrec
+#end
+
+
+-Seaguard Captain
+
+#newmonster 6014
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Captain1HE.tga"
+#spr2 "./Warhammer-Complete/Captain2HE.tga"
+#name "Lothern Sea Guard Captain"
+#descr "The Sea Guards from Lothern are always in full force, and man the glorious warships of the High Elves. In war, they join the armies to secure beachheads and spearhead attacks on foreign shores. To be able to effectively fight at sea and be versatile enough, they are full trained with bows as well as with spears, combining the best aspects of Elf Spearmen and Archers. There is no doubt that the Sea Guard are the finest marines in the Old World and beyond. The captains of the Seaguard can sail across the seas with their Seaguard."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 10
+#att 13
+#def 12
+#str 11
+#prec 13
+#mr 12
+#mor 13
+#weapon "Broad Sword"
+#weapon "Short Bow"
+#armor "Scale Mail Hauberk"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 115
+#rcost 1
+#sailing 999 4
+#maxage 2000
+#goodleader
+#end
+
+
+-High Elf Scout
+
+#newmonster 6015
+#copystats 6001 - Spearman
+#spr1 "./Warhammer-Complete/Scout1HE.tga"
+#spr2 "./Warhammer-Complete/Scout2HE.tga"
+#name "Scout"
+#descr "Scouts are the youngest of the High Elves, scouting for enemies when Shadow Warriors are not available to do this duty. They stay out of battle, continuing their training to become Archers. Eager to prove themselves, they serve for free."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#hp 7
+#str 9
+#att 11
+#prec 11
+#mr 12
+#mor 11
+#ap 15
+#weapon "Short Sword"
+#weapon "Short Bow"
+#armor "Leather Cuirass"
+#armor "Leather Cap"
+#gcost 0
+#rcost 1
+#noleader
+#stealthy 25
+#maxage 2000
+#end
+
+-- Drake Master (Dragon Prince Champion)
+
+#newmonster 6017
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Drakemaster1HE.tga"
+#spr2 "./Warhammer-Complete/Drakemaster2HE.tga"
+#name "Drake Master"
+#descr "In the distant past, when the fabled dragons of Caledor were many, the princes of Caledor rode dragons to war. Today, even though their skill and pride are much the same, they ride Elven steeds as knights. They still wear armor forged in a volcano's heart, enchanted in ancient ways. This dragon armor is entirely resistant to flames. In battle the Princes seek glory and worthy opponents, often seeking out the most dangerous assignments. Drake Masters are the most respected of the knights and lead them in battle."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 3
+#enc 4
+#hp 13
+#att 15
+#def 13
+#str 12
+#mr 14
+#mor 15
+#prec 13
+#weapon 56 --hoof
+#weapon "Dragon Lance"
+#weapon "Broad Sword"
+#armor 359	-Dragon Armour
+#armor 360	-Dragon Helmet
+#armor "Shield"
+#gcost 130			-- price
+#rcost 20
+#mapmove 3
+#ap 25
+#ressize 2
+#mounted
+#fireres 15
+#custommagic 128 99	-F
+#maxage 2000
+#end
+
+-- Harbinger (Ellyrian Reaver Champion)
+
+#newmonster 6018
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Harbinger1HE.tga"
+#spr2 "./Warhammer-Complete/Harbinger2HE.tga"
+#name "Harbinger"
+#descr "The Ellyrian Reavers were formed ages ago, during a bitter war, valiantly riding deep into enemy territory to defend Ulthuan. They are brave horsemen, able to live of the land and away from supply routes. They strike fast and hard, vanishing into the wilderness. They form an important part of High Elf armies, being able to patrol ahead of the main force, intercepting enemy scouts an hunting down lone enemies or warmachines. The more experienced Reavers are called Harbingers. Their long time spent in nature coupled with the Elves innate magical ability gives them some magic power. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#size 3
+#enc 4
+#hp 10
+#att 13
+#def 13
+#str 11
+#prec 14
+#mor 14
+#weapon 56 --hoof
+#weapon "Broad Sword"
+#weapon "Short Bow"
+#armor "Scale Mail Cuirass"
+#armor "Crested Helmet"
+#armor "Shield"
+#gcost 90
+#rcost 5
+#mapmove 4
+#ap 30
+#ressize 2
+#mounted
+#maxage 2000
+#patrolbonus 5
+#supplybonus 2
+#researchbonus -2
+#custommagic 8192 99	-N
+#gold 3
+#end
+
+
+- Shadow Walker 
+
+#newmonster 6021
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Shadowwalker1.tga"
+#spr2 "./Warhammer-Complete/Shadowwalker2.tga"
+#name "Shadow Walker"
+#descr "The grim Shadow Warriors hail from a terrible time, when the land of Nagaryth was riven with civil war. Most of the populace sided with the Witch King and became Dark Elves. Those who did not became the Shadow Warriors. They fought from hiding against the Dark Elves in a blood soaked land. They eventually became masters of guerilla warfare, striking with deadly accuracy from the shadows. Today they are the most sinister and brutal of all the High Elves, and bound to their bitter duty with ancient oaths. Their hatred knows no bounds when it comes to the Dark Elves, but their wrath for any foe is terrible. They go before the armies of Ulthuan wherever they go, killing and clearing way for the main force. They have learned to predict enemy missile fire and avoid it. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 11
+#att 14
+#def 14
+#str 11
+#prec 14
+#mr 14
+#mor 15
+#ap 15
+#weapon "Long Bow"
+#weapon "Nagarythe Hatred"	-bonus strike first round with good attack skill
+#weapon "Broad Sword"
+#weapon "Broad Sword"
+#armor "Scale Mail Cuirass"
+#armor "Half Helmet"
+#armor 358 - Evasion
+#gcost 110
+#rcost 1
+#ambidextrous 4
+#mapmove 3
+#maxage 2000
+#stealthy 35
+#patrolbonus 5
+#researchbonus -2
+#custommagic 256 99	-A
+#gold 3
+#end
+
+
+-- White Lion Guardian
+
+#newmonster 6023
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Guardian1HE.tga"
+#spr2 "./Warhammer-Complete/Guardian2HE.tga"
+#name "Guardian of Chrace"
+#descr "The White Lions are the personal guard of the King's Palace. They are traditionally recruited from the rugged land of Chrace, a perilous realm whose inhabitants are great woodsmen and fierce warriors. Those woodsmen who are proven worthy, form an elite bodyguard, armed with terrible long handled Woodman's Axes. The White Lions are often despatched to join armies, protecting generals and mages, or bolstering the strength of the army. They are renowned for their unflinching courage in the face of overwhelming odds and horrors. Their White Lion cloaks protects them from projectiles. Their long time spent in nature coupled with the Elves innate magical ability gives them some magic power. They require little pay, striving for little prestige and able to find their own sustenance."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 11
+#att 15
+#def 13
+#str 13
+#mr 13
+#mor 18	- stubborn
+#weapon "Woodman's Axe"
+#armor "Scale Mail Hauberk"
+#armor "Crested Helmet"
+#gcost 90
+#rcost 1
+#mapmove 2
+#maxage 2000
+#patrolbonus 1
+#researchbonus -2
+#forestsurvival
+#mountainsurvival
+#airshield 20
+#custommagic 8192 99	N
+#gold 3
+#end
+
+-- Keeper of the Flame (Phoenix Guard champion)
+#newmonster 6027
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Keeper1HE.tga"
+#spr2 "./Warhammer-Complete/Keeper2HE.tga"
+#name "Keeper of the Flame"
+#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. The Keepers of the Flame are the leaders of the ceremonies and warrior priests in truth."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 11
+#att 15
+#def 13
+#str 12
+#mr 17
+#mor 30
+#weapon "Ceremonial Flame"
+#armor 361 - Phoenix Armor
+#armor "Crested Helmet"
+#armor 357 - Phoenix Guard Ward Save
+#gcost 150
+#rcost 1
+#mapmove 2
+#awe 2
+#coldres 4
+#fireres 4
+#poisonres 4
+#shockres 4
+#maxage 2000
+#holy
+#magicskill 8 2 -holy
+#castledef 5
+#onebattlespell "Twist Fate"
+#end
+
+///////////////// Summons  \\\\\\\\\\\\\\\\\\\\
+
+- Great Eagle
+#newmonster 6035
+#spr1 "./Warhammer-Complete/GreatEagle1HE.tga"
+#spr2 "./Warhammer-Complete/GreatEagle2HE.tga"
+#name "Great Eagle of Ulthuan"                                                                                                                                                                
+#descr "The Great Eagles of Ulthuan have been allies to the Elves for ages, 
+since the Deamon invasion and before that, fighting side by side in conflict after conflict. 
+The friendship between the eagles and the elves is legendary. 
+The Great Eagles of Ulthuan are intelligent and independent beings, 
+capable of tactical nuance and efforts in battle as well as reconnoisance. 
+They can fly high enough to avoid detection from enemy troops. Their first swooping strike can be devastating but they do not stand up well in a prolonged fight.
+They can lead other birds and animals well."
+#nametype 173	-Eagle names
+#size 6
+#hp 55
+#prot 7
+#mr 16
+#mor 18
+#str 18
+#att 14
+#def 13
+#prec 14
+#enc 3
+#mapmove 4
+#ap 8 
+#startage 119
+#maxage 200
+#poorleader
+#flying
+#beastmaster 1
+#patrolbonus 25
+#siegebonus 15
+#stealthy 0
+#mountainsurvival
+#itemslots 28800
+#clearweapons
+#weapon 1015 -Swooping Strike
+#weapon 404 -Beak
+#weapon 1016 -Shredding Talons
+#end
+
+
+
+- Lion Chariot
+- Dragon Mage
+- Prince on Griffon
+- Dragon
+- Phoenix
+
+
+
+
+///////////////// Heroes  \\\\\\\\\\\\\\\\\\\\
+- Alith Anar
+
+#newmonster 6025
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Alithanar1.tga"
+#spr2 "./Warhammer-Complete/Alithanar2.tga"
+#name "The Shadow King"
+#fixedname "Alith Anar"
+#descr "Alith Anar was the last heir of a great line, his forebears slain by the Witch King Malekith's minions. Alith Anar went on a crusade of vengeance, slaying many dark elves hiding within Ulthuan, often making grisly examples of them. He formed the Shadow Warriors, who harassed and hindered the Witch King at every turn. He carries the Stone of Midnight, once stolen from the Witch Morathi. With this artefact he is always cloaked in shadows and very hard to wound, while also protecting him from arrows. He also carries the godmade Moonbow, capable of devasting several opponents with each arrow. His royal headgear, the Shadow Crown, grants him swiftness. Few know Alith Anar's fate, but the Shadow Warriors believe he still wanders the world, vengeance incarnate. Alith Anar can train Shadow Warriors."#clearweapons
+#cleararmor
+#hp 15
+#att 16
+#def 16
+#str 12
+#prec 16
+#mr 16
+#mor 20
+#ap 20
+#weapon "Moonbow"
+#weapon "Broad Sword"
+#weapon "Nagarythe Hatred"	-bonus strike first round with good attack skill
+#armor "Scale Mail Cuirass"
+#armor "The Shadow Crown"
+#armor 358 - Skirmish
+#gcost 0
+#rcost 1
+#ambidextrous 5
+#magicskill 1 1	-Air
+#mapmove 3
+#startage 417
+#maxage 2000
+#stealthy 35
+#patrolbonus 15
+#onebattlespell "Personal Luck"
+#expertleader
+#makemonsters2 "Shadow Warrior"
+#ethereal
+#airshield 20
+#itemslots 14336 -(feet+2 misc)
+#end
+
+#newmonster 6033
+#copystats 6001 -- Basestats
+#spr1 "./Warhammer-Complete/Korhil1.tga"
+#spr2 "./Warhammer-Complete/Korhil2.tga"
+#name "Captain of the White Lions"
+#fixedname "Korhil"
+#descr "Korhil is the foremost champion and general of Chrace, the Captain of the White Lions. The White Lions claim that he is the mightiest warrior in Ulthuan, and there is no denying his strength or bravery. He wields the mighty battleaxe Chayal, the traditional weapon of his station, one handed. His loyalty and integrity is legendary, and this has earned him many friends even beyond the borders of Ulthuan. On many an occasion, he has fought as the personal champion of the Phoenix King, or led armies in his name. In return for these services, he has been rewarded with the Pelt of Charandis, a magnificient enchanted cloak that protects Korhil from, spears, arrows and poison."
+#clearweapons
+#cleararmor
+#nametype 172	-Elven names
+#hp 20
+#att 16
+#def 14
+#str 16
+#mr 15
+#mor 20
+#weapon "Axe"
+#weapon "Chayal"
+#armor "Scale Mail Hauberk"
+#armor "Crested Helmet"
+#armor "Pelt of Charandis"
+#gcost 0
+#rcost 1
+#mapmove 2
+#startage 368
+#maxage 2000
+#patrolbonus 5
+#researchbonus -2
+#forestsurvival
+#mountainsurvival
+#magicskill 6 1	-nature
+#poisonres 10
+#expertleader
+#ambidextrous 10
+#itemslots 15488 -(no hands, otherwise full)
+#pierceres
+#inspirational 2
+#airshield 40
+#onebattlespell "Personal Luck"
+#end
+
+- Tyrion (will have abilities related to his armor and weapon (can not be changed, no slots)
+- Teclis (a terribly good mage)
+- Caradryan
+- Prince Althran?
+
+///////////////// New pretenders \\\\\\\\\\\\\\\\\\\\
+
+#newmonster 6034
+#spr1 "./Warhammer-Complete/Archmagepretender1.tga"
+#spr2 "./Warhammer-Complete/Archmagepretender2.tga"
+#name "Ancient Archmage"
+#descr "This ancient Archmage has reached a level of magic power to rival Hoeth himself and is on the path to ascendancy. He can reach farther than most mages when conducting rituals."
+#nametype 172	-Elven names
+#clearweapons
+#cleararmor
+#att 10
+#def 11
+#hp 10
+#mr 20
+#mor 30
+#prec 16
+#enc 3
+#mapmove 2
+#ap 14
+#weapon "Magic staff"
+#gcost 10010
+#pathcost 10
+#startdom 1
+#rcost 1
+#magicskill 4 1	-astral
+#magicskill 0 1	-fire
+#magicskill 1 1	-air
+#startage 1431
+#maxage 2000
+#goodleader
+#researchbonus 5
+#diseaseres 75
+#allrange 2
+#end
+
+
+
+///////////////// New spells \\\\\\\\\\\\\\\\\\\\
+
+
+
+
+#newspell
+#copyspell "Frost Dome"
+#name "Frost Trap"
+#descr "A deadly trap that will trigger when enemy spells are cast into the province."
+#path 0 4
+#school -1
+#researchlevel 0
+#restricted 110
+#pathlevel 0 1
+#fatiguecost 1500
+#end
+
+#newspell
+#copyspell "Dome of Flaming Death"
+#name "Fire Trap"
+#descr "A deadly trap that will trigger when enemy spells are cast into the province."
+#path 0 4
+#school -1
+#researchlevel 0
+#restricted 110
+#pathlevel 0 1
+#fatiguecost 1500
+#nextspell "Frost Trap"
+#end
+
+#newspell
+#name "Dome of High Magic"
+#descr "An arcane dome is created by high magic, covering the entire province that the mage is located in. The province will be garded by High Magic and the phoenixes drawn to this magic focus. The magic of the phoenixes will make it very hazardous for enemy mages to try to reach the province with spells. The dome will protect the province from many spells that originate from outside the warded province, as well as be a nasty trap for mages who try to penetrate the dome. The more magic gems put into the spell, the longer it will last. If the mage dies, the dome dissolves instantly. The dome is a complex weave of arcana, fire and frost."
+#path 0 4 - astral
+#path 1 0 - fire
+#pathlevel 0 4
+#pathlevel 1 2
+#school 4 - enchantment
+#researchlevel 4
+#restricted 110
+#fatiguecost 1500
+#effect 10082
+#damage 64
+#nextspell "Fire Trap"
+#end
+
+#newspell
+#name "Protective Presence"
+#descr "The Elf projects his presence through the Astral Planes to a province of his choosing. He can then protect that province from spells cast into the province for one month. This spell only works on friendly provinces."
+#path 0 4 - Astral
+#pathlevel 0 4
+#school 4 - enchantment
+#researchlevel 4
+#restricted 110
+#fatiguecost 500
+#effect 10086
+#damage 36
+#spec 268435456
+#provrange 5
+#onlyfriendlydst 1
+#nextspell "Dome of Arcane Warding"
+#end
+
+#newspell
+#copyspell "Bonds of fire"
+#name "Flames of the Phoenix 3"
+#school -1
+#restricted 110
+#aoe 5
+#spec 262144
+#end
+
+#newspell
+#copyspell "Conflagration"
+#name "Flames of the Phoenix 2"
+#school -1
+#restricted 110
+#aoe 5
+#spec 262144
+#nextspell "Flames of the Phoenix 3"
+#end
+
+#newspell
+#copyspell "Fire Cloud"
+#name "Flames of the Phoenix"
+#descr "Calling upon the might of Asuryan with a single secret word, pure white flames envelop the mage's enemies, immolating the unworthy foes. The fire grows hotter by the second, while the victims struggle to break out of Asuryan's grasp."
+#path 0 0 - Fire
+#path 1 4 - Astral
+#pathlevel 0 4
+#pathlevel 1 3
+#school 2 - evocation
+#researchlevel 5
+#restricted 110
+#fatiguecost 100
+#aoe 5
+#precision 5
+#damage 9
+#range 20
+#nextspell "Flames of the Phoenix 2"
+#spec 262144
+#end
+
+#newspell
+#name "Shield of Saphery"
+#descr "Early in their magical training, the High Mages learn to create shields of high magic to protect themselves and their guards. A shroud of glittering magical energy descends upon his allies, protecting them from harm. The first attacks against allies so protected are feeble and have no effect."
+#path 0 4 - Astral
+#path 1 0 - Fire
+#pathlevel 0 2
+#pathlevel 1 1
+#school 1 - thaumaturgy
+#researchlevel 2
+#restricted 110
+#fatiguecost 25
+#aoe 1001
+#precision 5
+#damage 1
+#range 0
+#effect 23
+#spec 12582912
+#flightspr 10000
+#explspr 10224
+#end
+
+#newspell
+#copyspell "Opposition"
+#name "Arcane Unmaking"
+#descr "The magic of unmaking flies true from outstretched hands. The fuel for the spell is Vaul's fury, and it will make magic crumble to dust. The spell will unmake magical beings, causing them to cease existing. Beings with a strong soul can resist the spell."
+#path 0 4 - Astral
+#path 1 0 - Fire
+#pathlevel 0 3
+#pathlevel 1 1
+#school 4 - enchantment
+#researchlevel 6
+#restricted 110
+#fatiguecost 50
+#aoe 1
+#range 5020
+#flightspr 10085
+#explspr 10085
+#end
+
+#newspell
+#name "Apotheosis Bless"
+#school -1
+#restricted 110
+#spec 12582912
+#effect 10
+#damage 1
+#end
+
+#newspell
+#copyspell "Heal"
+#name "Apotheosis"
+#descr "The mage infuses some allies with waves of pure magic, bestowing the healing of Isha and the blessing of Asuryan upon them."
+#path 0 4 - Astral
+#path 1 0 - Fire
+#pathlevel 0 2
+#pathlevel 1 1
+#school 4 - enchantment
+#researchlevel 2
+#restricted 110
+#fatiguecost 20
+#aoe 0
+#nreff 1002
+#effect 13
+#damage 1010
+#range 15
+#precision 100
+#spec 12582912
+#nextspell "Apotheosis Bless"
+#end
+
+#newspell
+#name "Soul Quench"
+#descr "These bolts of pure magic tear at the souls of those unfortunate to be hit. Armour is no protection against these bolts, but a strong mind is."
+#path 0 4 - Astral
+#path 1 0 - Fire
+#pathlevel 0 2
+#pathlevel 1 2
+#school 2 - evocation
+#researchlevel 4
+#restricted 110
+#fatiguecost 25
+#aoe 0
+#precision 2
+#nreff 2004
+#damage 2010
+#range 25
+#spec 4224
+#flightspr 10065
+#explspr 10065
+#sound 22
+#end
+
+#newspell
+#name "Drain Magic"
+#descr "The caster syphons the energy of all magical beings on the battlefield, hurting them. Strong beings can resist this effect. This spell also affects allied beings."
+#path 0 4 - Astral
+#path 1 0 - Fire
+-pathlevel 0 5
+#pathlevel 0 2
+#pathlevel 1 1
+#school 1 - alteration
+#researchlevel 7
+#restricted 110
+#fatiguecost 100
+#aoe 666
+#precision 0
+#damage 3
+#range 25
+#spec 144
+#flightspr 10000
+#explspr 10054
+#sound 22
+#end
+
+#newspell
+#copyspell "Flare"
+#name "Fury of Khaine"
+#descr "In battle, High Elf Mages sometimes call upon the god of murder and war. With mighty gestures and harsh words the caster unleashes the fury of Khaine, flinging fiery fragments of the bloody handed god's fury at his enemies."
+#path 0 0 - Fire
+#path 1 4 - Astral
+#pathlevel 0 3
+#pathlevel 1 3
+#school 2 - evocation
+#researchlevel 6
+#restricted 110
+#fatiguecost 50
+#precision 2
+#nreff 1002
+#range 25
+#sound 16
+#end
+
+#newspell
+#copyspell "Dispel"
+#name "Sigil of Asuryan"
+#descr "Asuryan and his followers have held the powers of chaos at bay for aeons, perfecting the art of controlling magic. This enchantment enables a mage to destroy an active global enchantment. The power of global enchantments is often boosted with the use of additional gems. This number of extra gems must be matched in order for the dispel to work."
+#researchlevel 0
+#restricted 110
+#fatiguecost 2500
+#end
+
+#newspell
+#name "Summon Great Eagle of Ulthuan"
+#descr "The Great Eagles of Ulthuan are more intelligent than ordinary Great Eagles. They come readily to the aid of the High Elves."
+#school 0
+#damage 6035
+#nreff 1
+#effect 10021
+#researchlevel 4
+#restricted 110
+#path 0 1	-Air
+#pathlevel 0 2	
+#fatiguecost 800
+#end
+
+#newspell
+#copyspell 700
+#name "Summon Lesser Great Eagles"
+#researchlevel 4
+#restricted 110
+#path 0 1	-Air
+#pathlevel 0 2	
+#end
+
+///////////////// NEW ITEMS \\\\\\\\\\\\\\\\\\\\
+
+
+#newweapon 1017				
+#name "Reaver Bow"
+#dmg 5
+#att 2
+#def 0
+#range 40
+#ammo 30
+#nratt 6
+#flyspr 109 1
+#sound 13
+#pierce
+#magic
+#end
+
+#selectitem 601
+#name "Reaver Bow"
+#descr "The original Reaver Bow once belonged to the hero marksman Immolar of Ellyrion. The Storm Weavers have since forged several similar bows, all imbuing the archer with supernatural rate of fire. The bows use the strength of the wielder, and is more powerful in the hands of a strong bowman."
+#spr "./Warhammer-Complete/Reaverbow.tga"
+#constlevel 4
+#mainpath 1		--air
+#mainlevel 1
+#type 2
+#weapon 1017
+#restricted 110
+#end
+
+
+
+
+///////////////// Nametypes \\\\\\\\\\\\\\\\\\\\
+
+#selectnametype 172	- High Elf Names
+#clear
+#addname "Elror"
+#addname "Calthan"
+#addname "Mellion"
+#addname "Avendor"
+#addname "Illindir"
+#addname "Cyrion"
+#addname "Calthran"
+#addname "Elthanar"
+#addname "Elthyrion"
+#addname "Mellion"
+#addname "Amhair"
+#addname "Telion"
+#addname "Lyrandir"
+#addname "Imhandir"
+#addname "Alithin"
+#addname "Meladryan"
+#addname "Amhair"
+#addname "Urdithane"
+#addname "Narien"
+#addname "Dolwen"
+#addname "Silontol"
+#addname "Agnor"
+#addname "Gildiril"
+#addname "Falandar"
+#addname "Ravandil"
+#addname "Nariel"
+#addname "Dalos"
+#addname "Elured"
+#addname "Amendil"
+#addname "Agnor"
+#addname "Larandar"
+#addname "Singal"
+#addname "Valahuir"
+#addname "Laurenor"
+#addname "Meltinir"
+#addname "Cavindel"
+#addname "Carandros"
+#addname "Callandor"
+#addname "Valoriel"
+#addname "Gilgalion"
+#addname "Eldillor"
+#addname "Forion"
+#addname "Cirdalion"
+#addname "Arduval"
+#addname "Thalyrion"
+#addname "Illindir"
+#addname "Illydrian"
+#addname "Avarion"
+#addname "Varhil"
+#addname "Cirin"
+#addname "Halin"
+#addname "Cavindel"
+#addname "Irduval"
+#addname "Dolwen"
+#addname "Gloringwel"
+#addname "Aluthil"
+#addname "Melinir"
+#addname "Valin"
+#addname "Maruviel"
+#addname "Elured"
+#addname "Erefor"
+#addname "Carwariel"
+#addname "Legosil"
+#addname "Olandis"
+#addname "Elror"
+#addname "Yavandir"
+#addname "Larandar"
+#addname "Torendhil"
+#addname "Ethirhil"
+#addname "Avaryan"
+#addname "Circalion"
+#addname "Elurion"
+#addname "Eltorian"
+#addname "Elyrion"
+#addname "Agariel"
+#addname "Avarion"
+#addname "Sinyail"
+#addname "Athelle"
+#addname "Undilar"
+#addname "Iroril"
+#addname "Eranyor"
+#end
+
+#selectnametype 173	- Great Eagle names
+#clear
+#addname "Talyn"
+#addname "Windrunner"
+#addname "Gawahiir"
+#addname "Haratiir"
+#addname "Cloudrider"
+#addname "Warahir"
+#addname "Sharpbeak"
+#addname "Galatiir"
+#addname "Aratiir"
+#addname "Elandiil"
+#addname "Feather"
+#addname "Evoba Morf Htaed"
+#addname "Aoriil"
+#addname "Eraniil"
+#end
+
+
+///////////////// New sites \\\\\\\\\\\\\\\\\\\\
+
+
+#newsite 1601
+#name "The Flames of Asuryan"
+#path 0
+#level 0
+#rarity 5
+#homemon 6006	-Phoenix Guard
+#homecom 6027	-Keeper of the Flame
+#gems 0 1	-Fire
+#end
+
+#newsite 1602
+#name "Vaul's Anvil"
+#path 3
+#level 0
+#rarity 5
+#homecom 6030	-Smith Priest of Vaul
+#gems 3 1	-Earth
+#end
+
+#newsite 1603
+#name "Tower of Hoeth"
+#path 4
+#level 0
+#rarity 5
+#homemon 6005	-Swordmaster
+#homecom 6013	-Archmage
+#homecom 6032	-Loremaster
+#gems 4 2	-Astral
+#gems 1 1	-Air
+#end
+
+#newsite 1604
+#name "Spines of Caledor"
+#path 3
+#level 0
+#rarity 5
+#homemon 6009	-Dragon Princes
+#end
+
+
+
+///////////////// Nation specifics \\\\\\\\\\\\\\\\\\\\
+
+#selectnation 110
+#era 2
+#flag "./Warhammer-Complete/FlagHE.tga"
+#name "Ulthuan"
+#epithet "Guardians of the Flame"
+#descr "The origins of the High Elves are rooted in the nativity of the World. They were once the greatest and most powerful race in the whole world and their actions shaped history. Now their people are in decline, but still they fight on resolutely. For their diminishing race to survive, the High Elves must possess an army of unequalled skill. To this end all High Elves are taught from an early age to master the sword, spear and bow. Citizen soldiers form the core of their armies, while those completely devoted to the martial arts rank among the most fearful warriors in the old world. The High Elves were the first race to study magic and remain the greatest masters in the known world. Their magic is a siphon to chaos, and their skills in controlling, shaping and, when needed, draining magic are unsurpassed."
+
+#summary "
+Race: High Elves, long lived, graceful and magically skilled.
+
+
+Military: Very skilled infantry, archers and cavalry, strong elite troops, all very expensive.
+
+
+Magic: Very strong Astral and Fire, strong Air and Nature, some Water and Earth. No Death or Blood. Versatile smithing.
+
+
+Priests: Average.
+
+
+Other: Mercenaries are generally not used, and expensive to muster. Some units generate gold, which lowers their effective upkeep. The nation is favored a coastal start."
+
+
+#brief "An ancient race, the High Elves protect the world from the malign influence of Chaos. Their martial skills are rivalled only by their mastery of magic. Their excellence is a necessity, for the elves are few and the powers needed to sustain their wards are great."
+#color 1.0 1.0 1.0
+
+#templepic 17	-Crystal
+
+///////////////// STARTING TERRAIN \\\\\\\\\\\\\\\\\\\\
+#coastnation
+#hatesterr 4192 -cave, swamp, waste
+
+///////////////// PRETENDERS \\\\\\\\\\\\\\\\\\\\
+#cleargods
+
+#addgod 158	-oracle
+#addgod 657 -monolith
+#addgod 216	-red dragon
+#cheapgod20 216
+#addgod 265 -cold dragon
+#cheapgod20 265
+#addgod 266	-green dragon
+#cheapgod20 266
+#addgod 270 -arch druid
+#addgod 244 -arch mage
+#cheapgod20 244
+#addgod 245 -master enchanter 
+#addgod 250 -frost father
+#addgod 251 -great sage
+#addgod 485 -great enchantress
+#addgod 472 -statue order
+#addgod 2460 -statue fertility
+#addgod 1232 -old man of the sea
+#addgod 1233 -lord of the waves
+#addgod 608 -Phoenix
+#addgod 215 -Virtue
+#addgod 550 -Master Alchemist
+#addgod 600 -Titan of War and Wisdom
+#addgod 606 -Great Mother
+#addgod 1343 -Titan of Love
+#addgod 1342 -Titan of Rivers
+#addgod 216 -Dragon
+#cheapgod20 216
+#addgod 6034
+#cheapgod20 6034
+
+
+- ancient star dragon
+- ancient archmage
+- ancient frost phoenix
+-Avatar of Asuryan
+-Avatar of Khaine?
+
+
+///////////////// Mercenaries \\\\\\\\\\\\\\\\\\\\
+#merccost 25
+///////////////// Heat Cold \\\\\\\\\\\\\\\\\\\\
+
+
+///////////////// Startsites \\\\\\\\\\\\\\\\\\\\
+
+#startsite "Tower of Hoeth"
+#startsite "Spines of Caledor"
+#startsite "Vaul's Anvil"
+#startsite "The Flames of Asuryan"
+
+
+///////////////// Forts \\\\\\\\\\\\\\\\\\\\
+
+#fortera 3
+#labcost 400
+
+///////////////// Starting units \\\\\\\\\\\\\\\\\\\\
+
+#startcom 6010		-- Noble
+#startunittype1 6001	-- Spearmen
+#startunitnbrs1 10
+#startunittype2 6002	-- Archers
+#startunitnbrs2 10
+#startscout 6015
+
+///////////////// Province defence \\\\\\\\\\\\\\\\\\\\
+
+#defcom1 6010		Noble
+#defcom2 6018		Harbinger
+
+#defunit1 6001		Archer
+#defmult1 10	
+#defunit1b 6002		Spearmen
+#defmult1b 10
+
+#defunit2 6007		Reavers
+#defmult2 5
+
+///////////////// Units \\\\\\\\\\\\\\\\\\\\
+
+#clearrec
+
+------- Non-commanders
+
+#addrecunit 6001	-Archer
+#addrecunit 6016	-Archer w/armor
+#addrecunit 6002	-Spearman
+#addrecunit 6007	-Ellyrian Reaver
+#addrecunit 6008	-Silver Helm
+#addrecunit 6019	-Tiranoc Chariot
+#addrecunit 6004	-White Lions
+#addrecunit 6020	-Shadow Warriors
+
+#coastunit1 6003	-Seaguard
+#coastunit2 6028	-Eagle Claw Bolt Thrower
+
+#forestrec 6004		-White Lions
+------- Commanders
+#addreccom 6015 -scout
+#addreccom 6010	-noble	
+#addreccom 6011 -lord
+#addreccom 6018 -harbinger
+#addreccom 6021 -shadow walker
+#addreccom 6026 - prince of tiranoc
+#addreccom 6023	- Guardian
+#addreccom 6017 - drakemaster
+#addreccom 6029 -harathoi mage
+#addreccom 6012 -mage
+#addreccom 6031 -mage
+--addreccom 6033 -Korhil		--for testing
+--addreccom 6025 -Alith Anar	--for testing
+--addreccom 6035 great eagle	--for testing
+
+#coastcom1 6014 -Seaguard Captain
+#coastcom2 6024 -Storm Weaver
+
+#forestcom 6023 - White Lion Guardian
+
+
+////////////////// Hero Settings \\\\\\\\\\\\\\\\\\\
+
+#hero1 6025 - Alith Anar
+#hero2 6033 - Korhil
+- Tyrion
+- Teclis
+- Alith Anar
+- Caradryan
+- Korhil
+
+
+#end
+
+-- END OF HIGH ELVES
