@@ -3480,7 +3480,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 2063 -- -- KEEP THIS ID #
+#newweapon 1911 -- -- KEEP THIS ID #
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -6082,7 +6082,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Staff of Change"
 #descr "Raw chaos flows about this weapon, running up and down the stave as tongues of crackling rainbow fire. To be struck by this staff is therefore to feel the touch of change itself, rendered into a mewling and mutating mass by the unstoppable energies of Tzeentch. It can only be wielded by Daemons."
 #type 2
-#weapon 2063
+#weapon 1911
 #mr 2
 #onlydemon
 #deathfire 5
@@ -11840,7 +11840,7 @@ Still to do
 #rcost 1
 #magic
 #flail
-#secondaryeffectalways 2057
+#secondaryeffectalways 1912
 #end
 
 -- Queek's two weapons
@@ -11946,7 +11946,7 @@ Still to do
 #len 4
 #rcost 5
 #flail
-#secondaryeffectalways 2057
+#secondaryeffectalways 1912
 #end
 
 
@@ -11957,7 +11957,7 @@ Still to do
 #def 0
 #len 3
 #rcost 4
-#secondaryeffectalways 2057
+#secondaryeffectalways 1912
 #end
 
 
@@ -12027,7 +12027,7 @@ Still to do
 #magic
 #end
 
-#newweapon 2052 -- KEEP ID #
+#newweapon 1917 -- KEEP ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -12051,12 +12051,12 @@ Still to do
 #magic
 #flyspr 210 4
 #att -3
-#secondaryeffectalways 2052
+#secondaryeffectalways 1917
 #end
 
 
 
-#newweapon 2053 -- KEEP ID #
+#newweapon 1916 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12068,12 +12068,12 @@ Still to do
 #nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2052
+#secondaryeffectalways 1917
 #att -3
 #end
 
 
-#newweapon 2054 -- KEEP ID #
+#newweapon 1915 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12085,11 +12085,11 @@ Still to do
 #nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2052
+#secondaryeffectalways 1917
 #att -3
 #end
 
-#newweapon 2055 -- KEEP ID #
+#newweapon 1914 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12101,7 +12101,7 @@ Still to do
 #nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2052
+#secondaryeffectalways 1917
 #att -3
 #end
 
@@ -12121,7 +12121,7 @@ Still to do
 #end
 
 
-#newweapon 2057 -- KEEP ID #
+#newweapon 1912 -- KEEP ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12143,12 +12143,12 @@ Still to do
 #def 0
 #ammo 5
 #range 14
-#secondaryeffectalways 2056
+#secondaryeffectalways 1913
 #flyspr 111 1
 #end
 
 
-#newweapon 2056 -- KEEP ID #
+#newweapon 1913 -- KEEP ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -12785,9 +12785,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 2053 -- Doomwheel Warplightning # 1 
-#weapon 2054 -- Doomwheel Warplightning # 2
-#weapon 2055 -- Doomwheel Warplightning # 3 
+#weapon 1916 -- Doomwheel Warplightning # 1 
+#weapon 1915 -- Doomwheel Warplightning # 2
+#weapon 1914 -- Doomwheel Warplightning # 3 
 #fireres 5
 #shockres 25
 #poisonres 1
@@ -15153,13 +15153,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
-#secondaryeffectalways 2058 -- Fireglaive Gout
+#secondaryeffectalways 1918 -- Fireglaive Gout
 #def 0 -- usually 1
 #end
 
 --- Fireglaive Gout
 
-#newweapon 2058 -- KEEP ID #
+#newweapon 1918 -- KEEP ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -21279,208 +21279,209 @@ Priests: Very Powerful."
 #addrecunit 7799 -- Kroxigor
 #swamprec 7799 -- Kroxigor
 
+#end
 
 -- END OF LIZARDMEN, BEGINNING OF HIGH ELVES
 
-NEW UNITS
+-- NEW UNITS
 --- HERO: Korhil, Captain of the White Lions
 
-NEW SPELLS
+-- NEW SPELLS
 --- Flames of the Phoenix
-	- lvl 5 evocation, F4S3, binds enemies in place while burning them
+	-- lvl 5 evocation, F4S3, binds enemies in place while burning them
 --- Shield of Saphery
-	- lvl 2 thaum, S1F1, grants twist fate to the mage and those in the same square and scales with mage power (aoe +1 per mage level)
+	-- lvl 2 thaum, S1F1, grants twist fate to the mage and those in the same square and scales with mage power (aoe +1 per mage level)
 --- Arcane Unmaking
-	- lvl 6 enchantment, S3F1, "opposition" spell with aoe, kills magical creatures
+	-- lvl 6 enchantment, S3F1, "opposition" spell with aoe, kills magical creatures
 --- Apotheosis
-	- lvl 2 enchantment, S2F1, heals and blesses a number of friendly soldiers
+	-- lvl 2 enchantment, S2F1, heals and blesses a number of friendly soldiers
 --- Soul Quench
-	- lvl 4 evo, S2F2, fires a large number of armor negating, MR-resistable projectiles
+	-- lvl 4 evo, S2F2, fires a large number of armor negating, MR-resistable projectiles
 --- Drain Magic
-	- lvl 7 alteration, S5F2, hits magical beings for armor negating 3 dmg, but MR, battlefield wide, costs an astral gem.
+	-- lvl 7 alteration, S5F2, hits magical beings for armor negating 3 dmg, but MR, battlefield wide, costs an astral gem.
 --- Fury of Khaine
-	- lvl 6 evocation, F3S3, costs multiple "flares", destructive but exhausting to cast
+	-- lvl 6 evocation, F3S3, costs multiple "flares", destructive but exhausting to cast
 --- Sigil of Asuryan
-	- lvl 0 dispel spell
+	-- lvl 0 dispel spell
 
-TWEAKS
+-- TWEAKS
 --- Mage of Isha -> "Priestess of Isha" 
-	- #female
+	-- #female
 --- Smith of Vaul -> "Smith Priest of Vaul"
-	- blind (and precision decreased)
+	-- blind (and precision decreased)
 --- White Lions & Guardians
-	- #mountainsurvival
+	-- #mountainsurvival
 --- Protective Presence spell
-	- change: can now only target friendly provinces
+	-- change: can now only target friendly provinces
 	
-SPRITES
+-- SPRITES
 --- updated sprites:
-	-Priestess of Isha
-	-Smith Priest of Vaul
+	--Priestess of Isha
+	--Smith Priest of Vaul
 
-0,563
+-- 0,563
 
-- innate spellcaster removed from loremaster
-
-
-0,562
-- starting units tweaked - 10+10 spearmen/archers
-- shadow walkers, guardians, harbinger and drakemaster randoms changed to 99% in order to be recruitable without lab
-- nation description corrections
-
-Tiranoc Chariot
-(nerfed to be in line with chariots in vanilla and gcost adjusted)
-HP 13->11
-enc 4->5
-ap 22->20
-
-White Lions
-- lion cloak changed to def 2, prot 15, enc 1
-
-Swordmasters
-- deflection changed to prot 10
-
-Ellyrian Reavers
-- Removed shield (they never should've had one!)
-
-Silver helms
-- enc 4->5
-
-Mages
-- slightly lowered MR
-
-Loremaster 
-(does not cast rituals or smiths at all - strictly a combat/research/site search mage)
- - removed onebattlespell of power of the spheres
- - all paths increased by 1 except astral
- - #mastersmith -3
- - #masterrit -3
- - researchbonus -4
-
-Eagle Claw Bolt Thrower
-- Precision decreased by 1 (the weapons)
-- Damage decreased 16->14
-
-Price revision troops:
-- Spearman 14->16
-- archers 14->15
-- sea guard 20->23
-- white lions 29->33 (but has "sacred upkeep")
-- reavers 30->34 (but has "sacred upkeep")
-- swordmasters 40->45, reclimit 5
-- phoenix guard 55->70, reclimit 5
-- tiranoc chariot 52->60
-- shadow warriors 30->35
-- Eagle claw bolt thrower 100->200, base rcost +20
-- dragon princes 65->75
-
-- Keeper of the Flames 120->150
-- harathoi mage 100->110
-- mage of isha 350->375
-- high mage slowrec
-- Archmage 460->500
-- smith of vaul 250->300
+-- innate spellcaster removed from loremaster
 
 
+-- 0,562
+-- starting units tweaked - 10+10 spearmen/archers
+-- shadow walkers, guardians, harbinger and drakemaster randoms changed to 99% in order to be recruitable without lab
+-- nation description corrections
 
-Version 0,55
-- Mod converted to Dominions 4:
-	- nametypes fixed, fixednames added where appropriate
-	- standard -> inspirational
-	- gods set
-	- damage types set
-	- resistances changed to new system
-	- researchbonus upped
-	- healer -> autohealer
-	- nation id
-	- monster id
-	- sites id
-	- weapons id
-	- (armor and nametypes ok)
-	- forts set
+-- Tiranoc Chariot
+-- (nerfed to be in line with chariots in vanilla and gcost adjusted)
+-- HP 13->11
+-- enc 4->5
+-- ap 22->20
 
-- removed most of the special "high elf" weapons (no longer extra length)
+-- White Lions
+-- lion cloak changed to def 2, prot 15, enc 1
 
-- All High Elves given #formationfighter 1 to account for their martial prowess
+-- Swordmasters
+-- deflection changed to prot 10
 
-- High elves given #merccost 25	(mercs 25% more expensive)
+-- Ellyrian Reavers
+-- Removed shield (they never should've had one!)
 
-- Many High Elves require less upkeep (indicated in description), but are pricey to recruit. This applies to most elite troops and commanders that are not sacred, as those already have low upkeep.
+-- Silver helms
+-- enc 4->5
 
-- Start site "Chracian Highlands" removed
+-- Mages
+-- slightly lowered MR
 
-- Gem income decreased to 5 gems. Now S2F1A1E1 (was S2F2A1E1)
+-- Loremaster 
+-- (does not cast rituals or smiths at all - strictly a combat/research/site search mage)
+ -- removed onebattlespell of power of the spheres
+ -- all paths increased by 1 except astral
+ -- #mastersmith -3
+ -- #masterrit -3
+ -- researchbonus -4
+
+-- Eagle Claw Bolt Thrower
+-- Precision decreased by 1 (the weapons)
+-- Damage decreased 16->14
+
+-- Price revision troops:
+-- Spearman 14->16
+-- archers 14->15
+-- sea guard 20->23
+-- white lions 29->33 (but has "sacred upkeep")
+-- reavers 30->34 (but has "sacred upkeep")
+-- swordmasters 40->45, reclimit 5
+-- phoenix guard 55->70, reclimit 5
+-- tiranoc chariot 52->60
+-- shadow warriors 30->35
+-- Eagle claw bolt thrower 100->200, base rcost +20
+-- dragon princes 65->75
+
+-- Keeper of the Flames 120->150
+-- harathoi mage 100->110
+-- mage of isha 350->375
+-- high mage slowrec
+-- Archmage 460->500
+-- smith of vaul 250->300
+
+
+
+-- Version 0,55
+-- Mod converted to Dominions 4:
+	-- nametypes fixed, fixednames added where appropriate
+	-- standard -> inspirational
+	-- gods set
+	-- damage types set
+	-- resistances changed to new system
+	-- researchbonus upped
+	-- healer -> autohealer
+	-- nation id
+	-- monster id
+	-- sites id
+	-- weapons id
+	-- (armor and nametypes ok)
+	-- forts set
+
+-- removed most of the special "high elf" weapons (no longer extra length)
+
+-- All High Elves given #formationfighter 1 to account for their martial prowess
+
+-- High elves given #merccost 25	(mercs 25% more expensive)
+
+-- Many High Elves require less upkeep (indicated in description), but are pricey to recruit. This applies to most elite troops and commanders that are not sacred, as those already have low upkeep.
+
+-- Start site "Chracian Highlands" removed
+
+-- Gem income decreased to 5 gems. Now S2F1A1E1 (was S2F2A1E1)
 	
 	----MAJOR MAGE REVAMP!----
-		Essentially, magic paths are similar as before, but they lose a bit of earth. The mages are less random though, and worth their price to a larger degree. There is also a lower tier mage now, which will probably mainly be used for research and at times for communions. Also, most mages are now sacred, and the mages of hoeth now have holy levels.
+	--	Essentially, magic paths are similar as before, but they lose a bit of earth. The mages are less random though, and worth their price to a larger degree. There is also a lower tier mage now, which will probably mainly be used for research and at times for communions. Also, most mages are now sacred, and the mages of hoeth now have holy levels.
 		
-- NEW mage: Harathoi Mage (young mage)
+-- NEW mage: Harathoi Mage (young mage)
 
-- NEW mage: Smith of Vaul (master smith)
+-- NEW mage: Smith of Vaul (master smith)
 
-- NEW mage: Loremaster of Hoeth (battlemage and scholar)
+-- NEW mage: Loremaster of Hoeth (battlemage and scholar)
 
-- NEW mage: Mage of Isha
+-- NEW mage: Mage of Isha
 
 
-- archmages:
-		- paths changed
-		- sacred
-		-autodishealer 2 - heals disease
-		-slowrec
-		-allrange 2
-		-holy magic 2
+-- archmages:
+		-- paths changed
+		-- sacred
+		--autodishealer 2 - heals disease
+		--slowrec
+		--allrange 2
+		--holy magic 2
 		
-- mages: 
-		- paths changed
-		- sacred
-		- autodishealer 1 - heals disease
-		- holy magic 1
+-- mages: 
+		-- paths changed
+		-- sacred
+		-- autodishealer 1 - heals disease
+		-- holy magic 1
 		
 		
-- stormweavers:
-		- sailing 2 2 - effectively limits their sailing to themselves
-		- price tweak
+-- stormweavers:
+		-- sailing 2 2 - effectively limits their sailing to themselves
+		-- price tweak
 		
-- Sea Guard Captain:
-		-sailing 999 3
-		-lost his magic skills
-		- price lowered
+-- Sea Guard Captain:
+		--sailing 999 3
+		--lost his magic skills
+		-- price lowered
 		
-- White Lions
-		- morale 16->15
-		- bodyguard 2
-		- reclimit 3
-		- recruitable anywhere:
-		- forestrec (and fort)
-		- gcost 32->29
+-- White Lions
+		-- morale 16->15
+		-- bodyguard 2
+		-- reclimit 3
+		-- recruitable anywhere:
+		-- forestrec (and fort)
+		-- cost 32->29
 		
-- Eagle Claw Bolt Thrower 
-		- now a recruitable unit in coast forts
-		- also fires a ballista bolt every third round, elsewise 6xArbalest bolts
+-- Eagle Claw Bolt Thrower 
+		-- now a recruitable unit in coast forts
+		-- also fires a ballista bolt every third round, elsewise 6xArbalest bolts
 
-- Swordmasters:
-		- sacred!
-		- gained a deflection "shield" parry of def 3 prot 20 that makes them able to deflect missiles with their swords
-		- defence lowered 14->13
-		- gcost 32->40
+-- Swordmasters:
+		-- sacred!
+		-- gained a deflection "shield" parry of def 3 prot 20 that makes them able to deflect missiles with their swords
+		-- defence lowered 14->13
+		-- cost 32->40
 		
-- Shadow warriors
-		- now recruitable, gcost 30
-		- reclimit 5
-		- nagarythe hatred weapon set to #skip + #ammo1 and has attack skill +3, effectively giving the shadow warriors +3 att on their first strike each combat
+-- Shadow warriors
+		-- now recruitable, gcost 30
+		-- reclimit 5
+		-- nagarythe hatred weapon set to #skip + #ammo1 and has attack skill +3, effectively giving the shadow warriors +3 att on their first strike each combat
 
-- Dragon princes
-		-gcost 70->65
+-- Dragon princes
+		---cost 70->65
 		
-- Keepers of the Flame
-		-gcost 150->120 
+-- Keepers of the Flame
+		--cost 150->120 
 
 	
 
 
 
-///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
+-- ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
 
 #newweapon 
@@ -21654,7 +21655,7 @@ Version 0,55
 #pierce
 #end
 
-#newweapon 2048
+#newweapon 
 #name "Chayal"
 #dmg 20
 #att 6
@@ -21666,7 +21667,7 @@ Version 0,55
 #magic
 #end
 
-#newweapon 2049
+#newweapon 
 #name "Swooping Strike"
 #ammo 1 -- Single-use only
 #dmg 15
@@ -21676,7 +21677,7 @@ Version 0,55
 #secondaryeffect 404
 #end
 
-#newweapon 2050
+#newweapon 
 #name "Shredding Talons"
 #bonus
 #dmg 0
@@ -21814,6 +21815,7 @@ Version 0,55
 #weapon "Long Bow"
 #armor "Leather Cuirass"
 #gcost 15
+#rpcost 15000
 #rcost 1
 #mapmove 2
 #startage 101
@@ -21839,6 +21841,7 @@ Version 0,55
 #armor "Crested Helmet"
 #armor "Shield"
 #gcost 16
+#rpcost 16000
 #mapmove 2
 #maxage 2000
 #end
@@ -21860,6 +21863,7 @@ Version 0,55
 #armor "Scale Mail Cuirass"
 #armor "Iron Cap"
 #gcost 15
+#rpcost 15000
 #mapmove 2
 #maxage 2000
 #end
@@ -21881,6 +21885,7 @@ Version 0,55
 #armor "Crested Helmet"
 #armor "Shield"
 #gcost 23
+#rpcost 23000
 #mapmove 2
 #maxage 2000
 #end
@@ -21906,13 +21911,14 @@ Version 0,55
 #armor "Scale Mail Hauberk"
 #armor "Crested Helmet"
 #gcost 29
+#rpcost 29000
 #mapmove 2
 #maxage 2000
 #patrolbonus 1
 #forestsurvival
 #mountainsurvival
 #bodyguard 2
-#reclimit 3
+--#reclimit 3
 #airshield 20
 #gold 1
 #end
@@ -21939,7 +21945,8 @@ Version 0,55
 #armor "Full Helmet"
 #armor "Deflection"
 #gcost 45
-#reclimit 5
+#rpcost 45000
+--#reclimit 5
 #rcost 1
 #mapmove 2
 #maxage 2000
@@ -21967,7 +21974,8 @@ Version 0,55
 #armor "Crested Helmet"
 #armor 293 - Phoenix Guard Ward Save
 #gcost 70
-#reclimit 5
+#rpcost 70000
+--#reclimit 5
 #rcost 1
 #mapmove 2
 #awe 1
@@ -21999,6 +22007,7 @@ Version 0,55
 #armor "Scale Mail Cuirass"
 #armor "Crested Helmet"
 #gcost 34
+#rpcost 34000
 #rcost 5
 #ressize 2
 #mapmove 4
@@ -22032,6 +22041,7 @@ Version 0,55
 #armor "Crested Helmet"
 #armor "Shield"
 #gcost 50
+#rpcost 50000
 #rcost 15
 #mapmove 3
 #ap 25
@@ -22064,6 +22074,7 @@ Version 0,55
 #armor 296	-Dragon Helmet
 #armor "Shield"
 #gcost 75
+#rpcost 75000
 #rcost 20
 #mapmove 3
 #ap 25
@@ -22097,6 +22108,7 @@ Version 0,55
 #armor "Crested Helmet"
 #armor "Buckler"
 #gcost 60
+#rpcost 60000
 #rcost 15
 #ressize 2
 #mapmove 3
@@ -22135,13 +22147,14 @@ Version 0,55
 #armor "Iron Cap"
 #armor 294 - Dodge
 #gcost 35
+#rpcost 35000
 #rcost 1
 #ambidextrous 3
 #mapmove 3
 #maxage 2000
 #stealthy 35
 #patrolbonus 2
-#reclimit 5
+--#reclimit 5
 #gold 1
 #end
 
@@ -22167,12 +22180,13 @@ Version 0,55
 #armor "Full Scale Mail"
 #armor "Crested Helmet"
 #gcost 200				
+#rpcost 200000
 #rcost 50
 #mapmove 1
 #ap 7
 #ambidextrous 10
 #maxage 2000
-#reclimit 1
+--#reclimit 1
 #slowrec
 #end
 
@@ -22801,9 +22815,9 @@ They can lead other birds and animals well."
 #mountainsurvival
 #itemslots 28800
 #clearweapons
-#weapon 2049 -Swooping Strike
+#weapon "Swooping Strike"
 #weapon 404 -Beak
-#weapon 2050 -Shredding Talons
+#weapon "Shredding Talons"
 #end
 
 
@@ -23211,7 +23225,7 @@ They can lead other birds and animals well."
 ///////////////// NEW ITEMS \\\\\\\\\\\\\\\\\\\\
 
 
-#newweapon 2051				
+#newweapon	
 #name "Reaver Bow"
 #dmg 5
 #att 2
@@ -23233,7 +23247,7 @@ They can lead other birds and animals well."
 #mainpath 1		--air
 #mainlevel 1
 #type 2
-#weapon 2051
+#weapon "Reaver Bow"
 #restricted 110
 #end
 

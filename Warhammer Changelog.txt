@@ -69,19 +69,22 @@ To-Do
 
 Version 1.6:
 -- HIGH ELVES PORT
+-- Note: spearman and archer (7500 and 7501) used for copystats mixed up
+-- Check flag - meh, should be fine
 -- Fix weapon IDs - done
--- Remove reclimits
--- Add recpoints for units 
--- Check immortality command
+-- Check immortality - done
+-- Look at forts, consider era - it's LA standard
+-- Check modded onebattlespells - done
+-- Check UW vals - none
+-- Look at iron armor/weapons - no amphib units
+-- Remove reclimits - done, might wanna give above-costs recpoints
+-- Add recpoints for units - done
+
+-- Reduce gold costs, have high recpoints?
 -- Mapmove convert
--- Look at iron armor/weapons
--- Look at forts, consider era
--- Check ranged weapons
+-- Check ranged weapons for extra dmg
 -- Check spell and effect vals, some will likely have changed
--- Check UW vals
--- Check modded onebattlespells
 -- Mounted units price decrease
--- Check flag
 
 Version 1.5:
 -- Removed numbers from all weapons + armor unless necessary to improve compatibility
