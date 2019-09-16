@@ -21829,8 +21829,8 @@ Priests: Very Powerful."
 
 #newmonster 7501
 #copystats 7500 -- Basestats
-#spr1 "./Warhammer-Complete/Spearman1.tga"
-#spr2 "./Warhammer-Complete/Spearman2.tga"
+#spr1 "./Warhammer-Complete/Spearman1HE.tga"
+#spr2 "./Warhammer-Complete/Spearman2HE.tga"
 #name "Spearman"
 #descr "Once a High Elf has mastered the bow, training and fighting for decades, he is trained to fight as part of Spear regiment. After only a short time a regiment of High Elf Spears become a finely honed fighting machine, each member instinctively knowing the mind of his comrades, the whole regiment fighting as one body. Their training improves upon the national prowess of the Elves, and make them bastions of resistance, a wall of deadly spear tips."
 #clearweapons
@@ -23071,10 +23071,10 @@ They can lead other birds and animals well."
 #fatiguecost 25
 #aoe 1001
 #precision 5
-#damage 51
+#damage 51 -- ?
 #range 0
-#effect 23
-#spec 12582912
+#effect 23 -- ?
+#spec 12582912 -- ?
 #flightspr 10000
 #explspr 10224
 #end
@@ -23413,21 +23413,11 @@ They can lead other birds and animals well."
 #epithet "Guardians of the Flame"
 #descr "The origins of the High Elves are rooted in the nativity of the World. They were once the greatest and most powerful race in the whole world and their actions shaped history. Now their people are in decline, but still they fight on resolutely. For their diminishing race to survive, the High Elves must possess an army of unequalled skill. To this end all High Elves are taught from an early age to master the sword, spear and bow. Citizen soldiers form the core of their armies, while those completely devoted to the martial arts rank among the most fearful warriors in the old world. The High Elves were the first race to study magic and remain the greatest masters in the known world. Their magic is a siphon to chaos, and their skills in controlling, shaping and, when needed, draining magic are unsurpassed."
 
-#summary "
-Race: High Elves, long lived, graceful and magically skilled.
-
-
+#summary "Race: High Elves, long lived, graceful and magically skilled.
 Military: Very skilled infantry, archers and cavalry, strong elite troops, all very expensive.
-
-
 Magic: Very strong Astral and Fire, strong Air and Nature, some Water and Earth. No Death or Blood. Versatile smithing.
-
-
 Priests: Average.
-
-
-Other: Mercenaries are generally not used, and expensive to muster. Some units generate gold, which lowers their effective upkeep. The nation is favored a coastal start."
-
+Other: Mercenaries are expensive to muster. Some units generate gold, which lowers their effective upkeep. The nation favors a coastal start."
 
 #brief "An ancient race, the High Elves protect the world from the malign influence of Chaos. Their martial skills are rivalled only by their mastery of magic. Their excellence is a necessity, for the elves are few and the powers needed to sustain their wards are great."
 #color 1.0 1.0 1.0
@@ -23501,9 +23491,9 @@ Other: Mercenaries are generally not used, and expensive to muster. Some units g
 ///////////////// Starting units \\\\\\\\\\\\\\\\\\\\
 
 #startcom 7509		-- Noble
-#startunittype1 7500	-- Spearmen
+#startunittype1 7500	-- Archer
 #startunitnbrs1 10
-#startunittype2 7501	-- Archers
+#startunittype2 7501	-- Spearmen
 #startunitnbrs2 10
 #startscout 7514
 
