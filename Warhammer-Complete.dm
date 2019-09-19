@@ -3139,7 +3139,7 @@
 
 #newsite 1912
 #name "Chaos Vortex of Slaanesh"
-#path 3
+#path 7
 #level 0
 #rarity 5
 #gems 2 2
@@ -3150,7 +3150,7 @@
 
 #newsite 1913
 #name "Halls of Slaanesh"
-#path 3
+#path 5
 #level 0
 #rarity 5
 #homecom 7562 -- Lord of Slaan
@@ -6245,7 +6245,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 #newsite 1914
 #name "Chaos Vortex of Tzeentch"
-#path 3
+#path 4
 #level 0
 #rarity 5
 #gems 4 3
@@ -6255,7 +6255,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 #newsite 1915
 #name "Halls of Tzeentch"
-#path 3
+#path 5
 #level 0
 #rarity 5
 #homecom 7599 -- Chaos Lord
@@ -8936,7 +8936,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 #newsite 1911
 #name "Halls of Nurgle"
-#path 8
+#path 5
 #level 0
 #rarity 5
 #homemon 7651 -- Chosen of Nurgle #1
@@ -14661,7 +14661,7 @@ Still to do
 
 #newsite 1922
 #name "Pillars of Skavenblight"
-#path 8
+#path 5
 #level 0
 #rarity 5
 #gems 5 1
@@ -17754,11 +17754,12 @@ Still to do
 #rcost 1
 #armor "Shield"
 #weapon 20 -- basic bite
-#weapon 841 -- obsinite sword
+#weapon "Obsinite Sword"
 #maxage 10000
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 2
 #nametype 123
 #end
@@ -17793,6 +17794,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 2
 #nametype 123
 #end
@@ -17806,7 +17808,7 @@ Still to do
 #name "Skink Hunter"
 #descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Despite this they are swift and stealthy hunters and very skilled with their blowpipes. While these weapons do little damage, they are remarkably accurate. Skinks are well suited to swamps and have built partial resistance to poison."
 #hp 7
-#size 1
+#size 2
 #prot 2
 #mor 10
 #mr 11
@@ -17816,7 +17818,7 @@ Still to do
 #def 9
 #prec 11
 #mapmove 2
-#ap 16
+#ap 14
 #gcost 5
 #rpcost 7
 #rcost 1
@@ -17827,6 +17829,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -17842,7 +17845,7 @@ Still to do
 #name "Skink Skirmisher"
 #descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Skink skirmishers use poisoned javelins in conjunction with shields and are less vulnerable to missile fire than their fellows armed with the more traditional blowpipe. All Skinks are well suited to swamps and have built partial resistance to poison."
 #hp 7
-#size 1
+#size 2
 #prot 2
 #mor 10
 #mr 11
@@ -17852,7 +17855,7 @@ Still to do
 #def 9
 #prec 10
 #mapmove 2
-#ap 16
+#ap 14
 #gcost 6
 #rpcost 7
 #rcost 1
@@ -17864,6 +17867,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -17878,7 +17882,7 @@ Still to do
 #name "Skink Archer"
 #descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In times of war Skinks move alongside the Saurus, yet they are not born warriors and their skittish nature will often see them retreat. Though crude by the standards of other races the bows and arrows used by Skinks of the Southlands have greater range than the traditional blowpipes or javelins."
 #hp 7
-#size 1
+#size 2
 #prot 2
 #mor 10
 #mr 11
@@ -17888,7 +17892,7 @@ Still to do
 #def 9
 #prec 10
 #mapmove 2
-#ap 16
+#ap 14
 #gcost 6
 #rpcost 7
 #rcost 1
@@ -17899,6 +17903,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #stealthy 0
 #nametype 123
@@ -17913,7 +17918,7 @@ Still to do
 #name "Red Crested Skink"
 #descr "When the city of Chaqua fell to the Skaven Clan Pestilens, the only survivors of the virulent and terrible plagues released by the ratmen were a single spawning of Red Crested Skink. The leader of these Skinks was Tehenhauin, prophet of Sotek and a skink of extraordinary size. Tehenhauin and his followers went on to spread the Cult of Sotek across Lustria, exterminating countless Skaven. Entirely immune to all manner of poisons and considerably more aggressive than their fellows, the Red Crested Skinks won countless battles against the ratmen and spawned in unprecedented numbers. With the growing power of the Cult of Sotek, seething hosts of Red Crested Skinks are an increasingly important part of the Lizardman war effort."
 #hp 8
-#size 1
+#size 2
 #prot 3
 #mor 11
 #mr 11
@@ -17923,7 +17928,7 @@ Still to do
 #def 11
 #prec 10
 #mapmove 2
-#ap 16
+#ap 14
 #gcost 8
 #rpcost 9
 #rcost 1
@@ -17934,6 +17939,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #berserk 0
 #stealthy 0
@@ -17959,7 +17965,7 @@ Still to do
 #def 9
 #prec 5
 #mapmove 2
-#ap 17
+#ap 12
 #gcost 40
 #rpcost 28
 #rcost 1
@@ -17971,6 +17977,7 @@ Still to do
 #forestsurvival
 #nametype 123
 #coldblooded
+#swimming
 #end
 
 
@@ -17993,7 +18000,7 @@ Still to do
 #def 11
 #prec 12
 #mapmove 2
-#ap 18
+#ap 16
 #gcost 85
 #rpcost 46
 #rcost 1
@@ -18008,6 +18015,7 @@ Still to do
 #watershape 3355
 #nametype 123
 #coldblood
+#swimming
 #end
 
 
@@ -18029,7 +18037,7 @@ Still to do
 #def 12
 #prec 10
 #mapmove 1
-#ap 24
+#ap 20
 #gcost 85
 #rpcost 46
 #rcost 1
@@ -18069,8 +18077,8 @@ Still to do
 #rpcost 46
 #rcost 1
 #weapon 20 -- regular bite
-#weapon 831 -- Spiked Tail
-#weapon 832 -- Tail spines
+#weapon "Spiked Tail"
+#weapon "Tail Spines"
 #stealthy 10
 #poisonres 5
 #maxage 2000
@@ -18079,6 +18087,7 @@ Still to do
 #animal
 #nametype 123
 #coldblood
+#swimming
 #end
 
 
@@ -18115,6 +18124,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 2
 #holy
 #nametype 123
@@ -18142,7 +18152,7 @@ Still to do
 #def 9
 #prec 10
 #mapmove 3
-#ap 26
+#ap 24
 #gcost 30
 #rpcost 21
 #rcost 1
@@ -18153,6 +18163,7 @@ Still to do
 #startage 100
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #mounted
 #nametype 123
@@ -18168,7 +18179,7 @@ Still to do
 #name "Chameleon Skink"
 #descr "Chameleon Skinks are a subspecies of Skink that are distinguished from their fellows by their aggression, predatory instincts and sheer stealth. Due to their chameleonic skin which shifts to match their surroundings, they are capable of stalking their prey through any terrain, their protruding eyes scanning independently for threats while they stay absolutely motionless. Chameleon Skinks are known to have remained in place for hours on end awaiting the perfect ambush and even in open ground they are virtually impossible to see clearly. It had been so long since the last spawning of these Skinks that they were thought to be lost forever, but in these recent years of war, they have begun to spontaneously spawn across Lizardman territory, a sign from the Old Ones that the Slann have yet to decipher. They are armed with powerful poisoned blowpipes."
 #hp 7
-#size 1
+#size 2
 #prot 2
 #mor 11
 #mr 11
@@ -18178,7 +18189,7 @@ Still to do
 #def 9
 #prec 12
 #mapmove 2
-#ap 16
+#ap 12
 #gcost 9
 #rpcost 14
 #rcost 1
@@ -18189,6 +18200,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #stealthy 40
 #nametype 123
@@ -18203,9 +18215,9 @@ Still to do
 #spr2 "./Warhammer-Complete/Saurus Cavalry2.tga"
 #name "Saurus Cavalry"
 #descr "A number of Saurus warriors are born with a natural affinity for the volatile Cold Ones, large predatory reptiles which some refer to as the sharks of the land, so single minded and voracious are they. The Cold Ones are not near so fleet as a horse, but are powerful and dangerous creatures in their own right; Saurus cavalry are thus some of most powerful troops known. Formations of these cavalry are used to smash enemy elites, tear down great beasts or powerful warriors and generally cause a great deal of carnage in a very short time. The Cold Ones themselves are extremely thick skinned and resilient and the slime exuded from their scaly hide is capable of healing even grievous wounds inflicted on both beast and rider."
-#hp 30
+#hp 15
 #size 4
-#prot 14
+#prot 10
 #mor 15
 #mr 11
 #enc 5
@@ -18214,9 +18226,9 @@ Still to do
 #def 9
 #prec 8
 #mapmove 2
-#ap 18
-#gcost 85
-#rpcost 60
+#ap 16
+#gcost 45
+#rpcost 40
 #rcost 1
 #armor "Shield"
 #weapon "Cold One Bite"
@@ -18226,6 +18238,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 5
 #heal
 #mounted
@@ -18460,6 +18473,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #berserk 4
 #nametype 123
@@ -18496,6 +18510,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #berserk 6
 #fear 1
@@ -18691,6 +18706,7 @@ Still to do
 #wastelandsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 5
 #holy
 #darkvision 100
@@ -18733,6 +18749,7 @@ Still to do
 #wastelandsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #holy
 #magicskill 8 1
@@ -18774,6 +18791,7 @@ Still to do
 #forestsurvival
 #fireres 25
 #coldblooded
+#swimming
 #poisonres 2
 #castledef 2
 #holy
@@ -18812,6 +18830,7 @@ Still to do
 #forestsurvival
 #fireres 25
 #coldblooded
+#swimming
 #poisonres 2
 #castledef 5
 #holy
@@ -18928,6 +18947,7 @@ Still to do
 #shockres 30
 #coldres 30
 #coldblooded
+#swimming
 #holy
 #nametype 123
 #secondshape 7825
@@ -18965,6 +18985,7 @@ Still to do
 #forestsurvival
 #poisonres 2
 #coldblooded
+#swimming
 #holy
 #nametype 123
 #firstshape 7824
@@ -19003,6 +19024,7 @@ Still to do
 #shockres 30
 #coldres 30
 #coldblooded
+#swimming
 #holy
 #nametype 123
 #secondshape 7827
@@ -19044,6 +19066,7 @@ Still to do
 #forestsurvival
 #poisonres 2
 #coldblooded
+#swimming
 #holy
 #nametype 123
 #firstshape 7826
@@ -19229,6 +19252,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #itemslots 12288
 #end
@@ -19260,6 +19284,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #itemslots 12288
 #end
@@ -19302,8 +19327,10 @@ Still to do
 #startage 3000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 2
 #okleader
+#command 20
 #older 300
 #nametype 123
 #end
@@ -19338,12 +19365,14 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #poorleader
 #comslave
 #magicskill 8 1
 #custommagic 1792 100
 #custommagic 10240 100
+#researchbonus -4
 #holy
 #stealthy 0
 #nametype 123
@@ -19380,6 +19409,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 30
 #poorleader
 #magicskill 7 1
@@ -19411,7 +19441,7 @@ Still to do
 #mapmove 2
 #ap 18
 #gcost 90
-#rpcost 2
+#rpcost 1
 #rcost 1
 #armor "Shield"
 #weapon "Cold One Bite"
@@ -19423,6 +19453,7 @@ Still to do
 #startage 7000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 5
 #goodleader
 #nametype 123
@@ -19439,7 +19470,7 @@ Still to do
 #name "Chameleon Skink Scout"
 #descr "Chameleon Skinks are a subspecies of Skink that are distinguished from their fellows by their aggression, predatory instincts and sheer stealth. Due to their chameleonic skin which shifts to match their surroundings, they are capable of stalking their prey through any terrain, their protruding eyes scanning independently for threats while they stay absolutely motionless. Chameleon Skinks are known to have remained in place for hours on end awaiting the perfect ambush and even in open ground they are virtually impossible to see clearly. It had been so long since the last spawning of these Skinks that they were thought to be lost forever, but in these recent years of war, they have begun to spontaneously spawn across Lizardman territory, a sign from the Old Ones that the Slann have yet to decipher. They are armed with powerful poisoned blowpipes."
 #hp 7
-#size 1
+#size 2
 #prot 2
 #mor 11
 #mr 11
@@ -19460,6 +19491,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poorleader
 #poisonres 7
 #stealthy 40
@@ -19486,7 +19518,7 @@ Still to do
 #def 12
 #prec 11
 #mapmove 2
-#ap 16
+#ap 14
 #gcost 20
 #rcost 1
 #rpcost 1
@@ -19497,6 +19529,7 @@ Still to do
 #startage 50
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #okleader
 #stealthy 0
@@ -19524,7 +19557,7 @@ Still to do
 #att 10
 #def 9
 #prec 11
-#mapmove 1
+#mapmove 8
 #ap 10
 #gcost 700
 #rpcost 4
@@ -19629,7 +19662,7 @@ Still to do
 #att 10
 #def 9
 #prec 10
-#mapmove 1
+#mapmove 8
 #ap 8
 #gcost 1000
 #rpcost 4
@@ -19748,6 +19781,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 7
 #poorleader
 #custommagic 1920 100
@@ -19776,7 +19810,7 @@ Still to do
 #att 10
 #def 9
 #prec 12
-#mapmove 1
+#mapmove 8
 #ap 8
 #gcost 1000
 #rcost 1
@@ -19890,7 +19924,7 @@ Still to do
 #att 10
 #def 9
 #prec 12
-#mapmove 1
+#mapmove 8
 #ap 8
 #gcost 1
 #rcost 1
@@ -19945,7 +19979,7 @@ Still to do
 #att 10
 #def 9
 #prec 12
-#mapmove 1
+#mapmove 8
 #ap 8
 #gcost 1
 #rcost 1
@@ -20002,7 +20036,7 @@ Still to do
 #att 10
 #def 9
 #prec 12
-#mapmove 1
+#mapmove 8
 #ap 8
 #gcost 1
 #rcost 1
@@ -20283,7 +20317,7 @@ Still to do
 #att 3
 #def 2
 #prec 0
-#mapmove 1
+#mapmove 8
 #ap 6
 #gcost 1
 #rcost 1
@@ -20339,7 +20373,7 @@ Still to do
 #att 3
 #def 2
 #prec 0
-#mapmove 1
+#mapmove 8
 #ap 6
 #gcost 1
 #rcost 1
@@ -20500,6 +20534,7 @@ Still to do
 #startage 6000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 2
 #onebattlespell "Quicken Self"
 #holy
@@ -20539,6 +20574,7 @@ Still to do
 #startage 6000
 #forestsurvival
 #coldblooded
+#swimming
 #poisonres 5
 #shockres 5
 #fireres 5
@@ -20583,6 +20619,7 @@ Still to do
 #swampsurvival
 #stealthy 20
 #coldblooded
+#swimming
 #poisonres 30
 #berserk 3
 #fixedname "Tehenhauin"
@@ -20631,6 +20668,7 @@ Still to do
 #forestsurvival
 #swampsurvival
 #coldblooded
+#swimming
 #poisonres 10
 #stealthy 80
 #nametype 123
@@ -21126,7 +21164,7 @@ Still to do
 
 #newsite 1905
 #name "The Great Pyramid"
-#path 8
+#path 9
 #level 0
 #rarity 5
 #gems 4 3
@@ -21248,8 +21286,8 @@ Priests: Very Powerful."
 
 --Sets what forts they will use.
 
-#fortera 2 -- normal 2 commander point forts
-#fortcost 50 -- all forts 50% more expensive
+#fortera 3 -- normal 2 commander point forts
+#fortcost 30 -- all forts 50% more expensive
 
 
 

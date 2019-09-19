@@ -68,6 +68,21 @@ To-Do
 -- Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
 
 Version 1.6:
+-- Misc Changes:
+-- Nation site icons fixed, no more generic mountains for everyone
+
+-- Lizardmen Changes: 
+-- Fixed Saurus w/sword, was using wrong weapon
+-- Gave most lizards swimming
+-- Gave skink priest inept researcher 4
+-- Reduced Saurus Oldblood to 1 recpoint
+-- Increased Saurus Scar Veteran to 60 leadership
+-- Skinks now size 2
+-- General increase in Saurus size?
+-- Slann mapmove 10 -> 8 for being slow bastards
+-- Changed from MA to LA forts, 30% extra cost from 50%
+-- Saurus cav get the hp and prot of the Saurus, cost 45, rp 40
+-- Skink and cav combat speeds changed, generally -2
 -- HIGH ELVES PORT
 -- Note: spearman and archer (7500 and 7501) used for copystats mixed up
 -- Check flag - meh, should be fine
