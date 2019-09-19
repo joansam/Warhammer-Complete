@@ -2933,7 +2933,7 @@
 #nation 159 -- Slaanesh controls the troops
 #req_notnation 159
 #req_notnation 120
-#req_notnation 136
+#req_notnation 142
 #req_monster 7544 -- Cultist
 #req_capital 0 -- Must not be a capital
 #req_maxdef 19
@@ -6205,7 +6205,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #req_nation 120 -- Tzeentch
 #req_notnation 159
 #req_notnation 120
-#req_notnation 136
+#req_notnation 142
 #nation 120 -- Tzeentch controls the troops
 #req_monster 7592 -- Tzeentch cultist
 #req_capital 0
@@ -6459,7 +6459,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Weapon IDs: 1765, 68, 69
 -- Armor IDs:
 -- Unit IDs: 5000 - 5049
--- Nation ID: 136
+-- Nation ID: 142
 -- Site IDs: 1925 - 1926
 -- Montag IDs: 69402
 -- Restricted items: 6565
@@ -8539,7 +8539,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Beasts of Nurgle"
 #descr "With this spell, the caster summons several Beasts of Nurgle, horrifying beasts with curious personalities."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 5
 #path 0 5
@@ -8555,7 +8555,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Plaguebearers"
 #descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 3
 #path 0 5
@@ -8571,7 +8571,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Plaguebearer summoning"
 #descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
-#restricted 136
+#restricted 142
 #school -1
 #path 0 5
 #pathlevel 0 3
@@ -8585,7 +8585,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #copyspell 1072 -- Blood Feast
 #name "Consecration of Nurgle"
 #descr "The caster forms a vile cult within an unsuspecting village, infecting his 'followers' with Nurgle's Rot. After they die and form into Plaguebearers, the vile ritual for the Great Lord of Decay begins in earnest, as the caster proceeds to infect, murder and feast upon the flesh of the rest of the villagers as his minions protect his person. As the ritual ends and the village is in ruins, the caster finds himself even less human; he craves mortal flesh, his body changed in ways which have 'healed' some of his afflictions. The Plaguebearers thus formed gleefully join his cause."
-#restricted 136
+#restricted 142
 #school 4
 #researchlevel 3
 #path 0 5
@@ -8599,7 +8599,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Herald of Nurgle"
 #descr "With this summoning, the caster brings forth a Herald of Nurgle to lead its lesser brethren. A Herald is the result of a hardier than usual individual succumbing to Nurgle's Rot."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 5
 #path 0 5
@@ -8615,7 +8615,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Plague Drone"
 #descr "Summons a Plague Drone, a Plaguebearer sitting atop a Rot Fly, a flying Daemonic mount of Nurgle."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 7
 #path 0 5
@@ -8633,7 +8633,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Call Daemon Prince"
 #descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Nurgle, a Daemon Prince, who is ready to fight for His cause where ever it may be."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 8
 #path 0 5
@@ -8649,7 +8649,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Great Unclean One"
 #descr "With this grand ritual, the caster brings from the Realm of Chaos to the world a Great Unclean One, a Greater Daemon of Nurgle. The Great Unclean One is gigantic in figure, bloated with decay, disease and all imaginable kinds of physical corruption."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 9
 #path 0 5
@@ -8667,7 +8667,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Nurgle cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 2
 #path 0 5
@@ -8685,7 +8685,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Bind Bile Trolls"
 #descr "With this vile spell, the caster binds a number of Bile Trolls to his service."
-#restricted 136
+#restricted 142
 #school 0
 #researchlevel 6
 #path 0 5
@@ -8706,7 +8706,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #copyspell "Blessing"
 #name "Blessing of Nurgle"
 #descr "With this incantation, the caster brings forth the blessings of Nurgle upon a number of His followers, be they those mortals whom have been marked by Nurgle, or His Daemonic servants."
-#restricted 136
+#restricted 142
 #school 5
 #path 0 5
 #pathlevel 0 1
@@ -8720,7 +8720,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Greater Blessing of Nurgle"
 #descr "By the power of this incantation, all those with the Mark of Nurgle as well as His Daemonic servants find themselves blessed with the power of Nurgle."
-#restricted 136
+#restricted 142
 #school 5
 #path 0 5
 #pathlevel 0 3
@@ -8740,7 +8740,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Fleshy Abundance"
 #descr "The caster generously gifts the fortunate recipient with a growth spurt of the most repulsive kind. Great wobbling mounds of grey-green fat spill out to seal wounds moments after they are formed."
-#restricted 136
+#restricted 142
 #school 4
 #researchlevel 4
 #path 0 5 -- The magic path for casting, IE: fire, water, etc.
@@ -8764,7 +8764,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Rancid Visitations"
 #descr "As the caster reaches out, his enemies are seized by a terrible affliction that blackens their flesh and rots their organs to mulch."
-#restricted 136
+#restricted 142
 #school 4
 #researchlevel 4
 #path 0 5
@@ -8785,7 +8785,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #copyspell "Plague"
 #name "Plague Wind"
 #descr "The caster summons forth a maelstrom of maggots, bile and blight-ridden fluids to eat away his enemy's skin, flesh and soul."
-#restricted 136
+#restricted 142
 #school 4
 #researchlevel 6
 #path 0 5
@@ -8798,7 +8798,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Chaos Armour
 
 #newitem
-#restricted 136
+#restricted 142
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 4
 #mainpath 5
@@ -8818,7 +8818,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Chaos Armour copy
 
 #selectitem 519
-#restricted 136
+#restricted 142
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 12
 #mainpath 5
@@ -8837,7 +8837,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Filth Mace
 
 #newitem
-#restricted 136
+#restricted 142
 #spr "./Warhammer-Complete/filth_mace.tga"
 #constlevel 4
 #mainpath 5
@@ -8852,7 +8852,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Balesword
 
 #newitem
-#restricted 136
+#restricted 142
 #spr "./Warhammer-Complete/balesword.tga"
 #constlevel 4
 #mainpath 6
@@ -8866,7 +8866,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Icon of Nurgle
 
 #newitem
-#restricted 136
+#restricted 142
 #spr "./Warhammer-Complete/Icon_of_Nurgle.tga"
 #constlevel 2
 #mainpath 5
@@ -8887,11 +8887,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newevent
 #rarity 0
 #req_rare 15 -- Happens x% of the time
-#req_nation 136 --- Nurgle
+#req_nation 142 --- Nurgle
 #req_notnation 159
 #req_notnation 120
-#req_notnation 136
-#nation 136 -- Nurgle controls the troops
+#req_notnation 142
+#nation 142 -- Nurgle controls the troops
 #req_monster 7653 -- Cultist
 #req_capital 0
 #req_maxdef 24
@@ -8910,11 +8910,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #end
 
 --#newevent
---#nation 136
+--#nation 142
 --#rarity 0
 --#req_rare 5 -- Will occur 5% of the time
 --#req_land 1
---#req_fornation 136
+--#req_fornation 142
 --#req_pop0ok
 --#req_targmnr 7748 -- Chosen Chaos Lord
 --#killcom 7748
@@ -8947,7 +8947,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -------- NATIONS ---------
 
-#selectnation 136
+#selectnation 142
 #clearnation
 #name "Nurgle Warhost"
 #epithet "Despair and Decay"

@@ -77,15 +77,15 @@ Version 1.6:
 -- Check modded onebattlespells - done
 -- Check UW vals - none
 -- Check ranged weapons for extra dmg - done
+-- Check spell and effect vals, some will likely have changed - basically done
 -- Look at iron armor/weapons - no amphib units
 -- Remove reclimits - done, might wanna give above-costs recpoints
 
 -- Spells need a look - Shield of Saphery is weird, Apotheosis OP
--- Soul Quench and Drain Magic don't show in inspector
--- Add recpoints for units - done but all 21 or 36 for cav
+	Soul Quench and Drain Magic don't show in inspector
+-- Add recpoints for units - done but all 21, or 36 for cav
 -- Reduce gold costs, have high recpoints?
 -- Mapmove convert
--- Check spell and effect vals, some will likely have changed
 -- Mounted units price decrease
 
 Version 1.5:

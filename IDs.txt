@@ -10,7 +10,7 @@ Restricted item tags: 80, 81 (find with item 80)
 
 Nations:
 Tzeentch: 120
-Nurgle: 136
+Nurgle: 142
 Ogre Kingdoms: 121
 Skaven: 116
 Chaos Dwarfs: 141
