@@ -21258,8 +21258,8 @@ Priests: Very Powerful."
 #addrecunit 7795 -- Skink (blowpipe)
 #forestrec 7795 -- Skink (blowpipe)
 #swamprec 7795 -- Skink (blowpipe)
-#forestrec 7796 -- Skink Skirmisher (jav and shield)
-#addrecunit 7796 -- Skink Skirmisher (jav and shield)
+#forestrec 7796 -- Skink Skirmisher 
+#addrecunit 7796 -- Skink Skirmisher 
 #addrecunit 7797 -- Skink Archer
 #forestrec 7797 -- Skink Archer
 #swamprec 7797 -- Skink Archer
@@ -21278,8 +21278,96 @@ Priests: Very Powerful."
 #addrecunit 7805 -- Saurus Cavalry
 #addrecunit 7799 -- Kroxigor
 #swamprec 7799 -- Kroxigor
+#addrecunit 7800 -- Salamander
+#swamprec 7800 -- Salamander
+#addrecunit 7803 -- Razordon
+#swamprec 7803 -- Razordon
+#addrecunit 7822 -- Stegadon
 
+
+------- Add leaders
+
+
+#addreccom 7780 -- Chameleon Scout
+#forestcom 7780 -- Chameleon Scout
+#addreccom 7781 -- Skink Warchief
+#forestcom 7781 -- Skink Warchief
+#addreccom 7776 -- Saurus Scar Veteran
+#addreccom 7779 -- Saurus Oldblood on Cold One
+#forestcom 7786 -- Skink Shaman
+#swampcom 7786 -- Skink Shaman
+#addreccom 7777 -- Skink Priest
+#addreccom 7778 -- Priest of Sotek
+#forestcom 7778 -- Priest of Sotek
+#swampcom 7778 -- Priest of Sotek
+#addreccom 7782 -- Fifth Generation Slann
+--ALL COMMENTED IDS ARE WRONG
+--addreccom 7298 -- Fourth Generation Slann (cap only)
+--addreccom 7301 -- third gen slann
+--addreccom 7341 -- nightscale of huanchi
+--addreccom 7339 -- deepscale of tzunki
+--addreccom 7342 -- Bloodscale of Sotek
+--addreccom 7346 -- sunscale chotec
+--addreccom 7354 -- lorescale tepok
+--addreccom 7353 -- spinescale quetzl
+--addreccom 7349 -- wardscale xhotl
+--addreccom 7351 -- nullscale of tlazcotl
+--addreccom 7303 -- Zlatlan
+--addreccom 7356 -- Nakai
+--addreccom 7309 -- Tiktaqto
+--addreccom 7352 -- Chakax
+--addreccom 7288 -- Adohi-Tehga
+--addreccom 7358 -- Tehenhauin
+--addreccom 7357 -- Gor Rok
+--addreccom 7361 -- Oxyotl
+--addreccom 7362 -- Mazdamundi
+
+
+
+
+------- Province Defence
+
+--Sets the units to be used in province defense.
+
+#defcom1 7781 -- Skink Warchief
+#defcom2 7777 -- Skink Priest
+#defunit1 7796 -- Skink Skirmisher
+#defunit1b 7795 -- Skink blowpipes
+#defunit2 7797 -- Skink Archer
+#defunit2b 7799 -- Kroxigor
+
+
+--Sets how many of the units to appear per point.
+
+#defmult1 20
+#defmult1b 20
+#defmult2 20
+#defmult2b 5
+
+
+------- Hero Settings
+
+#multihero1 7787 -- 3rd gen slann
+#hero1 7833 -- Nakai
+#hero2 7792 -- Tiktaqto
+#hero3 7829 -- Chakax
+#hero4 7834 -- Gor Rok
+#hero5 7838 -- Oxyotl
+
+
+#idealcold -2
+#color 0.3 0.3 0.8
+#templecost 600
+
+
+#startcom 7776 -- Saurus Scar Veteran
+#startunittype1 7793 -- saurus warrior sword
+#startunitnbrs1 10
+#startunittype2 7794 -- saurus warrior spear
+#startunitnbrs2 10
+#startscout 7780 -- Chameleon Scout
 #end
+
 
 -- END OF LIZARDMEN, BEGINNING OF HIGH ELVES
 
