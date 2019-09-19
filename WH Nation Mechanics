@@ -13,7 +13,7 @@ Increases unrest by 30, Turmoil by 2, and changes Dom to Slaanesh's, 4 candles.
 Daemonhood event. When you have a Chosen Chaos Lord, there's a 5% chance per turn of triggering.
 Kills the Lord and replaces him with: 2/3 chance of Spawn, 1/3 chance of Daemon Princess.
 
-Units: The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
+Units: Most units' weapons have multiple attacks. The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
 
 TZEENTCH:
 Events: Cultist event. When you have a cultist and 60+ unrest in an enemy province,
@@ -25,9 +25,9 @@ Increases unrest by 30, Turmoil by 2, and changes Dom to Tzeentch's, 3 candles.
 Daemonhood event. When you have a Chosen Chaos Lord, there's a 5% chance per turn of triggering.
 Kills the Lord and replaces him with: 2/3 chance of Spawn, 1/3 chance of Daemon Prince.
 
-Units: The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
+Units: Most units' weapons have multiple attacks. The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
 The Daemon Prince spell can summon 2 possible units: a prince with a Daemonic Trident or one with a Daemonic halberd.
-Vague plans to differentiate them more in the future but that's the only difference for now
+Vague plans to differentiate them more in the future but that's the only difference for now.
 
 NURGLE:
 Events: Cultist event. When you have a cultist, Magic 1 and 80+ unrest in an enemy province,
@@ -39,7 +39,7 @@ Kills 20% of population, increases unrest by 40, Turmoil by 2, and changes Dom t
 Daemonhood event. When you have a Chosen Chaos Lord, there's a 5% chance per turn of triggering.
 Kills the Lord and replaces him with: 2/3 chance of Spawn, 1/3 chance of Daemon Prince.
 
-Units: The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
+Units: Most units' weapons have multiple attacks. The Chaos Lord will turn into a Chosen Chaos Lord if propheted. You can also receive the Chosen Lords as multiheroes.
 
 OGRE KINGDOMS:
 Events: Discover Maw Pit. When you have a fort in a province (not your cap), there's a 10% chance of it triggering per turn.
@@ -53,3 +53,8 @@ Events: Discover Warpstone Seam. 6% chance per turn on land, not in cap. Creates
 15% chance/turn of seam exhaustion, 12% if you have a lab there.
 Once exhausted, 12% chance of reopening if you have a lab there, else 0.
 Reopen chance divided evenly between reopening normally, destroying the lab and repoening, and destroying the lab and not reopening.
+
+LIZARDMEN:
+Slann autocast Communion Master before the battle starts - you don't need to script it.
+Saurus and Wardscale of Xhotl have a 1 hp "shield shape", once this gets hurt they shift into their normal form (15 and 17 hp) for the rest of the battle.
+Zlatlan, the One Who Fathomed the Depths appears to have 2 shield shapes before you get to the real him, 100 hp when you do.
