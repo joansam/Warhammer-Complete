@@ -17252,7 +17252,7 @@ Still to do
 #dmg 9
 #att -1
 #def 0
-#len 4
+#len 3
 #magic
 #rcost 6
 #sound 10
@@ -17282,7 +17282,7 @@ Still to do
 #dmg 13
 #att 0
 #def 0
-#len 3
+#len 1
 #bonus
 #rcost 1
 #sound 50
@@ -17294,7 +17294,7 @@ Still to do
 #dmg 8
 #att 1
 #def 0
-#len 3
+#len 2
 #rcost 5
 #sound 10
 #slash
@@ -17306,7 +17306,7 @@ Still to do
 #dmg 16
 #att 0
 #def 0
-#len 4
+#len 1
 #bonus
 #rcost 1
 #sound 50
@@ -17319,7 +17319,7 @@ Still to do
 #dmg 15
 #att 0
 #def 0
-#len 4
+#len 2
 #bonus
 #rcost 1
 #sound 38
@@ -17379,7 +17379,7 @@ Still to do
 #dmg 12
 #att 1
 #def 0
-#len 3
+#len 1
 #bonus
 #rcost 0
 #sound 50
@@ -17393,7 +17393,7 @@ Still to do
 #dmg 11
 #att 2
 #def 0
-#len 3
+#len 2
 #bonus
 #rcost 0
 #pierce
@@ -17405,7 +17405,7 @@ Still to do
 #dmg 11
 #att 1
 #def -1
-#len 3
+#len 1
 #bonus
 #rcost 0
 #sound 50
@@ -17420,7 +17420,7 @@ Still to do
 #dmg 16
 #att 2
 #def 0
-#len 3
+#len 2
 #bonus
 #rcost 0
 #pierce
@@ -17432,7 +17432,7 @@ Still to do
 #name "Skink Javelin"
 #dmg 5
 #ammo 3
-#len 6
+#len 5
 #rcost 1
 #sound 19
 #pierce
@@ -17444,7 +17444,7 @@ Still to do
 #dmg 9
 #magic
 #att 1
-#len 4
+#len 3
 #rcost 1
 #pierce
 #end
@@ -17498,7 +17498,7 @@ Still to do
 #dmg 10
 #att 0
 #def 0
-#len 4
+#len 3
 #magic
 #dt_demon
 #rcost 1
@@ -17512,7 +17512,7 @@ Still to do
 #dmg 4
 #att 0
 #def -1
-#len 4
+#len 3
 #bonus
 #rcost 0
 #pierce
@@ -17540,7 +17540,7 @@ Still to do
 #def 1
 #twohanded
 #sound 10
-#len 4
+#len 3
 #magic
 #dt_demon
 #rcost 3
@@ -17552,7 +17552,7 @@ Still to do
 #dmg 9
 #att 1
 #def 1
-#len 3
+#len 2
 #rcost 5
 #magic
 #armorpiercing
@@ -17565,7 +17565,7 @@ Still to do
 #dmg 10
 #att 2
 #def -1
-#len 3
+#len 2
 #rcost 1
 #magic
 #armorpiercing
@@ -17579,7 +17579,7 @@ Still to do
 #dmg 12
 #att 1
 #def 1
-#len 3
+#len 2
 #rcost 1
 #magic
 #armornegating
@@ -17595,7 +17595,7 @@ Still to do
 #def 1
 #twohanded
 #sound 10
-#len 4
+#len 3
 #magic
 #dt_magic
 #rcost 3
@@ -17609,7 +17609,7 @@ Still to do
 #att 4
 #def 0
 #sound 10
-#len 4
+#len 3
 #magic
 #rcost 3
 #nratt 2
@@ -17635,7 +17635,7 @@ Still to do
 #dmg 0
 #att 0
 #def -1
-#len 4
+#len 3
 #bonus
 #nratt 3
 #rcost 0
@@ -19340,7 +19340,7 @@ Still to do
 #coldblooded
 #poisonres 7
 #poorleader
-#onebattlespell "communion slave"
+#comslave
 #magicskill 8 1
 #custommagic 1792 100
 #custommagic 10240 100
