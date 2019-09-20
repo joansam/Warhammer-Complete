@@ -68,6 +68,9 @@ Remove priest levels from Slaanesh sorc line
 Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
 
 Version 1.6:
+Empire Staging Notes:
+Cav and some other elite units have really high recpoints, might lower
+
 Misc Changes:
 Nation site icons fixed, no more generic mountains for everyone
 
