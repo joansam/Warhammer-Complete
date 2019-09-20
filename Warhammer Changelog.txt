@@ -1,29 +1,29 @@
--- TO-DO
--- THOUGHTS
--- Different kinds of spawn for ascension. Will need lots if you want different types normally
--- Really, ideally you'd have lesser champions with greater chances of spawndom than lords
--- Could use montags for daemonic gifts on princes/greater daemons
--- Put something in description for chaos warriors about multiple attacks
--- There's also dt_raise - see if it can work
--- Do daemon aura for Tzeentch (Nurgle has one already)
--- Consider de-magicking champions for N and Tz, make sure sorc lineups are ok
--- Add pretenders, check existing pretender costs
--- Remove retinues from most daemons
--- Effect 44 is transformation - way to give Tzeentch a transform spell? Ascend commander?
+TO-DO
+THOUGHTS
+Different kinds of spawn for ascension. Will need lots if you want different types normally
+Really, ideally you'd have lesser champions with greater chances of spawndom than lords
+Could use montags for daemonic gifts on princes/greater daemons
+Put something in description for chaos warriors about multiple attacks
+There's also dt_raise - see if it can work
+Do daemon aura for Tzeentch (Nurgle has one already)
+Consider de-magicking champions for N and Tz, make sure sorc lineups are ok
+Add pretenders, check existing pretender costs
+Remove retinues from most daemons
+Effect 44 is transformation - way to give Tzeentch a transform spell? Ascend commander?
 	Would probably be best only for chosen lords, + make it easier for lords to lvl up
 	Story events for ascention? Doesn't take up spell space...
 
--- Consider armor rework - forgeable Chaos Armor different from the normal one
--- Probably best to just give people normal chain/plate at that point
--- Would restore unremovable and maybe bless, also increase prot and decrease enc, -def
--- Would have to remove light chaos armor too, probly
+Consider armor rework - forgeable Chaos Armor different from the normal one
+Probably best to just give people normal chain/plate at that point
+Would restore unremovable and maybe bless, also increase prot and decrease enc, -def
+Would have to remove light chaos armor too, probly
 
--- SPRITES
--- 1.5x-2x size of major daemons
--- See if there's a way to turn an image into a pixellated version
+SPRITES
+1.5x-2x size of major daemons
+See if there's a way to turn an image into a pixellated version
 Probly use new Nurgle sprite
 
--- BALANCE/TESTING
+BALANCE/TESTING
 Make chaos spear for Slaanesh Lord and Chosen Lord
 Make daemon auras affect friendlies - but then it'll affect THEM too...
 Add plague carrier to Nurgle's Greater Daemons, maybe remove from pestigor
@@ -57,122 +57,122 @@ Slaanesh - fatigue damage on normal MR check
 They will likely require future adjustments for balance, but this version works.
 
 To-Do
--- Add Chaos Dwarfs god
--- Add a 'Mechanics' line to most nations, a la Chaos Dwarfs
--- Balance Skaven - start by improving the summons, decreasing lab costs to 300?
--- Increase cost of lizard summons? Then again, their infrastructure is quite bad.
--- Special feature file? Would describe events/weird mechanics
+Add Chaos Dwarfs god
+Add a 'Mechanics' line to most nations, a la Chaos Dwarfs
+Balance Skaven - start by improving the summons, decreasing lab costs to 300?
+Increase cost of lizard summons? Then again, their infrastructure is quite bad.
+Special feature file? Would describe events/weird mechanics
 
--- Increase att/def skill a bit for some Daemons
--- Remove priest levels from Slaanesh sorc line
--- Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
+Increase att/def skill a bit for some Daemons
+Remove priest levels from Slaanesh sorc line
+Switch paths on Keeper of Secrets and Daemon Princess - Princess would have more magic
 
 Version 1.6:
--- Misc Changes:
--- Nation site icons fixed, no more generic mountains for everyone
+Misc Changes:
+Nation site icons fixed, no more generic mountains for everyone
 
--- Lizardmen Changes: 
--- Fixed Saurus w/sword, was using wrong weapon
--- Gave most lizards swimming
--- Gave skink priest inept researcher 4
--- Reduced Saurus Oldblood to 1 recpoint
--- Increased Saurus Scar Veteran to 60 leadership
--- Skinks now size 2
--- General increase in Saurus size?
--- Slann mapmove 10 -> 8 for being slow bastards
--- Changed from MA to LA forts, 30% extra cost from 50%
--- Saurus cav get the hp and prot of the Saurus, cost 45, rp 40
--- Skink and cav combat speeds changed, generally -2
--- HIGH ELVES PORT
--- Note: spearman and archer (7500 and 7501) used for copystats mixed up
--- Check flag - meh, should be fine
--- Fix weapon IDs - done
--- Check immortality - done
--- Look at forts, consider era - it's LA standard
--- Check modded onebattlespells - done
--- Check UW vals - none
--- Check ranged weapons for extra dmg - done
--- Check spell and effect vals, some will likely have changed - basically done
--- Look at iron armor/weapons - no amphib units
--- Remove reclimits - done, might wanna give above-costs recpoints
+Lizardmen Changes: 
+Fixed Saurus w/sword, was using wrong weapon
+Gave most lizards swimming
+Gave skink priest inept researcher 4
+Reduced Saurus Oldblood to 1 recpoint
+Increased Saurus Scar Veteran to 60 leadership
+Skinks now size 2
+General increase in Saurus size?
+Slann mapmove 10 -> 8 for being slow bastards
+Changed from MA to LA forts, 30% extra cost from 50%
+Saurus cav get the hp and prot of the Saurus, cost 45, rp 40
+Skink and cav combat speeds changed, generally -2
+HIGH ELVES PORT
+Note: spearman and archer (7500 and 7501) used for copystats mixed up
+Check flag - meh, should be fine
+Fix weapon IDs - done
+Check immortality - done
+Look at forts, consider era - it's LA standard
+Check modded onebattlespells - done
+Check UW vals - none
+Check ranged weapons for extra dmg - done
+Check spell and effect vals, some will likely have changed - basically done
+Look at iron armor/weapons - no amphib units
+Remove reclimits - done, might wanna give above-costs recpoints
 
--- Spells need a look - Shield of Saphery is weird, Apotheosis OP
+Spells need a look - Shield of Saphery is weird, Apotheosis OP
 	Soul Quench and Drain Magic don't show in inspector
--- Add recpoints for units - done but all 21, or 36 for cav
--- Reduce gold costs, have high recpoints?
--- Mapmove convert
--- Mounted units price decrease
+Add recpoints for units - done but all 21, or 36 for cav
+Reduce gold costs, have high recpoints?
+Mapmove convert
+Mounted units price decrease
 
 Version 1.5:
--- Removed numbers from all weapons + armor unless necessary to improve compatibility
--- Added Chaos Spear for the Tzeentch chaos lord, seemed OP with a daemonic weapon
--- Removed Auro of Nurgle from their more powerful Beastmen
--- Fixed Bile Troll's Rusted Cleaver
--- Nerfs to Furies - strength 10 -> 9
--- Seeker def decreased by 1, spell summmons 3 for 18 slaves instead of 4 for 28, B2
--- Fiend def increased by from 17 to 18, speed decreased from 30 to 26
--- Minor buffs to mapmove on Slaaneshi steeds, generally 24 -> 26
+Removed numbers from all weapons + armor unless necessary to improve compatibility
+Added Chaos Spear for the Tzeentch chaos lord, seemed OP with a daemonic weapon
+Removed Auro of Nurgle from their more powerful Beastmen
+Fixed Bile Troll's Rusted Cleaver
+Nerfs to Furies - strength 10 -> 9
+Seeker def decreased by 1, spell summmons 3 for 18 slaves instead of 4 for 28, B2
+Fiend def increased by from 17 to 18, speed decreased from 30 to 26
+Minor buffs to mapmove on Slaaneshi steeds, generally 24 -> 26
 
 Version 1.4:
--- Added Chaos Dwarfs!
---  Changed in-game name to "Chaos Dwarfs"
---  Added Master Daemonsmith pretender - solid rainbow chassis
---  Buffed infernal guard: made sacred, reclimit 1->2
---  Buffed slave giant (same changes as to Ogre Kingdoms' slave giant)
---  Changed cap income to 2 fire, 1 earth, 1 death, and 3 blood
---  Slave cost increased from 5 to 6, slave upkeep added at roughly half value, rpcost 9->6
---  Added a slave contract weapon, "Varies", for cosmetic reasons
---  Daemonsmiths provide 30 resources, up from 20
---  Blunderbuss range 8->12 and damage 6->8, cost 20->22 and rescost 23->25
+Added Chaos Dwarfs!
+ Changed in-game name to "Chaos Dwarfs"
+ Added Master Daemonsmith pretender - solid rainbow chassis
+ Buffed infernal guard: made sacred, reclimit 1->2
+ Buffed slave giant (same changes as to Ogre Kingdoms' slave giant)
+ Changed cap income to 2 fire, 1 earth, 1 death, and 3 blood
+ Slave cost increased from 5 to 6, slave upkeep added at roughly half value, rpcost 9->6
+ Added a slave contract weapon, "Varies", for cosmetic reasons
+ Daemonsmiths provide 30 resources, up from 20
+ Blunderbuss range 8->12 and damage 6->8, cost 20->22 and rescost 23->25
 
 Version 1.35:
--- Added Ogre Kingdoms!
+Added Ogre Kingdoms!
 --	Changed in-game name from "Goldtooth Tribe" to "Ogre Kingdoms"
--- Added a god: Facet of the Maw. Based on Dom3+4 Facet of the Maw summon - B2N1 immobile
---  Added some events revolving around a new site - a smaller version of the Maw Pit
+Added a god: Facet of the Maw. Based on Dom3+4 Facet of the Maw summon - B2N1 immobile
+ Added some events revolving around a new site - a smaller version of the Maw Pit
 --	  10% chance of spawning the Pit in a fort, it allows recruitment of Pitfighters and gives 3 slaves/turn
---    Other events for destroying it when an enemy takes the fort, and a 25% chance of reopening/turn if retaken
---  Forts 50% more expensive, not 100
---  Pitfighters otherwise cap-only and description updated
+   Other events for destroying it when an enemy takes the fort, and a 25% chance of reopening/turn if retaken
+ Forts 50% more expensive, not 100
+ Pitfighters otherwise cap-only and description updated
 --	Reduced unit costs across the board - basic ogre is now 25 gold, not 30
 --	Added snowmove and increased coldres to 5 on most units
 --	Removed ambidextrous from most units to reduce clutter, compensated stat-wise
---  Increased gem income to standard for MA (2 blood slaves = 1 gem)
+ Increased gem income to standard for MA (2 blood slaves = 1 gem)
 --	Increased starting army size from 12 to 20
---  Reworked research levels to be more spread out, correspond more to power level
---  Reduced AoE of minor gut magics, slightly increased that of the stoneskin buff
+ Reworked research levels to be more spread out, correspond more to power level
+ Reduced AoE of minor gut magics, slightly increased that of the stoneskin buff
 --	Buffed slave giant (300->200 gold, 5->10 fear, removed cap-only limit, increased siege bonus)
---  Buffed Mawgut and Mawfiend - less popkill and recuperation on the first, blood vengeance and another claw on the second
+ Buffed Mawgut and Mawfiend - less popkill and recuperation on the first, blood vengeance and another claw on the second
 --	Minor fixes:
 --	 No Ogre Tyrant helmet, less ammo on Harpoon, mawtribe +morale, fixed slave giant helmet, fixed costs
--- Added more pretenders to Ogre Kingdoms and Skaven selection
+Added more pretenders to Ogre Kingdoms and Skaven selection
 
 Version 1.3:
--- Added Skaven!
---   Small bugfixes on their pretenders (minor cost changes mostly, fixed slots on the Pillar)
---   Decreased chances of warpstone seam events - they were too damaging
--- Added Lizardmen!
---    Changed their in-game name to 'Lizardmen' (was Itza) and fixed a crash caused by a typo
+Added Skaven!
+  Small bugfixes on their pretenders (minor cost changes mostly, fixed slots on the Pillar)
+  Decreased chances of warpstone seam events - they were too damaging
+Added Lizardmen!
+   Changed their in-game name to 'Lizardmen' (was Itza) and fixed a crash caused by a typo
 
 --Version 1.26: 
--- Nurgle Daemon Prince sprite fixes - head looks better, less janky
--- Added Nurgle Daemon Prince summon, Great Unclean One now Conj 9
--- Overhauled Great Unclean One - new magic paths
--- Increased magic on Tzeentch Daemon Prince summon
--- Changed some research levels and magic path reqs for greater Tzeentch and Nurgle summons
--- Tzeentch+Nurgle priest rework - exalted champ and lord now have holy levels.
--- Event Rework - sorc unit spawns are now forsaken, no culting other Chaos factions, 1 spawn/event, worse spawns
---   No chaos req, but lowered event chances and higher unrest req
---   Increased PD limit to stop cultist events - now 20 PD for SL and TZ and 25 for NU
--- Forsaken are now non-recruitable
--- Increased disease-on-death aura from 1 to 2 on Plaguebearers, removed it from Chosen+Nurglings.
--- Removed AP attacks on Daemonic weapons, added slight stat boosts
--- Removed Azazel's claws, Keeper of Secrets' head slot
--- Fleshy Abundance pathcost lowered to D2N1
--- Removed Tz/Nu out-of-cap cultists
--- Gave champs, exalted champs and lords some undead/demon leadership
--- Added recup to Lord of Change, removed it from Exalted Daemon
--- Bile trolls have 15% regen instead of 5, use normal chaos sword, 24 recpoints from 48
+Nurgle Daemon Prince sprite fixes - head looks better, less janky
+Added Nurgle Daemon Prince summon, Great Unclean One now Conj 9
+Overhauled Great Unclean One - new magic paths
+Increased magic on Tzeentch Daemon Prince summon
+Changed some research levels and magic path reqs for greater Tzeentch and Nurgle summons
+Tzeentch+Nurgle priest rework - exalted champ and lord now have holy levels.
+Event Rework - sorc unit spawns are now forsaken, no culting other Chaos factions, 1 spawn/event, worse spawns
+  No chaos req, but lowered event chances and higher unrest req
+  Increased PD limit to stop cultist events - now 20 PD for SL and TZ and 25 for NU
+Forsaken are now non-recruitable
+Increased disease-on-death aura from 1 to 2 on Plaguebearers, removed it from Chosen+Nurglings.
+Removed AP attacks on Daemonic weapons, added slight stat boosts
+Removed Azazel's claws, Keeper of Secrets' head slot
+Fleshy Abundance pathcost lowered to D2N1
+Removed Tz/Nu out-of-cap cultists
+Gave champs, exalted champs and lords some undead/demon leadership
+Added recup to Lord of Change, removed it from Exalted Daemon
+Bile trolls have 15% regen instead of 5, use normal chaos sword, 24 recpoints from 48
 
 --Version 1.25: Description changes, wastesurvival, snowmove and some Daemon work
 --Changed descriptions to be much clearer about nation capabilities
@@ -192,11 +192,11 @@ Version 1.3:
 --Also, fixed Tzeentch's Greater Aura - wasn't working
 --Couple misc changes
 
--- Version 1.2: Bugs and Balancings
+Version 1.2: Bugs and Balancings
 --Fixed events - cult form events require a cultist, 40 unrest and chaos 1. 40% chance for SL, 20% for TZ and NU
--- NU reqs 50 unrest, chaos 1, magic 1, 50 unrest -- more powerful event
--- Chosen lords can ascend to daemonhood or descend to spawndom - except Nurgle. Might add later
--- 1/3 chance of daemonhood, 5% chance per turn, no special reqs
+NU reqs 50 unrest, chaos 1, magic 1, 50 unrest more powerful event
+Chosen lords can ascend to daemonhood or descend to spawndom - except Nurgle. Might add later
+1/3 chance of daemonhood, 5% chance per turn, no special reqs
 --Gave snowmove to all human units (no daemons, beastmen, or forsaken)
 --Removed numerous sprites from the WH sprite folder, for space
 --Removed prophetshapes on champ and exalted champ as too gimmicky - lords still turn into chosen lords.
@@ -218,38 +218,38 @@ Version 1.3:
 --New chosen lord of Nurgle sprite - he's big! Gained 6 health, lost mounted and trample (now on foot). Thanks Frosty!
 --Nurgle and Tzeentch lord lineup modified - more autocost on commanders, fewer dumb starting armor items
 
--- Version 1.1: Nurgle Added
--- Weapon lengths decreased for Nurgle and a few that I missed for Tzeentch, added some iron weapons
--- Mapmove and recpoint values added to Nurgle, some tinkering with mapmove vals in Slaan and Tzeentch
--- Copyspell and onebattlespell values fixed
--- Descr fixed and checked for UW lines
--- Removed reclimits except on foreignrec marauders
--- Fixed some minor bugs
--- Adjusted rpcost of forsaken and minotaurs of all chaos nations
--- Adjusted armored guy lineup to have less mapmove - base 14, maybe more for coms
--- Made Bray-Shamans holy
--- Allowed most forged items to be picked up, except chaos armor and icons of each Chaos God.
+Version 1.1: Nurgle Added
+Weapon lengths decreased for Nurgle and a few that I missed for Tzeentch, added some iron weapons
+Mapmove and recpoint values added to Nurgle, some tinkering with mapmove vals in Slaan and Tzeentch
+Copyspell and onebattlespell values fixed
+Descr fixed and checked for UW lines
+Removed reclimits except on foreignrec marauders
+Fixed some minor bugs
+Adjusted rpcost of forsaken and minotaurs of all chaos nations
+Adjusted armored guy lineup to have less mapmove - base 14, maybe more for coms
+Made Bray-Shamans holy
+Allowed most forged items to be picked up, except chaos armor and icons of each Chaos God.
 
--- Version 1.0: Dom 5 Conversion
--- Added Slaanesh and Tzeentch
--- Removed reclimits on all units except Forsaken
--- Added recpoints for units (they're all multiples of 3, because why not?)
--- Check immortality command - done.
--- Mapmove convert - done.
--- Also look at iron armor/weapons - done.
--- Look at forts, consider making era 1 - done.
--- Check ranged weapons - done.
--- Check spell and effect vals, some will likely have changed - Slaanesh done, double-check Tzeentch.
--- Check UW vals - done.
--- Check modded onebattlespells - done.
--- Descr doesn't need double breaks - done.
--- Mounted units price decrease - good for now.
--- Check flag - done.
--- Decreased  weapon lengths by 1
--- Two-handed do a bit more damage now, maybe compensate - done.
--- Fixed bugged Tzeentch warrior axe
--- Changed Tzeentch Daemon Prince's halberd to 3 attacks from 1
--- Deleted Tzeentch warhound and had it use Slaanesh version w/Khorne sprite
+Version 1.0: Dom 5 Conversion
+Added Slaanesh and Tzeentch
+Removed reclimits on all units except Forsaken
+Added recpoints for units (they're all multiples of 3, because why not?)
+Check immortality command - done.
+Mapmove convert - done.
+Also look at iron armor/weapons - done.
+Look at forts, consider making era 1 - done.
+Check ranged weapons - done.
+Check spell and effect vals, some will likely have changed - Slaanesh done, double-check Tzeentch.
+Check UW vals - done.
+Check modded onebattlespells - done.
+Descr doesn't need double breaks - done.
+Mounted units price decrease - good for now.
+Check flag - done.
+Decreased  weapon lengths by 1
+Two-handed do a bit more damage now, maybe compensate - done.
+Fixed bugged Tzeentch warrior axe
+Changed Tzeentch Daemon Prince's halberd to 3 attacks from 1
+Deleted Tzeentch warhound and had it use Slaanesh version w/Khorne sprite
 
 
 Version .91 , .92 and .93
@@ -271,30 +271,30 @@ Also fixed some miscellaneous bugs.
 
 
 Version .72 (.71 was Slaanesh changes)
--- Nurgle's diseaseres completely redone. Most humans now have some disease vulnerability, but daemons are immune.
+Nurgle's diseaseres completely redone. Most humans now have some disease vulnerability, but daemons are immune.
 	Previously, some humans were immune, some humans and most daemons had low or no diseaseres.
 	UPDATE: Doh. Daemons had no diseaseres because they aren't affected by disease. Re-removed it.
--- Nurgle and Tzeentch sorcerers autocalced from 125 gold, also removed adept researcher.
+Nurgle and Tzeentch sorcerers autocalced from 125 gold, also removed adept researcher.
 
 Version .70 - Still JoanSam
--- Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
+Lots more miscellaneous changes...woundfend fixes for orcs and...maybe some wood elves? Set the value to 50,
    since there's no way to know what they wanted. Thought I had already done these a while ago...maybe I lost the version somewhere.
    Yeah, just lots of miscellaneous bug fixes highlighted by the inspector. The errors it shows now should just be new modding commands.
--- Wood Elf multihero crash should be fixed. The multiheroes were just copystats of other units, 
+Wood Elf multihero crash should be fixed. The multiheroes were just copystats of other units, 
    so they were deleted and the units themselves are now recruitable and multiheroes.
--- Updated Dark Elves and High Elves to Deathjester's recent versions.
--- Slaanesh changes in their own changelog.
--- Chaos weaponry and armor standardized, condensed to Slaanesh versions where possible. This changes a LOT.
--- Costs changed for Chaos Warriors (20 -> 30), Chaos Knights (50 -> 60) and Chosen (50 -> 65, Slaanesh 60 cause they have no special abilities.)
--- Empire full plate removed, replaced with vanilla full plate. Vanilla plate has 2 more enc but is 5 res cheaper.
--- Skaven Moulder Packmaster now summons 3 rats instead of 9 rats and 3 Maharishi...no idea why that was happening.
--- Skaven starting army was 60 slaves and 30 clanrats, now 30 and 20 respectively.
--- Crashes caused by Dark Elf flag and initiate and High Elf flag, archer, and spearman sprites fixed.
--- Screamers summon spell now summons 9 instead of 10 screamers, they also have non-AP weapons now.
--- Chaos battleaxe (used by Tzeentch's shieldless Chosen) no longer AP but has 2 attacks, res cost increased by 1.
--- TK skeletons commented out, normal skellies should be summoned from now on.
--- Flames of Tzeentch no longer AoE 1, now single target. Flames and Lightning have 20 ammo from 50.
--- Bite attack removed from Chaos Furies of Tzeentch and Nurgle.
+Updated Dark Elves and High Elves to Deathjester's recent versions.
+Slaanesh changes in their own changelog.
+Chaos weaponry and armor standardized, condensed to Slaanesh versions where possible. This changes a LOT.
+Costs changed for Chaos Warriors (20 -> 30), Chaos Knights (50 -> 60) and Chosen (50 -> 65, Slaanesh 60 cause they have no special abilities.)
+Empire full plate removed, replaced with vanilla full plate. Vanilla plate has 2 more enc but is 5 res cheaper.
+Skaven Moulder Packmaster now summons 3 rats instead of 9 rats and 3 Maharishi...no idea why that was happening.
+Skaven starting army was 60 slaves and 30 clanrats, now 30 and 20 respectively.
+Crashes caused by Dark Elf flag and initiate and High Elf flag, archer, and spearman sprites fixed.
+Screamers summon spell now summons 9 instead of 10 screamers, they also have non-AP weapons now.
+Chaos battleaxe (used by Tzeentch's shieldless Chosen) no longer AP but has 2 attacks, res cost increased by 1.
+TK skeletons commented out, normal skellies should be summoned from now on.
+Flames of Tzeentch no longer AoE 1, now single target. Flames and Lightning have 20 ammo from 50.
+Bite attack removed from Chaos Furies of Tzeentch and Nurgle.
 
 
 Version .62
