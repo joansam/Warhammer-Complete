@@ -22136,7 +22136,7 @@ Priests: Very Powerful."
 #rpcost 34000
 #rcost 5
 #ressize 2
-#mapmove 4
+#mapmove 3
 #ap 30
 #mounted
 #maxage 2000
@@ -22783,7 +22783,7 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 90
 #rcost 5
-#mapmove 4
+#mapmove 3
 #ap 30
 #ressize 2
 #mounted
@@ -23243,14 +23243,8 @@ They can lead other birds and animals well."
 #school 4 - enchantment
 #researchlevel 2
 #restricted 110
-#fatiguecost 20
-#aoe 0
 #nreff 1002
-#effect 13
-#damage 1010
-#range 15
 #precision 100
-#spec 12582912
 #nextspell "Apotheosis Bless"
 #end
 
@@ -23270,7 +23264,7 @@ They can lead other birds and animals well."
 #nreff 2004
 #damage 2010
 #range 25
-#spec 4224
+#spec 4224 -- AN and MRN
 #flightspr 10065
 #explspr 10065
 #sound 22
