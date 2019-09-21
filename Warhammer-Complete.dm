@@ -612,7 +612,7 @@
 #prot 21
 #enc 2
 #def -2
-#rcost 30
+#rcost 26
 #ironarmor
 #end
 
@@ -21286,16 +21286,10 @@ Priests: Very Powerful."
 #addgod 2849 -- Father of Monsters
 
 
-
-
-
-
-
 --Sets what forts they will use.
 
 #fortera 3 -- normal 2 commander point forts
 #fortcost 30 -- all forts 50% more expensive
-
 
 
 ------- Add soldiers
@@ -21368,8 +21362,6 @@ Priests: Very Powerful."
 --addreccom 7362 -- Mazdamundi
 
 
-
-
 ------- Province Defence
 
 --Sets the units to be used in province defense.
@@ -21416,6 +21408,7 @@ Priests: Very Powerful."
 
 -- END OF LIZARDMEN, BEGINNING OF HIGH ELVES
 
+
 -- NEW UNITS
 --- HERO: Korhil, Captain of the White Lions
 
@@ -21437,182 +21430,6 @@ Priests: Very Powerful."
 --- Sigil of Asuryan
 	-- lvl 0 dispel spell
 
--- TWEAKS
---- Mage of Isha -> "Priestess of Isha" 
-	-- #female
---- Smith of Vaul -> "Smith Priest of Vaul"
-	-- blind (and precision decreased)
---- White Lions & Guardians
-	-- #mountainsurvival
---- Protective Presence spell
-	-- change: can now only target friendly provinces
-	
--- SPRITES
---- updated sprites:
-	--Priestess of Isha
-	--Smith Priest of Vaul
-
--- 0,563
-
--- innate spellcaster removed from loremaster
-
-
--- 0,562
--- starting units tweaked - 10+10 spearmen/archers
--- shadow walkers, guardians, harbinger and drakemaster randoms changed to 99% in order to be recruitable without lab
--- nation description corrections
-
--- Tiranoc Chariot
--- (nerfed to be in line with chariots in vanilla and gcost adjusted)
--- HP 13->11
--- enc 4->5
--- ap 22->20
-
--- White Lions
--- lion cloak changed to def 2, prot 15, enc 1
-
--- Swordmasters
--- deflection changed to prot 10
-
--- Ellyrian Reavers
--- Removed shield (they never should've had one!)
-
--- Silver helms
--- enc 4->5
-
--- Mages
--- slightly lowered MR
-
--- Loremaster 
--- (does not cast rituals or smiths at all - strictly a combat/research/site search mage)
- -- removed onebattlespell of power of the spheres
- -- all paths increased by 1 except astral
- -- #mastersmith -3
- -- #masterrit -3
- -- researchbonus -4
-
--- Eagle Claw Bolt Thrower
--- Precision decreased by 1 (the weapons)
--- Damage decreased 16->14
-
--- Price revision troops:
--- Spearman 14->16
--- archers 14->15
--- sea guard 20->23
--- white lions 29->33 (but has "sacred upkeep")
--- reavers 30->34 (but has "sacred upkeep")
--- swordmasters 40->45, reclimit 5
--- phoenix guard 55->70, reclimit 5
--- tiranoc chariot 52->60
--- shadow warriors 30->35
--- Eagle claw bolt thrower 100->200, base rcost +20
--- dragon princes 65->75
-
--- Keeper of the Flames 120->150
--- harathoi mage 100->110
--- mage of isha 350->375
--- high mage slowrec
--- Archmage 460->500
--- smith of vaul 250->300
-
-
-
--- Version 0,55
--- Mod converted to Dominions 4:
-	-- nametypes fixed, fixednames added where appropriate
-	-- standard -> inspirational
-	-- gods set
-	-- damage types set
-	-- resistances changed to new system
-	-- researchbonus upped
-	-- healer -> autohealer
-	-- nation id
-	-- monster id
-	-- sites id
-	-- weapons id
-	-- (armor and nametypes ok)
-	-- forts set
-
--- removed most of the special "high elf" weapons (no longer extra length)
-
--- All High Elves given #formationfighter 2 to account for their martial prowess
-
--- High elves given #merccost 25	(mercs 25% more expensive)
-
--- Many High Elves require less upkeep (indicated in description), but are pricey to recruit. This applies to most elite troops and commanders that are not sacred, as those already have low upkeep.
-
--- Start site "Chracian Highlands" removed
-
--- Gem income decreased to 5 gems. Now S2F1A1E1 (was S2F2A1E1)
-	
-	----MAJOR MAGE REVAMP!----
-	--	Essentially, magic paths are similar as before, but they lose a bit of earth. The mages are less random though, and worth their price to a larger degree. There is also a lower tier mage now, which will probably mainly be used for research and at times for communions. Also, most mages are now sacred, and the mages of hoeth now have holy levels.
-		
--- NEW mage: Harathoi Mage (young mage)
-
--- NEW mage: Smith of Vaul (master smith)
-
--- NEW mage: Loremaster of Hoeth (battlemage and scholar)
-
--- NEW mage: Mage of Isha
-
-
--- archmages:
-		-- paths changed
-		-- sacred
-		--autodishealer 2 - heals disease
-		--slowrec
-		--allrange 2
-		--holy magic 2
-		
--- mages: 
-		-- paths changed
-		-- sacred
-		-- autodishealer 1 - heals disease
-		-- holy magic 1
-		
-		
--- stormweavers:
-		-- sailing 2 2 - effectively limits their sailing to themselves
-		-- price tweak
-		
--- Sea Guard Captain:
-		--sailing 999 3
-		--lost his magic skills
-		-- price lowered
-		
--- White Lions
-		-- morale 16->15
-		-- bodyguard 2
-		-- reclimit 3
-		-- recruitable anywhere:
-		-- forestrec (and fort)
-		-- cost 32->29
-		
--- Eagle Claw Bolt Thrower 
-		-- now a recruitable unit in coast forts
-		-- also fires a ballista bolt every third round, elsewise 6xArbalest bolts
-
--- Swordmasters:
-		-- sacred!
-		-- gained a deflection "shield" parry of def 3 prot 20 that makes them able to deflect missiles with their swords
-		-- defence lowered 14->13
-		-- cost 32->40
-		
--- Shadow warriors
-		-- now recruitable, gcost 30
-		-- reclimit 5
-		-- nagarythe hatred weapon set to #skip + #ammo1 and has attack skill +3, effectively giving the shadow warriors +3 att on their first strike each combat
-
--- Dragon princes
-		---cost 70->65
-		
--- Keepers of the Flame
-		--cost 150->120 
-
-	
-
-
 
 -- ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
@@ -21622,7 +21439,7 @@ Priests: Very Powerful."
 #dmg 11
 #att 0
 #def 0
-#len 3
+#len 2
 #rcost 3
 #sound 10
 #twohanded
@@ -21634,9 +21451,9 @@ Priests: Very Powerful."
 #dmg 9
 #att 1
 #def 2
-#len 4
+#len 3
 #rcost 5
-#nratt 1	
+#nratt 2	
 #sound 8
 #twohanded
 #slash
@@ -21648,7 +21465,7 @@ Priests: Very Powerful."
 #dmg 9
 #att 1
 #def 2
-#len 4
+#len 3
 #rcost 5
 #nratt 2	- only usable by Loremasters
 #sound 8
@@ -21661,7 +21478,7 @@ Priests: Very Powerful."
 #dmg 10
 #att 0
 #def 0
-#len 4
+#len 3
 #rcost 10
 #sound 10
 #twohanded
@@ -21669,12 +21486,12 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon 
+#newweapon
 #name "Nagarythe Hatred"
 #dmg 6
-#att 4
+#att 3
 #def 0
-#len 2
+#len 1
 #rcost 0
 #ammo 1
 #bonus
@@ -21683,21 +21500,21 @@ Priests: Very Powerful."
 #norepel
 #end
 
-#newweapon 
+#newweapon
 #name "Dragon Lance"
 #dmg 8
 #att 1
 #def 1
 #len 4
 #rcost 2
-#nratt 1
+#nratt 2
 #bonus
 #charge
 #sound 12
 #pierce
 #end
 
-#newweapon 
+#newweapon
 #name "Lion Claws"
 #dmg 16
 #nostr
@@ -21792,7 +21609,7 @@ Priests: Very Powerful."
 #dmg 20
 #att 6
 #def 3
-#len 3
+#len 2
 #rcost 0
 #sound 10
 #slash
@@ -21936,12 +21753,12 @@ Priests: Very Powerful."
 #weapon "Long Bow"
 #armor "Leather Cuirass"
 #gcost 15
-#rpcost 15000
+#rpcost 15
 #rcost 1
 #mapmove 16
 #startage 101
 #maxage 2000
-#formationfighter 2
+#formationfighter 3
 #diseaseres 75
 #end
 
@@ -21962,7 +21779,7 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #armor "Shield"
 #gcost 16
-#rpcost 16000
+#rpcost 16
 #maxage 2000
 #end
 
@@ -21983,7 +21800,7 @@ Priests: Very Powerful."
 #armor "Scale Mail Cuirass"
 #armor "Iron Cap"
 #gcost 15
-#rpcost 15000
+#rpcost 15
 #maxage 2000
 #end
 
@@ -22004,7 +21821,7 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #armor "Shield"
 #gcost 23
-#rpcost 23000
+#rpcost 23
 #maxage 2000
 #end
 
@@ -22029,7 +21846,7 @@ Priests: Very Powerful."
 #armor "Scale Mail Hauberk"
 #armor "Crested Helmet"
 #gcost 29
-#rpcost 29000
+#rpcost 29
 #maxage 2000
 #patrolbonus 1
 #forestsurvival
@@ -22061,9 +21878,8 @@ Priests: Very Powerful."
 #armor "Scale Mail Hauberk"
 #armor "Full Helmet"
 #airshield 80
-#gcost 45
-#rpcost 45000
---#reclimit 5
+#gcost 70
+#rpcost 35
 #rcost 1
 #maxage 2000
 #holy
@@ -22082,16 +21898,15 @@ Priests: Very Powerful."
 #nametype 172	-Elven names
 #hp 9
 #att 14
-#def 13
+#def 14
 #mr 16
 #mor 30
 #weapon "Ceremonial Halberd"
-#armor 297
+#armor "Phoenix Armor"
 #armor "Crested Helmet"
-#armor 293 - Phoenix Guard Ward Save
-#gcost 70
-#rpcost 70000
---#reclimit 5
+#armor "Phoenix Ward"
+#gcost 60
+#rpcost 40
 #rcost 1
 #awe 1
 #coldres 4
@@ -22122,7 +21937,7 @@ Priests: Very Powerful."
 #armor "Scale Mail Cuirass"
 #armor "Crested Helmet"
 #gcost 34
-#rpcost 34000
+#rpcost 34
 #rcost 5
 #ressize 2
 #mapmove 24
@@ -22155,8 +21970,8 @@ Priests: Very Powerful."
 #armor "Plate hauberk"
 #armor "Crested Helmet"
 #armor "Shield"
-#gcost 50
-#rpcost 50000
+#gcost 45
+#rpcost 50
 #rcost 15
 #mapmove 22
 #ap 25
@@ -22175,21 +21990,21 @@ Priests: Very Powerful."
 #descr "In the distant past, when the fabled dragons of Caledor were many, the princes of Caledor rode dragons to war. Today, even though their skill and pride are much the same, they ride Elven steeds as knights. They still wear armor forged in a volcano's heart, enchanted in ancient ways. This dragon armor is entirely resistant to flames. In battle the Princes seek glory and worthy opponents, often seeking out the most dangerous assignments."
 #clearweapons
 #cleararmor
+#gcost 60
 #nametype 172	-Elven names
 #size 3
 #enc 4
 #hp 12
-#att 13
-#def 13
+#att 14
+#def 14
 #mr 13
 #mor 14
-#weapon 56 --hoof
 #weapon "Dragon Lance"
+#weapon 56 --hoof
 #armor "Dragon Armor"
 #armor "Dragon Helmet"
 #armor "Shield"
-#gcost 75
-#rpcost 75000
+#rpcost 75
 #rcost 20
 #mapmove 22
 #ap 25
@@ -22223,7 +22038,7 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #armor "Buckler"
 #gcost 60
-#rpcost 60000
+#rpcost 60
 #rcost 15
 #ressize 2
 #mapmove 22
@@ -22261,13 +22076,13 @@ Priests: Very Powerful."
 #armor "Scale Mail Cuirass"
 #armor "Iron Cap"
 #airshield 80
-#gcost 35
-#rpcost 35000
+#gcost 30
+#rpcost 35
 #rcost 1
 #ambidextrous 3
 #mapmove 20
 #maxage 2000
-#stealthy 35
+#stealthy 20
 #patrolbonus 2
 --#reclimit 5
 #gold 1
@@ -22294,7 +22109,7 @@ Priests: Very Powerful."
 #armor "Full Scale Mail"
 #armor "Crested Helmet"
 #gcost 150				
-#rpcost 200000
+#rpcost 90
 #rcost 50
 #mapmove 10
 #ap 7
@@ -22337,7 +22152,8 @@ Priests: Very Powerful."
 #ap 25
 #ressize 2
 #mounted
-#goodleader
+#okleader
+#command 20
 #maxage 2000
 #gold 2
 #end
@@ -22374,10 +22190,9 @@ Priests: Very Powerful."
 #mapmove 22
 #ap 25
 #ressize 2
-#reinvigoration 2
 #inspirational 1
 #mounted
-#expertleader
+#goodleader
 #inspirational 1
 #maxage 2000
 #onebattlespell "Quicken self"
@@ -22432,7 +22247,7 @@ Priests: Very Powerful."
 #spr1 "./Warhammer-Complete/Harathoi1.tga"
 #spr2 "./Warhammer-Complete/Harathoi2.tga"
 #name "Harathoi Mage"
-#descr "The High Elves have always been magical race, and it is common amongst the High Elves to exhibit magical talent. The Elves that devote their lives to magic are treated with the same respect and honour as their lords. High Elf mages are able to control nearly all paths of magic, and their knowledge in countering their many enemies is very well needed to protect their ancient home. Those who are the most magically gifted and dedicated are given the privilege to be taught in the White Tower of Hoeth and eventually become Archmages. The Harathoi mages are the by elven standards young mages of their trade, who have yet to study at the Tower of Hoeth."
+#descr "The High Elves have always been magical race, and it is common amongst the High Elves to exhibit magical talent. The Elves that devote their lives to magic are treated with the same respect and honour as their lords. High Elf mages are able to control nearly all paths of magic, and their knowledge in countering their many enemies is very well needed to protect their ancient home. Those who are the most magically gifted and dedicated are given the privilege to be taught in the White Tower of Hoeth and eventually become Archmages. Harathoi mages are by elven standards young mages of their trade, who have yet to study at the Tower of Hoeth."
 #nametype 172	-Elven names
 #clearweapons
 #cleararmor
@@ -22709,7 +22524,7 @@ Priests: Very Powerful."
 -- Drake Master (Dragon Prince Champion)
 
 #newmonster 7516
-#copystats 7507 -- Silver Helm
+#copystats 7508 -- Dragon Prince
 #spr1 "./Warhammer-Complete/Drakemaster1HE.tga"
 #spr2 "./Warhammer-Complete/Drakemaster2HE.tga"
 #name "Drake Master"
@@ -22808,14 +22623,13 @@ Priests: Very Powerful."
 #armor "Scale Mail Cuirass"
 #armor "Half Helmet"
 #armor 294 - Evasion
-#gcost 90
+#gcost 100
 #rcost 1
 #ambidextrous 4
 #mapmove 20
 #maxage 2000
 #stealthy 35
 #patrolbonus 5
-#researchbonus -2
 #magicskill 1 1 -- Air 1
 #gold 3
 #end
@@ -22870,9 +22684,9 @@ Priests: Very Powerful."
 #mr 17
 #mor 30
 #weapon "Ceremonial Flame"
-#armor 297 - Phoenix Armor
+#armor "Phoenix Armor"
 #armor "Crested Helmet"
-#armor 293 - Phoenix Guard Ward Save
+#armor "Phoenix Ward"
 #gcost 150
 #rcost 1
 #awe 2
@@ -22954,7 +22768,7 @@ They can lead other birds and animals well."
 #cleararmor
 #hp 15
 #att 16
-#def 16
+#def 19
 #str 12
 #prec 16
 #mr 16
@@ -22965,7 +22779,6 @@ They can lead other birds and animals well."
 #weapon "Nagarythe Hatred"	-bonus strike first round with good attack skill
 #armor "Scale Mail Cuirass"
 #armor "The Shadow Crown"
-#armor 294 - Skirmish
 #gcost 0
 #rcost 1
 #ambidextrous 5
@@ -22979,7 +22792,7 @@ They can lead other birds and animals well."
 #expertleader
 #makemonsters2 "Shadow Warrior"
 #ethereal
-#airshield 20
+#airshield 50
 #itemslots 14336 -(feet+2 misc)
 #end
 

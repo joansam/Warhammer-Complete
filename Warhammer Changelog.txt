@@ -33,7 +33,8 @@ Remove reclimits - done, might wanna give above-costs recpoints
 Mapmove convert - done
 Replaced a few 99% magic paths with 100, it was just a gimmick from Dom3
 Replaced gimmicky "dodge" and "deflect" shields with airshield
-Formationfighter updated to work in Dom5
+Formationfighter updated to work in Dom5, works for inf and cav
+Decreased weapon lengths for Dom5
 
 Spells need a look - Shield of Saphery is weird, Apotheosis OP
 	Soul Quench and Drain Magic don't show in inspector
