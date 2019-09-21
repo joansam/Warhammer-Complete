@@ -1161,7 +1161,7 @@
 #rpcost 18
 #heal
 #weapon "Broad Sword"
-#weapon 331
+#weapon 331 -- Gore
 #armor 2
 #armor 9
 #startage 40
@@ -1494,7 +1494,7 @@
 #rpcost 1
 #heal
 #ambidextrous 3
-#weapon 331
+#weapon 331 -- Gore
 #weapon "Broad Sword"
 #weapon "Broad Sword"
 #armor 9
@@ -2859,7 +2859,7 @@
 
 -------- MAGIC ITEMS ---------
 
--- Chaos Armour
+-- Chaos Armor
 
 #newitem
 #restricted 159
@@ -2867,14 +2867,14 @@
 #constlevel 4
 #mainpath 7 -- Blood
 #mainlevel 1
-#name "Chaos Armour"
+#name "Chaos Armor"
 #descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 #type 5
 #armor "Chaos Armor"
 #morale 2
 #end
 
--- Chaos Armour copy, doesn't seem used by anything
+-- Chaos Armor copy, doesn't seem used by anything
 
 --#selectitem 520
 --#restricted 159
@@ -2884,7 +2884,7 @@
 --#mainlevel 2
 --#secondarypath 1
 --#secondarylevel 1
---#name "Chaos Armour"
+--#name "Chaos Armor"
 --#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Prince of Excess, becoming willing participants in the Great Game. It is extremely durable, but built to allow the wearer a wide range of movement."
 --#type 5
 --#armor "Chaos Armor"
@@ -3342,7 +3342,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -- Version 0.92 - Red lining to the icons of the items so it's easier to tell which are mod items. From now on, adding the version number to the .dm file. Added a new Beastman commander, the Ungor Raider Halfhorn, which leads to the Wargor becoming slow to recruit. Added Ungor Raiders, too. Changed Sorcerer Lord's 110 custommagic part to 100 and 10. Apparently 110 is counted as Level +2.
 
--- Version 0.91 - Added the mod's very first items, starting with a const level 6 Staff of Change which is... A staff meant for fighting. Added a Chaos Armour item, which is basically much like the Chaos Armor all the Warriors and such wear (edited by Neruz from dom4goons!) and slightly upped Chaos Armor's stats. Added a Rune Stone of Sorcery item, which gives 2 temp astral gems in battle. Added Wand of Whimsy, which is a wand that grants the user magical powers. Changes to chaosrecs of Beastmen, so now they cost closer to what the rest cost in high turmoil (reclimits and slowrecs stay the same). Also added #stealthy to many of the Beastmen (all except Tzaanbull and the Minotaurs). Changed the mod's icon a bit.  Added sounds and types to some mod weapons.
+-- Version 0.91 - Added the mod's very first items, starting with a const level 6 Staff of Change which is... A staff meant for fighting. Added a Chaos Armor item, which is basically much like the Chaos Armor all the Warriors and such wear (edited by Neruz from dom4goons!) and slightly upped Chaos Armor's stats. Added a Rune Stone of Sorcery item, which gives 2 temp astral gems in battle. Added Wand of Whimsy, which is a wand that grants the user magical powers. Changes to chaosrecs of Beastmen, so now they cost closer to what the rest cost in high turmoil (reclimits and slowrecs stay the same). Also added #stealthy to many of the Beastmen (all except Tzaanbull and the Minotaurs). Changed the mod's icon a bit.  Added sounds and types to some mod weapons.
 
 -- Version 0.90 - As the mod is pretty much feature complete, I decided to make a massive jump in versions. Less risk of looking like an early alpha this way. One pixel change to the Minotaur's (and Tzaanbull's) first sprite. Changed the Gor's weapon to a Club, as it should've been. There was a typo in the Gor's description. Added Bray Shaman, a mage of the Beastmen, so now they sort of have a full set of recruitables. Adjusted the prices of the mages upwards. Now the Daemon Prince summoning allows for summoning both the Trident type and the Halberd type Daemon Princes! Altered the names and descriptions of the old Chaos Undivided spells; also added a new evocation.
 
@@ -3524,7 +3524,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rpcost 18
 #heal
 #weapon "Axe"
-#weapon 331
+#weapon 331 -- Gore
 #armor 2
 #armor 9
 #startage 40
@@ -3919,7 +3919,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr2 "./Warhammer-Complete/chaosknight_2TZ.tga"
 #name "Chaos Knight"
 #nametype 115
-#descr "Chaos Knights are towering brutes clad in thickest plate, each section of armour crafted by a master daemonsmith. They ride to war with great lances, evil-looking polearms designed to impale and tear; and their blades and maces flicker with dark fire. Even the frightful reputation of the Chaos Knights is a weapon in its own right, crippling those who would stand against them before a single blow is struck."
+#descr "Chaos Knights are towering brutes clad in thickest plate, each section of Armor crafted by a master daemonsmith. They ride to war with great lances, evil-looking polearms designed to impale and tear; and their blades and maces flicker with dark fire. Even the frightful reputation of the Chaos Knights is a weapon in its own right, crippling those who would stand against them before a single blow is struck."
 #ap 18
 #mapmove 22
 #hp 14
@@ -4205,7 +4205,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #poorleader
 #heal
 #ambidextrous 3
-#weapon 331
+#weapon 331 -- Gore
 #weapon "Axe"
 #weapon "Axe"
 #armor 9
@@ -5069,7 +5069,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr2 "./Warhammer-Complete/Flamer2.tga"
 #name "Flamer of Tzeentch"
 #nametype 189
-#descr "Flamers of Tzeentch are Daemons that use burning limbs to hurl bolts of yellow and blue magical flame at their foes. This magical fire of Tzeeentch burns not only flesh but reality itself, and its caress can shatter the senses as completely as it chars and burns the body. The Flamers are no less deadly in close combat, where they can use their pyrotechnic powers to burn through armour, flesh and bone with ease."
+#descr "Flamers of Tzeentch are Daemons that use burning limbs to hurl bolts of yellow and blue magical flame at their foes. This magical fire of Tzeeentch burns not only flesh but reality itself, and its caress can shatter the senses as completely as it chars and burns the body. The Flamers are no less deadly in close combat, where they can use their pyrotechnic powers to burn through Armor, flesh and bone with ease."
 #ap 10
 #mapmove 16
 #hp 15
@@ -6158,7 +6158,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spell "Blessing of Tzeentch"
 #end
 
--- Chaos Armour
+-- Chaos Armor
 
 #newitem
 #restricted 120
@@ -6168,7 +6168,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mainlevel 2
 #secondarypath 0
 #secondarylevel 1
-#name "Tzeentch Chaos Armour"
+#name "Tzeentch Chaos Armor"
 #descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
@@ -6178,7 +6178,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #nofind
 #end
 
--- Chaos Armour copy
+-- Chaos Armor copy
 
 #selectitem 518
 #restricted 120
@@ -6188,7 +6188,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #mainlevel 2
 #secondarypath 0
 #secondarylevel 1
-#name "Tzeentch Chaos Armour"
+#name "Tzeentch Chaos Armor"
 #descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Changer of Ways, becoming willing participants in His never-ending and often unfathomable schemes. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
@@ -6283,6 +6283,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 ---- GODS
 #homerealm 1
+#homerealm 2
 #addgod 7625 -- adds Sorcerer Lord of Tzeentch as a Pretender
 #cheapgod20 7625
 #addgod 7630 -- adds Daemon Prince of Tzeentch as a Pretender
@@ -6440,7 +6441,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- don't have their specialties, also lowered poisonres. Had forgotten to add poisoncloud to the Chosen Lord, gave it to him, and he also got a 66% chance to get more magic. Standard Bearer's #standard reduced to 1, weapon changed to Short Sword, cost reduced to 20 and chaosrec changed to 1. Foreignrec Marauders weren't actually recruitable (thanks Indract!). Infection from Warhounds is now #mrnegates. Made lance Plague Knight's first weapon. Poison Tentacle was lacking armorpiercing. Ungor Raider Halfhorn's price dropped to 35. Wargor missed his #okleader after everything became living. One Marauder had #prec 0, raised to 10 (remnant from CU, thanks Indract!). Marauder Horsemen had 5 enc, changed to 4. Lord of Nurgle is now 285gp, same as Lord of Slaanesh.
 
 -- supposed to have it anyway). Mages became cheaper, lost leaderships, gained research bonus. Gave some survivals to some Heroes (while Forest survivals are now mostly gone). Got rid of lots of autocalced gold costs to keep them where I want them to be. Doombulls of Nurgle are now Pestibulls, lost their holy but became not slow to recruit, slightly cheaper and have a disease cloud. Warriors became 5gp cheaper. Removed secondary paths from D blessings because they were making them unusable by actual target audience of D mages (changed their explspr & sounds, too). Plaguebearers' etc. weapon wasn't breaking enemy armor, using #secondaryeffects to try and fix it. Changes to Spawn of Nurgle (it's more similar to other Spawns now, and gained national specialties of increased HP, more STR and deathdisease/diseasecloud). Slight edits to summary. Champs, Exalted Champs and Lords became inept researchers. Slight STR increase to Minotaurs and Pestigors. Made #foreignrec Marauders #coldrec. Bray-Shamans had N
--- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armour item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed undead from all mortal followers of Nurgle and gave them regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
+-- removed and F instated in its place. Reclimits on Chosen uplifted (Sacred makes them 10 rec limit at best anyway). Changed Champ's and Exalted Champ's ID slots head for head and added #xpshape to both. Valnir's flail lacked #twohanded (which may be bugged). Added a copy Chaos Armor item and gave all commanders with Chaos Armor that version of the armor item. Changed slots of people on Palanquins. Removed undead from all mortal followers of Nurgle and gave them regeneration 5 instead (Banish etc. are too effective against the supposedly hardy followers of Nurgle). Removed Proctection of Nurgle due to the removal of #undead. Added an STR bonus to Chaos Armor. Changed the Sorcerer Lord to have 3 magic paths. Exalted Champ received #fear 5. Added proper #nametype to Sorcerers. Lowered undead leaderships (while heightening regular leaderships where applicable), removed magical leadership.
 
 -- Version 0.78 - Made everything with #enc 0 except GUOs have #enc 1 or 2 (brings enc to Tzeentch warhost's levels). Protection of Nurgle now requires a gem and 2 levels of Ench research. Standard Bearer now has MM1 like its Tzeentch counterpart. Cultist received start/maxage. Added secondary color to nation colors. Fixed #summary formatting. Tinkered with the long description some more. Added a new spell to Ench, "Consecration of Nurgle", which both removes afflictions (also kills pop and gives your mage a craving for human flesh) and summons Plaguebearers. Slight change to the #summary. Added 'Warhammer' to modname (since Tzeentch warhost has it). Brought the Champion up to Chosen levels and upped the Exalted Champ a little. Lowered the price of the Sorcerer Lord Pretender - it was the same price as the Tzeentch one, which can fly, gets a bit more research and such. Added nofind to items. Fixed the Daemon Prince's tail's positioning. Fixed the positioning of a bunch of sprites
 -- (didn't really show in-game, but it bothered me!).
@@ -6449,7 +6450,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -- Version 0.76 - Fixed Ku'gath's shadow (it was way too small). Fixed Plaguebearer and Herald of Nurgle sprites (they were 1 pixel too low and had too small shadows). Renamed the Chaos Vortex again, to Chaos Vortex of Nurgle. Added survivals to the Champ, Exalted Champ and Lord (since they were supposed to have matching survivals with the Chosen). Added ages to Chosen and Warriors. Added Nurgle Plate Armor, gave it to several units below Chosen. Altered the itemized Chaos Armor to bless its user (and removed the resistances). Brought up the MRs of the Sorcerers. Made Warhounds #undisciplined (since Forsaken are #undisciplined). Increased morale for units from Warriors to Chosen. More MR to Plague Drones/Rot Flies. Changed some #prots and a lot of #invulnerables. #chaosrec was missing from Lord of Nurgle. Chaos Furies had the wrong path to summon.
 
--- Version 0.75 - Jump in versions due to "why not?" Ever so slight changes to the Minotaur! Added undisciplined to Rot Fly. Changes to the Warhound (incl. Rabid Bite and reclimit). Foreignrec Cultist added. Changed PD, it was the same way it had been in Dom3 and in Dom4 it looked INCREDIBLY HIGH, also removed Warhound from PD due to weapon change. Removed Pestigor's #stealthy because the Tzaangor isn't stealthy. Gave the nation a national color. Added an item, the Nurgle Chaos Armour. Added Filth Mace and Balesword, which are weapons. Lowered the negative Def and amount of Enc on the Chaos Armor to match the Tzeentch armor, still gives less prot (enc was mostly useless due to everyone using it being undead with no enc anyway, and units generally have less def than their Tzeentch counterparts to begin with). Added holy to Plague Drone/Rot Fly. Added armorpiercing to the Daemonforged Axe and made flails take out 2 def. Put a - between all "Daemon" and "forged" to match Tzeentch warhost.
+-- Version 0.75 - Jump in versions due to "why not?" Ever so slight changes to the Minotaur! Added undisciplined to Rot Fly. Changes to the Warhound (incl. Rabid Bite and reclimit). Foreignrec Cultist added. Changed PD, it was the same way it had been in Dom3 and in Dom4 it looked INCREDIBLY HIGH, also removed Warhound from PD due to weapon change. Removed Pestigor's #stealthy because the Tzaangor isn't stealthy. Gave the nation a national color. Added an item, the Nurgle Chaos Armor. Added Filth Mace and Balesword, which are weapons. Lowered the negative Def and amount of Enc on the Chaos Armor to match the Tzeentch armor, still gives less prot (enc was mostly useless due to everyone using it being undead with no enc anyway, and units generally have less def than their Tzeentch counterparts to begin with). Added holy to Plague Drone/Rot Fly. Added armorpiercing to the Daemonforged Axe and made flails take out 2 def. Put a - between all "Daemon" and "forged" to match Tzeentch warhost.
 -- Was supposed to have #dmg in weapon commands, and the mistake lead to pretty much no damage in a lot of custom weapons.
 
 -- Version 0.51 - After some feedback, fixing some silly oversights! Giving 18 MR to the Pretenders due to that being the norm. 2D to the Daemon Prince Pretender. Giving the humans (and Beastmen) who had 10AP 12AP, because that's the norm and Nurgle's effects don't really slow people down. Giving the Chosen with the axe a Daemonforged Axe (it's not supposed to be as good as the Flail one, but not that much worse!). Checking if I can get rid of the range on Protection of Nurgle (also giving it an #explspr). Checking att levels on humans in general (same reason as AP; there's no Rigor Mortis), def levels will stay (or become worse) due to "no pain". Other stuff: Adjusted the prices of the Chosen slightly upwards. Adjusted resource costs of weapons. Gave some spells #sounds and explsprs.
@@ -6568,7 +6569,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rpcost 18
 #heal
 #weapon 347
-#weapon 331
+#weapon 331 -- Gore
 #armor 2
 #armor 9
 #startage 40
@@ -7277,7 +7278,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #heal
 #ambidextrous 3
 #weapon "Aura of Nurgle" -- Aura
-#weapon 331
+#weapon 331 -- Gore
 #weapon 347
 #weapon "Axe"
 #armor 9
@@ -8795,7 +8796,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -------- MAGIC ITEMS ---------
 
--- Chaos Armour
+-- Chaos Armor
 
 #newitem
 #restricted 142
@@ -8805,7 +8806,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mainlevel 2
 #secondarypath 6
 #secondarylevel 1
-#name "Nurgle Chaos Armour"
+#name "Nurgle Chaos Armor"
 #descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
@@ -8815,7 +8816,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #str 3
 #end
 
--- Chaos Armour copy
+-- Chaos Armor copy
 
 #selectitem 519
 #restricted 142
@@ -8825,7 +8826,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mainlevel 2
 #secondarypath 6
 #secondarylevel 1
-#name "Nurgle Chaos Armour"
+#name "Nurgle Chaos Armor"
 #descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
 #type 5
 #armor "Chaos Armor"
@@ -8965,6 +8966,7 @@ Priests: Weak. Cultists can start cults in foreign countries by causing unrest i
 ---- GODS
 
 #homerealm 1
+#homerealm 2
 #addgod 7668 -- Daemon Prince of Nurgle
 #cheapgod20 7668
 #addgod 7691 -- Sorcerer Lord of Nurgle
@@ -9492,7 +9494,7 @@ still to do
 
 
 
--------- New Armour
+-------- New Armor
 
 --- gutplate also used in chaos dwarf mod
 
@@ -9628,7 +9630,7 @@ still to do
 #spr1 "./Warhammer-Complete/Ogre Irongut.tga"
 #spr2 "./Warhammer-Complete/Ogre Irongut2.tga"
 #name "Ogre Irongut"
-#descr "Ogre Ironguts are the Ogres of any given tribe that have the most status and the best weaponry. Although not markedly superior in strength to their fellows, Ironguts are afforded great respect, as they are usually hand picked by the Tyrant himself. For this reason, a unit of Ironguts may well include the Tyrant's immediate family, or his drinking cronies. Ironguts go into battle armed with massive two handed 'choppas' and protected by an assortment of armour cobbled together over the years. Ironguts are champions of countless eating competitions and this has granted them a powerful sense of superiority."
+#descr "Ogre Ironguts are the Ogres of any given tribe that have the most status and the best weaponry. Although not markedly superior in strength to their fellows, Ironguts are afforded great respect, as they are usually hand picked by the Tyrant himself. For this reason, a unit of Ironguts may well include the Tyrant's immediate family, or his drinking cronies. Ironguts go into battle armed with massive two handed 'choppas' and protected by an assortment of Armor cobbled together over the years. Ironguts are champions of countless eating competitions and this has granted them a powerful sense of superiority."
 #hp 36
 #size 3
 #prot 5
@@ -10091,7 +10093,7 @@ still to do
 #spr1 "./Warhammer-Complete/Ogre Pitfighter.tga"
 #spr2 "./Warhammer-Complete/Ogre Pitfighter2.tga"
 #name "Ogre Pitfighter"
-#descr "Even the smallest Ogre tribe will organise itself around a Maw Pit. Sometimes little more than a hole in the ground surrounded by jagged rocks and stakes, to the Ogres the Pit is an embodiment of the Great Maw itself and must be regularly fed raw flesh. It is in the Maw Pits of the Mountains of Mourn that the Ogres' bloodiest ritual, the Pitfight, occurs. The tribe's most aggressive, barbaric Bulls enter the Pit and fight to the death, starting with choppas and eventually resorting to their bare hands. The victors are handed over to the Butchers, who replace their arms with brutal Stumpblades and hammer a crude carapace of armour directly into their flesh. Pitfighters are sacred among the Ogres, as their short lives are dedicated to feeding the Maw."
+#descr "Even the smallest Ogre tribe will organise itself around a Maw Pit. Sometimes little more than a hole in the ground surrounded by jagged rocks and stakes, to the Ogres the Pit is an embodiment of the Great Maw itself and must be regularly fed raw flesh. It is in the Maw Pits of the Mountains of Mourn that the Ogres' bloodiest ritual, the Pitfight, occurs. The tribe's most aggressive, barbaric Bulls enter the Pit and fight to the death, starting with choppas and eventually resorting to their bare hands. The victors are handed over to the Butchers, who replace their arms with brutal Stumpblades and hammer a crude carapace of Armor directly into their flesh. Pitfighters are sacred among the Ogres, as their short lives are dedicated to feeding the Maw."
 #hp 38
 #size 3
 #prot 7
@@ -10215,7 +10217,7 @@ still to do
 #spr1 "./Warhammer-Complete/Ogre Bruiser.tga"
 #spr2 "./Warhammer-Complete/Ogre Bruiser2.tga"
 #name "Ogre Bruiser"
-#descr "A Bruiser is second only to the Tyrant in terms of strength and aggression and they are often related to the kingdom's ruler. Bruisers are chieftains of a sort, but generally act as enforcers who keep order rather than actual leaders. Bruisers are without exception physically more powerful than the common Bulls of the tribe and are often champions of the Ogre games that help define their social organisation. Unlike champions and leaders of other races, Bruisers are not hard to replace; if a Bruiser within the tribe is slain he will be replaced almost instantly by the next strongest Ogre, who will get first dibs on his stuff. As Ogres of some status, Bruisers wear heavy fur cloaks and a patchwork of stolen armour, however they favour crude clubs over choppas or ironfists, as they are better for keeping the Bulls in line."
+#descr "A Bruiser is second only to the Tyrant in terms of strength and aggression and they are often related to the kingdom's ruler. Bruisers are chieftains of a sort, but generally act as enforcers who keep order rather than actual leaders. Bruisers are without exception physically more powerful than the common Bulls of the tribe and are often champions of the Ogre games that help define their social organisation. Unlike champions and leaders of other races, Bruisers are not hard to replace; if a Bruiser within the tribe is slain he will be replaced almost instantly by the next strongest Ogre, who will get first dibs on his stuff. As Ogres of some status, Bruisers wear heavy fur cloaks and a patchwork of stolen Armor, however they favour crude clubs over choppas or ironfists, as they are better for keeping the Bulls in line."
 #hp 60
 #size 3
 #prot 8
@@ -10567,7 +10569,7 @@ still to do
 #spr1 "./Warhammer-Complete/Mawgut.tga"
 #spr2 "./Warhammer-Complete/Mawgut2.tga"
 #name "Mawgut"
-#descr "Mawguts are corpulent hulks, former Slaughtermasters who took in the flesh of the Great Maw and became host to one of its infinite mouths. The guts of these bloated creatures have split asunder, revealing a ravenous maw full of jagged teeth. The maw will violently consume anything within reach, be it a fully armoured soldier, a warhorse, a bull ogre or even the hands of its host body. Beyond the ring of teeth and crushing muscle lies a hellish portal that leads to the impossible depths of the Great Maw itself. Smaller enemies are thus easily devoured one after another, while larger foes, despite any protection they might have, face being eaten a chunk at a time. These terrifying, mindless eating machines will devour men and Ogres alike and cause widespread panic until slain; no easy task given the abilities they have gained from the mawflesh. Near tireless in battle and invigorated by the powers of the Great Maw, Mawguts' injuries are healed at great speed while they feast on their victims."
+#descr "Mawguts are corpulent hulks, former Slaughtermasters who took in the flesh of the Great Maw and became host to one of its infinite mouths. The guts of these bloated creatures have split asunder, revealing a ravenous maw full of jagged teeth. The maw will violently consume anything within reach, be it a fully Armored soldier, a warhorse, a bull ogre or even the hands of its host body. Beyond the ring of teeth and crushing muscle lies a hellish portal that leads to the impossible depths of the Great Maw itself. Smaller enemies are thus easily devoured one after another, while larger foes, despite any protection they might have, face being eaten a chunk at a time. These terrifying, mindless eating machines will devour men and Ogres alike and cause widespread panic until slain; no easy task given the abilities they have gained from the mawflesh. Near tireless in battle and invigorated by the powers of the Great Maw, Mawguts' injuries are healed at great speed while they feast on their victims."
 #hp 80
 #size 4
 #prot 14
@@ -10619,7 +10621,7 @@ still to do
 #spr1 "./Warhammer-Complete/Mawfiend.tga"
 #spr2 "./Warhammer-Complete/Mawfiend2.tga"
 #name "Mawfiend"
-#descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. The Mawfiends, as they are known, are the undisputed rulers of these lands, surveying them with cruel detachment through four compound eyes. Their claws and hooves, at all times covered in gore, are strong enough to tear through armour, bone and muscle with ease. In addition to their physical prowess Mawfiends are also gifted in the dark arts, particularly magic of fire and blood. Bound to Slaughtermasters with complex bloodpacts, Mawfiends are nonetheless agents of Chaos and true Daemons. Despite their calculating minds, Mawfiends are deeply connected to the Great Maw and if injured are unable to contain their rage and hunger, which overflows in a torrent of raw energy and blasts at their foes."
+#descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. The Mawfiends, as they are known, are the undisputed rulers of these lands, surveying them with cruel detachment through four compound eyes. Their claws and hooves, at all times covered in gore, are strong enough to tear through Armor, bone and muscle with ease. In addition to their physical prowess Mawfiends are also gifted in the dark arts, particularly magic of fire and blood. Bound to Slaughtermasters with complex bloodpacts, Mawfiends are nonetheless agents of Chaos and true Daemons. Despite their calculating minds, Mawfiends are deeply connected to the Great Maw and if injured are unable to contain their rage and hunger, which overflows in a torrent of raw energy and blasts at their foes."
 #hp 70
 #size 3
 #prot 14
@@ -11493,6 +11495,7 @@ Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice
 #dyingdom
 #bloodnation
 #homerealm 1
+#homerealm 4
 #addgod 157 -- mother of monsters
 #addgod 216 -- fire dragon
 #addgod 265 -- frost dragon
@@ -11682,10 +11685,10 @@ Still to do
 #end
 
 
--- Queek's Warpstone Armour
+-- Queek's Warpstone Armor
 
 #newarmor
-#name "Warpstone Armour"
+#name "Warpstone Armor"
 #type 5
 #prot 22
 #enc 1
@@ -12280,7 +12283,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Stormvermin.tga"
 #spr2 "./Warhammer-Complete/Stormvermin2.tga"
 #name "Stormvermin"
-#descr "The fur of larger Skaven tends to be darker than normal and for this reason black-furred Skaven are respected and feared by their brethren. These stronger, more vicious warriors are normally hand-picked by Warlords or powerful Chiefs to create elite units of Stormvermin. Better equipped than their comrades, Stormvermin on the battlefield are inevitably either safeguarding an important Skaven leader or have been given the task of eliminating their elite opposites amongst enemy ranks, once they have been suitably weakened by slaves, clanrats and various support troops. They are armed with lethal glaives, perfect for cutting down fatigued armoured troops or finishing off larger enemies. They are a little more courageous than Clanrats, but retain the naturally cautious nature of their race."
+#descr "The fur of larger Skaven tends to be darker than normal and for this reason black-furred Skaven are respected and feared by their brethren. These stronger, more vicious warriors are normally hand-picked by Warlords or powerful Chiefs to create elite units of Stormvermin. Better equipped than their comrades, Stormvermin on the battlefield are inevitably either safeguarding an important Skaven leader or have been given the task of eliminating their elite opposites amongst enemy ranks, once they have been suitably weakened by slaves, clanrats and various support troops. They are armed with lethal glaives, perfect for cutting down fatigued Armored troops or finishing off larger enemies. They are a little more courageous than Clanrats, but retain the naturally cautious nature of their race."
 #hp 11
 #size 2
 #prot 0
@@ -12316,7 +12319,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Night Runner.tga"
 #spr2 "./Warhammer-Complete/Night Runner2.tga"
 #name "Eshin Night Runner"
-#descr "Night Runners are the lowest ranking troops in Clan Eshin and have a notoriously low survival rate, compounded by their lack of armour and role as skirmishers whose task is to neutralise more dangerous enemies. They are armed with nets and short blades and are given basic training in stealth warfare and martial arts by their masters, but only the luckiest, most determined or sneakiest are expected to survive battle; perfect candidates for the ranks of the Gutter Runners."
+#descr "Night Runners are the lowest ranking troops in Clan Eshin and have a notoriously low survival rate, compounded by their lack of Armor and role as skirmishers whose task is to neutralise more dangerous enemies. They are armed with nets and short blades and are given basic training in stealth warfare and martial arts by their masters, but only the luckiest, most determined or sneakiest are expected to survive battle; perfect candidates for the ranks of the Gutter Runners."
 #hp 9
 #size 2
 #prot 0
@@ -12354,7 +12357,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Gutter Runner.tga"
 #spr2 "./Warhammer-Complete/Gutter Runner2.tga"
 #name "Eshin Gutter Runner"
-#descr "Gutter Runners are feared Eshin troops, well trained in the art of infiltration, ambush and sabotage. They are highly proficient at digging tunnels and are often used when sieging enemy fortifications. They wear light but effective armour under their black robes and have a surprisingly high survival rate for Skaven, due mainly to their ability to pick and choose where and when they will fight. They are armed with both poisoned blades for close combat and also venomous thrown shuriken, making them versatile troops. Their skills, however, come at rather a high price."
+#descr "Gutter Runners are feared Eshin troops, well trained in the art of infiltration, ambush and sabotage. They are highly proficient at digging tunnels and are often used when sieging enemy fortifications. They wear light but effective Armor under their black robes and have a surprisingly high survival rate for Skaven, due mainly to their ability to pick and choose where and when they will fight. They are armed with both poisoned blades for close combat and also venomous thrown shuriken, making them versatile troops. Their skills, however, come at rather a high price."
 #hp 9
 #size 2
 #prot 0
@@ -12544,7 +12547,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Globadier.tga"
 #spr2 "./Warhammer-Complete/Globadier2.tga"
 #name "Skryre Poison Wind Globadier"
-#descr "Globadiers are highly specialised troops armed with deadly poison wind globes. These fragile spheres of glass are filled with toxic warpstone-derived fumes produced by the Warlock Engineers in their secret laboratories. Small groups of Globaiders can often be found scuttling on the flanks of Skaven armies, lobbing their grenades against elite units whose thick armour proves no defence at all. Like most Skryre units they are particularly useful in a siege. Because of the clear risks of their occupation, trained Globadiers demand high pay."
+#descr "Globadiers are highly specialised troops armed with deadly poison wind globes. These fragile spheres of glass are filled with toxic warpstone-derived fumes produced by the Warlock Engineers in their secret laboratories. Small groups of Globaiders can often be found scuttling on the flanks of Skaven armies, lobbing their grenades against elite units whose thick Armor proves no defence at all. Like most Skryre units they are particularly useful in a siege. Because of the clear risks of their occupation, trained Globadiers demand high pay."
 #hp 9
 #size 2
 #prot 0
@@ -12764,7 +12767,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Doomwheel.tga"
 #spr2 "./Warhammer-Complete/Doomwheel.tga"
 #name "Skryre Doomwheel"
-#descr "The Doomwheel is perhaps Clan Skryre's most exotic war machine; a huge pair of spiked wheels driven by rats constantly jolted into motion with blasts of energy, controlled by nothing more than the frantic and possibly insane Warlock driver and a single guide wheel at the rear. As the Doomwheel tears forward towards the enemy it unleashes energy from its warpstone generators which manifests in warplightning which is cast in the rough direction of the foe. The closer the Doomwheel gets, the stronger the crackling blasts of warplightning become. In addition to this fearsome ranged attack, the Doomwheel is quite capable of simply running over enemy formations, crushing even heavily armoured troops beneath the great wheels."
+#descr "The Doomwheel is perhaps Clan Skryre's most exotic war machine; a huge pair of spiked wheels driven by rats constantly jolted into motion with blasts of energy, controlled by nothing more than the frantic and possibly insane Warlock driver and a single guide wheel at the rear. As the Doomwheel tears forward towards the enemy it unleashes energy from its warpstone generators which manifests in warplightning which is cast in the rough direction of the foe. The closer the Doomwheel gets, the stronger the crackling blasts of warplightning become. In addition to this fearsome ranged attack, the Doomwheel is quite capable of simply running over enemy formations, crushing even heavily Armored troops beneath the great wheels."
 #hp 10
 #size 5
 #prot 8
@@ -12956,7 +12959,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Warlord.tga"
 #spr2 "./Warhammer-Complete/Warlord2.tga"
 #name "Warlord"
-#descr "The leaders of the Warlord Clans are cunning Skaven who have fought, schemed, bribed and cheated their way to the top in the traditional manner. While the Greater Clans of Pestilens, Moulder, Eshin and Skryre are undoubtedly far more influential and powerful, with guaranteed seats on the Council of Thirteen, without the numerous Warlord Clans the Skaven could not launch their vast campaigns against the surface world. Warlords are almost always larger Skaven, usually black furred and scarred from countless battles; they are not so foolish as to risk their lives on the frontlines, but their effectiveness as fighters cannot be denied, particularly as they are equipped with the best available arms and armour."
+#descr "The leaders of the Warlord Clans are cunning Skaven who have fought, schemed, bribed and cheated their way to the top in the traditional manner. While the Greater Clans of Pestilens, Moulder, Eshin and Skryre are undoubtedly far more influential and powerful, with guaranteed seats on the Council of Thirteen, without the numerous Warlord Clans the Skaven could not launch their vast campaigns against the surface world. Warlords are almost always larger Skaven, usually black furred and scarred from countless battles; they are not so foolish as to risk their lives on the frontlines, but their effectiveness as fighters cannot be denied, particularly as they are equipped with the best available arms and Armor."
 #hp 33
 #size 2
 #prot 3
@@ -13485,7 +13488,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Hero Queek.tga"
 #spr2 "./Warhammer-Complete/Hero Queek2.tga"
 #name "Warlord of Mors"
-#descr "Warlord Queek Head-Taker was groomed from birth as the personal champion and lieutenant of Gnawdwell, ruler of Clan Mors and one of the Lords of Decay. Queek has spent most of his time as Warlord fighting Night Goblins and Dwarfs, who he hates with unreasoning ferocity. He takes special pleasure in seeking out the strongest of the enemy heroes and leaders, challenging them to single combat, slaying them then taking their skulls or hands as as a trophy. Queek is famed amongst Skaven for his vitriolic temper and immense ego; Queek's psychotic confidence is perhaps the most dangerous thing about him. Gnawdwell has equipped Queek with the Gouger, Dwarf Slayer, Warpstone Armour and the Foul Pendant. Queek handpicks the Stormvermin that make up his personal guard."
+#descr "Warlord Queek Head-Taker was groomed from birth as the personal champion and lieutenant of Gnawdwell, ruler of Clan Mors and one of the Lords of Decay. Queek has spent most of his time as Warlord fighting Night Goblins and Dwarfs, who he hates with unreasoning ferocity. He takes special pleasure in seeking out the strongest of the enemy heroes and leaders, challenging them to single combat, slaying them then taking their skulls or hands as as a trophy. Queek is famed amongst Skaven for his vitriolic temper and immense ego; Queek's psychotic confidence is perhaps the most dangerous thing about him. Gnawdwell has equipped Queek with the Gouger, Dwarf Slayer, Warpstone Armor and the Foul Pendant. Queek handpicks the Stormvermin that make up his personal guard."
 #hp 35
 #size 2
 #prot 3
@@ -13500,7 +13503,7 @@ Still to do
 #ap 15
 #gcost 1
 #rcost 1
-#armor "Warpstone Armour"
+#armor "Warpstone Armor"
 #armor "Half Helmet"
 #weapon "The Gouger"
 #weapon "Dwarf Slayer"
@@ -14845,6 +14848,8 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 ------- Pretender settings ---------
 
+#homerealm 6
+#homerealm 7
 #addgod 656 -- fountain of blood
 #addgod 156 -- cyclops
 #addgod 246 -- freak lord
@@ -15195,7 +15200,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 
 
--------- New Armour
+-------- New Armor
 
 
 --- Infernal Full Plate
@@ -15247,7 +15252,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Warrior.tga"
 #spr2 "./Warhammer-Complete/Warrior2.tga"
 #name "Chaos Dwarf Warrior"
-#descr "Chaos Dwarf society is strictly heirarchical with many tiers of ascending power and diminishing size, mirroring the mighty ziggurats that dominate their homeland. Amongst Chaos Dwarfs the Warrior caste is a position of middling importance, holding status above craftsmen and civilians, but well below smiths or inductees into cult of Hashut. Still, Warriors are invaluable as it is they who venture forth to conquer and enslave, feeding the endless hunger of their society for disposable labour. Like all Dwarfs they are hardy and resolute fighters unlikely to suffer the dishonour of fleeing, and and well armed and armoured. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#descr "Chaos Dwarf society is strictly heirarchical with many tiers of ascending power and diminishing size, mirroring the mighty ziggurats that dominate their homeland. Amongst Chaos Dwarfs the Warrior caste is a position of middling importance, holding status above craftsmen and civilians, but well below smiths or inductees into cult of Hashut. Still, Warriors are invaluable as it is they who venture forth to conquer and enslave, feeding the endless hunger of their society for disposable labour. Like all Dwarfs they are hardy and resolute fighters unlikely to suffer the dishonour of fleeing, and and well armed and Armored. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
 #hp 13 --- toughness 4
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15286,7 +15291,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Blunderbuss.tga"
 #spr2 "./Warhammer-Complete/Blunderbuss2.tga"
 #name "Chaos Dwarf Blunderbuss"
-#descr "The Chaos Dwarfs have created a great many weapons of war, with most being as cruel and dangerous as their makers. The best known of these and most widely used amongst their kind is the blunderbuss, a vicious device capable of belching forth a hail of stone or metal shards. The exact alchemical formula used to create the explosive black tar used to propel this flesh-shredding shrapnel is a closely guarded secret, though the Chaos Dwarfs have been known to sell barrels of it to ogre warbands in exchange for slaves. The blunderbuss is best used against packed formations of lesser enemies, particularly those that lack shields or decent armour, as it is neither accurate nor long ranged. Unlike the archers of weaker nations, the Chaos Dwarfs entrusted with these weapons are well armoured and capable melee fighters. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#descr "The Chaos Dwarfs have created a great many weapons of war, with most being as cruel and dangerous as their makers. The best known of these and most widely used amongst their kind is the blunderbuss, a vicious device capable of belching forth a hail of stone or metal shards. The exact alchemical formula used to create the explosive black tar used to propel this flesh-shredding shrapnel is a closely guarded secret, though the Chaos Dwarfs have been known to sell barrels of it to ogre warbands in exchange for slaves. The blunderbuss is best used against packed formations of lesser enemies, particularly those that lack shields or decent Armor, as it is neither accurate nor long ranged. Unlike the archers of weaker nations, the Chaos Dwarfs entrusted with these weapons are well Armored and capable melee fighters. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
 #hp 13 --- toughness 4
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15326,7 +15331,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Crossbow.tga"
 #spr2 "./Warhammer-Complete/Crossbow2.tga"
 #name "Chaos Dwarf Crossbowman"
-#descr "The crossbow is a traditional weapon of war for all dwarfs, and the Chaos Dwarfs are no exception in this regard. No matter what hideously destructive devices the Daemonsmiths, metalworkers, or alchemists create in the hellish forges of Zharr Naggrund, none will ever truly replace the crossbow. Much like their cousins to the west the children of Hashut regard the crossbows made by lesser races with contempt, for theirs are of considerably better craftsmanship and can propel heavier bolts just as far. Chaos Dwarf crossbowmen wear slightly lighter armour than their comrades and favour traditional hats with more fabric and less iron, as they are more likely to have to stand watch over slaves for prolonged periods and as such do make certain concessions to comfort. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
+#descr "The crossbow is a traditional weapon of war for all dwarfs, and the Chaos Dwarfs are no exception in this regard. No matter what hideously destructive devices the Daemonsmiths, metalworkers, or alchemists create in the hellish forges of Zharr Naggrund, none will ever truly replace the crossbow. Much like their cousins to the west the children of Hashut regard the crossbows made by lesser races with contempt, for theirs are of considerably better craftsmanship and can propel heavier bolts just as far. Chaos Dwarf crossbowmen wear slightly lighter Armor than their comrades and favour traditional hats with more fabric and less iron, as they are more likely to have to stand watch over slaves for prolonged periods and as such do make certain concessions to comfort. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins."
 #hp 13 --- toughness 4
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15365,7 +15370,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Infernal_Guard.tga"
 #spr2 "./Warhammer-Complete/Infernal_Guard2.tga"
 #name "Infernal Guard"
-#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear armour forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear Armor forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
 #hp 14 --- toughness 4, description makes them sound even tougher
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15407,7 +15412,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Infernal_Fireglaive.tga"
 #spr2 "./Warhammer-Complete/Infernal_Fireglaive2.tga"
 #name "Infernal Fireglaive"
-#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear armour forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. The Fireglaive is a hellish weapon used exclusively by the Infernal Guard; a hollow-tubed polearm which issues forth gouts of flame at the twist of a handle. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#descr "So strict is Chaos Dwarf society that to deviate even fractionally from the established norms is to invite condemnation and censure of the most brutal kind. Even happening to serve under a Sorcerer Lord whose relentless ambition has caused him to fall out of favour with his peers may be enough to condemn a warrior to a fate worse than death. Chaos Dwarfs who are dishonoured are stripped of their identity and banished to the ranks of the Infernal Guard. From here on they have no status and are mourned as if dead by their clan, their names struck from all record, and their faces sealed behind faceless helms, heated until glowing red before being seared directly to flesh. The Infernal Guard have no lives save battle and no hope but to somehow lessen the shame they have brought to their clan through near suicidal bravery in war. These heavy infantry wear Armor forged by the Daemonsmiths to provide extreme protection and enchanted to resist fire. Even amongst the Chaos Dwarfs they are known to be particularly resistant to magic. The Fireglaive is a hellish weapon used exclusively by the Infernal Guard; a hollow-tubed polearm which issues forth gouts of flame at the twist of a handle. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
 #hp 14 --- toughness 4, description makes them sound even tougher
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15448,7 +15453,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Infernal_Chosen.tga"
 #spr2 "./Warhammer-Complete/Infernal_Chosen2.tga"
 #name "Infernal Chosen"
-#descr "While the vast majority of the Infernal Guard were condemned to service by their peers for public dishonour or a dramatic fall in the fortunes of their master, there are a rare few who join of their own volition. These are Dwarfs who cannot stand some secret shame, some stain to their honour which they can neither repair nor abide, even if it is known only to them. For these Dwarfs it is their sacred duty to join, for in Chaos Dwarf society even death is no escape from true dishonour, unless of course that death is found in the anonymous ranks of the Infernal Guard. The Chosen are stripped of their identity and sealed in their armour just like the condemned, but unlike their fellows their sacrifice is honoured by the Horns of Hashut on their helms, and they are armed with a pair of glowing forge axes fashioned by the Daemonsmiths to sear the foe with every slash. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#descr "While the vast majority of the Infernal Guard were condemned to service by their peers for public dishonour or a dramatic fall in the fortunes of their master, there are a rare few who join of their own volition. These are Dwarfs who cannot stand some secret shame, some stain to their honour which they can neither repair nor abide, even if it is known only to them. For these Dwarfs it is their sacred duty to join, for in Chaos Dwarf society even death is no escape from true dishonour, unless of course that death is found in the anonymous ranks of the Infernal Guard. The Chosen are stripped of their identity and sealed in their Armor just like the condemned, but unlike their fellows their sacrifice is honoured by the Horns of Hashut on their helms, and they are armed with a pair of glowing forge axes fashioned by the Daemonsmiths to sear the foe with every slash. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
 #hp 14 --- toughness 4, description makes them sound even tougher
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -15732,7 +15737,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Slave_Goblin_War.tga"
 #spr2 "./Warhammer-Complete/Slave_Goblin_War2.tga"
 #name "Goblin Warslave"
-#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and armour, though nothing that would present much danger to the Chaos Dwarf legions."
+#descr "Most numerous of all the slaves held by the Chaos Dwarfs are the goblins. Vast numbers are taken from the tribes of the Darklands each year, and once captured there is little hope of escape. Goblins are amongst the smallest of the greenskin subraces and by far the most common. They possess devious minds though they are both cowardly and easily distracted in addition to being physically quite weak, especially compared with orcs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and Armor, though nothing that would present much danger to the Chaos Dwarf legions."
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3, size 2
@@ -15799,7 +15804,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Slave_Orc_War.tga"
 #spr2 "./Warhammer-Complete/Slave_Orc_War2.tga"
 #name "Orc Warslave"
-#descr "Orcs bought or enslaved from tribes across the Darklands and surrounding mountains are used as slaves throughout the Chaos Dwarf empire. Their brute strength, toughness, and recuperative abilities make them equally excellent labour in the pits and slave warriors on the battlefield. Orcs are heavily muscled creatures with thick bones and small brains who respect nothing more than power and like little more than to fight, even with each other. Even having been enslaved, orcs are still willing combatants, much preferring to meet their end in combat rather than in some mining accident. Orc physiology is unusual in that over time they can recover from almost any wound, even growing back missing limbs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and armour, though nothing that would present much danger to the Chaos Dwarf legions."
+#descr "Orcs bought or enslaved from tribes across the Darklands and surrounding mountains are used as slaves throughout the Chaos Dwarf empire. Their brute strength, toughness, and recuperative abilities make them equally excellent labour in the pits and slave warriors on the battlefield. Orcs are heavily muscled creatures with thick bones and small brains who respect nothing more than power and like little more than to fight, even with each other. Even having been enslaved, orcs are still willing combatants, much preferring to meet their end in combat rather than in some mining accident. Orc physiology is unusual in that over time they can recover from almost any wound, even growing back missing limbs. Some slaves are taken and equipped specifically for use in the military rather than being hastily pressed from the countless numbers toiling in the mines. They are given rudimentary arms and Armor, though nothing that would present much danger to the Chaos Dwarf legions."
 #hp 14 --- toughness 4
 #size 2 --- normal
 #prot 4 --- toughness 4
@@ -15857,7 +15862,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #startaff 80 -- they are in terrible condition
 #end
 
----- Ogre Forgeslave - hammer, some armour
+---- Ogre Forgeslave - hammer, some Armor
 
 #newmonster 7860
 #spr1 "./Warhammer-Complete/Slave_Ogre.tga"
@@ -16060,7 +16065,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Immortal.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
 #name "Immortal"
-#descr "The Immortals are an elite military formation amongst the Chaos Dwarfs. They are drawn from the warrior caste but not serve any particular Sorcerer Lord. Instead especially skilled warriors are sent by their Overlords to serve in the Immortals for a period of seven years, usually in exchange for political favour. The Immortals receive extensive additional training and are outfitted with incredibly ornate gold and black steel plate armour, thick shields, and superbly smithed weaponry. So prepared, they act as an elite guard to the Sorcerer Lords, assigned according to a vote by the conclave of the Great Temple of Hashut, typically to Sorcerer Lords who have recently done great service to the Cult, or hold particular power at the time. The Immortals are forbidden to show fear to the enemy and the faces of their helms are handcrafted as placid golden visages of the Dwarf beneath, calmly regarding the carnage of the battlefield at all times."
+#descr "The Immortals are an elite military formation amongst the Chaos Dwarfs. They are drawn from the warrior caste but not serve any particular Sorcerer Lord. Instead especially skilled warriors are sent by their Overlords to serve in the Immortals for a period of seven years, usually in exchange for political favour. The Immortals receive extensive additional training and are outfitted with incredibly ornate gold and black steel plate Armor, thick shields, and superbly smithed weaponry. So prepared, they act as an elite guard to the Sorcerer Lords, assigned according to a vote by the conclave of the Great Temple of Hashut, typically to Sorcerer Lords who have recently done great service to the Cult, or hold particular power at the time. The Immortals are forbidden to show fear to the enemy and the faces of their helms are handcrafted as placid golden visages of the Dwarf beneath, calmly regarding the carnage of the battlefield at all times."
 #hp 14 --- toughness 4, description makes them sound even tougher
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -16101,7 +16106,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Acolyte.tga"
 #spr2 "./Warhammer-Complete/Acolyte2.tga"
 #name "Acolyte of Hashut"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those who never develop in sorcerous skill beyond the lowest levels are trained as Acolytes and serve as holy warriors of cult, hurling rudimentary and unfocused fire evocations at the foe. The Acolytes are skilled enough with their glaives but lack the heavy armour typical amongst the legions and are best protected from prolonged melee. Being holy warriors of the god of Darkness, Acolytes are expected to be able to fight in near pitch black conditions, for they are tasked with protecting summoning circles during the most dire of the rituals performed by the Cult. The mild sorcerous talent of the Acolytes grants them additional resistance to enemy magics."
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those who never develop in sorcerous skill beyond the lowest levels are trained as Acolytes and serve as holy warriors of cult, hurling rudimentary and unfocused fire evocations at the foe. The Acolytes are skilled enough with their glaives but lack the heavy Armor typical amongst the legions and are best protected from prolonged melee. Being holy warriors of the god of Darkness, Acolytes are expected to be able to fight in near pitch black conditions, for they are tasked with protecting summoning circles during the most dire of the rituals performed by the Cult. The mild sorcerous talent of the Acolytes grants them additional resistance to enemy magics."
 #hp 13 --- toughness 4
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -16136,7 +16141,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #end
 
 
----- Slave giant - like ogre one, more armour and weapons
+---- Slave giant - like ogre one, more Armor and weapons
 
 #newmonster 7867
 #spr1 "./Warhammer-Complete/Slavegiant.tga"
@@ -16413,7 +16418,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Infernal_Deathmask.tga"
 #spr2 "./Warhammer-Complete/Infernal_Deathmask2.tga"
 #name "Infernal Deathmask"
-#descr "Deathmasks are members of the Infernal Guard who have, through suicidal bravery in combat, earned the right to have their helm removed. The process of removing the helm is nearly as painful as the process of sealing the dishonoured dwarf in his armour, for his flesh is usually fused with the metal. Many do not survive, but for the Infernal Guard this is their only hope. Upon being unsealed they are given a new identity and while they can never leave the Infernal Guard or undo their dishonour entirely, they are recognised once more as having a status equivalent to that of a member of the lowest caste of Chaos Dwarf. Deathmasks lead their fellows into battle, seeking to inspire them with the hope of going through the unsealing process and becoming dwarfs once more. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
+#descr "Deathmasks are members of the Infernal Guard who have, through suicidal bravery in combat, earned the right to have their helm removed. The process of removing the helm is nearly as painful as the process of sealing the dishonoured dwarf in his Armor, for his flesh is usually fused with the metal. Many do not survive, but for the Infernal Guard this is their only hope. Upon being unsealed they are given a new identity and while they can never leave the Infernal Guard or undo their dishonour entirely, they are recognised once more as having a status equivalent to that of a member of the lowest caste of Chaos Dwarf. Deathmasks lead their fellows into battle, seeking to inspire them with the hope of going through the unsealing process and becoming dwarfs once more. Members of the Infernal Guard can only be recruited when a Daemonsmith is present."
 #hp 23 --- toughness 5, 2 wounds
 #size 2 --- yep, they aren't that small
 #prot 7 --- toughness 5, description makes them sound even tougher
@@ -16457,7 +16462,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Bull_Centaur_Ancient.tga"
 #spr2 "./Warhammer-Complete/Bull_Centaur_Ancient2.tga"
 #name "Bull Centaur Ancient"
-#descr "Bull Centaurs are creatures with the upper torso of a Chaos Dwarf but the body of a ferocious bull. Many centuries ago, when their kind was first twisted by Chaos, some Chaos Dwarfs were transformed into Bull Centaurs, creating a revered subrace of fast moving warriors. Since those days the Bull Centaurs have guarded the great temples of Hashut and the central Tower of Zharr-Naggrund. The eldest of the Bull Centaurs, known as Ancients, have been blessed with a lifespan beyond those of their fellows and are marked as the chosen of Hashut, his will made manifest. They consider themselves executioners of sorts and proudly display trophy skulls of slave revolt leaders, dangerous ogres, or disloyal Chaos Dwarfs. Even beneath their finely crafted armour their hide is extremely tough, and they have been gifted considerable resistance to fire through their zealous worship of Hashut. Though they could easily trample smaller foes underhoof they instead prefer to strike with their huge crescent axes and have even been known to grab foes and impale them on their prodigious tusks or horns."
+#descr "Bull Centaurs are creatures with the upper torso of a Chaos Dwarf but the body of a ferocious bull. Many centuries ago, when their kind was first twisted by Chaos, some Chaos Dwarfs were transformed into Bull Centaurs, creating a revered subrace of fast moving warriors. Since those days the Bull Centaurs have guarded the great temples of Hashut and the central Tower of Zharr-Naggrund. The eldest of the Bull Centaurs, known as Ancients, have been blessed with a lifespan beyond those of their fellows and are marked as the chosen of Hashut, his will made manifest. They consider themselves executioners of sorts and proudly display trophy skulls of slave revolt leaders, dangerous ogres, or disloyal Chaos Dwarfs. Even beneath their finely crafted Armor their hide is extremely tough, and they have been gifted considerable resistance to fire through their zealous worship of Hashut. Though they could easily trample smaller foes underhoof they instead prefer to strike with their huge crescent axes and have even been known to grab foes and impale them on their prodigious tusks or horns."
 #hp 70 --- toughness 5, wounds 4, size 5
 #size 5 --- as much mass as a melqart
 #prot 8 --- toughness 5, size 5, scaly skin 6+
@@ -16498,12 +16503,12 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr1 "./Warhammer-Complete/Daemonsmith.tga"
 #spr2 "./Warhammer-Complete/Daemonsmith2.tga"
 #name "Daemonsmith"
-#descr "Daemonsmiths are members of the Cult of Hashut who showed talent for binding and controlling demonic essence at an early age. These young dwarfs are taken out of the training which results in Acolytes, Pyrophants, and members of the Sorcerous caste, and instead sent to learn in the secret forges deep below Zharr-Naggrund. The order of Daemonsmiths guard their techniques jealously even from the Sorcerers, and their talents are integral to the advancement of the Chaos Dwarf race. It is the Daemonsmiths who create and maintain the great daemonic machinery which delivers steam power across the capital, it is they who oversee the forging of arms and armour, and it is they alone who can create, apply, and enchant Infernal armour. Indeed, without them there would be no Infernal Guard at all. Daemonsmiths are excellent at forging magical items but are inefficient researchers or battle mages and while members of the Cult of Hashut they have received no priestly training. Each Daemonsmith increases the resources available when present at a fort and allows the recruitment of Infernal Guard."
+#descr "Daemonsmiths are members of the Cult of Hashut who showed talent for binding and controlling demonic essence at an early age. These young dwarfs are taken out of the training which results in Acolytes, Pyrophants, and members of the Sorcerous caste, and instead sent to learn in the secret forges deep below Zharr-Naggrund. The order of Daemonsmiths guard their techniques jealously even from the Sorcerers, and their talents are integral to the advancement of the Chaos Dwarf race. It is the Daemonsmiths who create and maintain the great daemonic machinery which delivers steam power across the capital, it is they who oversee the forging of arms and Armor, and it is they alone who can create, apply, and enchant Infernal Armor. Indeed, without them there would be no Infernal Guard at all. Daemonsmiths are excellent at forging magical items but are inefficient researchers or battle mages and while members of the Cult of Hashut they have received no priestly training. Each Daemonsmith increases the resources available when present at a fort and allows the recruitment of Infernal Guard."
 #hp 13 --- toughness 4, mage so wounds don't add
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
 #mor 13 --- leadership 9
-#mr 15 --- not a great mage, but has special armour and is basically an infernal
+#mr 15 --- not a great mage, but has special Armor and is basically an infernal
 #enc 2 --- Dwarfs are known for their stamina
 #str 11 --- slightly stronger than human
 #att 11 --- weaponskill 4, but initiative 2
@@ -16768,10 +16773,10 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #homemon 7867 -- Slavegiant
 #end
 
---- The Black Armoury
+--- The Black Armory
 
 #newsite 1909
-#name "The Black Armoury"
+#name "The Black Armory"
 #path 0
 #level 0
 #rarity 5
@@ -17046,7 +17051,7 @@ Priests: Powerful.
 Mechanics: Get free outpost fortresses where they have a temple, lab, and positive dominion."
 #flag "./Warhammer-Complete/ChaosDwarfsflag.tga"
 #templepic 14 -- mayan aka ziggurat
-#startsite "The Black Armoury"
+#startsite "The Black Armory"
 #startsite "Temple of Hashut"
 #startsite "Forges in the Deep"
 #startsite "Tower of Zharr"
@@ -17062,6 +17067,8 @@ Mechanics: Get free outpost fortresses where they have a temple, lab, and positi
 
 ----- Pretender settings
 
+#homerealm 1
+#homerealm 3
 #addgod 120 -- Moloch
 #addgod 159 -- monument
 #addgod 216 -- red dragon
@@ -17655,7 +17662,7 @@ Still to do
 #slash
 #end
 
--------- New Armour
+-------- New Armor
 
 
 #newarmor
@@ -17953,7 +17960,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Kroxigor.tga"
 #spr2 "./Warhammer-Complete/Kroxigor2.tga"
 #name "Kroxigor"
-#descr "The Kroxigor are giant cousins of the Saurus, bred for their brute strength and power. This raw power has come at the cost of the intellect of their smaller fellows, however. Kroxigor are given heavy weapons with which they smash their foes in battle, dealing collossal damage. As with the Saurus they are also more than capable of killing with their razor sharp teeth. The scaly skin of the Kroxigor is capable of deflecting even axe and sword blows and they are notoriously hard to kill. They are best employed against large foes or heavily armoured enemy elites and will not fare so well against a throng of lesser foes."
+#descr "The Kroxigor are giant cousins of the Saurus, bred for their brute strength and power. This raw power has come at the cost of the intellect of their smaller fellows, however. Kroxigor are given heavy weapons with which they smash their foes in battle, dealing collossal damage. As with the Saurus they are also more than capable of killing with their razor sharp teeth. The scaly skin of the Kroxigor is capable of deflecting even axe and sword blows and they are notoriously hard to kill. They are best employed against large foes or heavily Armored enemy elites and will not fare so well against a throng of lesser foes."
 #hp 30
 #size 3
 #prot 15
@@ -18060,7 +18067,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Razordon.tga"
 #spr2 "./Warhammer-Complete/Razordon2.tga"
 #name "Razordon"
-#descr "Like Salamanders, Razordons are deadly predators that inhabit the swamplands of the jungles. They prey on the various giant insects which swarm across their territory, particularly relishing the taste of the horse-sized Bale Wasp. The Razordon's favoured method of hunting is to wait in the mire with only its nostrils poking out then ambush its prey by suddenly convulsing, lashing its tail forward and launching a deadly volley of barbed spines. The Razordon then springs forth to crush its prey in its powerful jaws and swallow great hunks of it down whole. Skink handlers have learned to harness these aggressive but stealthy creatures in war, where their barbs are as deadly as crossbow bolts and their thick spined hide as tough as armour. Unlike their fire breathing cousins Razordons are not truly amphibious and are poor swimmers limited to hiding in shallow swampwater."
+#descr "Like Salamanders, Razordons are deadly predators that inhabit the swamplands of the jungles. They prey on the various giant insects which swarm across their territory, particularly relishing the taste of the horse-sized Bale Wasp. The Razordon's favoured method of hunting is to wait in the mire with only its nostrils poking out then ambush its prey by suddenly convulsing, lashing its tail forward and launching a deadly volley of barbed spines. The Razordon then springs forth to crush its prey in its powerful jaws and swallow great hunks of it down whole. Skink handlers have learned to harness these aggressive but stealthy creatures in war, where their barbs are as deadly as crossbow bolts and their thick spined hide as tough as Armor. Unlike their fire breathing cousins Razordons are not truly amphibious and are poor swimmers limited to hiding in shallow swampwater."
 #hp 30
 #size 3
 #prot 14
@@ -18098,7 +18105,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Temple Guard.tga"
 #spr2 "./Warhammer-Complete/Temple Guard2.tga"
 #name "Temple Guard"
-#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. The Temple Guard are a variant spawning of Saurus created to protect the Slann at all costs. They have more heavily armoured scales than other Saurus and instinctually possess an unshakeable resolve to guard their masters. Temple Guard are rarely spawned in these troubled times and most of their number are the veterans of countless battles, grown stronger and more savage with age. The Temple Guard will remain dormant and may not be recruited absent the presence of an awakened Slann. It would take an incredible feat to cause the Temple Guard to break from battle. The obsinite halberds used by Temple Guard are as ancient as the Slann and have absorbed much latent magic over the centuries."
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. The Temple Guard are a variant spawning of Saurus created to protect the Slann at all costs. They have more heavily Armored scales than other Saurus and instinctually possess an unshakeable resolve to guard their masters. Temple Guard are rarely spawned in these troubled times and most of their number are the veterans of countless battles, grown stronger and more savage with age. The Temple Guard will remain dormant and may not be recruited absent the presence of an awakened Slann. It would take an incredible feat to cause the Temple Guard to break from battle. The obsinite halberds used by Temple Guard are as ancient as the Slann and have absorbed much latent magic over the centuries."
 #hp 16
 #size 2
 #prot 10
@@ -18326,7 +18333,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Ripperdactyl Rider.tga"
 #spr2 "./Warhammer-Complete/Ripperdactyl Rider2.tga"
 #name "Ripperdactyl Rider"
-#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. While Terradons are quite readily trained as mounts Ripperdactyls see Skinks as nothing more than a snack and even those hand-raised from hatchlings often kill their masters. For this reason those Skinks who do succeed in controlling their mount tend to be a hardier more aggressive breed. Ripperdactyl Riders are armed and armoured for prolonged close combat unlike their skirmishing counterparts, but in truth it is the Ripperdactyl with its crushing jaws and decapitating talons that is the true weapon in the pairing."
+#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. While Terradons are quite readily trained as mounts Ripperdactyls see Skinks as nothing more than a snack and even those hand-raised from hatchlings often kill their masters. For this reason those Skinks who do succeed in controlling their mount tend to be a hardier more aggressive breed. Ripperdactyl Riders are armed and Armored for prolonged close combat unlike their skirmishing counterparts, but in truth it is the Ripperdactyl with its crushing jaws and decapitating talons that is the true weapon in the pairing."
 #hp 10
 #size 3
 #prot 9
@@ -18370,7 +18377,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Ripperdactyl.tga"
 #spr2 "./Warhammer-Complete/Ripperdactyl2.tga"
 #name "Ripperdactyl"
-#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. With their crushing jaws and decapitating talons Ripperdactyls are a deadly threat to even armoured foes and they are known to kill for the joy of slaughter rather than to feed."
+#descr "Ripperdactyls are incredibly aggressive aerial predators which roost in cliff-side lairs, descending on the jungle in flocks to tear prey as large as Stegadons to pieces in a feeding frenzy. With their crushing jaws and decapitating talons Ripperdactyls are a deadly threat to even Armored foes and they are known to kill for the joy of slaughter rather than to feed."
 #hp 19
 #size 3
 #prot 13
@@ -18411,7 +18418,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Stegadon.tga"
 #spr2 "./Warhammer-Complete/Stegadon2.tga"
 #name "Stegadon"
-#descr "The hostile jungles of Lustria are home to a phenomenal array of creatures, almost all deadly in their own fashion. Stegadons are among the largest and most aggressive of all. Gigantic, armoured beasts, they are primarily vegetarians, but not adverse to dining on those creatures foolish enough to stand in their path. Their strength is legendary, enough to uproot trees and, properly directed, help erect the great stone momuments of the Lizardmen. With sharp horns, ridges of spikes and a spined tail capable of cracking rocks, Stegadons are virtually unstoppable in battle by conventional means. Skink warchiefs have large howdahs strapped to these beasts and a crew of hunters fire upon the enemy with bows and javelins as the Stegadon charges forward."
+#descr "The hostile jungles of Lustria are home to a phenomenal array of creatures, almost all deadly in their own fashion. Stegadons are among the largest and most aggressive of all. Gigantic, Armored beasts, they are primarily vegetarians, but not adverse to dining on those creatures foolish enough to stand in their path. Their strength is legendary, enough to uproot trees and, properly directed, help erect the great stone momuments of the Lizardmen. With sharp horns, ridges of spikes and a spined tail capable of cracking rocks, Stegadons are virtually unstoppable in battle by conventional means. Skink warchiefs have large howdahs strapped to these beasts and a crew of hunters fire upon the enemy with bows and javelins as the Stegadon charges forward."
 #hp 80
 #size 6
 #prot 18
@@ -19192,7 +19199,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Spinescale Quetzl.tga"
 #spr2 "./Warhammer-Complete/Spinescale Quetzl2.tga"
 #name "Spinescale of Quetzl"
-#descr "Those Saurus spawned under the influence of the protector god Quetzl are tough and warlike, covered with bony protusions and thick layers of extra scales. The Spinescales are particularly heavily armoured, known for their ability to wade into ranks of enemy troops, shatter their formations and emerge unscathed. They specialise in dealing with the throngs of lesser infantry often arrayed against Itza, lashing out with their spined tails both in melee and at range, where their spontaneously shed spines act as lethal projectiles."
+#descr "Those Saurus spawned under the influence of the protector god Quetzl are tough and warlike, covered with bony protusions and thick layers of extra scales. The Spinescales are particularly heavily Armored, known for their ability to wade into ranks of enemy troops, shatter their formations and emerge unscathed. They specialise in dealing with the throngs of lesser infantry often arrayed against Itza, lashing out with their spined tails both in melee and at range, where their spontaneously shed spines act as lethal projectiles."
 #hp 23
 #size 3
 #prot 22
@@ -20464,7 +20471,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Hero Tiktaqto.tga"
 #spr2 "./Warhammer-Complete/Hero Tiktaqto2.tga"
 #name "Master of Skies"
-#descr "Tiktaqto is Master of Skies, one of the greatest of the Skink Chiefs and answers only to the Slann themselves. He is a master of strategy and has never been defeated in battle, seemingly instinctually aware of the perfect time and place to strike with his Terradon riders. Tiktaqto swoops into battle mounted on his particularly large and fearsome Terradon, Zwup, the two fighting as one in perfct harmony. The Master of Skies is granted two powerful artifacts by the Mage Priests; the Mask of Heavens and the Blade of Ancient Skies. The Mask grants Tiktaqto power over the air itself and provides protection against both enemy missiles and hostile magic. The Blade is constructed from the jawbone of an ancient aerial predator and has been enchanted to bite deep through almost any armour."
+#descr "Tiktaqto is Master of Skies, one of the greatest of the Skink Chiefs and answers only to the Slann themselves. He is a master of strategy and has never been defeated in battle, seemingly instinctually aware of the perfect time and place to strike with his Terradon riders. Tiktaqto swoops into battle mounted on his particularly large and fearsome Terradon, Zwup, the two fighting as one in perfct harmony. The Master of Skies is granted two powerful artifacts by the Mage Priests; the Mask of Heavens and the Blade of Ancient Skies. The Mask grants Tiktaqto power over the air itself and provides protection against both enemy missiles and hostile magic. The Blade is constructed from the jawbone of an ancient aerial predator and has been enchanted to bite deep through almost any Armor."
 #hp 35
 #size 3
 #prot 11
@@ -21184,7 +21191,7 @@ Still to do
 --secondarypath
 --secondarylevel
 #name "Piranha Blade"
-#descr "Piranha Blades gained their name for their ability to shred victims to bloody tatters. Like its namesake, this weapon has thousands of tiny barbed teeth that rip and tear anything they touch. Just as the many-toothed fish is able to saw through the hide of a Stegadon, so too will a Piranha Blade rasp through armour and carve up an opponent."
+#descr "Piranha Blades gained their name for their ability to shred victims to bloody tatters. Like its namesake, this weapon has thousands of tiny barbed teeth that rip and tear anything they touch. Just as the many-toothed fish is able to saw through the hide of a Stegadon, so too will a Piranha Blade rasp through Armor and carve up an opponent."
 #type 1 -- one handed weapon
 #restricted 145
 #weapon "Piranha Blade" -- piranha blade
@@ -21528,7 +21535,7 @@ Priests: Very Powerful."
 
 -- removed most of the special "high elf" weapons (no longer extra length)
 
--- All High Elves given #formationfighter 1 to account for their martial prowess
+-- All High Elves given #formationfighter 2 to account for their martial prowess
 
 -- High elves given #merccost 25	(mercs 25% more expensive)
 
@@ -21623,19 +21630,31 @@ Priests: Very Powerful."
 #end
 
 #newweapon 
-#name "Great Sword of Hoeth"
+#name "Greatsword of Hoeth"
 #dmg 9
 #att 1
 #def 2
 #len 4
 #rcost 5
-#nratt 2	- only usable by Swordmasters
+#nratt 1	
 #sound 8
 #twohanded
 #slash
 #pierce
 #end
 
+#newweapon
+#name "Longsword of Hoeth"
+#dmg 9
+#att 1
+#def 2
+#len 4
+#rcost 5
+#nratt 2	- only usable by Loremasters
+#sound 8
+#slash
+#pierce
+#end
 
 #newweapon 
 #name "Ceremonial Halberd"
@@ -21666,12 +21685,12 @@ Priests: Very Powerful."
 
 #newweapon 
 #name "Dragon Lance"
-#dmg 6
+#dmg 8
 #att 1
-#def 0
+#def 1
 #len 4
 #rcost 2
-#nratt 2
+#nratt 1
 #bonus
 #charge
 #sound 12
@@ -21768,19 +21787,6 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon
-#name "Longsword of Hoeth"
-#dmg 9
-#att 1
-#def 2
-#len 4
-#rcost 5
-#nratt 2	- only usable by Loremasters
-#sound 8
-#slash
-#pierce
-#end
-
 #newweapon 
 #name "Chayal"
 #dmg 20
@@ -21821,7 +21827,7 @@ Priests: Very Powerful."
 
 ///////////////// New armor \\\\\\\\\\\\\\\\\\\\
 
---newarmor 356
+--newarmor
 --name "White Lion Cloak"
 --rcost 0
 --type 4	Shield
@@ -21830,85 +21836,74 @@ Priests: Very Powerful."
 --def 2
 --end
 
-#newarmor 293
+#newarmor
 #name "Phoenix Ward"
 #rcost 0
 #type 4	-Shield
 #enc 0
-#prot 100
+#prot 30
 #def 4
+#magic
 #end
 
-#newarmor 294
-#name "Dodge"
-#rcost 0
-#type 4	-Shield
-#enc 0
-#prot 100
-#def 2
-#end
-
-#newarmor 295
-#name "Dragon Armour"
+#newarmor
+#name "Dragon Armor"
 #rcost 30
-#type 5	-Armor
+#type 5	-- Armor
 #enc 2
 #prot 18
-#def -2
+#def -1
+#magic
 #end
 
-#newarmor 296
+#newarmor
 #name "Dragon Helmet"
 #rcost 7
-#type 6	-Helmet
-#enc 0
+#type 6	-- Helmet
 #prot 20
+#enc 0
 #def 0
+#magic
 #end
 
-#newarmor 297
+#newarmor
 #name "Phoenix Armor"
 #rcost 20
 #type 5	-Armor
 #enc 1
 #prot 14
 #def -2
+#magic
 #end
 
-#newarmor 298
+#newarmor
 #name "The Shadow Crown"
 #rcost 0
 #type 6	-Helmet
 #enc -1
 #prot 12
 #def 2
+#magic
 #end
 
---newarmor 363
+--newarmor
 --name "Stone of Midnight"
 --rcost 0
 --type 4	Shield
 --enc 0
 --prot 0
 --def 2
+--magic
 --end
 
-#newarmor 299
-#name "Deflection"
-#rcost 0
-#type 4	-Shield
-#enc 0
-#prot 10
-#def 3
-#end
-
-#newarmor 292
+#newarmor
 #name "Pelt of Charandis"
 #rcost 0
 #type 5	-Armor
 #enc 0
 #prot 3
 #def 0
+#magic
 #end
 
 
@@ -21943,10 +21938,10 @@ Priests: Very Powerful."
 #gcost 15
 #rpcost 15000
 #rcost 1
-#mapmove 2
+#mapmove 16
 #startage 101
 #maxage 2000
-#formationfighter 1
+#formationfighter 2
 #diseaseres 75
 #end
 
@@ -21968,7 +21963,6 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 16
 #rpcost 16000
-#mapmove 2
 #maxage 2000
 #end
 
@@ -21990,7 +21984,6 @@ Priests: Very Powerful."
 #armor "Iron Cap"
 #gcost 15
 #rpcost 15000
-#mapmove 2
 #maxage 2000
 #end
 
@@ -22012,7 +22005,6 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 23
 #rpcost 23000
-#mapmove 2
 #maxage 2000
 #end
 
@@ -22038,7 +22030,6 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #gcost 29
 #rpcost 29000
-#mapmove 2
 #maxage 2000
 #patrolbonus 1
 #forestsurvival
@@ -22055,26 +22046,25 @@ Priests: Very Powerful."
 #copystats 7500 -- Basestats
 #spr1 "./Warhammer-Complete/Swordmaster1.tga"
 #spr2 "./Warhammer-Complete/Swordmaster2.tga"
-#name "Sword Master of Hoeth"
-#descr "The Sword Masters are exemplars of the martial arts, capable of incredible feats of arms. At the White Tower of Hoeth, these ascetic warrior monks train ardously, honing their exceptional agility, mastering every nuance and facet of sword fighting. Each Sword Master has studied warfare and personal combat for decades, often centuries - developing an expertise so incredibly complete that there is no group of warriors that can match them. These devotees of the sword devote themselves to the worship of Hoeth in no lesser manner than those who study High Magic, learning to control their bodies and their minds through meditation and exercise. They wield the Greatswords of Hoeth, elegantly shaped swords, often six or seven feet from the pommel to the grip. Swordmasters are skilled and quick enough to cut and deflect missiles with their blades."
+#name "Swordmaster of Hoeth"
+#descr "The Swordmasters are exemplars of the martial arts, capable of incredible feats of arms. At the White Tower of Hoeth, these ascetic warrior monks train ardously, honing their exceptional agility, mastering every nuance and facet of sword fighting. Each Swordmaster has studied warfare and personal combat for decades, often centuries - developing an expertise so incredibly complete that there is no group of warriors that can match them. These devotees of the sword devote themselves to the worship of Hoeth in no lesser manner than those who study High Magic, learning to control their bodies and their minds through meditation and exercise. They wield the Greatswords of Hoeth, elegantly shaped swords, often six or seven feet from the pommel to the grip. Swordmasters are skilled and quick enough to cut and deflect missiles with their blades."
 #clearweapons
 #cleararmor
 #nametype 172	-Elven names
 #hp 9						--  -5
 #att 15						--  +3
-#def 13						--  +1 +3 deflection
+#def 15						--  +1 +3 deflection
 #mr 13						--  +1	
 #mor 14						--  0
 #str 10						--  -3
-#weapon "Great Sword of Hoeth"
+#weapon "Greatsword of Hoeth"
 #armor "Scale Mail Hauberk"
 #armor "Full Helmet"
-#armor "Deflection"
+#airshield 80
 #gcost 45
 #rpcost 45000
 --#reclimit 5
 #rcost 1
-#mapmove 2
 #maxage 2000
 #holy
 #end
@@ -22086,7 +22076,7 @@ Priests: Very Powerful."
 #spr1 "./Warhammer-Complete/Phoenixguard1.tga"
 #spr2 "./Warhammer-Complete/Phoenixguard2.tga"
 #name "Phoenix Guard"
-#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. Any who look upon them will know the past and the future, and will forever be cursed with knowledge of their own death. The Phoenix Guards do not utter a word, having taken a magical wov to not speak of the secrets of time. Until one has witnessed the Phoenix Guard upon the field of battle, one can not comprehend the power they posses, utterly silent, the air around them shimmering. They are the chosen warriors of their god and sacred. Knowing their fate, they do not flinch from any horror and fight with utter resolve."
+#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. Any who look upon them will know the past and the future, and will forever be cursed with knowledge of their own death. The Phoenix Guards do not utter a word, having taken a magical vow to not speak of the secrets of time. Until one has witnessed the Phoenix Guard upon the field of battle, one can not comprehend the power they posses, utterly silent, the air around them shimmering. They are the chosen warriors of their god and sacred. Knowing their fate, they do not flinch from any horror and fight with utter resolve."
 #clearweapons
 #cleararmor
 #nametype 172	-Elven names
@@ -22103,7 +22093,6 @@ Priests: Very Powerful."
 #rpcost 70000
 --#reclimit 5
 #rcost 1
-#mapmove 2
 #awe 1
 #coldres 4
 #fireres 4
@@ -22136,7 +22125,7 @@ Priests: Very Powerful."
 #rpcost 34000
 #rcost 5
 #ressize 2
-#mapmove 3
+#mapmove 24
 #ap 30
 #mounted
 #maxage 2000
@@ -22152,7 +22141,7 @@ Priests: Very Powerful."
 #spr1 "./Warhammer-Complete/Silverhelm1.tga"
 #spr2 "./Warhammer-Complete/Silverhelm2.tga"
 #name "Silver Helm"
-#descr "While the common citizens of Ulthuan fill the ranks of Spearmen and Archers, the Elven nobles form regiments of Knights. These Elven knights form a powerful part of the armies, mounted upon swift Elven steeds, armoured in hardened steel, and bearing tall lances. They are unparallelled cavalrymen, forming a bond with their horses which borders on a shared mind. They are considered reckless warriors, eager to gain glory through victory, utterly convinced of their own superiority."
+#descr "While the common citizens of Ulthuan fill the ranks of Spearmen and Archers, the Elven nobles form regiments of Knights. These Elven knights form a powerful part of the armies, mounted upon swift Elven steeds, Armored in hardened steel, and bearing tall lances. They are unparallelled cavalrymen, forming a bond with their horses which borders on a shared mind. They are considered reckless warriors, eager to gain glory through victory, utterly convinced of their own superiority."
 #clearweapons
 #cleararmor
 #nametype 172	-Elven names
@@ -22169,7 +22158,7 @@ Priests: Very Powerful."
 #gcost 50
 #rpcost 50000
 #rcost 15
-#mapmove 3
+#mapmove 22
 #ap 25
 #ressize 2
 #mounted
@@ -22190,19 +22179,19 @@ Priests: Very Powerful."
 #size 3
 #enc 4
 #hp 12
-#att 14
+#att 13
 #def 13
 #mr 13
 #mor 14
 #weapon 56 --hoof
 #weapon "Dragon Lance"
-#armor 295	-Dragon Armour
-#armor 296	-Dragon Helmet
+#armor "Dragon Armor"
+#armor "Dragon Helmet"
 #armor "Shield"
 #gcost 75
 #rpcost 75000
 #rcost 20
-#mapmove 3
+#mapmove 22
 #ap 25
 #ressize 2
 #mounted
@@ -22237,7 +22226,7 @@ Priests: Very Powerful."
 #rpcost 60000
 #rcost 15
 #ressize 2
-#mapmove 3
+#mapmove 22
 #ap 20
 #mounted
 #maxage 2000
@@ -22260,7 +22249,7 @@ Priests: Very Powerful."
 #nametype 172	-Elven names
 #hp 9
 #att 14
-#def 13
+#def 15
 #str 10
 #prec 13
 #ap 15
@@ -22271,12 +22260,12 @@ Priests: Very Powerful."
 #weapon "Broad Sword"
 #armor "Scale Mail Cuirass"
 #armor "Iron Cap"
-#armor 294 - Dodge
+#airshield 80
 #gcost 35
 #rpcost 35000
 #rcost 1
 #ambidextrous 3
-#mapmove 3
+#mapmove 20
 #maxage 2000
 #stealthy 35
 #patrolbonus 2
@@ -22302,13 +22291,12 @@ Priests: Very Powerful."
 #weapon "Ballista Bolt"
 #weapon "Repeater Bolts"
 #weapon "Broad Sword"
-#weapon "Broad Sword"
 #armor "Full Scale Mail"
 #armor "Crested Helmet"
-#gcost 200				
+#gcost 150				
 #rpcost 200000
 #rcost 50
-#mapmove 1
+#mapmove 10
 #ap 7
 #ambidextrous 10
 #maxage 2000
@@ -22345,7 +22333,7 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 60
 #rcost 15
-#mapmove 3
+#mapmove 22
 #ap 25
 #ressize 2
 #mounted
@@ -22383,7 +22371,7 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 100	- price?
 #rcost 15
-#mapmove 3
+#mapmove 22
 #ap 25
 #ressize 2
 #reinvigoration 2
@@ -22423,7 +22411,7 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 130	- price?
 #rcost 15
-#mapmove 3
+#mapmove 22
 #ap 22
 #ressize 3
 #inspirational 2
@@ -22602,14 +22590,14 @@ Priests: Very Powerful."
 #nametype 172	-Elven names
 #hp 12
 #att 15
-#def 13
+#def 15
 #prec 14
 #mr 18
 #mor 16
 #weapon "Longsword of Hoeth"
 #armor "Scale Mail Hauberk"
 #armor "Half Helmet"
-#armor "Deflection"
+#airshield 80
 #magicskill 4 2	-astral
 #magicskill 2 2	-water
 #magicskill 1 2	-air
@@ -22621,7 +22609,6 @@ Priests: Very Powerful."
 #masterrit -3
 #researchbonus -4
 #rcost 1
-#mapmove 2
 #maxage 2000
 #holy
 #slowrec
@@ -22697,7 +22684,7 @@ Priests: Very Powerful."
 #spr1 "./Warhammer-Complete/Scout1HE.tga"
 #spr2 "./Warhammer-Complete/Scout2HE.tga"
 #name "Scout"
-#descr "Scouts are the youngest of the High Elves, scouting for enemies when Shadow Warriors are not available to do this duty. They stay out of battle, continuing their training to become Archers. Eager to prove themselves, they serve for free."
+#descr "Scouts are the youngest of the High Elves, scouting for enemies when Shadow Warriors are not available to do this duty. They stay out of battle, continuing their training to become Archers. Eager to prove themselves, they serve for little pay."
 #nametype 172	-Elven names
 #clearweapons
 #cleararmor
@@ -22712,7 +22699,7 @@ Priests: Very Powerful."
 #weapon "Short Bow"
 #armor "Leather Cuirass"
 #armor "Leather Cap"
-#gcost 0
+#gcost 20
 #rcost 1
 #noleader
 #stealthy 25
@@ -22722,7 +22709,7 @@ Priests: Very Powerful."
 -- Drake Master (Dragon Prince Champion)
 
 #newmonster 7516
-#copystats 7500 -- Basestats
+#copystats 7507 -- Silver Helm
 #spr1 "./Warhammer-Complete/Drakemaster1HE.tga"
 #spr2 "./Warhammer-Complete/Drakemaster2HE.tga"
 #name "Drake Master"
@@ -22742,17 +22729,16 @@ Priests: Very Powerful."
 #weapon 56 --hoof
 #weapon "Dragon Lance"
 #weapon "Broad Sword"
-#armor 295	-Dragon Armour
-#armor 296	-Dragon Helmet
+#armor "Dragon Armor"
+#armor "Dragon Helmet"
 #armor "Shield"
 #gcost 130			-- price
 #rcost 20
-#mapmove 3
 #ap 25
 #ressize 2
 #mounted
 #fireres 15
-#custommagic 128 99	-F
+#magicskill 0 1 -- Fire 1
 #maxage 2000
 #end
 
@@ -22783,7 +22769,7 @@ Priests: Very Powerful."
 #armor "Shield"
 #gcost 90
 #rcost 5
-#mapmove 3
+#mapmove 24
 #ap 30
 #ressize 2
 #mounted
@@ -22791,7 +22777,7 @@ Priests: Very Powerful."
 #patrolbonus 5
 #supplybonus 2
 #researchbonus -2
-#custommagic 8192 99	-N
+#magicskill 6 1 -- Nature 1
 #gold 3
 #end
 
@@ -22822,20 +22808,20 @@ Priests: Very Powerful."
 #armor "Scale Mail Cuirass"
 #armor "Half Helmet"
 #armor 294 - Evasion
-#gcost 110
+#gcost 90
 #rcost 1
 #ambidextrous 4
-#mapmove 3
+#mapmove 20
 #maxage 2000
 #stealthy 35
 #patrolbonus 5
 #researchbonus -2
-#custommagic 256 99	-A
+#magicskill 1 1 -- Air 1
 #gold 3
 #end
 
 
--- White Lion Guardian
+-- Guardian of Chrace
 
 #newmonster 7521
 #copystats 7500 -- Basestats
@@ -22857,14 +22843,13 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #gcost 90
 #rcost 1
-#mapmove 2
 #maxage 2000
 #patrolbonus 1
 #researchbonus -2
 #forestsurvival
 #mountainsurvival
 #airshield 20
-#custommagic 8192 99	N
+#magicskill 6 1 -- Nature 1
 #gold 3
 #end
 
@@ -22890,7 +22875,6 @@ Priests: Very Powerful."
 #armor 293 - Phoenix Guard Ward Save
 #gcost 150
 #rcost 1
-#mapmove 2
 #awe 2
 #coldres 4
 #fireres 4
@@ -22928,7 +22912,7 @@ They can lead other birds and animals well."
 #def 13
 #prec 14
 #enc 3
-#mapmove 4
+#mapmove 40
 #ap 8 
 #startage 119
 #maxage 200
@@ -22986,7 +22970,7 @@ They can lead other birds and animals well."
 #rcost 1
 #ambidextrous 5
 #magicskill 1 1	-Air
-#mapmove 3
+#mapmove 20
 #startage 417
 #maxage 2000
 #stealthy 35
@@ -23022,7 +23006,6 @@ They can lead other birds and animals well."
 #armor "Pelt of Charandis"
 #gcost 0
 #rcost 1
-#mapmove 2
 #startage 368
 #maxage 2000
 #patrolbonus 5
@@ -23062,7 +23045,7 @@ They can lead other birds and animals well."
 #mor 30
 #prec 16
 #enc 3
-#mapmove 2
+#mapmove 16
 #ap 14
 #weapon "Magic staff"
 #gcost 10010
@@ -23076,7 +23059,8 @@ They can lead other birds and animals well."
 #maxage 2000
 #goodleader
 #researchbonus 5
-#diseaseres 75
+#diseaseres 100
+#heal
 #allrange 2
 #end
 
@@ -23250,7 +23234,7 @@ They can lead other birds and animals well."
 
 #newspell
 #name "Soul Quench"
-#descr "These bolts of pure magic tear at the souls of those unfortunate to be hit. Armour is no protection against these bolts, but a strong mind is."
+#descr "These bolts of pure magic tear at the souls of those unfortunate to be hit. Armor is no protection against these bolts, but a strong mind is."
 #path 0 4 - Astral
 #path 1 0 - Fire
 #pathlevel 0 2
@@ -23550,7 +23534,9 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ///////////////// PRETENDERS \\\\\\\\\\\\\\\\\\\\
 #cleargods
-
+#homerealm 1
+#homerealm 3
+#noundeadgods
 #addgod 158	-oracle
 #addgod 657 -monolith
 #addgod 216	-red dragon
