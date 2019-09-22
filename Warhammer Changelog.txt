@@ -3,11 +3,12 @@ Domingler notes: remove duplicate IDs starting at 7653 and ending at 7663
 Weapons and armor may need IDs back if DomEnhanced takes the lower ranges
 Should enable WHC AFTER DomEnhanced so dynamic IDs don't get overridden
 Nations went over 199
-Enchant duplicate at 0, 1
+Dome of High Magic and Protective Presence are Enchantments
 
 -- VERSION 1.6 --
-Empire Staging Notes:
+Empire To-Do:
 Cav and some other elite units have really high recpoints, might lower
+Decrease weapon lengths for Dom5
 
 Misc Changes:
 Nation site icons fixed, no more generic mountains for everyone
@@ -28,7 +29,6 @@ Skink and cav combat speeds changed, generally -2
 HIGH ELVES PORT
 Note: spearman and archer (7500 and 7501) used for copystats mixed up
 Check flag - meh, it's fine
-Fix weapon IDs - done
 Check immortality - done
 Look at forts, consider era - it's LA standard
 Check modded onebattlespells - done
