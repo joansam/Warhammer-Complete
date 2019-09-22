@@ -24112,7 +24112,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Warhound (Middenheim)
 
 
-#newmonster 7565
+#newmonster 7883
 #spr1 "./Warhammer-Complete/Midden_Warhound.tga"
 #spr2 "./Warhammer-Complete/Midden_Warhound2.tga"
 #name "Hunting Hound"
@@ -24144,7 +24144,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- State Spearman (Middenheim)
 
 
-#newmonster 7502
+#newmonster 7884
 #spr1 "./Warhammer-Complete/Midden_State Spear.tga"
 #spr2 "./Warhammer-Complete/Midden_State Spear2.tga"
 #name "State Spearman"
@@ -24239,7 +24239,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- State Halberdier (middenheim)
 
 
-#newmonster 7519
+#newmonster 7885
 #spr1 "./Warhammer-Complete/Midden_State Halberdier.tga"
 #spr2 "./Warhammer-Complete/Midden_State Halberdier2.tga"
 #name "State Halberdier"
@@ -24399,7 +24399,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- State Swordsman (Middenheim)
 
 
-#newmonster 7524
+#newmonster 7887
 #spr1 "./Warhammer-Complete/Midden_State Swordsman.tga"
 #spr2 "./Warhammer-Complete/Midden_State Swordsman2.tga"
 #name "State Swordsman"
@@ -24495,7 +24495,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- State Crossbowman (Middenheim)
 
 
-#newmonster 7505
+#newmonster 7888
 #spr1 "./Warhammer-Complete/Midden_State Crossbowman.tga"
 #spr2 "./Warhammer-Complete/Midden_State Crossbowman2.tga"
 #name "State Crossbowman"
@@ -24688,7 +24688,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Archer (middenheim)
 
 
-#newmonster 7518
+#newmonster 7889
 #spr1 "./Warhammer-Complete/Midden_Archer.tga"
 #spr2 "./Warhammer-Complete/Midden_Archer2.tga"
 #name "Archer"
@@ -24719,7 +24719,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Kossar (middenheim)
 
 
-#newmonster 7568
+#newmonster 7890
 #spr1 "./Warhammer-Complete/Midden_Kossar.tga"
 #spr2 "./Warhammer-Complete/Midden_Kossar2.tga"
 #name "Kossar"
@@ -24751,7 +24751,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Huntsman (middenheim)
 
 
-#newmonster 7566
+#newmonster 7891
 #spr1 "./Warhammer-Complete/Midden_Huntsman.tga"
 #spr2 "./Warhammer-Complete/Midden_Huntsman2.tga"
 #name "Huntsman"
@@ -24785,7 +24785,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Free Infantry (Middenheim)
 
 
-#newmonster 7525
+#newmonster 7892
 #spr1 "./Warhammer-Complete/Midden_Free Company.tga"
 #spr2 "./Warhammer-Complete/Midden_Free Company2.tga"
 #name "Free Infantryman"
@@ -24950,7 +24950,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Greatsword (Middenheim)
 
 
-#newmonster 7523
+#newmonster 7893
 #spr1 "./Warhammer-Complete/Midden_Greatsword.tga"
 #spr2 "./Warhammer-Complete/Midden_Greatsword2.tga"
 #name "Greatsword"
@@ -25017,7 +25017,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Teutogen Guard
 
 
-#newmonster 7564
+#newmonster 7894
 #spr1 "./Warhammer-Complete/Teutogen.tga"
 #spr2 "./Warhammer-Complete/Teutogen2.tga"
 #name "Teutogen Guard"
@@ -25083,7 +25083,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Winged Lancer
 
 
-#newmonster 7509
+#newmonster 7895
 #spr1 "./Warhammer-Complete/Kislev_Lancer.tga"
 #spr2 "./Warhammer-Complete/Kislev_Lancer2.tga"
 #name "Winged Lancer"
@@ -25256,7 +25256,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Ungol Horse Archer
 
 
-#newmonster 7508
+#newmonster 7896
 #spr1 "./Warhammer-Complete/Kislev_Ungol.tga"
 #spr2 "./Warhammer-Complete/Kislev_Ungol2.tga"
 #name "Ungol Horse Archer"
@@ -25326,7 +25326,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Wolf Kin
 
 
-#newmonster 7506
+#newmonster 7897
 #spr1 "./Warhammer-Complete/Midden_Wolf Kin.tga"
 #spr2 "./Warhammer-Complete/Midden_Wolf Kin2.tga"
 #name "Wolf Kin"
@@ -25432,7 +25432,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Reiksguard (summoning form)
 
 
-#newmonster 7546
+#newmonster 7898
 #spr1 "./Warhammer-Complete/IC Reiksguard.tga"
 #spr2 "./Warhammer-Complete/IC Reiksguard2.tga"
 #name "Inner Circle Reiksguard"
@@ -25473,7 +25473,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Morr
 
 
-#newmonster 7571
+#newmonster 7899
 #spr1 "./Warhammer-Complete/IC Morr.tga"
 #spr2 "./Warhammer-Complete/IC Morr2.tga"
 #name "Inner Circle Knight of Morr"
@@ -25507,7 +25507,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Morr (summoning form)
 
 
-#newmonster 7572
+#newmonster 7900
 #spr1 "./Warhammer-Complete/IC Morr.tga"
 #spr2 "./Warhammer-Complete/IC Morr2.tga"
 #name "Inner Circle Knight of Morr"
@@ -25534,10 +25534,10 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #weapon 56 -- Hoof
 #armor "Kite Shield"
 #nametype 188
-#firstshape 7571
-#summon5 7571
-#summon4 7571
-#summon2 7571
+#firstshape 7899
+#summon5 7899
+#summon4 7899
+#summon2 7899
 #poorundeadleader
 #end
 
@@ -25545,7 +25545,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle White Wolf
 
 
-#newmonster 7526
+#newmonster 7901
 #spr1 "./Warhammer-Complete/IC White Wolf.tga"
 #spr2 "./Warhammer-Complete/IC White Wolf2.tga"
 #name "Inner Circle White Wolf"
@@ -25578,7 +25578,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle White Wolf (summoning form)
 
 
-#newmonster 7535
+#newmonster 7902
 #spr1 "./Warhammer-Complete/IC White Wolf.tga"
 #spr2 "./Warhammer-Complete/IC White Wolf2.tga"
 #name "Inner Circle White Wolf"
@@ -25605,19 +25605,19 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #weapon 56 -- Hoof
 #nametype 188
 #coldres 3
-#summon5 7526
-#summon4 7526
-#summon3 7526
-#summon2 7526
-#summon1 7526
-#firstshape 7526
+#summon5 7901
+#summon4 7901
+#summon3 7901
+#summon2 7901
+#summon1 7901
+#firstshape 7901
 #end
 
 
 ---- Inner Circle Knight Panther
 
 
-#newmonster 7531
+#newmonster 7903
 #spr1 "./Warhammer-Complete/IC Panther.tga"
 #spr2 "./Warhammer-Complete/IC Panther2.tga"
 #name "Inner Circle Knight Panther"
@@ -25652,7 +25652,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Knight Panther (summoning form)
 
 
-#newmonster 7550
+#newmonster 7904
 #spr1 "./Warhammer-Complete/IC Panther.tga"
 #spr2 "./Warhammer-Complete/IC Panther2.tga"
 #name "Inner Circle Knight Panther"
@@ -25681,12 +25681,12 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Kite Shield"
 #nametype 188
 #wastesurvival
-#summon1 7531
-#summon2 7531
-#summon3 7531
-#summon4 7531
-#summon5 7531
-#firstshape 7531
+#summon1 7903
+#summon2 7903
+#summon3 7903
+#summon4 7903
+#summon5 7903
+#firstshape 7903
 #end
 
 
@@ -25694,7 +25694,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Blazing Sun (summoning form)
 
 
-#newmonster 7548
+#newmonster 7905
 #spr1 "./Warhammer-Complete/IC Blazing Sun.tga"
 #spr2 "./Warhammer-Complete/IC Blazing Sun2.tga"
 #name "Inner Circle Blazing Sun Knight"
@@ -25804,7 +25804,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Griffon (summoning form)
 
 
-#newmonster 7560
+#newmonster 7906
 #spr1 "./Warhammer-Complete/IC Griffon.tga"
 #spr2 "./Warhammer-Complete/IC Griffon2.tga"
 #name "Inner Circle Knight Griffon"
@@ -25878,7 +25878,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Sacred Scythe (summoning form)
 
 
-#newmonster 7556
+#newmonster 7907
 #spr1 "./Warhammer-Complete/IC Scythe.tga"
 #spr2 "./Warhammer-Complete/IC Scythe2.tga"
 #name "Inner Circle Sacred Scythe"
@@ -26020,7 +26020,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Hunter of Sigmar (summoning form)
 
 
-#newmonster 7562
+#newmonster 7908
 #spr1 "./Warhammer-Complete/IC Hunter.tga"
 #spr2 "./Warhammer-Complete/IC Hunter2.tga"
 #name "Inner Circle Hunter of Sigmar"
@@ -26095,7 +26095,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Black Bear (summoning form)
 
 
-#newmonster 7552
+#newmonster 7909
 #spr1 "./Warhammer-Complete/IC Bear.tga"
 #spr2 "./Warhammer-Complete/IC Bear2.tga"
 #name "Inner Circle Black Bear Knight"
@@ -26170,7 +26170,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Gold Lion (summoning form)
 
 
-#newmonster 7558
+#newmonster 7910
 #spr1 "./Warhammer-Complete/IC Gold Lion.tga"
 #spr2 "./Warhammer-Complete/IC Gold Lion2.tga"
 #name "Inner Circle Gold Lion Knight"
@@ -26244,7 +26244,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Inner Circle Encarmine (summoning form)
 
 
-#newmonster 7554
+#newmonster 7911
 #spr1 "./Warhammer-Complete/IC Encarmine.tga"
 #spr2 "./Warhammer-Complete/IC Encarmine2.tga"
 #name "Inner Circle Knight Encarmine"
@@ -26322,7 +26322,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Reiksguard (summoning form)
 
 
-#newmonster 7545
+#newmonster 7912
 #spr1 "./Warhammer-Complete/GM Reiksguard.tga"
 #spr2 "./Warhammer-Complete/GM Reiksguard2.tga"
 #name "Grandmaster of the Reiksguard"
@@ -26444,7 +26444,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Balthasar Gelt, The Supreme Patriarch
 
 
-#newmonster 7529
+#newmonster 7913
 #clearmagic
 #spr1 "./Warhammer-Complete/Hero Balthasar.tga"
 #spr2 "./Warhammer-Complete/Hero Balthasar2.tga"
@@ -26772,7 +26772,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Steam Tank
 
-#newmonster 7501
+#newmonster 7914
 #spr1 "./Warhammer-Complete/Steam Tank.tga"
 #spr2 "./Warhammer-Complete/Steam Tank2.tga"
 #name "Steam Tank"
@@ -26848,7 +26848,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #nametype 188
 #itemslots 4096 -- one misc
 #slowrec
-#firstshape 7501 -- steam tank
+#firstshape 7914 -- steam tank
 #heat 8
 #end
 
@@ -26919,7 +26919,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- State Captain (Middenheim)
 
-#newmonster 7504
+#newmonster 7915
 #spr1 "./Warhammer-Complete/Midden_State Captain.tga"
 #spr2 "./Warhammer-Complete/Midden_State Captain2.tga"
 #name "State Captain"
@@ -26952,7 +26952,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Huntsmaster (middenheim)
 
 
-#newmonster 7567
+#newmonster 7916
 #spr1 "./Warhammer-Complete/Midden_Huntsmaster.tga"
 #spr2 "./Warhammer-Complete/Midden_Huntsmaster2.tga"
 #name "Huntsmaster"
@@ -26982,15 +26982,15 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #stealthy 10
 #beastmaster 1
 #okleader
-#batstartsum1d6 7565 -- hunting hound
-#batstartsum5 7565 -- hunting hound
+#batstartsum1d6 7883 -- hunting hound
+#batstartsum5 7883 -- hunting hound
 #end
 
 
 
 ---- Seneschal (middenheim)
 
-#newmonster 7521
+#newmonster 7917
 #spr1 "./Warhammer-Complete/Midden_Seneschal.tga"
 #spr2 "./Warhammer-Complete/Midden_Seneschal2.tga"
 #name "Seneschal"
@@ -27026,7 +27026,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Kislevite Boyar
 
 
-#newmonster 7570
+#newmonster 7918
 #spr1 "./Warhammer-Complete/Kislev_Boyar.tga"
 #spr2 "./Warhammer-Complete/Kislev_Boyar2.tga"
 #name "Boyar"
@@ -27132,7 +27132,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Noble on Pegasus (Nuln)
 
 
-#newmonster 7530
+#newmonster 7919
 #spr1 "./Warhammer-Complete/Nuln_Pegasus.tga"
 #spr2 "./Warhammer-Complete/Nuln_Pegasus2.tga"
 #name "Noble of the Empire"
@@ -27237,7 +27237,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Wolf Father
 
-#newmonster 7507
+#newmonster 7920
 #spr1 "./Warhammer-Complete/Midden_Wolf Father.tga"
 #spr2 "./Warhammer-Complete/Midden_Wolf Father2.tga"
 #name "Wolf Father"
@@ -27338,7 +27338,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Warrior Priest of Ulric
 
-#newmonster 7522
+#newmonster 7921
 #spr1 "./Warhammer-Complete/Midden_Warrior Priest.tga"
 #spr2 "./Warhammer-Complete/Midden_Warrior Priest2.tga"
 #name "Warrior Priest of Ulric"
@@ -27408,7 +27408,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Grandmaster of the Blazing Sun (summoning form)
 
-#newmonster 7547
+#newmonster 7922
 #spr1 "./Warhammer-Complete/GM Blazing Sun.tga"
 #spr2 "./Warhammer-Complete/GM Blazing Sun2.tga"
 #name "Grandmaster of the Blazing Sun"
@@ -27498,7 +27498,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the the Knights of Morr (summoning form)
 
 
-#newmonster 7573
+#newmonster 7923
 #spr1 "./Warhammer-Complete/GM Morr.tga"
 #spr2 "./Warhammer-Complete/GM Morr2.tga"
 #name "Grandmaster of the Knights of Morr"
@@ -27526,10 +27526,10 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #weapon "Breath of the Silver Skull"
 #armor "Kite Shield"
 #nametype 188
-#firstshape 7574
-#summon5 7571
-#summon4 7571
-#summon2 7571
+#firstshape 7924
+#summon5 7899
+#summon4 7899
+#summon2 7899
 #fixedname "The Silver Skull"
 #okleader
 #okundeadleader
@@ -27539,7 +27539,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Grandmaster of the the Knights of Morr
 
-#newmonster 7574
+#newmonster 7924
 #spr1 "./Warhammer-Complete/GM Morr.tga"
 #spr2 "./Warhammer-Complete/GM Morr2.tga"
 #name "Grandmaster of the Knights of Morr"
@@ -27577,7 +27577,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Hunters of Sigmar
 
 
-#newmonster 7500
+#newmonster 7925
 #spr1 "./Warhammer-Complete/GM Hunter.tga"
 #spr2 "./Warhammer-Complete/GM Hunter2.tga"
 #name "Grandmaster of Sigmar's Hunters"
@@ -27618,7 +27618,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Hunters of Sigmar (summoning form)
 
 
-#newmonster 7561
+#newmonster 7926
 #spr1 "./Warhammer-Complete/GM Hunter.tga"
 #spr2 "./Warhammer-Complete/GM Hunter2.tga"
 #name "Grandmaster of Sigmar's Hunters"
@@ -27657,14 +27657,14 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #summon2 7473
 #summon4 7473
 #summon5 7473
-#firstshape 7500
+#firstshape 7925
 #end
 
 
 ---- Grandmaster of the Knights Panther
 
 
-#newmonster 7532
+#newmonster 7927
 #spr1 "./Warhammer-Complete/GM Panther.tga"
 #spr2 "./Warhammer-Complete/GM Panther2.tga"
 #name "Grandmaster of the Knights Panther"
@@ -27702,7 +27702,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Knights Panther (summoning form)
 
 
-#newmonster 7549
+#newmonster 7928
 #spr1 "./Warhammer-Complete/GM Panther.tga"
 #spr2 "./Warhammer-Complete/GM Panther2.tga"
 #name "Grandmaster of the Knights Panther"
@@ -27735,12 +27735,12 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #goodleader
 #unique
 #itemslots 13442
-#summon1 7531
-#summon2 7531
-#summon3 7531
-#summon4 7531
-#summon5 7531
-#firstshape 7532
+#summon1 7903
+#summon2 7903
+#summon3 7903
+#summon4 7903
+#summon5 7903
+#firstshape 7927
 #end
 
 
@@ -27748,7 +27748,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of White Wolves
 
 
-#newmonster 7527
+#newmonster 7929
 #spr1 "./Warhammer-Complete/GM White Wolf.tga"
 #spr2 "./Warhammer-Complete/GM White Wolf2.tga"
 #name "Grandmaster of the White Wolves"
@@ -27788,7 +27788,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of White Wolves (summoning form)
 
 
-#newmonster 7534
+#newmonster 7930
 #spr1 "./Warhammer-Complete/GM White Wolf.tga"
 #spr2 "./Warhammer-Complete/GM White Wolf2.tga"
 #name "Grandmaster of the White Wolves"
@@ -27822,12 +27822,12 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #fear 5
 #coldres 8
 #holy
-#summon5 7526 -- IC white wolf
-#summon4 7526 -- IC white wolf
-#summon3 7526 -- IC white wolf
-#summon2 7526 -- IC white wolf
-#summon1 7526 -- IC white wolf
-#firstshape 7527 -- non summoning version of him
+#summon5 7901 -- IC white wolf
+#summon4 7901 -- IC white wolf
+#summon3 7901 -- IC white wolf
+#summon2 7901 -- IC white wolf
+#summon1 7901 -- IC white wolf
+#firstshape 7929 -- non summoning version of him
 #end
 
 
@@ -27873,7 +27873,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Black Bear (summoning form)
 
 
-#newmonster 7551
+#newmonster 7931
 #spr1 "./Warhammer-Complete/GM Bear.tga"
 #spr2 "./Warhammer-Complete/GM Bear2.tga"
 #name "Grandmaster of the Black Bear"
@@ -27958,7 +27958,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Knights Griffon (summoning form)
 
 
-#newmonster 7559
+#newmonster 7932
 #spr1 "./Warhammer-Complete/GM Griffon.tga"
 #spr2 "./Warhammer-Complete/GM Griffon2.tga"
 #name "Grandmaster of Knights Griffon"
@@ -28041,7 +28041,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster Encarmine (summoning form)
 
 
-#newmonster 7553
+#newmonster 7933
 #spr1 "./Warhammer-Complete/GM Encarmine.tga"
 #spr2 "./Warhammer-Complete/GM Encarmine2.tga"
 #name "Grandmaster of Knights Encarmine"
@@ -28122,7 +28122,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Sacred Scythe (summoning form)
 
 
-#newmonster 7555
+#newmonster 7934
 #spr1 "./Warhammer-Complete/GM Scythe.tga"
 #spr2 "./Warhammer-Complete/GM Scythe2.tga"
 #name "Grandmaster of the Sacred Scythes"
@@ -28207,7 +28207,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 ---- Grandmaster of the Gold Lion
 
 
-#newmonster 7557
+#newmonster 7935
 #spr1 "./Warhammer-Complete/GM Gold Lion Joint.tga"
 #spr2 "./Warhammer-Complete/GM Gold Lion Joint2.tga"
 #name "Grandmaster of the Gold Lion"
@@ -30218,7 +30218,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #gems 3 2
 #homemon 7416 -- Ironside
 #homemon 7466 -- War Wagon
-#homemon 7501 -- Steam Tank
+#homemon 7914 -- Steam Tank
 #end
 
 #newsite 1515
@@ -30248,8 +30248,8 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #rarity 5
 #gems 0 1
 #gems 6 2
-#homemon 7506 -- Wolf Kin
-#homecom 7507 -- Wolf Father
+#homemon 7897 -- Wolf Kin
+#homecom 7920 -- Wolf Father
 #end
 
 
@@ -30261,7 +30261,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #rarity 5
 #gems 1 1
 #gems 2 1
-#homemon 7564 --teutogen guard
+#homemon 7894 --teutogen guard
 #end
 
 
@@ -30288,7 +30288,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7533 -- Tribute to the white wolves
-#com 7534 -- GM white wolf summoning form
+#com 7930 -- GM white wolf summoning form
 #killcom 7533 -- Tribute to the white wolves
 #req_unique 1 -- can only ever happen once
 #revealprov
@@ -30301,7 +30301,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7533 -- Tribute to the white wolves
-#com 7535 -- IC white wolf summoning form
+#com 7902 -- IC white wolf summoning form
 #killcom 7533 -- Tribute to the white wolves
 #end
 
@@ -30309,7 +30309,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Rein Volkhard and his Inner Circle Knights of the White Wolf have joined the forces of Middenheim!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7534 -- GM white wolf summoning form
+#req_monster 7930 -- GM white wolf summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30325,7 +30325,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7537 -- Tribute
-#com 7545 -- GM summoning form
+#com 7912 -- GM summoning form
 #killcom 7537 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30337,7 +30337,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7537 -- Tribute
-#com 7546 -- IC summoning form
+#com 7898 -- IC summoning form
 #killcom 7537 -- Tribute
 #end
 
@@ -30345,7 +30345,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Reiksmarshall Kurt Helborg and his Inner Circle Knights of the Grand Order of the Reiksguard have joined the forces of Altdorf!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7545 -- GM summoning form
+#req_monster 7912 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30359,7 +30359,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7538 -- Tribute
-#com 7547 -- GM summoning form
+#com 7922 -- GM summoning form
 #killcom 7538 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30371,7 +30371,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7538 -- Tribute
-#com 7548 -- IC summoning form
+#com 7905 -- IC summoning form
 #killcom 7538 -- Tribute
 #end
 
@@ -30379,7 +30379,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Brenst Aufflammen and his Inner Circle Knights of the Blazing Sun have joined the forces of Altdorf!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7547 -- GM summoning form
+#req_monster 7922 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30393,7 +30393,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7536 -- Tribute
-#com 7549 -- GM summoning form
+#com 7928 -- GM summoning form
 #killcom 7536 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30405,7 +30405,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7536 -- Tribute
-#com 7550 -- IC summoning form
+#com 7904 -- IC summoning form
 #killcom 7536 -- Tribute
 #end
 
@@ -30413,7 +30413,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Werner Kriegstadt and his Inner Circle Knights Panther have joined the forces of Middenheim!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7549 -- GM
+#req_monster 7928 -- GM
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30427,7 +30427,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7539 -- Tribute
-#com 7551 -- GM summoning form
+#com 7931 -- GM summoning form
 #killcom 7539 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30439,7 +30439,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7539 -- Tribute
-#com 7552 -- IC summoning form
+#com 7909 -- IC summoning form
 #killcom 7539 -- Tribute
 #end
 
@@ -30447,7 +30447,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Lucas Siver and his Inner Circle Knights of the Black Bear have joined the forces of Nuln!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7551 -- GM summoning form
+#req_monster 7931 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30462,7 +30462,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7540 -- Tribute
-#com 7553 -- GM summoning form
+#com 7933 -- GM summoning form
 #killcom 7540 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30474,7 +30474,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7540 -- Tribute
-#com 7554 -- IC summoning form
+#com 7911 -- IC summoning form
 #killcom 7540 -- Tribute
 #end
 
@@ -30482,7 +30482,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Alessio Barbarini and his Inner Circle Knights Encarmine have joined the forces of Nuln!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7553 -- GM summoning form
+#req_monster 7933 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30496,7 +30496,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7541 -- Tribute
-#com 7555 -- GM summoning form
+#com 7934 -- GM summoning form
 #killcom 7541 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30508,7 +30508,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7541 -- Tribute
-#com 7556 -- IC summoning form
+#com 7907 -- IC summoning form
 #killcom 7541 -- Tribute
 #end
 
@@ -30516,7 +30516,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Piotr Kronn and his Inner Circle Knights of the Sacred Scythe have joined the forces of Nuln!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7555 -- GM summoning form
+#req_monster 7934 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30531,7 +30531,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7542 -- Tribute
-#com 7557 -- GM summoning form
+#com 7935 -- GM summoning form
 #killcom 7542 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30543,7 +30543,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7542 -- Tribute
-#com 7558 -- IC summoning form
+#com 7910 -- IC summoning form
 #killcom 7542 -- Tribute
 #end
 
@@ -30551,7 +30551,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Juergen Fruehauf and his Inner Circle Knights of the Gold Lion have joined the forces of Nuln!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7557 -- GM summoning form
+#req_monster 7935 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30566,7 +30566,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7543 -- Tribute
-#com 7559 -- GM summoning form
+#com 7932 -- GM summoning form
 #killcom 7543 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30578,7 +30578,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7543 -- Tribute
-#com 7560 -- IC summoning form
+#com 7906 -- IC summoning form
 #killcom 7543 -- Tribute
 #end
 
@@ -30586,7 +30586,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Hans Dueterberg and his Inner Circle Knights Griffon have joined the forces of Altdorf!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7559 -- GM summoning form
+#req_monster 7932 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30600,7 +30600,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7544 -- Tribute
-#com 7561 -- GM summoning form
+#com 7926 -- GM summoning form
 #killcom 7544 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30612,7 +30612,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7544 -- Tribute
-#com 7562 -- IC summoning form
+#com 7908 -- IC summoning form
 #killcom 7544 -- Tribute
 #end
 
@@ -30620,7 +30620,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "Grandmaster Jerik Wildorn and his Inner Circle Hunters of Sigmar have joined the forces of Altdorf!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7561 -- GM summoning form
+#req_monster 7926 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -30634,7 +30634,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7575 -- Tribute
-#com 7573 -- GM summoning form
+#com 7923 -- GM summoning form
 #killcom 7575 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
@@ -30646,7 +30646,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --notext -- make the event not have any text
 #rarity 0 -- always
 #req_monster 7575 -- Tribute
-#com 7572 -- IC summoning form
+#com 7900 -- IC summoning form
 #killcom 7575 -- Tribute
 #end
 
@@ -30654,7 +30654,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #msg "The Silver Skull and the Inner Circle Knights of Morr have joined the forces of Middenheim!"
 #rarity 13 -- always immediate global
 #req_unique 1 -- can only ever happen once
-#req_monster 7573 -- GM summoning form
+#req_monster 7923 -- GM summoning form
 #revealprov -- this is required for the event to work for some reason
 #end
 
@@ -31070,15 +31070,15 @@ Priests: Strong."
 --addreccom 7485 -- Gold WL
 --addreccom 7443 -- Amber Wizard
 --addreccom 7445 -- Amber WL
---addreccom 7529 -- Balthasar Gelt
---addreccom 7530 -- Noble on Pegasus
+--addreccom 7913 -- Balthasar Gelt
+--addreccom 7919 -- Noble on Pegasus
 
 
 ----- HEROES
 
 
-#multihero1 7530 -- Noble on Pegasus
-#hero1 7529 -- balthasar gelt
+#multihero1 7919 -- Noble on Pegasus
+#hero1 7913 -- balthasar gelt
 
 ------- Province Defence
 
@@ -31176,20 +31176,20 @@ Priests: Strong."
 
 ------- Add soldiers
 
-#addrecunit 7565 -- hunting hound (middenheim)
-#addrecunit 7525 -- Free Infantry (middenheim)
-#addforeignunit 7525 -- Free Infantry (middenheim)
-#addrecunit 7518 -- Archer (middenheim)
-#addrecunit 7566 -- Huntsman (middenheim)
-#addrecunit 7502 -- State Spearman (Middenheim)
-#addrecunit 7519 -- State Halberdier (middenheim)
-#addrecunit 7524 -- State Swordsman (middenheim)
-#addrecunit 7505 -- State Crossbow (Middenheim)
---addrecunit 7506 -- Wolf Kin
-#addrecunit 7523 -- Greatsword (middenheim)
-#addrecunit 7568 -- Kossar
-#addrecunit 7508 -- Ungol Horse Archer
-#addrecunit 7509 -- Kislev Winged Lancer
+#addrecunit 7883 -- hunting hound (middenheim)
+#addrecunit 7892 -- Free Infantry (middenheim)
+#addforeignunit 7892 -- Free Infantry (middenheim)
+#addrecunit 7889 -- Archer (middenheim)
+#addrecunit 7891 -- Huntsman (middenheim)
+#addrecunit 7884 -- State Spearman (Middenheim)
+#addrecunit 7885 -- State Halberdier (middenheim)
+#addrecunit 7887 -- State Swordsman (middenheim)
+#addrecunit 7888 -- State Crossbow (Middenheim)
+--addrecunit 7897 -- Wolf Kin
+#addrecunit 7893 -- Greatsword (middenheim)
+#addrecunit 7890 -- Kossar
+#addrecunit 7896 -- Ungol Horse Archer
+#addrecunit 7895 -- Kislev Winged Lancer
 #addrecunit 7459 -- Order Knight (No lance)
 #addrecunit 7458 -- Order Knight (Lance)
 
@@ -31199,11 +31199,11 @@ Priests: Strong."
 ------- Add leaders
 
 #addreccom "Scout"
-#addreccom 7567 -- Huntsmaster
-#addreccom 7504 -- State Captain (Middenheim)
-#addreccom 7521 -- Seneschal
-#addreccom 7570 -- Kislevite Boyar
-#addreccom 7522 -- Warrior Priest of Ulric (middenheim)
+#addreccom 7916 -- Huntsmaster
+#addreccom 7915 -- State Captain (Middenheim)
+#addreccom 7917 -- Seneschal
+#addreccom 7918 -- Kislevite Boyar
+#addreccom 7921 -- Warrior Priest of Ulric (middenheim)
 #addreccom 7514 -- Amber Wizard (middenheim - 155)
 #addreccom 7484 -- Jade Wizard (Altdorf and Middenheim - 170)
 #addreccom 7517 -- Bright Wizard (Middenheim - 180)
@@ -31228,13 +31228,13 @@ Priests: Strong."
 
 --Sets the units to be used in province defense.
 
-#defcom1 7504 -- State Captain (Middenheim)
-#defcom2 7522 -- Warrior Priest of Ulric (middenheim)
+#defcom1 7915 -- State Captain (Middenheim)
+#defcom2 7921 -- Warrior Priest of Ulric (middenheim)
 
-#defunit1 7518 -- Archer (Middenheim)
-#defunit1b 7502 -- State Spearman (Middenheim)
-#defunit2 7519 -- State Halberdier (middenheim)
-#defunit2b 7505 -- State Crossbowman (Middenheim)
+#defunit1 7889 -- Archer (Middenheim)
+#defunit1b 7884 -- State Spearman (Middenheim)
+#defunit2 7885 -- State Halberdier (middenheim)
+#defunit2b 7888 -- State Crossbowman (Middenheim)
 
 --Sets how many of the units to appear per 10 points.
 
@@ -31248,10 +31248,10 @@ Priests: Strong."
 #labcost 700 - because the colleges of magic are centralised in Altdorf
 #idealcold 1 -- Middenheimers like it a bit colder
 #color 0 0 150
-#startcom 7504 - non summoning state captain (Middenheim)
-#startunittype1 7502 -- State Spearman (Middenheim)
+#startcom 7915 - non summoning state captain (Middenheim)
+#startunittype1 7884 -- State Spearman (Middenheim)
 #startunitnbrs1 10
-#startunittype2 7518 -- archers (middenheim)
+#startunittype2 7889 -- archers (middenheim)
 #startunitnbrs2 10
 #startscout "Scout"
 #end
