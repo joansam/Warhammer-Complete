@@ -1,10 +1,3 @@
--- VERSION 1.7 --
-Domingler notes: remove duplicate IDs starting at 7653 and ending at 7663
-Weapons and armor may need IDs back if DomEnhanced takes the lower ranges
-Should enable WHC AFTER DomEnhanced so dynamic IDs don't get overridden
-Nations went over 199
-Enchant duplicate at 0, 1
-
 -- VERSION 1.6 --
 Empire Staging Notes:
 Cav and some other elite units have really high recpoints, might lower
@@ -27,7 +20,7 @@ Saurus cav get the hp and prot of the Saurus, cost 45, rp 40
 Skink and cav combat speeds changed, generally -2
 HIGH ELVES PORT
 Note: spearman and archer (7500 and 7501) used for copystats mixed up
-Check flag - meh, it's fine
+Check flag - meh, should be fine
 Fix weapon IDs - done
 Check immortality - done
 Look at forts, consider era - it's LA standard
@@ -36,20 +29,19 @@ Check UW vals - none
 Check ranged weapons for extra dmg - done
 Check spell and effect vals, some will likely have changed - basically done
 Look at iron armor/weapons - no amphib units
-Remove reclimits - done
+Remove reclimits - done, might wanna give above-costs recpoints
 Mapmove convert - done
 Replaced a few 99% magic paths with 100, it was just a gimmick from Dom3
 Replaced gimmicky "dodge" and "deflect" shields with airshield
 Formationfighter updated to work in Dom5, works for inf and cav
 Decreased weapon lengths for Dom5
-Deleted unnecessary weapon IDs
-Toned Apotheosis down
-Add recpoints for units - done
-Mounted units price decrease - not quite porting, but done
-Enchantments aren't getting changed by Domingler, find with #damage (ench #)
 
-Spells need a look - Shield of Saphery is weird, Soul Quench and Drain Magic don't show in inspector
+Spells need a look - Shield of Saphery is weird, Apotheosis OP
+	Soul Quench and Drain Magic don't show in inspector
+Add recpoints for units - done but all 21, or 36 for cav
 Reduce gold costs, have high recpoints?
+
+Mounted units price decrease
 
 VERSION 1.5:
 Removed numbers from all weapons + armor unless necessary to improve compatibility
