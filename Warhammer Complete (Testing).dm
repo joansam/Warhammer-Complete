@@ -31246,3 +31246,1645 @@ Priests: Strong."
 #startunitnbrs2 10
 #startscout "Scout"
 #end
+
+-- END OF EMPIRE NATIONS, BEGINNING OF TOMB KINGS
+
+Nation 		112
+Monsters 	3241-75
+Sites 		1930 and 31
+Weapons 	1700-6
+Armor 		552-62
+Nametypes 	166
+
+
+//////////////// Latest Version changes \\\\\\\\\\\\\\\\
+1.2 (Called 1.05 in the standalone version)
+-- Llamabeast's tweaks to Sarfus' port from the Dom3 mod by Llamabeast.
+-- JoanSam's nation, weapon, armor, unit, and item ID changes.
+-- Also his sprite filepath changes
+
+1.12
+-- restored priest spells for all nations :)
+-- rebalanced mages
+
+1.11
+-- fixed gold costs
+-- added & changed summon spells
+-- an weapons -> armorpiercing again
+
+1.1
+-- Port to Dom4
+-- Slight Changes of Stats
+-- Name Changes to 8th Edition
+
+
+
+
+///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
+
+#newweapon 1700
+#name "Cobra Staff"
+#dmg 4
+#att 1
+#def 3
+#len 4
+#rcost 1
+#secondaryeffectalways 221  -- Used to be 171, small area fire
+-explspr 10113 -- Small area fire sprite
+#twohanded
+#blunt
+#end
+
+#newweapon 1701
+#name "Ritual Blade"
+#slash
+#dmg 12
+#att 2
+#def 2
+#len 4
+#rcost 10
+#twohanded
+#end
+
+#newweapon 1702
+#name "Strong Paralyzing Poison"
+#dt_stun
+#poison
+#dmg 75
+#mrnegates
+#end
+
+#newweapon 1703
+#name "Dart Crossbow"
+#pierce
+#range 10
+#nostr
+#dmg 1
+#dt_cap
+#armornegating
+#att 0
+#ammo 2
+#secondaryeffect 1702 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
+#rcost 1
+#flyspr 109 1
+#end
+
+#newweapon 1704
+#name "Spear of Horus"
+#pierce
+#dmg 8
+#dt_holy
+#att 3
+#def 0
+#len 5
+#secondaryeffect 221
+#end
+
+#newweapon 1705
+#name "Blade of Horus"
+#slash
+#nratt 2
+#dmg 12
+#att 3
+#def 2
+#len 4
+#rcost 10
+#dt_holy
+#secondaryeffect 221
+#twohanded
+#end
+
+#newweapon 1706
+#name "Asp Bow"
+#pierce
+#range 35
+#nostr
+#dmg 12
+#ammo 12
+#rcost 1
+#att 1
+#flyspr 109 1
+#secondaryeffect 51
+#sound 14
+#rcost 3
+#end
+
+
+///////////////// New armor \\\\\\\\\\\\\\\\\\\\
+
+
+#newarmor 552
+#name "Shoulder Guard"
+#type 5
+#prot 4
+#enc 0
+#def 0
+#rcost 2
+#end
+
+#newarmor 553
+#name "Nehekharan Shield"
+#type 4
+#prot 12
+#def 4
+#enc 2
+#rcost 3
+#end
+
+#newarmor 554
+#name "Bronze Armor"
+#type 5
+#prot 10
+#def -1
+#enc 2
+#rcost 4
+#end
+
+#newarmor 555
+#name "Circlet"
+#type 6
+#prot 4
+#def 0
+#enc 0
+#rcost 0
+#end
+
+#newarmor 556
+#name "Gilded Armor"
+#type 5
+#prot 14
+#def -3
+#enc 2
+#rcost 12
+#end
+
+#newarmor 557
+#name "Royal Headdress"
+#type 6
+#prot 8
+#def -1
+#enc 0
+#rcost 1
+#end
+
+#newarmor 558
+#name "Headdress"
+#type 6
+#prot 6
+#def 0
+#enc 0
+#rcost 1
+#end
+
+#newarmor 559
+#name "Thousands of Bodies"
+#type 4
+#prot 30
+#def 8
+#enc 0 
+#rcost 0
+#end
+
+#newarmor 560
+#name "Bone Greaves"
+#type 5
+#prot 4
+#def 0
+#enc 0
+#end
+
+#newarmor 561
+#name "Rags"
+#type 5
+#prot 2
+#def 0
+#enc 0
+#end
+
+#newarmor 562
+#name "Ushabti Avatar Armor"
+#type 5
+#prot 8
+#def 0
+#enc 0
+#end
+
+
+///////////////// New Monsters \\\\\\\\\\\\\\\\\\\\
+
+---------------Recruitables--------------
+
+#newmonster 3241
+#name "Tomb skeleton"
+#mor 30 
+#mr 15 
+#hp 8 
+#att 11
+#def 10
+#enc 0 
+#ap 12 
+#mapmove 3
+#neednoteat
+#coldres 15 
+#poisonres 25
+#inanimate 
+#undead
+#nametype 166 
+#rcost 3
+#gcost 10
+#startage 2705 
+#maxage 5000 
+#poorundeadleader
+#pierceres
+#weapon "Fist"
+#end
+
+#newmonster 3242
+#name "Tomb mummy"
+#mor 30
+#mr 16
+#hp 10
+#att 10
+#def 9
+#enc 0
+#ap 12
+#mapmove 3
+#neednoteat
+#coldres 7
+#poisonres 25
+#fireres -3
+#inanimate
+#nametype 166
+#rcost 3
+#prot 6
+#startage 2705
+#maxage 5000
+#poorundeadleader
+#darkvision 100
+#weapon "Fist"
+#end
+
+#newmonster 3243
+#copystats 3241
+#name "Spearman"
+#descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/Infantry1.tga"
+#spr2 "./Warhammer-Complete/Infantry2.tga"
+#pooramphibian
+#weapon "Spear"
+#armor "Nehekharan Shield"
+#end
+
+#newmonster 3244
+#copystats 3241
+#name "Spearman"
+#descr "The undead spearmen of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. The Nehekharans wear little or no armor and take cover behind large shields, as bows were the dominant weapon of war in old Nehekhara. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the spearmen are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/HInfantry1.tga"
+#spr2 "./Warhammer-Complete/HInfantry2.tga"
+#pooramphibian
+#weapon "Spear"
+#armor "Shoulder Guard"
+#armor "Nehekharan Shield"
+#end
+
+#newmonster 3245
+#copystats 3241
+#name "Archer"
+#descr "The undead archers of Nehekhara were once loyal and disciplined soldiers of the Tomb Kings, buried in desert tombs and now awakened by the Tomb Priests to rebuild their ancient empire. Archers played a crucial role in the armies of Nehekhara, and their bows are unusually sophisticated and powerful given that they were developed thousands of years ago. Although vast legions of soldiers lie waiting in countless tombs, the rituals of reawakening are time consuming and require expensive incenses and balms. The enchantments animating the archers are extremely powerful however, having originally been set in place by months-long incantations by the Tomb Priests and their acolytes. As such the undead soldiers can be banished by enemy priests only with great difficulty."
+#spr1 "./Warhammer-Complete/Archer1TK.tga"
+#spr2 "./Warhammer-Complete/Archer2TK.tga"
+#pooramphibian
+#weapon "Dagger"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#end
+
+#newmonster 3246
+#copystats 3241
+#name "Asp Archer"
+#gcost 18
+#descr "The ancient Nehekharans worshipped a pantheon of uneasily coexisting Gods. One of these was known as the Asp Goddess. She was a Goddess of war, and gave her blessing particularly to those using the bow and arrow. The bravest and most skilled archers in the Kingdoms would be summoned to the Temple of the Goddess, and there they would be trained in the skills of archery and granted a sacred bow, enchanted by the Goddess herself. Any arrow fired by one of these enchanted bows would arrive at its target mysteriously coated in a deadly poison. The so-called Asp Archers would normally remain as guardians of the temple, but in times of war they would march to assist a Tomb King the Goddess found worthy, where their great skills would often turn the tide of a war."
+#spr1 "./Warhammer-Complete/AspArcher1.tga"
+#spr2 "./Warhammer-Complete/AspArcher2.tga"
+#prec 11
+#mor 30
+#pooramphibian
+#weapon "Dagger"
+#weapon "Asp Bow"
+#armor "Bronze Armor"
+#armor "Circlet"
+#holy
+#end
+
+#newmonster 3247
+#copystats 3241
+#name "Nehekharan Cavalry"
+#gcost 18
+#descr "The light cavalry of Nehekhara carry bows and spears, raining arrows down on their enemies before flanking them on their swift skeletal steeds. The Nehekharans placed great value on horses, and the highly trained animals were buried with almost as much ceremony as their masters. Like all the troops of Nehekhara the cavalry are highly resistant to enemy magic because of the powerful and ancient enchantments animating them."
+#spr1 "./Warhammer-Complete/Cavalry1.tga"
+#spr2 "./Warhammer-Complete/Cavalry2.tga"
+#size 3
+#att 12
+#def 10
+#prec 8
+#mounted
+#ap 24
+#mapmove 4
+#pooramphibian
+#weapon "Spear"
+#weapon "Hoof"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#armor "Buckler"
+#end
+
+#newmonster 3248
+#copystats 3241
+#name "Chariot"
+#gcost 45
+#descr "Chariots were a highly valued weapon in ancient Nehekhara. They were expensive and hard to construct, and so were carefully maintained and damaged chariots were recovered and repaired after battle. It was a great show of wealth and status for a Tomb King to be buried along with a cohort of chariots. In battle these war machines often hold while the crew fire arrows at the enemy, before charging into combat. The chariots are heavy and have scythed wheels, and can cause horrendous casualties."
+#spr1 "./Warhammer-Complete/Chariot1.tga"
+#spr2 "./Warhammer-Complete/Chariot2.tga"
+#size 4
+#trample
+#mounted
+#ap 22
+#mapmove 4
+#prec 9
+#def 11
+#prot 5
+#weapon "Spear"
+#weapon "Composite Bow"
+#weapon "Composite Bow"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#armor "Buckler"
+#end
+
+#newmonster 3249
+#copystats 3242
+#name "Watcher"
+#descr "In the dying days of old Nehekhara, the Tomb Priests saw they alone would not be able to protect the vast tombs once the last vestiges of their civilization had fallen. And so to the peasants and criminals, the priests offered a terrible choice: watch over the tombs for the millennia to come, and in return live to see the coming of paradise. Some came forward, and the priests chose the strongest to serve as Watchers. Through powerful rituals they were gifted with the same immortality as the priests themselves - while their bodies withered and dried to husks they would never die of natural causes. The watchers stood guard over the tombs, spotting any treasure hunters far off, moving stealthily through the necropoli, and killing without warning. They wear no armor but wield halberds salvaged from treasure hunters, and miniature crossbows firing darts which paralyze their opponents. Their bodies are no longer as strong as they once were, but they remain strong and deadly opponents."
+#spr1 "./Warhammer-Complete/Watcher1.tga"
+#spr2 "./Warhammer-Complete/Watcher2.tga"
+#gcost 16
+#hp 14
+#prot 8
+#att 12
+#def 12
+#str 13
+#mr 15
+#maxage 2500
+#weapon "Halberd"
+#weapon "Dart Crossbow"
+#end
+
+#newmonster 3250
+#copystats 3241
+#name "Tomb Guard"
+#gcost 14
+#descr "The Tomb Guard were originally an elite corps of troops assigned to protecting a necropolis containing the tombs of past kings. Over time the order grew and began to act as a part of the main army, and was imitated in the other kingdoms of Nehekhara. They were found to be very effective in war due to their superior equipment and training. The Tomb Guard are much more heavily armored than most Nehekharan soldiers, and wield deadly falchions."
+#spr1 "./Warhammer-Complete/TombGuard1.tga"
+#spr2 "./Warhammer-Complete/TombGuard2.tga"
+#att 12
+#def 12
+#str 11
+#mr 16
+#mor 30
+#pooramphibian
+#weapon "Falchion"
+#armor "Bronze Armor"
+#armor "Circlet"
+#armor "Nehekharan Shield"
+#end
+
+#newmonster 3251
+#copystats 3241
+#name "Buried"
+#gcost 22
+#descr "Most of the legions of soldiers filling the necropoli of Nehekhara are those slain in battle, or old veterans buried on their eventual deaths, or those soldiers unlucky enough to be most highly valued by their king, and hence buried with him by force. But on the entombment of a Tomb King, a call would go out - those bravest of soldiers willing to sacrifice their lives to stay with their king could, by choice, be buried alive when the tomb was closed. These troops would line up in ranks in full disciplined order, and then stand unflinching as the chamber was filled with sand. As a result of their incredible self sacrifice these reawakened soldiers are sacred to the Nehekharans."
+#spr1 "./Warhammer-Complete/Buried1.tga"
+#spr2 "./Warhammer-Complete/Buried2.tga"
+#att 12
+#def 10
+#str 11
+#mr 15
+#mor 30
+#holy
+#pooramphibian
+#weapon "Spear"
+#armor "Shoulder Guard"
+#armor "Circlet"
+#armor "Nehekharan Shield"
+#end
+
+--Note-- Immortal Summon takes monsterID 3252
+
+---------------Commanders--------------
+
+#newmonster 3253
+#copystats 3241
+#name "Scout"
+#descr "The scouts of Nehekhara are awakened soldiers clad in black cloth and trained to move in shadow and pass unseen through enemy territory."
+#spr1 "./Warhammer-Complete/Agent1.tga"
+#spr2 "./Warhammer-Complete/Agent2.tga"
+#stealthy 0
+#mor 30
+#gcost 20
+#noleader
+#weapon "Dagger"
+#end
+
+#newmonster 3254
+#copystats 3241
+#name "Ancient Champion"
+#spr1 "./Warhammer-Complete/AncientChampion1.tga"
+#spr2 "./Warhammer-Complete/AncientChampion2.tga"
+#descr "The ancient Nehekharans placed great value on martial skills, and the finest of their warriors were
+highly respected. When they died these warriors would be buried with great ceremony, and their bodies would be protected by especially powerful enchantments. The undead kingdoms of Nehekhara can now draw from the finest warriors from millennia of the old kingdoms. They are fighters of exceptional skill, their physical abilities enchanced further by the powerful magic animating them. They are also competent leaders."
+#gcost 40
+#mor 30
+#pooramphibian
+#att 15
+#def 14
+#str 14
+#hp 16
+#mr 16
+#ambidextrous 2
+#okleader
+#okundeadleader
+#weapon "Falchion"
+#weapon "Short Sword"
+#armor "Bronze Armor"
+#armor "Circlet"
+#end
+
+#newmonster 3255
+#copystats 3242
+#name "Tomb Prince"
+#gcost 140
+#descr "The Tomb Kings of Nehekhara frequently took many concubines, and so a single king might produce tens of sons. These sons were treated as high nobility, but would be expected by their fathers to live up to their position. It was traditional for the princes to enter the priesthood, but they would also train in military affairs and many became generals. The more gifted would study the mysterious arts of magic - if they were to have any hope of following in their father's footsteps they would have to reach the highest levels of achievement in sword, sorcery and the priesthood. The princes enter battle on ornate, jewel-studded chariots and wearing the finest of armors."
+#spr1 "./Warhammer-Complete/TombPrinceChariot1.tga"
+#spr2 "./Warhammer-Complete/TombPrinceChariot2.tga"
+#hp 18
+#str 12
+#att 14
+#def 13
+#mr 16
+#size 4
+#trample
+#mounted
+#ap 22
+#mapmove 4
+#prot 10
+#magicskill 8 1
+#custommagic 4224 50
+#custommagic 4224 50
+#custommagic 7552 10
+#weapon "Spear"
+#armor "Gilded Armor"
+#armor "Circlet"
+#armor "Buckler"
+#goodleader
+#goodundeadleader
+#nomagicleader
+#holy
+#end
+
+#newmonster 3256
+#copystats 3241
+#name "Buried Sorceror"
+#gcost 200
+#descr "In ancient Nehekhara there existed mysterious men of great power, magicians and sorcerors with miraculous powers. These men wielded power over the scorching winds and heat of the desert, and dabbled too in darker arts. Often they were trusted advisors and confidants of the Tomb Kings, since they were learned, and among the very few who shared the kings' knowledge of magic. Unfortunately for those closest to the kings, their lavish lifestyles in the palaces would come to a dire end with the passing of the king - for what king would want to pass into the afterlife without his advisors? Willingly or not, they were buried alive in the royal tombs. Now they are reawakened to wield their powerful magics once more in the service of their masters."
+#spr1 "./Warhammer-Complete/Sorceror1_TK.tga"
+#spr2 "./Warhammer-Complete/Sorceror2_TK.tga"
+#clearmagic
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 5 1
+#mor 30
+#pooramphibian
+#mr 16
+#noleader
+#poorleader
+#noundeadleader
+#nomagicleader
+#weapon "Dagger"
+#end
+
+#newmonster 3257
+#copystats 3242
+#descr "The acolytes are low ranking Tomb Priests, lacking the power of their seniors, but still possessing sufficient knowledge of the order's wisdom that they have succeeded in preserving themselves since the fall of Nehekhara. In battle, the acolytes specialise in casting incantations to mend and repair the bodies of Nehekhara's undead legions. Many an army will be accompanied by a large number of acolytes, so that their enemies will find the effects of their blows undone before their very eyes."
+#spr1 "./Warhammer-Complete/Acolyte1_TK.tga"
+#spr2 "./Warhammer-Complete/Acolyte2_TK.tga"
+#name "Acolyte"
+#gcost 35
+#mor 30
+#poorleader
+#poorundeadleader
+#magicskill 8 1
+#holy
+#weapon "Quarterstaff"
+#end
+
+#newmonster 3258
+#copystats 3242
+#name "Tomb Priest"
+#gcost 120
+#descr "In the society of Nehekhara the priesthood were the ruling class. The traditions of the priesthood stretched back for millennia even before the fall of the nation, and was an order of great learning. They foresaw the fall, and, thousands of years in advance, set about preparing for it. They developed powerful magics of self preservation, so that even as their bodies withered they would never die - a miserable but effective form of immortality. They coordinated the burial of the Tomb Kings and their legions, the nobility and their women, and performed powerful incantations to preserve them and prepare them for reawakening in paradise. And during the long darkness since the fall they have kept watch and protected the tombs. Now all their plans have come to naught, and instead they fight with the undead legions of awakened Nehekhara. The priests have considerable power over the dead, and can cast potent enchantments to protect and fortify them in battle."
+#spr1 "./Warhammer-Complete/Priest1_TK.tga"
+#spr2 "./Warhammer-Complete/Priest2_TK.tga"
+#mor 30
+#okleader
+#poorundeadleader
+#magicskill 5 1
+#magicskill 8 2
+#researchbonus 2
+#holy
+#makemonsters1 3243
+#weapon "Quarterstaff"
+#end
+
+#newmonster 3259
+#copystats 3242
+#name "High Priest"
+#gcost 240
+#descr "The High Priests are the highest ranking of the Tomb Priests, and wield considerable divine and magical power over the dead. They have access to a powerful array of enchantments to assist the soldiers of Nehekhara in battle, and also often act as generals for the Nehekharan legions. The High Priests are unimaginably ancient and learned, and excel at magical research. They also have the power to awaken the sleeping Nehekharan legions without the use of the expensive materials normally required, although the process is extremely slow. Nehekharan armies are often accompanied by caravans containing sarcophagi of unawakened troops, so that the High Priests can awaken them given the opportunity. Tomb Priests of lesser rank can also awaken troops in the same way, but far more slowly."
+#spr1 "./Warhammer-Complete/HighPriest1.tga"
+#spr2 "./Warhammer-Complete/HighPriest2.tga"
+#mor 30
+#okleader
+#okundeadleader
+#poormagicleader
+#magicskill 5 2
+#magicskill 8 3
+#researchbonus 5
+#holy
+#makemonsters2 3243
+#weapon "Quarterstaff"
+#end
+
+#newmonster 3260
+#copystats 3242
+#name "Tomb King"
+#gcost 500
+#descr "The Tomb Kings of Nehehkhara were individuals of extraordinary power. With the passing of the previous king, the new ruler would be chosen on the basis of his wisdom and strength, and the contenders were always exceptional. Invariably drawn from the senior ranks of the priesthood these individuals had been able to extend their lives indefinitely, and they did not fail to make use of their time, learning mysterious magic and travelling foreign lands. Once chosen, his acolytes would endlessly perform incantations to further strengthen the physical and magical powers of their near-divine ruler. A Tomb Kings would often rule for several centuries, before deciding that his time in this life had come to an end, and would retreat to his tomb to await paradise. Such are the strength of the enchantments on the reawakened king that he is almost impossible to destroy, although if he is very badly injured the release of magical energies needed to keep him alive will leave him severely weakened."
+#spr1 "./Warhammer-Complete/TombKing1.tga"
+#spr2 "./Warhammer-Complete/TombKing2.tga"
+#goodleader
+#goodundeadleader
+#poormagicleader
+#clearmagic
+#magicskill 0 2
+#magicskill 3 1
+#magicskill 5 3
+#magicskill 8 3
+#custommagic 6144 100
+#custommagic 1408 100
+#custommagic 7552 50
+#custommagic 7552 10
+#mor 30
+#hp 25
+#str 14
+#att 14
+#def 14
+#mr 18
+#holy
+#weapon "Cobra Staff"
+#armor "Gilded Armor"
+#armor "Royal Headdress"
+#researchbonus 2
+#secondshape 3261
+#makemonsters2 3243
+#slowrec
+#end
+
+-- Second form
+#newmonster 3261
+#copystats 3242
+#name "Tomb King"
+#descr "The Tomb Kings of Nehehkhara were individuals of extraordinary power. With the passing of the previous king, the new ruler would be chosen on the basis of his wisdom and strength, and the contendors were always exceptional. Invariably drawn from the senior ranks of the priesthood these individuals had been able to extend their lives indefinitely, and they did not fail to make use of their time, learning mysterious magic and travelling foreign lands. Once chosen, his acolytes would endlessly perform incantations to further strengthen the physical and magical powers of their near-divine ruler. A Tomb King would often ruled for several centuries, before deciding that his time in this life had come to an end, and would retreat to his tomb to await paradise. This Tomb King has been physically destroyed in battle, and his body has been reformed by the powerful enchantments animating him. Although physically and magically weakened his now skeletal form remains almost impossible to destroy."
+#gcost 420
+#spr1 "./Warhammer-Complete/TombKingSkel1.tga"
+#spr2 "./Warhammer-Complete/TombKingSkel2.tga"
+#mor 30
+#hp 20
+#str 14
+#att 14
+#def 14
+#mr 17
+#fireres 0
+#coldres 15
+#holy
+#goodleader
+#goodundeadleader
+#poormagicleader
+#weapon "Cobra Staff"
+#armor "Gilded Armor"
+#armor "Royal Headdress"
+#researchbonus 2
+#immortal
+#maxage 2000
+#magicboost 53 -1
+#makemonsters2 3243
+#end
+
+---------------Summons--------------
+
+#newmonster 3252
+#copystats 3241
+#name "Immortal"
+#gcost 40
+#descr "Many of the Tomb Kings were filled with paranoia on their burial - who knew what lay ahead? Most of all they feared being left stranded and alone, their guardian troops lost to them. The kings themselves were protected by awesome enchantments, almost impossible to permanently destroy, but they knew that their guards were far more vulnerable. And so the most powerful of the Tomb Kings set about, with the aid of their priests, to create a personal bodyguard of their most trusted troops that could themselves never be destroyed. No matter what befell them, their bodies would always reform in their tombs. These bodyguards, known as Immortals, are highly disciplined and effective troops, and as the closest guardians of the sacred Tomb Kings, they are sacred to the Nehekharans. However, powerful magic is needed to revive the Immortals, and their enchantment requires frequent renewal with costly incenses and balms."
+#spr1 "./Warhammer-Complete/Immortal1.tga"
+#spr2 "./Warhammer-Complete/Immortal2.tga"
+#hp 10
+#att 13
+#def 11
+#str 11
+#prot 2
+#mr 14
+#mor 30
+#holy
+#immortal
+#undead
+#fireres -7
+#weapon "Falchion"
+#armor "Bronze Armor"
+#armor "Circlet"
+#armor "Nehekharan Shield"
+#end
+
+#newmonster 3262
+#name "Tomb Swarm"
+#descr "Tomb Swarms consist of thousands upon thousands of long-dead insects, spiders and scorpions. Over the millenia these creatures have died in and around the Nehekharan Tombs, before being awakened by the same release of twisted necromantic magic that awoke the Nehekharans themselves. Some powerful Nehekharan mages are able to summon these swarms to the battlefield where they overwhelm enemy troops, consuming their flesh and reducing them to skeletons in seconds. Since they consist of huge numbers of tiny creatures Tomb Swarms are almost immune to arrows and are difficult to destroy with normal weapons. However, they are extremely vulnerable to fire and banishment."
+#spr1 "./Warhammer-Complete/TombSwarm1.tga"
+#spr2 "./Warhammer-Complete/TombSwarm2.tga"
+#nametype 166
+#mapmove 2
+#ap 6
+#neednoteat
+#poisonres 25
+#coldres 7
+#inanimate
+#undead
+#size 1
+#gcost 0
+#rcost 1
+#att 18
+#def 6
+#str 1
+#mr 12
+#mor 50
+#enc 0
+#weapon "Tiny Bite"
+#weapon "Tiny Bite"
+#armor "Thousands of Bodies"
+#fireres -10
+#hp 1
+#end
+
+#newmonster 3263
+#name "Anubite"
+#spr1 "./Warhammer-Complete/Anubite1.tga"
+#spr2 "./Warhammer-Complete/Anubite2.tga"
+#descr "Anubis was a jackal-headed gods of the ancient Nehekharan pantheon. The Anubites were his servants, jackal-men made of black granite. When Anubis was vanquished the Anubites fell silent, appearing to be no more than statues. Now they are awakened to serve the new god. The Anubites run and jump very quickly on animal-like legs, and are very skilled fighters."
+#nametype 166
+#mapmove 3
+#ap 20
+#neednoteat
+#poisonres 25
+#inanimate
+#noheal
+#size 2
+#gcost 0
+#rcost 1
+#att 12
+#def 11
+#str 11
+#mr 12
+#hp 12
+#mor 30
+#prot 16
+#enc 0
+#ambidextrous 3
+#magicbeing
+#darkvision 100
+#weapon "Falchion"
+#weapon "Falchion"
+#armor "Shoulder Guard"
+#stonebeing
+#slashres
+#pierceres
+#end
+
+#newmonster 3264
+#name "Servant of Horus"
+#spr1 "./Warhammer-Complete/HorusServant1.tga"
+#spr2 "./Warhammer-Complete/HorusServant2.tga"
+#descr "Horus was an eagle-headed god of the ancient Nehekharan pantheon. He was the god of the sun and moon, and fought endlessly against the evil god Set and his undead and demonic minions. His servants are magical beings made in his image, and they wield powerful magical spears which burn with a holy fire. When Horus disappeared from the world, his servants vanished too, banished to an unknown plane. Now they are summoned back to serve the new god of Nehekhara. They still bear the blessing of Horus, which grants them endless stamina in their fight against evil."
+#nametype 166
+#mapmove 2
+#ap 12
+#size 2
+#gcost 0
+#rcost 1
+#att 12
+#def 13
+#str 10
+#mr 15
+#hp 16
+#mor 30
+#prot 4
+#enc 1
+#magicbeing
+#neednoteat
+#fireres 7
+#reinvigoration 5
+#weapon "Spear of Horus"
+#armor "Bronze Hauberk"
+#armor "Shield"
+#armor "Headdress"
+#end
+
+#newmonster 3265
+#name "Servant of Set"
+#spr1 "./Warhammer-Complete/SetServant1.tga"
+#spr2 "./Warhammer-Complete/SetServant2.tga"
+#descr "Set was a dark and mysterious animal-headed god of the ancient Nehekharan pantheon, a god of chaos and destruction. His armies of demons and undead battled endlessly against the legions of Horus. The Servants of Set are sinister creatures created in his image. Clad in rags, they move unseen through enemy territory. They are assassins and spies, and can use their potent mental powers to sow the seeds of unrest in the lands they move through and to erase the memories of any who see them. When Set was destroyed his servants were banished, but now they are called back to serve the new god of Nehekhara."
+#nametype 166
+#mapmove 2
+#ap 8
+#size 2
+#gcost 0
+#rcost 1
+#att 12
+#def 12
+#str 8
+#mr 14
+#hp 8
+#mor 30
+#prot 4
+#enc 0
+#fear 5
+#undead
+#neednoteat
+#poisonres 25
+#inanimate
+#stealthy 25
+#assassin
+#patience 2
+#spy
+#weapon 63 -- Life drain
+#weapon "Mind Blast"
+#custommagic 20480 10 -- 10% death/blood
+#armor "Rags"
+#end
+
+#newmonster 3266
+#name "Bone Scorpion"
+#spr1 "./Warhammer-Complete/BoneScorpion1.tga"
+#spr2 "./Warhammer-Complete/BoneScorpion2.tga"
+#descr "Although the Tomb Priests of Nehekhara are almost immortal and never die of natural causes, the oldest among them seem gradually to lose awareness of the world around them, and pass into torpor. The Bone Scorpion is a huge, macabre construction built around a sarcophagus containing such an ancient priest. Although the priest is unconscious his magic permeates the scorpion, giving it false life and a degree of awareness of its own. The vast Bone Scorpions are immensely fearsome opponents on the battlefield, trampling and crushing their opponents without ever tiring."
+#nametype 166
+#mapmove 3
+#neednoteat
+#coldres 15
+#poisonres 25
+#inanimate
+#undead
+#pooramphibian
+#ap 12
+#size 6
+#gcost 0
+#rcost 1
+#att 12
+#def 8
+#str 18
+#mr 16
+#hp 90
+#mor 30
+#prot 18
+#enc 0
+#trample
+#fear 5
+#itemslots 12288
+#weapon "Pincer"
+#weapon "Pincer"
+#weapon 144 --Stinger
+-- Give it the properties of a high priest in case it's GoRed.
+#okleader
+#okundeadleader
+#poormagicleader
+#magicskill 5 2
+#magicskill 8 3
+#researchbonus 2
+#holy
+#pierceres
+#end
+
+#newmonster 3267
+#name "Ushabti"
+#spr1 "./Warhammer-Complete/Ushabti1.tga"
+#spr2 "./Warhammer-Complete/Ushabti2.tga"
+#descr "The Ushabti are statues built in the image of the ancient gods of Nehekhara, and animated by powerful magics. They were created to stand guard over the temples of the Tomb Priests. In times of war they would march alongside the Nehekharan armies, inspiring them to great feats of battle. The Ushabti are carved from black granite and bone, and are extremely hard to destroy."
+#nametype 166
+#mapmove 3
+#ap 12
+#size 6
+#gcost 0
+#rcost 1
+#att 12
+#def 10
+#str 20
+#mr 16
+#hp 80
+#mor 50
+#prot 20
+#enc 0
+#magicbeing
+#neednoteat
+#poisonres 25
+#inanimate
+#noheal
+#darkvision 100
+#holy
+#weapon "Ritual Blade"
+#armor "Bone Greaves"
+#stonebeing
+#pooramphibian
+#slashres
+#pierceres
+#end
+
+#newmonster 3268
+#name "Ushabti Avatar"
+#spr1 "./Warhammer-Complete/UshabtiAvatar1.tga"
+#spr2 "./Warhammer-Complete/UshabtiAvatar2.tga"
+#descr "The greatest and most perfectly carved of the Ushabti would sometimes be chosen by a Nehekharan god to be an avatar. The god would give it the spark of consciousness and access to powerful magic, and would see the world through its eyes. Although the gods themselves are long since destroyed or banished, the avatars may still be awoken, and still bear the spark of power they were granted millennia ago. The old gods possessed all manner of powers, and the awakened avatars may have knowledge of magics since lost to the Nehekharans."
+#nametype 166
+#mapmove 3
+#ap 12
+#size 6
+#gcost 0
+#rcost 1
+#att 14
+#def 12
+#str 22
+#mr 18
+#hp 120
+#prot 20
+#enc 0
+#mor 30
+#magicbeing
+#neednoteat
+#poisonres 25
+#inanimate
+#noheal
+#darkvision 100
+#holy
+#goodleader
+#goodundeadleader
+#poormagicleader
+--custommagic 7552 100 - Fire, Air, Earth, Astral, Death -- Decided against these
+ -custommagic 7552 100
+-custommagic 7552 100
+-custommagic 7552 50
+-custommagic 7552 50
+-custommagic 7552 50
+-custommagic 7552 50
+#custommagic 1408 100 - Fire, Air, Earth
+#custommagic 1408 50
+#custommagic 1408 50
+#custommagic 1920 50 - Fire, Air, Earth, Water
+#custommagic 1920 50
+#custommagic 30720 80 - Sorcery
+#magicboost 4 2 - Sorcery (so they'll always have level 3 in one sorcery)
+#magicboost 5 2
+#magicboost 6 2
+#magicboost 7 2
+#magicskill 8 1 -- Holy 1
+#weapon "Ritual Blade"
+#armor "Ushabti Avatar Armor"
+#stonebeing
+#pooramphibian
+#slashres
+#pierceres
+#end
+
+---------------Heroes--------------
+
+#newmonster 3269
+#copystats 3263
+
+#name "Anubite Captain"
+#spr1 "./Warhammer-Complete/AnubiteCaptain1.tga"
+#spr2 "./Warhammer-Complete/AnubiteCaptain2.tga"
+#descr "The Anubite Captains are the leaders of the Anubites, once servants of the banished god Anubis.
+Like the lesser anubites they are jackal-men of black granite, and run swiftly on animal-like legs.
+They are exceptionally skilled fighters and leaders."
+#att 15
+#def 14
+#str 14
+#mr 14
+#hp 18
+#prot 18
+#goodleader
+#okundeadleader
+#goodmagicleader
+#stonebeing
+#slashres
+#pierceres
+#end
+
+#newmonster 3270
+#copystats 3266
+#name "Awakened Scorpion"
+#spr1 "./Warhammer-Complete/ScorpionHero1.tga"
+#spr2 "./Warhammer-Complete/ScorpionHero2.tga"
+#descr "The Awakened Scorpion is a legendary being - for it contains the body of the only High Priest ever to awaken from the torpor known as the Death Sleep. After the priest fell into torpor and was encased in the Scorpion, it fought as expected for many years, showing only the animal intelligence granted it by the enchantments animating it. But then, gradually, signs of intelligence began to appear. Finally it became apparent that the High Priest inside had awoken. However, having grown used to the powerful body of the Scorpion, he chose to remain inside it. He has regained his magical powers and is now one of the mightiest generals of Nehekhara. In recognition of his astonishing feat, his Tomb King had the stinger and pincers of his Scorpion gilded."
+#att 14
+#def 10
+#str 20
+#mr 17
+#prot 20
+#magicskill 5 3
+#expertleader
+#superiorundeadleader
+#goodmagicleader
+#end
+
+#newmonster 3271
+#copystats 3242
+#name "Warrior King"
+#gcost 420
+#descr "The Warrior King is a Tomb King who focussed his life on the study of martial prowess. In battle a Warrior King would ride with his warriors in a mighty chariot, striking down enemies in their dozens. While magically less skilled than other Tomb Kings, a Warrior King is unparallelled in battle. Such are the strength of the enchantments on the king that he is almost impossible to destroy, although if he is very badly injured the release of magical energies needed to keep him alive will leave him severely weakened."
+#spr1 "./Warhammer-Complete/WarriorKing1.tga"
+#spr2 "./Warhammer-Complete/WarriorKing2.tga"
+#goodleader
+#goodundeadleader
+#poormagicleader
+#clearmagic
+#magicskill 0 1
+#magicskill 5 2
+#magicskill 8 3
+#custommagic 6144 100
+#custommagic 1408 100
+#custommagic 7552 50
+#custommagic 7552 10
+#mor 30
+#hp 28
+#str 15
+#att 16
+#def 15
+#mr 18
+#holy
+#size 4
+#trample
+#mounted
+#ap 22
+#mapmove 4
+#prot 10
+#weapon "Cobra Staff"
+#armor "Gilded Armor"
+#armor "Royal Headdress"
+#researchbonus 2
+#secondshape 3272
+#makemonsters2 3243
+#end
+
+#newmonster 3272
+#copystats 3242
+#name "Warrior King"
+#descr "The Warrior King is a Tomb King who focussed his life on the study of martial prowess. In battle a Warrior King would ride with his warriors in a mighty chariot, striking down enemies in their dozens. While magically less skilled than other Tomb Kings, a Warrior King is unparallelled in battle. This Warrior King has been physically destroyed, and his body has been reformed by the powerful enchantments animating him. Although physically and magically weakened his now skeletal form remains almost impossible to destroy."
+#gcost 420
+#spr1 "./Warhammer-Complete/WarriorKingSkel1.tga"
+#spr2 "./Warhammer-Complete/WarriorKingSkel2.tga"
+#mor 30
+#hp 22
+#str 15
+#att 16
+#def 15
+#mr 17
+#fireres 0
+#coldres 15
+#holy
+#size 4
+#trample
+#mounted
+#ap 22
+#mapmove 4
+#prot 10
+#goodleader
+#goodundeadleader
+#poormagicleader
+#weapon "Cobra Staff"
+#armor "Gilded Armor"
+#armor "Royal Headdress"
+#researchbonus 2
+#immortal
+#maxage 2000
+#magicboost 53 -1
+#makemonsters1 3243
+#end
+
+#newmonster 3273
+#name "Avatar of Horus"
+#spr1 "./Warhammer-Complete/HorusAvatar1.tga"
+#spr2 "./Warhammer-Complete/HorusAvatar2.tga"
+#descr "The Avatar of Horus is a mighty living statue that was granted the spark of intelligence by Horus, a god of the ancient Nehekharans. Horus was the god of the sun and the moon, and a protector of Nehekhara. Although Horus himself was vanquished, his Avatar retains some measure of the power granted it. It can wield the magics of the sun and moon, and is also a potent warrior. It bears a flaming blade given it by Horus, which is deadly to undead and demons. Unfortunately the catastrophe in which Horus was banished greatly weakened the Avatar, and it is left relatively vulnerable to enemy magics."
+#nametype 166
+#mapmove 3
+#ap 12
+#size 6
+#gcost 0
+#rcost 1
+#att 14
+#def 12
+#str 22
+#mr 14
+#hp 120
+#prot 20
+#enc 0
+#mor 30
+#magicbeing
+#neednoteat
+#poisonres 25
+#inanimate
+#noheal
+#darkvision 100
+#holy
+#goodleader
+#goodundeadleader
+#poormagicleader
+#magicskill 0 3
+#magicskill 4 3
+#weapon "Blade of Horus"
+#armor "Ushabti Avatar Armor"
+#stonebeing
+#slashres
+#pierceres
+#end
+
+
+---------------Pretenders--------------
+
+-- And add a couple of new pretenders.
+
+#newmonster 3274
+#name "Gilded Scorpion"
+#gcost 150
+#spr1 "./Warhammer-Complete/GildedScorpion1.tga"
+#spr2 "./Warhammer-Complete/GildedScorpion2.tga"
+#descr "The Gilded Scorpion was once a mad Grand High Priest of Nehekhara. Seeing the power of the Bone Scorpions constructed by the priesthood he ordered the construction of one for himself,
+then had himself closed alive in a coffin inside it. Although mad he was also magically powerful, and as his mortal body died his spirit was able to possess the scorpion body, whereupon he proceeded to eviscerate the previous Tomb King with his new body and declare himself king. He had his new form gilded as a sign of his power. Eventually he grew tired of ruling and entered torpor to await paradise. Now he has awoken to rule his kingdom once more."
+#nametype 166
+#mapmove 3
+#neednoteat
+#coldres 15
+#poisonres 25
+#inanimate
+#undead
+#pooramphibian
+#ap 12
+#size 6
+#att 14
+#def 10
+#str 20
+#mr 18
+#hp 90
+#mor 30
+#prot 18
+#enc 0
+#trample
+#fear 5
+#itemslots 12288
+#weapon "Pincer"
+#weapon "Pincer"
+#weapon 144 --Stinger
+#goodleader
+#superiorundeadleader
+#magicskill 3 1
+#magicskill 5 2
+#pathcost 40
+#startdom 2
+#pierceres
+#end
+
+#newmonster 3275
+#copystats 3242
+#name "First King"
+#gcost 10000
+#spr1 "./Warhammer-Complete/FirstKing1.tga"
+#spr2 "./Warhammer-Complete/FirstKing2.tga"
+#descr "The First King was the founder of the earliest of the great kingdoms of Nehekhara. He is a powerful mage, and used his magics to empower his body and lengthen his life, eventually attaining immortality itself. After ruling over his kingdom for hundreds of years, the First King finally entered torpor. Now he has reawakened to rule his tragic kingdom once more."
+#nametype 166
+#mor 30
+#hp 25
+#str 15
+#att 15
+#def 15
+#mr 18
+#weapon "Cobra Staff"
+#armor "Gilded Armor"
+#armor "Royal Headdress"
+#goodleader
+#superiorundeadleader
+#poormagicleader
+#magicskill 0 1
+#magicskill 5 2
+#researchbonus 2
+#immortal
+#pathcost 20
+#startdom 3
+#end
+
+
+---------------Sites--------------
+
+#newsite 1930
+#name "Tombs of Nehekhara"
+#clear
+#path 5
+#level 0
+#rarity 5
+#gems 5 3
+#homecom 3260
+#end
+
+#newsite 1931
+#name "Nehekharan Deserts"
+#clear
+#path 0
+#level 0
+#rarity 5
+#gems 0 2
+#gems 3 2
+#end
+
+
+---------------Spells--------------
+
+#newspell
+#copyspell "Frighten"  -- To get sound
+#name "Heal the Dead"
+#descr "With this spell the priests of Nehekhara are able to repair the bodies of
+undead soldiers on the battlefield, broken bones knitting back together before the
+very eyes of their opponents."
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school 7
+#pathlevel 0 1
+#researchlevel 0
+#aoe 2004
+#effect 13
+#damage 3
+#fatiguecost 0
+#nreff 1
+#range 50
+#precision 100
+#explspr 10054
+#spec 75513984
+#end
+
+#newspell
+#copyspell "Frighten"
+#name "Resilience3"
+#descr "Dummy spell, to make resilience more effective."
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school -1
+#pathlevel 0 2
+#aoe 2000
+#effect 10
+#damage 1040
+#fatiguecost 0
+#nreff 1
+#range 30
+#precision 100
+#explspr 10053
+#spec 75518080
+#end
+
+#newspell
+#copyspell "Resilience3"
+#name "Resilience2"
+#nextspell "Resilience3"
+#end
+
+#newspell
+#copyspell "Frighten"
+#name "Resilience"
+#descr "This spell allows a priest of Nehekhara to briefly reinforce the enchantments 
+holding undead soldiers together. They become much harder to destroy in combat."
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school 7
+#pathlevel 0 2
+#aoe 2000
+#effect 10
+#damage 1040
+#fatiguecost 0
+#nreff 1
+#range 30
+#precision 100
+#explspr 10053
+#spec 75518080
+#nextspell "Resilience2"
+#end
+
+#newspell
+#copyspell "Frighten"
+#name "The Undying"
+#descr "This mighty enchantment confers regenerative abilities onto undead soldiers,
+so that the skeletal bodies of the dead may repair themselves in seconds."
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school 7
+#pathlevel 0 3
+#aoe 3000
+#effect 23
+#damage 536870912
+#fatiguecost 0
+#nreff 1
+#range 30
+#precision 5
+#explspr 10047
+-spec 75518080
+#spec 75513984
+#end
+
+#newspell
+#copyspell "Frighten"
+#name "Strength of the Tomb3"
+#descr "Dummy spell to make Strength of the Tomb more effective"
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school -1
+#pathlevel 0 2
+#aoe 2000
+#effect 10
+#damage 128
+#fatiguecost 0
+#nreff 1
+#range 30
+#precision 100
+#explspr 10057
+#spec 75518080
+#end
+
+#newspell
+#copyspell "Strength of the Tomb3"
+#name "Strength of the Tomb2"
+#nextspell "Strength of the Tomb3"
+#end
+
+#newspell
+#copyspell "Frighten"
+#name "Strength of the Tomb"
+#descr "With this spell a Nehekharan priest is able to grant enormous strength to 
+undead soldiers on the battlefield, giving them the ability to rip through the armour
+ of enemy soldiers with ease."
+#restricted 112
+#path 0 8
+#researchlevel 0
+#school 7
+#pathlevel 0 2
+#aoe 2000
+#effect 10
+#damage 128
+#fatiguecost 0
+#nreff 1
+#range 30
+#precision 100
+#explspr 10057
+#spec 75518080
+#nextspell "Strength of the Tomb2"
+#end
+
+#newspell
+#copyspell "Raise Dead"  -- To get sound
+#name "Summon Tomb Swarms"
+#descr "This spell summons a huge swarm of undead insects, scorpions and spiders from the depths of the Nehekharan tombs. The mindless swarm will crawl under armor and reduce enemy soldiers to skeletons within seconds."
+#school 0
+#restricted 112
+#researchlevel 4
+#range 25
+#path 0 5
+#fatiguecost 100
+#pathlevel 0 4
+#effect 1
+#flightspr -1
+#damage 3262
+#spec 5060
+#explspr 10057
+#precision 0
+#nreff 8000
+#end
+
+#newspell
+#name "Awaken Immortal"
+#descr "This spell awakens one of the elite members of a Tomb King's bodyguard. Such 
+is the strength of the enchantments on these soldiers that they are almost impossible
+ to permanently destroy."
+#school 4
+#restricted 112
+#researchlevel 0
+#path 0 5
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 300
+#effect 10001
+#damage 3252
+#nreff 1
+#end
+
+#newspell
+#name "Awaken Anubites"
+#descr "The Anubites are the sleeping granite servants of the ancient Nehekharan
+god Anubis. They are powerful fighters and can run and jump rapidly across the 
+battlefield."
+#school 4
+#restricted 112
+#researchlevel 3
+#path 0 3
+#path 1 5
+#pathlevel 0 2
+#pathlevel 1 2
+#fatiguecost 800
+#effect 10001
+#damage 3263
+#nreff 5
+#end
+
+#newspell
+#name "Summon Servants of Horus"
+#descr "The Servants of Horus were mighty defenders of the light, wielding their holy flaming spears to fight off hordes of demons and undead. They were banished when Horus was vanquished, but may now be summoned back to fight for Nehekhara. The Servants of Horus are disciplined and well equipped and are very good at holding a defensive line."
+#school 0
+#restricted 112
+#researchlevel 4
+#path 0 0
+#path 1 4
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 2400
+#effect 10001
+#damage 3264
+#nreff 20
+#end
+
+#newspell
+#name "Summon Servant of Set"
+#descr "This spell summons one of the malign servants of the vanquished god Set. The creature is a potent spy and assassin."
+#school 0
+#restricted 112
+#researchlevel 4
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 800
+#effect 10021
+#damage 3265
+#nreff 1
+#end
+
+#newspell
+#name "Construct Bone Scorpion"
+#descr "This huge scorpion is built from bone and used to carry the casket of an 
+ancient, dormant Tomb Priest. The priest cannot cast any spells, but his latent
+magic powers the huge construct. A bone scorpion is a fearsome opponent in battle,
+capable of trampling large numbers of enemy troops."
+#school 3
+#restricted 112
+#researchlevel 5
+#path 0 5
+#pathlevel 0 5
+#fatiguecost 1800
+#effect 10001
+#damage 3266
+#nreff 1
+#end
+
+#newspell
+#name "Awaken Ushabti"
+#descr "The Ushabtis are huge statues of granite and bone that stand guard over the temples of Nehekhara. This spell awakens one of the Ushabti, enabling it to march to war. In battle the Ushabti are powerful and very hard to destroy."
+#school 4
+#restricted 112
+#researchlevel 4
+#path 0 3
+#path 1 5
+#pathlevel 0 2
+#pathlevel 1 2
+#fatiguecost 1200
+#effect 10001
+#damage 3267
+#nreff 1
+#end
+
+#newspell
+#name "Awaken Ushabti Avatar"
+#descr "The ancient gods of Nehekhara granted intelligence and magical power to a small number of Ushabti to act as their avatars. While the Gods have gone, the Ushabti remain. They are somewhat more powerful then lesser Ushabti, and possess magical powers."
+#school 4
+#restricted 112
+#researchlevel 8
+#path 0 3
+#path 1 5
+#pathlevel 0 4
+#pathlevel 1 4
+#fatiguecost 3500
+#effect 10021
+#damage 3268
+#nreff 1
+#end 
+
+
+
+---------------Arabic/Egyptian Names--------------
+
+#selectnametype 166
+#clear
+#addname "Adjo" 
+#addname "Akhom"
+#addname "Ako"
+#addname "Akori"
+#addname "Alu"
+#addname "Amahté"
+#addname "Amenemhêt"
+#addname "Amenhotep"
+#addname "Anemro"
+#addname "Anhuri"
+#addname "Anok Fero"
+#addname "Anok Sabé"
+#addname "Ashai"
+#addname "Awan"
+#addname "Awi"
+#addname "Baba"
+#addname "Bai"
+#addname "Baki"
+#addname "Baraka"
+#addname "Bari"
+#addname "Benipé"
+#addname "Biti"
+#addname "Bubu"
+#addname "Buikhu"
+#addname "Djadao"
+#addname "Fanté"
+#addname "Hêtshepsu"
+#addname "Iabi"
+#addname "Ialu"
+#addname "Ibenré"
+#addname "Itafé"
+#addname "Itennu"
+#addname "Djal"
+#addname "Kahotep"
+#addname "Kamenwati"
+#addname "Kemnebi"
+#addname "Kemosiri"
+#addname "Kemsa"
+#addname "Khai"
+#addname "Khenti"
+#addname "Kufu"
+#addname "Manu"
+#addname "Mdjai"
+#addname "Menetnashté"
+#addname "Meti"
+#addname "Mhotep"
+#addname "Mkhai"
+#addname "Mkalbuti"
+#addname "Mshai"
+#addname "Mtidja"
+#addname "Mumé"
+#addname "Muntuhotep"
+#addname "Nebi"
+#addname "Nebibi"
+#addname "Nebtawi"
+#addname "Nifé-en-Ankh"
+#addname "Nomti"
+#addname "Nsu"
+#addname "Nubi"
+#addname "Oba"
+#addname "Odji"
+#addname "Panahasi"
+#addname "Rami"
+#addname "Rasui"
+#addname "Remmao"
+#addname "Sadji"
+#addname "Saini"
+#addname "Sebi"
+#addname "Seini"
+#addname "Semni"
+#addname "Shai"
+#addname "Shalam"
+#addname "Shenti"
+#addname "Shushu"
+#addname "Sinuhé"
+#addname "Sokkwi"
+#addname "Suten Anu"
+#addname "Suten Hamu"
+#addname "Top Betuké"
+#addname "Udjai"
+#addname "Uro"
+#addname "Urshé"
+#addname "Wakhakwi"
+#addname "Wakhashem"
+#addname "Wati"
+#end
+
+
+---------------Nation Info--------------
+
+#selectnation 112
+#clearnation
+
+#name "Nehekhara"
+#descr "The lands of Nehekhara were once vast and fertile, and its many kingdoms were powerful for thousands of years. However, long ago a dire prophecy  was made - slowly the rivers would dry up and the land would die, and its people with it. It was foreseen that this great drought would finally be ended by the rising of a new god, when a great wave of benevolent magic would sweep the land; Nehekhara would become a paradise, and the dead, if properly preserved, would rise to live anew. So the priests of Nahakhara set about preparing. Nobles and soldiers, kings and wizards were buried carefully with powerful magics, so that they might reawaken in the distant future. Gradually the drought overtook Nehekhara, until eventually nothing moved in the vast desert. Then catastrophe struck - the fall of Ermor released dark energies that flowed  around the world; in Nehekhara the great enchantments of the priests were perverted, and its people doomed to awaken not to a new life, but to undeath."
+#summary "Race: undead humans, prefers Heat Scale +2
+
+Military: light infantry, cavalry and chariots, powerful summons
+
+Magic: Death and Fire, with weak Air, Astral and Earth
+
+Priests: Strong"
+#brief "The Nehekharans are the undead soldiers of a doomed civilization, emerging from their tombs to rebuild their lost kingdoms."
+#epithet "Tomb Kings"
+#era 2
+#color 0.71 0.60 0.05
+#flag "./Warhammer-Complete/FlagTK.tga"
+#idealcold -2
+#fortera 2
+#templepic 0
+
+#clearsites
+#startsite "Tombs of Nehekhara"
+#startsite "Nehekharan Deserts"
+
+#clearrec
+#addrecunit 3243
+#addrecunit 3244
+#addrecunit 3245
+#addrecunit 3246
+#addrecunit 3247
+#addrecunit 3248
+#addrecunit 3249
+#addrecunit 3250
+#addrecunit 3251
+#addreccom 3253
+#addreccom 3254
+#addreccom 3255
+#addreccom 3256
+#addreccom 3257
+#addreccom 3258
+#addreccom 3259
+
+#hero1 3270
+#hero2 3273
+#multihero1 3269
+#multihero2 3271
+
+#cleargods
+#homerealm 5 -- Middle East
+#homerealm 7 -- Africa
+#homerealm 10 -- Default
+#addgod 3274 -- Gilded Scorpion
+#addgod 3275 -- First King
+#cheapgod20 3275
+#addgod 607  --Baphomet
+#addgod 661  --Shedu
+#addgod 1097 --Lord of the Summer Plague
+#addgod 957  --Lord of the Desert Sun
+#addgod 395  --Lich Queen
+#addgod 120  --Moloch
+#addgod 1384 --Solar Disc
+#addgod 655  --Scorpion King
+#addgod 1349 --Devourer of Souls
+#addgod 269  --Wyrm
+#addgod 862 -- Vampire Queen
+
+#startcom 3258
+#startunittype1 3243
+#startunittype2 3245
+#startunitnbrs1 15
+#startunitnbrs2 15
+#startscout 3253
+
+#defcom1 3257
+#defcom2 3258
+#defunit1 3243
+#defunit2 3247
+#defunit1b 3245
+#defunit2b 3250
+#defmult1 15
+#defmult1b 10
+#defmult2 10
+#defmult2b 10
+
+#end
+
+-- END OF TOMB KINGS
