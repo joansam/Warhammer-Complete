@@ -1,5 +1,5 @@
-#modname "Warhammer Complete Domingled"
-#description "8 Warhammer nations - Skaven, Lizardmen, Ogres, Lizardmen, High Elves, and 3 Chaos nations."
+#modname "Warhammer Complete"
+#description "11 Warhammer nations - High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
 #version 1.0
 #icon "Warhammer-Complete/ModBanner.tga"
 
@@ -200,15 +200,6 @@
 
 
 -- Version 0.75 - First release of the mod. Using freshly made assets as well as altered Tzeentch/Nurgle warhost assets and a slightly altered sprite from Chaos Undivided by Sombre (the Keeper of Secrets, shading and nicer differences in the attack sprite) and the usual altered Chaos Undivided .dm. Built Dechala on the Dechala for Chaos Undivided that Noble713 (from the Shrapnel forums) made. Starting at such a high version due to it not being likely that I would release 100 releases... Not that it's likely there will be 25, either, but it sounds nicer, and is more in line with the other mods.
-
---nationslot 159
---weaponslots 1851 - 1860
---armor slot 801, 803, 804
---unitslots 4150-95
---siteslots 1950 - 1951
---nametypes 257
---Restricted items 6566
---Magic item ID 969
 
 -------- WEAPONS --------
 
@@ -23490,7 +23481,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --- Vent Steam
 
-#newweapon 778
+#newweapon 
 #name "Vent Steam"
 #ammo 10
 #att 0
@@ -23508,7 +23499,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --- Iron Ball
 
-#newweapon 777
+#newweapon 
 #name "Iron Ball"
 #ammo 5
 #att 5
@@ -23523,7 +23514,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --------------- Griffon claws
 
-#newweapon 800
+#newweapon 
 #name "Griffon Claws"
 #att 0
 #bonus
@@ -23537,7 +23528,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --------------- Byzantine Pyros, overlap ok
 
-#newweapon 779
+#newweapon 
 #name "Pyros"
 #range -1
 #rcost 9
@@ -23558,7 +23549,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Longrange
 
-#newweapon 780
+#newweapon 780 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23575,7 +23566,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Midrange
 
-#newweapon 781
+#newweapon 781 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23592,7 +23583,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Shortrange
 
-#newweapon 782
+#newweapon 782 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23609,7 +23600,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 3 Midrange
 
-#newweapon 783
+#newweapon 783 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23626,7 +23617,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Melee
 
-#newweapon 784
+#newweapon 
 #name "Crew Polearms"
 #dmg 7
 #att 1
@@ -23641,7 +23632,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Hook Halberd
 
-#newweapon 785
+#newweapon 
 #name "Hook Halberd"
 #dmg 10
 #att 2
@@ -23655,7 +23646,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Ball and Chain
 
-#newweapon 786
+#newweapon 
 #name "Ball and Chain"
 #dmg 6
 #flail
@@ -23670,7 +23661,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Mancatcher
 
-#newweapon 787
+#newweapon 
 #name "Mancatcher"
 #dmg 11
 #armorpiercing
@@ -23684,7 +23675,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (ranged)
 
-#newweapon 788
+#newweapon 788 -- KEEP ID
 #name "Hand Crossbow"
 #dmg 8
 #nostr
@@ -23702,7 +23693,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (melee)
 
-#newweapon 789
+#newweapon 789 -- KEEP ID
 #name "Hand Crossbow"
 #ammo 1
 #att 1
@@ -23723,7 +23714,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Repeater Crossbow
 
-#newweapon 791
+#newweapon 
 #name "Repeater Crossbow"
 #dmg 7
 #nostr
@@ -23741,7 +23732,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Blazing Lance of Myrmidia
 
-#newweapon 792
+#newweapon 
 #name "Blazing Lance of Myrmidia"
 #dmg 20
 #nostr
@@ -23759,7 +23750,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Myrmidian Blaze
 
-#newweapon 790
+#newweapon 790 -- KEEP ID
 #name "Myrmidian Blaze"
 #dmg 8
 #armorpiercing
@@ -23774,7 +23765,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Tyrant Flail
 
-#newweapon 793
+#newweapon 
 #name "Tyrant Flail"
 #dmg 10
 #flail
@@ -23789,7 +23780,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Scythe
 
-#newweapon 794
+#newweapon 
 #name "Scythe"
 #dmg 8
 #att 1
@@ -23801,7 +23792,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Soul Scythe
 
-#newweapon 795
+#newweapon 
 #name "Soul Scythe"
 #dmg 10
 #att 2
@@ -23817,7 +23808,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Mirror of Hysh
 
-#newweapon 796
+#newweapon 
 #name "Mirror of Hysh"
 #dmg 3
 #dt_holy
@@ -23838,7 +23829,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Runefang
 
-#newweapon 797
+#newweapon 
 #name "Runefang"
 #dmg 10
 #armorpiercing
@@ -23851,7 +23842,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Broadsword of Justice
 
-#newweapon 776
+#newweapon 
 #name "Broadsword of Justice"
 #dmg 14
 #att 3
@@ -23864,7 +23855,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Righteous Crossbow
 
-#newweapon 798
+#newweapon 
 #name "Righteous Crossbow"
 #dmg 8
 #nostr
@@ -23882,7 +23873,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ----- Demigryph Talons
 
-#newweapon 799
+#newweapon 
 #name "Demigryph Talons"
 #dmg 16
 #att 0
@@ -23897,7 +23888,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver Scythe
 
-#newweapon 801
+#newweapon 
 #name "Silver Scythe"
 #dmg 7
 #att 1
@@ -23911,7 +23902,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Smite Undead
 
-#newweapon 802
+#newweapon 802 -- KEEP ID
 #name "Smite Undead"
 #dmg 4
 #magic
@@ -23923,7 +23914,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Middenhammer
 
-#newweapon 803
+#newweapon 
 #name "Middenhammer"
 #dmg 10
 #att 1
@@ -23938,7 +23929,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Wulfhammer
 
-#newweapon 804
+#newweapon 
 #name "Wulfhammer"
 #dmg 16
 #att 2
@@ -23954,7 +23945,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Greatwolf Bite
 
-#newweapon 805
+#newweapon 
 #name "Greatwolf Bite"
 #dmg 23
 #att 0
@@ -23968,7 +23959,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Staff of Volans
 
-#newweapon 806
+#newweapon 
 #name "Staff of Volans"
 #dmg 2
 #att 0
@@ -23983,7 +23974,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Sword of Morr
 
-#newweapon 807
+#newweapon 
 #name "Sword of Morr"
 #dmg 8
 #att 1
@@ -23996,7 +23987,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver Skull Breath
 
-#newweapon 808
+#newweapon 
 #name "Breath of the Silver Skull"
 #range050 -- can be used in melee half the time
 #unrepel
@@ -24025,7 +24016,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Steam Tank Cover
 
-#newarmor 280
+#newarmor 
 #name "Steam Tank Cover"
 #type 4
 #prot 24
@@ -24037,7 +24028,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Armour of Blazing Gold
 
-#newarmor 282
+#newarmor 
 #name "Armour of Blazing Gold"
 #type 5
 #prot 22
@@ -24049,7 +24040,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Wagon Cover
 
-#newarmor 281
+#newarmor 
 #name "Wagon Cover"
 #type 4
 #prot 15
@@ -24061,7 +24052,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Dueterberg Helm
 
-#newarmor 283
+#newarmor 
 #name "Dueterberg Helm"
 #type 6
 #prot 20
@@ -24072,7 +24063,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Golden Mask
 
-#newarmor 285
+#newarmor 
 #name "Golden Mask"
 #type 6
 #prot 20
@@ -24083,7 +24074,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Cloak of Molten Metal
 
-#newarmor 286
+#newarmor 
 #name "Cloak of Molten Metal"
 #type 4
 #prot 12
@@ -24094,7 +24085,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver skull helm
 
-#newarmor 287
+#newarmor 
 #name "Silver Skull Helm"
 #type 6
 #prot 25
@@ -25180,7 +25171,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Full Plate Mail"
 #armor "Full Helmet"
 #weapon "Broad Sword"
-#weapon 799 -- Demigryph Talons
+#weapon "Demigryph Talons" -- Demigryph Talons
 #armor "Kite Shield"
 #nametype 188
 #secondtmpshape 7496
@@ -25210,7 +25201,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #ap 20
 #gcost 0
 #rcost 6
-#weapon 799 -- Demigryph Talons
+#weapon "Demigryph Talons" -- Demigryph Talons
 #nametype 188
 #animal
 #end
@@ -25315,7 +25306,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Iron Cap"
 #weapon "Short Sword"
 #weapon 56
-#weapon 791 -- repeater crossbow
+#weapon "Repeater Crossbow" -- repeater crossbow
 #nametype 188
 #patrolbonus 1
 #end
@@ -25944,7 +25935,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Full Helmet"
 #weapon "Broad Sword"
 #weapon "Lance"
-#weapon 799 -- Demigryph Talons
+#weapon "Demigryph Talons" -- Demigryph Talons
 #armor "Kite Shield"
 #nametype 188
 #secondtmpshape 7490
@@ -25973,7 +25964,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #ap 20
 #gcost 0
 #rcost 6
-#weapon 799 -- Demigryph Talons
+#weapon "Demigryph Talons" -- Demigryph Talons
 #nametype 188
 #animal
 #end
@@ -26431,7 +26422,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #inspirational 2
 #armor "Full Plate Mail"
 #armor "Half Helmet"
-#weapon 776 -- Sword of justice
+#weapon "Broadsword of Justice" -- Sword of justice
 #weapon 56 -- Hoof
 #okleader
 #inspirational 3
@@ -26605,7 +26596,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #weapon 780
 #weapon 781
 #weapon 782
-#weapon 784
+#weapon "Crew Polearms"
 #secondshape 7467
 #nametype 188
 #slowrec
@@ -26642,7 +26633,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Plate Cuirass"
 #armor "Iron Cap"
 #weapon 782
-#weapon 784
+#weapon "Crew Polearms"
 #secondshape 7468
 #firstshape 7466
 #nametype 188
@@ -26679,9 +26670,9 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Plate Cuirass"
 #armor "Iron Cap"
 #weapon 783
-#weapon 785
-#weapon 786
-#weapon 787
+#weapon "Hook Halberd"
+#weapon "Ball and Chain"
+#weapon "Mancatcher"
 #firstshape 7466
 #nametype 188
 #slowrec
@@ -27192,7 +27183,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Full Plate Mail"
 #armor "Full Helmet"
 #weapon "Broad Sword"
-#weapon 800 -- dmg 20 claw x2
+#weapon "Griffon Claws" -- dmg 20 claw x2
 #weapon 417 -- dmg 22 bite
 #ambidextrous 3
 #armor "Kite Shield"
@@ -27399,7 +27390,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Full Leather Armor"
 #armor "Leather cap"
 #weapon "Broad Sword"
-#weapon 798 -- Righteous Crossbow
+#weapon "Righteous Crossbow" -- Righteous Crossbow
 #weapon 468 -- Halt Demon
 #noleader
 #nametype 188
@@ -28318,7 +28309,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Bright Wizard (Middenheim)
 
-#newmonster 7517
+#newmonster 7936
 #spr1 "./Warhammer-Complete/Wizard Bright.tga"
 #spr2 "./Warhammer-Complete/Wizard Bright2.tga"
 #name "Bright Wizard"
@@ -28464,7 +28455,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Celestial Wizard (Middenheim)
 
-#newmonster 7510
+#newmonster 7937
 #spr1 "./Warhammer-Complete/Wizard Celestial.tga"
 #spr2 "./Warhammer-Complete/Wizard Celestial2.tga"
 #name "Celestial Wizard"
@@ -28569,7 +28560,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Amethyst Wizard (Middenheim)
 
-#newmonster 7511
+#newmonster 7938
 #spr1 "./Warhammer-Complete/Wizard Amethyst.tga"
 #spr2 "./Warhammer-Complete/Wizard Amethyst2.tga"
 #name "Amethyst Wizard"
@@ -28699,7 +28690,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Light Wizard (Middenheim)
 
-#newmonster 7512
+#newmonster 7939
 #spr1 "./Warhammer-Complete/Wizard Light.tga"
 #spr2 "./Warhammer-Complete/Wizard Light2.tga"
 #name "Light Wizard"
@@ -28877,7 +28868,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Gold Wizard (middenheim)
 
-#newmonster 7513
+#newmonster 7940
 #spr1 "./Warhammer-Complete/Wizard Gold.tga"
 #spr2 "./Warhammer-Complete/Wizard Gold2.tga"
 #name "Gold Wizard"
@@ -28943,7 +28934,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #poisonres 5
 #noleader
 #nametype 188
-#forestshape 7515 -- Amber Wizard with extra nature magic, reinvig and regen
+#forestshape 7942 -- Amber Wizard with extra nature magic, reinvig and regen
 #end
 
 
@@ -28987,7 +28978,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Amber Wizard (middenheim)
 
-#newmonster 7514
+#newmonster 7941
 #spr1 "./Warhammer-Complete/Wizard Amber.tga"
 #spr2 "./Warhammer-Complete/Wizard Amber2.tga"
 #name "Amber Wizard"
@@ -29018,14 +29009,14 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #poisonres 5
 #noleader
 #nametype 188
-#forestshape 7516 -- Amber Wizard with extra nature magic, reinvig and regen
+#forestshape 7943 -- Amber Wizard with extra nature magic, reinvig and regen
 #end
 
 
 
 ---- Amber Wizard (forest form - Nuln)
 
-#newmonster 7515
+#newmonster 7942
 #spr1 "./Warhammer-Complete/Wizard Amber.tga"
 #spr2 "./Warhammer-Complete/Wizard Amber2.tga"
 #name "Amber Wizard"
@@ -29105,7 +29096,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Amber Wizard (forest form - middenheim)
 
-#newmonster 7516
+#newmonster 7943
 #spr1 "./Warhammer-Complete/Wizard Amber.tga"
 #spr2 "./Warhammer-Complete/Wizard Amber2.tga"
 #name "Amber Wizard"
@@ -29139,7 +29130,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #nametype 188
 #regeneration 10
 #reinvigoration 1
-#plainshape 7514 -- Amber Wizard (middenheim) without extra nature magic, reinvig and regen
+#plainshape 7941 -- Amber Wizard (middenheim) without extra nature magic, reinvig and regen
 #end
 
 
@@ -29429,7 +29420,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Ice Wizard
 
-#newmonster 7563
+#newmonster 7944
 #spr1 "./Warhammer-Complete/Wizard Ice.tga"
 #spr2 "./Warhammer-Complete/Wizard Ice2.tga"
 #name "Ice Wizard"
@@ -29545,7 +29536,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Tribute to the White Wolves
 
-#newmonster 7533
+#newmonster 7945
 #spr1 "./Warhammer-Complete/Pledge White Wolf.tga"
 #name "Tribute to the White Wolves"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29581,7 +29572,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Knights Panther
 
-#newmonster 7536
+#newmonster 7946
 #spr1 "./Warhammer-Complete/Pledge Panther.tga"
 #name "Tribute to the Knights Panther"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29616,7 +29607,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Reiksguard
 
-#newmonster 7537
+#newmonster 7947
 #spr1 "./Warhammer-Complete/Pledge Reiksguard.tga"
 #name "Tribute to the Reiksguard"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29652,7 +29643,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Blazing sun
 
-#newmonster 7538
+#newmonster 7948
 #spr1 "./Warhammer-Complete/Pledge Blazing Sun.tga"
 #name "Tribute to the Blazing Sun"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29688,7 +29679,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Black Bear
 
-#newmonster 7539
+#newmonster 7949
 #spr1 "./Warhammer-Complete/Pledge Bear.tga"
 #name "Tribute to the Black Bear"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29724,7 +29715,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Knights Encarmine
 
-#newmonster 7540
+#newmonster 7950
 #spr1 "./Warhammer-Complete/Pledge Encarmine.tga"
 #name "Tribute to the Knights Encarmine"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29760,7 +29751,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Sacred Scythes
 
-#newmonster 7541
+#newmonster 7951
 #spr1 "./Warhammer-Complete/Pledge Scythe.tga"
 #name "Tribute to the Sacred Scythes"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29796,7 +29787,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Gold Lion
 
-#newmonster 7542
+#newmonster 7952
 #spr1 "./Warhammer-Complete/Pledge Gold Lion.tga"
 #name "Tribute to the Gold Lion"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29832,7 +29823,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Knights Griffon
 
-#newmonster 7543
+#newmonster 7953
 #spr1 "./Warhammer-Complete/Pledge Griffon.tga"
 #name "Tribute to the Knights Griffon"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29868,7 +29859,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Hunters of Sigmar
 
-#newmonster 7544
+#newmonster 7954
 #spr1 "./Warhammer-Complete/Pledge Hunter.tga"
 #name "Tribute to the Hunters of Sigmar"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -29904,7 +29895,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 ---- Tribute to the Knights of Morr
 
-#newmonster 7575
+#newmonster 7955
 #spr1 "./Warhammer-Complete/Pledge Morr.tga"
 #name "Tribute to the Knights of Morr"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
@@ -30287,9 +30278,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7533 -- Tribute to the white wolves
+#req_monster 7945 -- Tribute to the white wolves
 #com 7930 -- GM white wolf summoning form
-#killcom 7533 -- Tribute to the white wolves
+#killcom 7945 -- Tribute to the white wolves
 #req_unique 1 -- can only ever happen once
 #revealprov
 #end
@@ -30300,9 +30291,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7533 -- Tribute to the white wolves
+#req_monster 7945 -- Tribute to the white wolves
 #com 7902 -- IC white wolf summoning form
-#killcom 7533 -- Tribute to the white wolves
+#killcom 7945 -- Tribute to the white wolves
 #end
 
 #newevent
@@ -30324,9 +30315,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7537 -- Tribute
+#req_monster 7947 -- Tribute
 #com 7912 -- GM summoning form
-#killcom 7537 -- Tribute
+#killcom 7947 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30336,9 +30327,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7537 -- Tribute
+#req_monster 7947 -- Tribute
 #com 7898 -- IC summoning form
-#killcom 7537 -- Tribute
+#killcom 7947 -- Tribute
 #end
 
 #newevent
@@ -30358,9 +30349,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7538 -- Tribute
+#req_monster 7948 -- Tribute
 #com 7922 -- GM summoning form
-#killcom 7538 -- Tribute
+#killcom 7948 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30370,9 +30361,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7538 -- Tribute
+#req_monster 7948 -- Tribute
 #com 7905 -- IC summoning form
-#killcom 7538 -- Tribute
+#killcom 7948 -- Tribute
 #end
 
 #newevent
@@ -30392,9 +30383,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7536 -- Tribute
+#req_monster 7946 -- Tribute
 #com 7928 -- GM summoning form
-#killcom 7536 -- Tribute
+#killcom 7946 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30404,9 +30395,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7536 -- Tribute
+#req_monster 7946 -- Tribute
 #com 7904 -- IC summoning form
-#killcom 7536 -- Tribute
+#killcom 7946 -- Tribute
 #end
 
 #newevent
@@ -30426,9 +30417,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7539 -- Tribute
+#req_monster 7949 -- Tribute
 #com 7931 -- GM summoning form
-#killcom 7539 -- Tribute
+#killcom 7949 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30438,9 +30429,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7539 -- Tribute
+#req_monster 7949 -- Tribute
 #com 7909 -- IC summoning form
-#killcom 7539 -- Tribute
+#killcom 7949 -- Tribute
 #end
 
 #newevent
@@ -30461,9 +30452,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7540 -- Tribute
+#req_monster 7950 -- Tribute
 #com 7933 -- GM summoning form
-#killcom 7540 -- Tribute
+#killcom 7950 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30473,9 +30464,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7540 -- Tribute
+#req_monster 7950 -- Tribute
 #com 7911 -- IC summoning form
-#killcom 7540 -- Tribute
+#killcom 7950 -- Tribute
 #end
 
 #newevent
@@ -30495,9 +30486,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7541 -- Tribute
+#req_monster 7951 -- Tribute
 #com 7934 -- GM summoning form
-#killcom 7541 -- Tribute
+#killcom 7951 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30507,9 +30498,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7541 -- Tribute
+#req_monster 7951 -- Tribute
 #com 7907 -- IC summoning form
-#killcom 7541 -- Tribute
+#killcom 7951 -- Tribute
 #end
 
 #newevent
@@ -30530,9 +30521,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7542 -- Tribute
+#req_monster 7952 -- Tribute
 #com 7935 -- GM summoning form
-#killcom 7542 -- Tribute
+#killcom 7952 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30542,9 +30533,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7542 -- Tribute
+#req_monster 7952 -- Tribute
 #com 7910 -- IC summoning form
-#killcom 7542 -- Tribute
+#killcom 7952 -- Tribute
 #end
 
 #newevent
@@ -30565,9 +30556,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7543 -- Tribute
+#req_monster 7953 -- Tribute
 #com 7932 -- GM summoning form
-#killcom 7543 -- Tribute
+#killcom 7953 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30577,9 +30568,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7543 -- Tribute
+#req_monster 7953 -- Tribute
 #com 7906 -- IC summoning form
-#killcom 7543 -- Tribute
+#killcom 7953 -- Tribute
 #end
 
 #newevent
@@ -30599,9 +30590,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7544 -- Tribute
+#req_monster 7954 -- Tribute
 #com 7926 -- GM summoning form
-#killcom 7544 -- Tribute
+#killcom 7954 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30611,9 +30602,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7544 -- Tribute
+#req_monster 7954 -- Tribute
 #com 7908 -- IC summoning form
-#killcom 7544 -- Tribute
+#killcom 7954 -- Tribute
 #end
 
 #newevent
@@ -30633,9 +30624,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7575 -- Tribute
+#req_monster 7955 -- Tribute
 #com 7923 -- GM summoning form
-#killcom 7575 -- Tribute
+#killcom 7955 -- Tribute
 #req_unique 1 -- can only ever happen once
 #end
 
@@ -30645,9 +30636,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 --nolog -- makes the event not appear in the log
 --notext -- make the event not have any text
 #rarity 0 -- always
-#req_monster 7575 -- Tribute
+#req_monster 7955 -- Tribute
 #com 7900 -- IC summoning form
-#killcom 7575 -- Tribute
+#killcom 7955 -- Tribute
 #end
 
 #newevent
@@ -30895,10 +30886,10 @@ Priests: Strong."
 #addreccom 7484 -- Jade Wizard
 #addreccom 7443 -- Amber Wizard
 #addreccom 7444 -- Gold Wizard
-#addreccom 7537 -- tribute to reiksguard
-#addreccom 7538 -- tribute to blazing sun
-#addreccom 7543 -- tribute to griffon
-#addreccom 7544 -- tribute to hunters
+#addreccom 7947 -- tribute to reiksguard
+#addreccom 7948 -- tribute to blazing sun
+#addreccom 7953 -- tribute to griffon
+#addreccom 7954 -- tribute to hunters
 --addreccom 7433 -- Grandmaster Blazing Sun
 --addreccom 7446 -- grey WL
 --addreccom 7447 -- celestial WL
@@ -31056,10 +31047,10 @@ Priests: Strong."
 #addreccom 7407 -- Jade Wizard (N)
 #addreccom 7405 -- Amber Wizard (N)
 #addreccom 7410 -- Celestial Wizard (N)
-#addreccom 7539 -- tribute to black bear
-#addreccom 7540 -- tribute to encarmine
-#addreccom 7541 -- tribute to sacred scythes
-#addreccom 7542 -- tribute to gold lion
+#addreccom 7949 -- tribute to black bear
+#addreccom 7950 -- tribute to encarmine
+#addreccom 7951 -- tribute to sacred scythes
+#addreccom 7952 -- tribute to gold lion
 --addreccom 7446 -- grey WL
 --addreccom 7447 -- celestial WL
 --addreccom 7448 -- amethyst WL
@@ -31204,18 +31195,18 @@ Priests: Strong."
 #addreccom 7917 -- Seneschal
 #addreccom 7918 -- Kislevite Boyar
 #addreccom 7921 -- Warrior Priest of Ulric (middenheim)
-#addreccom 7514 -- Amber Wizard (middenheim - 155)
+#addreccom 7941 -- Amber Wizard (middenheim - 155)
 #addreccom 7484 -- Jade Wizard (Altdorf and Middenheim - 170)
-#addreccom 7517 -- Bright Wizard (Middenheim - 180)
+#addreccom 7936 -- Bright Wizard (Middenheim - 180)
 #addreccom 7411 -- Grey Wizard (Nuln and Middenheim - 180)
-#addreccom 7512 -- Light Wizard (Middenheim - 190)
-#addreccom 7511 -- Amethyst Wizard (Middenheim - 190)
-#addreccom 7510 -- Celestial Wizard (Middenheim - 210 - slow rec)
-#addreccom 7513 -- Gold Wizard (middenheim - 210 - slow rec)
-#addreccom 7563 -- Ice Wizard of Kislev
-#addreccom 7533 -- tribute to white wolf
-#addreccom 7536 -- tribute to knights panther
-#addreccom 7575 -- tribute to the knights of Morr
+#addreccom 7939 -- Light Wizard (Middenheim - 190)
+#addreccom 7938 -- Amethyst Wizard (Middenheim - 190)
+#addreccom 7937 -- Celestial Wizard (Middenheim - 210 - slow rec)
+#addreccom 7940 -- Gold Wizard (middenheim - 210 - slow rec)
+#addreccom 7944 -- Ice Wizard of Kislev
+#addreccom 7945 -- tribute to white wolf
+#addreccom 7946 -- tribute to knights panther
+#addreccom 7955 -- tribute to the knights of Morr
 
 
 
