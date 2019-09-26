@@ -31249,19 +31249,11 @@ Priests: Strong."
 
 -- END OF EMPIRE NATIONS, BEGINNING OF TOMB KINGS
 
-Nation 		112
-Monsters 	3241-75
-Sites 		1930 and 31
-Weapons 	1700-6
-Armor 		552-62
-Nametypes 	166
-
-
 //////////////// Latest Version changes \\\\\\\\\\\\\\\\
 1.2 (Called 1.05 in the standalone version)
 -- Llamabeast's tweaks to Sarfus' port from the Dom3 mod by Llamabeast.
 -- JoanSam's nation, weapon, armor, unit, and item ID changes.
--- Also his sprite filepath changes
+-- Also sprite filepath changes
 
 1.12
 -- restored priest spells for all nations :)
@@ -31755,7 +31747,7 @@ highly respected. When they died these warriors would be buried with great cerem
 
 #newmonster 3256
 #copystats 3241
-#name "Buried Sorceror"
+#name "Buried Sorcerer"
 #gcost 200
 #descr "In ancient Nehekhara there existed mysterious men of great power, magicians and sorcerors with miraculous powers. These men wielded power over the scorching winds and heat of the desert, and dabbled too in darker arts. Often they were trusted advisors and confidants of the Tomb Kings, since they were learned, and among the very few who shared the kings' knowledge of magic. Unfortunately for those closest to the kings, their lavish lifestyles in the palaces would come to a dire end with the passing of the king - for what king would want to pass into the afterlife without his advisors? Willingly or not, they were buried alive in the royal tombs. Now they are reawakened to wield their powerful magics once more in the service of their masters."
 #spr1 "./Warhammer-Complete/Sorceror1_TK.tga"
