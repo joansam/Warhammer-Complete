@@ -31274,12 +31274,12 @@ Priests: Strong."
 
 ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
-#newweapon 1700
+#newweapon
 #name "Cobra Staff"
-#dmg 4
+#dmg 1
 #att 1
 #def 3
-#len 4
+#len 3
 #rcost 1
 #secondaryeffectalways 221  -- Used to be 171, small area fire
 -explspr 10113 -- Small area fire sprite
@@ -31287,18 +31287,18 @@ Priests: Strong."
 #blunt
 #end
 
-#newweapon 1701
+#newweapon
 #name "Ritual Blade"
 #slash
-#dmg 12
+#dmg 7
 #att 2
 #def 2
-#len 4
+#len 3
 #rcost 10
 #twohanded
 #end
 
-#newweapon 1702
+#newweapon 1702 -- KEEP ID #
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison
@@ -31306,52 +31306,53 @@ Priests: Strong."
 #mrnegates
 #end
 
-#newweapon 1703
+#newweapon 
 #name "Dart Crossbow"
 #pierce
-#range 10
+#range 15
 #nostr
 #dmg 1
 #dt_cap
 #armornegating
 #att 0
+#nratt -2 -- Fires every other round
 #ammo 2
 #secondaryeffect 1702 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
 #rcost 1
 #flyspr 109 1
 #end
 
-#newweapon 1704
+#newweapon 
 #name "Spear of Horus"
 #pierce
 #dmg 8
 #dt_holy
 #att 3
 #def 0
-#len 5
+#len 4
 #secondaryeffect 221
 #end
 
-#newweapon 1705
+#newweapon 
 #name "Blade of Horus"
 #slash
 #nratt 2
-#dmg 12
+#dmg 7
 #att 3
 #def 2
-#len 4
+#len 3
 #rcost 10
 #dt_holy
 #secondaryeffect 221
 #twohanded
 #end
 
-#newweapon 1706
+#newweapon 
 #name "Asp Bow"
 #pierce
-#range 35
+#range 45
 #nostr
-#dmg 12
+#dmg 9
 #ammo 12
 #rcost 1
 #att 1
@@ -31365,7 +31366,7 @@ Priests: Strong."
 ///////////////// New armor \\\\\\\\\\\\\\\\\\\\
 
 
-#newarmor 552
+#newarmor 
 #name "Shoulder Guard"
 #type 5
 #prot 4
@@ -31374,7 +31375,7 @@ Priests: Strong."
 #rcost 2
 #end
 
-#newarmor 553
+#newarmor 
 #name "Nehekharan Shield"
 #type 4
 #prot 12
@@ -31383,7 +31384,7 @@ Priests: Strong."
 #rcost 3
 #end
 
-#newarmor 554
+#newarmor 
 #name "Bronze Armor"
 #type 5
 #prot 10
@@ -31392,7 +31393,7 @@ Priests: Strong."
 #rcost 4
 #end
 
-#newarmor 555
+#newarmor 
 #name "Circlet"
 #type 6
 #prot 4
@@ -31401,7 +31402,7 @@ Priests: Strong."
 #rcost 0
 #end
 
-#newarmor 556
+#newarmor 
 #name "Gilded Armor"
 #type 5
 #prot 14
@@ -31410,7 +31411,7 @@ Priests: Strong."
 #rcost 12
 #end
 
-#newarmor 557
+#newarmor 
 #name "Royal Headdress"
 #type 6
 #prot 8
@@ -31419,7 +31420,7 @@ Priests: Strong."
 #rcost 1
 #end
 
-#newarmor 558
+#newarmor 
 #name "Headdress"
 #type 6
 #prot 6
@@ -31428,7 +31429,7 @@ Priests: Strong."
 #rcost 1
 #end
 
-#newarmor 559
+#newarmor 
 #name "Thousands of Bodies"
 #type 4
 #prot 30
@@ -31437,7 +31438,7 @@ Priests: Strong."
 #rcost 0
 #end
 
-#newarmor 560
+#newarmor 
 #name "Bone Greaves"
 #type 5
 #prot 4
@@ -31445,7 +31446,7 @@ Priests: Strong."
 #enc 0
 #end
 
-#newarmor 561
+#newarmor 
 #name "Rags"
 #type 5
 #prot 2
@@ -31453,7 +31454,7 @@ Priests: Strong."
 #enc 0
 #end
 
-#newarmor 562
+#newarmor 
 #name "Ushabti Avatar Armor"
 #type 5
 #prot 8
@@ -32363,6 +32364,7 @@ then had himself closed alive in a coffin inside it. Although mad he was also ma
 #pathcost 40
 #startdom 2
 #pierceres
+#heal
 #end
 
 #newmonster 3275
@@ -32391,6 +32393,7 @@ then had himself closed alive in a coffin inside it. Although mad he was also ma
 #immortal
 #pathcost 20
 #startdom 3
+#heal
 #end
 
 
@@ -32843,7 +32846,6 @@ Priests: Strong"
 #cleargods
 #homerealm 5 -- Middle East
 #homerealm 7 -- Africa
-#homerealm 10 -- Default
 #addgod 3274 -- Gilded Scorpion
 #addgod 3275 -- First King
 #cheapgod20 3275
