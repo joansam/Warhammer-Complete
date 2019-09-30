@@ -4,12 +4,44 @@ Weapons and armor may need IDs back if DomEnhanced takes the lower ranges
 Should enable WHC AFTER DomEnhanced so dynamic IDs don't get overridden
 Nations went over 199
 Dome of High Magic and Protective Presence are Enchantments
+-- VERSION 1.7 --
+Removed diseaseres from High Elves, was weird and buffed them massively against Nurgle
+Increased cost of Loremaster of Hoeth from 460 to 600
+Changed Nuln nation ID to not conflict with Nurgle
+Tomb Kings Porting Checklist:
+Check Nehekharan shield, seems to be giving body prot - done, just inspector
+Make mindless - done
+Resilience+Strength of the Tomb, remove copied effects and just make it work - done
+Add recpoints for units and commanders, tends to be 2-3 more than 9 for each gold over 10 on human nations - done
+Mounted units price decrease - done
+Check custom pretenders for cost - done
+Look at iron armor/weapons esp. on amphib units - good for now
+Check cap site sprites and cap gem income - high income but probably intentional
+Mapmove convert - good for now
+Check that name reflects faction - yeah, good for now
+Check immortality, default reform time is 3 months - done
+Look at forts, consider era - done
+Look at modded onebattlespells (don’t work any more) - done
+Look at copyspells that used IDs (might have changed) - done
+Check woundfend, works differently now - done
+Check ranged weapons that might have extra dmg, now add 33% strength - done
+Bows and crossbows have +5 range in Dom5, slings have +10 so add when relevant - done
+Small bow is short bow now - done
+(Spell effects in the starter pack are triggered with #effect, spec vals with #spec. #damage is the tricky one - look in spell effects file for the particular damage, you should see it. Lets you do particular buff or damage types. None of the above should have changed in Dom5.)
+Check #uwunit and #uwcom, #uwrec now - done
+Remove reclimits - done
+Replace 99% magic paths with 100 - done
+Replace gimmicky "dodge" and "deflect" shields with airshield - done
+Formationfighter update - done
+Decrease weapon lengths for Dom5 - done
+Swords have +1 att/def now, 2-handed do +25% strength - done
+Delete unnecessary weapon/armor IDs - done
+Also give them reinvig/diseaseres, make morale 30 and check MR - done
+Give at least 1 homerealm, preferably 2 - done
+Check for weird shit like recruitable units with cursed items - done
+Check item prices in general - done
 
 -- VERSION 1.6 --
-Empire To-Do:
-Cav and some other elite units have really high recpoints, might lower
-Decrease weapon lengths for Dom5
-
 Misc Changes:
 Nation site icons fixed, no more generic mountains for everyone
 Homerealms added for every nation, should have good choices
@@ -26,6 +58,7 @@ Slann mapmove 10 -> 8 for being slow bastards
 Changed from MA to LA forts, 30% extra cost from 50%
 Saurus cav get the hp and prot of the Saurus, cost 45, rp 40
 Skink and cav combat speeds changed, generally -2
+
 HIGH ELVES PORT
 Note: spearman and archer (7500 and 7501) used for copystats mixed up
 Check flag - meh, it's fine
