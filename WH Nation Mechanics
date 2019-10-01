@@ -56,10 +56,15 @@ The Saurus and Wardscale of Xhotl have a 1 hp "shield shape", once this gets hur
 Zlatlan, the One Who Fathomed the Depths appears to have 2 shield shapes before you get to the real him, 100 hp when you do.
 
 TOMB KINGS:
-Units: Tomb Priests, High Priests, Tomb Kings, and 1 or 2 heroes can summon units. They're a 1/3 chance each of a less armored or more armored spearman and an archer.
+Units: Tomb Priests, High Priests, Tomb Kings, and 1 or 2 heroes can summon units. 
+They're a 1/4 chance each of a less armored or more armored spearman, an archer and a cavalryman.
 Tomb Priests can summon 2 per turn, everyone else summons 4.
 Priest spells: Resilience adds 10 natural prot, Strength of the Tomb adds 4 strength
 
-CHAOS DWARFS
+CHAOS DWARFS:
 Units: can recruit slaves - these will be one of the creatures below, frequency listed:
 1 unarmored human, 1 unarmored Gnoblar, 2 unarmored Orcs, 3 unarmored Goblins, 1 armored Goblin, 1 armored Orc, 1 armored Ogre
+
+EMPIRE NATIONS:
+Various statues produce a set of 15 cavalry and a single commander, abilities in the inspector.
+Later recriutments of the same statue just produce the cavalry.

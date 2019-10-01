@@ -1626,7 +1626,7 @@
 #name "Chaos Sorcerer"
 #nametype 115
 #descr "Chaos Sorcerers are madmen and malcontents all. Sorcerers with the Mark of Slaanesh, while not as magically inclined as those who follow Tzeentch, make useful followers. Many come from the civilized realms, where they studied the fundamental forms of magic to unlock its deepest secrets. They follow the Dark Prince in hopes of yet greater knowledge, proving invaluable scholars and theorists."
-#gcost 10015
+#gcost 75
 #ap 12
 #mapmove 16
 #hp 10
@@ -1638,7 +1638,7 @@
 #prec 10
 #mr 14
 #mor 13
-#researchbonus 2
+--#researchbonus 2
 #rcost 1
 #coldres 3
 #snow
@@ -1700,9 +1700,9 @@
 #spr2 "./Warhammer-Complete/Sorcerer_Lord_2SL.tga"
 #name "Chaos Sorcerer Lord"
 #nametype 115
-#descr "A Chaos Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the magical arts has grown exponentially, well beyond those of lesser Sorcerers, as has his depravity; in sheer magical power, he is only second to those who bear the mark of Tzeentch. Yet, his quest for power is unending, no matter the cost to his humanity. Thus is the way of Chaos."
+#descr "A Chaos Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the magical arts has grown exponentially, well beyond those of lesser Sorcerers. Yet his quest for power is unending, as he is lured by Slaanesh into the furthest depths of depravity. This is the Dark Prince's way."
 #ap 12
-#gcost 9950 - 465
+#gcost 465 - 465 was 9950
 #mapmove 16
 #hp 24
 #size 2
@@ -2763,18 +2763,18 @@
 
 -- Slicing Shards -
 
-#newspell
-#name"Slicing Shards II"
-#descr "The after-effect of Slicing shards - causes bleeding."
-#restricted 159
-#school -1
-#researchlevel 0
-#path 0 2
-#pathlevel 0 2
-#effect 11 -- special attack
-#damage 8192 -- bleed
-#spec 1099511631936
-#end
+--#newspell
+--#name"Bleeding"
+--#descr "The after-effect of Slicing shards - causes bleeding."
+--#restricted 159
+--#school -1
+--#researchlevel 0
+--#path 0 2
+--#pathlevel 0 2
+--#effect 11 -- special attack
+--#damage 8192 -- bleed
+--#spec 1099511631936
+--#end
 
 --#newspell
 --#name "Slicing Shards"
@@ -2794,7 +2794,7 @@
 --#range 30
 --#sound 40
 --#spec 1099511631936
---#nextspell "Slicing Shards II"
+--#nextspell "Bleeding"
 --#end
 
 -- Acquiescence -
@@ -3352,7 +3352,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 
 
-#newweapon 
+#newweapon
 #name "Chaos Fire"
 #nostr
 #armorpiercing
@@ -3368,7 +3368,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Lightning of Tzeentch"
 #att 0
 #ammo 20
@@ -3383,7 +3383,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 
+#newweapon
 #name "Flames of Tzeentch"
 #nostr
 #armorpiercing
@@ -3400,7 +3400,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #hardmrneg
 #end
 
-#newweapon 
+#newweapon
 #name "Chaotic Fire"
 #nostr
 #armorpiercing
@@ -3415,7 +3415,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Windblade"
 #dmg 12
 #nratt 3
@@ -3429,7 +3429,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 
+#newweapon
 #name "Breath of Change"
 #dmg 999
 #magic
@@ -3446,7 +3446,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 16
 #end
 
-#newweapon 
+#newweapon
 #name "Melekh's halberd"
 #dmg 11
 #att -1
@@ -3459,7 +3459,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #slash
 #end
 
-#newweapon 
+#newweapon
 #name "Thomin's Sword"
 #dmg 12
 #magic
@@ -4089,7 +4089,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spy
 #magicskill 8 1
 #userestricteditem 81
-#startitem 515
+--startitem 515
 #itemslots 31878
 #holy
 #rpcost 1
@@ -4354,9 +4354,10 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #wastesurvival
 #magicskill 4 1
 #magicskill 7 1
-#custommagic 2432 100 -- SFA
-#custommagic 16768 10 -- FAB
-#gcost 10000
+#custommagic 2432 66 -- SFA
+#custommagic 2432 66 -- SFA
+#custommagic 2432 66 -- SFA
+#gcost 130
 #rcost 1
 #snow
 #rpcost 2
@@ -4392,10 +4393,14 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 4 2
 #magicskill 0 1
 #magicskill 7 1
-#custommagic 2432 100 -- SFA
-#custommagic 2432 10
-#custommagic 16768 100 -- FAB
-#gcost 9970
+#magicskill 8 2
+#custommagic 2432 50 -- SFA
+#custommagic 2432 50 -- SFA
+#custommagic 16768 50 -- FAB
+#custommagic 16768 50 -- FAB
+#custommagic 2432 10 -- SFA
+#gcost 275 -- 255 was 9070 when the paths were less tricky and not priest
+#chaosrec 12
 #rcost 1
 #snow
 #weapon 172
@@ -4416,8 +4421,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Chaos Sorcerer Lord"
 #nametype 115
 #descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. And as a follower of Tzeentch, he is indeed powerful, well beyond his lesser kin, not to mention those who follow the other Dark Gods. But still, the quest for more is unending; no matter the cost to his sanity, his very being. The Changer of Ways may have gifted a Sorcerer Lord more than any other, it is still never going to quench his thirst for power. Thus is the way of Chaos."
-#gcost 9950 -- 475
-#chaosrec 3
+#gcost 495 -- 475 was 9950 before priest levels
+#chaosrec 25
 #rcost 1
 #rpcost 4
 #ap 10
@@ -4437,9 +4442,12 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 0 2
 #magicskill 1 1
 #magicskill 7 2
-#custommagic 3456 100 -- SFAE
+#magicskill 8 3
+#custommagic 3456 50 -- SFAE
+#custommagic 3456 50 -- SFAE
+#custommagic 16768 50 -- FAB
+#custommagic 16768 50 -- FAB
 #custommagic 3456 10 -- SFAE
-#custommagic 16768 100 -- FAB
 #slowrec
 #snow
 #weapon "Magic Staff"
@@ -4823,7 +4831,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #armor "Chaos Armor"
 #armor "Shield"
 #itemslots 13446
-#startitem 518
+#startitem 518 -- Chaos Armor
 #float
 #gcost 0
 #rcost 1
@@ -4979,7 +4987,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 15494
-#startitem 518
+#startitem 518 -- Chaos Armor
 #startage 600
 #maxage 10000
 #goodleader
@@ -5559,7 +5567,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #weapon "Aura of Tzeentch" -- Aura
 #noleader
 #gcost 0
-#startitem 515
+--startitem 515
 #userestricteditem 81
 #spreaddom 1
 #startage 152
@@ -5682,47 +5690,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #pathlevel 0 1
 #explspr 10008
 #sound 23
-#end
-
--- Blessing -
-
-#newspell
-#name "Blessing of Tzeentch"
-#descr "With this incantation, the caster brings forth the blessings of Tzeentch upon a number of His followers, be they those mortals whom have been marked by Tzeentch, or His Daemonic servants."
-#restricted 120
-#school 4
-#path 0 4
-#researchlevel 0
-#effect 10
-#damage 1
-#range 10010
-#aoe 1004
-#flightspr 0
-#spec 12615680
-#explspr 10005
-#pathlevel 0 1
-#spec 12632064 -- Same as in the Divine Blessing copy, just with Ignore Shields
-#sound 47
-#end
-
--- Bigger Blessing -
-
-#newspell
-#name "Greater Blessing of Tzeentch"
-#descr "By the power of this incantation, all those with the Mark of Tzeentch as well as His Daemonic servants find themselves blessed with the power of Tzeentch."
-#restricted 120
-#school 4
-#researchlevel 0
-#path 0 4
-#pathlevel 0 3
-#effect 10
-#damage 1
-#precision 100
-#range 0
-#aoe 666
-#spec 12615680
-#explspr 10005
-#sound 47
 #end
 
 -- Sorcerous Bless
@@ -6122,7 +6089,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newitem
 #restricted 120
 #spr "./Warhammer-Complete/Icon_of_Tzeentch.tga"
-#constlevel 2
+#constlevel 12
 #mainpath 4
 #mainlevel 1
 #descr "With the use of specialized icons, the followers of Tzeentch strengthen themselves in various ways. These particular Icons, however, only lend themselves to grant the leaders of Tzeentch's cults with additional ability for bringing forth the blessings of Tzeentch."
@@ -7437,7 +7404,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #magicskill 6 1
 #custommagic 28672 100
 #custommagic 28672 10
-#gcost 10000
+#gcost 100  -- 100 was autocalced val
 #rcost 1
 #snow
 #rpcost 2
@@ -7459,6 +7426,8 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #name "Exalted Chaos Sorcerer"
 #nametype 115
 #descr "Those Champions of Chaos who seek mastery over the magical arts are known as Chaos Sorcerers, and they are madmen and malcontents all. As a Chaos Sorcerer grows in power, he may be granted the title of 'Exalted'. Malicious they are, hateful, twisted further by the horrifying gifts given by the Great Lord of Decay, yet they always seek for more in their never ending quest for power."
+#gcost 275 -- 245 was 10000 before priest paths
+#chaosrec 12
 #ap 12
 #mapmove 16
 #hp 15
@@ -7476,9 +7445,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #magicskill 5 2
 #magicskill 6 1
 #magicskill 7 1
+#magicskill 8 2
 #custommagic 28672 100
 #custommagic 28672 10
-#gcost 10000
 #rcost 1
 #snow
 #rpcost 2
@@ -7498,6 +7467,9 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #name "Chaos Sorcerer Lord"
 #nametype 115
 #descr "A Sorcerer Lord is the greatest of the Chaos Sorcerers, the epitome of a Sorcerer, not only in power but also in inhumanity. His understanding of the ways of Nurgle, of His many diseases and the like, have grown exponentially, but still, the Lord is never satisfied. No matter what glimpses of the darkness beyond he has seen, it has only served to whet his appetite. Indeed, he may have received great many gifts from Grandfather Nurgle, but it is still never going to quench his thirst for more. Thus is the way of Chaos."
+#gcost 480
+#slowrec
+#chaosrec 25
 #ap 12
 #mapmove 16
 #hp 20
@@ -7510,14 +7482,13 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #mr 17
 #mor 13
 #holy
-#magicskill 5 3
-#magicskill 6 2
-#magicskill 7 1
+#magicskill 5 3 -- D3
+#magicskill 6 2 -- N2
+#magicskill 7 1 -- B1
+#magicskill 8 3 -- H3
 #custommagic 28672 100 -- DNB
 #custommagic 28672 10 -- DNB
 #custommagic 12288 100 -- DN
-#gcost 450
-#slowrec
 #rcost 1
 #snow
 #rpcost 4
@@ -7865,7 +7836,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 15494
-#startitem 519
+#startitem 518 -- Chaos Armor
 #gcost 0
 #rcost 1
 #snow
@@ -8693,41 +8664,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 --- Combat spells ---
 
--- Blessing -
-
-#newspell
-#copyspell "Blessing"
-#name "Blessing of Nurgle"
-#descr "With this incantation, the caster brings forth the blessings of Nurgle upon a number of His followers, be they those mortals whom have been marked by Nurgle, or His Daemonic servants."
-#restricted 142
-#school 5
-#path 0 5
-#pathlevel 0 1
-#spec 12615680
-#sound 41
-#explspr 10007
-#end
-
--- Biggererer Blessing -
-
-#newspell
-#name "Greater Blessing of Nurgle"
-#descr "By the power of this incantation, all those with the Mark of Nurgle as well as His Daemonic servants find themselves blessed with the power of Nurgle."
-#restricted 142
-#school 5
-#path 0 5
-#pathlevel 0 3
-#effect 10
-#damage 1
-#precision 100
-#range 0
-#aoe 666
-#spec 12615680
-#sound 23
-#explspr 10007
-#sound 41
-#end
-
 -- Fleshy Abundance -
 
 #newspell
@@ -8808,25 +8744,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #str 3
 #end
 
--- Chaos Armor copy
-
-#selectitem 519
-#restricted 142
-#spr "./Warhammer-Complete/chaos_armor.tga"
-#constlevel 12
-#mainpath 5
-#mainlevel 2
-#secondarypath 6
-#secondarylevel 1
-#name "Nurgle Chaos Armor"
-#descr "The armor worn by the most favored of the Chaos Gods, it is forged by Daemons and given to the mortal followers of the Great Lord of Decay, becoming willing participants in the Great Game. It is extremely durable, but does not affect the movement of its wearer as much as other armor of its class would. It binds itself to the wearer, making it impossible to be removed; but many are those who welcome this gift."
-#type 5
-#armor "Chaos Armor"
-#cursed
-#bless
-#nofind
-#end
-
 -- Filth Mace
 
 #newitem
@@ -8861,7 +8778,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newitem
 #restricted 142
 #spr "./Warhammer-Complete/Icon_of_Nurgle.tga"
-#constlevel 2
+#constlevel 12
 #mainpath 5
 #mainlevel 1
 #secondarypath 6
@@ -10271,7 +10188,7 @@ still to do
 #magicskill 7 2
 #custommagic 13696 20 -- NAEFD
 #researchbonus -2
-#startitem 516
+#startitem 516 -- Maw Cleaver
 #weapon "Ogre Choppa"
 #weapon "Ogre Smash"
 #maxage 60
@@ -10316,7 +10233,7 @@ still to do
 #custommagic 1152 100
 #custommagic 13696 20 -- NAEFD
 #researchbonus -2
-#startitem 516
+#startitem 516 -- Maw Cleaver
 #weapon "Ogre Choppa"
 #weapon "Ogre Smash"
 #armor "Leather Cap"
@@ -12780,9 +12697,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 1916 -- Doomwheel Warplightning # 1 
+#weapon 1916 -- Doomwheel Warplightning # 1
 #weapon 1915 -- Doomwheel Warplightning # 2
-#weapon 1914 -- Doomwheel Warplightning # 3 
+#weapon 1914 -- Doomwheel Warplightning # 3
 #fireres 5
 #shockres 25
 #poisonres 1
@@ -13887,6 +13804,7 @@ Still to do
 #mountainsurvival
 #darkvision 75
 #immortal
+#heal
 #itemslots 15374 -- body, feet, 3 arms, 2 misc
 #unique
 #onebattlespell "Personal Luck"
@@ -20446,6 +20364,7 @@ Still to do
 #forestsurvival
 #nametype 123
 #immortal
+#heal
 #fireres 30
 #coldres 30
 #onebattlespell "Personal Luck"
@@ -21289,8 +21208,8 @@ Priests: Very Powerful."
 #addrecunit 7795 -- Skink (blowpipe)
 #forestrec 7795 -- Skink (blowpipe)
 #swamprec 7795 -- Skink (blowpipe)
-#forestrec 7796 -- Skink Skirmisher 
-#addrecunit 7796 -- Skink Skirmisher 
+#forestrec 7796 -- Skink Skirmisher
+#addrecunit 7796 -- Skink Skirmisher
 #addrecunit 7797 -- Skink Archer
 #forestrec 7797 -- Skink Archer
 #swamprec 7797 -- Skink Archer
@@ -21426,7 +21345,7 @@ Priests: Very Powerful."
 -- ///////////////// New weapons \\\\\\\\\\\\\\\\\\\\
 
 
-#newweapon 
+#newweapon
 #name "Woodman's Axe"
 #dmg 11
 #att 0
@@ -21438,14 +21357,14 @@ Priests: Very Powerful."
 #slash
 #end
 
-#newweapon 
+#newweapon
 #name "Greatsword of Hoeth"
 #dmg 9
 #att 1
 #def 2
 #len 3
 #rcost 5
-#nratt 2	
+#nratt 2
 #sound 8
 #twohanded
 #slash
@@ -21465,7 +21384,7 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon 
+#newweapon
 #name "Ceremonial Halberd"
 #dmg 10
 #att 0
@@ -21520,7 +21439,7 @@ Priests: Very Powerful."
 #slash
 #end
 
-#newweapon 
+#newweapon
 #name "Chariot Impact"
 #dmg 10
 #nostr
@@ -21536,7 +21455,7 @@ Priests: Very Powerful."
 #blunt
 #end
 
-#newweapon 
+#newweapon
 #name "Ceremonial Flame"
 #dmg 10
 #att 0
@@ -21566,7 +21485,7 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon 				
+#newweapon
 #name "Repeater Bolts"
 #dmg 14
 #nostr
@@ -21581,7 +21500,7 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon 				
+#newweapon
 #name "Ballista Bolt"
 #dmg 30
 #nostr
@@ -21596,7 +21515,7 @@ Priests: Very Powerful."
 #pierce
 #end
 
-#newweapon 
+#newweapon
 #name "Chayal"
 #dmg 20
 #att 6
@@ -21608,7 +21527,7 @@ Priests: Very Powerful."
 #magic
 #end
 
-#newweapon 
+#newweapon
 #name "Swooping Strike"
 #ammo 1 -- Single-use only
 #dmg 15
@@ -21618,7 +21537,7 @@ Priests: Very Powerful."
 #secondaryeffect 404
 #end
 
-#newweapon 
+#newweapon
 #name "Shredding Talons"
 #bonus
 #dmg 0
@@ -21862,7 +21781,7 @@ Priests: Very Powerful."
 #hp 9						--  -5
 #att 15						--  +3
 #def 15						--  +1 +3 deflection
-#mr 13						--  +1	
+#mr 13						--  +1
 #mor 14						--  0
 #str 10						--  -3
 #weapon "Greatsword of Hoeth"
@@ -22081,12 +22000,12 @@ Priests: Very Powerful."
 
 -- Eagle Claw Bolt Thrower
 
-#newmonster 7526			
+#newmonster 7526
 #copystats 7500 - Spearman
 #spr1 "./Warhammer-Complete/Eagleclaw1.tga"
 #spr2 "./Warhammer-Complete/Eagleclaw2.tga"
 #name "Eagle Claw Bolt Thrower"
-#descr "Eagle Claw Bolt Throwers are a staple of the Lothern Sea Guard, but they appear not only in Lothern, but throughout the elven kingdoms. The Eagle Claw is a cunning design, able to quickly switch between firing a single ballista shot and firing multiple arbalest like bolts. The crew are very skilled, both at mowing down enemy ranks through aimed volleys, and at reloading fast enough to keep up a sustained rate of fire."				
+#descr "Eagle Claw Bolt Throwers are a staple of the Lothern Sea Guard, but they appear not only in Lothern, but throughout the elven kingdoms. The Eagle Claw is a cunning design, able to quickly switch between firing a single ballista shot and firing multiple arbalest like bolts. The crew are very skilled, both at mowing down enemy ranks through aimed volleys, and at reloading fast enough to keep up a sustained rate of fire."
 #clearweapons
 #cleararmor
 #clearspec
@@ -22099,7 +22018,7 @@ Priests: Very Powerful."
 #weapon "Broad Sword"
 #armor "Full Scale Mail"
 #armor "Crested Helmet"
-#gcost 150				
+#gcost 150
 #rpcost 90
 #rcost 50
 #mapmove 10
@@ -22110,7 +22029,7 @@ Priests: Very Powerful."
 #slowrec
 #end
 
-///////////////// New commanders \\\\\\\\\\\\\\\\\\\\ 
+///////////////// New commanders \\\\\\\\\\\\\\\\\\\\
 
 -- Noble
 
@@ -22410,7 +22329,7 @@ Priests: Very Powerful."
 #magicskill 0 2	-fire
 #magicskill 3 2	-earth
 #magicskill 6 2	-nature
-#gcost 600
+#gcost 560
 #mastersmith -2
 #masterrit -2
 #researchbonus -4
@@ -22588,7 +22507,7 @@ Priests: Very Powerful."
 #end
 
 
-- Shadow Walker 
+- Shadow Walker
 
 #newmonster 7520
 #copystats 7500 -- Basestats
@@ -22698,12 +22617,12 @@ Priests: Very Powerful."
 #newmonster 7533
 #spr1 "./Warhammer-Complete/GreatEagle1HE.tga"
 #spr2 "./Warhammer-Complete/GreatEagle2HE.tga"
-#name "Great Eagle of Ulthuan"                                                                                                                                                                
-#descr "The Great Eagles of Ulthuan have been allies to the Elves for ages, 
-since the Deamon invasion and before that, fighting side by side in conflict after conflict. 
-The friendship between the eagles and the elves is legendary. 
-The Great Eagles of Ulthuan are intelligent and independent beings, 
-capable of tactical nuance and efforts in battle as well as reconnoisance. 
+#name "Great Eagle of Ulthuan"
+#descr "The Great Eagles of Ulthuan have been allies to the Elves for ages,
+since the Deamon invasion and before that, fighting side by side in conflict after conflict.
+The friendship between the eagles and the elves is legendary.
+The Great Eagles of Ulthuan are intelligent and independent beings,
+capable of tactical nuance and efforts in battle as well as reconnaisance.
 They can fly high enough to avoid detection from enemy troops. Their first swooping strike can be devastating but they do not stand up well in a prolonged fight.
 They can lead other birds and animals well."
 #nametype 173	-Eagle names
@@ -22718,7 +22637,7 @@ They can lead other birds and animals well."
 #prec 14
 #enc 3
 #mapmove 40
-#ap 8 
+#ap 8
 #startage 119
 #maxage 200
 #poorleader
@@ -23117,7 +23036,7 @@ They can lead other birds and animals well."
 #researchlevel 4
 #restricted 110
 #path 0 1	-Air
-#pathlevel 0 2	
+#pathlevel 0 2
 #fatiguecost 800
 #end
 
@@ -23127,13 +23046,13 @@ They can lead other birds and animals well."
 #researchlevel 4
 #restricted 110
 #path 0 1	-Air
-#pathlevel 0 2	
+#pathlevel 0 2
 #end
 
 ///////////////// NEW ITEMS \\\\\\\\\\\\\\\\\\\\
 
 
-#newweapon	
+#newweapon
 #name "Reaver Bow"
 #dmg 5
 #att 2
@@ -23352,7 +23271,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #addgod 270 -arch druid
 #addgod 244 -arch mage
 #cheapgod20 244
-#addgod 245 -master enchanter 
+#addgod 245 -master enchanter
 #addgod 250 -frost father
 #addgod 251 -great sage
 #addgod 485 -great enchantress
@@ -23413,7 +23332,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #defcom2 7517		Harbinger
 
 #defunit1 7500		Archer
-#defmult1 10	
+#defmult1 10
 #defunit1b 7501		Spearmen
 #defmult1b 10
 
@@ -23441,7 +23360,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #forestrec 7503		-White Lions
 ------- Commanders
 #addreccom 7514 -scout
-#addreccom 7509	-noble	
+#addreccom 7509	-noble
 #addreccom 7510 -lord
 #addreccom 7517 -harbinger
 #addreccom 7520 -shadow walker
@@ -23481,7 +23400,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --- Vent Steam
 
-#newweapon 
+#newweapon
 #name "Vent Steam"
 #ammo 10
 #att 0
@@ -23499,7 +23418,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --- Iron Ball
 
-#newweapon 
+#newweapon
 #name "Iron Ball"
 #ammo 5
 #att 5
@@ -23514,7 +23433,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --------------- Griffon claws
 
-#newweapon 
+#newweapon
 #name "Griffon Claws"
 #att 0
 #bonus
@@ -23528,7 +23447,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 --------------- Byzantine Pyros, overlap ok
 
-#newweapon 
+#newweapon
 #name "Pyros"
 #range -1
 #rcost 9
@@ -23617,7 +23536,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Melee
 
-#newweapon 
+#newweapon
 #name "Crew Polearms"
 #dmg 7
 #att 1
@@ -23632,7 +23551,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Hook Halberd
 
-#newweapon 
+#newweapon
 #name "Hook Halberd"
 #dmg 10
 #att 2
@@ -23646,7 +23565,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Ball and Chain
 
-#newweapon 
+#newweapon
 #name "Ball and Chain"
 #dmg 6
 #flail
@@ -23661,7 +23580,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Mancatcher
 
-#newweapon 
+#newweapon
 #name "Mancatcher"
 #dmg 11
 #armorpiercing
@@ -23714,7 +23633,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Repeater Crossbow
 
-#newweapon 
+#newweapon
 #name "Repeater Crossbow"
 #dmg 7
 #nostr
@@ -23732,7 +23651,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Blazing Lance of Myrmidia
 
-#newweapon 
+#newweapon
 #name "Blazing Lance of Myrmidia"
 #dmg 20
 #nostr
@@ -23765,7 +23684,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Tyrant Flail
 
-#newweapon 
+#newweapon
 #name "Tyrant Flail"
 #dmg 10
 #flail
@@ -23780,7 +23699,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Scythe
 
-#newweapon 
+#newweapon
 #name "Scythe"
 #dmg 8
 #att 1
@@ -23792,7 +23711,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Soul Scythe
 
-#newweapon 
+#newweapon
 #name "Soul Scythe"
 #dmg 10
 #att 2
@@ -23808,7 +23727,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Mirror of Hysh
 
-#newweapon 
+#newweapon
 #name "Mirror of Hysh"
 #dmg 3
 #dt_holy
@@ -23829,7 +23748,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Runefang
 
-#newweapon 
+#newweapon
 #name "Runefang"
 #dmg 10
 #armorpiercing
@@ -23842,7 +23761,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Broadsword of Justice
 
-#newweapon 
+#newweapon
 #name "Broadsword of Justice"
 #dmg 14
 #att 3
@@ -23855,7 +23774,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Righteous Crossbow
 
-#newweapon 
+#newweapon
 #name "Righteous Crossbow"
 #dmg 8
 #nostr
@@ -23873,9 +23792,9 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ----- Demigryph Talons
 
-#newweapon 
+#newweapon
 #name "Demigryph Talons"
-#dmg 16
+#dmg 11
 #att 0
 #def 0
 #len 0
@@ -23888,7 +23807,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver Scythe
 
-#newweapon 
+#newweapon
 #name "Silver Scythe"
 #dmg 7
 #att 1
@@ -23914,7 +23833,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Middenhammer
 
-#newweapon 
+#newweapon
 #name "Middenhammer"
 #dmg 10
 #att 1
@@ -23929,7 +23848,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Wulfhammer
 
-#newweapon 
+#newweapon
 #name "Wulfhammer"
 #dmg 16
 #att 2
@@ -23945,7 +23864,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Greatwolf Bite
 
-#newweapon 
+#newweapon
 #name "Greatwolf Bite"
 #dmg 23
 #att 0
@@ -23959,7 +23878,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Staff of Volans
 
-#newweapon 
+#newweapon
 #name "Staff of Volans"
 #dmg 2
 #att 0
@@ -23974,7 +23893,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Sword of Morr
 
-#newweapon 
+#newweapon
 #name "Sword of Morr"
 #dmg 8
 #att 1
@@ -23987,7 +23906,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver Skull Breath
 
-#newweapon 
+#newweapon
 #name "Breath of the Silver Skull"
 #range050 -- can be used in melee half the time
 #unrepel
@@ -24016,7 +23935,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Steam Tank Cover
 
-#newarmor 
+#newarmor
 #name "Steam Tank Cover"
 #type 4
 #prot 24
@@ -24028,7 +23947,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Armour of Blazing Gold
 
-#newarmor 
+#newarmor
 #name "Armour of Blazing Gold"
 #type 5
 #prot 22
@@ -24040,7 +23959,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Wagon Cover
 
-#newarmor 
+#newarmor
 #name "Wagon Cover"
 #type 4
 #prot 15
@@ -24052,7 +23971,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Dueterberg Helm
 
-#newarmor 
+#newarmor
 #name "Dueterberg Helm"
 #type 6
 #prot 20
@@ -24063,7 +23982,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Golden Mask
 
-#newarmor 
+#newarmor
 #name "Golden Mask"
 #type 6
 #prot 20
@@ -24074,7 +23993,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Cloak of Molten Metal
 
-#newarmor 
+#newarmor
 #name "Cloak of Molten Metal"
 #type 4
 #prot 12
@@ -24085,7 +24004,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Silver skull helm
 
-#newarmor 
+#newarmor
 #name "Silver Skull Helm"
 #type 6
 #prot 25
@@ -25012,7 +24931,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #spr1 "./Warhammer-Complete/Teutogen.tga"
 #spr2 "./Warhammer-Complete/Teutogen2.tga"
 #name "Teutogen Guard"
-#descr "The Teutogen Guard are the personal bodyguard of Ar-Ulric in his role as Elector of the Empire. Named after the Teutogen tribe who in the time of Sigmar helped drive back the greenskins from the lands of men, they have a long and storied history. Members of the Teutogen guard are picked from both members of the Knights of the White Wolf and State Troops or Warriors of Ulric who have distinguished themselves in service of Middenheim. The Guard march to battle clad in the finest Imperial Full Plate armour with white wolf pelt cloaks across their backs and powerful middenhammers clasped in both hands. While the Teutogen Guard are the bodyguard of the high priest of Ulric, it is his position as Elector they are sworn to protect and though they are largely devout followers of Ulric they are not sacred to the faith."
+#descr "The Teutogen Guard are the personal bodyguard of Ar-Ulric in his role as Elector of the Empire. Named after the Teutogen tribe who in the time of Sigmar helped drive back the greenskins from the lands of men, they have a long and storied history. Members of the Teutogen guard are picked from both members of the Knights of the White Wolf and State Troops or Warriors of Ulric who have distinguished themselves in service of Middenheim. The Guard march to battle clad in the finest Imperial full plate armor with white wolf pelt cloaks across their backs and powerful middenhammers clasped in both hands. While the Teutogen Guard are the bodyguard of the high priest of Ulric, it is his position as Elector they are sworn to protect and though they are largely devout followers of Ulric they are not sacred to the faith."
 #hp 13
 #size 2
 #prot 0
@@ -25025,11 +24944,11 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #prec 10
 #mapmove 1
 #ap 12
-#gcost 14
+#gcost 13 -- was 14 when he had the helmet
 #rpcost 30
 #rcost 1
 #armor "Full Plate Mail"
-#armor "Half Helmet"
+--#armor "Half Helmet"
 #weapon "Middenhammer"
 #nametype 188
 #bodyguard 2
@@ -25165,7 +25084,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #prec 10
 #mapmove 2
 #ap 18
-#gcost 100
+#gcost 50
 #rpcost 60
 #rcost 6
 #armor "Full Plate Mail"
@@ -29539,7 +29458,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #newmonster 7945
 #spr1 "./Warhammer-Complete/Pledge White Wolf.tga"
 #name "Tribute to the White Wolves"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The White Wolves are one of the oldest and most powerful Orders in the Old World and are dedicated to the defence of Middenheim. White Wolves are offensively minded and are armed with great two handed middenhammers which let them smash aside their foes."
 #hp 40
 #size 6
@@ -29554,7 +29473,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1400
+#gcost 1200
 #rpcost 2
 #rcost 120
 #mindless
@@ -29575,7 +29494,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7946
 #spr1 "./Warhammer-Complete/Pledge Panther.tga"
 #name "Tribute to the Knights Panther"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Kights Panther are one of the largest and certainly one of the most famous Orders in the Old World. They are dedicated to eradicating Chaos in all forms and are trained to fight even in the Chaos Wastes themselves. With the exotic panther as their symbol, curved foreign swords to back up their lances and steeds interbred with the famed Arabian breeds, they are a unique but highly effective Order."
 #hp 40
 #size 6
@@ -29590,7 +29509,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1400
+#gcost 1200
 #rpcost 2
 #rcost 120
 #mindless
@@ -29610,7 +29529,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7947
 #spr1 "./Warhammer-Complete/Pledge Reiksguard.tga"
 #name "Tribute to the Reiksguard"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Grand Order of the Reiksguard are the largest and most powerful Order in the Empire and Captain Helborg is second only to the Emperor in military authority. The burnished armour of the Reiksguard gleams with light and their charge is an awesome site to behold."
 #hp 40
 #size 6
@@ -29625,7 +29544,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1600
+#gcost 1400
 #rpcost 2
 #rcost 120
 #mindless
@@ -29646,7 +29565,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7948
 #spr1 "./Warhammer-Complete/Pledge Blazing Sun.tga"
 #name "Tribute to the Blazing Sun"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights of the Blazing Sun are unusual in that they are dedicated to the foreign deity Myrmidia, though this strange god seems to have given the knights total protection against flames and heat."
 #hp 40
 #size 6
@@ -29661,7 +29580,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1200
+#gcost 1000
 #rpcost 2
 #rcost 120
 #mindless
@@ -29682,7 +29601,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7949
 #spr1 "./Warhammer-Complete/Pledge Bear.tga"
 #name "Tribute to the Black Bear"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Black Bear is a particularly boisterous one that is constantly warring and stresses the physical strength and toughness this philosophy requires."
 #hp 40
 #size 6
@@ -29697,7 +29616,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1400
+#gcost 1200
 #rpcost 2
 #rcost 120
 #mindless
@@ -29718,7 +29637,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7950
 #spr1 "./Warhammer-Complete/Pledge Encarmine.tga"
 #name "Tribute to the Knights Encarmine"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights Encarmine are a flamboyant, foppish band of warriors comprised entirely of wealthy aristocracy. The Order holds a great deal of political clout in the South of the Empire and are generally free to choose which campaigns they take part in, usually picking those which guarantee the most glory with the least dirty work. Knights Encarmine are unusual in that they have entirely abandoned the traditional lance and shield, instead perfecting a secret technique allowing them to wield two swords from horseback. Though their Order is rather hard to work with at times, the Knights Encarmine are perhaps the most technically skilled in the Empire."
 #hp 40
 #size 6
@@ -29733,7 +29652,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1400
+#gcost 1200
 #rpcost 2
 #rcost 120
 #mindless
@@ -29754,7 +29673,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7951
 #spr1 "./Warhammer-Complete/Pledge Scythe.tga"
 #name "Tribute to the Sacred Scythes"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Sacred Scythe are one of the most feared forces in the Empire, for such is their hatred of the undead that they have been known to put entire villages to the torch should they be found guilty in tribunal. Many members of the Order are sworn to the service of Morr, God of the Dead, and each of them is well versed in the hunting of vampires. Encased in black steel and armed with sacred silver scythes they patrol the fell roads of Stirland, ever watchful for incursions from neighbouring Sylvania. The Scythes are ever watchful and though despised by the common folk, maintain a network of spies to better root out hidden foes."
 #hp 40
 #size 6
@@ -29769,7 +29688,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1200
+#gcost 1000
 #rpcost 2
 #rcost 120
 #mindless
@@ -29790,7 +29709,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7952
 #spr1 "./Warhammer-Complete/Pledge Gold Lion.tga"
 #name "Tribute to the Gold Lion"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Gold Lion were founded during the crusades in Araby and are experts in desert warfare who use Estalian steeds of great endurance and favour curved Arabian blades. Though they have recently suffered some misfortunes their young Grandmaster's energy has proven infectious and they are one of the most active Orders. They are famed for their great bravery and loyalty and are known to the common people as The Lionhearts."
 #hp 40
 #size 6
@@ -29805,7 +29724,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1200
+#gcost 1000
 #rpcost 2
 #rcost 120
 #mindless
@@ -29826,7 +29745,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7953
 #spr1 "./Warhammer-Complete/Pledge Griffon.tga"
 #name "Tribute to the Knights Griffon"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights Griffon are the most well drilled and disciplined of all Orders, sworn to protect the Temple of Sigmar, now located in Altdorf. Founded by Magnus the Pious as a splinter of the Knights Panther, they are proud of their origin and are currently involved in a bitter rivalry with the Grand Order of the Reiksguard. The Knights Griffon are able to field some Brothers mounted on Demigryphs, whose talons can tear through armour with ease."
 #hp 40
 #size 6
@@ -29841,7 +29760,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1500
+#gcost 1300
 #rpcost 2
 #rcost 120
 #mindless
@@ -29862,7 +29781,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7954
 #spr1 "./Warhammer-Complete/Pledge Hunter.tga"
 #name "Tribute to the Hunters of Sigmar"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. A recently founded Order, the Hunters of Sigmar emerged after the Storm of Chaos, pledging to track and destroy Chaos raiders left behind following the invasion. Typically operating in small groups to track Beastmen Warbands, the Hunters are expert woodsmen and can always rely on the support of the populace who appreciate such mighty warriors stooping to defend even the smallest villages. The nature of their mission means Hunters' equipment is often worn from travel and lacking the services of blacksmiths, they often discard pieces of armour damaged in skirmishes. Lances need to be replaced too often and swords become dull and rusted, so the Hunters prefer to use heavier and more reliable axes."
 #hp 40
 #size 6
@@ -29877,7 +29796,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1100
+#gcost 1000
 #rpcost 2
 #rcost 120
 #mindless
@@ -29898,7 +29817,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newmonster 7955
 #spr1 "./Warhammer-Complete/Pledge Morr.tga"
 #name "Tribute to the Knights of Morr"
-#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
+#descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. By far the most feared Order in the Empire, the enigmatic Knights of Morr have pledged themselves to the service of the god of death. Upon joining their Order each brother knight takes a vow of silence and rumours abound regarding even stranger intitiation rites and dark ceremonies. Despite their reputation the Knights of Morr are stalwart defenders of humanity, particularly against users of dark magic and servants of Chaos. They are armed with blades imbued with power by the Amethyst Order which raise those they slay as undead servitors."
 #hp 40
 #size 6
@@ -29913,7 +29832,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #mapmove 0
 #immobile
 #ap 2
-#gcost 1100
+#gcost 1000
 #rpcost 2
 #rcost 120
 #mindless
@@ -30798,6 +30717,7 @@ Priests: Strong."
 
 
 #homerealm 1 -- north
+#homerealm 10 -- default
 #addgod 607 -- Baphomet
 #addgod 1370 -- Lady of Springs
 #addgod 1230 -- forge lord
@@ -30971,6 +30891,7 @@ Priests: Strong."
 #startsite "Imperial Arsenal"
 #startsite "University of Nuln"
 #homerealm 1 -- north
+#homerealm 10 -- default
 --addgod 607 -- Baphomet
 #addgod 1370 -- Lady of Springs
 #addgod 1230 -- forge lord
@@ -31128,6 +31049,7 @@ Priests: Strong."
 #startsite "Temple of Ulric"
 #startsite "White Wolf Chapter House"
 #homerealm 1 -- north
+#homerealm 2 -- Celtic
 #addgod 607 -- Baphomet
 #addgod 1370 -- Lady of Springs
 #addgod 1230 -- forge lord
@@ -31292,6 +31214,7 @@ Priests: Strong."
 #slash
 #dmg 7
 #att 2
+#nratt 2
 #def 2
 #len 3
 #rcost 10
@@ -31306,7 +31229,7 @@ Priests: Strong."
 #mrnegates
 #end
 
-#newweapon 
+#newweapon
 #name "Dart Crossbow"
 #pierce
 #range 15
@@ -31322,7 +31245,7 @@ Priests: Strong."
 #flyspr 109 1
 #end
 
-#newweapon 
+#newweapon
 #name "Spear of Horus"
 #pierce
 #dmg 8
@@ -31333,7 +31256,7 @@ Priests: Strong."
 #secondaryeffect 221
 #end
 
-#newweapon 
+#newweapon
 #name "Blade of Horus"
 #slash
 #nratt 2
@@ -31347,7 +31270,7 @@ Priests: Strong."
 #twohanded
 #end
 
-#newweapon 
+#newweapon
 #name "Asp Bow"
 #pierce
 #range 45
@@ -31366,7 +31289,7 @@ Priests: Strong."
 ///////////////// New armor \\\\\\\\\\\\\\\\\\\\
 
 
-#newarmor 
+#newarmor
 #name "Shoulder Guard"
 #type 5
 #prot 4
@@ -31375,7 +31298,7 @@ Priests: Strong."
 #rcost 2
 #end
 
-#newarmor 
+#newarmor
 #name "Nehekharan Shield"
 #type 4
 #prot 12
@@ -31384,7 +31307,7 @@ Priests: Strong."
 #rcost 3
 #end
 
-#newarmor 
+#newarmor
 #name "Bronze Armor"
 #type 5
 #prot 10
@@ -31393,7 +31316,7 @@ Priests: Strong."
 #rcost 4
 #end
 
-#newarmor 
+#newarmor
 #name "Circlet"
 #type 6
 #prot 4
@@ -31402,7 +31325,7 @@ Priests: Strong."
 #rcost 0
 #end
 
-#newarmor 
+#newarmor
 #name "Gilded Armor"
 #type 5
 #prot 14
@@ -31411,7 +31334,7 @@ Priests: Strong."
 #rcost 12
 #end
 
-#newarmor 
+#newarmor
 #name "Royal Headdress"
 #type 6
 #prot 8
@@ -31420,7 +31343,7 @@ Priests: Strong."
 #rcost 1
 #end
 
-#newarmor 
+#newarmor
 #name "Headdress"
 #type 6
 #prot 6
@@ -31429,16 +31352,16 @@ Priests: Strong."
 #rcost 1
 #end
 
-#newarmor 
+#newarmor
 #name "Thousands of Bodies"
 #type 4
 #prot 30
 #def 8
-#enc 0 
+#enc 0
 #rcost 0
 #end
 
-#newarmor 
+#newarmor
 #name "Bone Greaves"
 #type 5
 #prot 4
@@ -31446,7 +31369,7 @@ Priests: Strong."
 #enc 0
 #end
 
-#newarmor 
+#newarmor
 #name "Rags"
 #type 5
 #prot 2
@@ -31454,7 +31377,7 @@ Priests: Strong."
 #enc 0
 #end
 
-#newarmor 
+#newarmor
 #name "Ushabti Avatar Armor"
 #type 5
 #prot 8
@@ -31469,25 +31392,25 @@ Priests: Strong."
 
 #newmonster 4241
 #name "Tomb skeleton"
-#mor 50 
-#mr 15 
-#hp 8 
+#mor 50
+#mr 15
+#hp 8
 #att 11
 #def 10
-#enc 0 
-#ap 12 
+#enc 0
+#ap 12
 #mapmove 3
 #neednoteat
-#coldres 15 
+#coldres 15
 #poisonres 25
-#inanimate 
+#inanimate
 #undead
-#nametype 166 
+#nametype 166
 #rcost 3
 #gcost 10
 #rpcost 7
-#startage 2705 
-#maxage 5000 
+#startage 2705
+#maxage 5000
 #poorundeadleader
 #pierceres
 #weapon "Fist"
@@ -31528,7 +31451,7 @@ Priests: Strong."
 #pooramphibian
 #weapon "Spear"
 #armor "Nehekharan Shield"
-#montag
+#montag 6667
 #end
 
 #newmonster 4244
@@ -31541,6 +31464,7 @@ Priests: Strong."
 #weapon "Spear"
 #armor "Shoulder Guard"
 #armor "Nehekharan Shield"
+#montag 6667
 #end
 
 #newmonster 4245
@@ -31554,6 +31478,7 @@ Priests: Strong."
 #weapon "Composite Bow"
 #armor "Shoulder Guard"
 #armor "Circlet"
+#montag 6667
 #end
 
 #newmonster 4246
@@ -31755,6 +31680,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #armor "Buckler"
 #goodleader
 #goodundeadleader
+#undcommand 20
 #nomagicleader
 #holy
 #end
@@ -31802,7 +31728,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #name "Tomb Priest"
 #gcost 120
 #rpcost 2
-#descr "In the society of Nehekhara the priesthood were the ruling class. The traditions of the priesthood stretched back for millennia even before the fall of the nation, and was an order of great learning. They foresaw the fall, and, thousands of years in advance, set about preparing for it. They developed powerful magics of self preservation, so that even as their bodies withered they would never die - a miserable but effective form of immortality. They coordinated the burial of the Tomb Kings and their legions, the nobility and their women, and performed powerful incantations to preserve them and prepare them for reawakening in paradise. And during the long darkness since the fall they have kept watch and protected the tombs. Now all their plans have come to naught, and instead they fight with the undead legions of awakened Nehekhara. The priests have considerable power over the dead, and can cast potent enchantments to protect and fortify them in battle. They also have the power to awaken the sleeping Nehekharan legions at will, although Tomb Priests are only capable of reviving one pair of soldiers per month. Nehekharan armies are often accompanied by caravans containing sarcophagi of unawakened troops, so that the Priests can awaken them given the opportunity.""
+#descr "In the society of Nehekhara the priesthood were the ruling class. The traditions of the priesthood stretched back for millennia even before the fall of the nation, and was an order of great learning. They foresaw the fall, and, thousands of years in advance, set about preparing for it. They developed powerful magics of self preservation, so that even as their bodies withered they would never die - a miserable but effective form of immortality. They coordinated the burial of the Tomb Kings and their legions, the nobility and their women, and performed powerful incantations to preserve them and prepare them for reawakening in paradise. And during the long darkness since the fall they have kept watch and protected the tombs. Now all their plans have come to naught, and instead they fight with the undead legions of awakened Nehekhara. The priests have considerable power over the dead, and can cast potent enchantments to protect and fortify them in battle. They also have the power to awaken the sleeping Nehekharan legions at will, although Tomb Priests are only capable of reviving a pair of soldiers per month. Nehekharan armies are often accompanied by caravans containing sarcophagi of unawakened troops, so that the Priests can awaken them given the opportunity.""
 #spr1 "./Warhammer-Complete/Priest1_TK.tga"
 #spr2 "./Warhammer-Complete/Priest2_TK.tga"
 #mor 30
@@ -31813,7 +31739,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #magicskill 8 2
 #researchbonus 2
 #holy
-#makemonsters2 4243
+#makemonsters2 -6667
 #weapon "Quarterstaff"
 #end
 
@@ -31834,7 +31760,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #magicskill 8 3
 #researchbonus 5
 #holy
-#makemonsters4 4243
+#makemonsters4 -6667
 #weapon "Quarterstaff"
 #end
 
@@ -31870,7 +31796,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #armor "Royal Headdress"
 #researchbonus 2
 #secondshape 4261
-#makemonsters4 4243
+#makemonsters4 -6667
 #slowrec
 #end
 
@@ -31899,9 +31825,11 @@ highly respected. When they died these warriors would be buried with great cerem
 #armor "Royal Headdress"
 #researchbonus 2
 #immortal
+#reformtime -1
+#heal
 #maxage 2000
 #magicboost 53 -1
-#makemonsters4 4243
+#makemonsters4 -6667
 #end
 
 ---------------Summons--------------
@@ -31909,7 +31837,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #newmonster 4252
 #copystats 4241
 #name "Immortal"
-#gcost 40
+#gcost 30
 #descr "Many of the Tomb Kings were filled with paranoia on their burial - who knew what lay ahead? Most of all they feared being left stranded and alone, their guardian troops lost to them. The kings themselves were protected by awesome enchantments, almost impossible to permanently destroy, but they knew that their guards were far more vulnerable. And so the most powerful of the Tomb Kings set about, with the aid of their priests, to create a personal bodyguard of their most trusted troops that could themselves never be destroyed. No matter what befell them, their bodies would always reform in their tombs. These bodyguards, known as Immortals, are highly disciplined and effective troops, and as the closest guardians of the sacred Tomb Kings, they are sacred to the Nehekharans. However, powerful magic is needed to revive the Immortals, and their enchantment requires frequent renewal with costly incenses and balms."
 #spr1 "./Warhammer-Complete/Immortal1.tga"
 #spr2 "./Warhammer-Complete/Immortal2.tga"
@@ -31922,6 +31850,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #mor 50
 #holy
 #immortal
+#reformtime -1
 #undead
 #fireres -7
 #weapon "Falchion"
@@ -32191,13 +32120,10 @@ highly respected. When they died these warriors would be buried with great cerem
 
 #newmonster 4269
 #copystats 4263
-
 #name "Anubite Captain"
 #spr1 "./Warhammer-Complete/AnubiteCaptain1.tga"
 #spr2 "./Warhammer-Complete/AnubiteCaptain2.tga"
-#descr "The Anubite Captains are the leaders of the Anubites, once servants of the banished god Anubis.
-Like the lesser anubites they are jackal-men of black granite, and run swiftly on animal-like legs.
-They are exceptionally skilled fighters and leaders."
+#descr "The Anubite Captains are the leaders of the Anubites, once servants of the banished god Anubis. Like the lesser anubites they are jackal-men of black granite, and run swiftly on animal-like legs. They are exceptionally skilled fighters and leaders, and can summon their brethren from the tombs."
 #att 15
 #def 14
 #str 14
@@ -32210,6 +32136,7 @@ They are exceptionally skilled fighters and leaders."
 #stonebeing
 #slashres
 #pierceres
+#makemonsters1 4263 -- Anubite
 #end
 
 #newmonster 4270
@@ -32265,7 +32192,7 @@ They are exceptionally skilled fighters and leaders."
 #armor "Royal Headdress"
 #researchbonus 2
 #secondshape 4272
-#makemonsters4 4243
+#makemonsters4 -6667
 #end
 
 #newmonster 4272
@@ -32298,9 +32225,10 @@ They are exceptionally skilled fighters and leaders."
 #armor "Royal Headdress"
 #researchbonus 2
 #immortal
+#heal
 #maxage 2000
 #magicboost 53 -1
-#makemonsters2 4243
+#makemonsters2 -6667
 #end
 
 #newmonster 4273
@@ -32410,6 +32338,7 @@ They are exceptionally skilled fighters and leaders."
 #magicskill 5 2
 #researchbonus 2
 #immortal
+#heal
 #pathcost 20
 #startdom 3
 #heal
@@ -32452,29 +32381,28 @@ very eyes of their opponents."
 #researchlevel 0
 #school 7
 #pathlevel 0 1
-#researchlevel 0
-#aoe 2004
+#aoe 3
 #effect 13
 #damage 3
 #fatiguecost 0
 #nreff 1
 #range 50
 #precision 100
-#explspr 10054
-#spec 75513984
+--#explspr 10054
+#spec 281018376 -- was 75513984
 #end
 
 #newspell
 #copyspell "Unholy Power"
 #name "Resilience"
-#descr "This spell allows a priest of Nehekhara to greatly strengthen the enchantments 
-holding undead soldiers together. They become much harder to destroy in combat."
+#descr "This spell allows a priest of Nehekhara to greatly strengthen the enchantments holding undead soldiers together. They become much harder to destroy in combat."
 #restricted 112
+#restricted -1 -- Should stop Ermor and Sceleria from using it
 #path 0 8
 #researchlevel 0
 #school 7
 #pathlevel 0 2
-#aoe 2999
+#aoe 2997
 #effect 10
 #damage 1040
 #fatiguecost 0
@@ -32487,36 +32415,16 @@ holding undead soldiers together. They become much harder to destroy in combat."
 
 #newspell
 #copyspell "Unholy Power"
-#name "The Undying"
-#descr "This mighty enchantment confers regenerative abilities onto undead soldiers,
-so that the skeletal bodies of the dead may repair themselves in seconds."
-#restricted 112
-#path 0 8
-#researchlevel 0
-#school 7
-#pathlevel 0 3
-#aoe 3000
-#effect 23
-#damage 536870912
-#fatiguecost 0
-#nreff 1
-#range 20
-#precision 5
-#explspr 10047
-#spec 281018376
-#end
-
-#newspell
-#copyspell "Unholy Power"
 #name "Strength of the Tomb"
-#descr "With this spell a Nehekharan priest is able to grant enormous strength to 
+#descr "With this spell a Nehekharan priest is able to grant enormous strength to
 undead soldiers on the battlefield, giving them the ability to rip through the armour of enemy soldiers with ease."
 #restricted 112
+#restricted -1 -- Should stop Ermor and Sceleria from using it
 #path 0 8
 #researchlevel 0
 #school 7
 #pathlevel 0 2
-#aoe 2000
+#aoe 2997
 #effect 10
 #damage 128
 #fatiguecost 0
@@ -32525,6 +32433,28 @@ undead soldiers on the battlefield, giving them the ability to rip through the a
 #precision 100
 #explspr 10057
 #spec 281018376 -- was 75518080
+#end
+
+#newspell
+#copyspell "Unholy Power"
+#name "The Undying"
+#descr "This mighty enchantment confers regenerative abilities onto undead soldiers,
+so that the skeletal bodies of the dead may repair themselves in seconds."
+#restricted 112
+#restricted -1 -- Should stop Ermor and Sceleria from using it
+#path 0 8
+#researchlevel 0
+#school 7
+#pathlevel 0 3
+#aoe 4990
+#effect 23
+#damage 536870912
+#fatiguecost 0
+#nreff 1
+#range 20
+#precision 5
+--#explspr 10047
+#spec 281018376
 #end
 
 #newspell
@@ -32548,10 +32478,8 @@ undead soldiers on the battlefield, giving them the ability to rip through the a
 #end
 
 #newspell
-#name "Awaken Immortal"
-#descr "This spell awakens one of the elite members of a Tomb King's bodyguard. Such 
-is the strength of the enchantments on these soldiers that they are almost impossible
- to permanently destroy."
+#name "Awaken Immortals"
+#descr "This spell awakens two of the elite members of a Tomb King's bodyguard. Such is the strength of the enchantments on these soldiers that they are almost impossible to permanently destroy."
 #school 4
 #restricted 112
 #researchlevel 0
@@ -32559,16 +32487,16 @@ is the strength of the enchantments on these soldiers that they are almost impos
 #path 1 0
 #pathlevel 0 3
 #pathlevel 1 2
-#fatiguecost 300
+#fatiguecost 500
 #effect 10001
 #damage 4252
-#nreff 1
+#nreff 2
 #end
 
 #newspell
 #name "Awaken Anubites"
 #descr "The Anubites are the sleeping granite servants of the ancient Nehekharan
-god Anubis. They are powerful fighters and can run and jump rapidly across the 
+god Anubis. They are powerful fighters and can run and jump rapidly across the
 battlefield."
 #school 4
 #restricted 112
@@ -32615,7 +32543,7 @@ battlefield."
 
 #newspell
 #name "Construct Bone Scorpion"
-#descr "This huge scorpion is built from bone and used to carry the casket of an 
+#descr "This huge scorpion is built from bone and used to carry the casket of an
 ancient, dormant Tomb Priest. The priest cannot cast any spells, but his latent
 magic powers the huge construct. A bone scorpion is a fearsome opponent in battle,
 capable of trampling large numbers of enemy troops."
@@ -32660,7 +32588,7 @@ capable of trampling large numbers of enemy troops."
 #effect 10021
 #damage 4268
 #nreff 1
-#end 
+#end
 
 
 
@@ -32668,7 +32596,7 @@ capable of trampling large numbers of enemy troops."
 
 #selectnametype 166
 #clear
-#addname "Adjo" 
+#addname "Adjo"
 #addname "Akhom"
 #addname "Ako"
 #addname "Akori"
@@ -32764,8 +32692,8 @@ capable of trampling large numbers of enemy troops."
 #name "Nehekhara"
 #descr "The lands of Nehekhara were once vast and fertile, and its many kingdoms were powerful for thousands of years. However, long ago a dire prophecy  was made - slowly the rivers would dry up and the land would die, and its people with it. It was foreseen that this great drought would finally be ended by the rising of a new god, when a great wave of benevolent magic would sweep the land; Nehekhara would become a paradise, and the dead, if properly preserved, would rise to live anew. So the priests of Nahakhara set about preparing. Nobles and soldiers, kings and wizards were buried carefully with powerful magics, so that they might reawaken in the distant future. Gradually the drought overtook Nehekhara, until eventually nothing moved in the vast desert. Then catastrophe struck - the fall of Ermor released dark energies that flowed  around the world; in Nehekhara the great enchantments of the priests were perverted, and its people doomed to awaken not to a new life, but to undeath."
 #summary "Race: Undead, all magically bound to the will of the Tomb Kings. Prefers Heat Scale +2
-Military: Light infantry, cavalry and chariots, powerful summons. 
-Magic: Death and Fire, with weak Air, Astral and Earth. 
+Military: Light infantry, cavalry and chariots, powerful summons.
+Magic: Death and Fire, with weak Air, Astral and Earth.
 Priests: Strong. Can buff undead."
 #brief "The Nehekharans are the undead soldiers of a doomed civilization, emerging from their tombs to rebuild their lost kingdoms."
 #epithet "Tomb Kings"
