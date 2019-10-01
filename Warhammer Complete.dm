@@ -505,7 +505,7 @@
 #magic
 #rcost 0
 #slash
-#secondaryeffect 1996
+#secondaryeffect 1916
 #sound 8
 #end
 
@@ -523,7 +523,7 @@
 #end
 
 #newweapon
-#copyweapon 1994 -- "Aura of Nurgle"
+#copyweapon 1914 -- "Aura of Nurgle"
 #name "Greater Aura of Nurgle"
 #aoe 8
 #end
@@ -536,7 +536,7 @@
 #len 1
 #magic
 #slash
-#secondaryeffect 1996
+#secondaryeffect 1916
 #sound 8
 #rcost 3
 #end
@@ -549,7 +549,7 @@
 #len 2
 #magic
 #slash
-#secondaryeffect 1996
+#secondaryeffect 1916
 #sound 8
 #rcost 5
 #nratt 3
@@ -626,7 +626,7 @@
 #magicarmor
 #end
 
-#newweapon 1994 -- KEEP ID #
+#newweapon 1914 -- KEEP ID #
 #copyweapon 143 -- Disease
 #name "Aura of Nurgle"
 #mrnegateseasily
@@ -643,7 +643,7 @@
 #dmg 4
 #ammo 4
 #armornegating
-#secondaryeffect 1995
+#secondaryeffect 1915
 #hardmrneg
 #acid
 #end
@@ -658,7 +658,7 @@
 #range -1
 #aoe 1
 #armornegating
-#secondaryeffect 1996
+#secondaryeffect 1916
 #hardmrneg
 #nratt -2
 #end
@@ -671,11 +671,11 @@
 #def -1
 #len 0
 #bonus
-#secondaryeffect 1993
+#secondaryeffect 1913
 #natural
 #end
 
-#newweapon 1993 -- KEEP ID #
+#newweapon 1913 -- KEEP ID #
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -708,11 +708,11 @@
 #magic
 #rcost 3
 #sound 8
-#secondaryeffect 1995
+#secondaryeffect 1915
 #slash
 #end
 
-#newweapon 1995 -- KEEP ID #
+#newweapon 1915 -- KEEP ID #
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -724,7 +724,7 @@
 #secondaryeffect 414
 #end
 
-#newweapon 1996 -- KEEP ID #
+#newweapon 1916 -- KEEP ID #
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -3471,7 +3471,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1997 -- -- KEEP THIS ID #
+#newweapon 1917 -- -- KEEP THIS ID #
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -6041,7 +6041,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Staff of Change"
 #descr "Raw chaos flows about this weapon, running up and down the stave as tongues of crackling rainbow fire. To be struck by this staff is therefore to feel the touch of change itself, rendered into a mewling and mutating mass by the unstoppable energies of Tzeentch. It can only be wielded by Daemons."
 #type 2
-#weapon 1997
+#weapon 1917
 #mr 2
 #onlydemon
 #deathfire 5
@@ -11752,7 +11752,7 @@ Still to do
 #rcost 1
 #magic
 #flail
-#secondaryeffectalways 1998
+#secondaryeffectalways 1918
 #end
 
 -- Queek's two weapons
@@ -11858,7 +11858,7 @@ Still to do
 #len 4
 #rcost 5
 #flail
-#secondaryeffectalways 1998
+#secondaryeffectalways 1918
 #end
 
 
@@ -11869,7 +11869,7 @@ Still to do
 #def 0
 #len 3
 #rcost 4
-#secondaryeffectalways 1998
+#secondaryeffectalways 1918
 #end
 
 
@@ -11939,7 +11939,7 @@ Still to do
 #magic
 #end
 
-#newweapon 2003 -- KEEP ID #
+#newweapon 1923 -- KEEP ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -11963,12 +11963,12 @@ Still to do
 #magic
 #flyspr 210 4
 #att -3
-#secondaryeffectalways 2003
+#secondaryeffectalways 1923
 #end
 
 
 
-#newweapon 2002 -- KEEP ID #
+#newweapon 1922 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11980,12 +11980,12 @@ Still to do
 #nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1923
 #att -3
 #end
 
 
-#newweapon 2001 -- KEEP ID #
+#newweapon 1921 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11997,11 +11997,11 @@ Still to do
 #nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1923
 #att -3
 #end
 
-#newweapon 2000 -- KEEP ID #
+#newweapon 1920 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12013,7 +12013,7 @@ Still to do
 #nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1923
 #att -3
 #end
 
@@ -12033,7 +12033,7 @@ Still to do
 #end
 
 
-#newweapon 1998 -- KEEP ID #
+#newweapon 1918 -- KEEP ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12055,12 +12055,12 @@ Still to do
 #def 0
 #ammo 5
 #range 14
-#secondaryeffectalways 1999
+#secondaryeffectalways 1919
 #flyspr 111 1
 #end
 
 
-#newweapon 1999 -- KEEP ID #
+#newweapon 1919 -- KEEP ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -12697,9 +12697,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 2002 -- Doomwheel Warplightning # 1
-#weapon 2001 -- Doomwheel Warplightning # 2
-#weapon 2000 -- Doomwheel Warplightning # 3
+#weapon 1922 -- Doomwheel Warplightning # 1
+#weapon 1921 -- Doomwheel Warplightning # 2
+#weapon 1920 -- Doomwheel Warplightning # 3
 #fireres 5
 #shockres 25
 #poisonres 1
@@ -14068,7 +14068,7 @@ Still to do
 #path 1 3
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 2000
+#fatiguecost 1920
 #end
 
 
@@ -15068,13 +15068,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
-#secondaryeffectalways 2004 -- Fireglaive Gout
+#secondaryeffectalways 1924 -- Fireglaive Gout
 #def 0 -- usually 1
 #end
 
 --- Fireglaive Gout
 
-#newweapon 2004 -- KEEP ID #
+#newweapon 1924 -- KEEP ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -22170,7 +22170,6 @@ Priests: Very Powerful."
 #magicskill 0 1	-fire
 #custommagic 2432 25	-FAS
 #startage 77
-#maxage 2000
 #holy
 #poorleader
 #end
@@ -22201,7 +22200,6 @@ Priests: Very Powerful."
 #custommagic 1024 10	-FAE
 #researchbonus 1
 #startage 187
-#maxage 2000
 #holy
 #okleader
 #slowrec
@@ -22229,7 +22227,6 @@ Priests: Very Powerful."
 #magicskill 8 2 -holy
 #custommagic 3968 100	-FAWES
 #startage 278
-#maxage 2000
 #autohealer 2
 #autodishealer 3
 #holy
@@ -22262,7 +22259,6 @@ Priests: Very Powerful."
 #custommagic 3328 100	-AES
 #custommagic 3456 30 -FAES
 #startage 298
-#maxage 2000
 #goodleader
 #researchbonus 2
 #slowrec
@@ -22296,7 +22292,6 @@ Priests: Very Powerful."
 #custommagic 3968 100	FAWES
 #mastersmith 2
 #startage 267
-#maxage 2000
 #poorleader
 #holy
 #slowrec
@@ -22334,7 +22329,6 @@ Priests: Very Powerful."
 #masterrit -2
 #researchbonus -4
 #rcost 1
-#maxage 2000
 #holy
 #slowrec
 #goodleader
@@ -22364,7 +22358,6 @@ Priests: Very Powerful."
 #custommagic 10624 100 -FASN
 #custommagic 9088 25 -FAWN
 #startage 201
-#maxage 2000
 #sailing 2 2
 #okleader
 #slowrec
@@ -22397,7 +22390,6 @@ Priests: Very Powerful."
 #gcost 115
 #rcost 1
 #sailing 999 4
-#maxage 2000
 #goodleader
 #end
 
@@ -22428,7 +22420,6 @@ Priests: Very Powerful."
 #rcost 1
 #noleader
 #stealthy 25
-#maxage 2000
 #end
 
 -- Drake Master (Dragon Prince Champion)
@@ -22464,7 +22455,6 @@ Priests: Very Powerful."
 #mounted
 #fireres 15
 #magicskill 0 1 -- Fire 1
-#maxage 2000
 #end
 
 -- Harbinger (Ellyrian Reaver Champion)
@@ -22498,7 +22488,6 @@ Priests: Very Powerful."
 #ap 30
 #ressize 2
 #mounted
-#maxage 2000
 #patrolbonus 5
 #supplybonus 2
 #researchbonus -2
@@ -22537,7 +22526,6 @@ Priests: Very Powerful."
 #rcost 1
 #ambidextrous 4
 #mapmove 20
-#maxage 2000
 #stealthy 35
 #patrolbonus 5
 #magicskill 1 1 -- Air 1
@@ -22567,7 +22555,6 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #gcost 90
 #rcost 1
-#maxage 2000
 #patrolbonus 1
 #researchbonus -2
 #forestsurvival
@@ -22604,7 +22591,6 @@ Priests: Very Powerful."
 #fireres 4
 #poisonres 4
 #shockres 4
-#maxage 2000
 #holy
 #magicskill 8 2 -holy
 #castledef 5
@@ -22695,7 +22681,6 @@ They can lead other birds and animals well."
 #magicskill 1 1	-Air
 #mapmove 20
 #startage 417
-#maxage 2000
 #stealthy 35
 #patrolbonus 15
 #onebattlespell "Personal Luck"
@@ -22730,7 +22715,6 @@ They can lead other birds and animals well."
 #gcost 0
 #rcost 1
 #startage 368
-#maxage 2000
 #patrolbonus 5
 #researchbonus -2
 #forestsurvival
@@ -23468,7 +23452,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Longrange
 
-#newweapon 1984 -- KEEP ID
+#newweapon 1904 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23485,7 +23469,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Midrange
 
-#newweapon 1985 -- KEEP ID
+#newweapon 1905 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23502,7 +23486,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Shortrange
 
-#newweapon 1986 -- KEEP ID
+#newweapon 1906 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23519,7 +23503,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 3 Midrange
 
-#newweapon 1987 -- KEEP ID
+#newweapon 1907 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23594,7 +23578,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (ranged)
 
-#newweapon 1988 -- KEEP ID
+#newweapon 1908 -- KEEP ID
 #name "Hand Crossbow"
 #dmg 8
 #nostr
@@ -23612,7 +23596,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (melee)
 
-#newweapon 1989 -- KEEP ID
+#newweapon 1909 -- KEEP ID
 #name "Hand Crossbow"
 #ammo 1
 #att 1
@@ -23661,7 +23645,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #len 4
 #bonus
 #charge
-#secondaryeffectalways 1990
+#secondaryeffectalways 1910
 #magic
 #pierce
 #end
@@ -23669,7 +23653,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Myrmidian Blaze
 
-#newweapon 1990 -- KEEP ID
+#newweapon 1910 -- KEEP ID
 #name "Myrmidian Blaze"
 #dmg 8
 #armorpiercing
@@ -23816,12 +23800,12 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #slash
 #pierce
 #len 2
-#secondaryeffect 1991
+#secondaryeffect 1911
 #end
 
 ---- Smite Undead
 
-#newweapon 1991 -- KEEP ID
+#newweapon 1911 -- KEEP ID
 #name "Smite Undead"
 #dmg 4
 #magic
@@ -25156,8 +25140,8 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Half Helmet"
 #weapon "Broad Sword"
 #weapon 56
-#weapon 1988
-#weapon 1989
+#weapon 1908
+#weapon 1909
 #nametype 190
 #end
 
@@ -26512,9 +26496,9 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 --armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1984
-#weapon 1985
-#weapon 1986
+#weapon 1904
+#weapon 1905
+#weapon 1906
 #weapon "Crew Polearms"
 #secondshape 7597
 #nametype 190
@@ -26551,7 +26535,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 --armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1986
+#weapon 1906
 #weapon "Crew Polearms"
 #secondshape 7598
 #firstshape 7596
@@ -26588,7 +26572,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1987
+#weapon 1907
 #weapon "Hook Halberd"
 #weapon "Ball and Chain"
 #weapon "Mancatcher"
@@ -31213,7 +31197,7 @@ Priests: Strong."
 #twohanded
 #end
 
-#newweapon 1992 -- KEEP ID #
+#newweapon 1912 -- KEEP ID #
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison
@@ -31232,7 +31216,7 @@ Priests: Strong."
 #att 0
 #nratt -2 -- Fires every other round
 #ammo 2
-#secondaryeffect 1992 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
+#secondaryeffect 1912 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
 #rcost 1
 #flyspr 109 1
 #end
