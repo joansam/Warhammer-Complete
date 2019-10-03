@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.70a"
+#modname "Warhammer Complete 1.70b"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.70a
+#version 1.70b
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -9683,13 +9683,11 @@ still to do
 --- Gorger
 
 #newmonster 7824
-#copystats 1010
-#clearmagic#clearmagic#clearmagic
 #spr1 "./Warhammer-Complete/Gorger.tga"
 #spr2 "./Warhammer-Complete/Gorger2.tga"
 #name "Gorger"
 #descr "Gorgers are stinking, pale and degenerate Ogre-kin that have been condemned to the warpstone-laced labyrinths below each tribe's territory. More gorgers are constantly created as the tribe casts their weak or deformed young into their Maw-Pit, trusting the Great Maw to bless only the strongest with survival. In a sense, this happens, as in the darkness below a constant struggle for survival and food rages with the end result being the hulked monstrosities known as Gorgers. Gorgers are summoned by the bloodfeasts of the Butchers and set upon the enemy; in battle they are few creatures that can match them for ferocity, hunger or sheer violence."
-#hp 60
+#hp 50
 #size 4
 #prot 8
 #mor 20
