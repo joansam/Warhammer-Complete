@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.70b"
+#modname "Warhammer Complete 1.70c"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.70b
+#version 1.70c
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -10043,7 +10043,7 @@ still to do
 #spr2 "./Warhammer-Complete/Slavegiant2.tga"
 #name "Slave Giant"
 #descr "Unlike the Giants that accompany other races into battle, who pick fights as and when they choose, the Slave Giants of the Ogre Kingdoms live a life of forced servitude. Ownership of a Slave Giant is a great status symbol for a Tyrant and there is little that motivates them more than a report of an unclaimed Giant in their territory. Many are the Tyrants who have perished trying to subdue one of these behemoths, but occasioanlly a particularly powerful Ogre may manage to capture one and brand it with his mark. Slavegiants are goaded into battle with pointed stakes, but usually it doesn't take much goading, as the Giant is all too willing to take out the humiliation of being enslaved on any creature smaller than himself. In battle Slave Giants attack by stomping, whipping their heavy chains about and generally causing utter chaos and carnage."
-#hp 95
+#hp 115
 #size 6
 #prot 10
 #mor 14
@@ -10056,7 +10056,7 @@ still to do
 #mapmove 18
 #ap 16
 #gcost 200
-#rpcost 80
+#rpcost 90
 #chaosrec 15
 #rcost 10
 #weapon "Heavy Chains"
@@ -16056,7 +16056,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #spr2 "./Warhammer-Complete/Slavegiant2.tga"
 #name "Slave Giant"
 #descr "Giants are common in the Dark Lands as they wander down from their ancestral home in the Mountains of Mourn. Frequently these hapless, ungaingly creatures are fleeing the attentions of tribes of ogres, but unfortunately for them the Dark Lands represent an even more dangerous threat, for the Chaos Dwarfs have many uses for their kind. Though slow and stupid, giants are immensely strong and make invaluable slaves whether toiling in the pits, tearing up trees, or on the field of battle. Slavegiants are goaded into battle, but usually it doesn't take much goading, as the Giant is all too willing to take out the humiliation of being enslaved on any creature smaller than himself. In battle Slave Giants attack by stomping, whipping heavy chains about and generally causing utter chaos and carnage."
-#hp 95
+#hp 115
 #size 6
 #prot 10
 #mor 14
@@ -16069,7 +16069,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #mapmove 18
 #ap 16
 #gcost 200
-#rpcost 80
+#rpcost 90
 #chaosrec 15
 #rcost 10
 #weapon "Heavy Chains"
@@ -23023,7 +23023,7 @@ They can lead other birds and animals well."
 #end
 
 #newspell
-#copyspell 700
+#copyspell "Summon Great Eagles"
 #name "Summon Lesser Great Eagles"
 #researchlevel 4
 #restricted 110

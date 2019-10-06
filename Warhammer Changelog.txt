@@ -1,9 +1,4 @@
--- VERSION 1.7 --
-Domingler notes: remove duplicate IDs starting at 7653 and ending at 7663
-Weapons and armor may need IDs back if DomEnhanced takes the lower ranges
-Should enable WHC AFTER DomEnhanced so dynamic IDs don't get overridden
-Nations went over 199
-Dome of High Magic and Protective Presence are Enchantments
+1.70c fixes: Ulthuan's Summon Lesser Great Eagles was borked, adjusted slave giant hp and rp upward
 -- VERSION 1.7 --
 Tomb Kings:
 Double summon allies amt - done
