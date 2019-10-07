@@ -30073,7 +30073,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 
 #newsite 1901
-#name "Imperial Palace"
+#name "Emperor's Palace"
 #path 8
 #level 0
 #rarity 5
@@ -30685,7 +30685,7 @@ Magic: Colleges allow access to all non blood magic.
 Priests: Strong."
 #flag "./Warhammer-Complete/flag.tga"
 #templepic 9
-#startsite "Imperial Palace"
+#startsite "Emperor's Palace"
 #startsite "Cathedral of Sigmar"
 #startsite "University of Altdorf"
 
