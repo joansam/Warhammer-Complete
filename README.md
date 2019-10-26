@@ -1,6 +1,6 @@
 ## Warhammer Complete
 
-[Check it out on Modinspector](https://johanneswoeber.github.io/dom5inspector/)
+[Check it out on Modinspector](https://johanneswoeber.github.io/dom5inspector/?mod=Warhammer Complete 1.70d.dm)
 
 This project currently has 12 nations: 
 * Tomb Kings 
