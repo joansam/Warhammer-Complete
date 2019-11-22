@@ -1,4 +1,5 @@
 1.70c fixes: Ulthuan's Summon Lesser Great Eagles was borked, adjusted slave giant hp and rp upward
+Changes to Skrag's name to be less confusing for other players
 -- VERSION 1.7 --
 Tomb Kings:
 Double summon allies amt - done

@@ -10625,8 +10625,8 @@ still to do
 #newmonster 7723
 #spr1 "./Warhammer-Complete/Hero Skrag.tga"
 #spr2 "./Warhammer-Complete/Hero Skrag2.tga"
-#name "Prophet of the Great Maw"
-#descr "Skrag the Slaughterer was formerly a promising Butcher who made the mistake of cooking his Tyrant's favourite pet gnoblar. For this mistake he was hurled into the Gorger caverns with his hands severed and meatpot chained to his flesh. Incredibly, Skrag emerged two years later at the head of a pack of Gorgers, devoured the Tyrant and slaughtered the entire tribe as an offering to the Maw. Now the Prophet of the Maw, Skrag is an embodiment of hunger and destruction; the meat-pot he drags behind him has become a mobile mawpit into which he tosses severed chunks of butchered foes. Skrag is unable to restrain himself in battle, dismembering enemy after enemy, constantly feeding the meatpot and growing ever more gorged on the Maw's favour. Ever since leaving the caverns, Skrag's mere presence in battle has attracted Gorgers who charge forward to attack their terrified prey. As the Prophet of the Great Maw, Skrag spreads the ravenous dominion of his god and calls the blessings of the maw on the entire army by his mere presence."
+#name "Slaughterer"
+#descr "Skrag the Slaughterer was formerly a promising Butcher who made the mistake of cooking his Tyrant's favourite pet gnoblar. For this mistake he was hurled into the Gorger caverns with his hands severed and meatpot chained to his flesh. Incredibly, Skrag emerged two years later at the head of a pack of Gorgers, devoured the Tyrant and slaughtered the entire tribe as an offering to the Maw. Now the Prophet of the Maw, Skrag is an embodiment of hunger and destruction; the meat-pot he drags behind him has become a mobile mawpit into which he tosses severed chunks of butchered foes. Skrag is unable to restrain himself in battle, dismembering enemy after enemy, constantly feeding the meatpot and growing ever more gorged on the Maw's favour. Ever since leaving the caverns, Skrag's mere presence in battle has attracted Gorgers who charge forward to attack their terrified prey. As a Prophet of the Great Maw, Skrag spreads the ravenous dominion of his god and calls the blessings of the maw on the entire army by his mere presence."
 #hp 90
 #size 6
 #prot 13
@@ -10668,7 +10668,7 @@ still to do
 #berserk 5
 #spreaddom 1
 #itemslots 15488 -- head, 2 misc (one taken), feet, body
-#fixedname "Skrag the Slaughterer"
+#fixedname "Skrag"
 #batstartsum1d6 7701 -- Gorger
 #batstartsum1 7701 -- Gorger
 #startitem 517 -- skrag's meatpot
@@ -10727,13 +10727,13 @@ still to do
 
 
 
----- Groth Onefinger, First Prophet of the Wastes
+---- Groth Onefinger, First Seer of the Wastes
 
 #newmonster 7721
 #spr1 "./Warhammer-Complete/Hero Onefinger.tga"
 #spr2 "./Warhammer-Complete/Hero Onefinger2.tga"
 #name "First Prophet of the Wastes"
-#descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Prophet of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him. Groth's presence will slowly attract more ogres from the roaming Mawtribes and spread the dominion of the Maw."
+#descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Seer of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him. Groth's presence will attract more ogres from the roaming Mawtribes and spread the dominion of the Maw."
 #hp 65
 #size 3
 #prot 8
@@ -11300,7 +11300,7 @@ still to do
 #req_fornation 121 -- Ogres
 #req_fort 1
 #req_freesites 1
-#nation -2 -- Ogres control the site
+#nation -2 -- Ogres control the site -- can maybe comment out?
 #hiddensite 1919 -- Maw Pit
 #req_capital 0 -- never in capital
 #req_site 0 -- the Pit can't already be here
@@ -23405,6 +23405,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #aoe 6
 #armorpiercing
 #dmg 11
+#fire
 #nostr
 #nratt 1
 #rcost 6
@@ -27045,7 +27046,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #spr2 "./Warhammer-Complete/Nuln_Pegasus2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Pegasus mount from the rulers of Nuln. Pegasi are noble beasts, loyal and swift, the perfect mount for a nobleman of martial prowess. Nobles of the South East are wealthy enough that they can afford superior magical equipment."
-#hp 50 -- combined profile
+#hp 25 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -27080,7 +27081,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #spr2 "./Warhammer-Complete/Griffon Noble2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Griffon mount from the Imperial Zoo. Griffons are noble, loyal and elegant beasts prized above all other mounts and are seen as symbols of the Empire's strength. The Griffon will fight ferociously to protect its rider, having been bonded with him for many years."
-#hp 65 -- combined profile
+#hp 30 -- combined profile
 #size 6
 #mounted
 #ressize 2
