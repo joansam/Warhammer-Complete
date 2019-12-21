@@ -4500,7 +4500,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #xpshape 50
 #end
 
--- Exalted Champion
+-- Exalted Champion of Tzeentch
 
 #newmonster 7598
 #spr1 "./Warhammer-Complete/Exalted_Hero_1.tga"
@@ -4508,7 +4508,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
-#gcost 9080
+#gcost 9980
 #ap 25
 #mapmove 24
 #hp 22
@@ -4907,14 +4907,14 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #poorundeadleader
 #end
 
--- Chosen Lord of Tzeentch
+-- Chosen Chaos Lord of Tzeentch
 
 #newmonster 7610
-#name "Chosen Lord of Tzeentch"
+#name "Chosen Chaos Lord of Tzeentch"
 #spr1 "./Warhammer-Complete/chosen_lord_of_tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/chosen_lord_of_tzeentch_2.tga"
 #nametype 115
-#descr "A Chosen Lord of Tzeentch is a Chaos Lord who has advanced even further on the path to Daemonhood than the 'lesser' of their kind, gaining even more gifts from their dark patron than a Lord of Tzeentch, of whom there already are few. Standing upon a Chariot of Tzeentch, his powers are indeed unmatched by nigh any other mortal followers of the Changer of Ways."
+#descr "A Chosen Chaos Lord of Tzeentch is a Chaos Lord who has advanced even further on the path to Daemonhood than the 'lesser' of their kind, gaining even more gifts from their dark patron than a Lord of Tzeentch, of whom there already are few. Standing upon a Chariot of Tzeentch, his powers are indeed unmatched by nigh any other mortal followers of the Changer of Ways."
 #ap 25
 #mapmove 24
 #hp 36
@@ -4930,7 +4930,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 4 2 -- Astral
 #custommagic 384 100
 #coldres 5
-#trample
 #weapon "Aura of Tzeentch" -- Aura
 #weapon "Daemonic Scythetalons" -- Daemonic Scythetalons
 #weapon "Halberd of Tzeentch"
@@ -5030,7 +5029,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #berserk 3
 #coldres 3
-#invulnerable 10
 #ambidextrous 5
 #itemslots 28672
 #weapon "Aura of Tzeentch" -- Aura
@@ -7706,14 +7704,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #montag 5555
 #end
 
--- Chosen Lord of Nurgle
+-- Chosen Chaos Lord of Nurgle
 
 #newmonster 7677
 #spr1 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_2.tga"
-#name "Chosen Lord of Nurgle"
+#name "Chosen Chaos Lord of Nurgle"
 #nametype 115
-#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Lord of Nurgle towers over his companions, gifted with strength and stature beyond the rest of Nurgle's followers, a great scythe his weapon of choice."
+#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Chaos Lord of Nurgle towers over his companions, gifted with strength and stature beyond the rest of Nurgle's followers, a great scythe his weapon of choice."
 #ap 13
 #mapmove 16
 #hp 40
@@ -7782,11 +7780,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Large Plaguesword" -- Large Plaguesword
 #weapon "Necrotic Missiles"
-#trample
 #startage 190
 #maxage 10000
 #magicskill 5 2
 #magicskill 6 1
+#custommagic 13312 200
+#custommagic 13312 100
 #holy
 #inspirational 1
 #goodleader
@@ -7935,7 +7934,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Large Plaguesword" -- Large Plaguesword
-#trample
 #startage 190
 #maxage 10000
 #holy
@@ -8376,6 +8374,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
+#heal
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Daemon-forged Flail" -- Daemon Flail
 #armor "Light Chaos Armor" -- Light chaos armor
@@ -8393,6 +8392,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #fear 5
 #flying
 #demon
+#holy
 #deathdisease 6
 #magicpower 1
 #neednoteat
@@ -8429,6 +8429,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
+#heal
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Daemon-forged Flail" -- Daemon Flail
 #armor "Light Chaos Armor" -- Light chaos armor
@@ -8481,7 +8482,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #weapon "Magic Staff"
 #armor "Robes"
-#trample
 #okleader
 #startage 900
 #maxage 10000
@@ -8819,18 +8819,31 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #5d6units 7661 -- Plaguebearers
 #end
 
---#newevent
---#nation 142
---#rarity 0
---#req_rare 5 -- Will occur 5% of the time
---#req_land 1
---#req_fornation 142
---#req_pop0ok
---#req_targmnr 7748 -- Chosen Chaos Lord
---#killcom 7748
---#com -5555 -- 1 Daemon, 2 Spawns
---#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
---#end
+#newevent
+#nation 142
+#rarity 0
+#req_rare 5 -- Will occur 5% of the time
+#req_land 1
+#req_fornation 142
+#req_pop0ok
+#req_targmnr 7677 -- Chosen Chaos Lord
+#killcom 7677
+#com -5555 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
+#end
+
+#newevent
+#nation 159
+#rarity 0
+#req_rare 5
+#req_land 1
+#req_fornation 159
+#req_pop0ok
+#req_targmnr 7568 -- Chosen Chaos Lord
+#killcom 7568
+#com -6002 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Slaanesh, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
+#end
 
 
 -------- SITES -----------
@@ -16302,7 +16315,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #ap 8 --- move 3
 --gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
 #gcost 140
-#rpcost 2 --- Extradordinarly good leader, 2 cp makes sense
+#rpcost 1 --- Extradordinarly good leader but cap-only
 #rcost 12 -- golden scale mail doesn't have an rcost
 #armor "Full Helmet"
 #armor 196 -- golden scale mail
@@ -16384,7 +16397,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #mapmove 20 -- standard horse move
 #ap 26 --- move 8
 #gcost 200
-#rpcost 4 --- very rare thug commanders
+#rpcost 2 --- rare thug commanders, changed cause cap-only and no magic
 #rcost 1
 #armor "Half Helmet"
 #armor 17 -- full scale mail
@@ -16439,7 +16452,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #nametype 123
 #poorleader
 #holy
-#forgebonus 10
+#forgebonus 20 -- Dwarfs deserve a little fun now and then
 #mastersmith 2
 #resources 30
 #magicskill 3 1 -- earth 1
@@ -16487,6 +16500,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 8 1 -- holy 1
 #magicskill 0 1 -- fire 1
 #magicskill 5 1 -- death 1
+#magicskill 7 1 -- blood 1
 #neednoteat
 #supplybonus -1
 #end
@@ -16530,6 +16544,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 0 2 -- fire 2
 #magicskill 5 1 -- death 1
 #magicskill 3 1 -- earth 1
+#magicskill 7 1 -- blood 1
 #custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
@@ -16576,6 +16591,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 5 1 -- death 1
 #magicskill 3 2 -- earth 2
 #magicskill 7 1 -- blood 1
+#custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat

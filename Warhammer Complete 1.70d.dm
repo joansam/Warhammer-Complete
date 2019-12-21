@@ -1,4 +1,4 @@
-#modname "Warhammer Complete 1.70c"
+#modname "Warhammer Complete 1.70d"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
 #version 1.70c
 #icon "Warhammer-Complete/ModBanner.tga"

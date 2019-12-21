@@ -1,5 +1,9 @@
 1.70c fixes: Ulthuan's Summon Lesser Great Eagles was borked, adjusted slave giant hp and rp upward
 Changes to Skrag's name to be less confusing for other players
+Version X
+Todo: check that Nurgle chosen lord event works - set chance to 99
+Trample removed from Chaos commanders w/magic paths
+
 -- VERSION 1.7 --
 Tomb Kings:
 Double summon allies amt - done
