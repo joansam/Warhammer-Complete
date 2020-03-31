@@ -626,7 +626,7 @@
 #magicarmor
 #end
 
-#newweapon 1908 -- KEEP ID #
+#newweapon 1908 -- NEEDS STATIC ID #
 #copyweapon 143 -- Disease
 #name "Aura of Nurgle"
 #mrnegateseasily
@@ -675,7 +675,7 @@
 #natural
 #end
 
-#newweapon 1907 -- KEEP ID #
+#newweapon 1907 -- NEEDS STATIC ID #
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -712,7 +712,7 @@
 #slash
 #end
 
-#newweapon 1909 -- KEEP ID #
+#newweapon 1909 -- NEEDS STATIC ID #
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -724,7 +724,7 @@
 #secondaryeffect 414
 #end
 
-#newweapon 1910 -- KEEP ID #
+#newweapon 1910 -- NEEDS STATIC ID #
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -11950,7 +11950,7 @@ Still to do
 #magic
 #end
 
-#newweapon 1917 -- KEEP ID #
+#newweapon 1917 -- NEEDS STATIC ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -11979,7 +11979,7 @@ Still to do
 
 
 
-#newweapon 1916 -- KEEP ID #
+#newweapon 1916 -- NEEDS STATIC ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11996,7 +11996,7 @@ Still to do
 #end
 
 
-#newweapon 1915 -- KEEP ID #
+#newweapon 1915 -- NEEDS STATIC ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12012,7 +12012,7 @@ Still to do
 #att -3
 #end
 
-#newweapon 1914 -- KEEP ID #
+#newweapon 1914 -- NEEDS STATIC ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12044,7 +12044,7 @@ Still to do
 #end
 
 
-#newweapon 1912 -- KEEP ID #
+#newweapon 1912 -- NEEDS STATIC ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12071,7 +12071,7 @@ Still to do
 #end
 
 
-#newweapon 1913 -- KEEP ID #
+#newweapon 1913 -- NEEDS STATIC ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -15085,7 +15085,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 
 --- Fireglaive Gout
 
-#newweapon 1918 -- KEEP ID #
+#newweapon 1918 -- NEEDS STATIC ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -23483,7 +23483,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Longrange
 
-#newweapon 780 -- KEEP ID
+#newweapon 780 -- NEEDS STATIC ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23500,7 +23500,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Midrange
 
-#newweapon 781 -- KEEP ID
+#newweapon 781 -- NEEDS STATIC ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23517,7 +23517,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Shortrange
 
-#newweapon 782 -- KEEP ID
+#newweapon 782 -- NEEDS STATIC ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23534,7 +23534,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 3 Midrange
 
-#newweapon 783 -- KEEP ID
+#newweapon 783 -- NEEDS STATIC ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23609,7 +23609,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (ranged)
 
-#newweapon 788 -- KEEP ID
+#newweapon 788 -- NEEDS STATIC ID
 #name "Hand Crossbow"
 #dmg 8
 #nostr
@@ -23627,7 +23627,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (melee)
 
-#newweapon 789 -- KEEP ID
+#newweapon 789 -- NEEDS STATIC ID
 #name "Hand Crossbow"
 #ammo 1
 #att 1
@@ -23684,7 +23684,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Myrmidian Blaze
 
-#newweapon 790 -- KEEP ID
+#newweapon 790 -- NEEDS STATIC ID
 #name "Myrmidian Blaze"
 #dmg 8
 #armorpiercing
@@ -23836,7 +23836,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Smite Undead
 
-#newweapon 802 -- KEEP ID
+#newweapon 802 -- NEEDS STATIC ID
 #name "Smite Undead"
 #dmg 4
 #magic
@@ -31236,7 +31236,7 @@ Priests: Strong."
 #twohanded
 #end
 
-#newweapon 1702 -- KEEP ID #
+#newweapon 1702 -- NEEDS STATIC ID #
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison

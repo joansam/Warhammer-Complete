@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.70d"
+#modname "Warhammer Complete 1.71"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.70c
+#version 1.71
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -505,7 +505,7 @@
 #magic
 #rcost 0
 #slash
-#secondaryeffect 1916
+#secondaryeffect 1996
 #sound 8
 #end
 
@@ -523,7 +523,7 @@
 #end
 
 #newweapon
-#copyweapon 1914 -- "Aura of Nurgle"
+#copyweapon 1994 -- "Aura of Nurgle"
 #name "Greater Aura of Nurgle"
 #aoe 8
 #end
@@ -536,7 +536,7 @@
 #len 1
 #magic
 #slash
-#secondaryeffect 1916
+#secondaryeffect 1996
 #sound 8
 #rcost 3
 #end
@@ -549,7 +549,7 @@
 #len 2
 #magic
 #slash
-#secondaryeffect 1916
+#secondaryeffect 1996
 #sound 8
 #rcost 5
 #nratt 3
@@ -626,7 +626,7 @@
 #magicarmor
 #end
 
-#newweapon 1914 -- KEEP ID #
+#newweapon 1994 -- NEEDS STATIC ID
 #copyweapon 143 -- Disease
 #name "Aura of Nurgle"
 #mrnegateseasily
@@ -643,7 +643,7 @@
 #dmg 4
 #ammo 4
 #armornegating
-#secondaryeffect 1915
+#secondaryeffect 1995
 #hardmrneg
 #acid
 #end
@@ -658,7 +658,7 @@
 #range -1
 #aoe 1
 #armornegating
-#secondaryeffect 1916
+#secondaryeffect 1996
 #hardmrneg
 #nratt -2
 #end
@@ -671,11 +671,11 @@
 #def -1
 #len 0
 #bonus
-#secondaryeffect 1913
+#secondaryeffect 1993
 #natural
 #end
 
-#newweapon 1913 -- KEEP ID #
+#newweapon 1993 -- NEEDS STATIC ID
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -708,11 +708,11 @@
 #magic
 #rcost 3
 #sound 8
-#secondaryeffect 1915
+#secondaryeffect 1995
 #slash
 #end
 
-#newweapon 1915 -- KEEP ID #
+#newweapon 1995 -- NEEDS STATIC ID
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -724,7 +724,7 @@
 #secondaryeffect 414
 #end
 
-#newweapon 1916 -- KEEP ID #
+#newweapon 1996 -- NEEDS STATIC ID
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -2619,7 +2619,7 @@
 #newspell
 #name "Summon Daemonettes"
 #descr "With this spell, the caster summons a group of Daemonettes, the Lesser Daemons of Slaanesh, beings possessed of the hypnotic glamour for which all Daemons of Slaanesh are abhorred."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 3
 #path 0 7
@@ -2661,7 +2661,7 @@
 #newspell
 #name "Summon Seekers"
 #descr "With this spell, the caster summons a group of Seekers of Slaanesh, the outriders of the Prince of Chaos, darkling Daemonettes mounted on swift daemonic Steeds."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 4
 #path 0 7
@@ -2675,7 +2675,7 @@
 #newspell
 #name "Summon Fiends"
 #descr "With this summoning, the caster brings forth a couple of Fiends of Slaanesh, strange creatures which are swift and terrible."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 5
 #path 0 7
@@ -2689,7 +2689,7 @@
 #newspell
 #name "Summon Herald"
 #descr "With this spell, the summoner brings forth a Herald of Slaanesh, one of His most insidious tools. They can corrupt the civilized lands from afar, sowing disorder and lust before the arrival of the Dark Prince's armies."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 5
 #path 0 7
@@ -2703,7 +2703,7 @@
 #newspell
 #name "Summon Exalted Daemon"
 #descr "With this spell, the sorcerer courts Slaanesh's favor with threescore victims. In return, one of his fellows is possessed by a daemon of great power to aid his men in their conquest of the civilized realms."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 6
 #path 0 7
@@ -2717,7 +2717,7 @@
 #newspell
 #name "Summon Daemon Princess"
 #descr "The caster proves his devotion to the Dark Prince with an offering of nearly a hundred mortals. In return, the Prince rewards this sorcerer with one of his most terrifying and alluring servants, a Daemon Princess to lay waste to the lands of mortal men."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 8
 #path 0 7
@@ -2731,7 +2731,7 @@
 #newspell
 #name "Summon Keeper of Secrets"
 #descr "With this ultimate dark ritual, the caster sorcerer offers tenscore victims of pure blood to his Dark Prince. Out of the void comes a Keeper of Secrets, a Greater Daemon of Slaanesh. They are many limbed and jewel-eyed, strangely sensuous in movement and yet at the same time brutal and fierce. The Keeper will lead the sorcerer's armies to victory, engulfing all that stands in its path."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 9
 #path 0 7
@@ -2748,7 +2748,7 @@
 #newspell
 #name "Summon Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Slaanesh cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
-#restricted 191
+#restricted 198
 #school 6
 #researchlevel 2
 #path 0 7
@@ -2807,7 +2807,7 @@
 #range 5015
 #aoe 1003
 #precision 5
-#restricted 191
+#restricted 198
 #school 2
 #path 0 2
 #pathlevel 0 2
@@ -2841,7 +2841,7 @@
 #copyspell 435 -- Celestial Music
 #name "Bliss in Torment"
 #descr "A tremor of Slaanesh's energy runs through the battlefield. His daemons feel it course through them, and are aroused to the highest levels of lust, pain, and pleasure. They feed on these emotions and become altogether more terrifying: faster, nimbler, and focused with complete clarity on the coming slaughter."
-#restricted 191
+#restricted 198
 #spec 13139976 --4751368-- 4227080 -- (demons, sacreds, no undead, friendlies, can use underwater)
 #school 4
 #path 0 2
@@ -2853,7 +2853,7 @@
 -- Chaos Armor
 
 #newitem
-#restricted 191
+#restricted 198
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 4
 #mainpath 7 -- Blood
@@ -2884,7 +2884,7 @@
 -- Witstealer Sword
 
 #newitem
-#restricted 191
+#restricted 198
 #spr "./Warhammer-Complete/wit_stealer.tga"
 #name "Witstealer Sword"
 #type 1
@@ -2921,10 +2921,10 @@
 #newevent
 #rarity 0 -- Always, but only one 0 rarity event can happen/turn
 #req_rare 25 -- Will happen 40% of the time when reqs are met
-#nation 191 -- Slaanesh controls the troops
-#req_notnation 191
-#req_notnation 183
+#nation 198 -- Slaanesh controls the troops
+#req_notnation 198
 #req_notnation 190
+#req_notnation 197
 #req_monster 7667 -- Cultist
 #req_capital 0 -- Must not be a capital
 #req_maxdef 19
@@ -2944,11 +2944,11 @@
 #end
 
 #newevent
-#nation 191
+#nation 198
 #rarity 0
 #req_rare 5
 #req_land 1
-#req_fornation 191
+#req_fornation 198
 #req_pop0ok
 #req_targmnr 7691 -- Chosen Chaos Lord
 #killcom 7691
@@ -3153,7 +3153,7 @@
 
 -------- NATIONS ---------
 
-#selectnation 191
+#selectnation 198
 #clearnation
 #name "Slaanesh Warhost"
 #epithet "Seduction of Corruption"
@@ -3471,7 +3471,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1917 -- -- KEEP THIS ID #
+#newweapon 1997 -- NEEDS STATIC ID
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -4500,7 +4500,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #xpshape 50
 #end
 
--- Exalted Champion
+-- Exalted Champion of Tzeentch
 
 #newmonster 7721
 #spr1 "./Warhammer-Complete/Exalted_Hero_1.tga"
@@ -4508,7 +4508,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Exalted Chaos Champion"
 #nametype 115
 #descr "The Champions of Chaos are some of the greatest fighters of the Chaos worshippers, and often the next step on the path of a Champion towards eventual Daemonhood (or faltering in their path and becoming a Spawn of Chaos) is to become an Exalted Champion, or as they are otherwise known, an Exalted Hero. Armed with an even greater array of Daemonic gifts than a regular Champion, they are, indeed, formidable foes to those who stand before them."
-#gcost 9080
+#gcost 9980
 #ap 25
 #mapmove 24
 #hp 22
@@ -4907,14 +4907,14 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #poorundeadleader
 #end
 
--- Chosen Lord of Tzeentch
+-- Chosen Chaos Lord of Tzeentch
 
 #newmonster 7733
-#name "Chosen Lord of Tzeentch"
+#name "Chosen Chaos Lord of Tzeentch"
 #spr1 "./Warhammer-Complete/chosen_lord_of_tzeentch_1.tga"
 #spr2 "./Warhammer-Complete/chosen_lord_of_tzeentch_2.tga"
 #nametype 115
-#descr "A Chosen Lord of Tzeentch is a Chaos Lord who has advanced even further on the path to Daemonhood than the 'lesser' of their kind, gaining even more gifts from their dark patron than a Lord of Tzeentch, of whom there already are few. Standing upon a Chariot of Tzeentch, his powers are indeed unmatched by nigh any other mortal followers of the Changer of Ways."
+#descr "A Chosen Chaos Lord of Tzeentch is a Chaos Lord who has advanced even further on the path to Daemonhood than the 'lesser' of their kind, gaining even more gifts from their dark patron than a Lord of Tzeentch, of whom there already are few. Standing upon a Chariot of Tzeentch, his powers are indeed unmatched by nigh any other mortal followers of the Changer of Ways."
 #ap 25
 #mapmove 24
 #hp 36
@@ -4930,7 +4930,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #magicskill 4 2 -- Astral
 #custommagic 384 100
 #coldres 5
-#trample
 #weapon "Aura of Tzeentch" -- Aura
 #weapon "Daemonic Scythetalons" -- Daemonic Scythetalons
 #weapon "Halberd of Tzeentch"
@@ -5030,7 +5029,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rcost 1
 #berserk 3
 #coldres 3
-#invulnerable 10
 #ambidextrous 5
 #itemslots 28672
 #weapon "Aura of Tzeentch" -- Aura
@@ -5683,7 +5681,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell "Banishment"
 #name "Discord of Tzeentch"
 #descr "Whilst many of the servants of Tzeentch are daemons, it is not beside Him to grant His followers the power to smite the Daemonic and Undead filth brought forth by His enemies."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 0
 #path 0 4
@@ -5698,7 +5696,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell "Banishment"
 #name "Sorcerous Blessing of Tzeentch"
 #descr "And thus the Dark God Tzeentch gives His dark blessing to a small number of His followers, with or without his Mark."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 2
 #path 0 4
@@ -5718,7 +5716,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell "Banishment"
 #name "Greater Sorcerous Blessing"
 #descr "And thus the Dark God Tzeentch gives His dark blessing to a larger number of His followers, Marked or otherwise. Thanks to His fickle nature, however, not all targeted shall be granted His blessing."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 4
 #path 0 4
@@ -5739,7 +5737,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Pink Horrors"
 #descr "From the ether of Chaos arise the Horrors, beings of pure Chaos that take infinite forms and crackle with magical power. They are unpredictable, chaotic, and deadly on the battlefield."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 3
 #path 0 4
@@ -5757,7 +5755,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Flamers of Tzeentch"
 #descr "Summons a couple of Flamers of Tzeentch, Daemons which hurl Daemonic fire at their enemies at range and burn them in close range."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 6
 #path 0 4
@@ -5775,7 +5773,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Changebringer"
 #descr "Summons a Changebringer, a Flamer of Tzeentch which is mounted upon a Disc of Tzeentch."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 7
 #path 0 4
@@ -5793,7 +5791,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Screamers of Tzeentch"
 #descr "Summons a host of Screamers, glimmering sky-sharks that ride upon the Winds of Magic as a bird glides upon the breeze."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 5
 #path 0 4
@@ -5811,7 +5809,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Herald of Tzeentch"
 #descr "With this ritual, the caster brings forth a Herald which stands upon a Disc of Tzeentch, to aid and command the lesser Daemonic forces of Tzeentch."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 5
 #path 0 4
@@ -5827,7 +5825,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Summon Lord of Change"
 #descr "With this summoning, the caster brings forth a Lord of Change, a Greater Daemon of Tzeentch. They are avian, winged humanoids in form. They are the foremost agents of the Changer of Ways, and no other being which is aligned to Tzeentch embodies the nature of their Dark God as the Supreme Manipulator as they do."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 9
 #path 0 4
@@ -5845,7 +5843,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Call Daemon Prince"
 #descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Tzeentch, a Daemon Prince, who is ready to fight for His cause where ever it may be."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 8
 #path 0 4
@@ -5861,7 +5859,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Harness Pure Chaos"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Tzeentch cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
-#restricted 183
+#restricted 190
 #school 0
 #researchlevel 2
 #path 0 4
@@ -5881,7 +5879,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Obelisk Creation"
 #descr "With this ritual, the caster creates an Obelisk of Tzeentch in honor of the Changer of Ways. With this dark creation, it is possible to make believers out of unbelievers."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 4
 #path 0 4
@@ -5899,7 +5897,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Unstable Vortex"
 #descr "With this ritual, the caster brings to existence an unstable Vortex of Chaos, allowing the Realm of Chaos to seep through into the real world, allowing, with time, a group of Horrors to come forth from the Aethyr."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 3
 #path 0 4
@@ -5917,7 +5915,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Flickering Red Fire"
 #descr "The caster sends forth red flames upon the enemy. The flames are metaphysical in nature and are only guaranteed to affect those who are weak of will, burning them horribly."
-#restricted 183
+#restricted 190
 #school 2
 #researchlevel 1
 #path 0 4
@@ -5939,7 +5937,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newspell
 #name "Bolt of Change"
 #descr "The caster hurls a single devastating bolt of energy that blasts through the ranks of the enemy, wracking their bodies with sickening and uncontrollable mutations."
-#restricted 183
+#restricted 190
 #school 2
 #researchlevel 6
 #path 0 4
@@ -5964,7 +5962,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell 357 -- Tempering the Will
 #name "Aegis of Orange Fire"
 #descr "With this incantation, which calls upon the Dark God Tzeentch, the caster bestows resistance to magic to some of his allies."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 3
 #path 0 4
@@ -5980,7 +5978,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell 1013 -- Confusion
 #name "Treason of Tzeentch"
 #descr "The caster reaches his thought into the minds of his victims, tormenting them with subtle whispers that stoke the fires of mistrust and treachery, turning them against one another."
-#restricted 183
+#restricted 190
 #school 4
 #path 0 4
 #end
@@ -5991,7 +5989,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Blue Fire of Tzeentch"
 #copyspell 561 -- Astral Fires
 #descr "As the caster twists his hands in the air, the bodies of his enemies are consumed with coruscating blue flames. Due to the metaphysical nature of the flames, however, they only burn those weak of will."
-#restricted 183
+#restricted 190
 #school 2
 #researchlevel 4
 #path 0 4 -- The magic path for casting, IE: fire, water, etc.
@@ -6016,7 +6014,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #copyspell 1117 -- Infernal Prison
 #name "Infernal Gateway"
 #descr "The caster opens a portal to the dread Realm of Chaos, a magical tear in the mortal plane that sucks the target to nigh certain doom."
-#restricted 183
+#restricted 190
 #school 4
 #researchlevel 9
 #path 0 4
@@ -6031,7 +6029,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Staff of Change
 
 #newitem
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/staff_change.tga"
 #constlevel 6
 #mainpath 4
@@ -6041,7 +6039,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #name "Staff of Change"
 #descr "Raw chaos flows about this weapon, running up and down the stave as tongues of crackling rainbow fire. To be struck by this staff is therefore to feel the touch of change itself, rendered into a mewling and mutating mass by the unstoppable energies of Tzeentch. It can only be wielded by Daemons."
 #type 2
-#weapon 1917
+#weapon 1997
 #mr 2
 #onlydemon
 #deathfire 5
@@ -6052,7 +6050,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Rune Stone of Sorcery
 
 #newitem
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/runestone.tga"
 #constlevel 2
 #mainpath 4
@@ -6068,7 +6066,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Wand of Whimsy
 
 #newitem
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/wandofwhimsy.tga"
 #constlevel 8
 #mainpath 4
@@ -6087,7 +6085,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Icon of Tzeentch
 
 #newitem
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/Icon_of_Tzeentch.tga"
 #constlevel 12
 #mainpath 4
@@ -6104,7 +6102,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Crude Icon of Tzeentch
 
 #selectitem 716
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/crude_Icon_of_Tzeentch.tga"
 #constlevel 12
 #mainpath 4
@@ -6120,7 +6118,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Chaos Armor
 
 #newitem
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 4
 #mainpath 4
@@ -6140,7 +6138,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 -- Chaos Armor copy
 
 #selectitem 719
-#restricted 183
+#restricted 190
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 12
 #mainpath 4
@@ -6161,11 +6159,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #newevent
 #rarity 0
 #req_rare 15 -- Will happen x% of the time when reqs are met
-#req_nation 183 -- Tzeentch
-#req_notnation 191
-#req_notnation 183
+#req_nation 190 -- Tzeentch
+#req_notnation 198
 #req_notnation 190
-#nation 183 -- Tzeentch controls the troops
+#req_notnation 197
+#nation 190 -- Tzeentch controls the troops
 #req_monster 7715 -- Tzeentch cultist
 #req_capital 0
 #req_maxdef 19
@@ -6186,11 +6184,11 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #end
 
 #newevent
-#nation 183
+#nation 190
 #rarity 0
 #req_rare 5 -- Will occur 5% of the time
 #req_land 1
-#req_fornation 183
+#req_fornation 190
 #req_pop0ok
 #req_targmnr 7733 -- Chosen Chaos Lord
 #killcom 7733
@@ -6225,7 +6223,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 
 -------- NATIONS ---------
 
-#selectnation 183
+#selectnation 190
 #clearnation
 #name "Tzeentch Warhost"
 #epithet "The Ways are Changing"
@@ -7706,14 +7704,14 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #montag 6003
 #end
 
--- Chosen Lord of Nurgle
+-- Chosen Chaos Lord of Nurgle
 
 #newmonster 7800
 #spr1 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_1.tga"
 #spr2 "./Warhammer-Complete/Chosen_Lord_of_Nurgle_2.tga"
-#name "Chosen Lord of Nurgle"
+#name "Chosen Chaos Lord of Nurgle"
 #nametype 115
-#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Lord of Nurgle towers over his companions, gifted with strength and stature beyond the rest of Nurgle's followers, a great scythe his weapon of choice."
+#descr "Of all the mortal warriors across the civilisations of the world, Chaos Lords are the most feared, for they are truly like gods amongst men. The Chosen Chaos Lord of Nurgle towers over his companions, gifted with strength and stature beyond the rest of Nurgle's followers, a great scythe his weapon of choice."
 #ap 13
 #mapmove 16
 #hp 40
@@ -7782,11 +7780,12 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Large Plaguesword" -- Large Plaguesword
 #weapon "Necrotic Missiles"
-#trample
 #startage 190
 #maxage 10000
 #magicskill 5 2
 #magicskill 6 1
+#custommagic 13312 200
+#custommagic 13312 100
 #holy
 #inspirational 1
 #goodleader
@@ -7935,7 +7934,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Large Plaguesword" -- Large Plaguesword
-#trample
 #startage 190
 #maxage 10000
 #holy
@@ -8376,6 +8374,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
+#heal
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Daemon-forged Flail" -- Daemon Flail
 #armor "Light Chaos Armor" -- Light chaos armor
@@ -8393,6 +8392,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #fear 5
 #flying
 #demon
+#holy
 #deathdisease 6
 #magicpower 1
 #neednoteat
@@ -8429,6 +8429,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #wastesurvival
 #poisonres 25
 #regeneration 5
+#heal
 #weapon "Greater Aura of Nurgle" -- Greater Aura
 #weapon "Daemon-forged Flail" -- Daemon Flail
 #armor "Light Chaos Armor" -- Light chaos armor
@@ -8481,7 +8482,6 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #rcost 1
 #weapon "Magic Staff"
 #armor "Robes"
-#trample
 #okleader
 #startage 900
 #maxage 10000
@@ -8503,7 +8503,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Beasts of Nurgle"
 #descr "With this spell, the caster summons several Beasts of Nurgle, horrifying beasts with curious personalities."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 5
 #path 0 5
@@ -8519,7 +8519,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Plaguebearers"
 #descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 3
 #path 0 5
@@ -8535,7 +8535,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Plaguebearer summoning"
 #descr "Summons a group of Plaguebearers. They are the lesser Daemons of Nurgle and the rank and file of His Daemonic armies."
-#restricted 186
+#restricted 193
 #school -1
 #path 0 5
 #pathlevel 0 3
@@ -8549,7 +8549,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #copyspell 1072 -- Blood Feast
 #name "Consecration of Nurgle"
 #descr "The caster forms a vile cult within an unsuspecting village, infecting his 'followers' with Nurgle's Rot. After they die and form into Plaguebearers, the vile ritual for the Great Lord of Decay begins in earnest, as the caster proceeds to infect, murder and feast upon the flesh of the rest of the villagers as his minions protect his person. As the ritual ends and the village is in ruins, the caster finds himself even less human; he craves mortal flesh, his body changed in ways which have 'healed' some of his afflictions. The Plaguebearers thus formed gleefully join his cause."
-#restricted 186
+#restricted 193
 #school 4
 #researchlevel 3
 #path 0 5
@@ -8563,7 +8563,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Herald of Nurgle"
 #descr "With this summoning, the caster brings forth a Herald of Nurgle to lead its lesser brethren. A Herald is the result of a hardier than usual individual succumbing to Nurgle's Rot."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 5
 #path 0 5
@@ -8579,7 +8579,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Plague Drone"
 #descr "Summons a Plague Drone, a Plaguebearer sitting atop a Rot Fly, a flying Daemonic mount of Nurgle."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 7
 #path 0 5
@@ -8597,7 +8597,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Call Daemon Prince"
 #descr "It is no mean feat for one to reach Daemonhood, for it is only by countless years of dedication that one can reach this outcome. Many mighty lords who had hoped for this power succumb to spawndom. With this incantation, the caster brings forth a mighty follower of Nurgle, a Daemon Prince, who is ready to fight for His cause where ever it may be."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 8
 #path 0 5
@@ -8613,7 +8613,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Great Unclean One"
 #descr "With this grand ritual, the caster brings from the Realm of Chaos to the world a Great Unclean One, a Greater Daemon of Nurgle. The Great Unclean One is gigantic in figure, bloated with decay, disease and all imaginable kinds of physical corruption."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 9
 #path 0 5
@@ -8631,7 +8631,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Summon Furies"
 #descr "While Chaos Furies are not aligned to any one Dark God, it does not mean the followers of Nurgle cannot use them to their own ends. With this spell, the caster summons a small group of them and binds them to his service."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 2
 #path 0 5
@@ -8649,7 +8649,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Bind Bile Trolls"
 #descr "With this vile spell, the caster binds a number of Bile Trolls to his service."
-#restricted 186
+#restricted 193
 #school 0
 #researchlevel 6
 #path 0 5
@@ -8669,7 +8669,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Fleshy Abundance"
 #descr "The caster generously gifts the fortunate recipient with a growth spurt of the most repulsive kind. Great wobbling mounds of grey-green fat spill out to seal wounds moments after they are formed."
-#restricted 186
+#restricted 193
 #school 4
 #researchlevel 4
 #path 0 5 -- The magic path for casting, IE: fire, water, etc.
@@ -8693,7 +8693,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newspell
 #name "Rancid Visitations"
 #descr "As the caster reaches out, his enemies are seized by a terrible affliction that blackens their flesh and rots their organs to mulch."
-#restricted 186
+#restricted 193
 #school 4
 #researchlevel 4
 #path 0 5
@@ -8714,7 +8714,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #copyspell "Plague"
 #name "Plague Wind"
 #descr "The caster summons forth a maelstrom of maggots, bile and blight-ridden fluids to eat away his enemy's skin, flesh and soul."
-#restricted 186
+#restricted 193
 #school 4
 #researchlevel 6
 #path 0 5
@@ -8727,7 +8727,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Chaos Armor
 
 #newitem
-#restricted 186
+#restricted 193
 #spr "./Warhammer-Complete/chaos_armor.tga"
 #constlevel 4
 #mainpath 5
@@ -8747,7 +8747,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Filth Mace
 
 #newitem
-#restricted 186
+#restricted 193
 #spr "./Warhammer-Complete/filth_mace.tga"
 #constlevel 4
 #mainpath 5
@@ -8762,7 +8762,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Balesword
 
 #newitem
-#restricted 186
+#restricted 193
 #spr "./Warhammer-Complete/balesword.tga"
 #constlevel 4
 #mainpath 6
@@ -8776,7 +8776,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 -- Icon of Nurgle
 
 #newitem
-#restricted 186
+#restricted 193
 #spr "./Warhammer-Complete/Icon_of_Nurgle.tga"
 #constlevel 12
 #mainpath 5
@@ -8797,11 +8797,11 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #newevent
 #rarity 0
 #req_rare 15 -- Happens x% of the time
-#req_nation 186 --- Nurgle
-#req_notnation 191
-#req_notnation 183
-#req_notnation 186
-#nation 186 -- Nurgle controls the troops
+#req_nation 193 --- Nurgle
+#req_notnation 198
+#req_notnation 190
+#req_notnation 193
+#nation 193 -- Nurgle controls the troops
 #req_monster 7776 -- Cultist
 #req_capital 0
 #req_maxdef 24
@@ -8819,18 +8819,31 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #5d6units 7784 -- Plaguebearers
 #end
 
---#newevent
---#nation 142
---#rarity 0
---#req_rare 5 -- Will occur 5% of the time
---#req_land 1
---#req_fornation 142
---#req_pop0ok
---#req_targmnr 7748 -- Chosen Chaos Lord
---#killcom 7748
---#com -5555 -- 1 Daemon, 2 Spawns
---#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
---#end
+#newevent
+#nation 193
+#rarity 0
+#req_rare 5 -- Will occur 5% of the time
+#req_land 1
+#req_fornation 193
+#req_pop0ok
+#req_targmnr 7800 -- Chosen Chaos Lord
+#killcom 7800
+#com -6003 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Nurgle, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
+#end
+
+#newevent
+#nation 198
+#rarity 0
+#req_rare 5
+#req_land 1
+#req_fornation 198
+#req_pop0ok
+#req_targmnr 7691 -- Chosen Chaos Lord
+#killcom 7691
+#com -6006 -- 1 Daemon, 2 Spawns
+#msg "After long years of service to Slaanesh, a Chosen Chaos Lord has cast off his mortal shackles, shedding his body and name. Whether he has ascended to Daemonhood or mutated into Spawndom remains to be seen..."
+#end
 
 
 -------- SITES -----------
@@ -8857,7 +8870,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 
 -------- NATIONS ---------
 
-#selectnation 186
+#selectnation 193
 #clearnation
 #name "Nurgle Warhost"
 #epithet "Despair and Decay"
@@ -9087,7 +9100,7 @@ still to do
 
 #selectitem 717
 --#copyitem 51
-#restricted 184
+#restricted 191
 #name "Maw Cleaver"
 #descr "Every Slaughtermaster or Butcher has sacrificed countless slaves to the Great Maw. Over time their implements of butchery have become uniquely suited to the task and as such they are able to ritually sacrifice two more slaves than normal each month."
 #spr "./Warhammer-Complete/Item_Cleaver.tga"
@@ -9760,7 +9773,7 @@ still to do
 #name "Yhetee"
 #descr "Yhetee packs can generally be found ekeing out a sub-tribal existence at the peaks of mountains, but following some ancestral call, will join the Ogres in their wars and migrations. None know for sure, but it is speculated that Yhetees are a remote offshoot of the Ogre race dating back to the time of the first Great Migration. These ferocious creatures arm themselves with lethal ice clubs formed by turning the natural magic of their freezing breath on simple tree branches. The speed and agility of the Yhetee is almost without rival; they may easily outflank foes, scale sheer surfaces and hurtle through and over rough terrain. Yhetees are constantly surrounded by a chilling aura which tires and weakens their prey, ready for the kill. Yhetees are strongest in cold provinces and do not do well in hot environments."
 #hp 35
-#size 4
+#size 3
 #prot 5
 #mor 11
 #mr 9
@@ -10430,7 +10443,7 @@ still to do
 #name "Yhetee Shaman"
 #descr "Shamans are at the heart of largest Yhetee packs, connecting the feral creatures to their past, predicting the weather and sending the pack on hunts. Possessing intelligence and patience beyond that of their kin, Shamans communicate with ogre hunters who have earned their respect and can be highly useful allies. Shamans commune with the spirits of the mountains and wilds daily and speak with the wisdom of the ogre's new home. All Shamans wield magic of the peaks, wild and ice and some the darker magic of bone, though their ability varies greatly. They carry at all times the bones of Sky Giants slain ages ago, inscribed with the history of their race. Though quite apart from the Great Maw, the Yhetee Shamans are treated with great respect and even savage Tyrants will give heed when they speak. All Yhetee are stronger in cold provinces."
 #hp 36
-#size 4
+#size 3
 #prot 5
 #mor 13
 #mr 13
@@ -10625,8 +10638,8 @@ still to do
 #newmonster 7846
 #spr1 "./Warhammer-Complete/Hero Skrag.tga"
 #spr2 "./Warhammer-Complete/Hero Skrag2.tga"
-#name "Prophet of the Great Maw"
-#descr "Skrag the Slaughterer was formerly a promising Butcher who made the mistake of cooking his Tyrant's favourite pet gnoblar. For this mistake he was hurled into the Gorger caverns with his hands severed and meatpot chained to his flesh. Incredibly, Skrag emerged two years later at the head of a pack of Gorgers, devoured the Tyrant and slaughtered the entire tribe as an offering to the Maw. Now the Prophet of the Maw, Skrag is an embodiment of hunger and destruction; the meat-pot he drags behind him has become a mobile mawpit into which he tosses severed chunks of butchered foes. Skrag is unable to restrain himself in battle, dismembering enemy after enemy, constantly feeding the meatpot and growing ever more gorged on the Maw's favour. Ever since leaving the caverns, Skrag's mere presence in battle has attracted Gorgers who charge forward to attack their terrified prey. As the Prophet of the Great Maw, Skrag spreads the ravenous dominion of his god and calls the blessings of the maw on the entire army by his mere presence."
+#name "Slaughterer"
+#descr "Skrag the Slaughterer was formerly a promising Butcher who made the mistake of cooking his Tyrant's favourite pet gnoblar. For this mistake he was hurled into the Gorger caverns with his hands severed and meatpot chained to his flesh. Incredibly, Skrag emerged two years later at the head of a pack of Gorgers, devoured the Tyrant and slaughtered the entire tribe as an offering to the Maw. Now the Prophet of the Maw, Skrag is an embodiment of hunger and destruction; the meat-pot he drags behind him has become a mobile mawpit into which he tosses severed chunks of butchered foes. Skrag is unable to restrain himself in battle, dismembering enemy after enemy, constantly feeding the meatpot and growing ever more gorged on the Maw's favour. Ever since leaving the caverns, Skrag's mere presence in battle has attracted Gorgers who charge forward to attack their terrified prey. As a Prophet of the Great Maw, Skrag spreads the ravenous dominion of his god and calls the blessings of the maw on the entire army by his mere presence."
 #hp 90
 #size 6
 #prot 13
@@ -10668,7 +10681,7 @@ still to do
 #berserk 5
 #spreaddom 1
 #itemslots 15488 -- head, 2 misc (one taken), feet, body
-#fixedname "Skrag the Slaughterer"
+#fixedname "Skrag"
 #batstartsum1d6 7824 -- Gorger
 #batstartsum1 7824 -- Gorger
 #startitem 718 -- skrag's meatpot
@@ -10727,13 +10740,13 @@ still to do
 
 
 
----- Groth Onefinger, First Prophet of the Wastes
+---- Groth Onefinger, First Seer of the Wastes
 
 #newmonster 7844
 #spr1 "./Warhammer-Complete/Hero Onefinger.tga"
 #spr2 "./Warhammer-Complete/Hero Onefinger2.tga"
 #name "First Prophet of the Wastes"
-#descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Prophet of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him. Groth's presence will slowly attract more ogres from the roaming Mawtribes and spread the dominion of the Maw."
+#descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Seer of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him. Groth's presence will attract more ogres from the roaming Mawtribes and spread the dominion of the Maw."
 #hp 65
 #size 3
 #prot 8
@@ -10866,7 +10879,7 @@ still to do
 #name "Become as Mawflesh"
 #descr "Swallowing a hunk of rancid, squirming flesh harvested from the edge of the Great Maw itself, the Slaughtermaster surrenders his body to become a Mawgut. Within hours the Slaughtermaster collapses to the ground, clutching his gut in agonising pain. With a final convulsion his abdomen splits and his entrails spill out as a maw full of jagged teeth emerges. The Slaughtermaster's mind and all vestiges of his former life are devoured and he becomes a vessel of the Great Maw's endless hunger, a terrifying and near unstoppable eating machine."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 4
 #path 0 7
 #path 1 8
@@ -10887,7 +10900,7 @@ still to do
 #name "Contact Mawfiend"
 #descr "Burning the bodies of many slaves and spilling the blood of more in a complex ritual taught by the Henchfiends, the Slaughtermaster contacts a powerful Mawfiend. Entering into a blood oath with this creature, the Slaughtermaster brings an extremely powerful ally to his tribe, but potentially also their doom. Mawfiends are true daemons capable of besting even Tyrants physically and with a cruel intellect to match. They have been known to take over entire tribes, leading them against the forces of order and good, furthering the cause of Chaos. They can only be called from the Wastes."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 6
 #path 0 7
 #path 1 0
@@ -10907,7 +10920,7 @@ still to do
 #name "Bind Henchfiend"
 #descr "Burning the bodies of several slaves, the Slaughtermaster calls a Henchfiend from the wastes surrounding the Great Maw. The Henchfiend will make a blood oath to the Slaughtermaster, offering magic of death and fire as well as access to dark lore. Seeming to serve, these cunning lesser daemons are actually drawing the ogres closer and closer to Chaos."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 3
 #path 0 7
 #path 1 0
@@ -10928,7 +10941,7 @@ still to do
 #name "Bind Gorgers"
 #descr "By ritually slaughtering a handful of captured slaves and scattering their dismembered body parts around the entrance to the warpstone tainted labyrinths, the Slaughtermaster attracts a pair of Gorgers. He then binds them to his service through powerful gut magic, though when not in combat they are still chained and caged."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 2
 #path 0 7
 #path 1 8
@@ -10949,7 +10962,7 @@ still to do
 #name "Bind Gorger Pack"
 #descr "By ritually slaughtering a handful of captured slaves and scattering their dismembered body parts around the entrance to one of the deepest caverns beneath the Mawpit, the Slaughtermaster can lure a large pack of Gorgers. He then binds them to his service through powerful gut magic, though when not in combat they are still chained and caged."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 5
 #path 0 7
 #path 1 8
@@ -10970,7 +10983,7 @@ still to do
 #name "Anoint Mawtribe"
 #descr "Having filled a cauldron with the mangled remains of captive slaves, the Slaughtermaster crushes and grinds them with a sacred boulder known as a Mawtooth, mixing them with his own bile and vomit. The resulting mixture is then applied as crude 'warpaint' to a number of young Bull Ogres. These Bulls are filled with the hunger of the Great Maw and bonded together as a Mawtribe; a band of sacred warriors on a spiritual journey of sheer carnage."
 #school 6
-#restricted 184
+#restricted 191
 #researchlevel 3
 #path 0 7
 #path 1 8
@@ -10990,7 +11003,7 @@ still to do
 #name "Contact Yhetee Shaman"
 #descr "By making an offering to the wilds and the peaks which gave the ogres refuge after the great migration, a Yhetee Shaman of great wisdom can be contacted to aid the ogres in finding their new path. These sacred figures represent a possible alternative to the hunger of the Maw or the taint of chaos, bringing magic of stone, ice and the wilds, with some rare Shaman holding considerable elemental power.  This ritual will only work in a mountain province."
 #school 0
-#restricted 184
+#restricted 191
 #researchlevel 3
 #path 0 6
 #pathlevel 0 2
@@ -11009,7 +11022,7 @@ still to do
 #name "Call Yhetee Pair"
 #descr "Hefting a great hollowed tusk from the largest snow mammoth killed by the tribe, the Hunter uses his incredible lung capacity to send a blast of sound echoing across Yhetee territory. Soon after, a pair of Yhetees enter the Ogre Kingdoms, crashing down from the wilds on a wave of snow. This ritual will only work in a mountain province."
 #school 0
-#restricted 184
+#restricted 191
 #researchlevel 2
 #path 0 6
 #pathlevel 0 1
@@ -11028,7 +11041,7 @@ still to do
 #name "Call Sabretusks"
 #descr "Rubbing himself with foul smelling Rhinox dung, the Hunter attempts to commune with the mountainous wilds, drawing a small pack of Sabretusks to his location. Having soundly beaten and possibly eaten the leader of the pack, he assumes control of these dangerous beasts. This ritual will only work in a mountain province."
 #school 0
-#restricted 184
+#restricted 191
 #researchlevel 0
 #path 0 6
 #pathlevel 0 1
@@ -11048,7 +11061,7 @@ still to do
 #copyspell "Panic"
 #name "Braingobbler"
 #descr "Selecting a choice severed head from his 'collection', the Slaughtermaster scoops out and gobbles down a helping of fresh brains. As grey matter drips from his flabby jowls the Slaughtermaster projects the darkest thoughts and worst nightmares from his victim's cranium into the minds of his foes."
-#restricted 184
+#restricted 191
 #researchlevel 1
 #path 0 7
 #path 1 8
@@ -11067,7 +11080,7 @@ still to do
 #copyspell "Elemental Fortitude"
 #name "Bloodgruel"
 #descr "The Butcher lifts a freshly severed limb to his mouth and sucks out all of the blood, fluid and marrow in one titanic intake before casting the husk aside. Gulping down this vile cocktail of juices, his gut gurgles violently and he is able to grant his allies protection against the elements."
-#restricted 184
+#restricted 191
 #researchlevel 0
 #aoe 12
 #range 15
@@ -11091,7 +11104,7 @@ still to do
 #copyspell "Strength of Giants"
 #name "Bullgorger"
 #descr "The Butcher greedily devours the heart of a Bull Rhinox, no doubt enjoying the feast of healthy blood and muscle whilst he imbues his fellows with the strength of a charging Rhinox."
-#restricted 184
+#restricted 191
 #researchlevel 0
 #path 0 7
 #path 1 8
@@ -11111,7 +11124,7 @@ still to do
 #copyspell "Regeneration"
 #name "Trollguts"
 #descr "The Slaughtermaster forces down the toxic guts of a Stone Troll, great quantities of acid and bile ravaging his much-abused gut as he transfers the supernatural regenerative abilities of the Troll onto his companions. This gut magic is highly draining for the Slaughtermaster."
-#restricted 184
+#restricted 191
 #researchlevel 1
 #path 0 7
 #path 1 8
@@ -11133,7 +11146,7 @@ still to do
 #copyspell "Marble Warriors"
 #name "Toothcracker"
 #descr "The Slaughtermaster grinds his way through a lump of earth-encrusted bedrock taken from the peak of a mountain, imbuing a small number of his fellows with stony resilience, and chilling them severely with the freezing mountain winds, removing their natural resilience to cold.  This gut magic is highly draining for the Slaughtermaster."
-#restricted 184
+#restricted 191
 #researchlevel 1
 #path 0 7
 #path 1 8
@@ -11297,10 +11310,10 @@ still to do
 #msg "With this stronghold fully established, the tribe has been digging a central Maw Pit for its fiercest, most devoted Ogres to prove themselves. They have finally finished, and the opening of the Pit was celebrated by many of its warriors in a huge, brutal orgy of slaughter and gore. By its end, only the most bloodthirsty Ogres remained, and the limbs of the rest lay as fodder for the Great Maw, a grand offering to slake its lust. From now on, regular fights will be held to feed it, while those still standing will be forged into the horrors known as Pitfighters! [Maw Pit]"
 #rarity 0
 #req_rare 10
-#req_fornation 184 -- Ogres
+#req_fornation 191 -- Ogres
 #req_fort 1
 #req_freesites 1
-#nation -2 -- Ogres control the site
+#nation -2 -- Ogres control the site -- can maybe comment out?
 #hiddensite 1927 -- Maw Pit
 #req_capital 0 -- never in capital
 #req_site 0 -- the Pit can't already be here
@@ -11315,7 +11328,7 @@ still to do
 #req_site 1
 #removesite 1927 -- Maw Pit
 #hiddensite 1924 -- Abandoned Pit
-#req_notnation 184 -- Ogres
+#req_notnation 191 -- Ogres
 #req_pop0ok
 #end
 
@@ -11324,7 +11337,7 @@ still to do
 #rarity 0
 #req_rare 30
 #req_fort 1
-#req_fornation 184 -- Ogres
+#req_fornation 191 -- Ogres
 #req_site 1 -- the abandoned Maw Pit must be here
 #nation -2
 #removesite 1924 -- Abandoned Pit
@@ -11380,7 +11393,7 @@ still to do
 
 
 
-#selectnation 184
+#selectnation 191
 #clearnation
 #clearsites
 #name "Ogre Kingdoms"
@@ -11750,7 +11763,7 @@ Still to do
 #rcost 1
 #magic
 #flail
-#secondaryeffectalways 1918
+#secondaryeffectalways 1998
 #end
 
 -- Queek's two weapons
@@ -11856,7 +11869,7 @@ Still to do
 #len 4
 #rcost 5
 #flail
-#secondaryeffectalways 1918
+#secondaryeffectalways 1998
 #end
 
 
@@ -11867,7 +11880,7 @@ Still to do
 #def 0
 #len 3
 #rcost 4
-#secondaryeffectalways 1918
+#secondaryeffectalways 1998
 #end
 
 
@@ -11937,7 +11950,7 @@ Still to do
 #magic
 #end
 
-#newweapon 1923 -- KEEP ID #
+#newweapon 1903 -- NEEDS STATIC ID
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -11961,12 +11974,12 @@ Still to do
 #magic
 #flyspr 210 4
 #att -3
-#secondaryeffectalways 1923
+#secondaryeffectalways 2003
 #end
 
 
 
-#newweapon 1922 -- KEEP ID #
+#newweapon 1902 -- NEEDS STATIC ID
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11978,12 +11991,12 @@ Still to do
 #nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 1923
+#secondaryeffectalways 2003
 #att -3
 #end
 
 
-#newweapon 1921 -- KEEP ID #
+#newweapon 1901 -- NEEDS STATIC ID
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11995,11 +12008,11 @@ Still to do
 #nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 1923
+#secondaryeffectalways 2003
 #att -3
 #end
 
-#newweapon 1920 -- KEEP ID #
+#newweapon 1900 -- NEEDS STATIC ID
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12011,7 +12024,7 @@ Still to do
 #nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 1923
+#secondaryeffectalways 2003
 #att -3
 #end
 
@@ -12031,7 +12044,7 @@ Still to do
 #end
 
 
-#newweapon 1918 -- KEEP ID #
+#newweapon 1998 -- NEEDS STATIC ID
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12053,12 +12066,12 @@ Still to do
 #def 0
 #ammo 5
 #range 14
-#secondaryeffectalways 1919
+#secondaryeffectalways 1999
 #flyspr 111 1
 #end
 
 
-#newweapon 1919 -- KEEP ID #
+#newweapon 1999 -- NEEDS STATIC ID
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -12695,9 +12708,9 @@ Still to do
 #armor "iron cap"
 #armor "ringmail hauberk"
 #weapon "Warp Blade"
-#weapon 1922 -- Doomwheel Warplightning # 1
-#weapon 1921 -- Doomwheel Warplightning # 2
-#weapon 1920 -- Doomwheel Warplightning # 3
+#weapon 2002 -- Doomwheel Warplightning # 1
+#weapon 2001 -- Doomwheel Warplightning # 2
+#weapon 2000 -- Doomwheel Warplightning # 3
 #fireres 5
 #shockres 25
 #poisonres 1
@@ -14006,7 +14019,7 @@ Still to do
 #spec 4198432 -- for mr negates
 #researchlevel 0
 #school -1
-#restricted 182
+#restricted 116
 #explspr 0
 #end
 
@@ -14017,7 +14030,7 @@ Still to do
 #copyspell "Charge Body"
 #name "Warp Static"
 #descr "Feeding a chunk of raw warpstone into a whirring brass device, the Warlock is moments later engulfed in a blinding cascade of warplightning. Gesturing across the squeaking horde in front of him, he directs a roil of barely suppressed energy over them. The chittering of the Skaven builds to a terrible pitch as their fur stands on end and green arcs of energy play across their ranks. The stench of burning fur fills the air as some skaven simply burst into flames. When struck the warp power crackling around the ratmen will discharge in a violent blast, hopefully as lethal for their foe as it is for the unfortunate Skaven. While this Skryre magic is powerful it is extremely tiring and should only be used on expendable troops or those adequately protected from shock and fire."
-#restricted 182
+#restricted 116
 #researchlevel 4
 #nreff 1
 #aoe 1020
@@ -14043,7 +14056,7 @@ Still to do
 #name "Moulder Pitbreeding"
 #descr "Pitbreeding is an experimental process practised by Clan Moulder in which an assortment of spawn, wild creatures, prisoners and failed creations are all dropped into a pit with a group of captured slaves and exposed to huge quantities of warpstone. After a week or so the breeders recover the warpstone and collect the surviving creatures."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 2
 #path 0 7
 #path 1 3
@@ -14060,13 +14073,13 @@ Still to do
 #name "Improved Moulder Pitbreeding"
 #descr "Improved Pitbreeding uses more slaves, stronger warpstone and rarer creatures. The type and power of the creatures is mostly a matter of luck."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 6
 #path 0 7
 #path 1 3
 #pathlevel 0 2
 #pathlevel 1 1
-#fatiguecost 1920
+#fatiguecost 2000
 #end
 
 
@@ -14076,7 +14089,7 @@ Still to do
 #name "Breed Rat Swarm"
 #descr "Clan Moulder breed and select the strongest rats by forcing a constant violent struggle for survival amongst their creations while exposing them to warpstone. Training Giant Rats worthy of the armies of Skavenblight requires the use of live slaves."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 1
 #path 0 7
 #path 1 3
@@ -14095,7 +14108,7 @@ Still to do
 #name "Breed Pestilens Plague Rats"
 #descr "The Plague Priests breed their own variety of Giant Rat which they then infect with a deadly bubonic payload which may be transmitted via the rat's virulent bite. These rats look identical to Moulder Giant Rats and so are often hidden amongst them as a nasty surprise for an enemy army."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 3
 #path 0 7
 #path 1 5
@@ -14114,7 +14127,7 @@ Still to do
 #name "Breed Rat Ogres"
 #descr "As with other Moulder breeding techniques, the production of suitably fierce and strong rat ogres requires the lives of many slaves. Rat Ogres are powerful though rather stupid creatures who are driven by an overwhelming desire to kill."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 4
 #path 0 7
 #path 1 3
@@ -14133,7 +14146,7 @@ Still to do
 #name "Outfit Globadier Squad"
 #descr "Given the right materials and motivation, the Warlocks of Clan Skryre are capable of outfitting and training a small squad of Poison Wind Globadiers to accompany the armies of the Warlord Clans."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 2
 #path 0 3
 #path 1 5
@@ -14152,7 +14165,7 @@ Still to do
 #name "Outfit Warpfire Thrower"
 #descr "Given the right materials and motivation, the Warlocks of Clan Skryre are capable of outfitting and training a Warpfire Thrower Team to accompany the armies of the Warlord Clans."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 3
 #path 0 0
 #path 1 5
@@ -14171,7 +14184,7 @@ Still to do
 #name "Outfit Warplightning Thrower"
 #descr "Given the right materials and motivation, the Warlocks of Clan Skryre are capable of outfitting and training a Warplightning Thrower Team to accompany the armies of the Warlord Clans."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 4
 #path 0 3
 #path 1 0
@@ -14191,7 +14204,7 @@ Still to do
 #name "Outfit Doomflayer Team"
 #descr "Given the right materials and motivation, the Warlocks of Clan Skryre are capable of outfitting and training a Doomflayer team to accompany the armies of the Warlord Clans."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 4
 #path 0 3
 #path 1 5
@@ -14211,7 +14224,7 @@ Still to do
 #name "Construct Doomwheel"
 #descr "The Doomwheel is one of Clan Skryre's most recent, most unpredictable and most destructive inventions. With the right materials and knowledge a Warlock Engineer may construct one and find a young Warlock crazy enough to be the driver."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 7
 #path 0 3
 #path 1 0
@@ -14230,7 +14243,7 @@ Still to do
 #name "Construct Screaming Bell"
 #descr "Unlike other Skaven constructs the Screaming Bell is not produced by Clan Skyre and requires the Warlocks only when forging the huge bell itself. The work of blessing this huge construction, inscribing it with forbidden lore etched in warpstone and channeling into the bell the maddening power of the Horned Rat Himself is a duty for the Grey Seer fortunate and powerful enough to stand atop it. The Screaming Bell grants the Grey Seer additional powers, marks him with the favour of the Horned Rat and spreads his dominion far and wide. In battle the peals of the Screaming Bell inspire rabid ferocity amongst all Skaven and severely dishearten their foes."
 #school 3
-#restricted 182
+#restricted 116
 #researchlevel 8
 #path 0 4
 #path 1 5
@@ -14250,7 +14263,7 @@ Still to do
 #name "Mix a Thousand Poxes"
 #descr "Having tested innumerable contagions and ills on a great many blood slaves, a Pontifex of Clan Pestilens selects a thousand terrible poxes and confines them to a warpstone studded Cauldron. Riding the Cauldron of a Thousand Poxes into battle, the Pontifex wields great magical power and his mere presence will cause poisonous winds to sweep the battlefield. Like the Screaming Bell, the Cauldron is a symbol of the Horned Rat's favour and will spread the dominion of the Skaven far and wide."
 #school 6
-#restricted 182
+#restricted 116
 #researchlevel 7
 #path 0 7
 #path 1 5
@@ -14269,7 +14282,7 @@ Still to do
 #name "Contact Vermin Lord"
 #descr "The Grey Seer risks his corrupted soul by entering into a pact with a Vermin Lord, servant of the Horned Rat. Vermin Lords are ancient, inscrutable beings of great size and terrifying power who manifest the physical appearance of the Horned Rat, complete with spiral horns and sloughing flesh. As Greater Daemons, Vermin Lords are amongst the most dangerous creatures in existence, near invincible in combat and possessing great magical power."
 #school 0
-#restricted 182
+#restricted 116
 #researchlevel 8
 #path 0 5
 #path 1 4
@@ -14289,7 +14302,7 @@ Still to do
 #copyspell "resist poison"
 #name "Favour of Nurglitch"
 #descr "Crumbling corrupted warpstone in his fist, the caster hisses some words from a forgotten tongue and motions the dust over his troops, granting them the favour of Nurglitch, Lord of Decay. They are given total immunity to all poisons."
-#restricted 182
+#restricted 116
 #researchlevel 3
 #school 4
 #path 0 5
@@ -14310,7 +14323,7 @@ Still to do
 #copyspell "Touch of Madness"
 #name "Death Frenzy"
 #descr "The caster consumes a piece of raw warpstone, then turns to his troops, squeaks a single dread command in a forgotten tongue and then points a gnarled claw toward the enemy. The troops are filled with ancient ferocity and begin foaming at the mouth as they charge toward their hated foes. Those with resistance to magic or a tolerance to warpstone will be unaffected."
-#restricted 182
+#restricted 116
 #researchlevel 4
 #school 4
 #path 0 5
@@ -14330,7 +14343,7 @@ Still to do
 #copyspell "breath of the dragon"
 #name "Pestilent Breath"
 #descr "The caster opens his mouth and releases a stream of foul gas, bile and corruption. The stronger the mage, the more powerful the stream of filth will be."
-#restricted 182
+#restricted 116
 #researchlevel 2
 #aoe 1003
 #range 18
@@ -14348,7 +14361,7 @@ Still to do
 #newspell
 #name "Vermintide"
 #descr "Reaching into the depths of his mind to the original chittering hunger that gave birth to the Skaven race, the Caster unleashes a swirling mass of shadows. From this shadow springs a wave of crazed vermin which hurtle toward the foe at an impossible pace. The more powerful the caster, the more vermin will manifest."
-#restricted 182
+#restricted 116
 #researchlevel 4
 #school 0
 #range 20
@@ -14376,7 +14389,7 @@ Still to do
 #copyspell "Gift of Flight"
 #name "Skitterleap"
 #descr "Reaching into the netherworld the Grey Seer twists dark energy around nearby allies and allows them to hurtle across the battlefield to strike at distant foes."
-#restricted 182
+#restricted 116
 #researchlevel 2
 #path 0 5
 #path 1 4
@@ -14393,7 +14406,7 @@ Still to do
 #copyspell "Lightning Bolt"
 #name "Minor Warp Lightning"
 #descr "The Warlocks of Clan Skryre have developed a way to unleash the power of warpstone in a crackling blast of lightning which arcs into the sky and rains down upon enemy troops below. As with much of Skryre's technology, warplightning is unpredictable and inaccurate, almost as likely to kill the Skaven troops as their foes. Unlike the stronger warplightning spell, this requires no warpstone to use."
-#restricted 182
+#restricted 116
 #researchlevel 2
 #nreff 3
 #precision -2
@@ -14410,7 +14423,7 @@ Still to do
 #copyspell "Lightning Bolt"
 #name "Warp Lightning"
 #descr "The Warlocks of Clan Skryre have developed a way to unleash the power of warpstone in a crackling blast of lightning which arcs into the sky and rains down upon enemy troops below. As with much of Skryre's technology, warplightning is unpredictable and inaccurate, almost as likely to kill the Skaven troops as their foes. By using warpstone, even lowly Warlocks can cast this powerful spell, but those lacking the expertise and advanced technology of the Engineers will be left drained. Additionally, more powerful and better equipped Warlock Engineers will be able to channel further power into the spell with their warp coils, blades and condensers."
-#restricted 182
+#restricted 116
 #researchlevel 4
 #nreff 1011
 #precision 0
@@ -14433,7 +14446,7 @@ Still to do
 #msg "Your brilliant foresight has led your minions to locate a rich seam of precious warpstone and mining operations have begun in earnest. You must be wary of sabotage, yes yes. There are those who would take the warpstone for themselves. [Warpstone Seam]"
 #rarity 0
 #req_rare 6
-#req_fornation 182 -- skaven
+#req_fornation 116 -- skaven
 #req_land 1
 #req_freesites 1
 #nation -2
@@ -14451,7 +14464,7 @@ Still to do
 #msg "The warpstone seam in this province has been re-opened at considerable cost. The destruction of your laboratory in an all consuming ball of warpfire was unfortunate, as was the loss in assistants and slaves, but all can be replaced, yes yes. For as long as it lasts the precious warpstone is yours yours! [Exhausted Warpstone Seam]"
 #rarity 0
 #req_rare 4
-#req_fornation 182
+#req_fornation 116
 #req_land 1
 #req_site 1 -- the exhausted warpstone seam must be here
 #nation -2
@@ -14470,7 +14483,7 @@ Still to do
 #msg "Treachery! Your laboratory has been destroyed in a great plume of green warpfire, surely by those who would profit from your downfall. The warpstone is still beyond your reach, jealous traitors lurk around every corner, and you will need to rebuild your laboratory. No matter. You will succeed no matter how many lives must be paid, yes yes. [Exhausted Warpstone Seam]"
 #rarity 0
 #req_rare 4
-#req_fornation 182
+#req_fornation 116
 #req_land 1
 #req_site 1 -- the exhausted warpstone seam must be here
 #nation -2
@@ -14489,7 +14502,7 @@ Still to do
 #msg "The warpstone seam in this province has been re-opened by the workers at your laboratory. Most of them even survived, which is a little suspicious. Still, for as long as it lasts the precious warpstone is yours yours! [Exhausted Warpstone Seam]"
 #rarity 0
 #req_rare 4
-#req_fornation 182
+#req_fornation 116
 #req_land 1
 #req_site 1 -- the exhausted warpstone seam must be here
 #nation -2
@@ -14509,7 +14522,7 @@ Still to do
 #req_site 1
 #removesite 1929 -- warpstone seam
 #hiddensite 1928 -- exhausted warpstone seam
-#req_notnation 182 -- skaven
+#req_notnation 116 -- skaven
 #unrest -30
 #req_pop0ok
 #end
@@ -14523,7 +14536,7 @@ Still to do
 #req_site 1 -- requires the bracketed site to be present
 #removesite 1929 -- warpstone seam
 #hiddensite 1928 -- exhausted warpstone seam
-#req_fornation 182 -- must be a skaven province
+#req_fornation 116 -- must be a skaven province
 #req_lab 1 -- must be a lab here
 #req_pop0ok
 #end
@@ -14538,7 +14551,7 @@ Still to do
 #req_site 1 -- requires the bracketed site to be present
 #removesite 1929 -- warpstone seam
 #hiddensite 1928 -- exhausted warpstone seam
-#req_fornation 182 -- must be a skaven province
+#req_fornation 116 -- must be a skaven province
 #req_lab 0 -- must not be a lab here
 #req_pop0ok
 #end
@@ -14730,7 +14743,7 @@ Still to do
 
 -------- Nation Code
 
-#selectnation 182
+#selectnation 116
 #clearnation
 #clearsites
 #name "Skavenblight"
@@ -15066,13 +15079,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
-#secondaryeffectalways 1924 -- Fireglaive Gout
+#secondaryeffectalways 2004 -- Fireglaive Gout
 #def 0 -- usually 1
 #end
 
 --- Fireglaive Gout
 
-#newweapon 1924 -- KEEP ID #
+#newweapon 1904 -- NEEDS STATIC ID
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -16302,7 +16315,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #ap 8 --- move 3
 --gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
 #gcost 140
-#rpcost 2 --- Extradordinarly good leader, 2 cp makes sense
+#rpcost 1 --- Extradordinarly good leader but cap-only
 #rcost 12 -- golden scale mail doesn't have an rcost
 #armor "Full Helmet"
 #armor 196 -- golden scale mail
@@ -16384,7 +16397,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #mapmove 20 -- standard horse move
 #ap 26 --- move 8
 #gcost 200
-#rpcost 4 --- very rare thug commanders
+#rpcost 2 --- rare thug commanders, changed cause cap-only and no magic
 #rcost 1
 #armor "Half Helmet"
 #armor 17 -- full scale mail
@@ -16439,7 +16452,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #nametype 123
 #poorleader
 #holy
-#forgebonus 10
+#forgebonus 20 -- Dwarfs deserve a little fun now and then
 #mastersmith 2
 #resources 30
 #magicskill 3 1 -- earth 1
@@ -16487,6 +16500,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 8 1 -- holy 1
 #magicskill 0 1 -- fire 1
 #magicskill 5 1 -- death 1
+#magicskill 7 1 -- blood 1
 #neednoteat
 #supplybonus -1
 #end
@@ -16530,6 +16544,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 0 2 -- fire 2
 #magicskill 5 1 -- death 1
 #magicskill 3 1 -- earth 1
+#magicskill 7 1 -- blood 1
 #custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
@@ -16576,6 +16591,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #magicskill 5 1 -- death 1
 #magicskill 3 2 -- earth 2
 #magicskill 7 1 -- blood 1
+#custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 100 -- 100% EFDB
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
@@ -16902,7 +16918,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #msg "With a temple and laboratory in place and the Cult of Hashut satisfied that this province is an acceptable site for an outpost, rapid construction has begun. In two months you will have a new outpost."
 #rarity 0 -- always
 #req_code 0 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
-#req_fornation 185 -- must be chaos dwarfs
+#req_fornation 192 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
 #code -461 -- sets a code in the province
 #delay 1 -- wait 1 turn before triggering the next event
@@ -16916,7 +16932,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #msg "The construction of the outpost fortress continues. Ensure the temple and laboratory are safe and the populace is under the dominion of your god, and you will finish construction in one month."
 #rarity 0 -- always
 #req_code -461 -- this can only happen in provinces which don't have event codes. This also stops this event messing with subsequent events in this chain
-#req_fornation 185 -- must be chaos dwarfs
+#req_fornation 192 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
 #code -462 -- sets a code in the province
 #delay 1 -- wait 1 turn before triggering the next event
@@ -16930,7 +16946,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #msg "The new outpost has been constructed."
 #rarity 0 -- always
 #req_code -462 -- will only happen in the province with the code from the previous event
-#req_fornation 185 -- must be chaos dwarfs
+#req_fornation 192 -- must be chaos dwarfs
 #req_fort 0 -- there mustn't be a fort here already
 #code 0 -- resets code in the province
 #req_lab 1 -- there must be a lab present
@@ -16944,7 +16960,7 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 -------- NATION
 
 
-#selectnation 185
+#selectnation 192
 #clearnation
 #clearsites
 #name "Chaos Dwarfs"
@@ -20610,7 +20626,7 @@ Still to do
 #name "Call Terradons"
 #descr "Invoking both Huanchi and Tepok, the caster summons a flight of Terradons and binds them to his will. Terradons are lethal winged predators that strike down through the Lustrian canopy like bolts of green lightning. The more powerful the caster, the more Terradons will respond to his call."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 3
 #path 0 6
 #path 1 1
@@ -20628,7 +20644,7 @@ Still to do
 #newspell
 #name "Flood of Serpents"
 #descr "Spilling blood in the name of Sotek, the great serpent god of vengeance, the caster causes a flood of blood red serpents to boil up from the ground and attack everything in sight. The serpents have no loyalty to the Lizardmen and they will fade along with the magic, but they are capable of wreaking considerable havoc far behind enemy lines."
-#restricted 189
+#restricted 196
 #researchlevel 4
 #school 6
 #path 0 7
@@ -20646,7 +20662,7 @@ Still to do
 #newspell
 #name "Jungle Serpent"
 #descr "Jungle Serpent"
-#restricted 189
+#restricted 196
 #researchlevel 0
 #school -1
 #path 0 6
@@ -20675,7 +20691,7 @@ Still to do
 #copyspell "Vine Arrow"
 #name "Rain of Snakes"
 #descr "Hurling forward a handful of sticks from the depths of the Lustrian jungle, the caster hisses in a forgotten language, turning them to twisting jungle serpents mid-flight. As they fall like arrows amongst the enemy ranks, they will attack with their poisonous fangs."
-#restricted 189
+#restricted 196
 #researchlevel 6
 #school 0
 #path 0 6
@@ -20692,7 +20708,7 @@ Still to do
 #newspell
 #name "Serpents of Sotek"
 #descr "Spilling sacrificial blood on the ground and invoking the terrible serpent god of vengeance, Sotek, the priest calls forth manifestations of his spite. The serpents of Sotek are mindless manifestations of vengeance with a powerful venom. Though they are easily dispatched in melee, in sufficient numbers they can overwhelm many foes."
-#restricted 189
+#restricted 196
 #researchlevel 2
 #school 6
 #path 0 7
@@ -20712,7 +20728,7 @@ Still to do
 #name "Bloodscale of Sotek"
 #descr "Bloodscale of Sotek"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20728,7 +20744,7 @@ Still to do
 #name "Spawning of Sotek"
 #descr "By spilling blood on the altar of Sotek, the Serpent, the Wrathful One, the Nemesis, Skavenbane, the priests of Sotek spread his influence to yet another a spawning of Saurus, led by a frenzied Bloodscale."
 #school 6
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 7
 #pathlevel 0 1
@@ -20745,7 +20761,7 @@ Still to do
 #name "Deepscale of Tzunki"
 #descr "Deepscale of Tzunki"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20761,7 +20777,7 @@ Still to do
 #name "Sacred Spawning of Tzunki"
 #descr "The will of Tzunki, Watcher of Water, the Deep One, the Terror from Below, Devourer of Corsairs is revealed! Careful interpretation of calls from the watery depths of the world issued by Tzunki has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a fearsome Deepscale."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20779,7 +20795,7 @@ Still to do
 #name "Nightscale of Huanchi"
 #descr "Nightscale of Huanchi"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20795,7 +20811,7 @@ Still to do
 #name "Sacred Spawning of Huanchi"
 #descr "The will of Huanchi, the Jaguar, the Stalker, Silent Death, Teeth in the Dark is revealed! Careful observation of creatures from the primordial jungles once stalked by Huanchi has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a deadly Nightscale."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 6
 #pathlevel 0 2
@@ -20813,7 +20829,7 @@ Still to do
 #name "Nullscale of Tlazcotl"
 #descr "Nullscale of Tlazcotl"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20830,7 +20846,7 @@ Still to do
 #name "Sacred Spawning of Tlazcotl"
 #descr "The will of Tlazcotl, the Cold One, the Impassable, Mirror of Calm is revealed! Careful study of the ancient temple cities laid out across the continents by Tlazcotl has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an implacable Nullscale."
 #school 3
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 4
 #pathlevel 0 2
@@ -20848,7 +20864,7 @@ Still to do
 #name "Lorescale of Tepok"
 #descr "Lorescale of Tepok"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20864,7 +20880,7 @@ Still to do
 #name "Sacred Spawning of Tepok"
 #descr "By observing the rites of Tepok, the Inscrutable, the Ineffable, the Maze of Minds, Master of the Winds, a sacred spawning of his chosen Saurus are summoned, led by a cerebral Lorescale."
 #school 5
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 1
 #pathlevel 0 2
@@ -20882,7 +20898,7 @@ Still to do
 #name "Sunscale of Chotec"
 #descr "Sunscale of Chotec"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20899,7 +20915,7 @@ Still to do
 #name "Sacred Spawning of Chotec"
 #descr "The will of Chotec, the Burning Sun, the Heat of Life, the Searer of Unlife, Light of Truth is revealed! Careful experimentation with the energy gifted to the world by Chotec has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a brilliant Sunscale."
 #school 2
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 0
 #pathlevel 0 2
@@ -20917,7 +20933,7 @@ Still to do
 #name "Spinescale of Quetzl"
 #descr "Spinescale of Quetzl"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20934,7 +20950,7 @@ Still to do
 #name "Sacred Spawning of Quetzl"
 #descr "The will of Quetzl, the Protector, the Rock, the Guardian, He Who Breaks Blades is revealed! Careful analysis of the matter knit together by Quetzl to birth the world itself has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an unstoppable Spinescale."
 #school 1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 3
 #pathlevel 0 2
@@ -20953,7 +20969,7 @@ Still to do
 #name "Wardscale of Xhotl"
 #descr "Wardscale of Xhotl"
 #school -1
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 2
 #pathlevel 0 2
@@ -20970,7 +20986,7 @@ Still to do
 #name "Sacred Spawning of Xhotl"
 #descr "The will of Xhotl, the Infinite Shield, Bane of Magic, Barrier of Woe, Painter of All is revealed! Careful interpretation of the enchantments laid upon the world by Xhotl to keep Chaos at bay has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a vibrant Wardscale."
 #school 4
-#restricted 189
+#restricted 196
 #researchlevel 4
 #path 0 4
 #pathlevel 0 2
@@ -20988,7 +21004,7 @@ Still to do
 #name "Awaken Third Generation Slann"
 #descr "In times of dire need, Slann of the Third Generation will awaken to guide the Lizardmen according to the prophecies handed down by the Old Ones. They are beings of incredible power, almost gods in their own right, with mental faculties that dwarf even those of their fellow Slann. The Third Generation assisted the Second in shaping the world itself and had a hand in the aspects of most living creatures native to their lands. Such a powerful Slann requires a considerable Temple Guard for physical protection, though his magical abilities are unmatched even by the greatest mages of the younger races."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 7
 #path 0 4
 #pathlevel 0 5
@@ -21004,7 +21020,7 @@ Still to do
 #name "Awaken One Who Fathomed The Depths"
 #descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Zlatl, One Who Fathomed The Depths is unmatched in the elemental magic of water, protected from harm by Xhotl and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by both Xhotl and Tzunki."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 8
 #path 0 4
 #pathlevel 0 5
@@ -21021,7 +21037,7 @@ Still to do
 #name "Awaken One Who Fired The Earth"
 #descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Adohi-Tehga, One Who Fired The Earth is an unequalled pyromancer, blessed of Chotec, an embodiment of the wrath of the Slann visited upon those who corrupt the Great Plan and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by Chotec."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 8
 #path 0 4
 #pathlevel 0 5
@@ -21038,7 +21054,7 @@ Still to do
 #name "Awaken One Who Shaped The Mountains"
 #descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Lord Mazdamundi, One Who Shaped The Mountains is a peerless geomancer, blessed of Quetzl, the most active and powerful of his generation and, like his four brothers, a symbol of the Old Ones' will. Mazdamundi has proclaimed no progress may be made in the Great Plan until the forces of Chaos and unplanned lesser races have been eradicated. His honour guard is formed of sacred Saurus marked by Quetzl."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 8
 #path 0 4
 #pathlevel 0 5
@@ -21054,7 +21070,7 @@ Still to do
 #name "Awaken One Who Guided The Spheres"
 #descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Yucatetl, One Who Guided The Spheres, blessed of Tepok and Tlazcotl, the blind unblinking eye that sees all, the only living creature to have been given audience with the Old Ones. Yucatetl is a master of the magic of the countless stars and the four winds who can cast rituals across unheard of distances. His honour guard is formed of the sacred Saurus marked by Quetzl and Tepok."
 #school 0
-#restricted 189
+#restricted 196
 #researchlevel 8
 #path 0 4
 #pathlevel 0 5
@@ -21102,7 +21118,7 @@ Still to do
 #name "Piranha Blade"
 #descr "Piranha Blades gained their name for their ability to shred victims to bloody tatters. Like its namesake, this weapon has thousands of tiny barbed teeth that rip and tear anything they touch. Just as the many-toothed fish is able to saw through the hide of a Stegadon, so too will a Piranha Blade rasp through Armor and carve up an opponent."
 #type 1 -- one handed weapon
-#restricted 189
+#restricted 196
 #weapon "Piranha Blade" -- piranha blade
 #end
 
@@ -21119,7 +21135,7 @@ Still to do
 #name "The Blade of Realities"
 #descr "Brought to the world by the Old Ones, this weapon shimmers with unnatural power. Legends carved on ancient stone claim the blade exists on every plane of reality simultaneously, and that its edge can sever a creature's soul. No earthly force can stop this deadly blade - it penetrates granite and steel as easily as it slices through flesh and bone."
 #type 1 -- one handed weapon
-#restricted 189
+#restricted 196
 #weapon "Blade of Realities" -- blade of realities
 #end
 
@@ -21136,7 +21152,7 @@ Still to do
 #name "Skavenpelt Banner"
 #descr "Throughout the tumultuous Age of Strife, the armies of Tehenhauin, Prophet of Sotek, marched against the hordes of Clan Pestilens. During the war the followers of Sotek raised a great many banners of vengeance against the ratmen, fashioned from their skin and skulls and daubed with their blood. These banners cast waves of magic over nearby friendly troops driving them into a killing frenzy. The bearer of the banner will be rendered immune to poison and inspire fear in foes and courage in allies."
 #type 2 -- two handed weapon
-#restricted 189
+#restricted 196
 #weapon "Standard"
 #fear 5
 #autospell "Touch of Madness short"
@@ -21151,7 +21167,7 @@ Still to do
 -------- NATION
 
 
-#selectnation 189
+#selectnation 196
 #clearnation
 #clearsites
 #name "Lizardmen"
@@ -22168,6 +22184,7 @@ Priests: Very Powerful."
 #magicskill 0 1	-fire
 #custommagic 2432 25	-FAS
 #startage 77
+#maxage 2000
 #holy
 #poorleader
 #end
@@ -22198,6 +22215,7 @@ Priests: Very Powerful."
 #custommagic 1024 10	-FAE
 #researchbonus 1
 #startage 187
+#maxage 2000
 #holy
 #okleader
 #slowrec
@@ -22225,6 +22243,7 @@ Priests: Very Powerful."
 #magicskill 8 2 -holy
 #custommagic 3968 100	-FAWES
 #startage 278
+#maxage 2000
 #autohealer 2
 #autodishealer 3
 #holy
@@ -22257,6 +22276,7 @@ Priests: Very Powerful."
 #custommagic 3328 100	-AES
 #custommagic 3456 30 -FAES
 #startage 298
+#maxage 2000
 #goodleader
 #researchbonus 2
 #slowrec
@@ -22290,6 +22310,7 @@ Priests: Very Powerful."
 #custommagic 3968 100	FAWES
 #mastersmith 2
 #startage 267
+#maxage 2000
 #poorleader
 #holy
 #slowrec
@@ -22327,6 +22348,7 @@ Priests: Very Powerful."
 #masterrit -2
 #researchbonus -4
 #rcost 1
+#maxage 2000
 #holy
 #slowrec
 #goodleader
@@ -22356,6 +22378,7 @@ Priests: Very Powerful."
 #custommagic 10624 100 -FASN
 #custommagic 9088 25 -FAWN
 #startage 201
+#maxage 2000
 #sailing 2 2
 #okleader
 #slowrec
@@ -22388,6 +22411,7 @@ Priests: Very Powerful."
 #gcost 115
 #rcost 1
 #sailing 999 4
+#maxage 2000
 #goodleader
 #end
 
@@ -22418,6 +22442,7 @@ Priests: Very Powerful."
 #rcost 1
 #noleader
 #stealthy 25
+#maxage 2000
 #end
 
 -- Drake Master (Dragon Prince Champion)
@@ -22453,6 +22478,7 @@ Priests: Very Powerful."
 #mounted
 #fireres 15
 #magicskill 0 1 -- Fire 1
+#maxage 2000
 #end
 
 -- Harbinger (Ellyrian Reaver Champion)
@@ -22486,6 +22512,7 @@ Priests: Very Powerful."
 #ap 30
 #ressize 2
 #mounted
+#maxage 2000
 #patrolbonus 5
 #supplybonus 2
 #researchbonus -2
@@ -22524,6 +22551,7 @@ Priests: Very Powerful."
 #rcost 1
 #ambidextrous 4
 #mapmove 20
+#maxage 2000
 #stealthy 35
 #patrolbonus 5
 #magicskill 1 1 -- Air 1
@@ -22553,6 +22581,7 @@ Priests: Very Powerful."
 #armor "Crested Helmet"
 #gcost 90
 #rcost 1
+#maxage 2000
 #patrolbonus 1
 #researchbonus -2
 #forestsurvival
@@ -22589,6 +22618,7 @@ Priests: Very Powerful."
 #fireres 4
 #poisonres 4
 #shockres 4
+#maxage 2000
 #holy
 #magicskill 8 2 -holy
 #castledef 5
@@ -22679,6 +22709,7 @@ They can lead other birds and animals well."
 #magicskill 1 1	-Air
 #mapmove 20
 #startage 417
+#maxage 2000
 #stealthy 35
 #patrolbonus 15
 #onebattlespell "Personal Luck"
@@ -22713,6 +22744,7 @@ They can lead other birds and animals well."
 #gcost 0
 #rcost 1
 #startage 368
+#maxage 2000
 #patrolbonus 5
 #researchbonus -2
 #forestsurvival
@@ -22813,7 +22845,7 @@ They can lead other birds and animals well."
 #restricted 110
 #fatiguecost 1500
 #effect 10082
-#damage 2000
+#damage 0
 #nextspell "Fire Trap"
 #end
 
@@ -22827,7 +22859,7 @@ They can lead other birds and animals well."
 #restricted 110
 #fatiguecost 500
 #effect 10086
-#damage 2001
+#damage 1
 #spec 268435456
 #provrange 5
 #onlyfriendlydst 1
@@ -23389,6 +23421,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #aoe 6
 #armorpiercing
 #dmg 11
+#fire
 #nostr
 #nratt 1
 #rcost 6
@@ -23450,7 +23483,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Longrange
 
-#newweapon 1904 -- KEEP ID
+#newweapon 1984 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23467,7 +23500,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 Midrange
 
-#newweapon 1905 -- KEEP ID
+#newweapon 1985 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23484,7 +23517,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 1 and 2 Shortrange
 
-#newweapon 1906 -- KEEP ID
+#newweapon 1986 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23501,7 +23534,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- War Wagon Form 3 Midrange
 
-#newweapon 1907 -- KEEP ID
+#newweapon 1987 -- KEEP ID
 #name "Missile Weapons"
 #dmg 10
 #nostr
@@ -23576,7 +23609,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (ranged)
 
-#newweapon 1908 -- KEEP ID
+#newweapon 1988 -- KEEP ID
 #name "Hand Crossbow"
 #dmg 8
 #nostr
@@ -23594,7 +23627,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Nobleborn Hand Crossbow (melee)
 
-#newweapon 1909 -- KEEP ID
+#newweapon 1989 -- KEEP ID
 #name "Hand Crossbow"
 #ammo 1
 #att 1
@@ -23643,7 +23676,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #len 4
 #bonus
 #charge
-#secondaryeffectalways 1910
+#secondaryeffectalways 1990
 #magic
 #pierce
 #end
@@ -23651,7 +23684,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Myrmidian Blaze
 
-#newweapon 1910 -- KEEP ID
+#newweapon 1990 -- KEEP ID
 #name "Myrmidian Blaze"
 #dmg 8
 #armorpiercing
@@ -23798,12 +23831,12 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #slash
 #pierce
 #len 2
-#secondaryeffect 1911
+#secondaryeffect 1991
 #end
 
 ---- Smite Undead
 
-#newweapon 1911 -- KEEP ID
+#newweapon 1991 -- NEEDS STATIC ID
 #name "Smite Undead"
 #dmg 4
 #magic
@@ -25138,8 +25171,8 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Half Helmet"
 #weapon "Broad Sword"
 #weapon 56
-#weapon 1908
-#weapon 1909
+#weapon 1988
+#weapon 1989
 #nametype 190
 #end
 
@@ -26378,7 +26411,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #flying
 #fixedname "Balthasar Gelt"
 #unique
-#itemslots 13312 -- body, 2 misc
+#itemslots 13446 -- cav, no feet
 #fixforgebonus 1
 #gemprod 0 1
 #gemprod 3 1
@@ -26494,9 +26527,9 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 --armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1904
-#weapon 1905
-#weapon 1906
+#weapon 1984
+#weapon 1985
+#weapon 1986
 #weapon "Crew Polearms"
 #secondshape 7597
 #nametype 190
@@ -26533,7 +26566,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 --armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1906
+#weapon 1986
 #weapon "Crew Polearms"
 #secondshape 7598
 #firstshape 7596
@@ -26570,7 +26603,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #armor "Wagon Cover"
 #armor "Plate Cuirass"
 #armor "Iron Cap"
-#weapon 1907
+#weapon 1987
 #weapon "Hook Halberd"
 #weapon "Ball and Chain"
 #weapon "Mancatcher"
@@ -27029,7 +27062,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #spr2 "./Warhammer-Complete/Nuln_Pegasus2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Pegasus mount from the rulers of Nuln. Pegasi are noble beasts, loyal and swift, the perfect mount for a nobleman of martial prowess. Nobles of the South East are wealthy enough that they can afford superior magical equipment."
-#hp 50 -- combined profile
+#hp 25 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -27064,7 +27097,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #spr2 "./Warhammer-Complete/Griffon Noble2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Griffon mount from the Imperial Zoo. Griffons are noble, loyal and elegant beasts prized above all other mounts and are seen as symbols of the Empire's strength. The Griffon will fight ferociously to protect its rider, having been bonded with him for many years."
-#hp 65 -- combined profile
+#hp 30 -- combined profile
 #size 6
 #mounted
 #ressize 2
@@ -29881,9 +29914,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Bright Wizard Lord"
 #school 2
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 0
 #pathlevel 0 2
@@ -29899,9 +29932,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Grey Wizard Lord"
 #school 4
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 1
 #path 1 5
@@ -29920,9 +29953,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Celestial Wizard Lord"
 #school 5
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 1
 #path 1 4
@@ -29940,9 +29973,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Amethyst Wizard Lord"
 #school 1
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 5
 #path 1 4
@@ -29960,9 +29993,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Light Wizard Lord"
 #school 1
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 4
 #pathlevel 0 3
@@ -29978,9 +30011,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Gold Wizard Lord"
 #school 3 -- construction
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 3
 #path 1 0
@@ -30000,9 +30033,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Amber Wizard Lord"
 #school 0 -- conjuration
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 6
 #pathlevel 0 3
@@ -30019,9 +30052,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #newspell
 #name "Contact Jade Wizard"
 #school 4
-#restricted 190
-#restricted 187 -- Nuln
-#restricted 188 -- middenheim
+#restricted 197
+#restricted 194 -- Nuln
+#restricted 195 -- middenheim
 #researchlevel 4
 #path 0 6
 #path 1 2
@@ -30062,7 +30095,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "His eyes burning with the fire of Aqshy, the Bright wizard gestures violently towards his foes, directing a screaming skull shaped apparition of scorching fire to hurtle into their midst."
 #nextspell "Summon Burning Head"
 #pathlevel 0 3
-#restricted 190
+#restricted 197
 #end
 
 
@@ -30073,7 +30106,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 
 #newsite 1901
-#name "Emperor's Palace"
+#name "Imperial Palace"
 #path 8
 #level 0
 #rarity 5
@@ -30670,7 +30703,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 
 
-#selectnation 190
+#selectnation 197
 #clearnation
 #clearsites
 #name "Altdorf"
@@ -30685,7 +30718,7 @@ Magic: Colleges allow access to all non blood magic.
 Priests: Strong."
 #flag "./Warhammer-Complete/flag.tga"
 #templepic 9
-#startsite "Emperor's Palace"
+#startsite "Imperial Palace"
 #startsite "Cathedral of Sigmar"
 #startsite "University of Altdorf"
 
@@ -30847,7 +30880,7 @@ Priests: Strong."
 --- NULN ---
 
 
-#selectnation 187
+#selectnation 194
 #clearnation
 #clearsites
 #name "Nuln"
@@ -31005,7 +31038,7 @@ Priests: Strong."
 
 
 
-#selectnation 188
+#selectnation 195
 #clearnation
 #clearsites
 #name "Middenheim"
@@ -31195,7 +31228,7 @@ Priests: Strong."
 #twohanded
 #end
 
-#newweapon 1912 -- KEEP ID #
+#newweapon 1992 -- NEEDS STATIC ID
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison
@@ -31214,7 +31247,7 @@ Priests: Strong."
 #att 0
 #nratt -2 -- Fires every other round
 #ammo 2
-#secondaryeffect 1912 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
+#secondaryeffect 1992 -- Was 54 in the Dom3 mod, changed to Strong Paralyzing Poison.
 #rcost 1
 #flyspr 109 1
 #end
@@ -32350,7 +32383,7 @@ highly respected. When they died these warriors would be buried with great cerem
 #descr "With this spell the priests of Nehekhara are able to repair the bodies of
 undead soldiers on the battlefield, broken bones knitting back together before the
 very eyes of their opponents."
-#restricted 181
+#restricted 112
 #path 0 8
 #researchlevel 0
 #school 7
@@ -32370,7 +32403,7 @@ very eyes of their opponents."
 #copyspell "Unholy Power"
 #name "Resilience"
 #descr "This spell allows a priest of Nehekhara to greatly strengthen the enchantments holding undead soldiers together. They become much harder to destroy in combat."
-#restricted 181
+#restricted 112
 #restricted -1 -- Should stop Ermor and Sceleria from using it
 #path 0 8
 #researchlevel 0
@@ -32392,7 +32425,7 @@ very eyes of their opponents."
 #name "Strength of the Tomb"
 #descr "With this spell a Nehekharan priest is able to grant enormous strength to
 undead soldiers on the battlefield, giving them the ability to rip through the armour of enemy soldiers with ease."
-#restricted 181
+#restricted 112
 #restricted -1 -- Should stop Ermor and Sceleria from using it
 #path 0 8
 #researchlevel 0
@@ -32414,7 +32447,7 @@ undead soldiers on the battlefield, giving them the ability to rip through the a
 #name "The Undying"
 #descr "This mighty enchantment confers regenerative abilities onto undead soldiers,
 so that the skeletal bodies of the dead may repair themselves in seconds."
-#restricted 181
+#restricted 112
 #restricted -1 -- Should stop Ermor and Sceleria from using it
 #path 0 8
 #researchlevel 0
@@ -32436,7 +32469,7 @@ so that the skeletal bodies of the dead may repair themselves in seconds."
 #name "Summon Tomb Swarms"
 #descr "This spell summons a huge swarm of undead insects, scorpions and spiders from the depths of the Nehekharan tombs. The mindless swarm will crawl under armor and reduce enemy soldiers to skeletons within seconds."
 #school 0
-#restricted 181
+#restricted 112
 #researchlevel 4
 #range 25
 #path 0 5
@@ -32455,7 +32488,7 @@ so that the skeletal bodies of the dead may repair themselves in seconds."
 #name "Awaken Immortals"
 #descr "This spell awakens two of the elite members of a Tomb King's bodyguard. Such is the strength of the enchantments on these soldiers that they are almost impossible to permanently destroy."
 #school 4
-#restricted 181
+#restricted 112
 #researchlevel 0
 #path 0 5
 #path 1 0
@@ -32473,7 +32506,7 @@ so that the skeletal bodies of the dead may repair themselves in seconds."
 god Anubis. They are powerful fighters and can run and jump rapidly across the
 battlefield."
 #school 4
-#restricted 181
+#restricted 112
 #researchlevel 3
 #path 0 3
 #path 1 5
@@ -32489,7 +32522,7 @@ battlefield."
 #name "Summon Servants of Horus"
 #descr "The Servants of Horus were mighty defenders of the light, wielding their holy flaming spears to fight off hordes of demons and undead. They were banished when Horus was vanquished, but may now be summoned back to fight for Nehekhara. The Servants of Horus are disciplined and well equipped and are very good at holding a defensive line."
 #school 0
-#restricted 181
+#restricted 112
 #researchlevel 4
 #path 0 0
 #path 1 4
@@ -32505,7 +32538,7 @@ battlefield."
 #name "Summon Servant of Set"
 #descr "This spell summons one of the malign servants of the vanquished god Set. The creature is a potent spy and assassin."
 #school 0
-#restricted 181
+#restricted 112
 #researchlevel 4
 #path 0 5
 #pathlevel 0 3
@@ -32522,7 +32555,7 @@ ancient, dormant Tomb Priest. The priest cannot cast any spells, but his latent
 magic powers the huge construct. A bone scorpion is a fearsome opponent in battle,
 capable of trampling large numbers of enemy troops."
 #school 3
-#restricted 181
+#restricted 112
 #researchlevel 5
 #path 0 5
 #pathlevel 0 5
@@ -32536,7 +32569,7 @@ capable of trampling large numbers of enemy troops."
 #name "Awaken Ushabti"
 #descr "The Ushabtis are huge statues of granite and bone that stand guard over the temples of Nehekhara. This spell awakens one of the Ushabti, enabling it to march to war. In battle the Ushabti are powerful and very hard to destroy."
 #school 4
-#restricted 181
+#restricted 112
 #researchlevel 4
 #path 0 3
 #path 1 5
@@ -32552,7 +32585,7 @@ capable of trampling large numbers of enemy troops."
 #name "Awaken Ushabti Avatar"
 #descr "The ancient gods of Nehekhara granted intelligence and magical power to a small number of Ushabti to act as their avatars. While the Gods have gone, the Ushabti remain. They are somewhat more powerful then lesser Ushabti, and possess magical powers."
 #school 4
-#restricted 181
+#restricted 112
 #researchlevel 8
 #path 0 3
 #path 1 5
@@ -32660,7 +32693,7 @@ capable of trampling large numbers of enemy troops."
 
 ---------------Nation Info--------------
 
-#selectnation 181
+#selectnation 112
 #clearnation
 
 #name "Nehekhara"
