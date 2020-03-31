@@ -26411,7 +26411,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 #flying
 #fixedname "Balthasar Gelt"
 #unique
-#itemslots 13312 -- body, 2 misc
+#itemslots 13446 -- cav, no feet
 #fixforgebonus 1
 #gemprod 0 1
 #gemprod 3 1
