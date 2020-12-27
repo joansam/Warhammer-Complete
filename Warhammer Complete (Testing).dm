@@ -11675,6 +11675,7 @@ Still to do
 #def 0
 #len 3
 #nratt 1
+#blunt
 #magic
 #rcost 1
 #secondaryeffectalways 194 -- soul slay
@@ -11693,6 +11694,7 @@ Still to do
 #def 0
 #len 4
 #rcost 1
+#slash
 #sound 9 -- whip
 #nratt 1
 #end
@@ -11706,6 +11708,7 @@ Still to do
 #def 1
 #len 4
 #rcost 1
+#slash
 #sound 9 -- whip
 #nratt 2
 #magic
@@ -11733,6 +11736,7 @@ Still to do
 #dmg 4
 #att 0
 #def 0
+#slash
 #bonus
 #end
 
@@ -11744,7 +11748,8 @@ Still to do
 #dmg 4
 #att 1
 #def 3
-#len 4
+#len 3
+#blunt
 #magic
 #end
 
@@ -11755,9 +11760,10 @@ Still to do
 #dmg 9
 #att 2
 #def 1
-#len 4
+#len 3
 #nratt 3
 #twohanded
+#blunt
 #rcost 1
 #magic
 #flail
@@ -11772,7 +11778,8 @@ Still to do
 #magic
 #att 2
 #def -1
-#len 3
+#len 2
+#slash
 #rcost 0
 #end
 
@@ -11782,7 +11789,9 @@ Still to do
 #dmg 8
 #att 2
 #def 1
-#len 3
+#len 2
+#pierce
+#slash
 #sound 8
 #armorpiercing
 #rcost 0
@@ -11799,6 +11808,7 @@ Still to do
 #att 0
 #def -1
 #len 0
+#slash
 #rcost 0
 #bonus
 #secondaryeffect 98
@@ -11812,6 +11822,7 @@ Still to do
 #att 0
 #def 0
 #len 4
+#pierce
 #twohanded
 #rcost 4
 #end
@@ -11823,6 +11834,7 @@ Still to do
 #nostr
 #dt_small
 #dmg 6
+#slash
 #nratt 4
 #att 0
 #def 0
@@ -11838,7 +11850,8 @@ Still to do
 #nratt 2
 #att 1
 #def 2
-#len 6
+#slash
+#len 4
 #rcost 0
 #magic
 #secondaryeffect 51
@@ -11850,8 +11863,10 @@ Still to do
 #dmg 6
 #att 1
 #def 1
-#len 3
+#len 2
 #sound 8
+#slash
+#pierce
 #secondaryeffect 51
 #rcost 0
 #magic
@@ -11864,8 +11879,9 @@ Still to do
 #att 1
 #twohanded
 #def -1
-#len 4
+#len 3
 #rcost 5
+#blunt
 #flail
 #secondaryeffectalways 1912
 #end
@@ -11876,7 +11892,8 @@ Still to do
 #dmg 7
 #att 1
 #def 0
-#len 3
+#len 2
+#blunt
 #rcost 4
 #secondaryeffectalways 1912
 #end
@@ -11888,6 +11905,7 @@ Still to do
 #att 1
 #def 0
 #len 0
+#pierce
 #range 10
 #ammo 4
 #nratt 1
@@ -11904,6 +11922,7 @@ Still to do
 #att 1
 #def 1
 #len 1
+#pierce
 #rcost 1
 #secondaryeffect 50
 #sound 8
@@ -11917,6 +11936,7 @@ Still to do
 #att -1
 #def -1
 #len 0
+#slash
 #rcost 0
 #secondaryeffect 414 -- resistable disease
 #bonus
@@ -11928,6 +11948,7 @@ Still to do
 #att 1
 #def 1
 #len 1
+#pierce
 #rcost 3
 #secondaryeffect 232
 #sound 24
@@ -11940,7 +11961,9 @@ Still to do
 #dmg 7
 #att 0
 #def 1
-#len 4
+#len 3
+#pierce
+#slash
 #rcost 5
 #secondaryeffect 232
 #sound 24
