@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.71"
+#modname "Warhammer Complete 1.72"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.71
+#version 1.72
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -568,7 +568,7 @@
 #end
 
 #newweapon
-#name "Plague Scythe"
+#name "Scythe of Nurgle"
 #dmg 8
 #att 2
 #def 2
@@ -626,7 +626,7 @@
 #magicarmor
 #end
 
-#newweapon 1994 -- NEEDS STATIC ID
+#newweapon 1994 -- KEEP ID #
 #copyweapon 143 -- Disease
 #name "Aura of Nurgle"
 #mrnegateseasily
@@ -675,7 +675,7 @@
 #natural
 #end
 
-#newweapon 1993 -- NEEDS STATIC ID
+#newweapon 1993 -- KEEP ID #
 #name "Infection"
 #mrnegates
 #dmg 2
@@ -712,7 +712,7 @@
 #slash
 #end
 
-#newweapon 1995 -- NEEDS STATIC ID
+#newweapon 1995 -- KEEP ID #
 #name "Poison and Disease"
 #bonus
 #dmg 15
@@ -724,7 +724,7 @@
 #secondaryeffect 414
 #end
 
-#newweapon 1996 -- NEEDS STATIC ID
+#newweapon 1996 -- KEEP ID #
 #name "Poison and Corrosion"
 #bonus
 #dmg 15
@@ -3471,7 +3471,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #sound 8
 #end
 
-#newweapon 1997 -- NEEDS STATIC ID
+#newweapon 1997 -- -- KEEP THIS ID #
 #name "Staff of Change"
 #dmg 10
 #armornegating
@@ -7617,7 +7617,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
 #weapon "Aura of Nurgle" -- Aura
-#weapon "Plague Scythe"
+#weapon "Scythe of Nurgle"
 #weapon 56
 #armor "Full Helmet"
 #armor "Chaos Armor"
@@ -7729,7 +7729,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #custommagic 12288 100
 #custommagic 12288 66
 #weapon "Aura of Nurgle" -- Aura
-#weapon "Plague Scythe"
+#weapon "Scythe of Nurgle"
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
@@ -11950,7 +11950,7 @@ Still to do
 #magic
 #end
 
-#newweapon 1903 -- NEEDS STATIC ID
+#newweapon 1903 -- KEEP ID #
 #name "Warplightning strike"
 #dmg 8
 #armornegating
@@ -11974,12 +11974,12 @@ Still to do
 #magic
 #flyspr 210 4
 #att -3
-#secondaryeffectalways 2003
+#secondaryeffectalways 1903
 #end
 
 
 
-#newweapon 1902 -- NEEDS STATIC ID
+#newweapon 1902 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -11991,12 +11991,12 @@ Still to do
 #nratt 8
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1903
 #att -3
 #end
 
 
-#newweapon 1901 -- NEEDS STATIC ID
+#newweapon 1901 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12008,11 +12008,11 @@ Still to do
 #nratt 16
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1903
 #att -3
 #end
 
-#newweapon 1900 -- NEEDS STATIC ID
+#newweapon 1900 -- KEEP ID #
 #name "Doomwheel Warplightning"
 #shock
 #armornegating
@@ -12024,7 +12024,7 @@ Still to do
 #nratt 24
 #magic
 #flyspr 210 4
-#secondaryeffectalways 2003
+#secondaryeffectalways 1903
 #att -3
 #end
 
@@ -12044,7 +12044,7 @@ Still to do
 #end
 
 
-#newweapon 1998 -- NEEDS STATIC ID
+#newweapon 1998 -- KEEP ID #
 #name "Incense Cloud"
 #dmg 4
 #armornegating
@@ -12071,7 +12071,7 @@ Still to do
 #end
 
 
-#newweapon 1999 -- NEEDS STATIC ID
+#newweapon 1999 -- KEEP ID #
 #name "Poison Wind"
 #dmg 6
 #dt_poison
@@ -15079,13 +15079,13 @@ Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpston
 #copyweapon 308 -- Glaive
 #name "Fireglaive"
 #rcost 7
-#secondaryeffectalways 2004 -- Fireglaive Gout
+#secondaryeffectalways 1904 -- Fireglaive Gout
 #def 0 -- usually 1
 #end
 
 --- Fireglaive Gout
 
-#newweapon 1904 -- NEEDS STATIC ID
+#newweapon 1904 -- KEEP ID #
 #copyweapon 171 -- small area fire
 #name "Fireglaive Gout"
 #aoe 2 -- usually 1
@@ -21344,7 +21344,7 @@ Priests: Very Powerful."
 	-- lvl 2 thaum, S1F1, grants twist fate to the mage and those in the same square and scales with mage power (aoe +1 per mage level)
 --- Arcane Unmaking
 	-- lvl 6 enchantment, S3F1, "opposition" spell with aoe, kills magical creatures
---- Apotheosis
+--- Apotheosis name changed to Quintessence
 	-- lvl 2 enchantment, S2F1, heals and blesses a number of friendly soldiers
 --- Soul Quench
 	-- lvl 4 evo, S2F2, fires a large number of armor negating, MR-resistable projectiles
@@ -22945,7 +22945,7 @@ They can lead other birds and animals well."
 #end
 
 #newspell
-#name "Apotheosis Bless"
+#name "Quintessence Bless"
 #school -1
 #restricted 110
 #spec 12582912
@@ -22955,7 +22955,7 @@ They can lead other birds and animals well."
 
 #newspell
 #copyspell "Heal"
-#name "Apotheosis"
+#name "Quintessence"
 #descr "The mage infuses some allies with waves of pure magic, bestowing the healing of Isha and the blessing of Asuryan upon them."
 #path 0 4 - Astral
 #path 1 0 - Fire
@@ -22966,7 +22966,7 @@ They can lead other birds and animals well."
 #restricted 110
 #nreff 1002
 #precision 100
-#nextspell "Apotheosis Bless"
+#nextspell "Quintessence Bless"
 #end
 
 #newspell
@@ -23836,7 +23836,7 @@ Other: Mercenaries are expensive to muster. Some units generate gold, which lowe
 
 ---- Smite Undead
 
-#newweapon 1991 -- NEEDS STATIC ID
+#newweapon 1991 -- KEEP ID
 #name "Smite Undead"
 #dmg 4
 #magic
@@ -31228,7 +31228,7 @@ Priests: Strong."
 #twohanded
 #end
 
-#newweapon 1992 -- NEEDS STATIC ID
+#newweapon 1992 -- KEEP ID #
 #name "Strong Paralyzing Poison"
 #dt_stun
 #poison

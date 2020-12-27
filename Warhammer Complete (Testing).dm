@@ -420,12 +420,11 @@
 #end
 
 #newweapon
-#name "Daemon-forged Longsword"
+#name "Chaos Longsword"
 #dmg 9
-#magic
 #nratt 2
 #att 2
-#def 1
+#def 2
 #len 2
 #twohanded
 #sound 8
@@ -568,7 +567,7 @@
 #end
 
 #newweapon
-#name "Plague Scythe"
+#name "Scythe of Nurgle"
 #dmg 8
 #att 2
 #def 2
@@ -4552,7 +4551,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #rpcost 2
 #end
 
--- Lord of Tzeentch
+-- Chaos Lord of Tzeentch
 
 #newmonster 7599
 #name "Chaos Lord"
@@ -4593,7 +4592,6 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #goodleader
 #goodundeadleader
 #mounted
-#fear 5
 #inspirational 1
 #researchbonus -12
 #wastesurvival
@@ -7579,7 +7577,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #goodleader
 #command -20
 #okundeadleader
-#weapon "Daemon-forged Longsword"
+#weapon "Chaos Longsword"
 #armor "Chaos Armor"
 #itemslots 15494
 #startage 75
@@ -7617,7 +7615,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #custommagic 12288 200
 #itemslots 13446 -- 2 hands, 1 head, chest, 2 misc slots
 #weapon "Aura of Nurgle" -- Aura
-#weapon "Plague Scythe"
+#weapon "Scythe of Nurgle"
 #weapon 56
 #armor "Full Helmet"
 #armor "Chaos Armor"
@@ -7729,7 +7727,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #custommagic 12288 100
 #custommagic 12288 66
 #weapon "Aura of Nurgle" -- Aura
-#weapon "Plague Scythe"
+#weapon "Scythe of Nurgle"
 #armor "Full Helmet"
 #armor "Chaos Armor"
 #itemslots 13446 -- 2 hands, 1 head, chest, misc slots
@@ -21344,7 +21342,7 @@ Priests: Very Powerful."
 	-- lvl 2 thaum, S1F1, grants twist fate to the mage and those in the same square and scales with mage power (aoe +1 per mage level)
 --- Arcane Unmaking
 	-- lvl 6 enchantment, S3F1, "opposition" spell with aoe, kills magical creatures
---- Apotheosis
+--- Apotheosis (name changed to quintessence)
 	-- lvl 2 enchantment, S2F1, heals and blesses a number of friendly soldiers
 --- Soul Quench
 	-- lvl 4 evo, S2F2, fires a large number of armor negating, MR-resistable projectiles
@@ -22945,7 +22943,7 @@ They can lead other birds and animals well."
 #end
 
 #newspell
-#name "Apotheosis Bless"
+#name "Quintessence Bless"
 #school -1
 #restricted 110
 #spec 12582912
@@ -22955,7 +22953,7 @@ They can lead other birds and animals well."
 
 #newspell
 #copyspell "Heal"
-#name "Apotheosis"
+#name "Quintessence"
 #descr "The mage infuses some allies with waves of pure magic, bestowing the healing of Isha and the blessing of Asuryan upon them."
 #path 0 4 - Astral
 #path 1 0 - Fire
@@ -22966,7 +22964,7 @@ They can lead other birds and animals well."
 #restricted 110
 #nreff 1002
 #precision 100
-#nextspell "Apotheosis Bless"
+#nextspell "Quintessence Bless"
 #end
 
 #newspell
