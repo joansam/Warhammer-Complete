@@ -47,8 +47,8 @@ Creates at most 1 pit, will not continue to trigger.
 SKAVEN:
 Events: Discover Warpstone Seam. 6% chance per turn on land, not in cap. Creates a seam that produces 1 of FED per turn.
 15% chance/turn of seam exhaustion, 12% if you have a lab there.
-Once exhausted, 12% chance of reopening if you have a lab there, else 0.
-Reopen chance divided evenly between reopening normally, destroying the lab and repoening, and destroying the lab and not reopening.
+Once exhausted, 12% chance of reopening if you have a lab there.
+Reopen chance divided 4% each of: reopening normally, destroying the lab and repoening, and destroying the lab and not reopening.
 
 LIZARDMEN:
 Units: all Slann autocast Communion Master before the battle starts - you don't need to script it.

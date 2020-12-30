@@ -1,3 +1,12 @@
+1.73: Added robes to grey seer and special rule describing mawpits to Ogre desc.
+Scraplauncher rebalance to 110 gold, less prot. It's a fun unit you don't see enough of.
+Fix to Skaven hero Plaguelord Skrolk: hp 4 -> 45
+Fix for Lizardmen salamander amphibious shape
+Slightly less janky shieldshapes on some Lizardmen units
+Better description for Skink Shaman
+Skink javelin -> javelin
+To-Do: Add more descriptions of Chaos events+promotions, other nats. Check nation mechanics file.
+
 1.70c fixes: Ulthuan's Summon Lesser Great Eagles was borked, adjusted slave giant hp and rp upward
 Changes to Skrag's name to be less confusing for other players
 Version X

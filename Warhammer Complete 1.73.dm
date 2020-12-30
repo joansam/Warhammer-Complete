@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.72"
+#modname "Warhammer Complete 1.73"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.72
+#version 1.73
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -9946,7 +9946,7 @@ still to do
 #descr "Ogres don't have much use for the weapons of smaller humanoids like Orcs, Elves, Dwarfs and Men, so they allow scrounging Gnoblars to squabble over their possessions. A particularly crafty Gnoblar proclaiming himself King of Scrap recently pioneered a crude war machine based on the Stone Throwers of Dwarf clans which gives all these weapons back, pointy end first. The Scraplauncher does what the name implies: it launches bundles of weapons and other scrap metal across the battlefield to rain down on the heads of the enemy. It is crewed by bickering Gnoblars and hauled by a foul tempered but somewhat oblivious Rhinox. Should the Rhinox be badly hurt, it will undoubtedly shake off the ramshackle Scraplauncher and stampede over friend and foe."
 #size 6
 #hp 20
-#prot 11
+#prot 0
 #mor 10
 #mr 8
 #enc 3
@@ -9956,12 +9956,13 @@ still to do
 #prec 7
 #mapmove 10
 #ap 10
-#gcost 120
+#gcost 110
 #rpcost 60
 #chaosrec 10
 #rcost 30
 #weapon "Scrap Barrage"
 #weapon "Gore"
+#armor "Leather Cuirass"
 #maxage 40
 #siegebonus 4
 #mountainsurvival
@@ -11405,6 +11406,7 @@ still to do
 Military: Powerful Ogre infantry, numerous Gnoblars and specialised creatures.
 Magic: Blood, Fire, and Nature with diversity through summons.
 Priests: Average, cannot preach. Hungry Maw dominion requires constant sacrifice."
+Special Rules: "Ogres sometimes dig lesser Maw Pits at non-cap forts that give slaves and sacred recruitment."
 #flag "./Warhammer-Complete/flag.tga"
 #templepic 11
 #templecost 200 -- ogre temples are pits in the ground, extremely low cost
@@ -13202,6 +13204,7 @@ Still to do
 #rcost 1
 #rpcost 4
 #weapon "quarterstaff"
+#armor "Robes"
 #poisonres 8
 #stealthy 15
 #maxage 95
@@ -13497,7 +13500,7 @@ Still to do
 #spr2 "./Warhammer-Complete/Hero Plaguelord2.tga"
 #name "Plaguelord"
 #descr "Lord Skrolk is very old and unutterably evil. By the blessing of the Horned Rat, he has lived many times his ordinary lifespan and unleased unspeakable woes upon the world. To become the right hand of Arch Plaguelord Nurglitch he traversed the insanely dangerous Blindwyrm Labyrinth in Lustria and slew countless challengers. Skrolk's body is a shrine to disease which has been strengthened by countless contagions; he is extremely difficult to kill and to even approach him requires braving a swarm of poisonous flies. Skrolk carries at all times the Liber Bubonicus, the Bell of a Thousand Poxes and the Rod of Corruption. Having clawed out his own eyes long ago, Skrolk now sees the world as it really is; a writhing, decaying mess of putrescence."
-#hp 4
+#hp 45
 #prot 10
 #mor 14
 #mr 17
@@ -14755,7 +14758,7 @@ Still to do
 Military: Massed infantry, experimental weapons, virulent plagues, and mutated beasts.
 Magic: Varied, includes Death, Astral, Fire, Earth, and Blood.
 Priests: Powerful, can perform blood sacrifice.
-Special Rules: Can discover warpstone, exhaust it, and reopen exhausted warpstone seams with labs."
+Special Rules: Can randomly discover warpstone sites, exhaust them, and reopen exhausted warpstone with labs. As with all things Skaven, they may blow up in your face."
 #flag "./Warhammer-Complete/flagSK.tga"
 #templepic 8
 #startsite "The Undercity"
@@ -17358,18 +17361,6 @@ Still to do
 #slash
 #end
 
-
-#newweapon
-#name "Skink Javelin"
-#dmg 5
-#ammo 3
-#len 5
-#rcost 1
-#sound 19
-#pierce
-#woodenweapon
-#end
-
 #newweapon
 #name "Riptide Trident"
 #dmg 9
@@ -17943,7 +17934,7 @@ Still to do
 #forestsurvival
 #amphibian
 #animal
-#watershape 3355
+#watershape 7955
 #nametype 123
 #coldblood
 #swimming
@@ -18201,7 +18192,7 @@ Still to do
 #rpcost 28
 #rcost 1
 #weapon "Terradon Bite"
-#weapon "Skink Javelin"
+#weapon "Javelin"
 #weapon "Terradon Talon"
 #maxage 500
 #startage 100
@@ -18874,7 +18865,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #poisonres 30
-#fireres -500
+#fireres -50
 #shockres 30
 #coldres 30
 #coldblooded
@@ -18951,7 +18942,7 @@ Still to do
 #startage 1000
 #forestsurvival
 #poisonres 30
-#fireres -500
+#fireres -50
 #shockres 30
 #coldres 30
 #coldblooded
@@ -19689,7 +19680,7 @@ Still to do
 #spr1 "./Warhammer-Complete/Skink Shaman.tga"
 #spr2 "./Warhammer-Complete/Skink Shaman2.tga"
 #name "Skink Shaman"
-#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In the Southlands there are very few Slann remaining and spawning of Saurus are few and far between, leading to the Skinks taking on more active and warlike roles. The Skink population has exploded, with feral spawnings in the wild becoming more and more frequent. When a Skink marked out as a Priest is spawned in this manner they retain their magical aptitude, but are not connected in constant communion with the Slann. These rogue Shamans serve their race, but unlike their civilised cousins, they are not direct instruments of the Old Ones."
+#descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. In the Southlands there are very few Slann remaining and spawning of Saurus are few and far between, leading to the Skinks taking on more active and warlike roles. The Skink population has exploded, with feral spawnings in wild swamps and forests becoming more and more frequent. When a Skink marked out as a Priest is spawned in this manner they retain their magical aptitude, but are not connected in constant communion with the Slann. These rogue Shamans serve their race, but unlike their civilised cousins, they are not direct instruments of the Old Ones."
 #hp 9
 #size 2
 #prot 3
@@ -19874,7 +19865,7 @@ Still to do
 #spreaddom 2
 #gemprod 2 1
 #shockres 30
-#fireres -500
+#fireres -50
 #coldres 30
 #poisonres 30
 #holy
@@ -19929,7 +19920,7 @@ Still to do
 #spreaddom 2
 #gemprod 2 1
 #shockres 30
-#fireres -500
+#fireres -50
 #coldres 30
 #poisonres 30
 #holy
