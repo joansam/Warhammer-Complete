@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.73"
+#modname "Warhammer Complete 1.73a"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.73
+#version 1.73a
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -30096,7 +30096,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 -------- SITES
 
 
-#newsite 1901
+#newsite 1935
 #name "Imperial Palace"
 #path 8
 #level 0
@@ -30106,7 +30106,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #homemon 7587 -- Reik Foot
 #end
 
-#newsite 1902
+#newsite 1936
 #name "Cathedral of Sigmar"
 #path 8
 #level 0
