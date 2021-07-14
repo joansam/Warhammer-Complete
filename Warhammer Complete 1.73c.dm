@@ -30112,7 +30112,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 
 
 #newsite 1935
-#name "Imperial Palace"
+#name "Emperor's Palace"
 #path 8
 #level 0
 #rarity 5
@@ -30133,7 +30133,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #end
 
 #newsite 1903
-#name "Imperial Arsenal"
+#name "Nuln Imperial Arsenal"
 #level 0
 #rarity 5
 #path 0
@@ -30722,9 +30722,9 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 Military: Medium and heavy infantry with extremely heavy cavalry and dedicated missile units.
 Magic: Colleges allow access to all non blood magic.
 Priests: Strong."
-#flag "./Warhammer-Complete/flag.tga"
+#flag "./Warhammer-Complete/Altdorf_flag.tga"
 #templepic 9
-#startsite "Imperial Palace"
+#startsite "Emperor's Palace"
 #startsite "Cathedral of Sigmar"
 #startsite "University of Altdorf"
 
@@ -30901,7 +30901,7 @@ Magic: Colleges allow access to all non blood magic but their taxes make Labs mo
 Priests: Strong."
 #flag "./Warhammer-Complete/Nuln flag.tga"
 #templepic 9
-#startsite "Imperial Arsenal"
+#startsite "Nuln Imperial Arsenal"
 #startsite "University of Nuln"
 #homerealm 1 -- north
 #homerealm 10 -- default
