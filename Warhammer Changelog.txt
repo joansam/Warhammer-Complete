@@ -1,3 +1,6 @@
+1.73b: Fixed Tzeentch Daemon Prince weapon duplicate bug and incorrect aura - now uses proper Greater Aura.
+Added "Scouring Gaze" weapon to 2nd generation Slann, better version of Scouring Eyes mostly for flavor
+
 1.73: Added robes to grey seer and special rule describing mawpits to Ogre desc.
 Scraplauncher rebalance to 110 gold, less prot. It's a fun unit you don't see enough of.
 Fix to Skaven hero Plaguelord Skrolk: hp 4 -> 45

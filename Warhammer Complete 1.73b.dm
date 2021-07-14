@@ -1,6 +1,6 @@
-#modname "Warhammer Complete 1.73a"
+#modname "Warhammer Complete 1.73b"
 #description "12 Warhammer nations - Tomb Kings, High Elves, 3 Empire nations, Skaven, Ogres, Lizardmen, Chaos Dwarfs, and 3 Chaos nations."
-#version 1.73a
+#version 1.73b
 #icon "Warhammer-Complete/ModBanner.tga"
 
 -- Check the Warhammer Changelog file for changes since the Dom5 conversion.
@@ -5467,6 +5467,8 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #spr1 "./Warhammer-Complete/summon2_daemon_prince_1.tga"
 #spr2 "./Warhammer-Complete/summon2_daemon_prince_2.tga"
 #descr "A Daemon Prince is a Champion who has received the ultimate reward from their patron god: Daemonhood, becoming a creature of untold power.  For each Champion who reaches Daemonhood, however, there are untold thousands who die in the field of battle or end their pitiful existences as Spawns of Chaos. Some of their number enter the Realm of Chaos to serve the Changer of Ways on unknown worlds and dimensions; others, however, stay among their mortal brethren and wage eternal war in their patron's name."
+#clearweapons
+#weapon "Greater Aura of Tzeentch"
 #weapon "Daemonic Halberd"
 #montag 6007
 #end
@@ -5488,7 +5490,7 @@ Priests: Strong. Cultists start cults in foreign countries by causing unrest in 
 #inanimate
 #neednoteat
 #weapon 0
-#weapon "Aura of Tzeentch" -- Aura
+#weapon "Greater Aura of Tzeentch" -- Aura
 #noleader
 #unteleportable
 #nohof
@@ -7961,7 +7963,7 @@ Priests: None. Instead of normal blessings, uses Astral magic. Cultists start cu
 #spr2 "./Warhammer-Complete/Plaguebearer_2.tga"
 #name "Plaguebearer"
 #nametype 191
-#descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering every torment imaginable."
+#descr "Plaguebearers resemble famine victims suffering from every disease imaginable. They are surrounded by a cloud of disease and do not notice pain, for they are already suffering more than mortals could know."
 #ap 10
 #mapmove 14
 #hp 26
@@ -17402,13 +17404,26 @@ Still to do
 #end
 
 #newweapon
+#name "Scouring Eyes"
+#dmg 6
+#dt_holy
+#armorpiercing
+#bonus
+#ammo 50
+#range 5
+#nostr
+#mrnegates
+#explspr 10117
+#end
+
+#newweapon
 #name "Scouring Gaze"
 #dmg 6
 #dt_holy
 #armorpiercing
 #bonus
-#ammo 3
-#range 10
+#ammo 50
+#range 15
 #nostr
 #aoe 1
 #mrnegates
@@ -19059,7 +19074,7 @@ Still to do
 #armor "Ceremonial Plates"
 #armor "Crest Plate"
 #weapon "Obsinite Sword" -- obsinite sword
-#weapon "Scouring Gaze"
+#weapon "Scouring Eyes"
 #maxage 10000
 #startage 3000
 #forestsurvival
